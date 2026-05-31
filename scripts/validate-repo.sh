@@ -128,6 +128,13 @@ docs/hosts/claude-code.md
 docs/hosts/hermes-agent.md
 docs/hosts/vscode.md
 docs/hosts/generic.md
+docs/guides/using-hvn-with-codex.md
+docs/guides/using-hvn-with-hermes.md
+docs/guides/goal-mode-guide.md
+docs/guides/background-mode-guide.md
+docs/guides/business-ideation-guide.md
+docs/guides/paved-roads-guide.md
+docs/guides/runtime-adaptation-guide.md
 docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
@@ -136,6 +143,24 @@ docs/prompt-injection.md
 docs/ci-quality.md
 docs/run-memory.md
 docs/spec-driven-workflow.md
+docs/README.md
+docs/information-architecture.md
+docs/start-here.md
+docs/quickstart.md
+docs/intro.md
+docs/feature-index.md
+docs/command-index.md
+docs/use-case-map.md
+docs/choose-your-path.md
+docs/glossary.md
+docs/concept-map.md
+docs/docs-automation.md
+docs/wiki-maintenance.md
+docs/staleness-detection.md
+docs/doc-owners.md
+docs/contributing-docs.md
+docs/whats-new.md
+docs/recent-doc-updates.md
 docs/linear-setup.md
 docs/linear-agent-model.md
 docs/linear-states.md
@@ -217,7 +242,25 @@ docs/examples/portable-spec-schema.md
 docs/examples/portable-goal-contract.md
 docs/examples/schema-migration.md
 docs/examples/artifact-mapping.md
+docs/examples/new-user-path.md
+docs/examples/hermes-user-path.md
+docs/examples/codex-user-path.md
+docs/examples/business-ideation-user-path.md
+docs/examples/background-mode-user-path.md
 benchmarks/onboarding-spec/README.md
+wiki/Home.md
+wiki/Getting-Started.md
+wiki/Core-Concepts.md
+wiki/Feature-Index.md
+wiki/Workflow-Index.md
+wiki/Commands.md
+wiki/Hosts-and-Harnesses.md
+wiki/Automation.md
+wiki/Examples.md
+wiki/FAQ.md
+wiki/_Sidebar.md
+wiki/_Footer.md
+wiki/Whats-New.md
 schema/README.md
 schema/versions/v1/onboarding-summary.schema.json
 schema/versions/v1/spec.schema.json
@@ -252,13 +295,19 @@ reports/compatibility/latest.md
 reports/compatibility/2026-05-30.md
 mcp/linear.example.json
 HVN-STATUS.md
+commands/orca-docs.md
+skills/orca-docs-system/SKILL.md
+templates/doc-refresh-note.md
+templates/wiki-update-note.md
+templates/doc-metadata.md
+templates/doc-change-checklist.md
 "
 
 for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/guides docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples wiki; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 

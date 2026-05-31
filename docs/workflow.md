@@ -108,3 +108,5 @@ If a feature materially adapts an upstream project or adds a new direct integrat
 If a missing integration blocks that next action, use [external tool setup](external-tool-setup.md) and [degraded mode](degraded-mode.md) before asking the user to install anything.
 
 When harness capability matters, use [harness compatibility](harness-compatibility.md) and [compatibility matrix](compatibility-matrix.md) to choose the safest path.
+
+When the top-level user experience changes, update [docs/README.md](README.md), [start-here.md](start-here.md), [feature-index.md](feature-index.md), [command-index.md](command-index.md), and the [wiki](../wiki/Home.md) as part of the same iteration.

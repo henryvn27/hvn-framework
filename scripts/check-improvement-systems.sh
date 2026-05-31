@@ -14,6 +14,9 @@ for file in \
   docs/workflow-accounting.md \
   docs/qa-to-regression.md \
   docs/benchmark-reporting.md \
+  docs/docs-automation.md \
+  docs/wiki-maintenance.md \
+  docs/staleness-detection.md \
   benchmarks/onboarding-spec/README.md \
   benchmarks/onboarding-spec/cases/OBS-001.md \
   benchmarks/onboarding-spec/cases/OBS-002.md \
@@ -23,12 +26,16 @@ for file in \
   templates/workflow-metrics.md \
   templates/regression-task.md \
   templates/regression-candidate.md \
+  templates/doc-refresh-note.md \
+  templates/wiki-update-note.md \
   commands/orca-benchmark.md \
   commands/orca-metrics.md \
   commands/orca-regression-task.md \
+  commands/orca-docs.md \
   skills/orca-benchmark/SKILL.md \
   skills/orca-accounting/SKILL.md \
   skills/orca-regression-task/SKILL.md \
+  skills/orca-docs-system/SKILL.md \
   docs/examples/benchmark-run.md \
   docs/examples/onboarding-benchmark-case.md \
   docs/examples/spec-quality-comparison.md \

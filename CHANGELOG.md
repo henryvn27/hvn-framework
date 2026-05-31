@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add a layered docs system with start-here flow, guide layer, wiki knowledge base, docs automation, staleness detection, and contributor doc maintenance rules.
+
 ### Added
 
 - Added background mode and keep-making-progress support with autonomy levels, loop guards, permission handling, risk tiers, and resumable background receipts.

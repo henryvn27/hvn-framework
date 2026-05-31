@@ -2,123 +2,91 @@
 
 <img src="assets/orca.png" alt="ORCA-HVN logo" width="220" />
 
-ORCA-HVN is Henry Van Ness's installable framework for running software work with agents through a durable system of record. It is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
+ORCA-HVN is a framework for running agent-assisted software work with durable workflow structure, host-aware execution paths, QA discipline, and inspectable artifacts. It is Linear-first by default, but it can map the same workflow to another system of record when needed.
 
-Teams can opt out of Linear. In opt-out mode, ORCA-HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/orca-hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
+## What It Is
 
-ORCA-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, unsafe execution without clear approval or traceability, and workflows that cannot compare their own quality over time.
+Use ORCA-HVN when the hard part is not "generate code," but:
 
-It is also designed to work cleanly when one agent controls the project and another executes bounded work. A Hermes-like controller and a Codex-like executor should be able to share the same artifact trail without losing state or ownership.
-
-It also supports a dedicated business-ideation lane for startup opportunities. ORCA-HVN can structure a rough idea, evaluate it through founder, market, problem, competition, and evidence lenses, produce an opportunity memo, and recommend the next validation step before product-spec work begins.
-
-## Origins And Influences
-
-ORCA-HVN is original in how it combines Linear-first coordination, explicit artifact contracts, blind-to-briefed QA, runtime adaptation, checkpoints, receipts, lineage, and cross-harness routing into one framework.
-
-It is not presented as if it invented every underlying idea. Spec-driven workflow thinking, host integrations, startup validation patterns, and MCP-based tool routing all have real upstream ecosystems.
-
-See:
-
-- [UPSTREAM.md](UPSTREAM.md)
-- [docs/attribution.md](docs/attribution.md)
-- [docs/provenance.md](docs/provenance.md)
-- [docs/wraps-vs-borrows.md](docs/wraps-vs-borrows.md)
-
-## Upstream Projects
-
-The most important currently documented upstreams are:
-
-- Linear, as ORCA-HVN's primary direct workflow integration
-- GitHub, as the main repository, issue, PR, release, and checks integration surface
-- OpenAI Codex CLI, Claude Code, and Hermes Agent, as major compatibility targets
-- GitHub Spec Kit, as a public spec-driven workflow influence
-- Bloomberg Beta's public manual and Steve Blank's customer-development writing, as reference influences for the ideation lane
-
-The canonical catalog with relationship types lives in [UPSTREAM.md](UPSTREAM.md).
-
-## What ORCA-HVN Wraps
-
-ORCA-HVN directly wraps or integrates:
-
-- Linear workflow surfaces
-- GitHub workflow surfaces
-- approved MCP-based setup paths such as GitHub MCP server or Linear MCP
-- agent-host compatibility layers for Codex CLI, Claude Code, Hermes Agent, VS Code, and generic hosts
-
-That is different from conceptual borrowing. See [docs/wraps-vs-borrows.md](docs/wraps-vs-borrows.md).
-
-## Attribution And Licenses
-
-ORCA-HVN's own project license is in [LICENSE](LICENSE).
-
-Third-party provenance and notice handling live in:
-
-- [NOTICE](NOTICE)
-- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
-- [docs/licenses.md](docs/licenses.md)
-
-## Acknowledgements
-
-For the human credit layer, see [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
-
-## Release Status
-
-This repository is prepared as a public release candidate for a Linear-first ORCA-HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
+- turning vague work into a usable spec
+- keeping agent runs reviewable and resumable
+- coordinating controller and executor agents cleanly
+- adapting to different harnesses and integration setups
+- preserving QA, approvals, receipts, and follow-up artifacts around the same work
 
 ## Who It Is For
 
-Use ORCA-HVN when you want AI agents to build software with engineering discipline:
+- engineers using Codex, Claude Code, Hermes, or similar agentic coding hosts
+- teams that want workflow discipline around AI-assisted software delivery
+- operators who need inspectable runs instead of opaque prompt sessions
+- founders who need idea validation before a roadmap or build sprint
+- maintainers working in legacy or under-documented repos
 
-- Teams using Linear as the coordination layer for product and engineering work
-- Founders turning vague product ideas into maintained repositories
-- Engineers using agentic coding tools on production code
-- Reviewers who want blind first-look QA before informed retesting
-- Teams that need reproducible handoffs between agents
-- Builders who want the option to map ORCA-HVN gates to another tracker
-- Founders and operators who want idea evaluation before roadmap or build planning
+## What Makes It Different
 
-## Core Concepts
+ORCA-HVN is not only a prompt or command pack. It combines:
 
-- **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
-- **Idea one-pagers before specs:** rough opportunities should be compressed and challenged before they inherit delivery complexity.
-- **Linear project as initiative:** related issues belong to a project, epic, or alternative initiative artifact.
-- **Linear states as workflow gates:** state transitions represent ORCA-HVN readiness gates.
-- **Comments as handoff record:** specs, plans, QA reports, review findings, and ship checks are posted back to the work item.
-- **Spec-driven development:** implementation follows a written contract.
-- **Typed artifact contracts:** core artifacts have required fields and a clear good-enough bar.
-- **Adaptive onboarding:** a subagent clarifies issue ambiguity before spec or build.
-- **Run traces:** meaningful runs can be inspected after the fact.
-- **Trajectory evals:** workflows are judged on how they behaved, not just the final answer.
-- **Benchmark packs:** onboarding and spec quality can be compared across versions.
-- **Workflow accounting:** time, retries, and optional cost signals can be tracked per run.
-- **Shared state:** cooperating roles can share the same current run context.
-- **Approval gates:** risky actions pause for explicit approval.
-- **Human checkpoints:** pause, inspect, approve, reject, and resume are explicit workflow moves.
-- **Inspector artifacts:** runs can be reviewed without a custom UI.
-- **Tool governance:** external tools and MCP servers have explicit trust levels, registry entries, and audit expectations.
-- **External tool setup:** GitHub, Linear, connectors, MCP, CLI helpers, and manual fallbacks are handled through harness-aware setup checks.
-- **Runtime adaptation:** ORCA-HVN chooses the safest reviewed execution path for the active harness instead of assuming feature parity.
-- **Controller orientation:** external controller agents can enter the repo through a concise status and orientation surface.
-- **Delegation and ingestion:** controller agents can delegate bounded work and re-ingest structured results back into the framework.
-- **Execution receipts:** meaningful runs produce compact, reviewable summaries of actions, verification, approvals, and remaining risk.
-- **Artifact lineage:** upstream and downstream workflow artifacts can be linked explicitly.
-- **Replay and restore:** prior runs can be compared or recovered without pretending workflows are perfectly deterministic.
-- **Legacy modernization:** inherited systems are handled through archaeology, enrichment, risk analysis, and staged migration.
-- **Business ideation:** startup ideas can be evaluated, researched, classified, and validated before they become product work.
-- **Goal mode:** bounded, verifiable milestones can use host-native `/goal` when supported, with a safe fallback when not.
-- **Background mode:** users can opt into bounded unattended progress with explicit autonomy levels, loop guards, permission handling, and resumable receipts.
-- **Next-step guidance:** major phase exits produce concise, adaptive guidance for what to do next.
-- **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
-- **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
-- **Layered retesting:** later QA receives bounded context packets tied to the same issue.
-- **Regression-task generation:** strong QA findings can become reusable regression work.
-- **Security guardrails:** external content is treated as untrusted until confirmed.
-- **Opt-out mode:** the same artifacts can be stored outside Linear when the user chooses another system of record.
+- onboarding and spec-driven execution
+- goal mode and background mode for bounded long-running work
+- controller and executor integration
+- host-aware runtime adaptation and compatibility guidance
+- checkpoints, approvals, receipts, lineage, replay, and restore
+- blind QA, briefed QA, and regression capture
+- paved-road workflows for common use cases
 
-## Quickstart
+## Start Here
 
-Clone the repo and run validation:
+If you are new:
+
+1. [docs/start-here.md](docs/start-here.md)
+2. [docs/quickstart.md](docs/quickstart.md)
+3. [docs/choose-your-path.md](docs/choose-your-path.md)
+4. one guide such as [docs/guides/using-hvn-with-codex.md](docs/guides/using-hvn-with-codex.md)
+
+## Where To Begin By Use Case
+
+- I want the fastest setup: [docs/quickstart.md](docs/quickstart.md)
+- I need the big picture: [docs/intro.md](docs/intro.md)
+- I use Codex: [docs/guides/using-hvn-with-codex.md](docs/guides/using-hvn-with-codex.md)
+- I use a controller like Hermes: [docs/guides/using-hvn-with-hermes.md](docs/guides/using-hvn-with-hermes.md)
+- I need unattended progress: [docs/guides/background-mode-guide.md](docs/guides/background-mode-guide.md)
+- I need a milestone contract: [docs/guides/goal-mode-guide.md](docs/guides/goal-mode-guide.md)
+- I need startup ideation first: [docs/guides/business-ideation-guide.md](docs/guides/business-ideation-guide.md)
+- I inherited a messy repo: [docs/legacy-modernization.md](docs/legacy-modernization.md)
+
+## Documentation And Wiki
+
+- docs home: [docs/README.md](docs/README.md)
+- feature map: [docs/feature-index.md](docs/feature-index.md)
+- command map: [docs/command-index.md](docs/command-index.md)
+- glossary: [docs/glossary.md](docs/glossary.md)
+- wiki home: [wiki/Home.md](wiki/Home.md)
+- what changed: [docs/whats-new.md](docs/whats-new.md)
+
+## Major Capability Buckets
+
+- planning and onboarding
+- runtime adaptation and host compatibility
+- goal mode and background mode
+- approvals, checkpoints, and tool governance
+- receipts, lineage, replay, and restore
+- blind QA, briefed QA, evals, and regression follow-up
+- controller/executor coordination
+- business ideation and legacy modernization
+
+## Core Workflow
+
+Typical path:
+
+`onboard -> spec -> plan -> execute -> review -> QA -> receipt -> follow-up`
+
+Read:
+
+- [docs/workflow.md](docs/workflow.md)
+- [docs/linear-workflow.md](docs/linear-workflow.md)
+- [docs/use-case-map.md](docs/use-case-map.md)
+
+## Install
 
 ```sh
 git clone https://github.com/henryvn27/orca-hvn.git
@@ -126,311 +94,53 @@ cd orca-hvn
 ./scripts/validate-repo.sh
 ```
 
-Install locally into the current project:
+Local install into the current project:
 
 ```sh
 ./install/install.sh --mode local --target ./.orca-hvn
 ./install/verify-install.sh --target ./.orca-hvn
 ```
 
-Install globally for your user:
+Global install:
 
 ```sh
 ./install/install.sh --mode global
 ./install/doctor.sh
 ```
 
-For Linear-first setup, read:
+## Docs-As-Code Maintenance
 
-- `docs/linear-setup.md`
-- `docs/linear-workflow.md`
-- `docs/linear-agent-model.md`
-- `docs/linear-states.md`
-- `docs/linear-guidance.md`
-- `docs/attribution.md`
-- `docs/provenance.md`
-- `docs/wraps-vs-borrows.md`
-- `docs/licenses.md`
-- `docs/business-ideation.md`
-- `docs/idea-one-pagers.md`
-- `docs/idea-evaluation-lenses.md`
-- `docs/idea-research.md`
-- `docs/idea-validation.md`
-- `docs/opportunity-memos.md`
-- `docs/idea-feedback-style.md`
-- `docs/business-ideation-ux.md`
-- `docs/observability.md`
-- `docs/evals.md`
-- `docs/approval-gates.md`
-- `docs/artifact-contracts.md`
-- `docs/security-guardrails.md`
-- `docs/prompt-injection.md`
-- `docs/benchmark-pack.md`
-- `docs/workflow-accounting.md`
-- `docs/qa-to-regression.md`
-- `docs/shared-state.md`
-- `docs/human-checkpoints.md`
-- `docs/inspector.md`
-- `docs/tool-trust.md`
-- `docs/mcp-governance.md`
-- `docs/tool-registry.md`
-- `docs/tool-safety-rules.md`
-- `docs/mcp-review-workflow.md`
-- `docs/external-tool-setup.md`
-- `docs/integrations-overview.md`
-- `docs/setup-validation.md`
-- `docs/degraded-mode.md`
-- `docs/setup-ux.md`
-- `docs/runtime-adaptation.md`
-- `docs/harness-capability-profiles.md`
-- `docs/harness-detection.md`
-- `docs/feature-routing.md`
-- `docs/runtime-flags.md`
-- `docs/runtime-fallbacks.md`
-- `docs/runtime-degraded-mode.md`
-- `docs/runtime-status.md`
-- `docs/controller-agent-integration.md`
-- `docs/project-orientation.md`
-- `docs/delegation.md`
-- `docs/result-ingestion.md`
-- `docs/controller-executor-compatibility.md`
-- `docs/execution-receipts.md`
-- `docs/artifact-lineage.md`
-- `docs/replay-restore.md`
-- `docs/legacy-modernization.md`
-- `docs/repo-archaeology.md`
-- `docs/background-mode.md`
-- `docs/background-ux.md`
-- `docs/background-risk-tiers.md`
-- `docs/background-task-types.md`
-- `docs/background-permissions.md`
-- `docs/loop-guards.md`
-- `docs/echo-chamber-avoidance.md`
-- `docs/stage-budgets.md`
-- `docs/next-step-guidance.md`
-- `docs/guidance-tone.md`
-- `docs/experience-adaptation.md`
-- `docs/phase-exit-rules.md`
-- `docs/goal-mode.md`
-- `docs/goal-safety.md`
-- `docs/goal-recommendation-rules.md`
-- `docs/compatibility-matrix.md`
-- `docs/command-mapping.md`
-- `docs/version-control.md`
-- `UPSTREAM.md`
-- `ACKNOWLEDGEMENTS.md`
-- `THIRD_PARTY_NOTICES.md`
+ORCA-HVN treats docs as part of the framework surface, not as a separate afterthought.
 
-You can also generate a local setup packet:
+Read:
 
-```sh
-./scripts/linear-setup.sh --mode linear-first --target work/orca-linear-setup.md
-```
-
-For opt-out setup, choose a system of record and map ORCA-HVN issue comments to equivalent durable artifacts.
-
-## Linear-First Workflow
-
-1. Issue enters inbox or triage.
-2. `orca-idea` or `orca-evaluate-idea` runs first when the work is still an opportunity rather than a product contract.
-3. `orca-plan-idea` or `orca-validate-idea` turns a surviving idea into an opportunity memo and next experiment.
-4. `orca-linear-intake` or `orca-onboard` clarifies ambiguity.
-5. `orca-check-setup` identifies required GitHub, Linear, MCP, connector, or CLI dependencies when needed.
-6. `orca-runtime` chooses the safest reviewed harness-specific path.
-7. `orca-legacy` runs when the target is inherited, under-documented, or fragile.
-8. `orca-spec` creates a structured spec from issue context, validation output, or modernization audit.
-9. `orca-linear-plan-comment` posts the plan to the issue.
-10. `orca-controller` or `orca-orient` gives a controller agent a fast entry into current project state.
-11. `orca-approve` records approval when scope or risk requires it.
-12. `orca-goal` recommends goal mode only for bounded, verifiable milestones.
-13. `orca-background` or `orca-keep-going` defines unattended scope when the user wants bounded background progress.
-14. `orca-delegate` creates a bounded executor brief when another harness should do the work.
-15. `orca-build` executes approved scope or the goal contract.
-16. `orca-trace` records what happened when the run is meaningful or risky.
-17. `orca-receipt` summarizes the run compactly.
-18. `orca-lineage` links the new artifact to the workflow chain.
-19. `orca-state` keeps shared coordination context current across roles.
-20. `orca-metrics` records time, retries, and optional usage signals.
-21. `orca-ingest` brings delegated results back into ORCA-HVN in a structured way.
-22. `orca-review` posts findings.
-23. `orca-test-blind` runs first-look QA with minimal issue context.
-24. `orca-context-brief` creates a bounded second-pass packet.
-25. `orca-test-briefed` and `orca-test-regression` retest.
-26. `orca-regression-task` promotes high-value findings into reusable regression work.
-27. `orca-checkpoint` pauses risky or ambiguous work for human inspection and decision.
-28. `orca-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-29. `orca-tool-review` or `orca-mcp-review` governs new or risky external tools.
-30. `orca-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-31. `orca-eval` scores trajectory quality when validating ORCA-HVN behavior or release confidence.
-32. `orca-replay` or `orca-restore` compares or recovers workflow behavior when needed.
-33. `orca-linear-ship-check` posts ship readiness.
-34. `orca-status` and `orca-background-status` explain current runtime and unattended-run state when needed.
-35. Issue moves to done only with evidence.
-
-Recommended state gates are documented in `docs/linear-states.md`.
-
-## Commands And Skills
-
-Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
-
-- `orca-linear-setup`
-- `orca-linear-intake`
-- `orca-linear-sync`
-- `orca-linear-plan-comment`
-- `orca-linear-qa-report`
-- `orca-linear-ship-check`
-
-Business-ideation commands include:
-
-- `orca-idea`
-- `orca-evaluate-idea`
-- `orca-plan-idea`
-- `orca-validate-idea`
-
-Background-mode commands include:
-
-- `orca-background`
-- `orca-keep-going`
-- `orca-background-status`
-
-Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
-
-- `orca-linear-setup`
-- `orca-linear-core`
-- `orca-linear-triage`
-- `orca-linear-planner`
-- `orca-linear-executor`
-- `orca-linear-qa`
-- `orca-linear-release`
-
-Business-ideation skills include:
-
-- `orca-business-ideation`
-
-Background-mode skills include:
-
-- `orca-background-mode`
-
-Templates in `templates/` include both full artifacts and Linear-ready comment formats.
-
-The reliability layer adds:
-
-- trace artifacts in `templates/run-trace.md`
-- receipt artifacts in `templates/execution-receipt.md`
-- lineage artifacts in `templates/artifact-lineage.md`
-- eval artifacts in `templates/eval-case.md` and `templates/eval-report.md`
-- benchmark artifacts in `benchmarks/onboarding-spec/` and `templates/benchmark-*.md`
-- workflow metrics artifacts in `templates/workflow-metrics.md`
-- background-run artifacts in `templates/background-run-*.md` and `templates/permission-request-note.md`
-- idea artifacts in `templates/idea-*.md`, `templates/opportunity-memo.md`, `templates/validation-plan.md`, and related research templates
-- shared-state and checkpoint artifacts in `templates/shared-state.md`, `templates/checkpoint-*.md`, and `templates/run-inspection.md`
-- approval requests in `templates/approval-request.md`
-- tool and MCP governance templates in `templates/tool-registry-entry.md`, `templates/mcp-server-entry.md`, and `templates/mcp-review.md`
-- setup templates in `templates/tool-requirements.md`, `templates/integration-status.md`, `templates/integration-health-report.md`, and `templates/*setup*guidance*.md`
-- replay and restore templates in `templates/replay-case.md` and `templates/runtime-status.md`
-- legacy modernization artifacts in `templates/legacy-audit.md`, `templates/legacy-risk-report.md`, and `templates/modernization-spec.md`
-- goal artifacts in `templates/goal-contract.md` and `templates/goal-status.md`
-- next-step artifacts in `templates/next-step-*.md` and `templates/user-guidance-profile.md`
-- regression candidates and tasks in `templates/regression-candidate.md` and `templates/regression-task.md`
-- typed contracts in `templates/contracts/`
-
-## Attribution Maintenance
-
-When ORCA-HVN adds a new upstream influence, wrapper, compatibility target, or redistributed component, contributors should update:
-
-- [UPSTREAM.md](UPSTREAM.md)
-- [docs/attribution-maintenance.md](docs/attribution-maintenance.md)
-- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) when notice handling changes
-
-## Blind QA In Linear
-
-ORCA-HVN treats first impression as evidence. In Linear-first mode, a blind QA agent should receive only:
-
-- Issue ID
-- Platform
-- Launch instructions
-- Optional one-sentence user mission
-
-The blind QA agent must not receive the spec, code, implementation plan, design rationale, or hidden issue discussion. It posts findings back to the same issue. A context briefer then creates a minimal packet for a second-pass tester so the issue thread preserves the difference between blind and briefed outcomes.
-
-The second-pass packet should follow the QA brief contract in `templates/contracts/qa-brief-contract.md`.
-
-## iOS Simulator And Web QA Support
-
-ORCA-HVN includes MCP-ready QA guidance for:
-
-- iOS simulator testing with launch, interaction, accessibility inspection, screenshots, and reproducible Linear comments
-- Web/browser testing with first-look task attempts, accessibility-visible element checks, screenshots, console/network observations, and regression notes
-
-Example MCP configuration files live in `mcp/`.
-
-## Linear Setup Help
-
-ORCA-HVN includes setup support for Linear:
-
-- `docs/linear-setup.md` walks through scope, states, labels, guidance, permissions, smoke tests, and opt-out rules.
-- `commands/orca-linear-setup.md` defines the agent workflow for configuring or validating Linear.
-- `skills/orca-linear-setup/SKILL.md` gives agents the exact setup procedure.
-- `templates/linear-setup-checklist.md` records setup decisions.
-- `scripts/linear-setup.sh` generates a local setup packet without handling credentials.
-
-## Opt-Out Mode
-
-If the user does not want Linear, ask what should be the system of record. Then map:
-
-- Linear issue to a GitHub issue, local task file, project doc, or tracker item
-- Linear project to an epic, milestone, folder, or roadmap doc
-- Linear state to a documented workflow gate
-- Linear comment to a durable note, PR comment, issue comment, or artifact file
-- Linear linked artifact to a local file path or URL
-
-Do not force Linear when the user opts out.
-
-## Reliability Layer
-
-ORCA-HVN now treats reliability as part of the core framework:
-
-- onboarding, discovery, and spec create durable context
-- idea one-pagers, scorecards, memos, and validation plans create a durable upstream decision record
-- run memory preserves durable facts and decisions
-- traces record what happened during meaningful runs
-- shared state keeps the current multi-role picture aligned
-- workflow metrics show how long runs took and where retries accumulated
-- evals judge the full trajectory
-- benchmark packs compare onboarding and spec quality over time
-- QA findings can become reusable regression tasks
-- approval gates control risky work
-- checkpoints enable pause, inspect, approve, reject, and resume flows
-- inspector artifacts make paused or blocked runs auditable
-- tool and MCP governance makes external execution trust explicit
-- legacy modernization emphasizes archaeology, business logic extraction, and staged migration
-- goal mode turns bounded specs or milestones into durable, verifiable execution contracts
-- background mode turns opt-in unattended work into bounded, inspectable progress loops
-- contracts keep artifacts consistent
-- security and prompt-injection guardrails keep external context from hijacking execution
-
-## Version Control And Iteration
-
-Framework changes should land as clear iterations with reviewable commits, validation evidence, and changelog updates. See `docs/version-control.md` and `templates/iteration-log.md`.
-
-## Repository Structure
-
-```text
-commands/   Installable command definitions
-docs/       Framework documentation and examples
-examples/   Small sample artifact sets
-install/    Local and global installation scripts
-mcp/        Example MCP configuration snippets
-registry/   Tool and MCP server trust registry
-scripts/    Validation and repository utility scripts
-skills/     Reusable ORCA-HVN skill definitions
-templates/  Copy-ready artifacts and Linear comments
-```
+- [docs/docs-automation.md](docs/docs-automation.md)
+- [docs/wiki-maintenance.md](docs/wiki-maintenance.md)
+- [docs/staleness-detection.md](docs/staleness-detection.md)
+- [docs/contributing-docs.md](docs/contributing-docs.md)
 
 ## Contributing
 
-Read `CONTRIBUTING.md` before opening a pull request. Changes should preserve ORCA-HVN's core guarantees: clear artifacts, bounded context, explicit QA mode, verifiable completion, and durable handoffs in Linear or the declared opt-out system of record.
+Use:
 
-## License
+```sh
+./scripts/validate-repo.sh
+```
 
-ORCA-HVN is released under the MIT License. See `LICENSE`.
+Then read:
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [docs/contributing-docs.md](docs/contributing-docs.md)
+- [docs/doc-owners.md](docs/doc-owners.md)
+
+## Attribution And Upstreams
+
+ORCA-HVN does not pretend it invented every underlying idea.
+
+Read:
+
+- [UPSTREAM.md](UPSTREAM.md)
+- [docs/attribution.md](docs/attribution.md)
+- [docs/provenance.md](docs/provenance.md)
+- [docs/wraps-vs-borrows.md](docs/wraps-vs-borrows.md)
+- [docs/licenses.md](docs/licenses.md)

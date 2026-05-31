@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, and a dedicated harness compatibility audit.
+Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, a dedicated harness compatibility audit, and top-level docs surfaces that should refresh as the framework changes.
 
 Primary research question:
 
@@ -24,6 +24,16 @@ Primary research question:
 - `docs/harness-watch.md`
 - `docs/ecosystem-watch.md`
 - `docs/ecosystem-opportunities.md`
+- `docs/README.md`
+- `docs/start-here.md`
+- `docs/feature-index.md`
+- `docs/command-index.md`
+- `docs/choose-your-path.md`
+- `docs/whats-new.md`
+- `docs/recent-doc-updates.md`
+- `docs/doc-owners.md`
+- `wiki/Home.md`
+- `wiki/_Sidebar.md`
 - `templates/ecosystem-adopt-issue.md`
 
 ## Outputs
@@ -36,6 +46,8 @@ Primary research question:
 - `docs/harness-watch.md`
 - `docs/ecosystem-watch.md`
 - `docs/ecosystem-opportunities.md`
+- `templates/doc-refresh-note.md`
+- `templates/wiki-update-note.md`
 - `reports/ecosystem-sweep/draft-issues/*.md` when direct issue creation is unavailable
 - updated `reports/ecosystem-sweep/state.json`
 
@@ -44,7 +56,8 @@ Primary research question:
 - do not edit ORCA-HVN product code by default
 - do not update dependencies by default
 - do not create branches, commits, or pushes by default
-- do not rewrite docs outside the sweep and watch artifacts by default
+- do not rewrite deep product reference docs by default
+- docs automation may propose or update routing pages, freshness notes, wiki summaries, and change-discovery pages when the research clearly affects them
 - use official docs, release notes, changelogs, and upstream repos first
 - create draft issues only for findings classified as `Adopt now`
 - avoid duplicate draft issues when an equivalent item is already open or already tracked
@@ -152,6 +165,8 @@ Every sweep should actively look for workflow-enabling execution features:
 - broken or deprecated setup paths ORCA-HVN should stop recommending
 - harness-level compatibility shifts across Codex, Claude Code, Hermes Agent, OpenCode, Cursor, GitHub Copilot, and other tracked hosts
 - capability parity gaps that matter to ORCA-HVN workflows
+- documentation drift signals caused by new features, commands, host changes, or setup-path changes
+- missing routing from the README, start-here docs, guide layer, or wiki homepage
 
 ## Harness Compatibility Audit Phase
 
@@ -245,6 +260,23 @@ Maintain [docs/ecosystem-opportunities.md](../../docs/ecosystem-opportunities.md
 - next recommended action
 
 Maintain [docs/harness-watch.md](../../docs/harness-watch.md) as the harness-level shift log.
+
+Maintain the docs routing layer when the framework surface changes materially:
+
+- [docs/README.md](../../docs/README.md)
+- [docs/start-here.md](../../docs/start-here.md)
+- [docs/feature-index.md](../../docs/feature-index.md)
+- [docs/command-index.md](../../docs/command-index.md)
+- [docs/choose-your-path.md](../../docs/choose-your-path.md)
+- [docs/whats-new.md](../../docs/whats-new.md)
+- [docs/recent-doc-updates.md](../../docs/recent-doc-updates.md)
+- [wiki/Home.md](../../wiki/Home.md)
+- [wiki/_Sidebar.md](../../wiki/_Sidebar.md)
+
+When updates are needed but the automation should not rewrite the page directly, write:
+
+- `templates/doc-refresh-note.md`
+- `templates/wiki-update-note.md`
 
 ## Draft Issue Rule
 

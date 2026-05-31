@@ -25,6 +25,24 @@ for file in \
   docs/ci-quality.md \
   docs/run-memory.md \
   docs/spec-driven-workflow.md \
+  docs/README.md \
+  docs/information-architecture.md \
+  docs/start-here.md \
+  docs/quickstart.md \
+  docs/intro.md \
+  docs/feature-index.md \
+  docs/command-index.md \
+  docs/use-case-map.md \
+  docs/choose-your-path.md \
+  docs/glossary.md \
+  docs/concept-map.md \
+  docs/docs-automation.md \
+  docs/wiki-maintenance.md \
+  docs/staleness-detection.md \
+  docs/doc-owners.md \
+  docs/contributing-docs.md \
+  docs/whats-new.md \
+  docs/recent-doc-updates.md \
   docs/benchmark-pack.md \
   docs/workflow-accounting.md \
   docs/qa-to-regression.md \
@@ -105,6 +123,13 @@ for file in \
   docs/hosts/hermes-agent.md \
   docs/hosts/vscode.md \
   docs/hosts/generic.md \
+  docs/guides/using-hvn-with-codex.md \
+  docs/guides/using-hvn-with-hermes.md \
+  docs/guides/goal-mode-guide.md \
+  docs/guides/background-mode-guide.md \
+  docs/guides/business-ideation-guide.md \
+  docs/guides/paved-roads-guide.md \
+  docs/guides/runtime-adaptation-guide.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -179,6 +204,10 @@ for file in \
   templates/schema-migration-note.md \
   templates/artifact-mapping.md \
   templates/ecosystem-adopt-issue.md \
+  templates/doc-refresh-note.md \
+  templates/wiki-update-note.md \
+  templates/doc-metadata.md \
+  templates/doc-change-checklist.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
@@ -209,6 +238,7 @@ for file in \
   commands/orca-plan-idea.md \
   commands/orca-validate-idea.md \
   commands/orca-controller.md \
+  commands/orca-docs.md \
   commands/orca-orient.md \
   commands/orca-schema.md \
   commands/orca-receipt.md \
@@ -248,6 +278,7 @@ for file in \
   skills/orca-controller-mode/SKILL.md \
   skills/orca-delegation/SKILL.md \
   skills/orca-portability/SKILL.md \
+  skills/orca-docs-system/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -299,6 +330,11 @@ for file in \
   docs/examples/validation-plan.md \
   docs/examples/idea-kill-decision.md \
   docs/examples/idea-pursue-decision.md \
+  docs/examples/new-user-path.md \
+  docs/examples/hermes-user-path.md \
+  docs/examples/codex-user-path.md \
+  docs/examples/business-ideation-user-path.md \
+  docs/examples/background-mode-user-path.md \
   docs/examples/next-step-beginner.md \
   docs/examples/next-step-advanced.md \
   docs/examples/post-spec-guidance.md \
@@ -321,6 +357,19 @@ for file in \
   THIRD_PARTY_NOTICES.md \
   UPSTREAM.md \
   HVN-STATUS.md \
+  wiki/Home.md \
+  wiki/Getting-Started.md \
+  wiki/Core-Concepts.md \
+  wiki/Feature-Index.md \
+  wiki/Workflow-Index.md \
+  wiki/Commands.md \
+  wiki/Hosts-and-Harnesses.md \
+  wiki/Automation.md \
+  wiki/Examples.md \
+  wiki/FAQ.md \
+  wiki/_Sidebar.md \
+  wiki/_Footer.md \
+  wiki/Whats-New.md \
   schema/README.md \
   schema/versions/v1/onboarding-summary.schema.json \
   schema/versions/v1/spec.schema.json \
