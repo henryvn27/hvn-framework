@@ -110,10 +110,10 @@ Use the top-level docs as routing, not as one giant manual:
 - I want the shortest starter path: [docs/first-workflow.md](docs/first-workflow.md)
 - I want the big-picture model: [docs/intro.md](docs/intro.md)
 - I want to configure a reusable vault or corpus: [docs/corpus-overview.md](docs/corpus-overview.md)
-- I am coming from GStack or GSD: [docs/guides/from-gstack-or-gsd-to-orca-hvn.md](docs/guides/from-gstack-or-gsd-to-orca-hvn.md)
 - I use a controller agent like Hermes: [docs/guides/using-hvn-with-hermes.md](docs/guides/using-hvn-with-hermes.md)
 - I inherited a messy repo: [docs/legacy-modernization.md](docs/legacy-modernization.md)
 - I want startup or idea-first work: [docs/guides/business-ideation-guide.md](docs/guides/business-ideation-guide.md)
+- I want the full docs map: [docs/README.md](docs/README.md)
 
 ## Advanced Areas
 
