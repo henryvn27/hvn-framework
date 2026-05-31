@@ -35,6 +35,8 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-validate-integration`
 - `orca-runtime`
 - `orca-status`
+- `orca-controller`
+- `orca-orient`
 - `orca-schema`
 - `orca-spec`
 - `orca-plan`
@@ -43,12 +45,14 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-goal-create`
 - `orca-goal-status`
 - `orca-goal-review`
+- `orca-delegate`
 - `orca-build`
 - `orca-trace`
 - `orca-receipt`
 - `orca-lineage`
 - `orca-state`
 - `orca-metrics`
+- `orca-ingest`
 - `orca-checkpoint`
 - `orca-inspect`
 - `orca-benchmark`
@@ -89,6 +93,8 @@ Use `orca-state`, `orca-checkpoint`, and `orca-inspect` when multiple roles need
 Use `orca-tool-review` and `orca-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.
 Use `orca-setup`, `orca-check-setup`, and `orca-validate-integration` when GitHub, Linear, MCP, connectors, or CLI helpers are needed for the workflow.
 Use `orca-runtime` and `orca-status` when harness capabilities or policy switches should change the recommended path or need inspection.
+Use `orca-controller` and `orca-orient` when an external controller agent needs a fast current-state view.
+Use `orca-delegate` when another harness or collaborator should execute bounded work, and `orca-ingest` when structured results return.
 Use `orca-schema` and `orca-validate-schema` when portable artifact structure, versioning, mapping, or schema validity matters.
 Use `orca-legacy` when the target system is inherited, under-documented, fragile, or modernization-focused.
 Use `orca-goal` commands only after spec and milestone planning produce a bounded, verifiable objective.

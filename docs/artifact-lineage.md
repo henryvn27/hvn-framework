@@ -25,6 +25,9 @@ Track links between:
 - QA finding
 - regression task
 - approval request
+- delegation brief
+- delegation result
+- result ingestion
 - issue, PR, or handoff artifact
 
 ## Maintenance Rule

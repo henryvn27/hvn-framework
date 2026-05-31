@@ -4,6 +4,11 @@
 
 -
 
+## Controller And Executor Split
+
+- Controller:
+- Executor:
+
 ## Detection Confidence
 
 -
@@ -27,6 +32,10 @@
 ## Recommended Workflow Mode
 
 -
+
+## Delegation Recommendation
+
+- 
 
 ## Missing Integrations
 

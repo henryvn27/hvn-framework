@@ -17,9 +17,9 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Core Skill Groups
 
 - Core governance: `orca-core`
-- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`
+- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`
 - Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
-- Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`
+- Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`, `orca-delegation`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
 - QA: `orca-blind-qa`, `orca-context-brief`, `orca-ios-sim-qa`, `orca-web-qa`
 - Learning: `orca-retro`
@@ -36,6 +36,7 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-benchmark` for onboarding/spec comparisons
 - `orca-accounting` for workflow timing and retry signals
 - `orca-portability` for schema definition, validation, versioning, and artifact mapping
+- `orca-controller-mode` for repository-first orientation, routing, and multi-harness coherence
 - `orca-regression-task` for preserving high-value findings as regression work
 - `orca-shared-state` for current multi-role coordination
 - `orca-checkpoint` for explicit pause, inspect, approve, reject, and resume flows
@@ -46,3 +47,4 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-legacy` for repo archaeology, business logic extraction, and staged modernization planning
 - `orca-goal-mode` for converting bounded specs or milestones into durable goal contracts
 - `orca-next-step` for concise, adaptive phase-exit guidance
+- `orca-delegation` for bounded controller-to-executor briefs and structured returns

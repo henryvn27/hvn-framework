@@ -18,6 +18,7 @@
 - Added legacy modernization workflow with repo archaeology, legacy audit, risk report, modernization spec, and staged migration guidance.
 - Added goal mode support with goal contracts, status tracking, safety rules, host adapters, and host-neutral ORCA-HVN goal commands.
 - Added a portable artifact schema layer with versioned schemas, mapping guidance, validation guidance, and ORCA-HVN schema commands.
+- Added controller-agent orientation, delegation, ingestion, and controller/executor compatibility support for multi-harness ORCA-HVN workflows.
 
 ### Validation
 

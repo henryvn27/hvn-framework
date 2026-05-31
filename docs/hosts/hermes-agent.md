@@ -1,6 +1,16 @@
 # Hermes Agent Host Adapter
 
-Hermes Agent support for `/goal` should be documented conservatively. Do not assume parity with Codex CLI or Claude Code.
+Hermes Agent is a strong fit for controller-style ORCA-HVN usage because Hermes-like runtimes often provide memory, tools, skills, and orchestration surfaces. Goal-mode specifics should still be documented conservatively. Do not assume parity with Codex CLI or Claude Code.
+
+## Recommended Entry Path
+
+For controller-style use:
+
+1. read `HVN-STATUS.md`
+2. read the latest orientation, status, or inspection artifact
+3. identify the active phase, missing artifacts, and blockers
+4. decide whether Hermes should act directly or delegate
+5. ingest structured results back into ORCA-HVN
 
 ## ORCA-HVN Usage
 
@@ -14,6 +24,18 @@ Before using native goal mode:
 ## Default Stance
 
 Use ORCA-HVN fallback unless the current host clearly supports compatible goal behavior.
+
+## Controller Role
+
+Hermes is a good candidate for:
+
+- orientation
+- routing
+- delegation
+- result ingestion
+- multi-harness coherence
+
+Use `orca-controller`, `orca-orient`, `orca-delegate`, and `orca-ingest` for the controller surface.
 
 ## Fallback
 
@@ -40,4 +62,4 @@ See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../ha
 
 ## Source Notes
 
-Public discussion may mention goal behavior, but ORCA-HVN should rely on local host documentation or command help before invoking it.
+Public discussion may mention goal behavior, memory, or orchestration support, but ORCA-HVN should rely on local host documentation or command help before invoking host-specific features.

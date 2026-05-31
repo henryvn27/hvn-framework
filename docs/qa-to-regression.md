@@ -71,3 +71,5 @@ A good regression task has:
 For legacy work, regression tasks should capture current behavior before modernization changes begin. Favor characterization checks, manual reproduction paths, and high-value business-rule coverage before broad rewrites.
 
 Portable schemas help preserve those findings when moving them between harnesses, trackers, or regression tooling, but human review still decides whether the task is worth keeping.
+
+In delegated workflows, the controller should ingest executor QA outputs before deciding whether a finding becomes a regression task.

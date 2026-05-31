@@ -25,6 +25,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 17. **Runtime behavior follows reviewed compatibility:** the same workflow intent may take different safe paths in different harnesses.
 18. **Receipts beat vague memory:** meaningful runs should leave compact evidence that can be inspected later.
 19. **Recovery needs explicit artifacts:** replay and restore should rely on visible checkpoints, receipts, and lineage rather than hidden state.
+20. **Controller and executor roles should stay explicit:** multi-harness work should preserve clear routing, bounded delegation, and structured result ingestion.
 
 ## Coordination Modes
 
@@ -53,6 +54,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Research mode:** gather evidence when the answer is not already known.
 - **Setup mode:** identify, configure, validate, or fall back from required external tools.
 - **Runtime adaptation mode:** detect the harness, apply capability profiles, and choose safe routes and fallbacks.
+- **Controller mode:** orient a project-level controller agent and decide direct execution versus delegation.
 - **Specification mode:** convert issue context into acceptance criteria and non-goals.
 - **Planning mode:** sequence implementation into verifiable phases and post an approval-ready plan.
 - **Next-step mode:** produce calm, adaptive guidance after a major phase completes.
@@ -70,6 +72,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Regression-task mode:** convert high-value findings into reusable regression work.
 - **Checkpoint mode:** pause, inspect, approve, reject, or revise and resume.
 - **Inspection mode:** aggregate run identity, state, approvals, artifacts, and blockers into a resumable view.
+- **Delegation mode:** create bounded executor briefs and structured returns.
 - **Tool governance mode:** review tools and MCP servers, assign trust levels, and define constraints.
 - **Benchmark mode:** compare onboarding and spec quality across versions or workflow changes.
 - **Eval mode:** judge the trajectory and artifact quality of a workflow.
@@ -89,12 +92,15 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - Spec or Linear spec comment
 - Implementation plan or Linear plan comment
 - Next-step guidance after major phase completion when useful
+- Project orientation artifact when a controller needs a fast repo entry point
 - Goal contract and status when using host-native or fallback goal mode
 - Approval request or approval record when risk requires it
 - Run trace for meaningful or risky runs
 - Execution receipt for meaningful runs that should be reviewable later
 - Artifact lineage when provenance, supersession, or downstream dependency clarity matters
 - Shared-state artifact when multiple roles are cooperating or handoff quality matters
+- Delegation brief and delegation result when another harness or collaborator executes bounded work
+- Result ingestion artifact when delegated output is brought back into ORCA-HVN
 - Workflow metrics record when operational efficiency matters
 - Checkpoint request and decision when humans intervene mid-run
 - Run inspection artifact when a run is paused, blocked, or needs explicit review
@@ -189,6 +195,10 @@ When QA, review, or debugging uncovers a repeated or high-value risk, consider p
 ## Shared State And Checkpoint Policy
 
 Use shared state for the current multi-role coordination picture, not for durable memory or trace detail. Use checkpoints when humans need to inspect or decide before the run continues. Resume only from recorded checkpoint decisions.
+
+## Controller And Delegation Policy
+
+When one agent controls the workflow and another executes bounded work, keep the split explicit. The controller owns routing, coherence, and ingestion. The executor owns the bounded result and its evidence.
 
 ## Security And Prompt-Injection Policy
 

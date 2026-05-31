@@ -25,6 +25,7 @@ Approval is normally required for:
 - high-risk tool calls outside allowed registry contexts
 - goal mode for risky, destructive, unclear, or approval-dependent work
 - widening a runtime default after only fresh research or limited replay evidence
+- controller to executor delegation when the delegated action would cross an existing approval boundary
 - scope expansion beyond the approved spec
 - issue-closing or ship-readiness decisions when confidence is low
 

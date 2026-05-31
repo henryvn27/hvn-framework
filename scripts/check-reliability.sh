@@ -60,6 +60,11 @@ for file in \
   docs/goal-safety.md \
   docs/goal-recommendation-rules.md \
   docs/milestone-planning.md \
+  docs/controller-agent-integration.md \
+  docs/project-orientation.md \
+  docs/delegation.md \
+  docs/result-ingestion.md \
+  docs/controller-executor-compatibility.md \
   docs/harness-compatibility.md \
   docs/harness-watch.md \
   docs/compatibility-matrix.md \
@@ -121,6 +126,11 @@ for file in \
   templates/next-step-ship.md \
   templates/goal-contract.md \
   templates/goal-status.md \
+  templates/project-orientation.md \
+  templates/delegation-brief.md \
+  templates/delegation-result.md \
+  templates/result-ingestion.md \
+  templates/controller-executor-profile.md \
   templates/schema-migration-note.md \
   templates/artifact-mapping.md \
   templates/ecosystem-adopt-issue.md \
@@ -148,6 +158,8 @@ for file in \
   commands/orca-validate-integration.md \
   commands/orca-runtime.md \
   commands/orca-status.md \
+  commands/orca-controller.md \
+  commands/orca-orient.md \
   commands/orca-schema.md \
   commands/orca-receipt.md \
   commands/orca-lineage.md \
@@ -159,6 +171,8 @@ for file in \
   commands/orca-goal-create.md \
   commands/orca-goal-status.md \
   commands/orca-goal-review.md \
+  commands/orca-delegate.md \
+  commands/orca-ingest.md \
   commands/orca-validate-schema.md \
   skills/orca-observability/SKILL.md \
   skills/orca-eval/SKILL.md \
@@ -175,6 +189,8 @@ for file in \
   skills/orca-legacy/SKILL.md \
   skills/orca-next-step/SKILL.md \
   skills/orca-goal-mode/SKILL.md \
+  skills/orca-controller-mode/SKILL.md \
+  skills/orca-delegation/SKILL.md \
   skills/orca-portability/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
@@ -223,10 +239,13 @@ for file in \
   docs/examples/goal-review.md \
   docs/examples/goal-status-handoff.md \
   docs/examples/bad-goal-vs-good-goal.md \
+  docs/examples/hermes-zip-project-entry.md \
+  docs/examples/hermes-to-codex-delegation.md \
   docs/examples/portable-spec-schema.md \
   docs/examples/portable-goal-contract.md \
   docs/examples/schema-migration.md \
   docs/examples/artifact-mapping.md \
+  HVN-STATUS.md \
   schema/README.md \
   schema/versions/v1/onboarding-summary.schema.json \
   schema/versions/v1/spec.schema.json \

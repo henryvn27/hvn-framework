@@ -15,6 +15,7 @@ Receipts answer:
 - what result status was reached
 - which risks remain
 - which approvals were used
+- whether the run was controller-directed or directly executed
 
 ## What A Receipt Is Not
 
@@ -37,3 +38,4 @@ A good receipt is:
 - lineage links the receipt to upstream and downstream artifacts
 - replay uses receipts to compare old and new runs
 - restore uses receipts to identify known-good recovery points
+- controller workflows use receipts to decide whether delegated work can be ingested, reviewed, or sent to QA

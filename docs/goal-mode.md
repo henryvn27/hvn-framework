@@ -47,6 +47,8 @@ The intended flow is:
 6. execution
 7. verification
 
+In controller/executor workflows, the controller should decide whether goal mode is appropriate and the executor should stay within the delegated contract.
+
 The wrong flow is:
 
 1. idea

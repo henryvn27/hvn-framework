@@ -79,6 +79,11 @@ docs/goal-mode.md
 docs/goal-safety.md
 docs/goal-recommendation-rules.md
 docs/milestone-planning.md
+docs/controller-agent-integration.md
+docs/project-orientation.md
+docs/delegation.md
+docs/result-ingestion.md
+docs/controller-executor-compatibility.md
 docs/harness-compatibility.md
 docs/harness-watch.md
 docs/compatibility-matrix.md
@@ -163,6 +168,8 @@ docs/examples/goal-for-milestone.md
 docs/examples/goal-review.md
 docs/examples/goal-status-handoff.md
 docs/examples/bad-goal-vs-good-goal.md
+docs/examples/hermes-zip-project-entry.md
+docs/examples/hermes-to-codex-delegation.md
 docs/examples/portable-spec-schema.md
 docs/examples/portable-goal-contract.md
 docs/examples/schema-migration.md
@@ -201,6 +208,7 @@ reports/ecosystem-sweep/draft-issues/README.md
 reports/compatibility/latest.md
 reports/compatibility/2026-05-30.md
 mcp/linear.example.json
+HVN-STATUS.md
 "
 
 for file in $required_files; do

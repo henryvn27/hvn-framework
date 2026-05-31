@@ -46,6 +46,7 @@ For portable machine-readable exchange, use the run-memory schema in `schema/ver
 - receipts summarize the run outcome for quick reinspection
 - lineage links the artifact to upstream and downstream workflow state
 - shared state records the current multi-role picture for an active run
+- controller and executor role decisions may be preserved when they become durable operating context
 - evals judge how well the workflow performed
 - workflow metrics record time, retries, and optional usage signals
 

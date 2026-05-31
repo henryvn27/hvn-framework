@@ -5,6 +5,8 @@
 - Run ID:
 - Session ID:
 - Harness:
+- Controller:
+- Executor:
 - Start time:
 - End time:
 

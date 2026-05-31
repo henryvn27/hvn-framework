@@ -5,6 +5,8 @@
 - Run ID:
 - Work item:
 - Harness:
+- Controller:
+- Executor:
 
 ## Current Phase
 

@@ -8,6 +8,8 @@ Teams can opt out of Linear. In opt-out mode, ORCA-HVN keeps the same gates and 
 
 ORCA-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, unsafe execution without clear approval or traceability, and workflows that cannot compare their own quality over time.
 
+It is also designed to work cleanly when one agent controls the project and another executes bounded work. A Hermes-like controller and a Codex-like executor should be able to share the same artifact trail without losing state or ownership.
+
 ## Release Status
 
 This repository is prepared as a public release candidate for a Linear-first ORCA-HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
@@ -43,6 +45,8 @@ Use ORCA-HVN when you want AI agents to build software with engineering discipli
 - **Tool governance:** external tools and MCP servers have explicit trust levels, registry entries, and audit expectations.
 - **External tool setup:** GitHub, Linear, connectors, MCP, CLI helpers, and manual fallbacks are handled through harness-aware setup checks.
 - **Runtime adaptation:** ORCA-HVN chooses the safest reviewed execution path for the active harness instead of assuming feature parity.
+- **Controller orientation:** external controller agents can enter the repo through a concise status and orientation surface.
+- **Delegation and ingestion:** controller agents can delegate bounded work and re-ingest structured results back into the framework.
 - **Execution receipts:** meaningful runs produce compact, reviewable summaries of actions, verification, approvals, and remaining risk.
 - **Artifact lineage:** upstream and downstream workflow artifacts can be linked explicitly.
 - **Replay and restore:** prior runs can be compared or recovered without pretending workflows are perfectly deterministic.
@@ -117,6 +121,11 @@ For Linear-first setup, read:
 - `docs/runtime-fallbacks.md`
 - `docs/runtime-degraded-mode.md`
 - `docs/runtime-status.md`
+- `docs/controller-agent-integration.md`
+- `docs/project-orientation.md`
+- `docs/delegation.md`
+- `docs/result-ingestion.md`
+- `docs/controller-executor-compatibility.md`
 - `docs/execution-receipts.md`
 - `docs/artifact-lineage.md`
 - `docs/replay-restore.md`
@@ -150,29 +159,31 @@ For opt-out setup, choose a system of record and map ORCA-HVN issue comments to 
 5. `orca-legacy` runs when the target is inherited, under-documented, or fragile.
 6. `orca-spec` creates a structured spec from issue context or modernization audit.
 7. `orca-linear-plan-comment` posts the plan to the issue.
-8. `orca-next` gives a short phase-exit recommendation when useful.
+8. `orca-controller` or `orca-orient` gives a controller agent a fast entry into current project state.
 9. `orca-approve` records approval when scope or risk requires it.
 10. `orca-goal` recommends goal mode only for bounded, verifiable milestones.
-11. `orca-build` executes approved scope or the goal contract.
-12. `orca-trace` records what happened when the run is meaningful or risky.
-13. `orca-receipt` summarizes the run compactly.
-14. `orca-lineage` links the new artifact to the workflow chain.
-15. `orca-state` keeps shared coordination context current across roles.
-16. `orca-metrics` records time, retries, and optional usage signals.
-17. `orca-review` posts findings.
-18. `orca-test-blind` runs first-look QA with minimal issue context.
-19. `orca-context-brief` creates a bounded second-pass packet.
-20. `orca-test-briefed` and `orca-test-regression` retest.
-21. `orca-regression-task` promotes high-value findings into reusable regression work.
-22. `orca-checkpoint` pauses risky or ambiguous work for human inspection and decision.
-23. `orca-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-24. `orca-tool-review` or `orca-mcp-review` governs new or risky external tools.
-25. `orca-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-26. `orca-eval` scores trajectory quality when validating ORCA-HVN behavior or release confidence.
-27. `orca-replay` or `orca-restore` compares or recovers workflow behavior when needed.
-28. `orca-linear-ship-check` posts ship readiness.
-29. `orca-status` explains current runtime routing when needed.
-30. Issue moves to done only with evidence.
+11. `orca-delegate` creates a bounded executor brief when another harness should do the work.
+12. `orca-build` executes approved scope or the goal contract.
+13. `orca-trace` records what happened when the run is meaningful or risky.
+14. `orca-receipt` summarizes the run compactly.
+15. `orca-lineage` links the new artifact to the workflow chain.
+16. `orca-state` keeps shared coordination context current across roles.
+17. `orca-metrics` records time, retries, and optional usage signals.
+18. `orca-ingest` brings delegated results back into ORCA-HVN in a structured way.
+19. `orca-review` posts findings.
+20. `orca-test-blind` runs first-look QA with minimal issue context.
+21. `orca-context-brief` creates a bounded second-pass packet.
+22. `orca-test-briefed` and `orca-test-regression` retest.
+23. `orca-regression-task` promotes high-value findings into reusable regression work.
+24. `orca-checkpoint` pauses risky or ambiguous work for human inspection and decision.
+25. `orca-inspect` produces a resumable view of run identity, state, approvals, and blockers.
+26. `orca-tool-review` or `orca-mcp-review` governs new or risky external tools.
+27. `orca-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+28. `orca-eval` scores trajectory quality when validating ORCA-HVN behavior or release confidence.
+29. `orca-replay` or `orca-restore` compares or recovers workflow behavior when needed.
+30. `orca-linear-ship-check` posts ship readiness.
+31. `orca-status` explains current runtime routing when needed.
+32. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 

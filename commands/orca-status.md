@@ -21,10 +21,11 @@ Use when the user or maintainer needs to understand why ORCA-HVN is taking a cer
 
 1. Detect the harness and confidence.
 2. Read the capability profile.
-3. List enabled, disabled, and degraded features.
-4. List active policy switches and missing integrations.
-5. Report latest receipt, related artifacts, replay availability, and restore points when available.
-6. Report important caveats.
+3. Identify controller and executor roles if known.
+4. List enabled, disabled, and degraded features.
+5. List active policy switches, delegation recommendation, and missing integrations.
+6. Report latest receipt, related artifacts, replay availability, and restore points when available.
+7. Report important caveats.
 
 ## Outputs And Artifacts
 
@@ -38,5 +39,5 @@ Use when the user or maintainer needs to understand why ORCA-HVN is taking a cer
 
 ## Related Commands And Skills
 
-- Commands: `orca-runtime`, `orca-check-setup`
+- Commands: `orca-runtime`, `orca-check-setup`, `orca-orient`
 - Skills: `orca-runtime-adaptation`

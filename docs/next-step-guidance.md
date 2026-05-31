@@ -64,6 +64,13 @@ Phase completion creates a transition point. Next-step guidance should make that
 
 The guidance should not replace run memory, traces, approval gates, or handoff artifacts. It is the readable bridge between them.
 
+In controller workflows, next-step guidance should also help answer:
+
+- should the controller continue directly
+- should the controller delegate
+- what should the executor be told
+- what artifact should come back next
+
 ## Missing Integrations
 
 If the recommended next step depends on a missing external tool, the guidance should say:

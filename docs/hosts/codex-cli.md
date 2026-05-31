@@ -11,6 +11,14 @@ Use native goal mode when:
 - verification is observable
 - approval gates are satisfied
 
+Codex is also a strong executor harness for:
+
+- implementation
+- bounded repo research
+- QA passes
+- issue-focused work
+- goal-mode execution when supported and approved
+
 ## Lifecycle
 
 Codex goal behavior should be treated as host-specific. When available, use the host's supported lifecycle commands for set, status, pause, resume, and clear. If local command help differs from these docs, follow the local installed version and record the difference in the goal status artifact.
@@ -24,6 +32,15 @@ If `/goal` is unavailable or experimental behavior is not acceptable, use ORCA-H
 - run trace
 - goal status artifact
 - checkpoints for pause and resume
+
+## Controller To Executor Path
+
+When another harness is controlling the project:
+
+- delegate Codex a bounded task, not open-ended project ownership
+- include linked spec, milestone, or goal contract
+- require verification and a structured return
+- ingest Codex output back through receipt, lineage, and next-step artifacts
 
 ## External Tool Setup
 

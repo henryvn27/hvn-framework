@@ -32,6 +32,8 @@ Scheduled research updates compatibility knowledge. Runtime adaptation consumes 
 
 Receipts, lineage, replay, and restore make those runtime choices inspectable and safer to evolve.
 
+Controller/executor routing is part of runtime adaptation. A controller may choose one harness for orchestration and another for bounded execution when the pairing is clearer or safer than single-harness operation.
+
 ## Runtime Rule
 
 If support is:
