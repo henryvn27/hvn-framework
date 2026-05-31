@@ -8,6 +8,7 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 ### Claude Code
 - Docs: https://code.claude.com/docs/en/overview
 - Commands: https://code.claude.com/docs/en/commands
+- MCP: https://code.claude.com/docs/en/mcp
 - Changelog index: https://code.claude.com/docs/en/release-notes
 
 ### Codex CLI
@@ -37,6 +38,20 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - Repo: https://github.com/github/spec-kit
 - AGENTS guidance: https://github.com/github/spec-kit/blob/main/AGENTS.md
 
+## Integration Setup Sources
+
+### GitHub
+- GitHub MCP server: https://github.com/github/github-mcp-server
+- GitHub CLI auth: https://cli.github.com/manual/gh_auth_status
+- GitHub Copilot MCP docs: https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp
+
+### Linear
+- Linear MCP: https://linear.app/docs/mcp
+- Linear docs: https://linear.app/docs
+
+### VS Code
+- VS Code MCP servers: https://code.visualstudio.com/docs/copilot/chat/mcp-servers
+
 ## Watch Themes
 
 - persistent goals and `/goal`-style flows
@@ -48,6 +63,12 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - run inspection, observability, and inspector surfaces
 - workflow metrics and cost tracking
 - tool governance, MCP review, and tool trust
+- GitHub and Linear setup paths
+- MCP-based setup flow changes
+- official connector support changes
+- host-specific install and config changes
+- auth and permission pattern changes
+- deprecated setup recommendations
 - skill packaging and portability
 - onboarding and install ergonomics
 - novice and expert workflow adaptation
@@ -69,6 +90,19 @@ For each materially changed harness, answer:
 - What repo, docs, command, template, or workflow change would HVN need?
 - Does it improve beginner UX, expert UX, or both?
 - Is it worth building now?
+
+## Integration Setup Questions
+
+For each GitHub, Linear, MCP, connector, auth, permission, or host-specific setup change, answer:
+
+- What changed in the setup path?
+- Which hosts are affected?
+- Which method changed: native connector, MCP, API token, plugin, CLI helper, or manual?
+- Does this create a better default path HVN should recommend?
+- Does this break or deprecate an old HVN recommendation?
+- Does the change affect beginner setup, advanced setup, or both?
+- Is the change host-specific or broadly portable?
+- Should HVN docs, commands, templates, host adapters, or degraded-mode guidance change?
 
 ## Recommendation Categories
 

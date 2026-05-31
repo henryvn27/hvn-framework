@@ -22,6 +22,13 @@ Every sweep should explicitly watch:
 - workflow metrics and cost tracking
 - approval and human-in-the-loop patterns
 - tool governance and MCP review
+- GitHub integration setup paths
+- Linear integration setup paths
+- MCP-based setup flows
+- connector support changes
+- host-specific install and config steps
+- auth and permission pattern changes
+- deprecated setup patterns
 - onboarding UX improvements
 - novice and expert workflow adaptation
 - regression generation from QA
@@ -38,6 +45,10 @@ For each active opportunity, keep:
 - adoption shape
 - primary category
 - cross-harness or host-specific status
+- setup method when relevant
+- affected hosts when relevant
+- currently recommended setup path when relevant
+- unstable or deprecated setup path when relevant
 - required HVN change
 - UX impact
 - first seen
@@ -58,6 +69,7 @@ For each active opportunity, keep:
 - host-adapter opportunity
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
+- setup-path update
 
 ### commands
 
@@ -97,6 +109,33 @@ Track existence and confidence for:
 | inspection | unknown | unknown | unknown | unknown | Track run, artifact, trace, and status inspection. |
 | tool governance | unknown | unknown | unknown | unknown | Track MCP review, allowlists, and tool trust behavior. |
 | QA support | unknown | unknown | unknown | unknown | Track regression generation, evals, and harness QA support. |
+
+## Integration Setup Watch
+
+Track currently recommended setup paths and caveats. Update this table during each sweep when official docs, host behavior, or connector support changes.
+
+| Service | Codex CLI | Claude Code | Hermes Agent | OpenCode | VS Code | Generic fallback |
+| --- | --- | --- | --- | --- | --- | --- |
+| GitHub | connector, approved MCP, `gh`, or manual; verify locally | MCP or configured connector when available; manual fallback | verify host docs before recommending connector parity | unknown; verify local docs | Copilot connector, MCP, `gh`, or manual | `gh`, approved MCP, token, or manual |
+| Linear | connector, approved MCP, or manual; verify locally | MCP path when approved; manual fallback | verify host docs before recommending connector parity | unknown; verify local docs | MCP, approved token path, or manual | approved MCP, token, or manual |
+
+## Setup Path Risks
+
+Use this section for unstable, broken, or deprecated setup guidance.
+
+- No active setup-path risks yet.
+
+## Setup Simplification Opportunities
+
+Use this section for easier setup paths HVN may want to adopt.
+
+- No active setup simplification opportunities yet.
+
+## Host-Specific Caveats
+
+- Do not assume MCP setup, connector auth, or write permissions transfer across hosts.
+- Treat official connector changes as host-specific until evidence shows portability.
+- If a setup path changes from local server to remote MCP, verify auth and permission implications before recommending it.
 
 ## Recently Adopted
 

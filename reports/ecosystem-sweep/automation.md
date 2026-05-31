@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Run a research-first strategic sweep for the HVN ecosystem without changing product code by default.
+Run a research-first strategic sweep for the HVN ecosystem without changing product code by default. The sweep tracks both execution-capability changes and setup-path changes for important external integrations.
 
 Primary research question:
 
@@ -81,6 +81,19 @@ Track whether these appear to exist and at what confidence:
 - tool governance
 - QA support
 
+## Integration setup changes
+For GitHub, Linear, and any other materially relevant service:
+- what changed
+- affected hosts
+- setup method affected: native connector, MCP, API token, plugin, CLI helper, or manual
+- whether HVN setup docs should change
+- whether this creates a better default path
+- whether this breaks or deprecates an old recommendation
+- whether the recommendation is host-specific or broadly portable
+- evidence/source
+- classification
+- primary category
+
 ## Recommendations by category
 Group under commands, memory, install, cross-harness, QA, and workflow.
 
@@ -117,6 +130,14 @@ Every sweep should actively look for workflow-enabling execution features:
 - novice and expert workflow adaptation
 - regression generation from QA
 - benchmark and eval improvements
+- GitHub integration paths
+- Linear integration paths
+- MCP-based setup flows
+- official connector support changes
+- host-specific install or config steps
+- auth and permission pattern changes
+- easier setup paths HVN could recommend
+- broken or deprecated setup paths HVN should stop recommending
 
 ## Recommendation Categories
 
@@ -144,6 +165,7 @@ Also classify the adoption shape:
 - host-adapter opportunity
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
+- setup-path update
 
 ## Analysis Rules
 
@@ -155,6 +177,15 @@ Do not stop at "feature exists." Each material finding must answer:
 - Does it improve beginner UX, expert UX, or both?
 - Is it worth building now?
 - What confidence level does the evidence support?
+
+For setup-path findings, also answer:
+
+- How did setup change?
+- Who is affected?
+- Does HVN documentation or workflow guidance need to change?
+- Does the change improve the default setup path?
+- Does the change break or deprecate an existing recommendation?
+- Is the setup path host-specific or broadly portable?
 
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended HVN action.
 
@@ -170,6 +201,8 @@ Maintain [docs/ecosystem-opportunities.md](../../docs/ecosystem-opportunities.md
 - category
 - adoption shape
 - cross-harness or host-specific status
+- setup method when relevant
+- affected hosts when relevant
 - required HVN change
 - related issue
 - next recommended action
@@ -179,6 +212,7 @@ Maintain [docs/ecosystem-opportunities.md](../../docs/ecosystem-opportunities.md
 If a finding is classified as `Adopt now`:
 
 - create one draft issue unless a substantially similar open or already-tracked issue exists
+- classify setup-path changes as `Adopt now` when they materially improve or break HVN guidance and should be acted on now
 - if the finding was previously tracked as `Watch` or `Investigate soon`, update the existing watch entry instead of treating it as a totally new discovery
 - include backlinks to the earlier sightings when opening the draft issue
 - use `templates/ecosystem-adopt-issue.md`
@@ -197,4 +231,5 @@ A scheduled run is complete only when:
 - findings are grouped by commands, memory, install, cross-harness, QA, and workflow
 - `Adopt now` findings have draft issues without duplication
 - capability-to-HVN mapping is explicit
+- setup-path changes explain who is affected and whether HVN guidance should change
 - exact source URLs are listed

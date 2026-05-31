@@ -5,6 +5,7 @@ This is the maintainer-facing short list of actionable ecosystem findings. Keep 
 ## Operating Rules
 
 - Track opportunities that could change HVN commands, memory, install, cross-harness behavior, QA, or workflow.
+- Track setup opportunities that could simplify or repair GitHub, Linear, MCP, connector, auth, permission, or host-specific install flows.
 - Prefer cross-harness opportunities over host-specific features unless the host-specific feature unlocks immediate user value.
 - Mark whether each item is `Adopt now`, `Investigate soon`, `Watch`, or `Ignore for now`.
 - Avoid duplicates. If an item already exists in [ecosystem-watch](ecosystem-watch.md), update that entry and link it here.
@@ -20,6 +21,10 @@ Each active opportunity should use this shape:
 - Category:
 - Adoption shape:
 - Cross-harness or host-specific:
+- Setup method:
+- Affected hosts:
+- Current recommendation:
+- Proposed recommendation:
 - Why it matters:
 - Required HVN change:
 - UX impact:

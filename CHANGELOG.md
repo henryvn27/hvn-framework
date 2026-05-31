@@ -4,6 +4,7 @@
 
 ### Added
 
+- Upgraded the ecosystem sweep to watch GitHub, Linear, MCP, connector, auth, permission, and host-specific setup-path changes.
 - Added harness-aware external tool setup for GitHub and Linear, including setup commands, validation artifacts, host guides, and degraded-mode fallbacks.
 - Added adaptive next-step guidance for phase exits, including tone rules, experience adaptation, phase templates, examples, and the `hvn-next` command.
 - Upgraded the recurring ecosystem sweep to track harness-native execution capabilities, maintain ecosystem opportunities, and require explicit capability-to-HVN mapping.
