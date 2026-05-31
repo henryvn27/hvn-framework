@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "linear": {
+      "command": "linear-mcp-server",
+      "args": [],
+      "env": {
+        "LINEAR_API_KEY": "set-this-in-your-agent-secret-store"
+      }
+    }
+  }
+}

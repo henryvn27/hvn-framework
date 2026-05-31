@@ -31,3 +31,5 @@ foreach ($Item in @("HVN.md", "commands", "skills", "templates", "docs", "mcp"))
 
 Set-Content -Path (Join-Path $Target "VERSION") -Value "0.1.0"
 Write-Host "HVN installed to $Target"
+Write-Host "Linear-first guidance: $(Join-Path $Target 'docs/linear-guidance.md')"
+Write-Host "Opt-out mode: choose a durable system of record and map HVN gates there."

@@ -29,10 +29,12 @@ Do not use for backend-only changes without user-facing behavior.
 
 ## Exact Workflow
 
-1. Identify the user goal.
-2. Inspect hierarchy, information scent, states, responsiveness, accessibility, and copy.
-3. Separate visual observations from inferred behavior.
-4. Produce prioritized design findings and fixes.
+1. Read the issue or opt-out record for user goal and design constraints.
+2. Identify the user goal.
+3. Inspect hierarchy, information scent, states, responsiveness, accessibility, and copy.
+4. Separate visual observations from inferred behavior.
+5. Produce prioritized design findings and fixes.
+6. Post or prepare findings for the durable record.
 
 ## Expected Outputs
 

@@ -19,7 +19,7 @@ Do not use for an empty repo when the user only needs initial project creation.
 
 ## Required Inputs
 
-- Repository path, app URL, executable, or environment description
+- Repository path, app URL, executable, environment description, Linear issue, or opt-out work item
 
 ## Optional Inputs
 
@@ -29,11 +29,13 @@ Do not use for an empty repo when the user only needs initial project creation.
 
 ## Exact Workflow
 
-1. Inventory files, scripts, dependencies, and docs.
-2. Identify core modules and ownership boundaries.
-3. Inspect relevant implementation patterns.
-4. Find verification commands and risk areas.
-5. Produce discovery notes with recommendations.
+1. Read the Linear issue or opt-out work item for scope and links.
+2. Inventory files, scripts, dependencies, and docs.
+3. Identify core modules and ownership boundaries.
+4. Inspect relevant implementation patterns.
+5. Find verification commands and risk areas.
+6. Produce discovery notes with recommendations.
+7. Post or prepare the summary for the durable record.
 
 ## Expected Outputs
 

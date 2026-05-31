@@ -14,9 +14,22 @@ Use when a claim may be stale, contested, high-stakes, or outside the repo.
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Preferred sources
 - Recency requirement
 - Decision deadline
+
+## Linear Context
+
+- Expects: issue context, decision to support, constraints, and linked artifacts
+- Reads: the uncertainty blocking spec, plan, security, or implementation
+- Posts: research brief summary, citations, confidence, implication for next gate
+- Trigger: `needs-research`, security-sensitive uncertainty, current API dependency
+- Human approval: not required to research; required if findings change approved scope
+
+## Opt-Out Context
+
+Attach or summarize the research brief in the chosen record.
 
 ## Workflow
 
@@ -24,6 +37,7 @@ Use when a claim may be stale, contested, high-stakes, or outside the repo.
 2. Define the decision the research must support.
 3. Consult primary or authoritative sources when possible.
 4. Summarize findings, confidence, citations, and implications.
+5. Sync the conclusion to the work item.
 
 ## Outputs And Artifacts
 
@@ -36,5 +50,5 @@ Use when a claim may be stale, contested, high-stakes, or outside the repo.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-spec`, `hvn-plan`
-- Skills: `hvn-research`
+- Commands: `hvn-spec`, `hvn-plan`, `hvn-linear-sync`
+- Skills: `hvn-research`, `hvn-linear-core`

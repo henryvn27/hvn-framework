@@ -6,12 +6,23 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - When to use
 - Required inputs
 - Optional inputs
+- Linear context or opt-out equivalent
 - Workflow
 - Outputs and artifacts
 - Failure cases
 - Related commands and skills
 
-## Command List
+## Linear Commands
+
+- `hvn-linear-intake`
+- `hvn-linear-sync`
+- `hvn-linear-plan-comment`
+- `hvn-linear-qa-report`
+- `hvn-linear-ship-check`
+
+These commands read from and post back to Linear issues when Linear-first mode is active. In opt-out mode, they can be adapted to the chosen system of record.
+
+## Core Commands
 
 - `hvn-help`
 - `hvn-onboard`
@@ -29,4 +40,12 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - `hvn-ship`
 - `hvn-retro`
 
-Installers copy these files into the chosen HVN target. Agent clients can map them to slash commands, prompt snippets, or command palettes.
+## Command Triggering
+
+Linear state, labels, comments, and agent delegation should trigger command selection. Example:
+
+- `needs-spec` triggers `hvn-spec`.
+- `Spec Ready` triggers `hvn-linear-plan-comment`.
+- `Ready for Build` triggers `hvn-build` after approval.
+- `In QA` plus `blind-qa` triggers `hvn-test-blind`.
+- `Ready to Ship` triggers `hvn-linear-ship-check`.

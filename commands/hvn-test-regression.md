@@ -15,9 +15,22 @@ Use after changes responding to review, QA, bug reports, or release blockers.
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Previous QA reports
 - Test commands
 - Acceptance criteria
+
+## Linear Context
+
+- Expects: issue ID, original finding, fix summary, linked PR or commit, affected flows
+- Reads: prior review and QA comments, acceptance criteria, regression scope
+- Posts: regression result, adjacent coverage, remaining risk, recommended next state
+- Trigger: `regression`, `fix-ready`, reopened QA finding
+- Human approval: required to accept unresolved regression risk
+
+## Opt-Out Context
+
+Store regression evidence in the chosen record.
 
 ## Workflow
 
@@ -25,6 +38,7 @@ Use after changes responding to review, QA, bug reports, or release blockers.
 2. Verify the fix.
 3. Test adjacent flows.
 4. Record remaining risk and evidence.
+5. Sync the result to the work item.
 
 ## Outputs And Artifacts
 
@@ -37,5 +51,5 @@ Use after changes responding to review, QA, bug reports, or release blockers.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-review`, `hvn-ship`
-- Skills: `hvn-web-qa`, `hvn-ios-sim-qa`
+- Commands: `hvn-review`, `hvn-linear-qa-report`, `hvn-ship`
+- Skills: `hvn-web-qa`, `hvn-ios-sim-qa`, `hvn-linear-qa`

@@ -31,11 +31,12 @@ Do not use for native-only apps unless they expose a web surface.
 ## Exact Workflow
 
 1. State the QA mode.
-2. Open the app in a browser or browser automation tool.
-3. Observe visible content, accessibility-visible elements, console errors, and network failures when tools support them.
-4. Attempt realistic tasks.
-5. Capture screenshots or DOM evidence when available.
-6. Produce reproducible findings.
+2. In Linear-first mode, read only issue context allowed for that pass.
+3. Open the app in a browser or browser automation tool.
+4. Observe visible content, accessibility-visible elements, console errors, and network failures when tools support them.
+5. Attempt realistic tasks.
+6. Capture screenshots or DOM evidence when available.
+7. Produce reproducible findings for the issue or opt-out record.
 
 ## Expected Outputs
 

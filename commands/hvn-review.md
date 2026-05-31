@@ -10,13 +10,26 @@ Use before QA or shipping any meaningful change.
 
 ## Required Inputs
 
-- Diff or changed files
+- Diff, changed files, PR, artifact, or branch
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Spec
 - Plan
 - Test output
+
+## Linear Context
+
+- Expects: issue ID, linked branch or PR, spec, plan, verification notes
+- Reads: approved scope, changed artifacts, previous blockers, acceptance criteria
+- Posts: findings, severity, decision, recommended next state
+- Trigger: `In Review`, `review-required`
+- Human approval: required to waive blocking findings
+
+## Opt-Out Context
+
+Post or store the review report in the declared record.
 
 ## Workflow
 
@@ -24,10 +37,12 @@ Use before QA or shipping any meaningful change.
 2. Inspect changed behavior and adjacent contracts.
 3. Prioritize findings by severity.
 4. Recommend fixes or state that no blocking issues were found.
+5. Sync review decision to the work item.
 
 ## Outputs And Artifacts
 
 - `templates/review-report.md`
+- `templates/linear-review-comment.md` when Linear-first mode is active
 
 ## Failure Cases
 
@@ -37,4 +52,4 @@ Use before QA or shipping any meaningful change.
 ## Related Commands And Skills
 
 - Commands: `hvn-design`, `hvn-security`, `hvn-ship`
-- Skills: `hvn-review`
+- Skills: `hvn-review`, `hvn-linear-core`

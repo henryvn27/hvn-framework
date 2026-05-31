@@ -2,7 +2,18 @@
 
 Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They define trigger rules, inputs, workflow, outputs, quality bar, common failure modes, and relationships to other HVN skills.
 
-## Skill Groups
+## Linear Skills
+
+- `hvn-linear-core`
+- `hvn-linear-triage`
+- `hvn-linear-planner`
+- `hvn-linear-executor`
+- `hvn-linear-qa`
+- `hvn-linear-release`
+
+These skills coordinate issue-native work in Linear. If the user opts out of Linear, use the same behaviors against the chosen system of record.
+
+## Core Skill Groups
 
 - Core governance: `hvn-core`
 - Intake and discovery: `hvn-onboard`, `hvn-discover`, `hvn-research`
@@ -11,4 +22,6 @@ Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They def
 - QA: `hvn-blind-qa`, `hvn-context-brief`, `hvn-ios-sim-qa`, `hvn-web-qa`
 - Learning: `hvn-retro`
 
-Skills are written so they can be installed into agent clients that support skill directories, or read directly by agents using repo mode.
+## Skill Installation
+
+Skills can be installed into agent clients that support skill directories, or read directly by agents using repo mode. Linear guidance can be installed separately into workspace, team, or project instructions.

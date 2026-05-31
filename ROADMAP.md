@@ -6,21 +6,26 @@
 - Validate local and global installation paths.
 - Document command and skill usage.
 - Provide initial MCP examples.
+- Add Linear-first workflow docs, commands, skills, and comment templates.
+- Document opt-out mode for teams that do not use Linear.
 
 ## 0.2
 
 - Add packaged release archives.
 - Add installer smoke tests across macOS, Linux, and Windows PowerShell.
-- Add more end-to-end examples for web and iOS projects.
+- Add more end-to-end examples for Linear-first web and iOS projects.
+- Add optional generated command indexes for agent clients.
 
 ## 0.3
 
-- Add optional command registry generation.
 - Add richer QA report schemas.
-- Add migration notes for teams adopting HVN into existing agent workflows.
+- Add state-mapping examples for common Linear workspaces.
+- Add migration notes for teams adopting HVN into existing issue trackers.
+- Add adapter guidance for GitHub Issues and document-first opt-out workflows.
 
 ## Later
 
 - Explore signed releases.
 - Explore package-manager distribution.
 - Add community-contributed workflow packs after review.
+- Explore optional automation helpers for Linear comments and state recommendations.

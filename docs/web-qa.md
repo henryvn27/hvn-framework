@@ -1,10 +1,10 @@
 # Web QA
 
-HVN web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view.
+HVN web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view. In Linear-first mode, QA results are posted to the issue. In opt-out mode, results are written to the chosen record.
 
 ## First-Look Pass
 
-A blind browser tester should:
+A blind browser tester should receive only the issue ID, URL or launch command, platform constraints, and optional one-sentence mission. The tester should:
 
 - Open the provided URL.
 - Describe what the product appears to be.
@@ -12,7 +12,20 @@ A blind browser tester should:
 - Attempt realistic tasks.
 - Inspect visible errors, loading states, responsiveness, keyboard navigation, and accessibility-visible labels.
 - Record screenshots or DOM observations if tools allow.
+- Post findings through `templates/linear-blind-qa-comment.md` or `templates/blind-qa-report.md`.
 
 ## Later Passes
 
 Briefed and regression passes may use context packets, acceptance criteria, and issue links. They should still report exact steps and observed evidence.
+
+## Linear Posting
+
+A web QA comment should include:
+
+- URL or build tested
+- Browser and viewport
+- Context received
+- Steps attempted
+- Console or network observations when available
+- Screenshots or statement that screenshots were unavailable
+- Recommended next state

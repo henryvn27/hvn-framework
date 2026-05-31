@@ -1,44 +1,48 @@
 # HVN Framework
 
-HVN is Henry Van Ness's installable framework for agentic software development. It gives AI coding agents a practical operating system for turning unclear product ideas into reviewed, tested, shippable software.
+HVN is Henry Van Ness's installable framework for running software work with agents through a durable system of record. It is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
 
-HVN is spec-first, quality-focused, and subagent-aware. It is strongest where real projects usually fail: onboarding, scope discovery, written specifications, first-look QA, context control, review gates, and release discipline.
+Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
+
+HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, and premature done states.
 
 ## Release Status
 
-This repository is prepared as an initial public release candidate. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
+This repository is prepared as a public release candidate for a Linear-first HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
 
 ## Who It Is For
 
-Use HVN when you want AI agents to build software with the same discipline expected from a serious engineering team:
+Use HVN when you want AI agents to build software with engineering discipline:
 
-- Founders turning product ideas into maintained repositories
+- Teams using Linear as the coordination layer for product and engineering work
+- Founders turning vague product ideas into maintained repositories
 - Engineers using agentic coding tools on production code
-- Teams that need reproducible handoffs between agents
 - Reviewers who want blind first-look QA before informed retesting
-- Builders shipping web apps, iOS apps, tools, libraries, and internal systems
+- Teams that need reproducible handoffs between agents
+- Builders who want the option to map HVN gates to another tracker
 
 ## Core Concepts
 
-- **Spec-driven development:** work starts from an explicit spec, not a vague prompt.
-- **Adaptive onboarding:** a subagent interviews the user until the product shape is clear enough to proceed.
+- **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
+- **Linear project as initiative:** related issues belong to a project, epic, or alternative initiative artifact.
+- **Linear states as workflow gates:** state transitions represent HVN readiness gates.
+- **Comments as handoff record:** specs, plans, QA reports, review findings, and ship checks are posted back to the work item.
+- **Spec-driven development:** implementation follows a written contract.
+- **Adaptive onboarding:** a subagent clarifies issue ambiguity before spec or build.
 - **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
-- **Review gates:** design, code, security, and release checks happen before shipping.
-- **Blind first-look QA:** a tester evaluates the app from exposed behavior only, preserving the experience of a real first user.
-- **Layered retesting:** subsequent QA receives bounded context packets so fixes can be tested without contaminating the original blind pass.
-- **MCP-aware QA:** HVN includes patterns for browser automation and iOS simulator MCP workflows.
+- **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
+- **Layered retesting:** later QA receives bounded context packets tied to the same issue.
+- **Opt-out mode:** the same artifacts can be stored outside Linear when the user chooses another system of record.
 
 ## Quickstart
 
 Clone the repo and run validation:
 
 ```sh
-git clone https://github.com/henryvanness/hvn-framework.git
+git clone https://github.com/henryvn27/hvn-framework.git
 cd hvn-framework
 ./scripts/validate-repo.sh
 ```
-
-Use HVN in repo mode by copying or referencing `HVN.md`, `commands/`, `skills/`, and `templates/` from this repository.
 
 Install locally into the current project:
 
@@ -54,40 +58,84 @@ Install globally for your user:
 ./install/doctor.sh
 ```
 
-## How HVN Works
+For Linear-first setup, read:
 
-1. Run `hvn-onboard` to collect product intent through an adaptive interview.
-2. Run `hvn-discover` and `hvn-research` when the codebase, market, or technical constraints need investigation.
-3. Run `hvn-spec` to create the build contract.
-4. Run `hvn-plan` to break the spec into verifiable implementation phases.
-5. Run `hvn-build` with focused changes and verification after each phase.
-6. Run `hvn-review`, `hvn-design`, and `hvn-security` before release.
-7. Run `hvn-test-blind` for a zero-context first-look QA pass.
-8. Run `hvn-test-briefed` and `hvn-test-regression` for layered retesting.
-9. Run `hvn-ship` and `hvn-retro` to close the work cleanly.
+- `docs/linear-workflow.md`
+- `docs/linear-agent-model.md`
+- `docs/linear-states.md`
+- `docs/linear-guidance.md`
+
+For opt-out setup, choose a system of record and map HVN issue comments to equivalent durable artifacts.
+
+## Linear-First Workflow
+
+1. Issue enters inbox or triage.
+2. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
+3. `hvn-spec` creates a structured spec from issue context.
+4. `hvn-linear-plan-comment` posts the plan to the issue.
+5. Human approves the plan when required.
+6. `hvn-build` executes approved scope.
+7. `hvn-review` posts findings.
+8. `hvn-test-blind` runs first-look QA with minimal issue context.
+9. `hvn-context-brief` creates a bounded second-pass packet.
+10. `hvn-test-briefed` and `hvn-test-regression` retest.
+11. `hvn-linear-ship-check` posts ship readiness.
+12. Issue moves to done only with evidence.
+
+Recommended state gates are documented in `docs/linear-states.md`.
 
 ## Commands And Skills
 
-Commands in `commands/` are installable prompt definitions. They tell an agent when to start a workflow, what inputs to request, what artifacts to produce, and which skills to use.
+Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
 
-Skills in `skills/` are reusable operating procedures. They define exact workflows for onboarding, discovery, specification, planning, implementation, review, blind QA, context briefing, iOS simulator QA, web QA, security, shipping, and retrospectives.
+- `hvn-linear-intake`
+- `hvn-linear-sync`
+- `hvn-linear-plan-comment`
+- `hvn-linear-qa-report`
+- `hvn-linear-ship-check`
 
-Templates in `templates/` are copy-ready artifacts used by both commands and skills.
+Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
 
-## Blind QA And First-Look Testing
+- `hvn-linear-core`
+- `hvn-linear-triage`
+- `hvn-linear-planner`
+- `hvn-linear-executor`
+- `hvn-linear-qa`
+- `hvn-linear-release`
 
-HVN treats first impression as evidence. A blind QA tester must infer the product from the UI or CLI behavior it can actually observe. The tester may not read hidden specs, implementation notes, source code, or issue threads unless the pass has been explicitly converted into a briefed pass.
+Templates in `templates/` include both full artifacts and Linear-ready comment formats.
 
-This separation catches problems that informed builders often miss: unclear navigation, missing affordances, confusing empty states, broken visual hierarchy, and tasks that only make sense to someone who already knows the product.
+## Blind QA In Linear
+
+HVN treats first impression as evidence. In Linear-first mode, a blind QA agent should receive only:
+
+- Issue ID
+- Platform
+- Launch instructions
+- Optional one-sentence user mission
+
+The blind QA agent must not receive the spec, code, implementation plan, design rationale, or hidden issue discussion. It posts findings back to the same issue. A context briefer then creates a minimal packet for a second-pass tester so the issue thread preserves the difference between blind and briefed outcomes.
 
 ## iOS Simulator And Web QA Support
 
 HVN includes MCP-ready QA guidance for:
 
-- iOS simulator testing with launch, interaction, accessibility inspection, screenshots, and reproducible reports
+- iOS simulator testing with launch, interaction, accessibility inspection, screenshots, and reproducible Linear comments
 - Web/browser testing with first-look task attempts, accessibility-visible element checks, screenshots, console/network observations, and regression notes
 
 Example MCP configuration files live in `mcp/`.
+
+## Opt-Out Mode
+
+If the user does not want Linear, ask what should be the system of record. Then map:
+
+- Linear issue to a GitHub issue, local task file, project doc, or tracker item
+- Linear project to an epic, milestone, folder, or roadmap doc
+- Linear state to a documented workflow gate
+- Linear comment to a durable note, PR comment, issue comment, or artifact file
+- Linear linked artifact to a local file path or URL
+
+Do not force Linear when the user opts out.
 
 ## Repository Structure
 
@@ -99,12 +147,12 @@ install/    Local and global installation scripts
 mcp/        Example MCP configuration snippets
 scripts/    Validation and repository utility scripts
 skills/     Reusable HVN skill definitions
-templates/  Copy-ready workflow artifacts
+templates/  Copy-ready artifacts and Linear comments
 ```
 
 ## Contributing
 
-Read `CONTRIBUTING.md` before opening a pull request. Changes should preserve HVN's core guarantees: clear artifacts, bounded context, explicit QA mode, and verifiable completion.
+Read `CONTRIBUTING.md` before opening a pull request. Changes should preserve HVN's core guarantees: clear artifacts, bounded context, explicit QA mode, verifiable completion, and durable handoffs in Linear or the declared opt-out system of record.
 
 ## License
 

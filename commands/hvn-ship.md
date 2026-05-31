@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Prepare a change for release with final validation, handoff, and rollback notes.
+Prepare a change for release with final validation, handoff, done-state evidence, and rollback notes.
 
 ## When To Use
 
@@ -15,9 +15,22 @@ Use after implementation, review, QA, and required fixes are complete.
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Release notes
 - Version target
 - Deployment procedure
+
+## Linear Context
+
+- Expects: issue ID, spec, plan approval, implementation evidence, review, QA, security status, linked artifacts
+- Reads: the full issue thread and linked release evidence
+- Posts: ship readiness checklist, known risks, rollback guidance, done recommendation or blockers
+- Trigger: `Ready to Ship`, `ready-to-ship`
+- Human approval: required when release ownership or risk acceptance is manual
+
+## Opt-Out Context
+
+Write ship readiness to the chosen record before marking work complete.
 
 ## Workflow
 
@@ -26,10 +39,12 @@ Use after implementation, review, QA, and required fixes are complete.
 3. Run final validation.
 4. Prepare release notes and rollback guidance.
 5. Identify follow-up issues.
+6. Recommend done only with evidence.
 
 ## Outputs And Artifacts
 
 - `templates/ship-checklist.md`
+- `templates/linear-ship-comment.md` when Linear-first mode is active
 - Release summary
 
 ## Failure Cases
@@ -39,5 +54,5 @@ Use after implementation, review, QA, and required fixes are complete.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-retro`, `hvn-test-regression`
-- Skills: `hvn-ship`
+- Commands: `hvn-linear-ship-check`, `hvn-retro`, `hvn-test-regression`
+- Skills: `hvn-ship`, `hvn-linear-release`

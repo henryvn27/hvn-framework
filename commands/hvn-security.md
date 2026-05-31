@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Review security-relevant behavior, data handling, permissions, dependencies, and unsafe agent instructions.
+Review security-relevant behavior, data handling, permissions, dependencies, installers, CI, and unsafe agent instructions.
 
 ## When To Use
 
@@ -14,9 +14,22 @@ Use for auth, payments, personal data, external calls, install scripts, CI, gene
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Threat model
 - Dependency list
 - Deployment environment
+
+## Linear Context
+
+- Expects: issue ID, changed surface, risk labels, linked PR or diff, deployment context
+- Reads: data handling, permissions, external calls, install and CI changes, prior findings
+- Posts: security findings, severity, mitigation, release blocker status
+- Trigger: `security-review`, auth/data/payment/install/CI labels, `Ready to Ship`
+- Human approval: required to waive security blockers
+
+## Opt-Out Context
+
+Post the security findings to the selected record.
 
 ## Workflow
 
@@ -24,6 +37,7 @@ Use for auth, payments, personal data, external calls, install scripts, CI, gene
 2. Identify assets, trust boundaries, inputs, outputs, and dangerous operations.
 3. Inspect implementation and docs for unsafe claims.
 4. Produce findings with severity and mitigation.
+5. Sync blocker status to the work item.
 
 ## Outputs And Artifacts
 
@@ -37,5 +51,5 @@ Use for auth, payments, personal data, external calls, install scripts, CI, gene
 
 ## Related Commands And Skills
 
-- Commands: `hvn-review`, `hvn-ship`
-- Skills: `hvn-security`
+- Commands: `hvn-review`, `hvn-linear-ship-check`, `hvn-ship`
+- Skills: `hvn-security`, `hvn-linear-release`

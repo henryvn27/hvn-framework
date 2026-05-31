@@ -15,9 +15,22 @@ Use for targeted retesting, acceptance criteria checks, and guided product walkt
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Blind QA report
 - Known fixes
 - Acceptance criteria
+
+## Linear Context
+
+- Expects: issue ID, first-pass report, context packet, platform, launch instructions
+- Reads: disclosed context only for briefed pass
+- Posts: guided QA findings, difference from blind pass, evidence, recommended next state
+- Trigger: `guided-qa`, `In QA`, after blind QA comment
+- Human approval: required to waive blocking guided QA findings
+
+## Opt-Out Context
+
+Write the context packet and guided QA result to the selected record.
 
 ## Workflow
 
@@ -25,10 +38,12 @@ Use for targeted retesting, acceptance criteria checks, and guided product walkt
 2. Use platform QA skill when relevant.
 3. Test target flows.
 4. Record pass, fail, blocked, and uncertain results.
+5. Surface differences from blind QA.
 
 ## Outputs And Artifacts
 
 - `templates/guided-qa-report.md`
+- `templates/linear-guided-qa-comment.md` when Linear-first mode is active
 
 ## Failure Cases
 
@@ -37,5 +52,5 @@ Use for targeted retesting, acceptance criteria checks, and guided product walkt
 
 ## Related Commands And Skills
 
-- Commands: `hvn-test-regression`, `hvn-ship`
-- Skills: `hvn-context-brief`, `hvn-web-qa`, `hvn-ios-sim-qa`
+- Commands: `hvn-linear-qa-report`, `hvn-test-regression`, `hvn-ship`
+- Skills: `hvn-context-brief`, `hvn-linear-qa`, `hvn-web-qa`, `hvn-ios-sim-qa`

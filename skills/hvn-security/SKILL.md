@@ -29,10 +29,12 @@ Do not use as a replacement for product QA or general code review.
 
 ## Exact Workflow
 
-1. Identify assets and trust boundaries.
-2. Inspect inputs, outputs, permissions, dependencies, and destructive operations.
-3. Check docs and prompts for unsafe instructions.
-4. Produce findings with severity, impact, and mitigation.
+1. Read the issue or opt-out record for scope, deployment context, and risk labels.
+2. Identify assets and trust boundaries.
+3. Inspect inputs, outputs, permissions, dependencies, and destructive operations.
+4. Check docs and prompts for unsafe instructions.
+5. Produce findings with severity, impact, and mitigation.
+6. Post or prepare blocker status for the durable record.
 
 ## Expected Outputs
 

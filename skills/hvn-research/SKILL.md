@@ -24,6 +24,7 @@ Do not use for facts already present in the repo or conversation unless accuracy
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Source preferences
 - Recency requirement
 - Jurisdiction or platform version
@@ -31,9 +32,11 @@ Do not use for facts already present in the repo or conversation unless accuracy
 ## Exact Workflow
 
 1. Define the decision and evidence needed.
-2. Prefer primary sources and official documentation.
-3. Record citations, dates, and confidence.
-4. Explain how findings affect the spec or plan.
+2. Read the issue or opt-out record for constraints and decision context.
+3. Prefer primary sources and official documentation.
+4. Record citations, dates, and confidence.
+5. Explain how findings affect the spec or plan.
+6. Post or prepare the conclusion for the durable record.
 
 ## Expected Outputs
 

@@ -31,10 +31,12 @@ Do not use before the work has an outcome to examine.
 
 ## Exact Workflow
 
-1. Compare outcome to the original spec.
-2. Identify what worked, what failed, and what surprised the team.
-3. Convert lessons into concrete follow-ups.
-4. Note any framework improvements.
+1. Read the issue, project, or opt-out record for outcome evidence.
+2. Compare outcome to the original spec.
+3. Identify what worked, what failed, and what surprised the team.
+4. Convert lessons into concrete follow-ups.
+5. Note any framework improvements.
+6. Post or prepare the retrospective for the durable record.
 
 ## Expected Outputs
 

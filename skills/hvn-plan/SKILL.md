@@ -23,21 +23,25 @@ Do not use when the user explicitly asks only for a review or explanation.
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Discovery notes
 - Verification commands
 - Risk areas
 
 ## Exact Workflow
 
-1. Break the work into small phases.
-2. Name expected files or system areas.
-3. Attach verification to each phase.
-4. Identify dependencies and rollback points.
-5. Produce a plan that can be updated during work.
+1. Read the spec from Linear or the opt-out record.
+2. Break the work into small phases.
+3. Name expected files or system areas.
+4. Attach verification to each phase.
+5. Identify dependencies and rollback points.
+6. Produce a plan that can be posted to the issue or durable record.
+7. Include an explicit human approval request when required.
 
 ## Expected Outputs
 
 - Filled `templates/plan.md`
+- `templates/linear-plan-comment.md` when Linear-first mode is active
 
 ## Quality Bar
 

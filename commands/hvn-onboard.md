@@ -6,11 +6,11 @@ Run adaptive onboarding to understand a product, feature, or project before writ
 
 ## When To Use
 
-Use at the start of a new project, significant feature, or unclear request.
+Use at the start of a new project, significant feature, or unclear Linear issue.
 
 ## Required Inputs
 
-- Initial user request or product idea
+- Initial user request, Linear issue description, or opt-out work item
 
 ## Optional Inputs
 
@@ -19,17 +19,31 @@ Use at the start of a new project, significant feature, or unclear request.
 - Existing repo path
 - Deadline or release target
 
+## Linear Context
+
+- Expects: issue title, description, comments, labels, state, project, and related issues
+- Reads: ambiguity, user requests, constraints, previous agent questions
+- Posts: intake summary, unresolved questions, recommended workflow, recommended labels and state
+- Trigger: `Triage`, `needs-triage`, `needs-spec`, or delegated unclear issue
+- Human approval: not required unless changing priority, owner, or project scope
+
+## Opt-Out Context
+
+Use the chosen work item or document as the source prompt and write the intake summary there.
+
 ## Workflow
 
 1. Use `hvn-onboard`.
 2. Ask high-leverage questions one at a time or in small groups.
 3. Stop when more questions would not materially improve the first spec.
 4. Produce intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
+5. Sync the result to Linear or the opt-out record.
 
 ## Outputs And Artifacts
 
 - `templates/intake.md`
 - Draft `templates/spec.md` skeleton
+- Linear intake comment when Linear-first mode is active
 
 ## Failure Cases
 
@@ -38,5 +52,5 @@ Use at the start of a new project, significant feature, or unclear request.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-spec`, `hvn-discover`
-- Skills: `hvn-onboard`, `hvn-core`
+- Commands: `hvn-linear-intake`, `hvn-spec`, `hvn-discover`
+- Skills: `hvn-onboard`, `hvn-linear-triage`, `hvn-core`

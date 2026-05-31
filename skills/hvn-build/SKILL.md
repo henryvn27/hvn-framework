@@ -29,17 +29,18 @@ Do not use when the user only wants brainstorming, review, or research.
 
 ## Exact Workflow
 
-1. Read relevant files before editing.
-2. Preserve user changes and existing patterns.
-3. Make the smallest coherent change that satisfies the phase.
-4. Run appropriate verification.
-5. Record what changed and what could not be verified.
+1. Confirm the approved scope from Linear or the opt-out record.
+2. Read relevant files before editing.
+3. Preserve user changes and existing patterns.
+4. Make the smallest coherent change that satisfies the phase.
+5. Run appropriate verification.
+6. Record what changed and what could not be verified in the durable record.
 
 ## Expected Outputs
 
 - Completed file changes
 - Verification notes
-- Updated artifacts when applicable
+- Updated artifacts or Linear comments when applicable
 
 ## Quality Bar
 

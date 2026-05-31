@@ -36,3 +36,5 @@ cat > "$target/VERSION" <<VERSION
 VERSION
 
 printf 'HVN installed to %s\n' "$target"
+printf 'Linear-first guidance: %s\n' "$target/docs/linear-guidance.md"
+printf 'Opt-out mode: choose a durable system of record and map HVN gates there.\n'

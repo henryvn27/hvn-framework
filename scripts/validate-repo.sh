@@ -30,6 +30,14 @@ HVN.md
 .github/workflows/markdown-lint.yml
 .github/workflows/validate-install.yml
 .github/FUNDING.yml
+docs/linear-workflow.md
+docs/linear-agent-model.md
+docs/linear-states.md
+docs/linear-issue-lifecycle.md
+docs/linear-guidance.md
+docs/examples/linear-feature-flow.md
+docs/examples/linear-blind-qa-flow.md
+mcp/linear.example.json
 "
 
 for file in $required_files; do
@@ -44,9 +52,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 15 ] || fail "expected at least 15 command definitions"
-[ "$skill_count" -ge 16 ] || fail "expected at least 16 skill definitions"
-[ "$template_count" -ge 11 ] || fail "expected at least 11 templates"
+[ "$command_count" -ge 20 ] || fail "expected at least 20 command definitions"
+[ "$skill_count" -ge 22 ] || fail "expected at least 22 skill definitions"
+[ "$template_count" -ge 17 ] || fail "expected at least 17 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh; do
   [ -f "$script" ] || fail "missing script: $script"

@@ -14,10 +14,23 @@ Use after a release, major feature, incident, or meaningful agent workflow.
 
 ## Optional Inputs
 
+- Linear issue ID, project ID, or opt-out work item
 - Review findings
 - QA reports
 - Release notes
 - User feedback
+
+## Linear Context
+
+- Expects: issue or project thread, ship checklist, QA and review comments, follow-up links
+- Reads: completed scope, blockers, evidence, surprises, deferred work
+- Posts: retrospective summary and follow-up recommendations
+- Trigger: project completion, incident closure, major release, or requested retro
+- Human approval: not required unless creating or changing follow-up scope
+
+## Opt-Out Context
+
+Store the retrospective in the selected record or project documentation.
 
 ## Workflow
 
@@ -25,6 +38,7 @@ Use after a release, major feature, incident, or meaningful agent workflow.
 2. Summarize outcomes against the spec.
 3. Record failures, surprises, and useful patterns.
 4. Create concrete follow-up actions.
+5. Sync lessons to the durable record.
 
 ## Outputs And Artifacts
 
@@ -37,5 +51,5 @@ Use after a release, major feature, incident, or meaningful agent workflow.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-onboard`, `hvn-plan`
-- Skills: `hvn-retro`
+- Commands: `hvn-onboard`, `hvn-plan`, `hvn-linear-sync`
+- Skills: `hvn-retro`, `hvn-linear-core`

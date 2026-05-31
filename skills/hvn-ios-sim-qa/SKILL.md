@@ -31,11 +31,12 @@ Do not use for web apps or when no iOS app surface is available.
 ## Exact Workflow
 
 1. State whether the pass is blind or briefed.
-2. Launch or build the app through available simulator tooling.
-3. Interact with visible UI only unless briefed otherwise.
-4. Inspect accessibility-visible labels and navigation when tools support it.
-5. Capture screenshots, logs, and reproduction steps when available.
-6. Report observations, blockers, and confidence limits.
+2. In Linear-first mode, read only context allowed for that pass.
+3. Launch or build the app through available simulator tooling.
+4. Interact with visible UI only unless briefed otherwise.
+5. Inspect accessibility-visible labels and navigation when tools support it.
+6. Capture screenshots, logs, and reproduction steps when available.
+7. Report observations, blockers, and confidence limits back to the issue or opt-out record.
 
 ## Expected Outputs
 

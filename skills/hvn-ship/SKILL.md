@@ -30,15 +30,18 @@ Do not use to bypass incomplete review, QA, or security gates.
 
 ## Exact Workflow
 
-1. Confirm acceptance criteria.
-2. Confirm review, QA, and security status.
-3. Run final validation where available.
-4. Prepare release notes, rollback guidance, and follow-ups.
-5. Mark blockers clearly if release should not proceed.
+1. Read the issue thread or opt-out record.
+2. Confirm acceptance criteria.
+3. Confirm review, QA, and security status.
+4. Run final validation where available.
+5. Prepare release notes, rollback guidance, and follow-ups.
+6. Post or prepare ship readiness evidence.
+7. Mark blockers clearly if release should not proceed.
 
 ## Expected Outputs
 
 - Filled `templates/ship-checklist.md`
+- `templates/linear-ship-comment.md` when Linear-first mode is active
 
 ## Quality Bar
 

@@ -14,10 +14,23 @@ Use for frontend, product, marketing, mobile, or user-facing CLI work.
 
 ## Optional Inputs
 
+- Linear issue ID or opt-out work item
 - Brand constraints
 - Screenshots
 - Design system
 - Target user
+
+## Linear Context
+
+- Expects: issue ID, target user, product surface, screenshots or launch link, acceptance criteria
+- Reads: intended user job, design constraints, QA findings, linked screenshots
+- Posts: prioritized design findings, accessibility notes, recommended next state
+- Trigger: `design-review`, `In Review`, user-facing UI changes
+- Human approval: required to waive major accessibility or product clarity blockers
+
+## Opt-Out Context
+
+Store design findings in the chosen record.
 
 ## Workflow
 
@@ -25,6 +38,7 @@ Use for frontend, product, marketing, mobile, or user-facing CLI work.
 2. Inspect the experience from user goals outward.
 3. Check clarity, hierarchy, states, accessibility, responsiveness, and interaction feel.
 4. Produce prioritized design findings.
+5. Sync findings to the work item.
 
 ## Outputs And Artifacts
 
@@ -39,4 +53,4 @@ Use for frontend, product, marketing, mobile, or user-facing CLI work.
 ## Related Commands And Skills
 
 - Commands: `hvn-test-blind`, `hvn-review`
-- Skills: `hvn-design`
+- Skills: `hvn-design`, `hvn-linear-core`

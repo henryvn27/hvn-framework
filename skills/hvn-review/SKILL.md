@@ -29,15 +29,18 @@ Do not use as a substitute for blind QA.
 
 ## Exact Workflow
 
-1. Inspect changed behavior and contracts.
-2. Identify likely bugs and regressions.
-3. Check test and validation coverage.
-4. Prioritize findings by severity.
-5. State residual risk when no blocking findings exist.
+1. Read approved scope, diff, and verification evidence from Linear or the opt-out record.
+2. Inspect changed behavior and contracts.
+3. Identify likely bugs and regressions.
+4. Check test and validation coverage.
+5. Prioritize findings by severity.
+6. Post or prepare a review comment with decision and next gate.
+7. State residual risk when no blocking findings exist.
 
 ## Expected Outputs
 
 - Filled `templates/review-report.md`
+- `templates/linear-review-comment.md` when Linear-first mode is active
 
 ## Quality Bar
 
