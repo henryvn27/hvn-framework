@@ -28,6 +28,8 @@ Each eval case should include:
 
 Use [templates/eval-case.md](../templates/eval-case.md) for individual cases and [templates/eval-report.md](../templates/eval-report.md) for results. Required fields are defined in [templates/contracts/eval-contract.md](../templates/contracts/eval-contract.md).
 
+For onboarding and spec quality comparisons, use the dedicated benchmark pack in [docs/benchmark-pack.md](benchmark-pack.md) and `benchmarks/onboarding-spec/`.
+
 ## Trajectory Dimensions
 
 Recommended dimensions:
@@ -74,6 +76,8 @@ Each eval run should produce a human-reviewable report with:
 - case-by-case outcomes
 - common failure patterns
 - suggested framework improvements
+
+When workflow efficiency matters, pair evals with per-run accounting from [docs/workflow-accounting.md](workflow-accounting.md).
 
 ## Relationship To QA
 

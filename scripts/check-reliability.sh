@@ -19,10 +19,18 @@ for file in \
   docs/ci-quality.md \
   docs/run-memory.md \
   docs/spec-driven-workflow.md \
+  docs/benchmark-pack.md \
+  docs/workflow-accounting.md \
+  docs/qa-to-regression.md \
   templates/run-trace.md \
   templates/eval-case.md \
   templates/eval-report.md \
   templates/approval-request.md \
+  templates/workflow-metrics.md \
+  templates/regression-candidate.md \
+  templates/regression-task.md \
+  templates/benchmark-case.md \
+  templates/benchmark-report.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
   templates/contracts/qa-brief-contract.md \
@@ -33,14 +41,23 @@ for file in \
   commands/hvn-eval.md \
   commands/hvn-approve.md \
   commands/hvn-security-check.md \
+  commands/hvn-benchmark.md \
+  commands/hvn-metrics.md \
+  commands/hvn-regression-task.md \
   skills/hvn-observability/SKILL.md \
   skills/hvn-eval/SKILL.md \
   skills/hvn-approval-gate/SKILL.md \
+  skills/hvn-benchmark/SKILL.md \
+  skills/hvn-accounting/SKILL.md \
+  skills/hvn-regression-task/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
   docs/examples/prompt-injection-handling.md \
   docs/examples/artifact-contract-usage.md \
+  docs/examples/benchmark-run.md \
+  docs/examples/workflow-metrics-report.md \
+  docs/examples/qa-to-regression.md \
   examples/evals/starter-set.md
 do
   [ -f "$file" ] || fail "missing reliability file: $file"

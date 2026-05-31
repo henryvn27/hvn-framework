@@ -36,3 +36,6 @@ Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memo
 - run memory preserves durable lessons
 - traces record what happened during a run
 - evals judge how well the workflow performed
+- workflow metrics record time, retries, and optional usage signals
+
+Run memory may reference benchmark results, workflow metrics summaries, or regression-task decisions when those become durable project context, but it should not duplicate the underlying per-run artifacts.

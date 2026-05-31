@@ -15,6 +15,7 @@ HVN is Linear-first by default. Linear is the preferred system of record for iss
 7. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
 8. **Risk needs explicit control:** risky work should cross an approval gate, not hide inside momentum.
 9. **Workflow quality is observable:** meaningful runs should be traceable and evaluable.
+10. **Improvement needs evidence:** benchmark packs, workflow metrics, and regression tasks should show whether HVN is actually getting better.
 
 ## Coordination Modes
 
@@ -45,9 +46,12 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Approval mode:** request or confirm approval for risky work before execution continues.
 - **Build mode:** implement the approved plan with focused edits and local verification.
 - **Trace mode:** record the meaningful path of a run.
+- **Accounting mode:** record workflow timing, retries, and optional usage signals.
 - **Review mode:** inspect for bugs, regressions, maintainability, accessibility, and release risk.
 - **Blind QA mode:** evaluate the product with no hidden context.
 - **Briefed QA mode:** retest with a bounded context packet.
+- **Regression-task mode:** convert high-value findings into reusable regression work.
+- **Benchmark mode:** compare onboarding and spec quality across versions or workflow changes.
 - **Eval mode:** judge the trajectory and artifact quality of a workflow.
 - **Ship mode:** prepare ship readiness, release notes, and handoff.
 - **Retro mode:** record what changed, what failed, and how the system should improve.
@@ -61,8 +65,11 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Implementation plan or Linear plan comment
 - Approval request or approval record when risk requires it
 - Run trace for meaningful or risky runs
+- Workflow metrics record when operational efficiency matters
 - Review report or Linear review comment
 - QA report or Linear QA comment
+- Regression task when a finding is strong enough to preserve
+- Benchmark report when onboarding or spec quality is being compared
 - Eval report when validating framework behavior or release confidence
 - Ship checklist or Linear ship comment
 - Retrospective for completed larger efforts
@@ -87,13 +94,14 @@ Then use the standard lifecycle:
 4. Plan is posted to the issue.
 5. Approval gates determine whether build can proceed automatically or needs explicit human approval.
 6. Build agent executes approved scope.
-7. Trace and review artifacts record what happened and what changed.
-8. Blind QA agent runs first-look test.
+7. Trace and workflow metrics record what happened and what it cost in time or retries.
+8. Review and QA surface product and workflow failures.
 9. Context briefer creates a minimal second-pass brief.
 10. Guided QA reruns with limited context.
-11. Security, eval, and regression passes happen as needed.
-12. Ship readiness checklist is posted.
-13. Issue moves to done only with evidence.
+11. Strong findings can generate reusable regression tasks.
+12. Benchmark and eval passes happen as needed when framework quality is under review.
+13. Security and ship readiness checks finish the evidence chain.
+14. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -119,6 +127,14 @@ Use approval gates for destructive operations, broad refactors, installer change
 ## Trace And Eval Policy
 
 Meaningful runs should leave enough evidence to reconstruct what happened. Use traces for run history and evals for trajectory judgment. Do not confuse either one with durable run memory.
+
+## Benchmark And Accounting Policy
+
+Use benchmark packs when comparing onboarding or spec quality over time. Use workflow metrics when time, retries, or optional usage signals matter. Do not claim precision the environment cannot support.
+
+## Regression Preservation Policy
+
+When QA, review, or debugging uncovers a repeated or high-value risk, consider promoting it into a regression task so the lesson survives the immediate fix.
 
 ## Security And Prompt-Injection Policy
 

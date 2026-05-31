@@ -33,6 +33,8 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-plan`
 - `hvn-build`
 - `hvn-trace`
+- `hvn-metrics`
+- `hvn-benchmark`
 - `hvn-eval`
 - `hvn-approve`
 - `hvn-review`
@@ -40,6 +42,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-test-blind`
 - `hvn-test-briefed`
 - `hvn-test-regression`
+- `hvn-regression-task`
 - `hvn-security`
 - `hvn-security-check`
 - `hvn-ship`
@@ -56,3 +59,4 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `Ready to Ship` triggers `hvn-linear-ship-check`.
 
 Use `hvn-trace` and `hvn-eval` when the workflow itself needs review, not just the product artifact.
+Use `hvn-metrics` when elapsed time, retries, or optional usage signals matter, and `hvn-benchmark` when onboarding/spec quality should be compared over time.

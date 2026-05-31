@@ -57,3 +57,5 @@ Use `templates/blind-qa-report.md` for full artifacts or `templates/linear-blind
 After a blind report is written, it should remain unchanged. Briefed and regression passes get separate reports.
 
 Use traces when needed to show what the QA run actually did, but do not turn the blind report itself into a hidden-context artifact.
+
+When a blind finding is strong enough to preserve, use `hvn-regression-task` to turn it into a structured regression candidate or regression task instead of leaving it as a one-off note.

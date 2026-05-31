@@ -10,7 +10,8 @@ HVN is spec-driven because implementation quality depends on having a clear cont
 4. `hvn-plan` turns the spec into sequenced work with verification gates.
 5. Approval gates control risky actions before build.
 6. Build, review, QA, and ship all work against the approved spec.
-7. Traces, evals, and run memory preserve what happened and what should carry forward.
+7. Benchmark packs can compare how well onboarding and spec workflows perform over time.
+8. Traces, evals, workflow metrics, and run memory preserve what happened and what should carry forward.
 
 ## Spec Contract
 

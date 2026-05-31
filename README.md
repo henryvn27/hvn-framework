@@ -4,7 +4,7 @@ HVN is Henry Van Ness's installable framework for running software work with age
 
 Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
 
-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, and unsafe execution without clear approval or traceability.
+HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, unsafe execution without clear approval or traceability, and workflows that cannot compare their own quality over time.
 
 ## Release Status
 
@@ -32,10 +32,13 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Adaptive onboarding:** a subagent clarifies issue ambiguity before spec or build.
 - **Run traces:** meaningful runs can be inspected after the fact.
 - **Trajectory evals:** workflows are judged on how they behaved, not just the final answer.
+- **Benchmark packs:** onboarding and spec quality can be compared across versions.
+- **Workflow accounting:** time, retries, and optional cost signals can be tracked per run.
 - **Approval gates:** risky actions pause for explicit approval.
 - **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
 - **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
 - **Layered retesting:** later QA receives bounded context packets tied to the same issue.
+- **Regression-task generation:** strong QA findings can become reusable regression work.
 - **Security guardrails:** external content is treated as untrusted until confirmed.
 - **Opt-out mode:** the same artifacts can be stored outside Linear when the user chooses another system of record.
 
@@ -76,6 +79,9 @@ For Linear-first setup, read:
 - `docs/artifact-contracts.md`
 - `docs/security-guardrails.md`
 - `docs/prompt-injection.md`
+- `docs/benchmark-pack.md`
+- `docs/workflow-accounting.md`
+- `docs/qa-to-regression.md`
 
 You can also generate a local setup packet:
 
@@ -94,13 +100,16 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 5. `hvn-approve` records approval when scope or risk requires it.
 6. `hvn-build` executes approved scope.
 7. `hvn-trace` records what happened when the run is meaningful or risky.
-8. `hvn-review` posts findings.
-9. `hvn-test-blind` runs first-look QA with minimal issue context.
-10. `hvn-context-brief` creates a bounded second-pass packet.
-11. `hvn-test-briefed` and `hvn-test-regression` retest.
-12. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
-13. `hvn-linear-ship-check` posts ship readiness.
-14. Issue moves to done only with evidence.
+8. `hvn-metrics` records time, retries, and optional usage signals.
+9. `hvn-review` posts findings.
+10. `hvn-test-blind` runs first-look QA with minimal issue context.
+11. `hvn-context-brief` creates a bounded second-pass packet.
+12. `hvn-test-briefed` and `hvn-test-regression` retest.
+13. `hvn-regression-task` promotes high-value findings into reusable regression work.
+14. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+15. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
+16. `hvn-linear-ship-check` posts ship readiness.
+17. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -131,7 +140,10 @@ The reliability layer adds:
 
 - trace artifacts in `templates/run-trace.md`
 - eval artifacts in `templates/eval-case.md` and `templates/eval-report.md`
+- benchmark artifacts in `benchmarks/onboarding-spec/` and `templates/benchmark-*.md`
+- workflow metrics artifacts in `templates/workflow-metrics.md`
 - approval requests in `templates/approval-request.md`
+- regression candidates and tasks in `templates/regression-candidate.md` and `templates/regression-task.md`
 - typed contracts in `templates/contracts/`
 
 ## Blind QA In Linear
@@ -185,7 +197,10 @@ HVN now treats reliability as part of the core framework:
 - onboarding, discovery, and spec create durable context
 - run memory preserves durable facts and decisions
 - traces record what happened during meaningful runs
+- workflow metrics show how long runs took and where retries accumulated
 - evals judge the full trajectory
+- benchmark packs compare onboarding and spec quality over time
+- QA findings can become reusable regression tasks
 - approval gates control risky work
 - contracts keep artifacts consistent
 - security and prompt-injection guardrails keep external context from hijacking execution

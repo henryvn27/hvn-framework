@@ -1,0 +1,13 @@
+name: Metrics Validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate workflow metrics and regression assets
+        run: ./scripts/check-improvement-systems.sh

@@ -52,5 +52,5 @@ Store regression evidence in the chosen record.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-review`, `hvn-linear-qa-report`, `hvn-ship`
-- Skills: `hvn-web-qa`, `hvn-ios-sim-qa`, `hvn-linear-qa`
+- Commands: `hvn-regression-task`, `hvn-review`, `hvn-linear-qa-report`, `hvn-ship`
+- Skills: `hvn-regression-task`, `hvn-web-qa`, `hvn-ios-sim-qa`, `hvn-linear-qa`

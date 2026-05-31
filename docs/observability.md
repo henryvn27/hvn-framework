@@ -26,6 +26,8 @@ Each meaningful run should capture:
 - Reliability signals: retries, failures, blockers, warnings, stop reason
 - Optional metadata: token or cost data when the harness exposes it
 
+When workflow accounting is enabled, traces should link to the per-run metrics artifact described in [docs/workflow-accounting.md](workflow-accounting.md).
+
 Use [templates/run-trace.md](../templates/run-trace.md) as the default artifact shape and [templates/contracts/trace-contract.md](../templates/contracts/trace-contract.md) for the required fields.
 
 ## What To Trace

@@ -19,7 +19,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Core governance: `hvn-core`
 - Intake and discovery: `hvn-onboard`, `hvn-discover`, `hvn-research`
 - Delivery: `hvn-spec`, `hvn-plan`, `hvn-build`
-- Reliability: `hvn-observability`, `hvn-eval`, `hvn-approval-gate`
+- Reliability: `hvn-observability`, `hvn-eval`, `hvn-approval-gate`, `hvn-benchmark`, `hvn-accounting`, `hvn-regression-task`
 - Gates: `hvn-review`, `hvn-design`, `hvn-security`, `hvn-ship`
 - QA: `hvn-blind-qa`, `hvn-context-brief`, `hvn-ios-sim-qa`, `hvn-web-qa`
 - Learning: `hvn-retro`
@@ -33,3 +33,6 @@ Reliability skills should be treated as cross-cutting helpers:
 - `hvn-observability` for traces
 - `hvn-eval` for trajectory scoring
 - `hvn-approval-gate` for risky-action control
+- `hvn-benchmark` for onboarding/spec comparisons
+- `hvn-accounting` for workflow timing and retry signals
+- `hvn-regression-task` for preserving high-value findings as regression work
