@@ -1,6 +1,6 @@
 # ORCA-HVN
 
-![ORCA-HVN logo](assets/orca-hvn-logo.svg)
+![ORCA-HVN logo](assets/orca.png)
 
 ORCA-HVN is Henry Van Ness's installable framework for running software work with agents through a durable system of record. It is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
 
