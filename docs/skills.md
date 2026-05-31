@@ -19,6 +19,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Core governance: `orca-core`
 - Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`, `orca-business-ideation`, `orca-attribution`, `orca-background-mode`, `orca-docs-system`, `orca-integrations`, `orca-integration-recommendation`, `orca-graph-vault-support`, `orca-adaptive-guidance`, `orca-agent-orchestration`
 - Install and setup: `orca-install-help`
+- Updates and release safety: `orca-auto-update`
 - Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
 - Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`, `orca-delegation`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
@@ -62,4 +63,5 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-adaptive-guidance` for lightweight skill-sensitive coaching, opt-out learning help, and non-condescending prompt or context hints
 - `orca-agent-orchestration` for deciding when to delegate, which pattern fits, and how to keep parent and worker boundaries clean
 - `orca-install-help` for step-by-step install guidance, validation, plugin routing, harness setup help, and failure recovery
+- `orca-auto-update` for channel-aware update checks, verification, compatibility gating, staged rollout decisions, and rollback readiness
 - `orca-self-improvement` for separating local adaptation from framework evolution and requiring evidence before promotion

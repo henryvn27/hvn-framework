@@ -6,6 +6,7 @@
 
 ### Added
 
+- Added an auto-update architecture with update channels, update modes, update discovery and verification, rollback and recovery policy, staged rollout guidance, update UX artifacts, and ORCA update command surfaces.
 - Added background mode and keep-making-progress support with autonomy levels, loop guards, permission handling, risk tiers, and resumable background receipts.
 - Added a dedicated business-ideation and venture-evaluation lane with idea one-pagers, evaluation lenses, research briefs, opportunity memos, validation plans, and `orca-idea` workflow commands.
 - Added harness-aware runtime adaptation with capability profiles, detection rules, runtime routing, policy switches, status artifacts, and safe fallbacks.

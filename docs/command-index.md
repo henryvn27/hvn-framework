@@ -8,6 +8,7 @@ If you are new, start with [first-workflow.md](first-workflow.md) before using t
 
 - `orca-install`: guided install path selection and setup
 - `orca-doctor`: install and setup validation
+- `orca-check-updates`: inspect update availability and risk before applying changes
 - `orca-onboard`: clarify a work item
 - `orca-discover`: inspect the repo and constraints
 - `orca-legacy`: start with archaeology when the codebase is inherited or fragile
@@ -35,6 +36,7 @@ If you are new, start with [first-workflow.md](first-workflow.md) before using t
 ## Inspect, Coordinate, And Recover
 
 - `orca-status`: inspect runtime and workflow state
+- `orca-update`: verify, apply, defer, or recover from ORCA updates
 - `orca-background-status`: inspect current or last unattended run
 - `orca-inspect`: review run identity, artifacts, and blockers
 - `orca-receipt`: write a compact run summary

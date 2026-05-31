@@ -41,6 +41,7 @@ Read:
 ## Runtime And Compatibility
 
 - runtime adaptation
+- auto-updates and release channels
 - setup and degraded mode
 - compatibility matrix
 - host guides
@@ -52,6 +53,7 @@ Read:
 Read:
 
 - [runtime-adaptation.md](runtime-adaptation.md)
+- [auto-updates.md](auto-updates.md)
 - [external-tool-setup.md](external-tool-setup.md)
 - [compatibility-matrix.md](compatibility-matrix.md)
 - [hosts/codex-cli.md](hosts/codex-cli.md)

@@ -39,6 +39,7 @@ The docs automation layer keeps the top-level docs, routing pages, and wiki alig
 - draft freshness notes for stale pages
 - update `docs/recent-doc-updates.md` and `docs/whats-new.md` when major docs surfaces change
 - watch install docs, plugin docs, and harness setup docs for drift as scripts, hosts, or service requirements change
+- watch update docs, release notes surfaces, and versioning guidance for drift when channel rules, compatibility policy, or doctor behavior changes
 - surface recurring docs friction from the session improvement backlog when the same routing or clarity gap keeps recurring
 - watch integration packs and stack guides for ecosystem drift in tier 1 and tier 2 services
 - watch recommendation-policy pages so defaults do not expand into generic vendor suggestion lists

@@ -83,6 +83,7 @@ If you are new:
 - truth hierarchy: [docs/truth-hierarchy.md](docs/truth-hierarchy.md)
 - friction rule: [docs/friction-reduction-principle.md](docs/friction-reduction-principle.md)
 - self-improvement model: [docs/self-improvement.md](docs/self-improvement.md)
+- update model: [docs/auto-updates.md](docs/auto-updates.md)
 - wiki home: [wiki/Home.md](wiki/Home.md)
 - what changed: [docs/whats-new.md](docs/whats-new.md)
 
@@ -90,6 +91,7 @@ If you are new:
 
 - planning and onboarding
 - runtime adaptation and host compatibility
+- auto-updates and release safety
 - goal mode and background mode
 - approvals, checkpoints, and tool governance
 - receipts, lineage, replay, and restore

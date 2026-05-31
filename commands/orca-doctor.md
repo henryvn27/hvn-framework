@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Run or explain ORCA install validation and setup diagnosis.
+Run or explain ORCA install validation, post-update validation, and setup diagnosis.
 
 ## When To Use
 
-Use during install, after install, or during troubleshooting when the user needs a concrete health check.
+Use during install, after install, after update, or during troubleshooting when the user needs a concrete health check.
 
 ## Required Inputs
 
@@ -19,18 +19,20 @@ Use during install, after install, or during troubleshooting when the user needs
 
 ## Workflow
 
-1. Verify the base install.
+1. Verify the base install or current installed target.
 2. Check core shell dependencies.
 3. Check harness docs or routing if a harness is specified.
 4. Check service-specific surfaces when requested.
-5. Return pass, fail, or manual-follow-up status for each layer.
+5. After updates, assess whether compatibility drift or rollback recommendation should be surfaced.
+6. Return pass, fail, or manual-follow-up status for each layer.
 
 ## Outputs And Artifacts
 
 - [docs/install-validation.md](../docs/install-validation.md)
+- [docs/update-validation.md](../docs/update-validation.md)
 - [templates/install-validation-report.md](../templates/install-validation-report.md)
 
 ## Related Commands And Skills
 
-- Commands: `orca-install`, `orca-check-setup`, `orca-validate-integration`
-- Skills: `orca-install-help`, `orca-tool-setup`
+- Commands: `orca-install`, `orca-check-setup`, `orca-validate-integration`, `orca-check-updates`, `orca-update`
+- Skills: `orca-install-help`, `orca-tool-setup`, `orca-auto-update`

@@ -18,6 +18,7 @@ ORCA-HVN is opinionated about how orchestration systems should feel in practice.
 12. Use orchestration only when it creates real leverage.
 13. Improve through evidence, not through random drift.
 14. Installation should be clear enough that a new user can reach first success without insider help.
+15. Updates should lower maintenance burden without creating surprise breakage or forced complexity.
 
 ## First Principle
 

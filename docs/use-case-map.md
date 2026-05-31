@@ -6,6 +6,12 @@ Recommended path:
 
 `orca-install` -> `orca-doctor` -> `docs/first-run.md`
 
+## I Need To Update ORCA Safely
+
+Recommended path:
+
+`orca-check-updates` -> `orca-update` -> `orca-doctor`
+
 ## I Need To Ship A New Feature
 
 Recommended path:

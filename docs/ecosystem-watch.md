@@ -42,6 +42,7 @@ Every sweep should explicitly watch:
 - novice and expert workflow adaptation
 - regression generation from QA
 - benchmark and eval improvements
+- release channel changes, update policy shifts, or official rollout and rollback guidance changes that should affect ORCA update behavior
 
 ## Active Opportunities
 
