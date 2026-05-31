@@ -5,6 +5,7 @@ ORCA-HVN paved roads are the strongly recommended default paths for common work.
 ## Why They Exist
 
 Paved roads reduce decision fatigue by encoding the best current default path instead of presenting a large menu of equal options.
+They should remove drag, not add ceremony.
 
 ## Current Default Roads
 
@@ -24,6 +25,7 @@ Paved roads should recommend bundles, not unrelated tools:
 - internal-tool road favors simpler hosting, database, auth, and work-management integration
 
 Do not recommend a paved road unless the user's use case actually matches it strongly.
+Do not load a paved road with optional tooling that fails the friction test.
 
 ## Leaving The Road
 

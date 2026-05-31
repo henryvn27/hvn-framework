@@ -3,6 +3,7 @@
 Supported is not the same as recommended.
 
 ORCA-HVN may support many tools, but it should recommend only a smaller set when the user's use case strongly fits the evidence-backed default.
+The deciding question is not "can ORCA-HVN support this?" but "does surfacing this reduce more friction than it creates?"
 
 ## Core Rule
 
@@ -55,3 +56,4 @@ Do not treat graph tooling as a baseline setup requirement.
 4. explain why they fit
 5. avoid unrelated suggestions
 6. respect explicit user tool choices
+7. prefer the lower-friction path when two compatible options are close

@@ -1,5 +1,7 @@
 # Issue Worthiness
 
+Repeated evidence that ORCA-HVN added avoidable setup, surfaced optional complexity too early, or forced unnecessary tool decisions is valid framework-issue material.
+
 Not every irritation deserves a framework issue.
 
 ORCA-HVN should prompt the user only when the candidate is strong enough to justify durable backlog work.

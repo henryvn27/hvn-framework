@@ -1,6 +1,7 @@
 # Minimum Friction Policy
 
 Never add a setup requirement unless it clearly reduces more friction than it creates.
+This rule applies across integrations, docs, prompts, paved roads, automations, and agent behavior.
 
 ## Preferred Order
 

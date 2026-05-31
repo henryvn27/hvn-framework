@@ -3,6 +3,7 @@
 ORCA-HVN should bias toward one good default path per use case, but only when the use case is clear enough.
 
 If the use case is weakly specified, stay neutral or ask one concise clarifying question.
+The job here is to reduce decisions, not multiply them.
 
 ## I Am Building A Web SaaS
 

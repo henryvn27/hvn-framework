@@ -4,6 +4,8 @@ This is the shortest path to first value.
 
 If you want one default ORCA path instead of a menu of options, read [first-workflow.md](first-workflow.md) first.
 
+If you want the shortest explanation of the framework philosophy, read [intro-guide.md](intro-guide.md).
+
 The point of this path is not just speed. It is also to let a new user learn the ORCA workflow directly inside ORCA, without needing someone else to walk them through every stage.
 
 ## 1. Clone And Validate

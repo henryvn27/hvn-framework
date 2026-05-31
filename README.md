@@ -6,6 +6,8 @@ ORCA-HVN is an orchestration framework for running agent-assisted software work 
 
 The name is intentional: ORCA-HVN is meant to be an orchestrator for agentic work, not just a pile of commands.
 
+Framework-wide rule: the goal is to reduce friction, not create more setup work.
+
 ORCA-HVN is the primary workflow here. It replaces the older GStack or GSD-centered way of working rather than sitting beside it. Those earlier tools helped shape some of the ideas behind this project, but the intended operating path is now ORCA-only.
 
 It is also meant to be a place where people learn how to work with orchestration and agent-management systems without needing a human to teach them first. The goal is not "learn ORCA, then graduate to something else." The goal is that ORCA both teaches the workflow and remains a strong long-term workflow.
@@ -76,6 +78,7 @@ If you are new:
 - command map: [docs/command-index.md](docs/command-index.md)
 - glossary: [docs/glossary.md](docs/glossary.md)
 - truth hierarchy: [docs/truth-hierarchy.md](docs/truth-hierarchy.md)
+- friction rule: [docs/friction-reduction-principle.md](docs/friction-reduction-principle.md)
 - wiki home: [wiki/Home.md](wiki/Home.md)
 - what changed: [docs/whats-new.md](docs/whats-new.md)
 

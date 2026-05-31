@@ -12,6 +12,7 @@ This is not a logo wall. An integration only counts when ORCA-HVN can describe:
 - what fallback exists
 
 Support is broader than recommendation. Recommendation should stay narrower and fit-based.
+ORCA-HVN should prefer the path that reduces setup and decision burden, not the path with the biggest tool surface.
 
 ## What An Integration Is
 
@@ -78,5 +79,6 @@ Start with:
 If the user already chose a tool, switch to setup-help mode instead of re-recommending the stack.
 
 That rule especially matters for optional knowledge tools such as NotebookLM, where support should often mean setup and caveat handling rather than broad recommendation.
+Use what the user already has when that gets them to value faster.
 
 Then open the relevant pack in [../integrations/README.md](../integrations/README.md).

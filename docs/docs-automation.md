@@ -44,6 +44,7 @@ The docs automation layer keeps the top-level docs, routing pages, and wiki alig
 - keep the single beginner ORCA path clear instead of letting the intro experience collapse into a command catalog
 - watch optional integrations such as NotebookLM so official and community guidance do not get blurred together
 - use vault or graph analysis outputs to spot duplicate docs, weak hub pages, and routing gaps when that would reduce docs drift
+- prefer collapsing redundant explanation over adding one more top-level page
 
 ## Boundaries
 

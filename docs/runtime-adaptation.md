@@ -41,6 +41,7 @@ Background mode is also part of runtime adaptation. Different harnesses may supp
 
 Integration routing is part of runtime adaptation too. A mobile stack should not receive a web-first payments or deploy recommendation just because the harness can discuss both.
 Runtime adaptation should also suppress recommendation clutter when the fit is weak, the use case is unclear, or the user already chose a different compatible tool.
+It should prefer direct execution or the shortest setup-help path over capability theater.
 
 Controller/executor routing is part of runtime adaptation. A controller may choose one harness for orchestration and another for bounded execution when the pairing is clearer or safer than single-harness operation.
 

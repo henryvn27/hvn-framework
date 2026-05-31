@@ -26,6 +26,7 @@ It should:
 - make the next action obvious
 - help the user build a correct mental model of the workflow
 - use the user's actual notes, vault, and existing artifacts as the teaching context when available
+- keep optional complexity hidden until the first useful path is clear
 
 It should not:
 
@@ -33,6 +34,7 @@ It should not:
 - turn onboarding into a lecture
 - require a human operator to translate the system for them
 - replace strong vault evidence with generic best-practice filler
+- surface a catalog of optional tools before the first useful outcome
 
 ## Exit Guidance
 

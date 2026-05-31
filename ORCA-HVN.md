@@ -35,6 +35,7 @@ ORCA-HVN should be treated as the primary workflow, not as an add-on beside GSta
 25. **Quality failures need concrete evidence:** frustration, generic output, and wrong-direction behavior should inform improvement only when grounded in observable session evidence.
 26. **Modern stacks need explicit integration guidance:** web, mobile, backend, auth, payments, analytics, automation, and business tools should be routed through reviewed integration packs rather than ad hoc guesses.
 27. **Recommendation should be narrower than support:** ORCA-HVN should recommend tools only when the use case strongly fits and otherwise stay neutral or help with the user's chosen path.
+28. **Friction reduction beats feature sprawl:** do not surface, recommend, or require features unless they reduce more friction than they create.
 
 ## Coordination Modes
 

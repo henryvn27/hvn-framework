@@ -23,6 +23,7 @@ These are evidence signals, not automatic truth.
 - poor failure-handling signal
 - unclear guidance signal
 - over-automation or under-explanation signal
+- setup-theater signal
 
 ## Required Signal Fields
 

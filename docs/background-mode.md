@@ -68,6 +68,7 @@ Treat autonomy as a budget, not a binary.
 - same as one of the levels above, but with an explicit allowlist of tools and services
 
 Background mode should always choose the lowest autonomy level that still makes progress.
+If a foreground move is clearer and lower-friction, prefer it over background ceremony.
 
 When integrations are involved, background mode should prefer:
 

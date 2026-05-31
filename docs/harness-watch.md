@@ -1,6 +1,7 @@
 # Harness Watch
 
 This watchlist tracks harness-level compatibility shifts that affect ORCA-HVN guidance, workflows, or documentation.
+Track not only what hosts can do, but whether host-specific features are adding or removing user friction when surfaced through ORCA-HVN.
 
 ## What To Track
 

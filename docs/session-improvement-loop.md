@@ -7,6 +7,7 @@ At the end of a meaningful session, ORCA-HVN should briefly review the work and 
 > Did this session expose a reusable ORCA-HVN framework problem that should become backlog work?
 
 If the answer is yes, ORCA-HVN should turn that friction into a structured improvement note, check whether it is worth an issue, look for overlap, and ask the user before drafting or submitting a GitHub issue to the ORCA-HVN repository.
+One of the main review questions is whether ORCA-HVN reduced drag or added it.
 
 ## Purpose
 
@@ -20,6 +21,7 @@ Use the loop to catch:
 - repeated manual workarounds
 - weak automation
 - host-specific friction that should change the framework
+- avoidable setup work or option sprawl
 - session-quality signals that indicate low trust, generic output, repeated wrong direction, or poor failure handling
 
 ## What It Is Not

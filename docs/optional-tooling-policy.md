@@ -1,6 +1,7 @@
 # Optional Tooling Policy
 
 Optional tooling should stay optional.
+Optional does not mean "mention it anyway." It means ORCA-HVN should surface it only when the benefit is clear enough to justify the extra complexity.
 
 ## Policy
 
