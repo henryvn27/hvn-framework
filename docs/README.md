@@ -11,6 +11,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [install-overview.md](install-overview.md): how the install system is organized
 - [install.md](install.md): canonical step-by-step install guide
 - [auto-updates.md](auto-updates.md): how ORCA checks, verifies, applies, and recovers updates
+- [readme-scope.md](readme-scope.md): what the top-level README should and should not do
 - [intro.md](intro.md): the core mental model and why ORCA exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
@@ -23,6 +24,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [information-architecture.md](information-architecture.md): how the docs are organized and why
 - [feature-index.md](feature-index.md): what capabilities exist
 - [command-index.md](command-index.md): which command to use
+- [readme-feature-weighting.md](readme-feature-weighting.md): how README space should map to project importance
 - [use-case-map.md](use-case-map.md): which workflow fits which situation
 - [glossary.md](glossary.md): plain-language definitions for core terms
 - [concept-map.md](concept-map.md): how the main framework pieces connect
@@ -57,6 +59,8 @@ These are teaching-oriented pages for common paths:
 ## Contributor And Maintenance Docs
 
 - [contributing-docs.md](contributing-docs.md)
+- [readme-guardrails.md](readme-guardrails.md)
+- [readme-review.md](readme-review.md)
 - [docs-automation.md](docs-automation.md)
 - [wiki-maintenance.md](wiki-maintenance.md)
 - [staleness-detection.md](staleness-detection.md)

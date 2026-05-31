@@ -27,6 +27,8 @@ for file in \
   docs/auto-updates.md \
   docs/update-policy.md \
   docs/update-validation.md \
+  docs/readme-scope.md \
+  docs/readme-review.md \
   docs/docs-automation.md \
   docs/wiki-maintenance.md \
   docs/staleness-detection.md \
@@ -74,6 +76,7 @@ for file in \
   docs/examples/install-failure-recovery.md \
   docs/examples/stable-auto-update.md \
   docs/examples/rollback-after-failed-update.md \
+  docs/examples/good-readme-balance.md \
   docs/examples/qa-to-regression.md \
   .github/workflows/benchmark-check.yml \
   .github/workflows/metrics-validation.yml

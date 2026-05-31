@@ -19,6 +19,7 @@ ORCA-HVN is opinionated about how orchestration systems should feel in practice.
 13. Improve through evidence, not through random drift.
 14. Installation should be clear enough that a new user can reach first success without insider help.
 15. Updates should lower maintenance burden without creating surprise breakage or forced complexity.
+16. The README should describe the project as a whole, not whichever subsystem was edited most recently.
 
 ## First Principle
 
