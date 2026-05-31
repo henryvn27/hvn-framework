@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Run adaptive onboarding to understand a product, feature, or project before writing a spec.
+Run an interview-first onboarding flow to understand a product, feature, or project before writing a spec.
 
 ## When To Use
 
@@ -38,17 +38,20 @@ Use the chosen work item or document as the source prompt and write the intake s
 3. Run `hvn-linear-health` when the request comes from a Linear issue.
 4. Initialize or update run memory with `hvn-memory`.
 5. Use `hvn-question-flow` in onboarding mode.
-6. Ask one high-leverage question by default, or a 2-3 question batch when the questions are short and independent.
-7. Reflect back what was learned after each round when it changes the next question.
-8. Stop when more questions would not materially improve the first spec.
-9. Produce intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
-10. Sync the result to Linear or the opt-out record.
+6. Distinguish greenfield from existing-project work.
+7. Ask one high-leverage question by default, or a 2-3 question batch when the questions are short and independent.
+8. Gather goals, constraints, preferences, edge cases, stack assumptions, repo conditions, stakeholder needs, and success criteria.
+9. Reflect back what was learned after each round when it changes the next question.
+10. Stop when the problem is understood enough for a first useful spec.
+11. Produce onboarding intake, unresolved questions, readiness assessment, and spec creation recommendation.
+12. Do not produce implementation planning before the spec exists.
+13. Sync the result to Linear or the opt-out record.
 
 ## Interactive Question Flow
 
 - Uses interactive flow: yes
 - Default round size: one question
-- Collects: user, problem, target surface, constraints, non-goals, success signal, next workflow
+- Collects: problem, intended outcome, user or stakeholder needs, target surface, repo context, constraints, assumptions, edge cases, non-goals, success criteria, next workflow
 - Stop condition: enough context exists for a first useful spec or discovery pass
 - Final artifact: `templates/onboarding-intake.md`
 
@@ -64,6 +67,7 @@ Use the chosen work item or document as the source prompt and write the intake s
 
 - If the user cannot answer, record assumptions and unresolved questions.
 - If the project is already specified, skip to `hvn-spec`.
+- If the user asks for implementation during onboarding, state that onboarding must first produce spec-ready context.
 
 ## Related Commands And Skills
 

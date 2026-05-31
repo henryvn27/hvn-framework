@@ -19,7 +19,7 @@ Do not use when the user only wants brainstorming, review, or research.
 
 ## Required Inputs
 
-- Task or spec
+- Latest approved spec
 
 ## Optional Inputs
 
@@ -30,15 +30,17 @@ Do not use when the user only wants brainstorming, review, or research.
 ## Exact Workflow
 
 1. Use `hvn-router` to confirm the most specific installed skill for the task.
-2. Confirm the approved scope from Linear or the opt-out record.
-3. Read run memory and relevant regression packs.
-4. Read relevant files before editing.
-5. Preserve user changes and existing patterns.
-6. Run or apply authenticity preflight when UI or polished writing matters.
-7. Preserve stack and functionality unless redesign or rewrite was approved.
-8. Make the smallest coherent change that satisfies the phase.
-9. Run appropriate verification and relevant regression packs.
-10. Record what changed and what could not be verified in the durable record and run memory.
+2. Read the latest approved spec before relying on chat history.
+3. Confirm the approved scope, active milestone, and spec version from Linear or the opt-out record.
+4. Read run memory and relevant regression packs.
+5. Read relevant files before editing.
+6. Preserve user changes and existing patterns.
+7. Run or apply authenticity preflight when UI or polished writing matters.
+8. Preserve stack and functionality unless redesign or rewrite was approved in the spec.
+9. Make the smallest coherent change that satisfies the current spec phase.
+10. Do not expand scope casually; if requirements changed, update the spec before continuing.
+11. Run verification mapped to the spec acceptance criteria and relevant regression packs.
+12. Record what changed, which spec criteria were satisfied, deviations, and what could not be verified in the durable record and run memory.
 
 ## Expected Outputs
 
@@ -55,6 +57,8 @@ The work should be maintainable by the repo's existing standards and should not 
 - Rewriting unrelated systems.
 - Skipping verification.
 - Leaving generated claims unsupported.
+- Implementing from loose conversation instead of the latest spec.
+- Silently accepting scope creep.
 
 ## Relationship To Other HVN Skills And Commands
 

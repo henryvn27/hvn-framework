@@ -24,6 +24,7 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - `hvn-memory-update`
 - `hvn-question-flow`
 - `hvn-blind-qa-brief`
+- `hvn-spec-check`
 - `hvn-delta`
 - `hvn-style`
 - `hvn-linear-health`
@@ -51,6 +52,7 @@ Question-flow commands are interactive lifecycle commands. They ask focused roun
 - `hvn-discover`
 - `hvn-research`
 - `hvn-spec`
+- `hvn-spec-check`
 - `hvn-plan`
 - `hvn-build`
 - `hvn-review`
@@ -68,6 +70,7 @@ Question-flow commands are interactive lifecycle commands. They ask focused roun
 Linear state, labels, comments, and agent delegation should trigger command selection. Example:
 
 - `needs-spec` triggers `hvn-spec`.
+- `Spec Ready` may trigger `hvn-spec-check` before planning.
 - `Spec Ready` triggers `hvn-linear-plan-comment`.
 - `Ready for Build` triggers `hvn-build` after approval.
 - `In QA` plus `blind-qa` triggers `hvn-test-blind`.

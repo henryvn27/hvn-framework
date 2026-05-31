@@ -177,6 +177,21 @@ Installed HVN creates `.hvn/memory/runs/archive/` for local continuation records
 
 Installed HVN includes guided question-flow commands and templates. Use `commands/hvn-question-flow.md`, `commands/hvn-onboard.md`, `commands/hvn-spec.md`, `commands/hvn-linear-intake.md`, and `commands/hvn-blind-qa-brief.md` for focused command-driven clarification. The framework defines prompt behavior and artifacts; the host app provides the visible slash-command, popup, command-palette, or chat shell.
 
+## Interview And Spec Workflow
+
+Installed HVN includes interview-first onboarding and spec-driven execution artifacts:
+
+- `docs/onboarding.md`
+- `docs/spec-driven-workflow.md`
+- `docs/spec-quality-bar.md`
+- `docs/scope-discipline.md`
+- `docs/milestone-planning.md`
+- `commands/hvn-spec-check.md`
+- `templates/spec.md`
+- `templates/spec-review.md`
+- `templates/requirements-split.md`
+- `templates/milestone-plan.md`
+
 ## Feature Artifacts
 
 Installed HVN includes run memory, blind-to-briefed deltas, aesthetic profiles, issue health checks, and regression packs. Their templates live in `templates/`, skills in `skills/`, commands in `commands/`, and docs in `docs/`.

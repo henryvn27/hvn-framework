@@ -30,16 +30,20 @@ done
 [ -f "$target/commands/hvn-memory-read.md" ] || { printf 'Missing hvn-memory-read command\n' >&2; exit 1; }
 [ -f "$target/commands/hvn-memory-update.md" ] || { printf 'Missing hvn-memory-update command\n' >&2; exit 1; }
 [ -f "$target/commands/hvn-question-flow.md" ] || { printf 'Missing hvn-question-flow command\n' >&2; exit 1; }
+[ -f "$target/commands/hvn-spec-check.md" ] || { printf 'Missing hvn-spec-check command\n' >&2; exit 1; }
 [ -f "$target/skills/hvn-core/SKILL.md" ] || { printf 'Missing hvn-core skill\n' >&2; exit 1; }
 [ -f "$target/skills/hvn-router/SKILL.md" ] || { printf 'Missing hvn-router skill\n' >&2; exit 1; }
 [ -f "$target/skills/hvn-run-memory/SKILL.md" ] || { printf 'Missing hvn-run-memory skill\n' >&2; exit 1; }
 [ -f "$target/skills/hvn-question-flow/SKILL.md" ] || { printf 'Missing hvn-question-flow skill\n' >&2; exit 1; }
+[ -f "$target/skills/hvn-debug/SKILL.md" ] || { printf 'Missing hvn-debug skill\n' >&2; exit 1; }
 [ -f "$target/profiles/henry-van-ness.md" ] || { printf 'Missing Henry profile\n' >&2; exit 1; }
 
 [ -f "$target/docs/cross-harness-architecture.md" ] || { printf 'Missing cross-harness architecture doc\n' >&2; exit 1; }
 [ -f "$target/docs/compatibility-matrix.md" ] || { printf 'Missing compatibility matrix\n' >&2; exit 1; }
 [ -f "$target/docs/command-mapping.md" ] || { printf 'Missing command mapping\n' >&2; exit 1; }
 [ -f "$target/docs/portable-skills.md" ] || { printf 'Missing portable skills doc\n' >&2; exit 1; }
+[ -f "$target/docs/spec-driven-workflow.md" ] || { printf 'Missing spec-driven workflow doc\n' >&2; exit 1; }
+[ -f "$target/templates/spec-review.md" ] || { printf 'Missing spec-review template\n' >&2; exit 1; }
 
 if [ "$host" != "shared" ]; then
   [ -f "$target/adapters/$host/README.md" ] || { printf 'Missing host adapter: %s\n' "$host" >&2; exit 1; }

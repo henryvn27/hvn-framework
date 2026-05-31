@@ -1,13 +1,13 @@
 ---
 name: hvn-spec
-description: Convert intent, discovery, and research into a clear implementation specification.
+description: Convert onboarding, discovery, and research into the primary implementation specification.
 ---
 
 # HVN Spec
 
 ## What This Skill Is
 
-A spec-writing workflow that creates the contract for implementation and QA.
+A spec-writing workflow that creates the controlling contract for planning, implementation, review, and QA.
 
 ## Trigger
 
@@ -36,14 +36,16 @@ Do not use for tiny mechanical edits where acceptance is obvious and low-risk.
 2. Check issue health and current run memory.
 3. Read Linear issue context or the opt-out work item.
 4. Define the problem and target users.
-5. Write goals, non-goals, flows, requirements, edge cases, and acceptance criteria.
+5. Define problem, objective, target users or usage context, v1 scope, later phase scope, out-of-scope work, constraints, assumptions, edge cases, UX or system behavior, data or API implications, likely area of change, requirements, acceptance criteria, verification criteria, and rollout risks.
 6. Identify whether authenticity preflight and aesthetic profile selection are required.
 7. Preserve existing stack and repo conventions unless redesign was requested.
 8. Identify assumptions and unresolved questions.
-9. Confirm that each acceptance criterion is testable.
-10. Format the result for a Linear spec comment or durable opt-out artifact.
-11. State whether human approval is required before planning or build.
-12. Update run memory.
+9. Confirm that each acceptance criterion is testable and maps to verification criteria.
+10. Split current, later, and excluded work using `templates/requirements-split.md` when needed.
+11. Format the result for a Linear spec comment or durable opt-out artifact.
+12. State whether human approval is required before planning or build.
+13. Recommend or run `hvn-spec-check` before planning.
+14. Update run memory with spec status and active spec version.
 
 ## Expected Outputs
 
@@ -59,7 +61,9 @@ A builder and reviewer should reach the same interpretation of done.
 - Writing implementation details as goals.
 - Missing non-goals.
 - Creating acceptance criteria that cannot be verified.
+- Mixing later-phase ideas into v1.
+- Planning from chat instead of the spec.
 
 ## Relationship To Other HVN Skills And Commands
 
-Feeds `hvn-plan`, `hvn-linear-plan-comment`, `hvn-review`, and briefed QA.
+Feeds `hvn-spec-check`, `hvn-plan`, `hvn-linear-plan-comment`, `hvn-build`, `hvn-review`, and briefed QA.

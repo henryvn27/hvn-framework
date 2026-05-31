@@ -1,6 +1,6 @@
 # HVN Operating Manual
 
-HVN is the master operating policy for rigorous agentic software development. It defines how agents onboard, specify, plan, build, review, test, and ship work through a durable coordination layer.
+HVN is the master operating policy for rigorous agentic software development. It defines how agents interview, specify, plan, build, review, test, and ship work through a durable coordination layer.
 
 HVN is Linear-first by default. Linear is the preferred system of record for issue intake, scope clarification, status transitions, agent handoffs, implementation plans, QA runs, review findings, ship readiness, and retrospectives. If the user opts out of Linear, HVN maps the same gates and artifacts to the user's chosen system of record.
 
@@ -11,17 +11,19 @@ HVN is cross-harness. The shared core should work across Claude Code, Codex CLI,
 ## Principles
 
 1. **System of record first:** every meaningful action should be recoverable from Linear or the declared opt-out record.
-2. **Spec first:** implementation follows a written contract.
-3. **Route first:** select the narrowest installed skill that matches the task.
-4. **Portable first:** shared behavior lives in the core; host-specific mechanics live in adapters.
-5. **Preserve first:** keep existing stack and conventions unless redesign is requested.
-6. **Evidence over confidence:** agents verify behavior rather than relying on plausible reasoning.
-7. **Calibrate visible work:** UI and writing that shape trust need authenticity preflight.
-8. **Context is a tool:** context is disclosed deliberately, especially during QA.
-9. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
-10. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
-11. **Memory is maintained:** every non-trivial run keeps compact state that a fresh agent can use immediately.
-12. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
+2. **Interview before spec:** fuzzy ideas are clarified before execution artifacts are written.
+3. **Spec first:** implementation follows the latest approved written contract.
+4. **Scope is explicit:** v1, later-phase, and out-of-scope work are separated before build.
+5. **Route first:** select the narrowest installed skill that matches the task.
+6. **Portable first:** shared behavior lives in the core; host-specific mechanics live in adapters.
+7. **Preserve first:** keep existing stack and conventions unless redesign is requested.
+8. **Evidence over confidence:** agents verify behavior against the spec rather than relying on plausible reasoning.
+9. **Calibrate visible work:** UI and writing that shape trust need authenticity preflight.
+10. **Context is a tool:** context is disclosed deliberately, especially during QA.
+11. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
+12. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
+13. **Memory is maintained:** every non-trivial run keeps compact state that a fresh agent can use immediately.
+14. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
 
 ## Cross-Harness Policy
 
@@ -73,6 +75,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Issue health mode:** decide whether a Linear issue is ready for the next gate.
 - **Aesthetic profile mode:** select or update visual and writing taste direction.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
+- **Spec check mode:** decide whether the spec is ready for planning, needs clarification, or is too vague to proceed.
 - **Discovery mode:** inspect code, product shape, dependencies, constraints, and risks.
 - **Research mode:** gather evidence when the answer is not already known.
 - **Specification mode:** convert issue context into acceptance criteria and non-goals.
@@ -90,11 +93,13 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Authenticity calibration for high-visibility UI or polished writing
 - Run memory for non-trivial workstreams
 - Linear issue health report before build gates
-- Intake summary or Linear intake comment
+- Onboarding intake summary or Linear intake comment
 - Discovery notes when code or constraints are inspected
 - Research brief when outside evidence informs a decision
 - Spec or Linear spec comment
-- Implementation plan or Linear plan comment
+- Spec review before planning non-trivial work
+- Requirements split when scope contains future or excluded work
+- Milestone plan or Linear plan comment
 - Review report or Linear review comment
 - QA report or Linear QA comment
 - Ship checklist or Linear ship comment
@@ -123,19 +128,21 @@ Then use the standard lifecycle:
 7. Question flows ask targeted rounds when missing context blocks onboarding, discovery, spec, Linear intake, or QA briefing.
 8. Aesthetic profile is selected when design or writing matters.
 9. Spec is generated and attached or summarized back to the issue, then linked from memory.
-10. Plan is posted to the issue and approval status is reflected in memory.
-11. Human approves the plan when required.
-12. Build agent executes approved scope with the selected skill and updates memory after meaningful phases.
-13. Review agent comments findings, checks skill fit, emits regression candidates, and updates memory.
-14. QA briefing collects platform, launch target, and allowed context when needed.
-15. Blind QA agent runs first-look test without memory input.
-16. Blind QA results are saved, then summarized into memory.
-17. Context briefer creates a minimal second-pass brief.
-18. Guided QA reruns with limited context.
-19. Delta report compares blind and briefed outcomes and updates memory with product insight.
-20. Security, review, and regression packs run as needed.
-21. Ship readiness checklist is posted and memory is finalized or archived.
-22. Issue moves to done only with evidence.
+10. Scope is split into v1, later phase, and out-of-scope work when needed.
+11. `hvn-spec-check` determines whether the spec is ready for planning.
+12. Plan is derived from the spec, posted to the issue, and approval status is reflected in memory.
+13. Human approves the plan when required.
+14. Build agent executes approved scope against the spec with the selected skill and updates memory after meaningful phases.
+15. Review agent checks changes against the spec, skill fit, and regression candidates, then updates memory.
+16. QA briefing collects platform, launch target, and allowed context when needed.
+17. Blind QA agent runs first-look test without memory or spec input.
+18. Blind QA results are saved, then summarized into memory.
+19. Context briefer creates a minimal second-pass brief.
+20. Guided QA reruns with limited context and acceptance criteria.
+21. Delta report compares blind and briefed outcomes and updates memory with product insight.
+22. Security, review, and regression packs run as needed.
+23. Ship readiness checklist is posted and memory is finalized or archived.
+24. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -170,6 +177,10 @@ Use `hvn-run-memory` to preserve essential state between agent sessions. Initial
 
 Use `hvn-question-flow` when ambiguity blocks the next artifact. Ask one question by default, or a 2-3 question batch only when the questions are short and independent. Stop when enough information exists to produce the next artifact with explicit assumptions. Capture answers in question-round, onboarding, clarification, QA brief, Linear sync, or run memory artifacts. HVN provides this interaction behavior; the host application provides any visible modal, popup, command palette, or chat UI.
 
+## Spec-Driven Policy
+
+For non-trivial work, the latest approved spec is the source of truth. Onboarding feeds the spec, the spec feeds the plan, the plan feeds execution, and verification checks acceptance and verification criteria from the spec. If requirements change, revise the spec before expanding implementation. If the spec is weak, run `hvn-spec-check` and clarify before planning.
+
 ## Issue Health Policy
 
 Use `hvn-linear-health` before implementation. If scope, acceptance criteria, environment, owner, reviewer, QA plan, or blocker status is unclear, route back to onboarding or spec before build.
@@ -190,7 +201,7 @@ The blind pass is never retroactively edited after context is disclosed. Later f
 
 ## Onboarding
 
-Onboarding is an adaptive subagent interview. In Linear-first mode, the issue description and comments are the starting prompt. Ask high-leverage questions about users, jobs, constraints, success signals, platform, data, risks, and non-goals. Stop when the next question is unlikely to change the first useful spec. Output unresolved questions instead of forcing certainty.
+Onboarding is an adaptive subagent interview. In Linear-first mode, the issue description and comments are the starting prompt. Ask high-leverage questions about problem, intended outcome, users, jobs, constraints, success signals, platform, data, risks, edge cases, greenfield or existing-project context, and non-goals. Stop when the next question is unlikely to change the first useful spec. Output unresolved questions instead of forcing certainty.
 
 ## Definition Of Done
 

@@ -39,6 +39,19 @@ Run memory is the resumption layer. It sits beside the coordination record and p
 
 This separation prevents memory from becoming a transcript while still letting fresh agents resume quickly.
 
+## Spec Contract Layer
+
+For non-trivial work, the spec sits between intake and execution:
+
+- onboarding gathers context
+- discovery and research reduce unknowns
+- spec defines the contract
+- spec check gates planning
+- milestone plan derives phases from requirements
+- build, review, and QA verify against the spec
+
+Run memory records the active spec version and status, but it does not replace the spec.
+
 ## Question Flow Layer
 
 Interactive question flows sit above commands and below host UI rendering:

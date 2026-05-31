@@ -6,7 +6,7 @@ HVN is Linear-first by default: issues, projects, states, comments, handoffs, QA
 
 Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
 
-HVN is spec-driven, subagent-aware, cross-harness, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, and premature done states.
+HVN is interview-first, spec-driven, Linear-first, subagent-aware, cross-harness, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, scope creep, and premature done states.
 
 The installed default behavior is documented in `HVN.defaults.md`. The shipped profile is `profiles/henry-van-ness.md`.
 
@@ -31,6 +31,10 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
 - **Shared core plus adapters:** portable skills, commands, templates, and docs stay shared; host-specific behavior lives in `adapters/`.
 - **Most-specific skill routing:** HVN chooses the narrowest installed skill that fits the task before generic execution.
+- **Interview-first onboarding:** fuzzy ideas become structured intake artifacts before specs or plans.
+- **Spec as execution contract:** non-trivial planning, build, review, and QA derive from the latest approved spec.
+- **Scope discipline:** v1, later-phase, and out-of-scope work are separated before execution.
+- **Milestone planning:** plans map phases to spec requirements and verification criteria.
 - **Authenticity preflight:** high-visibility UI and polished writing are calibrated against generic AI failure modes before execution.
 - **Run memory:** each issue can keep a compact continuation record for fresh agents.
 - **Interactive question flows:** command-driven onboarding, clarification, Linear intake, and QA briefing ask focused question rounds instead of giant forms.
@@ -117,6 +121,11 @@ For Linear-first setup, read:
 - `docs/compatibility-matrix.md`
 - `docs/portable-skills.md`
 - `docs/command-mapping.md`
+- `docs/onboarding.md`
+- `docs/spec-driven-workflow.md`
+- `docs/spec-quality-bar.md`
+- `docs/scope-discipline.md`
+- `docs/milestone-planning.md`
 - `docs/run-memory.md`
 - `docs/run-memory-linear.md`
 - `docs/run-memory-handoffs.md`
@@ -142,18 +151,19 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 6. `hvn-question-flow` runs focused question rounds when missing context blocks the next artifact.
 7. `hvn-discover` inspects constraints and records durable findings.
 8. `hvn-style` selects an aesthetic profile when taste continuity matters.
-9. `hvn-spec` creates a structured spec from issue context and links it from memory.
-10. `hvn-linear-plan-comment` posts the plan to the issue and memory records approval state.
-11. Human approves the plan when required.
-12. `hvn-build` executes approved scope and updates memory after meaningful phases.
-13. `hvn-review` posts findings and regression candidates, then updates memory.
-14. `hvn-blind-qa-brief` collects only allowed QA context when needed.
-15. `hvn-test-blind` runs first-look QA with minimal issue context; memory is updated only after the blind report is saved.
-16. `hvn-context-brief` creates a bounded second-pass packet.
-17. `hvn-test-briefed` and `hvn-delta` compare blind and briefed outcomes.
-18. `hvn-regression` creates or runs regression packs.
-19. `hvn-linear-ship-check` posts ship readiness and finalizes memory.
-20. Issue moves to done only with evidence.
+9. `hvn-spec` creates the primary execution spec and links it from memory.
+10. `hvn-spec-check` decides whether the spec is ready for planning.
+11. `hvn-linear-plan-comment` or `hvn-plan` creates milestone phases from the spec.
+12. Human approves the plan when required.
+13. `hvn-build` executes approved scope against the spec and updates memory after meaningful phases.
+14. `hvn-review` checks implementation against the spec and regression risks, then updates memory.
+15. `hvn-blind-qa-brief` collects only allowed QA context when needed.
+16. `hvn-test-blind` runs first-look QA with minimal issue context; memory is updated only after the blind report is saved.
+17. `hvn-context-brief` creates a bounded second-pass packet.
+18. `hvn-test-briefed` and `hvn-delta` compare blind and briefed outcomes.
+19. `hvn-regression` creates or runs regression packs.
+20. `hvn-linear-ship-check` posts ship readiness and finalizes memory.
+21. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -171,6 +181,7 @@ Commands in `commands/` are installable prompt definitions. Linear-specific comm
 - `hvn-memory-update`
 - `hvn-question-flow`
 - `hvn-blind-qa-brief`
+- `hvn-spec-check`
 - `hvn-delta`
 - `hvn-style`
 - `hvn-linear-health`
@@ -202,6 +213,7 @@ Skills in `skills/` define reusable execution behavior. Linear-specific skills i
 - `hvn-linear-executor`
 - `hvn-linear-qa`
 - `hvn-linear-release`
+- `hvn-debug`
 
 Templates in `templates/` include both full artifacts and Linear-ready comment formats.
 
@@ -212,6 +224,10 @@ Run memory is a first-class HVN lifecycle artifact. Installed projects use `.hvn
 ## Interactive Question Flows
 
 HVN supports guided question-driven flows through installable commands. Commands such as `/hvn:onboard`, `/hvn:discover`, `/hvn:spec`, `/hvn:linear-intake`, and `/hvn:blind-qa-brief` can ask one focused question or a compact 2-3 question batch, wait for the answer, update structured artifacts, and stop once enough information exists. HVN defines the interaction pattern; the host app controls the visible command palette, modal, or chat UI.
+
+## Spec-Driven Execution
+
+For non-trivial work, HVN treats the spec as the prompt for planning, execution, review, and verification. Onboarding interviews clarify the problem first, `hvn-spec` writes the contract, `hvn-spec-check` gates planning, `hvn-plan` maps milestones to requirements, and build/review/QA record deviations against the approved spec instead of improvising from chat history.
 
 ## Blind QA In Linear
 

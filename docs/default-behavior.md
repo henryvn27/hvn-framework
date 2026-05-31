@@ -14,6 +14,7 @@ Framework defaults apply unless a profile or direct user instruction overrides t
 - Run authenticity preflight for high-visibility UI and polished writing.
 - Keep run memory for non-trivial workstreams and handoffs.
 - Use interactive question flows when ambiguity blocks the next artifact.
+- Use interview-first onboarding and spec-first execution for non-trivial work.
 - Use full-output enforcement when the user asks for exhaustive output.
 - Keep review, QA, and ship evidence in the system of record.
 
@@ -59,6 +60,10 @@ Run memory is required for non-trivial work that spans phases, agents, blockers,
 ## Interactive Question Flow Default
 
 Question flows ask targeted clarification rounds through installable commands. Ask one question by default, use compact 2-3 question batches only for independent facts, stop once enough information exists, and capture answers in structured artifacts. Do not imply HVN controls host-native UI rendering.
+
+## Spec-Driven Default
+
+The spec is the primary execution artifact. Plans derive from the spec, builds implement the spec, reviews inspect against the spec, and QA verifies acceptance criteria. If scope changes, update the spec instead of silently adapting implementation.
 
 ## Cross-Harness Default
 

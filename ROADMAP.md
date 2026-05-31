@@ -48,6 +48,13 @@
 - Add host-specific install scripts and conservative compatibility docs.
 - Document portable skills, command mapping, Linear fallback, run memory portability, and QA tool boundaries.
 
+## 1.4
+
+- Strengthen interview-first onboarding.
+- Make the spec the primary execution artifact.
+- Add spec quality checks, requirements splitting, and milestone planning.
+- Require build, review, debug, and QA workflows to verify against the approved spec.
+
 ## Later
 
 - Explore signed releases.

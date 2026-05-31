@@ -84,6 +84,17 @@ Different hosts expose Linear differently:
 
 The run memory behavior is the same in every case: keep the Linear ID, current sync status, and pending comment or state change visible.
 
+## Spec Status In Memory
+
+When Linear is the system of record, run memory should track:
+
+- linked spec comment or artifact
+- active spec version
+- spec-check decision
+- approval source
+- current milestone
+- pending spec revision when requirements change
+
 ## Linear Sync Comment Shape
 
 Keep issue comments short:

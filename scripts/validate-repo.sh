@@ -41,6 +41,7 @@ commands/hvn-question-flow.md
 commands/hvn-onboard.md
 commands/hvn-discover.md
 commands/hvn-spec.md
+commands/hvn-spec-check.md
 commands/hvn-linear-intake.md
 commands/hvn-help.md
 commands/hvn-blind-qa-brief.md
@@ -49,6 +50,11 @@ docs/cross-harness-architecture.md
 docs/compatibility-matrix.md
 docs/command-mapping.md
 docs/portable-skills.md
+docs/onboarding.md
+docs/spec-driven-workflow.md
+docs/spec-quality-bar.md
+docs/scope-discipline.md
+docs/milestone-planning.md
 docs/linear-setup.md
 docs/default-behavior.md
 docs/skill-routing.md
@@ -104,14 +110,24 @@ docs/examples/codex-workflow.md
 docs/examples/opencode-workflow.md
 docs/examples/hermes-workflow.md
 docs/examples/cross-harness-handoff.md
+docs/examples/full-feature-workflow.md
+docs/examples/onboarding-interview.md
+docs/examples/spec-from-idea.md
+docs/examples/spec-to-plan.md
+docs/examples/verify-against-spec.md
+docs/examples/scope-splitting.md
 mcp/linear.example.json
 examples/sample-run-memory/README.md
 skills/hvn-question-flow/SKILL.md
+skills/hvn-debug/SKILL.md
 templates/question-round.md
 templates/onboarding-intake.md
 templates/clarification-summary.md
 templates/qa-brief-intake.md
 templates/linear-question-sync.md
+templates/spec-review.md
+templates/requirements-split.md
+templates/milestone-plan.md
 profiles/henry-van-ness.md
 profiles/henry-defaults.md
 profiles/editorial.md
@@ -132,9 +148,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 37 ] || fail "expected at least 37 command definitions"
-[ "$skill_count" -ge 32 ] || fail "expected at least 32 skill definitions"
-[ "$template_count" -ge 32 ] || fail "expected at least 32 templates"
+[ "$command_count" -ge 38 ] || fail "expected at least 38 command definitions"
+[ "$skill_count" -ge 33 ] || fail "expected at least 33 skill definitions"
+[ "$template_count" -ge 35 ] || fail "expected at least 35 templates"
 
 for script in install/install.sh install/install-claude.sh install/install-codex.sh install/install-opencode.sh install/install-hermes.sh install/detect-host.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

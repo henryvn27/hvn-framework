@@ -7,6 +7,8 @@ This profile captures the shipped HVN default operating style. It is an example 
 - Use Linear first for non-trivial work.
 - Run issue health checks before implementation.
 - Maintain run memory for multi-step issues, handoffs, failed attempts, blockers, QA findings, and ship readiness.
+- Treat onboarding as an interview and the spec as the execution contract for non-trivial work.
+- Run spec checks before planning when ambiguity remains.
 - Inspect for a matching Linear project before implementation.
 - Create or reuse issues before meaningful work.
 - Keep issue comments, blockers, links, and status current.
@@ -56,5 +58,6 @@ This profile captures the shipped HVN default operating style. It is an example 
 - Use blind-to-briefed delta reports for product clarity decisions.
 - Create regression packs from meaningful QA and review findings.
 - Require evidence before done.
+- Verify against spec acceptance criteria before done.
 - Keep release and rollback notes in the system of record.
 - Finalize or archive run memory when a workstream ships, is canceled, or moves to another owner.

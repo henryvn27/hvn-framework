@@ -28,6 +28,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Core governance: `hvn-core`
 - Intake and discovery: `hvn-question-flow`, `hvn-onboard`, `hvn-discover`, `hvn-research`
 - Delivery: `hvn-spec`, `hvn-plan`, `hvn-build`
+- Debugging: `hvn-debug`
 - Gates: `hvn-review`, `hvn-design`, `hvn-security`, `hvn-ship`
 - QA: `hvn-blind-qa`, `hvn-context-brief`, `hvn-ios-sim-qa`, `hvn-web-qa`
 - Learning: `hvn-retro`
@@ -51,3 +52,7 @@ For high-visibility UI and polished writing, routing triggers `hvn-authenticity-
 ## Question Flow Skill
 
 `hvn-question-flow` is the interactive clarification skill. It asks one focused question or a compact 2-3 question batch, waits for the answer, records what was learned, and stops once enough information exists for the next artifact. Use it for onboarding, feature clarification, bug clarification, research scoping, Linear intake, and QA briefing.
+
+## Spec-Driven Skills
+
+`hvn-onboard` interviews until the problem is clear enough for spec creation. `hvn-spec` creates the execution contract. `hvn-plan` derives milestone phases from the spec. `hvn-build`, `hvn-review`, `hvn-web-qa`, and `hvn-debug` should read the latest approved spec and record deviations instead of expanding scope silently.

@@ -38,20 +38,22 @@ When a host lacks Linear access, use `templates/linear-memory-sync.md`, `templat
 7. Question flows ask missing issue questions in focused rounds when needed.
 8. Aesthetic profile is selected when design or writing matters.
 9. Spec is generated and attached or summarized back to the issue, then linked from memory.
-10. Plan is posted to the issue and approval state is recorded in memory.
-11. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
-12. Human approves the plan.
-13. Build agent executes approved scope and updates memory after meaningful phases.
-14. Review agent comments findings, checks calibration fit, identifies regression candidates, and updates memory.
-15. QA briefing collects platform, launch target, and allowed context when needed.
-16. Blind QA agent runs first-look test without memory input.
-17. Blind QA report is saved, then summarized into memory.
-18. Context briefer creates a minimal second-pass brief.
-19. Guided QA reruns with limited context.
-20. Delta report compares blind and briefed outcomes and updates memory.
-21. Security, review, and regression packs run as needed.
-22. Ship readiness checklist is posted and memory is finalized or archived.
-23. Issue moves to done only with evidence.
+10. Scope is split into v1, later phase, and out-of-scope work when needed.
+11. Spec quality is checked before planning.
+12. Plan is derived from the spec, posted to the issue, and approval state is recorded in memory.
+13. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
+14. Human approves the plan.
+15. Build agent executes approved scope against the spec and updates memory after meaningful phases.
+16. Review agent comments findings, checks spec fit and calibration fit, identifies regression candidates, and updates memory.
+17. QA briefing collects platform, launch target, and allowed context when needed.
+18. Blind QA agent runs first-look test without memory or spec input.
+19. Blind QA report is saved, then summarized into memory.
+20. Context briefer creates a minimal second-pass brief.
+21. Guided QA reruns with limited context and acceptance criteria.
+22. Delta report compares blind and briefed outcomes and updates memory.
+23. Security, review, and regression packs run as needed.
+24. Ship readiness checklist is posted and memory is finalized or archived.
+25. Issue moves to done only with evidence.
 
 ## Agent Update Rule
 
@@ -66,6 +68,8 @@ Every meaningful agent pass should leave a Linear comment with:
 When run memory changes, the Linear comment should include only a concise memory summary and link to the canonical memory artifact. Use `templates/linear-memory-sync.md` when Linear access is unavailable.
 
 When a question flow is waiting on an answer, the Linear issue should show that state explicitly. Use `templates/linear-question-sync.md` when the agent cannot post directly.
+
+When a spec is created or revised, Linear should show the active spec version, spec-check decision, and whether planning is allowed.
 
 ## Approval Rule
 

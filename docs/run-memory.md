@@ -64,6 +64,7 @@ Every run memory should include:
 - Objective
 - Approved scope
 - Current status
+- Active spec and spec status
 - Owner or agent role
 - Updated at
 - Decisions
@@ -206,6 +207,7 @@ Store:
 - decisions and their source
 - assumptions that affect implementation or testing
 - approved scope and explicit non-scope
+- active spec version and approval source
 - blockers and current owner
 - failed approaches and why they failed
 - corrections from users, reviewers, QA, or maintainers
@@ -213,6 +215,7 @@ Store:
 - next steps with clear owner
 - regression candidates and QA implications
 - question-flow state when an intake or clarification is paused
+- spec-check result and whether planning is allowed
 
 ## What Not To Store
 

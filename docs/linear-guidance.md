@@ -43,6 +43,7 @@ Agents should:
 - Check issue health before build.
 - Initialize, read, and update run memory for multi-step issues and handoffs.
 - Use interactive question flows for vague issues instead of posting a giant questionnaire.
+- Treat the active spec as the source of truth for planning, build, review, and verification.
 - Run authenticity preflight before high-visibility UI, frontend presentation, product copy, or polished writing.
 - Use aesthetic profiles when design or writing consistency matters.
 - State which HVN command or skill they are using.
@@ -54,6 +55,8 @@ Agents should:
 Run memory comments should stay concise. Link the memory artifact or summarize its current status instead of pasting a full transcript into Linear. If Linear access is blocked, create a local memory and Linear sync note so the next authenticated agent can post the update.
 
 Question-flow comments should ask the next highest-leverage question and record waiting-on-answer state. Once enough context exists, synthesize answers into the issue, spec, plan, QA brief, or run memory.
+
+Spec comments should separate v1, later phase, and out-of-scope work. Planning should not begin until the spec is checked or explicitly approved with known gaps.
 
 ## Cross-Harness Guidance
 

@@ -14,6 +14,21 @@
 
 Describe the product, feature, or project being clarified.
 
+## Problem Statement
+
+State the problem in plain language before proposing a solution.
+
+## Intended Outcome
+
+Describe the user or system outcome the work should create.
+
+## Environment Or Repo Context
+
+- Greenfield or existing project:
+- Repository or product surface:
+- Stack assumptions:
+- Existing conventions to preserve:
+
 ## Questions Asked
 
 | Round | Question | Answer summary |
@@ -29,6 +44,8 @@ Describe the product, feature, or project being clarified.
 - Success signal:
 - Constraints:
 - Non-goals:
+- Stakeholder or user needs:
+- Edge cases:
 
 ## Inferred Constraints
 
@@ -47,6 +64,7 @@ Describe the product, feature, or project being clarified.
 - Ready for spec:
 - Ready for discovery:
 - Needs more answers:
+- Readiness assessment:
 - Recommended next command:
 
 ## Artifact Links

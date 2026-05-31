@@ -29,19 +29,20 @@ Do not use as a substitute for blind QA.
 
 ## Exact Workflow
 
-1. Read approved scope, diff, and verification evidence from Linear or the opt-out record.
-2. Inspect whether routing selected the most specific appropriate installed skill.
-3. Check whether authenticity preflight was required and followed.
-4. For writing, check rhythm, specificity, tone, filler, and point of view.
-5. For design, check templated patterns, generic visual tropes, and indistinct first impression.
-6. Inspect changed behavior and contracts.
-7. Identify likely bugs and regressions.
-8. Mark findings that should become regression packs.
-9. Check test and validation coverage.
-10. Prioritize findings by severity.
-11. Post or prepare a review comment with decision and next gate.
-12. Update run memory and regression candidates.
-13. State residual risk when no blocking findings exist.
+1. Read the latest approved spec, approved scope, diff, and verification evidence from Linear or the opt-out record.
+2. Verify the change maps to spec requirements and does not include casual scope expansion.
+3. Inspect whether routing selected the most specific appropriate installed skill.
+4. Check whether authenticity preflight was required and followed.
+5. For writing, check rhythm, specificity, tone, filler, and point of view.
+6. For design, check templated patterns, generic visual tropes, and indistinct first impression.
+7. Inspect changed behavior and contracts against acceptance criteria.
+8. Identify likely bugs and regressions.
+9. Mark findings that should become regression packs.
+10. Check test and validation coverage against spec verification criteria.
+11. Prioritize findings by severity.
+12. Post or prepare a review comment with decision and next gate.
+13. Update run memory and regression candidates.
+14. State residual risk when no blocking findings exist.
 
 ## Expected Outputs
 
@@ -58,6 +59,8 @@ Findings must be actionable, grounded in evidence, and ordered by impact.
 - Summarizing instead of reviewing.
 - Reporting style preferences as defects.
 - Missing tests for behavior changes.
+- Reviewing against inferred intent instead of the approved spec.
+- Ignoring implementation that exceeds current scope.
 
 ## Relationship To Other HVN Skills And Commands
 

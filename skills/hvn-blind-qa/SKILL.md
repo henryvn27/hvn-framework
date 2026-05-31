@@ -40,6 +40,10 @@ Do not use after the tester has already read hidden project context. Use briefed
 9. State evidence captured and what could not be observed.
 10. Post or prepare the report for the same issue or work item.
 
+## Spec Boundary
+
+Blind QA does not read the spec before the first-look pass. After the blind report is saved, later briefed QA and review should compare findings against the approved spec and record any mismatch between first impression and specified behavior.
+
 ## Expected Outputs
 
 - Filled `templates/blind-qa-report.md`
@@ -54,6 +58,7 @@ The report should sound like a real first user, not a builder validating their o
 - Pretending to see UI when visual context is unavailable.
 - Reading source code or specs.
 - Editing the blind report after briefing.
+- Treating blind QA as spec verification before a briefed or informed pass.
 
 ## Relationship To Other HVN Skills And Commands
 

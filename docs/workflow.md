@@ -11,32 +11,46 @@ The workflow is host-neutral. Claude Code, Codex CLI, OpenCode, and Hermes Agent
 3. `hvn-linear-health`: confirm the issue is ready for the next gate.
 4. `hvn-memory-init`: create run memory when the workstream does not already have it.
 5. `hvn-memory-read`: brief the active agent from current memory.
-6. `hvn-linear-intake` or `hvn-onboard`: clarify issue context and update memory.
+6. `hvn-linear-intake` or `hvn-onboard`: interview the user or issue context until the problem is spec-ready, then update memory.
 7. `hvn-question-flow`: ask focused rounds when missing context blocks the next artifact.
 8. `hvn-discover`: inspect the repo, platform, dependencies, and constraints, then preserve durable findings.
 9. `hvn-research`: gather external evidence when facts may be stale or unknown.
 10. `hvn-style`: select or update an aesthetic profile when taste continuity matters.
-11. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
-12. `hvn-memory-update`: link the spec and record any scope corrections.
-13. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases and approval request.
-14. Human approval: required before build when scope affects product behavior, data, security, billing, or release.
-15. `hvn-memory-update`: record approval state and first build phase.
-16. `hvn-calibrate`: run authenticity preflight when UI, design, frontend presentation, product copy, or polished writing matters.
-17. `hvn-build`: implement approved scope using the selected skill.
-18. `hvn-memory-update`: preserve completed phases, failed attempts, blockers, and next steps.
-19. `hvn-review`: inspect behavior, maintainability, skill fit, authenticity fit, and regression candidates.
-20. `hvn-design`: review UX, accessibility, responsive behavior, product clarity, and generic design signals.
-21. `hvn-blind-qa-brief`: collect platform, launch target, and allowed context when a QA brief is needed.
-22. `hvn-test-blind`: run first-look QA with minimal context and no run memory input.
-23. `hvn-memory-update`: save blind QA output after the blind report is durable.
-24. `hvn-test-briefed`: retest with a bounded packet.
-25. `hvn-delta`: compare blind and briefed outcomes.
-26. `hvn-regression`: create or run regression packs.
-27. `hvn-test-regression`: verify fixes and adjacent flows.
-28. `hvn-security`: inspect security-relevant surfaces.
-29. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-30. `hvn-memory-update`: finalize, compress, or archive memory.
-31. `hvn-retro`: capture lessons and follow-up work.
+11. `hvn-spec`: define the primary execution spec with v1, later-phase, and out-of-scope boundaries.
+12. `hvn-spec-check`: decide whether the spec is ready for planning, needs clarification, or is too vague.
+13. `hvn-memory-update`: link the spec and record any scope corrections.
+14. `hvn-linear-plan-comment` or `hvn-plan`: create milestone phases from the spec and approval request.
+15. Human approval: required before build when scope affects product behavior, data, security, billing, or release.
+16. `hvn-memory-update`: record approval state, spec version, and first build phase.
+17. `hvn-calibrate`: run authenticity preflight when UI, design, frontend presentation, product copy, or polished writing matters.
+18. `hvn-build`: implement approved scope against the spec using the selected skill.
+19. `hvn-memory-update`: preserve completed phases, failed attempts, blockers, spec deviations, and next steps.
+20. `hvn-review`: inspect behavior, maintainability, spec fit, skill fit, authenticity fit, and regression candidates.
+21. `hvn-design`: review UX, accessibility, responsive behavior, product clarity, and generic design signals.
+22. `hvn-blind-qa-brief`: collect platform, launch target, and allowed context when a QA brief is needed.
+23. `hvn-test-blind`: run first-look QA with minimal context and no run memory or spec input.
+24. `hvn-memory-update`: save blind QA output after the blind report is durable.
+25. `hvn-test-briefed`: retest with a bounded packet and acceptance criteria.
+26. `hvn-delta`: compare blind and briefed outcomes.
+27. `hvn-regression`: create or run regression packs.
+28. `hvn-test-regression`: verify fixes and adjacent flows against the spec.
+29. `hvn-security`: inspect security-relevant surfaces.
+30. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+31. `hvn-memory-update`: finalize, compress, or archive memory.
+32. `hvn-retro`: capture lessons and follow-up work.
+
+## Discuss To Verify Loop
+
+HVN's default loop for non-trivial work is:
+
+1. Discuss or onboard.
+2. Research when needed.
+3. Create or refine the spec.
+4. Split scope and phases.
+5. Plan execution from the spec.
+6. Execute against the spec.
+7. Verify against the spec.
+8. Update run memory, Linear, and follow-up scope.
 
 ## Recommended Linear Gates
 

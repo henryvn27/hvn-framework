@@ -16,6 +16,8 @@ Core defaults:
 - Run memory as a first-class lifecycle artifact for non-trivial issues, handoffs, blocked work, and multi-agent runs.
 - Interactive question flows for onboarding, clarification, Linear intake, and QA briefing.
 - Linear issue health checks before implementation.
+- Spec quality checks before planning non-trivial work.
+- Scope separation into v1, later phase, and out-of-scope work.
 - Aesthetic profiles for taste continuity.
 - Blind-to-briefed delta reports and regression packs for QA continuity.
 - Full-output enforcement when the user explicitly asks for complete output, exhaustive files, or no omissions.
@@ -70,6 +72,18 @@ When ambiguity blocks the next useful artifact:
 5. Capture answers in `templates/question-round.md` or the mode-specific artifact.
 6. Update run memory for paused, resumed, or completed non-trivial flows.
 7. Do not claim host-native popup or modal control; HVN defines behavior and the host renders the UI shell.
+
+## Spec-Driven Defaults
+
+For non-trivial work:
+
+1. Onboard through an interview before writing the spec.
+2. Treat `templates/spec.md` as the primary execution artifact.
+3. Split v1, later-phase, and out-of-scope work.
+4. Run `hvn-spec-check` before planning.
+5. Derive milestones from the spec.
+6. Build and review against acceptance criteria.
+7. If requirements change, revise the spec before expanding implementation.
 
 ## Preserve Existing Work
 
