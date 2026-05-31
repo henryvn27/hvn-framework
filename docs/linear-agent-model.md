@@ -4,6 +4,7 @@ HVN models agents as role-specific collaborators operating inside Linear by defa
 
 ## Agent Roles
 
+- **Setup agent:** maps Linear states, labels, permissions, guidance, smoke tests, and opt-out rules.
 - **Triage agent:** cleans issue scope, labels, platform, priority, and missing context.
 - **Onboard agent:** asks adaptive clarification questions in the issue thread.
 - **Spec agent:** turns issue context into a structured spec.

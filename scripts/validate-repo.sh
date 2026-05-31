@@ -31,10 +31,12 @@ HVN.md
 .github/workflows/validate-install.yml
 .github/FUNDING.yml
 docs/linear-workflow.md
+docs/linear-setup.md
 docs/linear-agent-model.md
 docs/linear-states.md
 docs/linear-issue-lifecycle.md
 docs/linear-guidance.md
+docs/examples/linear-setup-session.md
 docs/examples/linear-feature-flow.md
 docs/examples/linear-blind-qa-flow.md
 mcp/linear.example.json
@@ -52,11 +54,11 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 20 ] || fail "expected at least 20 command definitions"
-[ "$skill_count" -ge 22 ] || fail "expected at least 22 skill definitions"
-[ "$template_count" -ge 17 ] || fail "expected at least 17 templates"
+[ "$command_count" -ge 21 ] || fail "expected at least 21 command definitions"
+[ "$skill_count" -ge 23 ] || fail "expected at least 23 skill definitions"
+[ "$template_count" -ge 18 ] || fail "expected at least 18 templates"
 
-for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh; do
+for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
   [ -x "$script" ] || fail "script is not executable: $script"
   sh -n "$script" || fail "script syntax failed: $script"

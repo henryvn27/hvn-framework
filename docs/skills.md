@@ -4,6 +4,7 @@ Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They def
 
 ## Linear Skills
 
+- `hvn-linear-setup`
 - `hvn-linear-core`
 - `hvn-linear-triage`
 - `hvn-linear-planner`

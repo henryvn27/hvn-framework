@@ -14,6 +14,7 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 
 ## Linear Commands
 
+- `hvn-linear-setup`
 - `hvn-linear-intake`
 - `hvn-linear-sync`
 - `hvn-linear-plan-comment`

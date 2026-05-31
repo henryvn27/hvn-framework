@@ -70,13 +70,24 @@ Override the target with `--target /path/to/hvn`.
 
 HVN does not automate Linear OAuth. Configure Linear through your agent client or MCP setup. A placeholder-safe example lives at `mcp/linear.example.json`; store credentials in your agent client's secret store rather than committing them.
 
+Use the setup guide first:
+
+```sh
+./scripts/linear-setup.sh --mode linear-first --target work/hvn-linear-setup.md
+```
+
+Then follow `docs/linear-setup.md`.
+
 Recommended setup:
 
 1. Connect Linear to the agent client.
 2. Confirm the agent can read projects, issues, states, comments, and labels.
 3. Confirm the agent can post comments.
 4. Decide whether agents may change issue states directly or only recommend transitions.
-5. Paste guidance from `docs/linear-guidance.md` into workspace, team, or project instructions.
+5. Configure or map states from `docs/linear-states.md`.
+6. Configure labels from `docs/linear-setup.md`.
+7. Paste guidance from `docs/linear-guidance.md` into workspace, team, or project instructions.
+8. Create and run the smoke-test issue described in `docs/linear-setup.md`.
 
 ## MCP Setup Overview
 

@@ -16,6 +16,7 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 
 ## Standard Lifecycle
 
+0. Linear setup maps states, labels, guidance, permissions, and opt-out rules.
 1. Issue enters inbox or triage.
 2. Onboard or discover agent clarifies ambiguity.
 3. Spec is generated and attached or summarized back to the issue.

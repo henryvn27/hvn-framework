@@ -2,6 +2,8 @@
 
 This guidance is ready to paste into Linear workspace, team, or project instructions for HVN agents.
 
+Before installing this guidance broadly, run the setup process in `docs/linear-setup.md` and record decisions with `templates/linear-setup-checklist.md`.
+
 ## Workspace Guidance
 
 When delegated a Linear issue, operate in HVN mode. Treat the Linear issue as the source of truth. Read the issue title, description, state, labels, comments, links, and project context before acting. Post meaningful updates back to the issue as comments. Do not rely on private chat history for handoff. Do not move an issue to done unless required evidence is posted. If a user opts out of Linear, ask which record replaces the issue thread and use that record instead.

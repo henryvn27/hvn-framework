@@ -34,6 +34,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 ## Workflow Modes
 
 - **Linear intake mode:** normalize issue context, labels, and next gate.
+- **Linear setup mode:** configure or validate Linear states, labels, guidance, permissions, smoke-test issue, and opt-out mapping.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
 - **Discovery mode:** inspect code, product shape, dependencies, constraints, and risks.
 - **Research mode:** gather evidence when the answer is not already known.
@@ -59,6 +60,18 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Retrospective for completed larger efforts
 
 ## Linear Lifecycle
+
+Before relying on Linear-first execution, run setup:
+
+1. Choose workspace, team, or project scope.
+2. Map states to HVN gates.
+3. Configure or document labels.
+4. Install agent guidance.
+5. Decide whether agents may change states or only recommend transitions.
+6. Run a smoke-test issue.
+7. Record opt-out rules.
+
+Then use the standard lifecycle:
 
 1. Issue enters inbox or triage.
 2. Onboard or discover agent clarifies ambiguity.

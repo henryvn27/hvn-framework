@@ -60,10 +60,17 @@ Install globally for your user:
 
 For Linear-first setup, read:
 
+- `docs/linear-setup.md`
 - `docs/linear-workflow.md`
 - `docs/linear-agent-model.md`
 - `docs/linear-states.md`
 - `docs/linear-guidance.md`
+
+You can also generate a local setup packet:
+
+```sh
+./scripts/linear-setup.sh --mode linear-first --target work/hvn-linear-setup.md
+```
 
 For opt-out setup, choose a system of record and map HVN issue comments to equivalent durable artifacts.
 
@@ -88,6 +95,7 @@ Recommended state gates are documented in `docs/linear-states.md`.
 
 Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
 
+- `hvn-linear-setup`
 - `hvn-linear-intake`
 - `hvn-linear-sync`
 - `hvn-linear-plan-comment`
@@ -96,6 +104,7 @@ Commands in `commands/` are installable prompt definitions. Linear-specific comm
 
 Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
 
+- `hvn-linear-setup`
 - `hvn-linear-core`
 - `hvn-linear-triage`
 - `hvn-linear-planner`
@@ -124,6 +133,16 @@ HVN includes MCP-ready QA guidance for:
 - Web/browser testing with first-look task attempts, accessibility-visible element checks, screenshots, console/network observations, and regression notes
 
 Example MCP configuration files live in `mcp/`.
+
+## Linear Setup Help
+
+HVN includes setup support for Linear:
+
+- `docs/linear-setup.md` walks through scope, states, labels, guidance, permissions, smoke tests, and opt-out rules.
+- `commands/hvn-linear-setup.md` defines the agent workflow for configuring or validating Linear.
+- `skills/hvn-linear-setup/SKILL.md` gives agents the exact setup procedure.
+- `templates/linear-setup-checklist.md` records setup decisions.
+- `scripts/linear-setup.sh` generates a local setup packet without handling credentials.
 
 ## Opt-Out Mode
 

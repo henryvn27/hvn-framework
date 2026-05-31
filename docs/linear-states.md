@@ -16,6 +16,8 @@ HVN expects workflow gates, not exact state names. Teams can rename states, use 
 | Release | Ready to Ship | Required gates passed and ship checklist is needed. |
 | Complete | Done | Evidence is posted and no blocking work remains. |
 
+Use `hvn-linear-setup` to map existing states before changing a live workspace.
+
 ## Labels
 
 Useful labels:
