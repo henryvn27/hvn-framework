@@ -43,6 +43,7 @@ Do not use for tiny mechanical edits where acceptance is obvious and low-risk.
 ## Expected Outputs
 
 - Filled `templates/spec.md`
+- Follows `templates/contracts/spec-contract.md`
 - `templates/linear-spec-comment.md` when Linear-first mode is active
 
 ## Quality Bar

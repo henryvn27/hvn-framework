@@ -19,6 +19,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Core governance: `hvn-core`
 - Intake and discovery: `hvn-onboard`, `hvn-discover`, `hvn-research`
 - Delivery: `hvn-spec`, `hvn-plan`, `hvn-build`
+- Reliability: `hvn-observability`, `hvn-eval`, `hvn-approval-gate`
 - Gates: `hvn-review`, `hvn-design`, `hvn-security`, `hvn-ship`
 - QA: `hvn-blind-qa`, `hvn-context-brief`, `hvn-ios-sim-qa`, `hvn-web-qa`
 - Learning: `hvn-retro`
@@ -26,3 +27,9 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Skill Installation
 
 Skills can be installed into agent clients that support skill directories, or read directly by agents using repo mode. Linear guidance can be installed separately into workspace, team, or project instructions.
+
+Reliability skills should be treated as cross-cutting helpers:
+
+- `hvn-observability` for traces
+- `hvn-eval` for trajectory scoring
+- `hvn-approval-gate` for risky-action control

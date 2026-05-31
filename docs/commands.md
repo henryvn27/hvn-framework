@@ -32,12 +32,16 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-spec`
 - `hvn-plan`
 - `hvn-build`
+- `hvn-trace`
+- `hvn-eval`
+- `hvn-approve`
 - `hvn-review`
 - `hvn-design`
 - `hvn-test-blind`
 - `hvn-test-briefed`
 - `hvn-test-regression`
 - `hvn-security`
+- `hvn-security-check`
 - `hvn-ship`
 - `hvn-retro`
 
@@ -47,6 +51,8 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 
 - `needs-spec` triggers `hvn-spec`.
 - `Spec Ready` triggers `hvn-linear-plan-comment`.
-- `Ready for Build` triggers `hvn-build` after approval.
+- `Ready for Build` triggers `hvn-build` after `hvn-approve` when approval is required.
 - `In QA` plus `blind-qa` triggers `hvn-test-blind`.
 - `Ready to Ship` triggers `hvn-linear-ship-check`.
+
+Use `hvn-trace` and `hvn-eval` when the workflow itself needs review, not just the product artifact.

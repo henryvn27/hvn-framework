@@ -41,6 +41,7 @@ Do not use when the user explicitly asks only for a review or explanation.
 ## Expected Outputs
 
 - Filled `templates/plan.md`
+- Approval request shape from `templates/approval-request.md` when risk requires it
 - `templates/linear-plan-comment.md` when Linear-first mode is active
 
 ## Quality Bar

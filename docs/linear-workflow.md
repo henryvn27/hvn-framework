@@ -21,13 +21,13 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 2. Onboard or discover agent clarifies ambiguity.
 3. Spec is generated and attached or summarized back to the issue.
 4. Plan is posted to the issue.
-5. Human approves the plan.
+5. Approval gates decide whether build can proceed or needs explicit human approval.
 6. Build agent executes approved scope.
-7. Review agent comments findings.
+7. Trace and review artifacts make the run inspectable.
 8. Blind QA agent runs first-look test.
 9. Context briefer creates a minimal second-pass brief.
 10. Guided QA reruns with limited context.
-11. Security, review, and regression passes run as needed.
+11. Security, eval, and regression passes run as needed.
 12. Ship readiness checklist is posted.
 13. Issue moves to done only with evidence.
 
@@ -41,9 +41,13 @@ Every meaningful agent pass should leave a Linear comment with:
 - What is blocked
 - Which state should come next
 
+When a run is meaningful, risky, or confusing, also link a trace artifact so the next maintainer can reconstruct what happened.
+
 ## Approval Rule
 
 Human approval is required before moving from `Spec Ready` to build when the issue changes product behavior, data handling, security posture, billing, release process, or public user experience.
+
+Use `hvn-approve` to record that decision. Do not rely on vague "looks good" chat approval for risky work.
 
 ## Opt-Out Rule
 

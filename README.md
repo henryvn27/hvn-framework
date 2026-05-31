@@ -4,7 +4,7 @@ HVN is Henry Van Ness's installable framework for running software work with age
 
 Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
 
-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, and premature done states.
+HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, and unsafe execution without clear approval or traceability.
 
 ## Release Status
 
@@ -28,10 +28,15 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Linear states as workflow gates:** state transitions represent HVN readiness gates.
 - **Comments as handoff record:** specs, plans, QA reports, review findings, and ship checks are posted back to the work item.
 - **Spec-driven development:** implementation follows a written contract.
+- **Typed artifact contracts:** core artifacts have required fields and a clear good-enough bar.
 - **Adaptive onboarding:** a subagent clarifies issue ambiguity before spec or build.
+- **Run traces:** meaningful runs can be inspected after the fact.
+- **Trajectory evals:** workflows are judged on how they behaved, not just the final answer.
+- **Approval gates:** risky actions pause for explicit approval.
 - **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
 - **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
 - **Layered retesting:** later QA receives bounded context packets tied to the same issue.
+- **Security guardrails:** external content is treated as untrusted until confirmed.
 - **Opt-out mode:** the same artifacts can be stored outside Linear when the user chooses another system of record.
 
 ## Quickstart
@@ -65,6 +70,12 @@ For Linear-first setup, read:
 - `docs/linear-agent-model.md`
 - `docs/linear-states.md`
 - `docs/linear-guidance.md`
+- `docs/observability.md`
+- `docs/evals.md`
+- `docs/approval-gates.md`
+- `docs/artifact-contracts.md`
+- `docs/security-guardrails.md`
+- `docs/prompt-injection.md`
 
 You can also generate a local setup packet:
 
@@ -80,14 +91,16 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 2. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
 3. `hvn-spec` creates a structured spec from issue context.
 4. `hvn-linear-plan-comment` posts the plan to the issue.
-5. Human approves the plan when required.
+5. `hvn-approve` records approval when scope or risk requires it.
 6. `hvn-build` executes approved scope.
-7. `hvn-review` posts findings.
-8. `hvn-test-blind` runs first-look QA with minimal issue context.
-9. `hvn-context-brief` creates a bounded second-pass packet.
-10. `hvn-test-briefed` and `hvn-test-regression` retest.
-11. `hvn-linear-ship-check` posts ship readiness.
-12. Issue moves to done only with evidence.
+7. `hvn-trace` records what happened when the run is meaningful or risky.
+8. `hvn-review` posts findings.
+9. `hvn-test-blind` runs first-look QA with minimal issue context.
+10. `hvn-context-brief` creates a bounded second-pass packet.
+11. `hvn-test-briefed` and `hvn-test-regression` retest.
+12. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
+13. `hvn-linear-ship-check` posts ship readiness.
+14. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -114,6 +127,13 @@ Skills in `skills/` define reusable execution behavior. Linear-specific skills i
 
 Templates in `templates/` include both full artifacts and Linear-ready comment formats.
 
+The reliability layer adds:
+
+- trace artifacts in `templates/run-trace.md`
+- eval artifacts in `templates/eval-case.md` and `templates/eval-report.md`
+- approval requests in `templates/approval-request.md`
+- typed contracts in `templates/contracts/`
+
 ## Blind QA In Linear
 
 HVN treats first impression as evidence. In Linear-first mode, a blind QA agent should receive only:
@@ -124,6 +144,8 @@ HVN treats first impression as evidence. In Linear-first mode, a blind QA agent 
 - Optional one-sentence user mission
 
 The blind QA agent must not receive the spec, code, implementation plan, design rationale, or hidden issue discussion. It posts findings back to the same issue. A context briefer then creates a minimal packet for a second-pass tester so the issue thread preserves the difference between blind and briefed outcomes.
+
+The second-pass packet should follow the QA brief contract in `templates/contracts/qa-brief-contract.md`.
 
 ## iOS Simulator And Web QA Support
 
@@ -155,6 +177,18 @@ If the user does not want Linear, ask what should be the system of record. Then 
 - Linear linked artifact to a local file path or URL
 
 Do not force Linear when the user opts out.
+
+## Reliability Layer
+
+HVN now treats reliability as part of the core framework:
+
+- onboarding, discovery, and spec create durable context
+- run memory preserves durable facts and decisions
+- traces record what happened during meaningful runs
+- evals judge the full trajectory
+- approval gates control risky work
+- contracts keep artifacts consistent
+- security and prompt-injection guardrails keep external context from hijacking execution
 
 ## Repository Structure
 

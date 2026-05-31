@@ -43,6 +43,7 @@ Store regression evidence in the chosen record.
 ## Outputs And Artifacts
 
 - `templates/regression-report.md`
+- `templates/contracts/regression-pack-contract.md`
 
 ## Failure Cases
 

@@ -1,15 +1,13 @@
-name: CI
+name: Evals
 
 on:
   push:
   pull_request:
 
 jobs:
-  validate:
+  evals:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate repository
-        run: ./scripts/validate-repo.sh
-      - name: Reliability checks
+      - name: Check starter eval set and contracts
         run: ./scripts/check-reliability.sh

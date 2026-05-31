@@ -43,6 +43,7 @@ Write the plan to the selected artifact and record approval status in the chosen
 ## Outputs And Artifacts
 
 - `templates/plan.md`
+- `templates/approval-request.md` when risk requires an approval gate
 - `templates/linear-plan-comment.md` when Linear-first mode is active
 
 ## Failure Cases

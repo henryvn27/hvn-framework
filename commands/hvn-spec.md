@@ -44,6 +44,7 @@ Write the spec to `templates/spec.md` or an equivalent artifact and reference it
 ## Outputs And Artifacts
 
 - `templates/spec.md`
+- `templates/contracts/spec-contract.md`
 - `templates/linear-spec-comment.md` when Linear-first mode is active
 
 ## Failure Cases

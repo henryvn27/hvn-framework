@@ -40,6 +40,8 @@ After the blind report is posted:
 3. The second-pass tester receives only disclosed context.
 4. The issue records differences between blind and briefed outcomes.
 
+The brief should satisfy the QA brief contract in `templates/contracts/qa-brief-contract.md`.
+
 ## Output
 
 Use `templates/blind-qa-report.md` for full artifacts or `templates/linear-blind-qa-comment.md` for issue-thread comments. The report should include:
@@ -53,3 +55,5 @@ Use `templates/blind-qa-report.md` for full artifacts or `templates/linear-blind
 - Confidence limits
 
 After a blind report is written, it should remain unchanged. Briefed and regression passes get separate reports.
+
+Use traces when needed to show what the QA run actually did, but do not turn the blind report itself into a hidden-context artifact.

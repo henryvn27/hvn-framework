@@ -43,6 +43,7 @@ Write the context packet and guided QA result to the selected record.
 ## Outputs And Artifacts
 
 - `templates/guided-qa-report.md`
+- `templates/contracts/qa-brief-contract.md`
 - `templates/linear-guided-qa-comment.md` when Linear-first mode is active
 
 ## Failure Cases

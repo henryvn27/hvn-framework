@@ -1,0 +1,15 @@
+name: Install Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Local install
+        run: |
+          ./install/install.sh --mode local --target /tmp/hvn-local
+          ./install/verify-install.sh --target /tmp/hvn-local

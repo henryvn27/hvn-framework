@@ -35,7 +35,7 @@ Post the security findings to the selected record.
 
 1. Use `hvn-security`.
 2. Identify assets, trust boundaries, inputs, outputs, and dangerous operations.
-3. Inspect implementation and docs for unsafe claims.
+3. Inspect implementation and docs for unsafe claims, untrusted content handling, and prompt-injection risk.
 4. Produce findings with severity and mitigation.
 5. Sync blocker status to the work item.
 
@@ -51,5 +51,5 @@ Post the security findings to the selected record.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-review`, `hvn-linear-ship-check`, `hvn-ship`
+- Commands: `hvn-security-check`, `hvn-review`, `hvn-linear-ship-check`, `hvn-ship`
 - Skills: `hvn-security`, `hvn-linear-release`
