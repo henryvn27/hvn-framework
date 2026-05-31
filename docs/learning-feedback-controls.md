@@ -20,3 +20,5 @@ Adaptive guidance is on by default, but it should be easy to reduce or disable.
 
 - `orca-learning` to inspect or set the learning-help mode
 - `orca-feedback` to request or suppress a specific coaching response
+
+These controls affect the local instance loop. They do not directly change framework-wide policy.

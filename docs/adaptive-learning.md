@@ -41,6 +41,8 @@ The adaptive learning layer can:
 - suggest a clearer next step when the user is stuck
 - reduce coaching when the user already knows the pattern
 
+This feeds primarily into the local instance-improvement loop, not directly into global framework defaults.
+
 ## Default Behavior
 
 - on by default

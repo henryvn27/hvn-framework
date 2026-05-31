@@ -23,6 +23,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
 - QA: `orca-blind-qa`, `orca-context-brief`, `orca-ios-sim-qa`, `orca-web-qa`
 - Learning: `orca-retro`, `orca-session-improvement`, `orca-friction-policy`
+- Self-improvement: `orca-self-improvement`
 
 ## Skill Installation
 
@@ -59,3 +60,4 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-friction-policy` for deciding whether a feature, integration, or workflow surface reduces more friction than it creates
 - `orca-adaptive-guidance` for lightweight skill-sensitive coaching, opt-out learning help, and non-condescending prompt or context hints
 - `orca-agent-orchestration` for deciding when to delegate, which pattern fits, and how to keep parent and worker boundaries clean
+- `orca-self-improvement` for separating local adaptation from framework evolution and requiring evidence before promotion

@@ -37,6 +37,7 @@ ORCA-HVN should make it easier to:
 - hide advanced capability until it becomes relevant
 - help users improve over time without making them feel corrected
 - use subagents only when they reduce more confusion, context loss, or coordination cost than they create
+- use self-improvement only when it reduces more friction than it adds
 
 ## What ORCA-HVN Should Not Introduce Casually
 
@@ -68,6 +69,7 @@ This principle should shape:
 - automation and maintenance loops
 - feature review for new framework additions
 - adaptive guidance and coaching surfaces
+- local and framework learning loops
 
 Use:
 

@@ -45,6 +45,7 @@ The docs automation layer keeps the top-level docs, routing pages, and wiki alig
 - watch optional integrations such as NotebookLM so official and community guidance do not get blurred together
 - use vault or graph analysis outputs to spot duplicate docs, weak hub pages, and routing gaps when that would reduce docs drift
 - prefer collapsing redundant explanation over adding one more top-level page
+- convert repeated docs confusion into either a local routing adaptation or a framework docs candidate depending on recurrence and generalizability
 
 ## Boundaries
 

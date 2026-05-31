@@ -79,6 +79,7 @@ Read:
 - blind QA
 - briefed QA
 - design quality and human voice
+- dual-loop self-improvement
 - session improvement loop
 - session quality signals
 - regression tasks
@@ -90,6 +91,7 @@ Read:
 - [blind-qa.md](blind-qa.md)
 - [visual-quality.md](visual-quality.md)
 - [human-voice.md](human-voice.md)
+- [self-improvement.md](self-improvement.md)
 - [session-improvement-loop.md](session-improvement-loop.md)
 - [session-quality-signals.md](session-quality-signals.md)
 - [qa-to-regression.md](qa-to-regression.md)

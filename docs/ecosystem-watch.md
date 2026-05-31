@@ -24,6 +24,7 @@ Every sweep should explicitly watch:
 - modern startup stack defaults across web, mobile, auth, billing, analytics, and monitoring
 - whether current defaults still look like best-fit recommendations rather than popularity-driven suggestions
 - whether ORCA-HVN is accumulating setup burden or option sprawl in places that should stay simpler
+- whether ecosystem shifts are exposing recurring local needs that should become framework candidates after enough evidence
 - approval and human-in-the-loop patterns
 - tool governance and MCP review
 - GitHub integration setup paths

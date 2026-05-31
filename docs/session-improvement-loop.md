@@ -1,6 +1,7 @@
 # Session Improvement Loop
 
 The session improvement loop is ORCA-HVN's built-in way to learn from real usage friction.
+It now feeds two distinct loops: local instance improvement and framework improvement.
 
 At the end of a meaningful session, ORCA-HVN should briefly review the work and ask a narrow question:
 
@@ -9,6 +10,7 @@ At the end of a meaningful session, ORCA-HVN should briefly review the work and 
 If the answer is yes, ORCA-HVN should turn that friction into a structured improvement note, check whether it is worth an issue, look for overlap, and ask the user before drafting or submitting a GitHub issue to the ORCA-HVN repository.
 One of the main review questions is whether ORCA-HVN reduced drag or added it.
 Another is whether one lightweight coaching hint could have helped the user without sounding blameful.
+Another is whether the signal should stay local, become a framework candidate, or just be watched.
 
 ## Purpose
 
@@ -57,12 +59,13 @@ Skip or stay quiet when:
 
 1. Brief session review
 2. Quality-signal triage
-3. Improvement candidate capture
-4. Issue-worthiness check
-5. Duplicate and overlap check
-6. Human approval prompt
-7. Draft issue or submit issue
-8. Record candidate or link in the improvement backlog
+3. Local vs framework loop classification
+4. Improvement candidate capture
+5. Issue-worthiness check
+6. Duplicate and overlap check
+7. Human approval prompt
+8. Draft issue or submit issue
+9. Record candidate or link in the improvement backlog
 
 ## Human Approval Rule
 
@@ -78,6 +81,9 @@ Allowed actions:
 
 ## Core Artifacts
 
+- [self-improvement.md](self-improvement.md)
+- [instance-improvement-loop.md](instance-improvement-loop.md)
+- [framework-improvement-loop.md](framework-improvement-loop.md)
 - [session-review.md](session-review.md)
 - [session-quality-signals.md](session-quality-signals.md)
 - [session-quality-rubric.md](session-quality-rubric.md)

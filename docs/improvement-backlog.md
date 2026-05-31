@@ -12,6 +12,7 @@ Use it to:
 - track repeated friction across sessions
 - track repeated quality signals across sessions
 - track where ORCA-HVN added setup burden, tool clutter, or avoidable workflow ceremony
+- separate local adaptation candidates from framework candidates
 - link likely duplicates
 - give automation a durable place to spot patterns
 
