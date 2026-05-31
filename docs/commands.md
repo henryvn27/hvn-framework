@@ -40,6 +40,12 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 
 These commands read from and post back to Linear issues when Linear-first mode is active. In opt-out mode, they can be adapted to the chosen system of record.
 
+## Documentation Command
+
+- `hvn-docs`
+
+Use `hvn-docs` when the task is about doc routing, onboarding pages, wiki maintenance, freshness review, or keeping the docs system coherent as the framework changes.
+
 The memory commands are lifecycle commands, not only Linear commands. They create, read, update, compress, and sync `.hvn/memory/runs/` artifacts for any non-trivial workstream.
 
 Question-flow commands are interactive lifecycle commands. They ask focused rounds through the host's command interface and capture answers into reusable artifacts. HVN defines the prompt behavior; the host controls visible UI rendering.

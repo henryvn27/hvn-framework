@@ -1,30 +1,73 @@
 # HVN Framework
 
-HVN is Henry Van Ness's cross-harness framework for running software work with agents through a durable system of record. It is designed as one shared operating model with host adapters for Claude Code, Codex CLI, OpenCode, and Hermes Agent.
+![HVN orca mascot](docs/assets/orca.png)
 
-HVN is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
+HVN is Henry Van Ness's cross-harness framework for running software work with agents through a durable system of record. It gives teams one shared operating model for Claude Code, Codex CLI, OpenCode, and Hermes Agent so agent work stays understandable, resumable, and reviewable.
 
-Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
+HVN is built for the places agent work usually breaks down: fuzzy intake, weak specs, missing handoffs, hidden QA context, drifting scope, and "done" states with no evidence behind them.
 
-HVN is interview-first, spec-driven, Linear-first, subagent-aware, cross-harness, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, scope creep, and premature done states.
+HVN is Linear-first by default, but not Linear-only. Teams that do not want Linear can keep the same gates and artifacts and map them to another source of truth such as GitHub Issues, project docs, or a local `docs/hvn/` folder.
 
 The installed default behavior is documented in `HVN.defaults.md`. The shipped profile is `profiles/henry-van-ness.md`.
 
-## Release Status
+## What HVN Is
 
-This repository is prepared as a public release candidate for a Linear-first, cross-harness HVN workflow. The docs, command definitions, skills, templates, adapters, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
+HVN is a workflow framework for serious agent-assisted software delivery. It combines:
+
+- interview-first onboarding
+- spec-driven execution
+- run memory for resumability
+- blind-to-briefed QA separation
+- cross-harness adapters
+- durable artifacts instead of chat-only context
 
 ## Who It Is For
 
 Use HVN when you want AI agents to build software with engineering discipline:
 
-- Teams using Linear as the coordination layer for product and engineering work
-- Teams using Claude Code, Codex CLI, OpenCode, Hermes Agent, or a mix of those hosts
-- Founders turning vague product ideas into maintained repositories
-- Engineers using agentic coding tools on production code
-- Reviewers who want blind first-look QA before informed retesting
-- Teams that need reproducible handoffs between agents
-- Builders who want the option to map HVN gates to another tracker
+- teams using Linear as the coordination layer for product and engineering work
+- teams using Claude Code, Codex CLI, OpenCode, Hermes Agent, or a mix of those hosts
+- founders turning vague product ideas into maintained repositories
+- engineers using agentic coding tools on production code
+- reviewers who want blind first-look QA before informed retesting
+- teams that need reproducible handoffs between agents
+- builders who want the option to map HVN gates to another tracker
+
+## What Makes It Different
+
+- It clarifies work before implementation instead of treating every request as code-ready.
+- It uses the spec as the contract for planning, build, review, QA, and shipping.
+- It preserves continuity with run memory so fresh agents can resume without replaying a transcript.
+- It keeps one shared model across hosts instead of forking the workflow per tool.
+- It treats documentation, install, QA, and handoffs as first-class parts of the system.
+
+## Start Here
+
+- New to HVN: [docs/start-here.md](docs/start-here.md)
+- Want the shortest path to first value: [docs/quickstart.md](docs/quickstart.md)
+- Need the docs hub: [docs/README.md](docs/README.md)
+- Prefer a wiki-style browse surface: [wiki/Home.md](wiki/Home.md)
+- Need installation help: [INSTALL.md](INSTALL.md)
+
+## Where To Begin
+
+1. Read [docs/intro.md](docs/intro.md) for the mental model.
+2. Read [docs/quickstart.md](docs/quickstart.md) for install and first workflow.
+3. Use [docs/choose-your-path.md](docs/choose-your-path.md) to pick the right guide.
+4. Use [docs/feature-index.md](docs/feature-index.md) and [docs/command-index.md](docs/command-index.md) when you need exact routing.
+
+## Major Feature Buckets
+
+- Onboarding and question flow: [docs/onboarding.md](docs/onboarding.md), [docs/interactive-question-flows.md](docs/interactive-question-flows.md)
+- Spec-driven delivery: [docs/spec-driven-workflow.md](docs/spec-driven-workflow.md), [docs/milestone-planning.md](docs/milestone-planning.md)
+- Run memory and handoffs: [docs/run-memory.md](docs/run-memory.md), [docs/run-memory-handoffs.md](docs/run-memory-handoffs.md)
+- Blind QA and regression learning: [docs/blind-qa.md](docs/blind-qa.md), [docs/regression-packs.md](docs/regression-packs.md)
+- Cross-harness operation: [docs/cross-harness-architecture.md](docs/cross-harness-architecture.md), [docs/compatibility-matrix.md](docs/compatibility-matrix.md)
+- Installation and onboarding: [INSTALL.md](INSTALL.md), [docs/first-run.md](docs/first-run.md)
+
+## Release Status
+
+This repository is prepared as a public release candidate for a Linear-first, cross-harness HVN workflow. The docs, command definitions, skills, templates, adapters, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
 
 ## Core Concepts
 
@@ -109,41 +152,15 @@ Install globally for your user:
 ./install/doctor.sh
 ```
 
-For Linear-first setup, read:
+For setup and routing, start with:
 
-- `HVN.defaults.md`
-- `profiles/henry-van-ness.md`
-- `docs/default-behavior.md`
-- `docs/skill-routing.md`
-- `docs/anti-generic-calibration.md`
-- `docs/anti-ai-design.md`
-- `docs/anti-ai-writing.md`
-- `docs/linear-defaults.md`
-- `docs/linear-setup.md`
-- `docs/linear-workflow.md`
-- `docs/linear-agent-model.md`
-- `docs/linear-states.md`
-- `docs/linear-guidance.md`
-- `docs/cross-harness-architecture.md`
-- `docs/compatibility-matrix.md`
-- `docs/portable-skills.md`
-- `docs/command-mapping.md`
-- `docs/onboarding.md`
-- `docs/spec-driven-workflow.md`
-- `docs/spec-quality-bar.md`
-- `docs/scope-discipline.md`
-- `docs/milestone-planning.md`
-- `docs/run-memory.md`
-- `docs/run-memory-linear.md`
-- `docs/run-memory-handoffs.md`
-- `docs/run-memory-maintenance.md`
-- `docs/interactive-question-flows.md`
-- `docs/host-ui-guidance.md`
-- `INSTALL.md`
-- `docs/installation-architecture.md`
-- `docs/install-preflight.md`
-- `docs/verify-install.md`
-- `docs/first-run.md`
+- [docs/README.md](docs/README.md)
+- [docs/start-here.md](docs/start-here.md)
+- [docs/quickstart.md](docs/quickstart.md)
+- [docs/choose-your-path.md](docs/choose-your-path.md)
+- [docs/feature-index.md](docs/feature-index.md)
+- [docs/command-index.md](docs/command-index.md)
+- [wiki/Home.md](wiki/Home.md)
 
 You can also generate a local setup packet:
 
@@ -181,8 +198,10 @@ Recommended state gates are documented in `docs/linear-states.md`.
 
 ## Commands And Skills
 
-Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
+Commands in `commands/` are installable prompt definitions. Notable commands include:
 
+- `hvn-help`
+- `hvn-docs`
 - `hvn-route`
 - `hvn-calibrate`
 - `hvn-calibrate-design`
@@ -207,8 +226,10 @@ Commands in `commands/` are installable prompt definitions. Linear-specific comm
 - `hvn-linear-ship-check`
 - `hvn-full-output`
 
-Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
+Skills in `skills/` define reusable execution behavior. Notable skills include:
 
+- `hvn-core`
+- `hvn-docs-system`
 - `hvn-router`
 - `hvn-authenticity-preflight`
 - `hvn-question-flow`

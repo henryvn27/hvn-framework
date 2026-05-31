@@ -27,3 +27,8 @@ Initial public release candidate.
 - Added aesthetic profile system and shipped profiles.
 - Added Linear issue health checks.
 - Added regression packs generated from QA, review, and bug findings.
+- Added a layered docs hub, start-here path, quickstart, and intro pages.
+- Added a GitHub wiki layer for browse-first onboarding and routing.
+- Added guide, feature index, command index, use-case map, glossary, and concept map pages.
+- Added docs freshness automation, wiki maintenance guidance, and doc ownership tracking.
+- Added the HVN orca mascot to the repo intro and docs layer.

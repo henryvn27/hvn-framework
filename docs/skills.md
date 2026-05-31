@@ -26,6 +26,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Core Skill Groups
 
 - Core governance: `hvn-core`
+- Documentation system: `hvn-docs-system`
 - Intake and discovery: `hvn-question-flow`, `hvn-onboard`, `hvn-discover`, `hvn-research`
 - Delivery: `hvn-spec`, `hvn-plan`, `hvn-build`
 - Debugging: `hvn-debug`
@@ -42,6 +43,8 @@ For cross-harness guidance, see `docs/portable-skills.md`.
 ## Routing Defaults
 
 Use `hvn-router` before non-trivial or skill-sensitive work. It applies `HVN.defaults.md`, the active profile, Linear-first work management, preserve-stack behavior, authenticity preflight, and full-output mode when requested.
+
+For documentation architecture, wiki routing, and docs freshness work, route to `hvn-docs-system`.
 
 For high-visibility UI and polished writing, routing triggers `hvn-authenticity-preflight`.
 

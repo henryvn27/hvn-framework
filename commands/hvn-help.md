@@ -41,6 +41,7 @@ If the user does not want Linear, ask which record should hold HVN artifacts.
 6. Explain what artifact or issue comment each command will produce.
 7. Call out whether blind QA can still be preserved.
 8. For install questions, point to `INSTALL.md`, `docs/first-run.md`, and the relevant host guide.
+9. For docs or onboarding questions, point to `docs/start-here.md`, `docs/README.md`, `wiki/Home.md`, and `hvn-docs`.
 
 ## Interactive Question Flow
 
@@ -56,6 +57,7 @@ If the user does not want Linear, ask which record should hold HVN artifacts.
 - Reasoning for command choice
 - Artifact or comment expectation
 - Install or first-run path when requested
+- Docs hub or wiki path when requested
 
 ## Failure Cases
 

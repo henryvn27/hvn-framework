@@ -1,0 +1,15 @@
+name: Docs Maintenance
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 14 * * 1'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit docs routing and freshness
+        run: ./scripts/docs-audit.sh

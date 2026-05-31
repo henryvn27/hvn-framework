@@ -28,6 +28,7 @@ HVN.defaults.md
 .github/ISSUE_TEMPLATE/config.yml
 .github/PULL_REQUEST_TEMPLATE.md
 .github/workflows/ci.yml
+.github/workflows/docs-maintenance.yml
 .github/workflows/install-test.yml
 .github/workflows/markdown-lint.yml
 .github/workflows/validate-install.yml
@@ -41,12 +42,31 @@ adapters/hermes/README.md
 commands/hvn-question-flow.md
 commands/hvn-onboard.md
 commands/hvn-discover.md
+commands/hvn-docs.md
 commands/hvn-spec.md
 commands/hvn-spec-check.md
 commands/hvn-linear-intake.md
 commands/hvn-help.md
 commands/hvn-blind-qa-brief.md
 docs/linear-workflow.md
+docs/README.md
+docs/information-architecture.md
+docs/start-here.md
+docs/quickstart.md
+docs/intro.md
+docs/feature-index.md
+docs/command-index.md
+docs/use-case-map.md
+docs/choose-your-path.md
+docs/glossary.md
+docs/concept-map.md
+docs/docs-automation.md
+docs/wiki-maintenance.md
+docs/staleness-detection.md
+docs/doc-owners.md
+docs/contributing-docs.md
+docs/whats-new.md
+docs/recent-doc-updates.md
 docs/cross-harness-architecture.md
 docs/compatibility-matrix.md
 docs/command-mapping.md
@@ -131,15 +151,38 @@ docs/examples/install-codex.md
 docs/examples/install-opencode.md
 docs/examples/install-hermes.md
 docs/examples/install-local-vs-global.md
+docs/examples/new-user-path.md
+docs/examples/hermes-user-path.md
+docs/examples/codex-user-path.md
+docs/examples/business-ideation-user-path.md
+docs/examples/background-mode-user-path.md
+wiki/Home.md
+wiki/Getting-Started.md
+wiki/Core-Concepts.md
+wiki/Feature-Index.md
+wiki/Workflow-Index.md
+wiki/Commands.md
+wiki/Hosts-and-Harnesses.md
+wiki/Automation.md
+wiki/Examples.md
+wiki/FAQ.md
+wiki/Whats-New.md
+wiki/_Sidebar.md
+wiki/_Footer.md
 mcp/linear.example.json
 examples/sample-run-memory/README.md
 skills/hvn-question-flow/SKILL.md
+skills/hvn-docs-system/SKILL.md
 skills/hvn-debug/SKILL.md
 templates/question-round.md
 templates/onboarding-intake.md
 templates/clarification-summary.md
 templates/qa-brief-intake.md
 templates/linear-question-sync.md
+templates/doc-refresh-note.md
+templates/wiki-update-note.md
+templates/doc-metadata.md
+templates/doc-change-checklist.md
 templates/spec-review.md
 templates/requirements-split.md
 templates/milestone-plan.md
@@ -155,7 +198,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates install scripts docs mcp examples profiles core adapters; do
+for dir in commands skills templates install scripts docs wiki mcp examples profiles core adapters; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -163,11 +206,11 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 38 ] || fail "expected at least 38 command definitions"
-[ "$skill_count" -ge 33 ] || fail "expected at least 33 skill definitions"
+[ "$command_count" -ge 39 ] || fail "expected at least 39 command definitions"
+[ "$skill_count" -ge 34 ] || fail "expected at least 34 skill definitions"
 [ "$template_count" -ge 35 ] || fail "expected at least 35 templates"
 
-for script in install/install.sh install/install-claude.sh install/install-codex.sh install/install-opencode.sh install/install-hermes.sh install/detect-host.sh install/uninstall.sh install/update.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
+for script in install/install.sh install/install-claude.sh install/install-codex.sh install/install-opencode.sh install/install-hermes.sh install/detect-host.sh install/uninstall.sh install/update.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/docs-audit.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
   [ -x "$script" ] || fail "script is not executable: $script"
   sh -n "$script" || fail "script syntax failed: $script"
@@ -179,5 +222,6 @@ fi
 
 ./scripts/check-markdown.sh
 ./scripts/check-links.sh
+./scripts/docs-audit.sh
 
 printf 'validate-repo: ok\n'
