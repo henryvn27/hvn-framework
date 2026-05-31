@@ -1,6 +1,6 @@
 {
   "name": "ORCA-HVN Ecosystem Sweep",
-  "version": 3,
+  "version": 4,
   "last_run_date": null,
   "last_report_path": null,
   "last_watch_update": null,
@@ -45,6 +45,15 @@
     "auth and permission pattern changes",
     "easier setup paths ORCA-HVN could recommend",
     "broken or deprecated setup patterns ORCA-HVN should stop recommending"
+  ],
+  "startup_stack_watchlist": [
+    "Next.js and Vercel default-path changes",
+    "Expo and React Native workflow changes",
+    "EAS build or update path changes",
+    "Supabase and Firebase mobile or web guidance changes",
+    "Stripe versus RevenueCat platform-boundary changes",
+    "analytics and monitoring defaults for startup stacks",
+    "push, auth, and release-path changes that alter stack recommendations"
   ],
   "tracked_harnesses": [
     "Codex",

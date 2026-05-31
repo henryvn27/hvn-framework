@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, a dedicated harness compatibility audit, top-level docs surfaces that should refresh as the framework changes, and design/copy quality signals that help ORCA-HVN avoid generic AI-looking output.
+Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, startup-stack integration drift across web and mobile ecosystems, a dedicated harness compatibility audit, top-level docs surfaces that should refresh as the framework changes, and design/copy quality signals that help ORCA-HVN avoid generic AI-looking output.
 
 Primary research question:
 
@@ -39,6 +39,12 @@ Secondary research question:
 - `docs/visual-quality.md`
 - `docs/human-voice.md`
 - `docs/token-efficiency.md`
+- `docs/integration-priorities.md`
+- `docs/choose-your-stack.md`
+- `docs/web-stack-guide.md`
+- `docs/mobile-stack-guide.md`
+- `docs/saas-stack-guide.md`
+- `integrations/README.md`
 - `wiki/Home.md`
 - `wiki/_Sidebar.md`
 - `templates/ecosystem-adopt-issue.md`
@@ -56,6 +62,11 @@ Secondary research question:
 - `docs/visual-quality.md`
 - `docs/human-voice.md`
 - `docs/token-efficiency.md`
+- `docs/integration-priorities.md`
+- `docs/choose-your-stack.md`
+- `docs/web-stack-guide.md`
+- `docs/mobile-stack-guide.md`
+- `docs/saas-stack-guide.md`
 - `templates/doc-refresh-note.md`
 - `templates/wiki-update-note.md`
 - `reports/ecosystem-sweep/draft-issues/*.md` when direct issue creation is unavailable
@@ -130,6 +141,16 @@ For GitHub, Linear, and any other materially relevant service:
 - classification
 - primary category
 
+## Stack integration changes
+For tier 1 and tier 2 integrations, especially web and mobile defaults:
+- what changed
+- whether this affects web, mobile, backend, auth, payments, analytics, monitoring, or automation guidance
+- whether ORCA-HVN's default stack recommendation should change
+- whether the change is a first-class recommendation shift, a validation/diagnostics change, or a watch item
+- evidence/source
+- classification
+- primary category
+
 ## Recommendations by category
 Group under commands, memory, install, cross-harness, QA, and workflow.
 
@@ -186,6 +207,8 @@ Every sweep should actively look for workflow-enabling execution features:
 - task-budget, effort, or model-routing controls that can reduce wasted spend
 - better long-context summarization or checkpoint patterns that reduce transcript replay
 - host-level token visibility or usage reporting ORCA-HVN can expose honestly
+- startup-stack shifts around Next.js, Vercel, Supabase, Expo, React Native, EAS, Stripe, RevenueCat, PostHog, Sentry, and related tier 1 integrations
+- breaking or simplifying changes in mobile build, OTA update, native subscription, auth, or push-notification paths
 
 ## Harness Compatibility Audit Phase
 
@@ -271,6 +294,13 @@ For token-efficiency findings, also answer:
 - Does it depend on a specific provider or does it generalize across hosts?
 - Should ORCA-HVN update `docs/token-efficiency.md`, stage budgets, runtime guidance, or workflow accounting?
 - Does the change improve quality-preserving efficiency, or does it mainly cut spend by degrading capability?
+
+For startup-stack integration findings, also answer:
+
+- Does this change the recommended default stack bundle?
+- Is the change web-specific, mobile-specific, or broadly shared?
+- Should ORCA-HVN update an integration pack, stack guide, validation rule, or paved road?
+- Does the change introduce a new failure mode, setup shortcut, or better default?
 
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended ORCA-HVN action.
 

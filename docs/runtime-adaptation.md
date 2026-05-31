@@ -39,6 +39,8 @@ Background mode is also part of runtime adaptation. Different harnesses may supp
 - limited local unattended writes
 - no reviewed unattended mode beyond planning
 
+Integration routing is part of runtime adaptation too. A mobile stack should not receive a web-first payments or deploy recommendation just because the harness can discuss both.
+
 Controller/executor routing is part of runtime adaptation. A controller may choose one harness for orchestration and another for bounded execution when the pairing is clearer or safer than single-harness operation.
 
 ## Runtime Rule

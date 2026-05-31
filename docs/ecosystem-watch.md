@@ -21,6 +21,7 @@ Every sweep should explicitly watch:
 - shared state and persistent memory
 - run inspection and inspector features
 - workflow metrics and cost tracking
+- modern startup stack defaults across web, mobile, auth, billing, analytics, and monitoring
 - approval and human-in-the-loop patterns
 - tool governance and MCP review
 - GitHub integration setup paths

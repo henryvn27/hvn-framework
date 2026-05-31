@@ -43,6 +43,8 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-check-setup`
 - `orca-validate-integration`
 - `orca-runtime`
+- `orca-integration`
+- `orca-setup-integration`
 - `orca-status`
 - `orca-controller`
 - `orca-orient`
@@ -96,6 +98,8 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 
 Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just the product artifact.
 Use `orca-improve-framework` at the end of meaningful sessions when reusable ORCA-HVN friction or strong session-quality signals may deserve a framework issue or backlog entry.
+Use `orca-integration` when the user needs stack routing, integration selection, or platform-aware tool guidance.
+Use `orca-setup-integration` when the user chose a stack component and now needs the shortest safe setup path.
 Use `orca-docs` when a user needs a docs entry point, a doc refresh plan, or a docs routing answer after the framework surface changes.
 Use `orca-background` when unattended progress needs an explicit contract before the run starts.
 Use `orca-keep-going` when the user wants bounded autonomous progress on the current task, milestone, or goal.
@@ -112,6 +116,7 @@ Use `orca-replay` and `orca-restore` when runtime changes, harness updates, or f
 Use `orca-state`, `orca-checkpoint`, and `orca-inspect` when multiple roles need a shared current view or when a run must pause and resume safely.
 Use `orca-tool-review` and `orca-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.
 Use `orca-setup`, `orca-check-setup`, and `orca-validate-integration` when GitHub, Linear, MCP, connectors, or CLI helpers are needed for the workflow.
+Use integration packs and stack guides when web, mobile, auth, billing, analytics, monitoring, or automation choices materially affect the recommended path.
 Use `orca-runtime` and `orca-status` when harness capabilities or policy switches should change the recommended path or need inspection.
 Use `orca-controller` and `orca-orient` when an external controller agent needs a fast current-state view.
 Use `orca-delegate` when another harness or collaborator should execute bounded work, and `orca-ingest` when structured results return.

@@ -69,6 +69,13 @@ Treat autonomy as a budget, not a binary.
 
 Background mode should always choose the lowest autonomy level that still makes progress.
 
+When integrations are involved, background mode should prefer:
+
+- read-only validation first
+- local artifact prep over external writes
+- platform-aware diagnostics instead of guessing a stack path
+- explicit stop conditions when mobile release, billing, auth, or push setup is incomplete
+
 ## Recommended Use Cases
 
 - overnight research

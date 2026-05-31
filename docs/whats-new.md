@@ -13,6 +13,7 @@ This page helps returning users rediscover what changed without reading every fi
 - token-efficiency guidance tied to accounting, stage budgets, and recurring research
 - session-end framework improvement loop with issue drafting and backlog filtering
 - session-quality signals and lightweight quality scoring for frustration, generic output, and wrong-direction detection
+- broad startup-stack integration packs with first-class Expo and React Native guidance
 
 ## Best Pages To Revisit
 

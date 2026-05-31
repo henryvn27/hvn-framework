@@ -1,33 +1,74 @@
 # Integrations Overview
 
-ORCA-HVN starts with setup support for GitHub and Linear. More services can be added by creating an integration guide, checklist, validation expectations, and fallback behavior.
+ORCA-HVN integrations are structured capability packs for the tools modern product teams actually use to build and operate apps.
 
-## Supported Initial Services
+This is not a logo wall. An integration only counts when ORCA-HVN can describe:
 
-| Service | Common ORCA-HVN uses | Required when | Fallback |
-| --- | --- | --- | --- |
-| GitHub | repo browsing, issue links, PRs, reviews, checks, releases, changelogs | ORCA-HVN must perform GitHub reads or writes directly | local repo plus manual issue, PR, checks, or release steps |
-| Linear | issue intake, planning comments, QA reports, ship checks, state transitions | Linear is the system of record and ORCA-HVN must read or write it directly | pasted issue context plus local artifacts or another tracker |
+- when to use it
+- how to set it up
+- how to validate it
+- what workflows it supports
+- what can go wrong
+- what fallback exists
 
-## Integration Methods
+## What An Integration Is
 
-- Native connector: host-provided service connector.
-- MCP server: Model Context Protocol server exposed to the harness.
-- API token: service token configured in the host, CLI, or environment.
-- CLI helper: local command such as `gh` for GitHub.
-- Plugin: host-specific installable capability.
-- Manual: user pastes data or performs the service action directly.
+An ORCA-HVN integration is a reviewed support layer for a platform, service, SDK, or workflow dependency.
 
-## Status Values
+Support may include:
 
-- `connected`: reachable, authenticated, and scoped for the intended action
-- `missing`: no integration path is configured
-- `misconfigured`: configured but failing validation
-- `unavailable in this harness`: the current host cannot use that integration path
-- `available via fallback method`: direct integration is missing, but ORCA-HVN can continue safely
+- setup guidance
+- runtime-aware recommendations
+- validation and diagnostics
+- paved-road routing
+- docs and examples
+- platform-specific caveats
 
-## Harness Rule
+## Support Types
 
-Do not assume a setup path from one host works in another. Document uncertainty, validate locally, and offer a fallback before blocking progress.
+ORCA-HVN may support an integration through:
 
-Runtime adaptation should consume reviewed compatibility knowledge before promoting a setup path as the default.
+- docs-first guidance
+- setup and validation commands
+- runtime-aware workflow recommendations
+- paved-road bundle recommendations
+- host-specific fallback guidance
+
+Not every integration gets the same depth on day one.
+
+See [integration-priorities.md](integration-priorities.md).
+
+## Core Categories
+
+- web and product
+- mobile
+- backend and data
+- auth
+- payments
+- email and communications
+- analytics and monitoring
+- testing and CI
+- business and project systems
+- automation
+- AI and app-infra extras
+
+See [integration-categories.md](integration-categories.md).
+
+## How Integrations Connect To The Framework
+
+- runtime adaptation chooses integration paths that the active harness can actually support
+- paved roads recommend default bundles instead of forcing users to assemble a stack from scratch
+- background mode should respect integration risk, credential boundaries, and validation limits
+- setup and validation should distinguish missing setup from unsupported harness behavior
+
+## Discovering The Right Integration
+
+Start with:
+
+- [choose-your-stack.md](choose-your-stack.md)
+- [integration-use-case-map.md](integration-use-case-map.md)
+- [web-stack-guide.md](web-stack-guide.md)
+- [mobile-stack-guide.md](mobile-stack-guide.md)
+- [saas-stack-guide.md](saas-stack-guide.md)
+
+Then open the relevant pack in [../integrations/README.md](../integrations/README.md).

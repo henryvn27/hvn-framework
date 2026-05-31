@@ -31,6 +31,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 23. **Background autonomy needs budgets and circuit breakers:** unattended progress should be bounded, inspectable, and quick to stop when it stalls.
 24. **Real session friction should feed framework improvement:** reusable ORCA-HVN pain should become filtered, human-approved backlog work instead of being forgotten.
 25. **Quality failures need concrete evidence:** frustration, generic output, and wrong-direction behavior should inform improvement only when grounded in observable session evidence.
+26. **Modern stacks need explicit integration guidance:** web, mobile, backend, auth, payments, analytics, automation, and business tools should be routed through reviewed integration packs rather than ad hoc guesses.
 
 ## Coordination Modes
 
@@ -59,6 +60,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Legacy mode:** reverse-engineer old systems, extract business logic, and create modernization artifacts.
 - **Research mode:** gather evidence when the answer is not already known.
 - **Setup mode:** identify, configure, validate, or fall back from required external tools.
+- **Integration mode:** choose the right product stack, integration pack, setup path, and validation flow for the target platform.
 - **Runtime adaptation mode:** detect the harness, apply capability profiles, and choose safe routes and fallbacks.
 - **Controller mode:** orient a project-level controller agent and decide direct execution versus delegation.
 - **Specification mode:** convert issue context into acceptance criteria and non-goals.
@@ -98,6 +100,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - Idea scorecard, evidence map, opportunity memo, validation plan, or decision note when the work is still upstream of product definition
 - Research brief when outside evidence informs a decision
 - Tool requirements, integration status, or health report when external tools are required
+- Integration checklist or validation artifact when stack choices or platform-specific setup matter
 - Runtime detection, route, or status artifact when harness capability materially changes behavior
 - Legacy audit, risk report, or modernization spec when working on inherited systems
 - Spec or Linear spec comment

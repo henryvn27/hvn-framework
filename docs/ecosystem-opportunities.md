@@ -12,6 +12,7 @@ This is the maintainer-facing short list of actionable ecosystem findings. Keep 
 - Link harness-level compatibility shifts to [harness-watch](harness-watch.md) when they affect the matrix or host guidance.
 - `Adopt now` items must link a draft issue or explain why issue creation was blocked.
 - repeated session-improvement candidates can be promoted here when the same low-grade friction becomes a framework maintenance priority
+- integration-stack drift, better default bundles, and broken setup guidance should also be tracked here
 
 ## Opportunity Fields
 

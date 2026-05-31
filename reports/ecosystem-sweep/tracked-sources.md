@@ -62,6 +62,34 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 ### VS Code
 - VS Code MCP servers: https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
+## Startup Stack Sources
+
+### Expo And React Native
+- Expo docs: https://docs.expo.dev/
+- Expo workflow overview: https://docs.expo.dev/workflow/overview/
+- Expo EAS Update: https://docs.expo.dev/eas-update/introduction/
+- React Native docs: https://reactnative.dev/docs/getting-started.html
+
+### Web And Deploy
+- Vercel Next.js overview: https://vercel.com/docs/concepts/next.js/overview
+- Vercel deployments overview: https://vercel.com/docs/deployments/overview
+
+### Backend And Data
+- Supabase docs: https://supabase.com/docs/
+- Supabase features: https://supabase.com/docs/guides/getting-started/features
+- Supabase Edge Functions: https://supabase.com/docs/guides/functions
+
+### Auth
+- Firebase Auth docs: https://firebase.google.com/docs/auth/
+
+### Payments
+- RevenueCat docs: https://www.revenuecat.com/docs/
+- RevenueCat store payments: https://www.revenuecat.com/docs/platform-resources/developer-store-payments
+- RevenueCat plus Stripe integration: https://www.revenuecat.com/integrations/stripe//
+
+### Push
+- OneSignal React Native setup: https://documentation.onesignal.com/docs/en/react-native-sdk-setup
+
 ## Design And Writing Quality Sources
 
 ### Design System Quality
@@ -117,6 +145,11 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - token-aware model effort or task-budget controls
 - cache-read and usage telemetry that ORCA-HVN can surface
 - summarization and checkpoint patterns that reduce repeated long-context replay
+- modern startup default-stack drift across web and mobile product teams
+- Expo and React Native workflow changes
+- EAS build and update workflow changes
+- native mobile subscription guidance versus web billing guidance
+- auth, analytics, monitoring, and push defaults that affect ORCA-HVN stack recommendations
 
 ## Harness Update Questions
 
@@ -181,6 +214,15 @@ For material token-efficiency shifts, answer:
 - Is the gain host-specific, provider-specific, or broadly portable?
 - Should ORCA-HVN change token-efficiency guidance, stage budgets, accounting, or runtime behavior?
 - Does the change reduce retries and repeated context, or only reduce nominal per-call spend?
+
+## Stack Integration Questions
+
+For material stack and integration shifts, answer:
+
+- Does this change ORCA-HVN's default recommendation for web, mobile, SaaS, or internal-tool stacks?
+- Is the change tier 1, tier 2, or watchlist relevance?
+- Does it require pack updates, new diagnostics, or paved-road changes?
+- Does it clarify a platform boundary, especially around mobile billing, push, auth, build, or OTA updates?
 
 ## Source Quality Rules
 

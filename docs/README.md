@@ -51,6 +51,8 @@ These are teaching-oriented pages for common paths:
 - [visual-quality.md](visual-quality.md)
 - [human-voice.md](human-voice.md)
 - [token-efficiency.md](token-efficiency.md)
+- [integrations-overview.md](integrations-overview.md)
+- [choose-your-stack.md](choose-your-stack.md)
 - [session-improvement-loop.md](session-improvement-loop.md)
 - [session-quality-signals.md](session-quality-signals.md)
 - [improvement-backlog.md](improvement-backlog.md)

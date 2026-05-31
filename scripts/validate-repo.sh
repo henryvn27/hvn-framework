@@ -62,6 +62,15 @@ docs/tool-safety-rules.md
 docs/mcp-review-workflow.md
 docs/external-tool-setup.md
 docs/integrations-overview.md
+docs/integration-categories.md
+docs/mobile-vs-web-integrations.md
+docs/integration-use-case-map.md
+docs/mobile-stack-guide.md
+docs/web-stack-guide.md
+docs/saas-stack-guide.md
+docs/integration-validation.md
+docs/integration-diagnostics.md
+docs/integration-priorities.md
 docs/setup-validation.md
 docs/degraded-mode.md
 docs/setup-ux.md
@@ -136,7 +145,10 @@ docs/guides/background-mode-guide.md
 docs/guides/business-ideation-guide.md
 docs/guides/paved-roads-guide.md
 docs/guides/runtime-adaptation-guide.md
+docs/guides/expo-guide.md
+docs/guides/react-native-guide.md
 docs/guides/visual-quality-guide.md
+docs/paved-road-ux.md
 docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
@@ -273,6 +285,15 @@ docs/examples/generic-output-signal.md
 docs/examples/wrong-direction-signal.md
 docs/examples/low-confidence-no-issue.md
 docs/examples/high-confidence-quality-issue-approved.md
+docs/examples/expo-mobile-stack.md
+docs/examples/react-native-supabase-stack.md
+docs/examples/mobile-subscriptions-revenuecat.md
+docs/examples/mobile-push-onesignal.md
+docs/examples/web-saas-stack.md
+docs/examples/mobile-stack.md
+docs/examples/startup-stack.md
+docs/examples/internal-tool-stack.md
+docs/examples/expo-vs-web-differences.md
 benchmarks/onboarding-spec/README.md
 wiki/Home.md
 wiki/Getting-Started.md
@@ -321,14 +342,21 @@ reports/compatibility/latest.md
 reports/compatibility/2026-05-30.md
 mcp/linear.example.json
 HVN-STATUS.md
+integrations/README.md
 commands/orca-docs.md
+commands/orca-integration.md
+commands/orca-setup-integration.md
 commands/orca-improve-framework.md
+skills/orca-integrations/SKILL.md
 skills/orca-docs-system/SKILL.md
 skills/orca-session-improvement/SKILL.md
 templates/doc-refresh-note.md
 templates/wiki-update-note.md
 templates/doc-metadata.md
 templates/doc-change-checklist.md
+templates/integration-pack.md
+templates/integration-checklist.md
+templates/integration-validation.md
 templates/framework-improvement-note.md
 templates/session-improvement-review.md
 templates/session-quality-signal.md
@@ -346,7 +374,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/guides docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples wiki; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/guides docs/hosts docs/integrations integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples wiki; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 

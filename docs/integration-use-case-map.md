@@ -1,0 +1,67 @@
+# Integration Use-Case Map
+
+Use this page when you know the product shape but not the stack.
+
+## Web SaaS
+
+Default bias:
+
+- Next.js
+- Vercel
+- Supabase
+- Stripe
+- Resend
+- PostHog
+- Sentry
+
+## Mobile App Fast
+
+Default bias:
+
+- Expo
+- React Native
+- Expo EAS
+- Supabase or Firebase
+- RevenueCat for subscriptions
+- OneSignal for push
+- Sentry
+
+## Internal Tool
+
+Default bias:
+
+- Next.js
+- Railway
+- Postgres
+- Clerk
+- GitHub
+- Linear
+
+## AI Product
+
+Default bias:
+
+- Next.js or Expo/React Native depending on target
+- OpenAI or Anthropic
+- Postgres or Supabase
+- pgvector or Pinecone when retrieval is needed
+- Helicone or Langfuse when tracing or cost visibility matters
+
+## Content Or Marketing Site
+
+Default bias:
+
+- Next.js
+- Vercel or Cloudflare
+- Plausible or GA4
+- Resend
+
+## Startup Ops And Automation
+
+Default bias:
+
+- GitHub
+- Linear
+- Notion
+- Slack
+- n8n or Zapier

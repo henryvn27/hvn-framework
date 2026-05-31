@@ -15,6 +15,8 @@ Use this page when you know what you want to do but not which command matches it
 - `orca-plan`: build the implementation phases
 - `orca-next`: get short default next-step guidance
 - `orca-goal`: decide whether the next milestone should use goal mode
+- `orca-integration`: pick the right integration or stack pack
+- `orca-setup-integration`: set up a chosen integration path
 
 ## Run The Work
 

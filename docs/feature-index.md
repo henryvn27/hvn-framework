@@ -41,6 +41,7 @@ Read:
 - compatibility matrix
 - host guides
 - token efficiency
+- integration packs and stack routing
 
 Read:
 
@@ -49,6 +50,7 @@ Read:
 - [compatibility-matrix.md](compatibility-matrix.md)
 - [hosts/codex-cli.md](hosts/codex-cli.md)
 - [token-efficiency.md](token-efficiency.md)
+- [integrations-overview.md](integrations-overview.md)
 
 ## Inspection And Safety
 

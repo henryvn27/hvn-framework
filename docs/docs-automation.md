@@ -39,6 +39,7 @@ The docs automation layer keeps the top-level docs, routing pages, and wiki alig
 - draft freshness notes for stale pages
 - update `docs/recent-doc-updates.md` and `docs/whats-new.md` when major docs surfaces change
 - surface recurring docs friction from the session improvement backlog when the same routing or clarity gap keeps recurring
+- watch integration packs and stack guides for ecosystem drift in tier 1 and tier 2 services
 
 ## Boundaries
 

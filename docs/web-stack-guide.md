@@ -1,0 +1,25 @@
+# Web Stack Guide
+
+The default ORCA-HVN web stack bias is:
+
+- Next.js
+- Vercel
+- Supabase
+- Stripe
+- Resend
+- PostHog
+- Sentry
+
+## Why This Is The Default
+
+- strong documentation and adoption
+- fast deploy and preview workflows
+- clear auth, database, and edge-function paths
+- straightforward analytics and monitoring layering
+
+## Key Web Decisions
+
+- Vercel versus Cloudflare versus Railway hosting path
+- Supabase versus thinner Postgres-only backend
+- Stripe versus Paddle or LemonSqueezy for billing
+- PostHog versus lighter analytics

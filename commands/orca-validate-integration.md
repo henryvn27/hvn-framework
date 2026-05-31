@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Validate whether an external integration is reachable, authenticated, scoped, and usable from the current harness.
+Validate whether an integration is reachable, authenticated, scoped, platform-appropriate, and usable from the current harness.
 
 ## When To Use
 
-Use after setup or when a workflow fails because GitHub, Linear, MCP, or a connector may be unavailable.
+Use after setup or when a workflow fails because a service, SDK, deploy path, payments path, auth path, or connector may be unavailable or mismatched.
 
 ## Required Inputs
 
@@ -18,6 +18,8 @@ Use after setup or when a workflow fails because GitHub, Linear, MCP, or a conne
 
 - Target repo, issue, project, workspace, or team
 - Required read/write scope
+- Web or mobile target
+- Adjacent integrations expected by the stack
 
 ## Workflow
 
@@ -25,7 +27,8 @@ Use after setup or when a workflow fails because GitHub, Linear, MCP, or a conne
 2. Test reachability without destructive writes.
 3. Test authentication state.
 4. Check required scope for the intended action.
-5. Report exact failure mode and fallback.
+5. Check whether the selected integration path matches the target platform.
+6. Report exact failure mode and fallback.
 
 ## Outputs And Artifacts
 
@@ -36,8 +39,9 @@ Use after setup or when a workflow fails because GitHub, Linear, MCP, or a conne
 
 - If automated validation is unsafe or unavailable, provide manual validation.
 - If only read access works, recommend read-only or manual-write fallback.
+- If the integration choice is wrong for the platform, report the mismatch directly.
 
 ## Related Commands And Skills
 
-- Commands: `orca-setup`, `orca-check-setup`
-- Skills: `orca-tool-setup`
+- Commands: `orca-integration`, `orca-setup-integration`, `orca-check-setup`
+- Skills: `orca-tool-setup`, `orca-integrations`

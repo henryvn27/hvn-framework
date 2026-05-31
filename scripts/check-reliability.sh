@@ -75,6 +75,15 @@ for file in \
   docs/mcp-review-workflow.md \
   docs/external-tool-setup.md \
   docs/integrations-overview.md \
+  docs/integration-categories.md \
+  docs/mobile-vs-web-integrations.md \
+  docs/integration-use-case-map.md \
+  docs/mobile-stack-guide.md \
+  docs/web-stack-guide.md \
+  docs/saas-stack-guide.md \
+  docs/integration-validation.md \
+  docs/integration-diagnostics.md \
+  docs/integration-priorities.md \
   docs/setup-validation.md \
   docs/degraded-mode.md \
   docs/setup-ux.md \
@@ -149,7 +158,11 @@ for file in \
   docs/guides/business-ideation-guide.md \
   docs/guides/paved-roads-guide.md \
   docs/guides/runtime-adaptation-guide.md \
+  docs/guides/expo-guide.md \
+  docs/guides/react-native-guide.md \
   docs/guides/visual-quality-guide.md \
+  docs/paved-road-ux.md \
+  integrations/README.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -167,6 +180,9 @@ for file in \
   templates/mcp-server-entry.md \
   templates/mcp-review.md \
   templates/tool-requirements.md \
+  templates/integration-pack.md \
+  templates/integration-checklist.md \
+  templates/integration-validation.md \
   templates/integration-status.md \
   templates/integration-health-report.md \
   templates/github-setup-checklist.md \
@@ -260,6 +276,8 @@ for file in \
   commands/orca-tool-review.md \
   commands/orca-mcp-review.md \
   commands/orca-setup.md \
+  commands/orca-integration.md \
+  commands/orca-setup-integration.md \
   commands/orca-check-setup.md \
   commands/orca-validate-integration.md \
   commands/orca-runtime.md \
@@ -292,6 +310,15 @@ for file in \
   docs/examples/wrong-direction-signal.md \
   docs/examples/low-confidence-no-issue.md \
   docs/examples/high-confidence-quality-issue-approved.md \
+  docs/examples/expo-mobile-stack.md \
+  docs/examples/react-native-supabase-stack.md \
+  docs/examples/mobile-subscriptions-revenuecat.md \
+  docs/examples/mobile-push-onesignal.md \
+  docs/examples/web-saas-stack.md \
+  docs/examples/mobile-stack.md \
+  docs/examples/startup-stack.md \
+  docs/examples/internal-tool-stack.md \
+  docs/examples/expo-vs-web-differences.md \
   commands/orca-delegate.md \
   commands/orca-ingest.md \
   commands/orca-validate-schema.md \
@@ -317,6 +344,7 @@ for file in \
   skills/orca-delegation/SKILL.md \
   skills/orca-portability/SKILL.md \
   skills/orca-docs-system/SKILL.md \
+  skills/orca-integrations/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
