@@ -10,9 +10,10 @@ It is also the primary workflow, not a companion layer for GStack or GSD. Those 
 
 It should also teach that path. A new user should be able to start learning orchestration inside ORCA-HVN itself instead of waiting for someone else to train them live.
 
-Framework-wide rule:
+Framework-wide rules:
 
 - ORCA should reduce friction, not create more setup work
+- ORCA should try the strongest safe path to resolution before escalating to the user
 
 ## What It Solves
 

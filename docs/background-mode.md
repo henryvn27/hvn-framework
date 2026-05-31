@@ -78,6 +78,7 @@ When integrations are involved, background mode should prefer:
 - local artifact prep over external writes
 - platform-aware diagnostics instead of guessing a stack path
 - explicit stop conditions when mobile release, billing, auth, or push setup is incomplete
+- exhausting the strongest safe local moves before returning with a blocker
 
 ## Recommended Use Cases
 
