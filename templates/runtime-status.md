@@ -32,6 +32,22 @@
 
 - 
 
+## Latest Receipt
+
+-
+
+## Related Artifacts
+
+- 
+
+## Replay Availability
+
+-
+
+## Restore Points
+
+- 
+
 ## Important Caveats
 
 - 
