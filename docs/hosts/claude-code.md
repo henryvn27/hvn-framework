@@ -37,6 +37,10 @@ Claude Code supports MCP-based tool setup, but individual service availability a
 
 Use conservative setup language. If MCP auth fails or the server is unavailable, switch to manual artifacts instead of blocking unrelated local work.
 
+## Compatibility View
+
+See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../harness-watch.md) for the current conservative Claude Code compatibility view.
+
 ## Sources
 
 - https://code.claude.com/docs/en/goal

@@ -8,6 +8,9 @@
   "latest_summary_file": "reports/ecosystem-sweep/latest.md",
   "living_watch_file": "docs/ecosystem-watch.md",
   "opportunities_file": "docs/ecosystem-opportunities.md",
+  "compatibility_matrix_file": "docs/compatibility-matrix.md",
+  "harness_watch_file": "docs/harness-watch.md",
+  "compatibility_latest_file": "reports/compatibility/latest.md",
   "draft_issue_template_file": "templates/ecosystem-adopt-issue.md",
   "draft_issue_directory": "reports/ecosystem-sweep/draft-issues",
   "primary_research_question": "What new host or framework capabilities now exist that HVN can exploit, wrap, adapt, or learn from?",
@@ -43,6 +46,14 @@
     "easier setup paths HVN could recommend",
     "broken or deprecated setup patterns HVN should stop recommending"
   ],
+  "tracked_harnesses": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "OpenCode",
+    "Cursor",
+    "GitHub Copilot"
+  ],
   "notes": [
     "Research-first automation. No repo code or docs changes by default.",
     "Reports should compare against the prior sweep and avoid repeating unchanged items as new.",
@@ -50,6 +61,7 @@
     "When a finding is promoted from watch or investigate-soon to adopt-now, preserve earlier sightings and backlink them from the draft issue.",
     "Every material finding should explain whether HVN can use it directly, wrap it through a host adapter, document it as workflow guidance, or only watch it as an experimental pattern.",
     "Scheduled runs must update the dated report, latest summary, living watch document, opportunities document, and any needed draft adopt issues.",
-    "Setup-path findings must explain how setup changed, who is affected, whether HVN guidance should change, and whether the recommendation is host-specific or portable."
+    "Setup-path findings must explain how setup changed, who is affected, whether HVN guidance should change, and whether the recommendation is host-specific or portable.",
+    "Compatibility findings must update the matrix and harness watch, and should prefer unclear over unsupported when evidence is weak."
   ]
 }

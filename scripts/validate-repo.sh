@@ -68,6 +68,8 @@ docs/goal-mode.md
 docs/goal-safety.md
 docs/goal-recommendation-rules.md
 docs/milestone-planning.md
+docs/harness-compatibility.md
+docs/harness-watch.md
 docs/compatibility-matrix.md
 docs/command-mapping.md
 docs/ecosystem-watch.md
@@ -144,6 +146,8 @@ reports/ecosystem-sweep/tracked-sources.md
 reports/ecosystem-sweep/latest.md
 reports/ecosystem-sweep/state.json
 reports/ecosystem-sweep/draft-issues/README.md
+reports/compatibility/latest.md
+reports/compatibility/2026-05-30.md
 mcp/linear.example.json
 "
 
@@ -151,7 +155,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 

@@ -49,6 +49,8 @@ for file in \
   docs/goal-safety.md \
   docs/goal-recommendation-rules.md \
   docs/milestone-planning.md \
+  docs/harness-compatibility.md \
+  docs/harness-watch.md \
   docs/compatibility-matrix.md \
   docs/command-mapping.md \
   docs/ecosystem-watch.md \
@@ -182,6 +184,8 @@ for file in \
   reports/ecosystem-sweep/latest.md \
   reports/ecosystem-sweep/state.json \
   reports/ecosystem-sweep/draft-issues/README.md \
+  reports/compatibility/latest.md \
+  reports/compatibility/2026-05-30.md \
   examples/evals/starter-set.md
 do
   [ -f "$file" ] || fail "missing reliability file: $file"

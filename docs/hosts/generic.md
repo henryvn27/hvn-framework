@@ -14,3 +14,7 @@ Use this adapter when the active harness is unknown or does not have a dedicated
 Ask for the harness only when it changes the next setup step. Otherwise give a generic path and a manual fallback.
 
 Do not assume MCP support. Do not assume write permissions. Validate each layer separately.
+
+## Compatibility View
+
+See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../harness-watch.md) when deciding whether to keep a claim generic or host-specific.

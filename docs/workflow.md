@@ -53,6 +53,7 @@ The workflow now relies on six supporting controls:
 - onboarding, discovery, and spec create durable context
 - next-step guidance makes phase exits clear without adding process noise
 - setup checks keep GitHub, Linear, and MCP dependencies explicit and optional when possible
+- compatibility audits keep harness-specific claims explicit instead of assuming parity
 - legacy archaeology turns under-documented systems into actionable modernization context
 - goal contracts make long-running work bounded and verifiable
 - run memory stores reusable facts and decisions
@@ -87,3 +88,5 @@ Small changes may combine stages. A production feature touching auth, payments, 
 When a major stage completes, use [next-step guidance](next-step-guidance.md) unless the next action is already being executed or the user has opted out.
 
 If a missing integration blocks that next action, use [external tool setup](external-tool-setup.md) and [degraded mode](degraded-mode.md) before asking the user to install anything.
+
+When harness capability matters, use [harness compatibility](harness-compatibility.md) and [compatibility matrix](compatibility-matrix.md) to choose the safest path.

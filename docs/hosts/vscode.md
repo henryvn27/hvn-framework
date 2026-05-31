@@ -16,6 +16,10 @@ VS Code support depends on the extension and agent surface in use. GitHub Copilo
 - Do not commit secrets.
 - Validate with non-destructive reads before writes.
 
+## Compatibility View
+
+See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../harness-watch.md) for the current conservative VS Code compatibility view.
+
 ## Sources
 
 - https://code.visualstudio.com/docs/copilot/chat/mcp-servers

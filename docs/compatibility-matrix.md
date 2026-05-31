@@ -1,14 +1,38 @@
 # Compatibility Matrix
 
-This matrix records host-level support conservatively. Do not assume parity across hosts.
+This matrix records harness-level compatibility conservatively. Do not assume parity across hosts. If evidence is weak or conflicting, use `unclear`.
 
-| Host | Native goal mode | GitHub setup | Linear setup | HVN stance |
-| --- | --- | --- | --- | --- |
-| Codex CLI | Supported where `/goal` is available in the installed CLI version | connector, approved MCP, `gh`, or manual depending on environment | connector, approved MCP, or manual depending on environment | Validate local capability before relying on host-native setup |
-| Claude Code | Supported in documented versions with `/goal` | MCP or configured connector when available; manual fallback | MCP path when approved; manual fallback | Use documented MCP setup but do not assume service auth is already present |
-| Hermes Agent | Support must be verified in the installed host | host-documented connector, MCP, CLI, token, or manual | host-documented connector, MCP, token, or manual | Use fallback unless local Hermes docs confirm support |
-| VS Code | Depends on active extension or agent surface | GitHub Copilot connector, MCP, `gh`, or manual | MCP, token path, or manual | Validate active workspace capabilities |
-| Generic host | Unknown | CLI, approved MCP, token, or manual | approved MCP, token, or manual | Ask for host only when it changes setup |
+Status meanings:
+
+- `supported`
+- `partial`
+- `not supported`
+- `unclear`
+
+## Current Matrix
+
+| Harness | Goal mode | Run memory | Shared state / checkpoints | Trace / inspector | Tool / MCP support | GitHub integration | Linear integration | Approval / governance | Multi-agent patterns | Regression / eval / benchmark | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Codex | supported | partial | partial | partial | partial | partial | partial | partial | unclear | unclear | `/goal` is documented; external integrations depend on host configuration and available tools. |
+| Claude Code | supported | unclear | partial | unclear | partial | partial | partial | unclear | unclear | unclear | `/goal` and MCP are documented; service setup still depends on local configuration. |
+| Hermes Agent | unclear | unclear | unclear | unclear | unclear | unclear | unclear | unclear | unclear | unclear | Verify from current host docs before making stronger claims. |
+| OpenCode | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | OpenCode documents MCP support; other workflow compatibility should be verified per release. |
+| Cursor | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | Cursor documents MCP support and a curated MCP server catalog, including GitHub and Linear entries. |
+| GitHub Copilot | unclear | unclear | unclear | unclear | supported | supported | partial | partial | unclear | unclear | Copilot documents MCP support, policy controls, and a built-in GitHub MCP path in supported surfaces. |
+| VS Code | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | Depends on the active extension and workspace policy. |
+| Generic host | unclear | unclear | unclear | unclear | partial | partial | partial | unclear | unclear | unclear | Fall back to CLI, approved MCP, token, or manual workflows. |
+
+## Footnotes
+
+- `supported` does not imply native support. A capability may rely on MCP, connectors, or manual setup.
+- GitHub and Linear integration columns reflect viable integration options, not guaranteed built-in connectors.
+- `unclear` means HVN should prefer degraded mode or an explicit research note over a stronger claim.
+
+## Related Artifacts
+
+- [harness compatibility](harness-compatibility.md)
+- [harness watch](harness-watch.md)
+- `reports/compatibility/latest.md`
 
 ## Fallback
 

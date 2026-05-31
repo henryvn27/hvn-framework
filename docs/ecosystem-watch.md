@@ -3,6 +3,7 @@
 When a finding moves from `Watch` or `Investigate soon` to `Adopt now`, update the existing watch entry in place, preserve its earlier sightings, and link the resulting draft issue back to that history.
 
 The watchlist tracks the full research surface. Use [ecosystem-opportunities](ecosystem-opportunities.md) for the short maintainer list of actionable items.
+Use [harness-watch](harness-watch.md) for harness-level compatibility shifts.
 
 ## What We Track
 

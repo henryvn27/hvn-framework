@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Run a research-first strategic sweep for the HVN ecosystem without changing product code by default. The sweep tracks both execution-capability changes and setup-path changes for important external integrations.
+Run a research-first strategic sweep for the HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, and a dedicated harness compatibility audit.
 
 Primary research question:
 
@@ -19,6 +19,9 @@ Primary research question:
 - `reports/ecosystem-sweep/tracked-sources.md`
 - `reports/ecosystem-sweep/state.json`
 - the prior dated sweep report when available
+- the prior dated compatibility audit when available
+- `docs/compatibility-matrix.md`
+- `docs/harness-watch.md`
 - `docs/ecosystem-watch.md`
 - `docs/ecosystem-opportunities.md`
 - `templates/ecosystem-adopt-issue.md`
@@ -27,6 +30,10 @@ Primary research question:
 
 - `reports/ecosystem-sweep/YYYY-MM-DD.md`
 - `reports/ecosystem-sweep/latest.md`
+- `reports/compatibility/YYYY-MM-DD.md`
+- `reports/compatibility/latest.md`
+- `docs/compatibility-matrix.md`
+- `docs/harness-watch.md`
 - `docs/ecosystem-watch.md`
 - `docs/ecosystem-opportunities.md`
 - `reports/ecosystem-sweep/draft-issues/*.md` when direct issue creation is unavailable
@@ -69,6 +76,11 @@ Cover Codex CLI, Claude Code, Hermes Agent, OpenCode, and other materially relev
 - classification
 - adoption shape
 - primary category
+
+## Harness compatibility updates
+- link to the current compatibility audit report
+- list major harness-level changes briefly
+- cross-link to `docs/compatibility-matrix.md` and `docs/harness-watch.md`
 
 ## Cross-harness capability matrix
 Track whether these appear to exist and at what confidence:
@@ -138,6 +150,22 @@ Every sweep should actively look for workflow-enabling execution features:
 - auth and permission pattern changes
 - easier setup paths HVN could recommend
 - broken or deprecated setup paths HVN should stop recommending
+- harness-level compatibility shifts across Codex, Claude Code, Hermes Agent, OpenCode, Cursor, GitHub Copilot, and other tracked hosts
+- capability parity gaps that matter to HVN workflows
+
+## Harness Compatibility Audit Phase
+
+Each scheduled run should also perform a dedicated compatibility audit:
+
+1. identify tracked harnesses
+2. audit current support for HVN-relevant capabilities and integrations
+3. update `docs/compatibility-matrix.md`
+4. write `reports/compatibility/YYYY-MM-DD.md`
+5. update `reports/compatibility/latest.md`
+6. update `docs/harness-watch.md`
+7. surface any material changes in the main ecosystem sweep
+
+The compatibility audit should focus on "what works where," not just "what exists somewhere."
 
 ## Recommendation Categories
 
@@ -166,6 +194,7 @@ Also classify the adoption shape:
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
 - setup-path update
+- compatibility update
 
 ## Analysis Rules
 
@@ -187,6 +216,14 @@ For setup-path findings, also answer:
 - Does the change break or deprecate an existing recommendation?
 - Is the setup path host-specific or broadly portable?
 
+For compatibility findings, also answer:
+
+- What changed in the harness compatibility picture?
+- Which harnesses gained, lost, or degraded support?
+- Which HVN workflows does the shift affect?
+- Should the matrix, host adapters, workflow docs, or setup guidance change?
+- Is this a durable compatibility shift or a narrow release caveat?
+
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended HVN action.
 
 ## Living Documents
@@ -207,18 +244,22 @@ Maintain [docs/ecosystem-opportunities.md](../../docs/ecosystem-opportunities.md
 - related issue
 - next recommended action
 
+Maintain [docs/harness-watch.md](../../docs/harness-watch.md) as the harness-level shift log.
+
 ## Draft Issue Rule
 
 If a finding is classified as `Adopt now`:
 
 - create one draft issue unless a substantially similar open or already-tracked issue exists
 - classify setup-path changes as `Adopt now` when they materially improve or break HVN guidance and should be acted on now
+- classify compatibility shifts as `Adopt now` when they materially improve or break HVN guidance and should be acted on now
 - if the finding was previously tracked as `Watch` or `Investigate soon`, update the existing watch entry instead of treating it as a totally new discovery
 - include backlinks to the earlier sightings when opening the draft issue
 - use `templates/ecosystem-adopt-issue.md`
 - prefer direct issue creation when the environment supports it
 - otherwise write a Markdown draft to `reports/ecosystem-sweep/draft-issues/`
 - link the issue or draft from both `docs/ecosystem-watch.md` and `docs/ecosystem-opportunities.md`
+- link compatibility-driven draft issues from `docs/harness-watch.md` as well
 
 ## Done Condition
 
@@ -226,10 +267,15 @@ A scheduled run is complete only when:
 
 - the dated report is written
 - `reports/ecosystem-sweep/latest.md` is updated
+- `reports/compatibility/YYYY-MM-DD.md` is written
+- `reports/compatibility/latest.md` is updated
+- `docs/compatibility-matrix.md` is updated or explicitly confirmed unchanged
+- `docs/harness-watch.md` is updated
 - `docs/ecosystem-watch.md` is updated
 - `docs/ecosystem-opportunities.md` is updated
 - findings are grouped by commands, memory, install, cross-harness, QA, and workflow
 - `Adopt now` findings have draft issues without duplication
 - capability-to-HVN mapping is explicit
 - setup-path changes explain who is affected and whether HVN guidance should change
+- harness compatibility shifts explain what changed, which workflows are affected, and whether HVN docs should change
 - exact source URLs are listed

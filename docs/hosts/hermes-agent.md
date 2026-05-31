@@ -34,6 +34,10 @@ Hermes Agent integration details should be verified from the installed host, loc
 
 If host capability is unclear, classify the integration as `unavailable in this harness` or `available via fallback method` until proven otherwise.
 
+## Compatibility View
+
+See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../harness-watch.md) for the current conservative Hermes compatibility view.
+
 ## Source Notes
 
 Public discussion may mention goal behavior, but HVN should rely on local host documentation or command help before invoking it.

@@ -36,6 +36,10 @@ Codex setup should be verified against the installed CLI and available connector
 
 Use `hvn-check-setup` before blocking on GitHub or Linear. If setup is incomplete but the next phase is local, continue in degraded mode.
 
+## Compatibility View
+
+See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../harness-watch.md) for the current conservative Codex compatibility view.
+
 ## Source
 
 - https://developers.openai.com/codex/cli/slash-commands

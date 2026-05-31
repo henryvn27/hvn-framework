@@ -20,11 +20,21 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - Site: https://opencode.live/
 - Repo: https://github.com/opencode-ai/opencode
 - Releases: https://github.com/opencode-ai/opencode/releases
+- MCP docs: https://dev.opencode.ai/docs/mcp-servers/
 
 ### Hermes Agent
 - Repo: https://github.com/NousResearch/hermes-agent
 - Releases: https://github.com/NousResearch/hermes-agent/releases
 - Org: https://github.com/nousresearch
+
+### Cursor
+- MCP docs: https://docs.cursor.com/context/model-context-protocol
+- MCP server catalog: https://docs.cursor.com/en/tools/mcp
+
+### GitHub Copilot
+- MCP overview: https://docs.github.com/en/copilot/concepts/context/mcp
+- MCP extension docs: https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp
+- Copilot CLI MCP docs: https://docs.github.com/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers
 
 ## Related Repos And Frameworks
 
@@ -90,6 +100,17 @@ For each materially changed harness, answer:
 - What repo, docs, command, template, or workflow change would HVN need?
 - Does it improve beginner UX, expert UX, or both?
 - Is it worth building now?
+
+## Compatibility Audit Questions
+
+For each tracked harness, answer:
+
+- Which HVN-relevant capabilities are clearly supported, partial, not supported, or unclear?
+- What changed since the last audit?
+- What setup or policy caveats affect real usability?
+- Which integrations are native, external, or manual?
+- What should HVN recommend today for this harness?
+- What should stay marked `unclear` pending more evidence?
 
 ## Integration Setup Questions
 
