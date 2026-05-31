@@ -30,14 +30,14 @@ ORCA-HVN is easiest to understand as five layers:
 1. [intro.md](intro.md)
 2. [quickstart.md](quickstart.md)
 3. [choose-your-path.md](choose-your-path.md)
-4. one guide such as [guides/using-hvn-with-codex.md](guides/using-hvn-with-codex.md)
+4. one guide such as [guides/using-hvn-with-gstack.md](guides/using-hvn-with-gstack.md)
 5. [feature-index.md](feature-index.md) when you want the broader map
 
 ## Best Next Page By Situation
 
 - I just want to try it: [quickstart.md](quickstart.md)
 - I want to understand the big picture: [intro.md](intro.md)
-- I use Codex: [guides/using-hvn-with-codex.md](guides/using-hvn-with-codex.md)
+- I use gstack: [guides/using-hvn-with-gstack.md](guides/using-hvn-with-gstack.md)
 - I use a controller agent like Hermes: [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
 - I need a feature map: [feature-index.md](feature-index.md)
 - I need the right command: [command-index.md](command-index.md)

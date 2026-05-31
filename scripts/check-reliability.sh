@@ -123,7 +123,7 @@ for file in \
   docs/hosts/hermes-agent.md \
   docs/hosts/vscode.md \
   docs/hosts/generic.md \
-  docs/guides/using-hvn-with-codex.md \
+  docs/guides/using-hvn-with-gstack.md \
   docs/guides/using-hvn-with-hermes.md \
   docs/guides/goal-mode-guide.md \
   docs/guides/background-mode-guide.md \
@@ -332,7 +332,7 @@ for file in \
   docs/examples/idea-pursue-decision.md \
   docs/examples/new-user-path.md \
   docs/examples/hermes-user-path.md \
-  docs/examples/codex-user-path.md \
+  docs/examples/gstack-user-path.md \
   docs/examples/business-ideation-user-path.md \
   docs/examples/background-mode-user-path.md \
   docs/examples/next-step-beginner.md \

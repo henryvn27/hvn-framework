@@ -41,13 +41,13 @@ If you are new:
 1. [docs/start-here.md](docs/start-here.md)
 2. [docs/quickstart.md](docs/quickstart.md)
 3. [docs/choose-your-path.md](docs/choose-your-path.md)
-4. one guide such as [docs/guides/using-hvn-with-codex.md](docs/guides/using-hvn-with-codex.md)
+4. one guide such as [docs/guides/using-hvn-with-gstack.md](docs/guides/using-hvn-with-gstack.md)
 
 ## Where To Begin By Use Case
 
 - I want the fastest setup: [docs/quickstart.md](docs/quickstart.md)
 - I need the big picture: [docs/intro.md](docs/intro.md)
-- I use Codex: [docs/guides/using-hvn-with-codex.md](docs/guides/using-hvn-with-codex.md)
+- I use gstack: [docs/guides/using-hvn-with-gstack.md](docs/guides/using-hvn-with-gstack.md)
 - I use a controller like Hermes: [docs/guides/using-hvn-with-hermes.md](docs/guides/using-hvn-with-hermes.md)
 - I need unattended progress: [docs/guides/background-mode-guide.md](docs/guides/background-mode-guide.md)
 - I need a milestone contract: [docs/guides/goal-mode-guide.md](docs/guides/goal-mode-guide.md)

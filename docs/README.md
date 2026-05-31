@@ -22,7 +22,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 
 These are teaching-oriented pages for common paths:
 
-- [guides/using-hvn-with-codex.md](guides/using-hvn-with-codex.md)
+- [guides/using-hvn-with-gstack.md](guides/using-hvn-with-gstack.md)
 - [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
 - [guides/goal-mode-guide.md](guides/goal-mode-guide.md)
 - [guides/background-mode-guide.md](guides/background-mode-guide.md)
