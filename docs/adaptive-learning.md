@@ -2,6 +2,22 @@
 
 ORCA-HVN includes a default-on adaptive guidance layer that helps users improve without turning normal work into a lesson.
 
+## Guidance Flow
+
+```mermaid
+flowchart LR
+    A["User request or workflow moment"] --> B["Infer support need"]
+    B --> C{"Help mode"}
+    C -- "Off" --> D["No coaching"]
+    C -- "Only when asked" --> E["Coach only on explicit request"]
+    C -- "Light" --> F["Short nudge if high-value"]
+    C -- "Full adaptive" --> G["Skill-sensitive guidance"]
+    F --> H{"Tone check passes?"}
+    G --> H
+    H -- "Yes" --> I["Show concise coaching"]
+    H -- "No" --> D
+```
+
 ## Purpose
 
 The goal is to help the user grow while reducing friction, not to grade them.
