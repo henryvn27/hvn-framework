@@ -23,6 +23,8 @@ Use:
 
 If the user provides a vault or other live knowledge base for the project, treat that as a primary orientation input for workflow reality. Do not replace it with generic assumptions.
 
+If the vault is large or fragmented, optional graph-style analysis may help a controller understand project clusters faster. Use it only when the added clarity justifies the extra step.
+
 ## Good Orientation Shape
 
 A good orientation artifact is:

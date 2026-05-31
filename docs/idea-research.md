@@ -48,3 +48,5 @@ The research phase should end by naming:
 - what experiment should run next
 
 NotebookLM can be a strong optional fit when the research corpus is document-heavy and the user wants a notebook-centered synthesis layer. Keep it optional and caveat-aware.
+
+Graph or vault analysis can also help when the knowledge base itself is hard to navigate. Prefer a basic vault audit first and graph outputs only when they materially improve pattern detection.

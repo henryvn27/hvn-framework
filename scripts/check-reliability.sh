@@ -38,6 +38,11 @@ for file in \
   docs/glossary.md \
   docs/concept-map.md \
   docs/truth-hierarchy.md \
+  docs/graph-and-vault-support.md \
+  docs/optional-tooling-policy.md \
+  docs/minimum-friction-policy.md \
+  docs/graph-fit-rules.md \
+  docs/graph-analysis-output-modes.md \
   docs/visual-quality.md \
   docs/human-voice.md \
   docs/token-efficiency.md \
@@ -166,6 +171,7 @@ for file in \
   docs/guides/goal-mode-guide.md \
   docs/guides/background-mode-guide.md \
   docs/guides/business-ideation-guide.md \
+  docs/guides/graphify-guide.md \
   docs/guides/notebooklm-guide.md \
   docs/guides/paved-roads-guide.md \
   docs/guides/runtime-adaptation-guide.md \
@@ -174,6 +180,7 @@ for file in \
   docs/guides/visual-quality-guide.md \
   docs/paved-road-ux.md \
   integrations/README.md \
+  integrations/graphify.md \
   integrations/notebooklm.md \
   templates/run-trace.md \
   templates/shared-state.md \
@@ -197,9 +204,12 @@ for file in \
   templates/use-case-profile.md \
   templates/tool-fit-entry.md \
   templates/recommendation-confidence.md \
+  templates/graph-fit-check.md \
   templates/integration-validation.md \
   templates/integration-status.md \
   templates/integration-health-report.md \
+  templates/vault-map-report.md \
+  templates/graph-insight-report.md \
   templates/notebooklm-setup-checklist.md \
   templates/notebooklm-usage-pattern.md \
   templates/github-setup-checklist.md \
@@ -262,6 +272,13 @@ for file in \
   docs/examples/setup-user-chosen-tool.md \
   docs/examples/no-recommendation-insufficient-signal.md \
   docs/examples/revenuecat-vs-stripe.md \
+  docs/examples/obsidian-vault-basic-audit.md \
+  docs/examples/graphify-optional-enhancement.md \
+  docs/examples/graphify-user-requested-setup.md \
+  docs/examples/no-extra-tooling-needed.md \
+  docs/examples/vault-cluster-report.md \
+  docs/examples/graphify-helps.md \
+  docs/examples/graphify-not-needed.md \
   docs/examples/from-gstack-or-gsd.md \
   docs/examples/notebooklm-research-flow.md \
   docs/examples/notebooklm-user-chosen-setup.md \
@@ -269,6 +286,7 @@ for file in \
   docs/examples/notebooklm-mcp-path.md \
   docs/examples/notebooklm-for-idea-research.md \
   docs/examples/notebooklm-for-project-knowledge.md \
+  skills/orca-graph-vault-support/SKILL.md \
   templates/artifact-mapping.md \
   templates/framework-improvement-note.md \
   templates/session-improvement-review.md \

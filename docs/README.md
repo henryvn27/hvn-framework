@@ -9,6 +9,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
 - [intro.md](intro.md): the core mental model and why ORCA-HVN exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
+- [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
 
 ## Core Navigation
 
@@ -29,6 +30,7 @@ These are teaching-oriented pages for common paths:
 - [guides/goal-mode-guide.md](guides/goal-mode-guide.md)
 - [guides/background-mode-guide.md](guides/background-mode-guide.md)
 - [guides/business-ideation-guide.md](guides/business-ideation-guide.md)
+- [guides/graphify-guide.md](guides/graphify-guide.md)
 - [guides/paved-roads-guide.md](guides/paved-roads-guide.md)
 - [guides/runtime-adaptation-guide.md](guides/runtime-adaptation-guide.md)
 - [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
@@ -55,6 +57,10 @@ These are teaching-oriented pages for common paths:
 - [token-efficiency.md](token-efficiency.md)
 - [integrations-overview.md](integrations-overview.md)
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
+- [optional-tooling-policy.md](optional-tooling-policy.md)
+- [minimum-friction-policy.md](minimum-friction-policy.md)
+- [graph-fit-rules.md](graph-fit-rules.md)
+- [graph-analysis-output-modes.md](graph-analysis-output-modes.md)
 - [choose-your-stack.md](choose-your-stack.md)
 - [session-improvement-loop.md](session-improvement-loop.md)
 - [session-quality-signals.md](session-quality-signals.md)

@@ -151,6 +151,7 @@ docs/guides/using-hvn-with-hermes.md
 docs/guides/goal-mode-guide.md
 docs/guides/background-mode-guide.md
 docs/guides/business-ideation-guide.md
+docs/guides/graphify-guide.md
 docs/guides/notebooklm-guide.md
 docs/guides/paved-roads-guide.md
 docs/guides/runtime-adaptation-guide.md
@@ -179,6 +180,11 @@ docs/choose-your-path.md
 docs/glossary.md
 docs/concept-map.md
 docs/truth-hierarchy.md
+docs/graph-and-vault-support.md
+docs/optional-tooling-policy.md
+docs/minimum-friction-policy.md
+docs/graph-fit-rules.md
+docs/graph-analysis-output-modes.md
 docs/visual-quality.md
 docs/human-voice.md
 docs/token-efficiency.md
@@ -310,6 +316,13 @@ docs/examples/recommend-mobile-stack.md
 docs/examples/setup-user-chosen-tool.md
 docs/examples/no-recommendation-insufficient-signal.md
 docs/examples/revenuecat-vs-stripe.md
+docs/examples/obsidian-vault-basic-audit.md
+docs/examples/graphify-optional-enhancement.md
+docs/examples/graphify-user-requested-setup.md
+docs/examples/no-extra-tooling-needed.md
+docs/examples/vault-cluster-report.md
+docs/examples/graphify-helps.md
+docs/examples/graphify-not-needed.md
 docs/examples/notebooklm-research-flow.md
 docs/examples/notebooklm-user-chosen-setup.md
 docs/examples/notebooklm-enterprise-path.md
@@ -365,6 +378,7 @@ reports/compatibility/2026-05-30.md
 mcp/linear.example.json
 HVN-STATUS.md
 integrations/README.md
+integrations/graphify.md
 integrations/notebooklm.md
 commands/orca-docs.md
 commands/orca-integration.md
@@ -375,6 +389,7 @@ skills/orca-integrations/SKILL.md
 skills/orca-integration-recommendation/SKILL.md
 skills/orca-docs-system/SKILL.md
 skills/orca-session-improvement/SKILL.md
+skills/orca-graph-vault-support/SKILL.md
 templates/doc-refresh-note.md
 templates/wiki-update-note.md
 templates/doc-metadata.md
@@ -385,6 +400,9 @@ templates/use-case-profile.md
 templates/tool-fit-entry.md
 templates/recommendation-confidence.md
 templates/integration-validation.md
+templates/graph-fit-check.md
+templates/vault-map-report.md
+templates/graph-insight-report.md
 templates/notebooklm-setup-checklist.md
 templates/notebooklm-usage-pattern.md
 templates/framework-improvement-note.md

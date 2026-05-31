@@ -51,6 +51,11 @@ Tertiary research question:
 - `docs/tool-choice-overrides.md`
 - `docs/notebooklm-integration-modes.md`
 - `docs/notebooklm-validation.md`
+- `docs/graph-and-vault-support.md`
+- `docs/optional-tooling-policy.md`
+- `docs/minimum-friction-policy.md`
+- `docs/graph-fit-rules.md`
+- `docs/graph-analysis-output-modes.md`
 - `docs/integration-priorities.md`
 - `docs/choose-your-stack.md`
 - `docs/web-stack-guide.md`
@@ -82,6 +87,11 @@ Tertiary research question:
 - `docs/tool-choice-overrides.md`
 - `docs/notebooklm-integration-modes.md`
 - `docs/notebooklm-validation.md`
+- `docs/graph-and-vault-support.md`
+- `docs/optional-tooling-policy.md`
+- `docs/minimum-friction-policy.md`
+- `docs/graph-fit-rules.md`
+- `docs/graph-analysis-output-modes.md`
 - `docs/integration-priorities.md`
 - `docs/choose-your-stack.md`
 - `docs/web-stack-guide.md`
@@ -219,6 +229,8 @@ Every sweep should actively look for workflow-enabling execution features:
 - broken or deprecated setup paths ORCA-HVN should stop recommending
 - official NotebookLM Enterprise API changes
 - community NotebookLM MCP or browser-automation shifts
+- Graphify release, maintenance, or setup changes
+- Obsidian graph or backlink workflow changes that affect vault analysis
 - harness-level compatibility shifts across Codex, Claude Code, Hermes Agent, OpenCode, Cursor, GitHub Copilot, and other tracked hosts
 - capability parity gaps that matter to ORCA-HVN workflows
 - documentation drift signals caused by new features, commands, host changes, or setup-path changes
@@ -332,6 +344,12 @@ For recommendation-policy findings, also answer:
 - Does this tool still deserve recommendation for the specific use case?
 - Is the evidence about fit, or only about popularity?
 - Should ORCA-HVN recommend it, downgrade it to neutral support, or only help when user-chosen?
+
+For graph and vault-tooling findings, also answer:
+
+- Does graph analysis reduce enough friction to justify setup here?
+- Is the lighter path already sufficient?
+- Should ORCA-HVN recommend Graphify, support it only when user-chosen, or stay silent?
 
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended ORCA-HVN action.
 

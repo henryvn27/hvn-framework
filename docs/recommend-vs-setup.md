@@ -23,3 +23,7 @@ Question:
 If the user explicitly says they are using a tool, help them by default.
 
 Do not turn setup help into a migration argument unless the current choice is clearly incompatible with the stated goal.
+
+For optional graph tooling, use language like:
+
+`This could help if you want a better map of your vault, but it is optional.`

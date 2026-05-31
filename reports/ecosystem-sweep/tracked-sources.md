@@ -68,6 +68,12 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - Community MCP example: https://github.com/PleasePrompto/notebooklm-mcp
 - Community MCP and HTTP example: https://github.com/roomi-fields/notebooklm-mcp
 
+### Vault And Graph Tooling
+- Obsidian graph view: https://obsidian.md/help/Plugins/Graph%2Bview
+- Obsidian backlinks: https://obsidian.md/help/plugins/backlinks
+- Obsidian CLI: https://obsidian.md/help/cli
+- Graphify site: https://graphify.net/
+
 ### VS Code
 - VS Code MCP servers: https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
@@ -162,6 +168,7 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - evidence that a current default is losing best-fit status for a common use case
 - evidence that a supported tool should remain setup-only rather than recommended
 - evidence that NotebookLM should stay optional rather than becoming a default recommendation
+- evidence that graph tooling reduces enough friction to justify mentioning it at all
 
 ## Harness Update Questions
 

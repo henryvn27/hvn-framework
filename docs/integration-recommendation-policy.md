@@ -37,6 +37,16 @@ NotebookLM should generally be:
 
 Do not treat NotebookLM like a default app-stack integration.
 
+## Graph And Vault Rule
+
+Graphify, Obsidian graph views, and graph-style vault tooling should generally be:
+
+- suggested only when the vault is large, fragmented, or hard to understand
+- supported when the user explicitly asks for them
+- avoided when direct vault inspection is already enough
+
+Do not treat graph tooling as a baseline setup requirement.
+
 ## Recommendation Priorities
 
 1. detect the use case

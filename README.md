@@ -66,6 +66,7 @@ If you are new:
 - I need unattended progress: [docs/guides/background-mode-guide.md](docs/guides/background-mode-guide.md)
 - I need a milestone contract: [docs/guides/goal-mode-guide.md](docs/guides/goal-mode-guide.md)
 - I need startup ideation first: [docs/guides/business-ideation-guide.md](docs/guides/business-ideation-guide.md)
+- I want optional vault or graph help only if it reduces friction: [docs/graph-and-vault-support.md](docs/graph-and-vault-support.md)
 - I inherited a messy repo: [docs/legacy-modernization.md](docs/legacy-modernization.md)
 
 ## Documentation And Wiki
@@ -87,6 +88,7 @@ If you are new:
 - receipts, lineage, replay, and restore
 - blind QA, briefed QA, evals, and regression follow-up
 - controller/executor coordination
+- optional vault and graph intelligence
 - business ideation and legacy modernization
 
 ## Core Workflow
