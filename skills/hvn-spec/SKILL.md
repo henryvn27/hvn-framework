@@ -58,4 +58,4 @@ A builder and reviewer should reach the same interpretation of done.
 
 ## Relationship To Other HVN Skills And Commands
 
-Feeds `hvn-plan`, `hvn-linear-plan-comment`, `hvn-review`, and briefed QA.
+Feeds `hvn-plan`, `hvn-goal-mode`, `hvn-linear-plan-comment`, `hvn-review`, and briefed QA.

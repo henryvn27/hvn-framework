@@ -23,6 +23,7 @@ Approval is normally required for:
 - production config or release-process changes
 - unreviewed tools or MCP servers
 - high-risk tool calls outside allowed registry contexts
+- goal mode for risky, destructive, unclear, or approval-dependent work
 - scope expansion beyond the approved spec
 - issue-closing or ship-readiness decisions when confidence is low
 

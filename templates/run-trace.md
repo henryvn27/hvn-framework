@@ -38,6 +38,14 @@
 
 - 
 
+## Goal State
+
+- Objective:
+- Contract:
+- Lifecycle:
+- Verification:
+- Steering:
+
 ## Retries And Failures
 
 - 

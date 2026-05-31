@@ -23,6 +23,7 @@ Each meaningful run should capture:
 - Context read: artifacts, issue comments, docs, external sources
 - Actions taken: major steps, tools used, commands executed, files read or written
 - Decisions made: important branches, approvals requested, scope changes, assumptions
+- Goal state: objective, contract link, lifecycle transition, verifier result, and steering note when goal mode is active
 - Reliability signals: retries, failures, blockers, warnings, stop reason
 - Optional metadata: token or cost data when the harness exposes it
 

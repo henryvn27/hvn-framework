@@ -51,6 +51,15 @@ docs/tool-safety-rules.md
 docs/mcp-review-workflow.md
 docs/legacy-modernization.md
 docs/repo-archaeology.md
+docs/goal-mode.md
+docs/goal-safety.md
+docs/goal-recommendation-rules.md
+docs/milestone-planning.md
+docs/compatibility-matrix.md
+docs/command-mapping.md
+docs/hosts/codex-cli.md
+docs/hosts/claude-code.md
+docs/hosts/hermes-agent.md
 docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
@@ -92,6 +101,11 @@ docs/examples/legacy-modernization-plan.md
 docs/examples/business-logic-extraction.md
 docs/examples/legacy-to-spec.md
 docs/examples/legacy-risk-assessment.md
+docs/examples/goal-from-spec.md
+docs/examples/goal-for-milestone.md
+docs/examples/goal-review.md
+docs/examples/goal-status-handoff.md
+docs/examples/bad-goal-vs-good-goal.md
 benchmarks/onboarding-spec/README.md
 registry/tools/README.md
 registry/mcp-servers/README.md
@@ -102,7 +116,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -110,9 +124,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 34 ] || fail "expected at least 34 command definitions"
-[ "$skill_count" -ge 33 ] || fail "expected at least 33 skill definitions"
-[ "$template_count" -ge 43 ] || fail "expected at least 43 templates"
+[ "$command_count" -ge 38 ] || fail "expected at least 38 command definitions"
+[ "$skill_count" -ge 34 ] || fail "expected at least 34 skill definitions"
+[ "$template_count" -ge 46 ] || fail "expected at least 46 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

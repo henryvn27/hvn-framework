@@ -9,10 +9,11 @@ HVN is spec-driven because implementation quality depends on having a clear cont
 3. Legacy archaeology enriches the context when the repo is inherited, under-documented, or fragile.
 4. `hvn-spec` writes the implementation contract.
 5. `hvn-plan` turns the spec into sequenced work with verification gates.
-6. Approval gates control risky actions before build.
-7. Build, review, QA, and ship all work against the approved spec.
-8. Benchmark packs can compare how well onboarding and spec workflows perform over time.
-9. Traces, evals, workflow metrics, and run memory preserve what happened and what should carry forward.
+6. The next bounded milestone may become a goal contract when completion and verification are clear.
+7. Approval gates control risky actions before build or goal execution.
+8. Build, review, QA, and ship all work against the approved spec.
+9. Benchmark packs can compare how well onboarding and spec workflows perform over time.
+10. Traces, evals, workflow metrics, and run memory preserve what happened and what should carry forward.
 
 ## Spec Contract
 

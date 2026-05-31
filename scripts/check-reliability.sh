@@ -32,6 +32,15 @@ for file in \
   docs/mcp-review-workflow.md \
   docs/legacy-modernization.md \
   docs/repo-archaeology.md \
+  docs/goal-mode.md \
+  docs/goal-safety.md \
+  docs/goal-recommendation-rules.md \
+  docs/milestone-planning.md \
+  docs/compatibility-matrix.md \
+  docs/command-mapping.md \
+  docs/hosts/codex-cli.md \
+  docs/hosts/claude-code.md \
+  docs/hosts/hermes-agent.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -51,6 +60,9 @@ for file in \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
+  templates/goal-contract.md \
+  templates/goal-status.md \
+  templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
   templates/contracts/qa-brief-contract.md \
@@ -70,6 +82,10 @@ for file in \
   commands/hvn-tool-review.md \
   commands/hvn-mcp-review.md \
   commands/hvn-legacy.md \
+  commands/hvn-goal.md \
+  commands/hvn-goal-create.md \
+  commands/hvn-goal-status.md \
+  commands/hvn-goal-review.md \
   skills/hvn-observability/SKILL.md \
   skills/hvn-eval/SKILL.md \
   skills/hvn-approval-gate/SKILL.md \
@@ -80,6 +96,7 @@ for file in \
   skills/hvn-checkpoint/SKILL.md \
   skills/hvn-tool-governance/SKILL.md \
   skills/hvn-legacy/SKILL.md \
+  skills/hvn-goal-mode/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -100,6 +117,11 @@ for file in \
   docs/examples/business-logic-extraction.md \
   docs/examples/legacy-to-spec.md \
   docs/examples/legacy-risk-assessment.md \
+  docs/examples/goal-from-spec.md \
+  docs/examples/goal-for-milestone.md \
+  docs/examples/goal-review.md \
+  docs/examples/goal-status-handoff.md \
+  docs/examples/bad-goal-vs-good-goal.md \
   registry/tools/README.md \
   registry/mcp-servers/README.md \
   examples/evals/starter-set.md

@@ -11,6 +11,7 @@ Use run memory to preserve:
 - known constraints and blockers
 - operational context that future runs should not rediscover
 - durable legacy-system facts, business rules, and modernization constraints
+- goal lifecycle state, objective, blocker, and steering notes when useful for resume
 
 ## What Run Memory Is Not
 
@@ -37,10 +38,11 @@ Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memo
 - onboarding discovers context
 - legacy archaeology extracts behavior, business logic, and modernization risk
 - spec and plan define intended work
+- goal contracts track durable objective execution when used
 - run memory preserves durable lessons
 - traces record what happened during a run
 - shared state records the current multi-role picture for an active run
 - evals judge how well the workflow performed
 - workflow metrics record time, retries, and optional usage signals
 
-Run memory may reference benchmark results, workflow metrics summaries, regression-task decisions, legacy audit findings, or checkpoint outcomes when those become durable project context, but it should not duplicate the underlying per-run artifacts.
+Run memory may reference benchmark results, workflow metrics summaries, regression-task decisions, legacy audit findings, goal state, or checkpoint outcomes when those become durable project context, but it should not duplicate the underlying per-run artifacts.
