@@ -4,6 +4,7 @@
 
 ### Added
 
+- Upgraded the recurring ecosystem sweep to track harness-native execution capabilities, maintain ecosystem opportunities, and require explicit capability-to-HVN mapping.
 - Added ecosystem sweep automation artifacts, including tracked sources, living watch document, draft adopt-issue template, and promotion-history rules.
 - Added observability, trajectory evals, approval gates, artifact contracts, security guardrails, and prompt-injection guidance.
 - Added onboarding/spec benchmark pack, workflow accounting, and QA-to-regression task generation.

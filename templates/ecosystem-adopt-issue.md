@@ -15,6 +15,15 @@ Choose one:
 - QA
 - workflow
 
+## Adoption Shape
+
+Choose one:
+
+- native HVN feature candidate
+- host-adapter opportunity
+- docs/workflow guidance opportunity
+- experimental pattern worth watching
+
 ## Finding Summary
 
 Summarize the ecosystem change or feature.
@@ -23,6 +32,10 @@ Summarize the ecosystem change or feature.
 
 State the concrete HVN benefit.
 
+## Host Specificity
+
+State whether the finding is cross-harness or host-specific.
+
 ## Evidence And Sources
 
 - 
@@ -30,6 +43,10 @@ State the concrete HVN benefit.
 ## Proposed HVN Impact
 
 Describe what HVN would gain or need to change.
+
+## UX Impact
+
+State whether this improves beginner UX, expert UX, or both.
 
 ## Recommended Next Step
 
@@ -46,6 +63,11 @@ State high, medium, or low confidence and why.
 ## Earlier Sightings
 
 - 
+
+## Watch And Opportunity Links
+
+- Watch entry:
+- Opportunity entry:
 
 ## Related Report
 

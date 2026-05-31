@@ -38,6 +38,8 @@ for file in \
   docs/milestone-planning.md \
   docs/compatibility-matrix.md \
   docs/command-mapping.md \
+  docs/ecosystem-watch.md \
+  docs/ecosystem-opportunities.md \
   docs/hosts/codex-cli.md \
   docs/hosts/claude-code.md \
   docs/hosts/hermes-agent.md \
@@ -62,6 +64,7 @@ for file in \
   templates/modernization-spec.md \
   templates/goal-contract.md \
   templates/goal-status.md \
+  templates/ecosystem-adopt-issue.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
@@ -124,6 +127,11 @@ for file in \
   docs/examples/bad-goal-vs-good-goal.md \
   registry/tools/README.md \
   registry/mcp-servers/README.md \
+  reports/ecosystem-sweep/automation.md \
+  reports/ecosystem-sweep/tracked-sources.md \
+  reports/ecosystem-sweep/latest.md \
+  reports/ecosystem-sweep/state.json \
+  reports/ecosystem-sweep/draft-issues/README.md \
   examples/evals/starter-set.md
 do
   [ -f "$file" ] || fail "missing reliability file: $file"
