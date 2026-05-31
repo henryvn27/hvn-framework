@@ -135,6 +135,7 @@ docs/guides/background-mode-guide.md
 docs/guides/business-ideation-guide.md
 docs/guides/paved-roads-guide.md
 docs/guides/runtime-adaptation-guide.md
+docs/guides/visual-quality-guide.md
 docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
@@ -154,6 +155,8 @@ docs/use-case-map.md
 docs/choose-your-path.md
 docs/glossary.md
 docs/concept-map.md
+docs/visual-quality.md
+docs/human-voice.md
 docs/docs-automation.md
 docs/wiki-maintenance.md
 docs/staleness-detection.md

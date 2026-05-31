@@ -9,6 +9,7 @@ This page helps returning users rediscover what changed without reading every fi
 - controller and executor integration
 - business ideation workflow
 - docs home, wiki, routing guides, and start-here layer
+- visual quality and human-voice guidance for non-generic product output
 
 ## Best Pages To Revisit
 
@@ -24,4 +25,3 @@ See also:
 
 - [recent-doc-updates.md](recent-doc-updates.md)
 - [docs-automation.md](docs-automation.md)
-

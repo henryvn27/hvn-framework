@@ -1,6 +1,6 @@
 ---
 name: orca-design
-description: Review user-facing product surfaces for clarity, accessibility, responsive behavior, copy, and interaction quality.
+description: Review user-facing product surfaces for clarity, accessibility, responsive behavior, copy, interaction quality, and whether they feel intentional instead of generic or AI-shaped.
 ---
 
 # ORCA-HVN Design
@@ -32,9 +32,10 @@ Do not use for backend-only changes without user-facing behavior.
 1. Read the issue or opt-out record for user goal and design constraints.
 2. Identify the user goal.
 3. Inspect hierarchy, information scent, states, responsiveness, accessibility, and copy.
-4. Separate visual observations from inferred behavior.
-5. Produce prioritized design findings and fixes.
-6. Post or prepare findings for the durable record.
+4. Check whether the work feels product-specific or generically generated.
+5. Separate visual observations from inferred behavior.
+6. Produce prioritized design findings and fixes.
+7. Post or prepare findings for the durable record.
 
 ## Expected Outputs
 
@@ -42,13 +43,14 @@ Do not use for backend-only changes without user-facing behavior.
 
 ## Quality Bar
 
-Feedback should improve user success, not merely impose taste.
+Feedback should improve user success and product credibility, not merely impose taste.
 
 ## Common Failure Modes
 
 - Inventing visual details without a screenshot or browser.
 - Optimizing decoration over task completion.
 - Missing keyboard and screen-reader affordances.
+- Accepting generic prompt-shaped UI or copy because it is superficially polished.
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 

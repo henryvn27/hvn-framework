@@ -29,6 +29,7 @@ These are teaching-oriented pages for common paths:
 - [guides/business-ideation-guide.md](guides/business-ideation-guide.md)
 - [guides/paved-roads-guide.md](guides/paved-roads-guide.md)
 - [guides/runtime-adaptation-guide.md](guides/runtime-adaptation-guide.md)
+- [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
 
 ## Deeper Reference
 
@@ -47,6 +48,8 @@ These are teaching-oriented pages for common paths:
 - [doc-owners.md](doc-owners.md)
 - [whats-new.md](whats-new.md)
 - [recent-doc-updates.md](recent-doc-updates.md)
+- [visual-quality.md](visual-quality.md)
+- [human-voice.md](human-voice.md)
 
 ## Wiki
 

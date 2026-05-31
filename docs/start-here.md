@@ -39,5 +39,6 @@ ORCA-HVN is easiest to understand as five layers:
 - I want to understand the big picture: [intro.md](intro.md)
 - I use gstack: [guides/using-hvn-with-gstack.md](guides/using-hvn-with-gstack.md)
 - I use a controller agent like Hermes: [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
+- I care about design quality and not looking AI-generated: [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
 - I need a feature map: [feature-index.md](feature-index.md)
 - I need the right command: [command-index.md](command-index.md)

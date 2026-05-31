@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Review product experience, visual hierarchy, accessibility, copy, responsive behavior, and interaction quality.
+Review product experience, visual hierarchy, accessibility, copy, responsive behavior, interaction quality, and whether the result feels generic or obviously AI-generated.
 
 ## When To Use
 
@@ -37,13 +37,15 @@ Store design findings in the chosen record.
 1. Use `orca-design`.
 2. Inspect the experience from user goals outward.
 3. Check clarity, hierarchy, states, accessibility, responsiveness, and interaction feel.
-4. Produce prioritized design findings.
-5. Sync findings to the work item.
+4. Check whether layout, typography, motion, and copy feel product-specific instead of generic prompt output.
+5. Produce prioritized design findings.
+6. Sync findings to the work item.
 
 ## Outputs And Artifacts
 
 - Design review notes
 - Updates to `templates/review-report.md` when paired with code review
+- Reference standards in `docs/visual-quality.md` and `docs/human-voice.md` when relevant
 
 ## Failure Cases
 

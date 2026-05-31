@@ -9,6 +9,7 @@ ORCA-HVN exists because agentic software work needs more than speed. It needs du
 - Subagents should be used for independence, not theater.
 - A review gate is useful only when it can block or change the work.
 - A project is not done until another capable agent can understand what happened.
+- User-facing work should feel product-specific and intentional, not generic, prompt-shaped, or stylistically interchangeable.
 
 ## Practical Discipline
 

@@ -36,6 +36,8 @@ for file in \
   docs/choose-your-path.md \
   docs/glossary.md \
   docs/concept-map.md \
+  docs/visual-quality.md \
+  docs/human-voice.md \
   docs/docs-automation.md \
   docs/wiki-maintenance.md \
   docs/staleness-detection.md \
@@ -130,6 +132,7 @@ for file in \
   docs/guides/business-ideation-guide.md \
   docs/guides/paved-roads-guide.md \
   docs/guides/runtime-adaptation-guide.md \
+  docs/guides/visual-quality-guide.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \

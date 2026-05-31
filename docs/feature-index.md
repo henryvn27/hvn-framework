@@ -68,6 +68,7 @@ Read:
 
 - blind QA
 - briefed QA
+- design quality and human voice
 - regression tasks
 - evals
 - benchmark packs
@@ -75,6 +76,8 @@ Read:
 Read:
 
 - [blind-qa.md](blind-qa.md)
+- [visual-quality.md](visual-quality.md)
+- [human-voice.md](human-voice.md)
 - [qa-to-regression.md](qa-to-regression.md)
 - [evals.md](evals.md)
 - [benchmark-pack.md](benchmark-pack.md)
@@ -90,4 +93,3 @@ Read:
 - [business-ideation.md](business-ideation.md)
 - [legacy-modernization.md](legacy-modernization.md)
 - [repo-archaeology.md](repo-archaeology.md)
-

@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, a dedicated harness compatibility audit, and top-level docs surfaces that should refresh as the framework changes.
+Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, a dedicated harness compatibility audit, top-level docs surfaces that should refresh as the framework changes, and design/copy quality signals that help ORCA-HVN avoid generic AI-looking output.
 
 Primary research question:
 
@@ -32,6 +32,8 @@ Primary research question:
 - `docs/whats-new.md`
 - `docs/recent-doc-updates.md`
 - `docs/doc-owners.md`
+- `docs/visual-quality.md`
+- `docs/human-voice.md`
 - `wiki/Home.md`
 - `wiki/_Sidebar.md`
 - `templates/ecosystem-adopt-issue.md`
@@ -46,6 +48,8 @@ Primary research question:
 - `docs/harness-watch.md`
 - `docs/ecosystem-watch.md`
 - `docs/ecosystem-opportunities.md`
+- `docs/visual-quality.md`
+- `docs/human-voice.md`
 - `templates/doc-refresh-note.md`
 - `templates/wiki-update-note.md`
 - `reports/ecosystem-sweep/draft-issues/*.md` when direct issue creation is unavailable
@@ -58,6 +62,7 @@ Primary research question:
 - do not create branches, commits, or pushes by default
 - do not rewrite deep product reference docs by default
 - docs automation may propose or update routing pages, freshness notes, wiki summaries, and change-discovery pages when the research clearly affects them
+- docs automation may also refresh visual-quality and human-voice guidance when there is strong evidence of better non-generic design or UX-writing practice
 - use official docs, release notes, changelogs, and upstream repos first
 - create draft issues only for findings classified as `Adopt now`
 - avoid duplicate draft issues when an equivalent item is already open or already tracked
@@ -122,6 +127,8 @@ For GitHub, Linear, and any other materially relevant service:
 ## Recommendations by category
 Group under commands, memory, install, cross-harness, QA, and workflow.
 
+Design and copy quality findings should usually land under `QA` or `workflow` unless they primarily affect command surfaces.
+
 ## Recommended next ORCA-HVN moves
 - build now
 - research next
@@ -167,6 +174,8 @@ Every sweep should actively look for workflow-enabling execution features:
 - capability parity gaps that matter to ORCA-HVN workflows
 - documentation drift signals caused by new features, commands, host changes, or setup-path changes
 - missing routing from the README, start-here docs, guide layer, or wiki homepage
+- patterns that help ORCA-HVN outputs look more intentional, product-specific, and less obviously AI-generated
+- domain-specific design or writing tools ORCA-HVN should coordinate with rather than clone
 
 ## Harness Compatibility Audit Phase
 
@@ -239,6 +248,13 @@ For compatibility findings, also answer:
 - Should the matrix, host adapters, workflow docs, or setup guidance change?
 - Is this a durable compatibility shift or a narrow release caveat?
 
+For design and copy quality findings, also answer:
+
+- Does this reduce generic or obviously AI-looking output?
+- Is the advice specific enough to guide real implementation reviews?
+- Should ORCA-HVN update `orca-design`, `docs/visual-quality.md`, `docs/human-voice.md`, or a user-facing guide?
+- Is this a broad workflow principle or a narrow style trend?
+
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended ORCA-HVN action.
 
 ## Living Documents
@@ -270,6 +286,8 @@ Maintain the docs routing layer when the framework surface changes materially:
 - [docs/choose-your-path.md](../../docs/choose-your-path.md)
 - [docs/whats-new.md](../../docs/whats-new.md)
 - [docs/recent-doc-updates.md](../../docs/recent-doc-updates.md)
+- [docs/visual-quality.md](../../docs/visual-quality.md)
+- [docs/human-voice.md](../../docs/human-voice.md)
 - [wiki/Home.md](../../wiki/Home.md)
 - [wiki/_Sidebar.md](../../wiki/_Sidebar.md)
 

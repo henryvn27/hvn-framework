@@ -44,6 +44,7 @@ Use this page when you know what you want to do but not which command matches it
 ## QA And Improvement
 
 - `orca-review`: review implementation quality
+- `orca-design`: review design quality, hierarchy, copy, and generic-AI-looking risk
 - `orca-test-blind`: first-look QA
 - `orca-test-briefed`: bounded-context retest
 - `orca-test-regression`: regression confirmation
@@ -56,4 +57,3 @@ Use this page when you know what you want to do but not which command matches it
 - `orca-docs`: route a docs question or plan a docs refresh
 - `orca-schema`: inspect portable artifact structure
 - `orca-help`: general command overview
-

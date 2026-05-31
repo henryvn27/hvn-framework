@@ -7,6 +7,7 @@
 - added user-centered guides for gstack, Hermes, goal mode, background mode, ideation, paved roads, and runtime adaptation
 - added docs automation, wiki maintenance, and staleness detection guidance
 - added doc ownership and contributor doc rules
+- added visual-quality and human-voice guidance to reduce generic AI-looking output
 
 ## What To Read If You Have Been Away
 

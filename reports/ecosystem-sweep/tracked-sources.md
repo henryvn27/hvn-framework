@@ -62,6 +62,17 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 ### VS Code
 - VS Code MCP servers: https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
+## Design And Writing Quality Sources
+
+### Design System Quality
+- Design Systems Should Be Specific, Not Generic: https://designsystem.university/articles/design-systems-should-be-specific-not-generic
+- Distinct Design Systems: https://designsystem.university/articles/distinct-design-systems
+
+### UX Writing And Product Voice
+- Apollo UX Writing Style Guide: https://www.apollographql.com/docs/ux-writing-style-guide
+- Unity UI copy writing principles: https://docs-style-guide.unity.com/content-types/ui-copy/writing-principles/
+- Siemens UX writing principles: https://ix.siemens.io/docs/guidelines/language/support-and-resources/UX-writing-principles
+
 ## Watch Themes
 
 - persistent goals and `/goal`-style flows
@@ -88,6 +99,10 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - multi-agent orchestration
 - command naming and adapter conventions
 - host-native UX and terminal behavior
+- non-generic visual quality patterns
+- design-system specificity over interchangeable template sameness
+- human-sounding product copy and anti-generic UX writing patterns
+- specialized design-quality tools and where orchestration should complement rather than replace them
 
 ## Harness Update Questions
 
@@ -133,6 +148,15 @@ For each GitHub, Linear, MCP, connector, auth, permission, or host-specific setu
 - cross-harness
 - QA
 - workflow
+
+## Design Quality Questions
+
+For material design, copy, or interface-quality shifts, answer:
+
+- What helps user-facing work feel more product-specific and less generic?
+- What concrete layout, typography, copy, or motion patterns should ORCA-HVN encourage or discourage?
+- Does the finding belong in visual-quality guidance, human-voice guidance, or `orca-design` review standards?
+- Does it suggest using a specialized design or writing tool instead of building another generic abstraction?
 
 ## Source Quality Rules
 
