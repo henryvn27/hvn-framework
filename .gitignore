@@ -13,3 +13,4 @@ tmp/
 .orca-hvn/
 outputs/
 work/
+.playwright-mcp/
