@@ -3,10 +3,15 @@
   "version": 1,
   "last_run_date": null,
   "last_report_path": null,
+  "last_watch_update": null,
   "tracked_sources_file": "reports/ecosystem-sweep/tracked-sources.md",
   "latest_summary_file": "reports/ecosystem-sweep/latest.md",
+  "living_watch_file": "docs/ecosystem-watch.md",
+  "draft_issue_template_file": "templates/ecosystem-adopt-issue.md",
+  "draft_issue_directory": "reports/ecosystem-sweep/draft-issues",
   "notes": [
     "Research-first automation. No repo code or docs changes by default.",
-    "Reports should compare against the prior sweep and avoid repeating unchanged items as new."
+    "Reports should compare against the prior sweep and avoid repeating unchanged items as new.",
+    "Adopt-now findings should create one draft issue each unless a substantially similar issue is already tracked."
   ]
 }

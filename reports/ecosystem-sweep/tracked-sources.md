@@ -49,6 +49,15 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - command naming and adapter conventions
 - host-native UX and terminal behavior
 
+## Recommendation Categories
+
+- commands
+- memory
+- install
+- cross-harness
+- QA
+- workflow
+
 ## Source Quality Rules
 
 - Prefer official docs, repos, releases, changelogs, and implementation examples.
