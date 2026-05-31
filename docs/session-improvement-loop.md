@@ -24,6 +24,7 @@ Use the loop to catch:
 - repeated manual workarounds
 - weak automation
 - repeated install confusion or setup drop-off
+- repeated update confusion, risky update surprises, or broken rollback paths
 - host-specific friction that should change the framework
 - avoidable setup work or option sprawl
 - a gentle next-time note when it would reduce repeated user friction

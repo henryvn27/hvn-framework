@@ -49,6 +49,7 @@ It improves:
 - integration packs
 - issue templates
 - automation and validation
+- update channels, release notes, and rollback policy when repeated evidence shows the current update system is causing friction or breakage
 
 ## Core Rule
 

@@ -39,6 +39,7 @@ ORCA-HVN should make it easier to:
 - use subagents only when they reduce more confusion, context loss, or coordination cost than they create
 - use self-improvement only when it reduces more friction than it adds
 - require only the minimum install, plugin, and harness setup needed for the next real task
+- prefer check-only, staged, or prompt-first update behavior over silent disruption when auto-update risk is unclear
 
 ## What ORCA-HVN Should Not Introduce Casually
 

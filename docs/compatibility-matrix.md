@@ -26,6 +26,7 @@ Status meanings:
 
 - `supported` does not imply native support. A capability may rely on MCP, connectors, or manual setup.
 - GitHub and Linear integration columns reflect viable integration options, not guaranteed built-in connectors.
+- Update automation should also respect harness reality. A host that can run ORCA is not automatically cleared for the same update mode or channel policy as every other host.
 - Knowledge-layer integrations such as NotebookLM depend heavily on setup mode and host tooling; treat enterprise API paths and community MCP paths separately.
 - Graph or vault tooling should be treated as optional helper support, not as part of the minimum compatible path.
 - Feature visibility should stay tiered. Host capability is not a reason to surface every possible feature by default.

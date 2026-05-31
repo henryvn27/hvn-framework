@@ -44,6 +44,21 @@ for file in \
   docs/plugins.md \
   docs/plugin-installation.md \
   docs/plugin-troubleshooting.md \
+  docs/auto-updates.md \
+  docs/update-policy.md \
+  docs/update-channels.md \
+  docs/update-modes.md \
+  docs/update-discovery.md \
+  docs/update-verification.md \
+  docs/update-security.md \
+  docs/update-rollback.md \
+  docs/update-recovery.md \
+  docs/update-rollout-strategy.md \
+  docs/plugin-update-policy.md \
+  docs/harness-update-policy.md \
+  docs/integration-update-policy.md \
+  docs/update-ux.md \
+  docs/update-validation.md \
   docs/harness-installation.md \
   docs/harness-setup.md \
   docs/harness-troubleshooting.md \
@@ -395,6 +410,11 @@ for file in \
   docs/examples/plugin-install.md \
   docs/examples/harness-install.md \
   docs/examples/install-failure-recovery.md \
+  docs/examples/stable-auto-update.md \
+  docs/examples/beta-channel-update.md \
+  docs/examples/plugin-compatibility-block.md \
+  docs/examples/rollback-after-failed-update.md \
+  docs/examples/manual-update-mode.md \
   docs/examples/local-instance-learning.md \
   docs/examples/local-preference-adaptation.md \
   docs/examples/framework-improvement-promotion.md \
@@ -439,6 +459,14 @@ for file in \
   templates/install-help-callout.md \
   templates/first-run-validation.md \
   templates/install-validation-report.md \
+  templates/update-channel-policy.md \
+  templates/update-manifest.md \
+  templates/update-candidate.md \
+  templates/update-verification-report.md \
+  templates/rollback-plan.md \
+  templates/rollout-stage.md \
+  templates/update-notice.md \
+  templates/update-result.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
@@ -481,6 +509,8 @@ for file in \
   commands/orca-lineage.md \
   commands/orca-replay.md \
   commands/orca-restore.md \
+  commands/orca-check-updates.md \
+  commands/orca-update.md \
   commands/orca-background.md \
   commands/orca-keep-going.md \
   commands/orca-background-status.md \
@@ -534,6 +564,7 @@ for file in \
   skills/orca-friction-policy/SKILL.md \
   skills/orca-adaptive-guidance/SKILL.md \
   skills/orca-agent-orchestration/SKILL.md \
+  skills/orca-auto-update/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \

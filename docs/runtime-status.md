@@ -12,6 +12,9 @@ Runtime status is the inspectable summary of why ORCA-HVN is behaving a certain 
 - disabled features
 - degraded capabilities
 - active policy switches
+- update channel
+- update mode
+- update availability state
 - recommended workflow mode
 - delegation recommendation when relevant
 - missing integrations
