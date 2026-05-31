@@ -52,6 +52,14 @@ for file in \
   docs/execution-receipts.md \
   docs/artifact-lineage.md \
   docs/replay-restore.md \
+  docs/background-mode.md \
+  docs/background-permissions.md \
+  docs/background-risk-tiers.md \
+  docs/background-task-types.md \
+  docs/background-ux.md \
+  docs/loop-guards.md \
+  docs/echo-chamber-avoidance.md \
+  docs/stage-budgets.md \
   docs/integrations/github.md \
   docs/integrations/linear.md \
   docs/legacy-modernization.md \
@@ -128,6 +136,10 @@ for file in \
   templates/execution-receipt.md \
   templates/artifact-lineage.md \
   templates/replay-case.md \
+  templates/background-run-contract.md \
+  templates/background-run-plan.md \
+  templates/background-run-receipt.md \
+  templates/permission-request-note.md \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
@@ -203,6 +215,9 @@ for file in \
   commands/orca-lineage.md \
   commands/orca-replay.md \
   commands/orca-restore.md \
+  commands/orca-background.md \
+  commands/orca-keep-going.md \
+  commands/orca-background-status.md \
   commands/orca-legacy.md \
   commands/orca-next.md \
   commands/orca-goal.md \
@@ -224,6 +239,7 @@ for file in \
   skills/orca-tool-setup/SKILL.md \
   skills/orca-runtime-adaptation/SKILL.md \
   skills/orca-receipts/SKILL.md \
+  skills/orca-background-mode/SKILL.md \
   skills/orca-legacy/SKILL.md \
   skills/orca-business-ideation/SKILL.md \
   skills/orca-attribution/SKILL.md \
@@ -263,6 +279,11 @@ for file in \
   docs/examples/artifact-lineage.md \
   docs/examples/replay-after-harness-update.md \
   docs/examples/restore-after-failed-goal.md \
+  docs/examples/background-research.md \
+  docs/examples/background-refactor-plan.md \
+  docs/examples/background-qa-prep.md \
+  docs/examples/background-blocked-permission.md \
+  docs/examples/background-loop-guard-triggered.md \
   docs/examples/legacy-repo-audit.md \
   docs/examples/legacy-modernization-plan.md \
   docs/examples/business-logic-extraction.md \

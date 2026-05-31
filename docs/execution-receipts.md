@@ -39,3 +39,4 @@ A good receipt is:
 - replay uses receipts to compare old and new runs
 - restore uses receipts to identify known-good recovery points
 - controller workflows use receipts to decide whether delegated work can be ingested, reviewed, or sent to QA
+- background workflows use receipts to explain unattended progress, blocked permissions, and loop-guard exits

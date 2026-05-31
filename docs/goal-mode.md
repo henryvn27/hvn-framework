@@ -4,6 +4,11 @@ ORCA-HVN goal mode is a structured way to turn a bounded spec or milestone into 
 
 Goal mode is not background autonomy. It is a contract for long-running, verifiable work. Prefer milestone-sized goals with one clear verification contract over project-sized goals with fuzzy outcomes.
 
+Background mode can run inside a goal contract, but the concepts stay separate:
+
+- goal mode defines the bounded objective
+- background mode defines the unattended execution envelope
+
 ## When To Use Goal Mode
 
 Use goal mode when all of these are true:
@@ -66,6 +71,8 @@ If native `/goal` is unavailable, use the same contract with normal ORCA-HVN wor
 - traces
 - checkpoints
 - status reports
+
+Background mode is a good fit only when the goal is low enough risk for unattended work and still bounded by time, steps, receipts, and loop guards.
 
 ## Lifecycle Concepts
 

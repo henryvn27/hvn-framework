@@ -16,9 +16,11 @@ Runtime status is the inspectable summary of why ORCA-HVN is behaving a certain 
 - delegation recommendation when relevant
 - missing integrations
 - latest receipt
+- latest background run state
 - related artifacts
 - replay availability
 - restore points
+- background blockers when relevant
 - important caveats
 
 ## Purpose

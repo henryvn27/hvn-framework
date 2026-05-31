@@ -18,27 +18,28 @@ When a workflow introduces a new external upstream influence or wrapper, update 
 10. `orca-next`: emit concise phase-exit guidance when the next move is not already obvious or underway.
 11. `orca-goal`: decide whether the next bounded milestone should become a goal contract.
 12. `orca-approve`: request or confirm approval when risk, scope, or confidence requires it.
-13. `orca-build`: implement approved scope.
-14. `orca-trace`: record meaningful execution steps, decisions, and stop reason.
-15. `orca-receipt`: summarize the run outcome in a compact execution receipt.
-16. `orca-lineage`: link the new artifact to upstream and downstream workflow artifacts.
-17. `orca-state`: maintain shared coordination state for multi-role or resumable runs.
-18. `orca-metrics`: record timing, retries, and optional usage signals for the run.
-19. `orca-review`: inspect behavior and maintainability.
-20. `orca-design`: review UX, accessibility, responsive behavior, and product clarity.
-21. `orca-test-blind`: run first-look QA with minimal context.
-22. `orca-test-briefed`: retest with a bounded packet.
-23. `orca-test-regression`: verify fixes and adjacent flows.
-24. `orca-regression-task`: convert strong findings into reusable regression work.
-25. `orca-checkpoint`: pause risky or ambiguous work for human inspection and decision.
-26. `orca-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
-27. `orca-tool-review` or `orca-mcp-review`: govern new or risky external tools and MCP servers.
-28. `orca-security` or `orca-security-check`: inspect security-relevant surfaces and untrusted inputs.
-29. `orca-benchmark` and `orca-eval`: judge workflow quality when framework behavior is under review.
-30. `orca-replay` or `orca-restore`: compare newer behavior or recover from known-good workflow states when needed.
-31. `orca-linear-ship-check` or `orca-ship`: prepare release and done-state evidence.
-32. `orca-retro`: capture lessons and follow-up work.
-33. `orca-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and restore visibility when behavior needs inspection.
+13. `orca-background` or `orca-keep-going`: define bounded unattended scope when the user wants progress to continue while they are away.
+14. `orca-build`: implement approved scope.
+15. `orca-trace`: record meaningful execution steps, decisions, and stop reason.
+16. `orca-receipt`: summarize the run outcome in a compact execution receipt.
+17. `orca-lineage`: link the new artifact to upstream and downstream workflow artifacts.
+18. `orca-state`: maintain shared coordination state for multi-role or resumable runs.
+19. `orca-metrics`: record timing, retries, and optional usage signals for the run.
+20. `orca-review`: inspect behavior and maintainability.
+21. `orca-design`: review UX, accessibility, responsive behavior, and product clarity.
+22. `orca-test-blind`: run first-look QA with minimal context.
+23. `orca-test-briefed`: retest with a bounded packet.
+24. `orca-test-regression`: verify fixes and adjacent flows.
+25. `orca-regression-task`: convert strong findings into reusable regression work.
+26. `orca-checkpoint`: pause risky or ambiguous work for human inspection and decision.
+27. `orca-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
+28. `orca-tool-review` or `orca-mcp-review`: govern new or risky external tools and MCP servers.
+29. `orca-security` or `orca-security-check`: inspect security-relevant surfaces and untrusted inputs.
+30. `orca-benchmark` and `orca-eval`: judge workflow quality when framework behavior is under review.
+31. `orca-replay` or `orca-restore`: compare newer behavior or recover from known-good workflow states when needed.
+32. `orca-linear-ship-check` or `orca-ship`: prepare release and done-state evidence.
+33. `orca-retro`: capture lessons and follow-up work.
+34. `orca-status` or `orca-background-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and unattended-run state when behavior needs inspection.
 
 ## Recommended Linear Gates
 
@@ -70,6 +71,7 @@ The workflow now relies on six supporting controls:
 - receipts summarize what the run accomplished
 - lineage links artifacts across the workflow
 - replay and restore support comparison, recovery, and safer rollout
+- background contracts, plans, loop guards, and receipts keep unattended progress bounded and inspectable
 - shared state records the current multi-role coordination picture
 - workflow metrics record time and retry burden
 - evals judge how well it happened

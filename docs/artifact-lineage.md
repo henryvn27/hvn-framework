@@ -19,9 +19,12 @@ Track links between:
 - spec
 - milestone
 - goal contract
+- background run contract
+- background run plan
 - implementation run
 - trace
 - receipt
+- background run receipt
 - QA finding
 - regression task
 - approval request

@@ -107,6 +107,7 @@ Use ORCA-HVN when you want AI agents to build software with engineering discipli
 - **Legacy modernization:** inherited systems are handled through archaeology, enrichment, risk analysis, and staged migration.
 - **Business ideation:** startup ideas can be evaluated, researched, classified, and validated before they become product work.
 - **Goal mode:** bounded, verifiable milestones can use host-native `/goal` when supported, with a safe fallback when not.
+- **Background mode:** users can opt into bounded unattended progress with explicit autonomy levels, loop guards, permission handling, and resumable receipts.
 - **Next-step guidance:** major phase exits produce concise, adaptive guidance for what to do next.
 - **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
 - **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
@@ -198,6 +199,14 @@ For Linear-first setup, read:
 - `docs/replay-restore.md`
 - `docs/legacy-modernization.md`
 - `docs/repo-archaeology.md`
+- `docs/background-mode.md`
+- `docs/background-ux.md`
+- `docs/background-risk-tiers.md`
+- `docs/background-task-types.md`
+- `docs/background-permissions.md`
+- `docs/loop-guards.md`
+- `docs/echo-chamber-avoidance.md`
+- `docs/stage-budgets.md`
 - `docs/next-step-guidance.md`
 - `docs/guidance-tone.md`
 - `docs/experience-adaptation.md`
@@ -234,28 +243,29 @@ For opt-out setup, choose a system of record and map ORCA-HVN issue comments to 
 10. `orca-controller` or `orca-orient` gives a controller agent a fast entry into current project state.
 11. `orca-approve` records approval when scope or risk requires it.
 12. `orca-goal` recommends goal mode only for bounded, verifiable milestones.
-13. `orca-delegate` creates a bounded executor brief when another harness should do the work.
-14. `orca-build` executes approved scope or the goal contract.
-15. `orca-trace` records what happened when the run is meaningful or risky.
-16. `orca-receipt` summarizes the run compactly.
-17. `orca-lineage` links the new artifact to the workflow chain.
-18. `orca-state` keeps shared coordination context current across roles.
-19. `orca-metrics` records time, retries, and optional usage signals.
-20. `orca-ingest` brings delegated results back into ORCA-HVN in a structured way.
-21. `orca-review` posts findings.
-22. `orca-test-blind` runs first-look QA with minimal issue context.
-23. `orca-context-brief` creates a bounded second-pass packet.
-24. `orca-test-briefed` and `orca-test-regression` retest.
-25. `orca-regression-task` promotes high-value findings into reusable regression work.
-26. `orca-checkpoint` pauses risky or ambiguous work for human inspection and decision.
-27. `orca-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-28. `orca-tool-review` or `orca-mcp-review` governs new or risky external tools.
-29. `orca-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-30. `orca-eval` scores trajectory quality when validating ORCA-HVN behavior or release confidence.
-31. `orca-replay` or `orca-restore` compares or recovers workflow behavior when needed.
-32. `orca-linear-ship-check` posts ship readiness.
-33. `orca-status` explains current runtime routing when needed.
-34. Issue moves to done only with evidence.
+13. `orca-background` or `orca-keep-going` defines unattended scope when the user wants bounded background progress.
+14. `orca-delegate` creates a bounded executor brief when another harness should do the work.
+15. `orca-build` executes approved scope or the goal contract.
+16. `orca-trace` records what happened when the run is meaningful or risky.
+17. `orca-receipt` summarizes the run compactly.
+18. `orca-lineage` links the new artifact to the workflow chain.
+19. `orca-state` keeps shared coordination context current across roles.
+20. `orca-metrics` records time, retries, and optional usage signals.
+21. `orca-ingest` brings delegated results back into ORCA-HVN in a structured way.
+22. `orca-review` posts findings.
+23. `orca-test-blind` runs first-look QA with minimal issue context.
+24. `orca-context-brief` creates a bounded second-pass packet.
+25. `orca-test-briefed` and `orca-test-regression` retest.
+26. `orca-regression-task` promotes high-value findings into reusable regression work.
+27. `orca-checkpoint` pauses risky or ambiguous work for human inspection and decision.
+28. `orca-inspect` produces a resumable view of run identity, state, approvals, and blockers.
+29. `orca-tool-review` or `orca-mcp-review` governs new or risky external tools.
+30. `orca-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+31. `orca-eval` scores trajectory quality when validating ORCA-HVN behavior or release confidence.
+32. `orca-replay` or `orca-restore` compares or recovers workflow behavior when needed.
+33. `orca-linear-ship-check` posts ship readiness.
+34. `orca-status` and `orca-background-status` explain current runtime and unattended-run state when needed.
+35. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -277,6 +287,12 @@ Business-ideation commands include:
 - `orca-plan-idea`
 - `orca-validate-idea`
 
+Background-mode commands include:
+
+- `orca-background`
+- `orca-keep-going`
+- `orca-background-status`
+
 Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
 
 - `orca-linear-setup`
@@ -291,6 +307,10 @@ Business-ideation skills include:
 
 - `orca-business-ideation`
 
+Background-mode skills include:
+
+- `orca-background-mode`
+
 Templates in `templates/` include both full artifacts and Linear-ready comment formats.
 
 The reliability layer adds:
@@ -301,6 +321,7 @@ The reliability layer adds:
 - eval artifacts in `templates/eval-case.md` and `templates/eval-report.md`
 - benchmark artifacts in `benchmarks/onboarding-spec/` and `templates/benchmark-*.md`
 - workflow metrics artifacts in `templates/workflow-metrics.md`
+- background-run artifacts in `templates/background-run-*.md` and `templates/permission-request-note.md`
 - idea artifacts in `templates/idea-*.md`, `templates/opportunity-memo.md`, `templates/validation-plan.md`, and related research templates
 - shared-state and checkpoint artifacts in `templates/shared-state.md`, `templates/checkpoint-*.md`, and `templates/run-inspection.md`
 - approval requests in `templates/approval-request.md`
@@ -384,6 +405,7 @@ ORCA-HVN now treats reliability as part of the core framework:
 - tool and MCP governance makes external execution trust explicit
 - legacy modernization emphasizes archaeology, business logic extraction, and staged migration
 - goal mode turns bounded specs or milestones into durable, verifiable execution contracts
+- background mode turns opt-in unattended work into bounded, inspectable progress loops
 - contracts keep artifacts consistent
 - security and prompt-injection guardrails keep external context from hijacking execution
 

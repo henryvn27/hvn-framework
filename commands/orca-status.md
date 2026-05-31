@@ -24,13 +24,14 @@ Use when the user or maintainer needs to understand why ORCA-HVN is taking a cer
 3. Identify controller and executor roles if known.
 4. List enabled, disabled, and degraded features.
 5. List active policy switches, delegation recommendation, and missing integrations.
-6. Report latest receipt, related artifacts, replay availability, and restore points when available.
+6. Report latest receipt, latest background run state, related artifacts, replay availability, and restore points when available.
 7. Report important caveats.
 
 ## Outputs And Artifacts
 
 - `templates/runtime-status.md`
 - latest receipt or linked receipt
+- latest background run receipt when relevant
 
 ## Failure Cases
 
@@ -39,5 +40,5 @@ Use when the user or maintainer needs to understand why ORCA-HVN is taking a cer
 
 ## Related Commands And Skills
 
-- Commands: `orca-runtime`, `orca-check-setup`, `orca-orient`
+- Commands: `orca-runtime`, `orca-check-setup`, `orca-orient`, `orca-background-status`
 - Skills: `orca-runtime-adaptation`

@@ -28,6 +28,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 20. **Controller and executor roles should stay explicit:** multi-harness work should preserve clear routing, bounded delegation, and structured result ingestion.
 21. **Ideas should earn the spec:** business opportunities should be framed, judged, and validated before they inherit delivery complexity.
 22. **Attribution should be explicit:** wrappers, integrations, conceptual influences, and redistributed components should be named clearly and documented where users can find them.
+23. **Background autonomy needs budgets and circuit breakers:** unattended progress should be bounded, inspectable, and quick to stop when it stalls.
 
 ## Coordination Modes
 
@@ -62,6 +63,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Planning mode:** sequence implementation into verifiable phases and post an approval-ready plan.
 - **Next-step mode:** produce calm, adaptive guidance after a major phase completes.
 - **Goal mode:** convert a bounded spec or milestone into a durable, verifiable execution contract.
+- **Background mode:** continue approved work in a bounded unattended envelope with explicit loop guards and final states.
 - **Approval mode:** request or confirm approval for risky work before execution continues.
 - **Build mode:** implement the approved plan with focused edits and local verification.
 - **Trace mode:** record the meaningful path of a run.
@@ -99,6 +101,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - Next-step guidance after major phase completion when useful
 - Project orientation artifact when a controller needs a fast repo entry point
 - Goal contract and status when using host-native or fallback goal mode
+- Background run contract, plan, and receipt when unattended progress is requested
 - Approval request or approval record when risk requires it
 - Run trace for meaningful or risky runs
 - Execution receipt for meaningful runs that should be reviewable later
@@ -235,6 +238,10 @@ For legacy systems, extract behavior and risks before rewriting. Use archaeology
 ## Goal Mode Policy
 
 Use goal mode only after spec and milestone planning. Goals must have clear in-scope and out-of-scope boundaries, a measurable completion condition, verification method, stop conditions, and approval triggers. Host-native `/goal` is optional and must fall back to ORCA-HVN artifacts when unavailable.
+
+## Background Mode Policy
+
+Background mode is opt-in. It must run inside a bounded contract with explicit scope, time, steps, risk tier, autonomy level, permission handling, loop guards, and a required final state. If progress stops changing, a permission repeats, or the run becomes semantically repetitive, stop and emit a receipt instead of continuing.
 
 ## Next-Step Guidance Policy
 

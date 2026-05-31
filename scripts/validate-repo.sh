@@ -75,6 +75,14 @@ docs/runtime-status.md
 docs/execution-receipts.md
 docs/artifact-lineage.md
 docs/replay-restore.md
+docs/background-mode.md
+docs/background-permissions.md
+docs/background-risk-tiers.md
+docs/background-task-types.md
+docs/background-ux.md
+docs/loop-guards.md
+docs/echo-chamber-avoidance.md
+docs/stage-budgets.md
 docs/integrations/github.md
 docs/integrations/linear.md
 docs/legacy-modernization.md
@@ -172,6 +180,11 @@ docs/examples/execution-receipt.md
 docs/examples/artifact-lineage.md
 docs/examples/replay-after-harness-update.md
 docs/examples/restore-after-failed-goal.md
+docs/examples/background-research.md
+docs/examples/background-refactor-plan.md
+docs/examples/background-qa-prep.md
+docs/examples/background-blocked-permission.md
+docs/examples/background-loop-guard-triggered.md
 docs/examples/legacy-repo-audit.md
 docs/examples/legacy-modernization-plan.md
 docs/examples/business-logic-extraction.md

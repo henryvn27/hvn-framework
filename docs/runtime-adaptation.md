@@ -32,6 +32,12 @@ Scheduled research updates compatibility knowledge. Runtime adaptation consumes 
 
 Receipts, lineage, replay, and restore make those runtime choices inspectable and safer to evolve.
 
+Background mode is also part of runtime adaptation. Different harnesses may support:
+
+- safe read-only unattended work
+- limited local unattended writes
+- no reviewed unattended mode beyond planning
+
 Controller/executor routing is part of runtime adaptation. A controller may choose one harness for orchestration and another for bounded execution when the pairing is clearer or safer than single-harness operation.
 
 ## Runtime Rule
@@ -48,3 +54,5 @@ If support is:
 Newly detected support should not become a runtime default until it has been reviewed or classified as `Adopt now`. This keeps research updates from silently changing behavior before maintainers agree.
 
 Receipts should capture the chosen runtime path. Replay should be used before broadening defaults after compatibility or policy changes. Restore should support rollback to known-good workflow states when a new path fails.
+
+If unattended behavior is unclear for a harness, ORCA-HVN should prefer foreground milestone execution instead of recommending background mode by default.

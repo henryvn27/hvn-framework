@@ -26,6 +26,9 @@ These commands read from and post back to Linear issues when Linear-first mode i
 ## Core Commands
 
 - `orca-help`
+- `orca-background`
+- `orca-keep-going`
+- `orca-background-status`
 - `orca-attribution`
 - `orca-idea`
 - `orca-evaluate-idea`
@@ -90,6 +93,9 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `Ready to Ship` triggers `orca-linear-ship-check`.
 
 Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just the product artifact.
+Use `orca-background` when unattended progress needs an explicit contract before the run starts.
+Use `orca-keep-going` when the user wants bounded autonomous progress on the current task, milestone, or goal.
+Use `orca-background-status` when the user needs the latest unattended-run state, blockers, or resume recommendation.
 Use `orca-attribution` when upstream influence, wrapping relationships, provenance, or notice handling need to be documented clearly.
 Use `orca-idea` when the user has a raw business or startup opportunity and needs a one-pager before product planning.
 Use `orca-evaluate-idea` when the user wants candid pressure testing across founder, problem, market, competition, and evidence lenses.
