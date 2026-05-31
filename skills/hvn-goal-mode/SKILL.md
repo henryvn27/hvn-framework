@@ -11,7 +11,7 @@ A workflow for deciding whether long-running work should become a goal and for c
 
 ## Trigger
 
-Use when a non-trivial task has an approved spec or bounded milestone, measurable completion condition, and verification path.
+Use when a non-trivial task has an approved spec or bounded milestone, measurable completion condition, and one clear verification contract.
 
 ## Do Not Trigger
 
@@ -47,7 +47,7 @@ Do not use goal mode for ambiguous discovery, vague improvement requests, risky 
 
 ## Quality Bar
 
-The goal must be concrete, bounded, verifiable, and safe to resume.
+The goal must be concrete, milestone-sized, verifiable, and safe to resume.
 
 ## Anti-Patterns
 
@@ -57,6 +57,7 @@ The goal must be concrete, bounded, verifiable, and safe to resume.
 - using `/goal` without a meaningful verification path
 - using `/goal` for risky or destructive tasks without approval
 - making a whole roadmap one goal
+- turning a project-sized outcome with fuzzy verification into one goal
 
 ## Relationship To Other HVN Skills And Commands
 

@@ -2,7 +2,7 @@
 
 HVN goal mode is a structured way to turn a bounded spec or milestone into a durable execution contract. It can use a host-native `/goal` feature when that host actually supports it, or fall back to ordinary HVN execution with explicit status artifacts when it does not.
 
-Goal mode is not background autonomy. It is a contract for long-running, verifiable work.
+Goal mode is not background autonomy. It is a contract for long-running, verifiable work. Prefer milestone-sized goals with one clear verification contract over project-sized goals with fuzzy outcomes.
 
 ## When To Use Goal Mode
 
@@ -10,6 +10,7 @@ Use goal mode when all of these are true:
 
 - the task is non-trivial
 - an approved spec or milestone exists
+- the goal fits one milestone-sized outcome
 - scope boundaries are clear
 - the completion condition is measurable
 - verification is possible
@@ -29,6 +30,7 @@ Do not use goal mode for:
 - ambiguous discovery
 - vague "make this better" requests
 - broad repo-wide improvement goals
+- project-sized goals with fuzzy outcomes
 - risky or destructive work without approval
 - tasks with no meaningful verification path
 - work that needs frequent product judgment after each small step

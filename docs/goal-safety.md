@@ -7,6 +7,7 @@ Goal mode can keep work moving across turns, so unclear goals create compound ri
 - vague goals
 - open-ended autonomy
 - broad repo-wide improvement
+- project-sized goals with fuzzy outcomes
 - unclear tasks
 - destructive or risky work without approval
 - tasks without verification
@@ -15,6 +16,8 @@ Goal mode can keep work moving across turns, so unclear goals create compound ri
 ## Why Vague Goals Are Dangerous
 
 Vague goals invite the agent to invent scope. A goal like "make the app better" has no bounded completion condition, no natural stop point, and no clear verification method.
+
+Project-sized goals have the same failure mode. Split them into milestone-sized goals, each with one verification contract and a reviewable stop point.
 
 ## Budget And Time Limits
 
