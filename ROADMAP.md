@@ -26,6 +26,14 @@
 - Add migration notes for teams adopting HVN into existing issue trackers.
 - Add adapter guidance for GitHub Issues and document-first opt-out workflows.
 
+## 1.1
+
+- Add run memory for issue and workstream continuity.
+- Add blind-to-briefed delta reports.
+- Add aesthetic profiles for visual and writing taste continuity.
+- Add Linear issue health checks.
+- Add regression packs generated from QA and review findings.
+
 ## Later
 
 - Explore signed releases.

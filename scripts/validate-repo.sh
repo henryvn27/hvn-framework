@@ -39,6 +39,11 @@ docs/linear-defaults.md
 docs/anti-generic-calibration.md
 docs/anti-ai-writing.md
 docs/anti-ai-design.md
+docs/run-memory.md
+docs/blind-to-briefed-delta.md
+docs/aesthetic-profiles.md
+docs/linear-issue-health.md
+docs/regression-packs.md
 docs/linear-agent-model.md
 docs/linear-states.md
 docs/linear-issue-lifecycle.md
@@ -54,8 +59,18 @@ docs/examples/anti-generic-writing.md
 docs/examples/anti-generic-ui.md
 docs/examples/authenticity-ui-copy.md
 docs/examples/authenticity-blind-qa.md
+docs/examples/run-memory-session.md
+docs/examples/blind-to-briefed-delta.md
+docs/examples/aesthetic-profile-usage.md
+docs/examples/linear-health-check.md
+docs/examples/regression-pack-creation.md
 mcp/linear.example.json
 profiles/henry-van-ness.md
+profiles/henry-defaults.md
+profiles/editorial.md
+profiles/brutalist.md
+profiles/warm-product.md
+profiles/systems-dashboard.md
 "
 
 for file in $required_files; do
@@ -70,9 +85,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 27 ] || fail "expected at least 27 command definitions"
-[ "$skill_count" -ge 26 ] || fail "expected at least 26 skill definitions"
-[ "$template_count" -ge 21 ] || fail "expected at least 21 templates"
+[ "$command_count" -ge 32 ] || fail "expected at least 32 command definitions"
+[ "$skill_count" -ge 31 ] || fail "expected at least 31 skill definitions"
+[ "$template_count" -ge 26 ] || fail "expected at least 26 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

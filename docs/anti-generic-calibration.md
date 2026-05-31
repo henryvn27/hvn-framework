@@ -38,3 +38,7 @@ If Linear is blocked, record the calibration note locally and include the exact 
 `hvn-router` triggers authenticity preflight when task signals match design-heavy or writing-heavy work. It then routes to the most specific installed design, frontend, writing, brand, image-to-code, or full-output skill available.
 
 Authenticity preflight does not replace domain skills. It sharpens them.
+
+## Aesthetic Profiles
+
+Authenticity preflight should read the active aesthetic profile before calibrating. Profiles keep visual tone, writing voice, typography, motion, and anti-pattern decisions consistent across issues.

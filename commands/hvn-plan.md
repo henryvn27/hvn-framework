@@ -34,11 +34,12 @@ Write the plan to the selected artifact and record approval status in the chosen
 ## Workflow
 
 1. Use `hvn-plan`.
-2. Break work into small phases.
-3. Define files or modules likely to change.
-4. Attach verification to each phase.
-5. Identify review and QA gates.
-6. Post a plan comment or artifact suitable for approval.
+2. Read run memory and issue health.
+3. Break work into small phases.
+4. Define files or modules likely to change.
+5. Attach verification and relevant regression packs to each phase.
+6. Identify review and QA gates.
+7. Post a plan comment or artifact suitable for approval.
 
 ## Outputs And Artifacts
 

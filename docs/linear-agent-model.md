@@ -7,6 +7,10 @@ HVN models agents as role-specific collaborators operating inside Linear by defa
 - **Setup agent:** maps Linear states, labels, permissions, guidance, smoke tests, and opt-out rules.
 - **Router agent:** selects the most specific installed skill and confirms Linear project or issue context.
 - **Authenticity preflight agent:** calibrates high-visibility UI and polished writing against generic failure modes.
+- **Memory agent:** updates compact run memory for handoffs.
+- **Health agent:** checks whether an issue is ready for the next HVN gate.
+- **Delta agent:** compares blind and briefed QA outcomes.
+- **Regression agent:** turns findings into reusable retest packs.
 - **Triage agent:** cleans issue scope, labels, platform, priority, and missing context.
 - **Onboard agent:** asks adaptive clarification questions in the issue thread.
 - **Spec agent:** turns issue context into a structured spec.

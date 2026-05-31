@@ -36,10 +36,12 @@ Do not use as a substitute for blind QA.
 5. For design, check templated patterns, generic visual tropes, and indistinct first impression.
 6. Inspect changed behavior and contracts.
 7. Identify likely bugs and regressions.
-8. Check test and validation coverage.
-9. Prioritize findings by severity.
-10. Post or prepare a review comment with decision and next gate.
-11. State residual risk when no blocking findings exist.
+8. Mark findings that should become regression packs.
+9. Check test and validation coverage.
+10. Prioritize findings by severity.
+11. Post or prepare a review comment with decision and next gate.
+12. Update run memory and regression candidates.
+13. State residual risk when no blocking findings exist.
 
 ## Expected Outputs
 

@@ -19,19 +19,23 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 0. Linear setup maps states, labels, guidance, permissions, and opt-out rules.
 1. Routing checks the matching Linear project or issue before execution.
 2. Issue enters inbox or triage.
-3. Onboard or discover agent clarifies ambiguity.
-4. Spec is generated and attached or summarized back to the issue.
-5. Plan is posted to the issue.
-6. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
-7. Human approves the plan.
-8. Build agent executes approved scope.
-9. Review agent comments findings and checks calibration fit.
-10. Blind QA agent runs first-look test.
-11. Context briefer creates a minimal second-pass brief.
-12. Guided QA reruns with limited context.
-13. Security, review, and regression passes run as needed.
-14. Ship readiness checklist is posted.
-15. Issue moves to done only with evidence.
+3. Issue health is checked before agent work.
+4. Run memory is initialized or updated.
+5. Onboard or discover agent clarifies ambiguity.
+6. Aesthetic profile is selected when design or writing matters.
+7. Spec is generated and attached or summarized back to the issue.
+8. Plan is posted to the issue.
+9. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
+10. Human approves the plan.
+11. Build agent executes approved scope.
+12. Review agent comments findings, checks calibration fit, and identifies regression candidates.
+13. Blind QA agent runs first-look test.
+14. Context briefer creates a minimal second-pass brief.
+15. Guided QA reruns with limited context.
+16. Delta report compares blind and briefed outcomes.
+17. Security, review, and regression packs run as needed.
+18. Ship readiness checklist is posted.
+19. Issue moves to done only with evidence.
 
 ## Agent Update Rule
 

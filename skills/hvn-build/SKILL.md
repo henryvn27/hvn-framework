@@ -31,13 +31,14 @@ Do not use when the user only wants brainstorming, review, or research.
 
 1. Use `hvn-router` to confirm the most specific installed skill for the task.
 2. Confirm the approved scope from Linear or the opt-out record.
-3. Read relevant files before editing.
-4. Preserve user changes and existing patterns.
-5. Run or apply authenticity preflight when UI or polished writing matters.
-6. Preserve stack and functionality unless redesign or rewrite was approved.
-7. Make the smallest coherent change that satisfies the phase.
-8. Run appropriate verification.
-9. Record what changed and what could not be verified in the durable record.
+3. Read run memory and relevant regression packs.
+4. Read relevant files before editing.
+5. Preserve user changes and existing patterns.
+6. Run or apply authenticity preflight when UI or polished writing matters.
+7. Preserve stack and functionality unless redesign or rewrite was approved.
+8. Make the smallest coherent change that satisfies the phase.
+9. Run appropriate verification and relevant regression packs.
+10. Record what changed and what could not be verified in the durable record and run memory.
 
 ## Expected Outputs
 

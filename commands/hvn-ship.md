@@ -35,11 +35,12 @@ Write ship readiness to the chosen record before marking work complete.
 ## Workflow
 
 1. Use `hvn-ship`.
-2. Confirm acceptance criteria and gates.
-3. Run final validation.
-4. Prepare release notes and rollback guidance.
-5. Identify follow-up issues.
-6. Recommend done only with evidence.
+2. Confirm issue health, run memory, acceptance criteria, and gates.
+3. Confirm required delta reports and regression packs are complete or waived.
+4. Run final validation.
+5. Prepare release notes and rollback guidance.
+6. Identify follow-up issues.
+7. Recommend done only with evidence.
 
 ## Outputs And Artifacts
 

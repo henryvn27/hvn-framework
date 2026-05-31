@@ -37,9 +37,10 @@ Post or store the review report in the declared record.
 2. Inspect whether the chosen skill matched the task and whether a more specific installed skill was skipped.
 3. Check whether authenticity preflight was required and whether the output followed it.
 4. Inspect changed behavior and adjacent contracts.
-5. Prioritize findings by severity.
-6. Recommend fixes or state that no blocking issues were found.
-7. Sync review decision to the work item.
+5. Identify findings that should become regression packs.
+6. Prioritize findings by severity.
+7. Recommend fixes or state that no blocking issues were found.
+8. Sync review decision and memory update to the work item.
 
 ## Outputs And Artifacts
 

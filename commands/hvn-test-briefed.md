@@ -45,6 +45,7 @@ Write the context packet and guided QA result to the selected record.
 - `templates/guided-qa-report.md`
 - `templates/linear-guided-qa-comment.md` when Linear-first mode is active
 - Linear issue reference in every QA output when available
+- Inputs for `hvn-delta`
 
 ## Failure Cases
 

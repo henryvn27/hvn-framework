@@ -6,6 +6,11 @@ Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They def
 
 - `hvn-router`
 - `hvn-authenticity-preflight`
+- `hvn-run-memory`
+- `hvn-delta-report`
+- `hvn-aesthetic-profile`
+- `hvn-linear-health`
+- `hvn-regression-pack`
 - `hvn-full-output`
 - `hvn-linear-setup`
 - `hvn-linear-core`

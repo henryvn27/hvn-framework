@@ -28,6 +28,10 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
 - **Most-specific skill routing:** HVN chooses the narrowest installed skill that fits the task before generic execution.
 - **Authenticity preflight:** high-visibility UI and polished writing are calibrated against generic AI failure modes before execution.
+- **Run memory:** each issue can keep a compact continuation record for fresh agents.
+- **Issue health checks:** Linear issues are checked before agents build from them.
+- **Delta reports and regression packs:** QA findings become product insight and reusable retest scenarios.
+- **Aesthetic profiles:** product taste can persist across issues and calibration passes.
 - **Opinionated default profile:** the Henry profile enables Linear-first management, premium design sensitivity, preserve-stack behavior, and full-output enforcement when requested.
 - **Linear project as initiative:** related issues belong to a project, epic, or alternative initiative artifact.
 - **Linear states as workflow gates:** state transitions represent HVN readiness gates.
@@ -90,17 +94,21 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 ## Linear-First Workflow
 
 1. Issue enters inbox or triage.
-2. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
-3. `hvn-spec` creates a structured spec from issue context.
-4. `hvn-linear-plan-comment` posts the plan to the issue.
-5. Human approves the plan when required.
-6. `hvn-build` executes approved scope.
-7. `hvn-review` posts findings.
-8. `hvn-test-blind` runs first-look QA with minimal issue context.
-9. `hvn-context-brief` creates a bounded second-pass packet.
-10. `hvn-test-briefed` and `hvn-test-regression` retest.
-11. `hvn-linear-ship-check` posts ship readiness.
-12. Issue moves to done only with evidence.
+2. `hvn-linear-health` checks whether the issue is ready for work.
+3. `hvn-memory` initializes or updates run memory.
+4. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
+5. `hvn-style` selects an aesthetic profile when taste continuity matters.
+6. `hvn-spec` creates a structured spec from issue context.
+7. `hvn-linear-plan-comment` posts the plan to the issue.
+8. Human approves the plan when required.
+9. `hvn-build` executes approved scope.
+10. `hvn-review` posts findings and regression candidates.
+11. `hvn-test-blind` runs first-look QA with minimal issue context.
+12. `hvn-context-brief` creates a bounded second-pass packet.
+13. `hvn-test-briefed` and `hvn-delta` compare blind and briefed outcomes.
+14. `hvn-regression` creates or runs regression packs.
+15. `hvn-linear-ship-check` posts ship readiness.
+16. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -112,6 +120,11 @@ Commands in `commands/` are installable prompt definitions. Linear-specific comm
 - `hvn-calibrate`
 - `hvn-calibrate-design`
 - `hvn-calibrate-writing`
+- `hvn-memory`
+- `hvn-delta`
+- `hvn-style`
+- `hvn-linear-health`
+- `hvn-regression`
 - `hvn-linear-check`
 - `hvn-linear-setup`
 - `hvn-linear-intake`
@@ -125,6 +138,11 @@ Skills in `skills/` define reusable execution behavior. Linear-specific skills i
 
 - `hvn-router`
 - `hvn-authenticity-preflight`
+- `hvn-run-memory`
+- `hvn-delta-report`
+- `hvn-aesthetic-profile`
+- `hvn-linear-health`
+- `hvn-regression-pack`
 - `hvn-full-output`
 - `hvn-linear-setup`
 - `hvn-linear-core`

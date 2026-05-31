@@ -42,6 +42,9 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Linear setup mode:** configure or validate Linear states, labels, guidance, permissions, smoke-test issue, and opt-out mapping.
 - **Routing mode:** select installed skills, Linear handling, preserve-stack posture, and full-output behavior.
 - **Authenticity preflight mode:** calibrate UI, design, frontend presentation, product copy, and polished writing against generic failure modes.
+- **Run memory mode:** preserve compact continuation context for the issue or workstream.
+- **Issue health mode:** decide whether a Linear issue is ready for the next gate.
+- **Aesthetic profile mode:** select or update visual and writing taste direction.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
 - **Discovery mode:** inspect code, product shape, dependencies, constraints, and risks.
 - **Research mode:** gather evidence when the answer is not already known.
@@ -58,6 +61,8 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 
 - Routing decision for non-trivial or skill-sensitive work
 - Authenticity calibration for high-visibility UI or polished writing
+- Run memory for non-trivial workstreams
+- Linear issue health report before build gates
 - Intake summary or Linear intake comment
 - Discovery notes when code or constraints are inspected
 - Research brief when outside evidence informs a decision
@@ -84,18 +89,22 @@ Then use the standard lifecycle:
 
 1. Route the task and check Linear project or issue context.
 2. Issue enters inbox or triage.
-3. Onboard or discover agent clarifies ambiguity.
-4. Spec is generated and attached or summarized back to the issue.
-5. Plan is posted to the issue.
-6. Human approves the plan when required.
-7. Build agent executes approved scope with the selected skill.
-8. Review agent comments findings and checks skill fit.
-9. Blind QA agent runs first-look test.
-10. Context briefer creates a minimal second-pass brief.
-11. Guided QA reruns with limited context.
-12. Security, review, and regression passes happen as needed.
-13. Ship readiness checklist is posted.
-14. Issue moves to done only with evidence.
+3. Issue health is checked before agent work.
+4. Run memory is initialized or updated.
+5. Onboard or discover agent clarifies ambiguity.
+6. Aesthetic profile is selected when design or writing matters.
+7. Spec is generated and attached or summarized back to the issue.
+8. Plan is posted to the issue.
+9. Human approves the plan when required.
+10. Build agent executes approved scope with the selected skill.
+11. Review agent comments findings, checks skill fit, and emits regression candidates.
+12. Blind QA agent runs first-look test.
+13. Context briefer creates a minimal second-pass brief.
+14. Guided QA reruns with limited context.
+15. Delta report compares blind and briefed outcomes.
+16. Security, review, and regression packs run as needed.
+17. Ship readiness checklist is posted.
+18. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -121,6 +130,18 @@ Use `hvn-router` before non-trivial work. Choose the narrowest installed skill m
 ## Authenticity Policy
 
 Run `hvn-authenticity-preflight` before high-visibility UI, frontend presentation, landing pages, dashboards, redesigns, UX copy, product copy, README work, docs, essays, outreach, or brand writing. Keep it short and targeted. The output should name generic patterns to avoid, project-specific direction, concrete details to include, and review criteria. Do not use deceptive framing or fake personal anecdotes.
+
+## Run Memory Policy
+
+Use `hvn-run-memory` to preserve essential state between agent sessions. Update it after scope changes, phase completion, failed attempts, review, QA, blockers, and ship preparation. Do not feed run memory into blind QA.
+
+## Issue Health Policy
+
+Use `hvn-linear-health` before implementation. If scope, acceptance criteria, environment, owner, reviewer, QA plan, or blocker status is unclear, route back to onboarding or spec before build.
+
+## Delta And Regression Policy
+
+Use `hvn-delta-report` after blind and briefed QA to identify first-look clarity gaps. Use `hvn-regression-pack` to turn bugs, QA findings, and review blockers into reusable retest scenarios before ship.
 
 ## QA Philosophy
 

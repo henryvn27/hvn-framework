@@ -45,6 +45,7 @@ Write the blind report to the chosen record without exposing hidden context.
 - `templates/blind-qa-report.md`
 - `templates/linear-blind-qa-comment.md` when Linear-first mode is active
 - Linear issue reference in every QA output when available
+- Potential regression pack candidates
 
 ## Failure Cases
 

@@ -30,14 +30,16 @@ Do not use when a complete approved spec already exists.
 ## Exact Workflow
 
 1. Use `hvn-router` for non-trivial onboarding.
-2. State that onboarding is gathering enough information for a first useful spec.
-3. If the prompt came from Linear, read issue title, description, labels, state, comments, links, and project context.
-4. If the user opted out of Linear, identify the alternative work item or artifact that will hold the intake.
-5. Ask high-leverage questions about user, job, success, constraints, risks, platform, data, voice, audience, visual expectations, and non-goals.
-6. Adapt based on answers; do not run a fixed questionnaire when fewer questions are enough.
-7. Stop when the next answer is unlikely to materially change the first spec.
-8. Produce intake summary, unresolved questions, recommended HVN path, and draft spec skeleton.
-9. Post or prepare the summary for the Linear issue or opt-out record.
+2. Check issue health when Linear context exists.
+3. Initialize or update run memory.
+4. State that onboarding is gathering enough information for a first useful spec.
+5. If the prompt came from Linear, read issue title, description, labels, state, comments, links, and project context.
+6. If the user opted out of Linear, identify the alternative work item or artifact that will hold the intake.
+7. Ask high-leverage questions about user, job, success, constraints, risks, platform, data, voice, audience, visual expectations, and non-goals.
+8. Adapt based on answers; do not run a fixed questionnaire when fewer questions are enough.
+9. Stop when the next answer is unlikely to materially change the first spec.
+10. Produce intake summary, unresolved questions, recommended HVN path, and draft spec skeleton.
+11. Post or prepare the summary for the Linear issue or opt-out record.
 
 ## Expected Outputs
 

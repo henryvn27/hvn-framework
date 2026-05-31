@@ -13,6 +13,10 @@ Core defaults:
 - Preserve existing stack, conventions, and architecture unless redesign is requested.
 - High design sensitivity for frontend, product, marketing, branding, and UX work.
 - Authenticity preflight for high-visibility UI, frontend presentation, product copy, and polished writing.
+- Run memory for non-trivial Linear issues and handoffs.
+- Linear issue health checks before implementation.
+- Aesthetic profiles for taste continuity.
+- Blind-to-briefed delta reports and regression packs for QA continuity.
 - Full-output enforcement when the user explicitly asks for complete output, exhaustive files, or no omissions.
 - Blind QA and context-controlled retesting for user-facing work.
 

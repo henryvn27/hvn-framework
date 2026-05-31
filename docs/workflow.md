@@ -6,22 +6,27 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 
 1. `hvn-route`: select skill, Linear path, preserve-stack posture, authenticity preflight, and full-output mode.
 2. `hvn-linear-check`: inspect or prepare Linear project and issue context.
-3. `hvn-linear-intake` or `hvn-onboard`: clarify issue context.
-4. `hvn-discover`: inspect the repo, platform, dependencies, and constraints.
-5. `hvn-research`: gather external evidence when facts may be stale or unknown.
-6. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
-7. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases and approval request.
-8. Human approval: required before build when scope affects product behavior, data, security, billing, or release.
-9. `hvn-calibrate`: run authenticity preflight when UI, design, frontend presentation, product copy, or polished writing matters.
-10. `hvn-build`: implement approved scope using the selected skill.
-11. `hvn-review`: inspect behavior, maintainability, skill fit, and authenticity fit.
-12. `hvn-design`: review UX, accessibility, responsive behavior, product clarity, and generic design signals.
-13. `hvn-test-blind`: run first-look QA with minimal context.
-14. `hvn-test-briefed`: retest with a bounded packet.
-15. `hvn-test-regression`: verify fixes and adjacent flows.
-16. `hvn-security`: inspect security-relevant surfaces.
-17. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-18. `hvn-retro`: capture lessons and follow-up work.
+3. `hvn-linear-health`: confirm the issue is ready for the next gate.
+4. `hvn-memory`: initialize or update run memory.
+5. `hvn-linear-intake` or `hvn-onboard`: clarify issue context.
+6. `hvn-discover`: inspect the repo, platform, dependencies, and constraints.
+7. `hvn-research`: gather external evidence when facts may be stale or unknown.
+8. `hvn-style`: select or update an aesthetic profile when taste continuity matters.
+9. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
+10. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases and approval request.
+11. Human approval: required before build when scope affects product behavior, data, security, billing, or release.
+12. `hvn-calibrate`: run authenticity preflight when UI, design, frontend presentation, product copy, or polished writing matters.
+13. `hvn-build`: implement approved scope using the selected skill.
+14. `hvn-review`: inspect behavior, maintainability, skill fit, authenticity fit, and regression candidates.
+15. `hvn-design`: review UX, accessibility, responsive behavior, product clarity, and generic design signals.
+16. `hvn-test-blind`: run first-look QA with minimal context.
+17. `hvn-test-briefed`: retest with a bounded packet.
+18. `hvn-delta`: compare blind and briefed outcomes.
+19. `hvn-regression`: create or run regression packs.
+20. `hvn-test-regression`: verify fixes and adjacent flows.
+21. `hvn-security`: inspect security-relevant surfaces.
+22. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+23. `hvn-retro`: capture lessons and follow-up work.
 
 ## Recommended Linear Gates
 

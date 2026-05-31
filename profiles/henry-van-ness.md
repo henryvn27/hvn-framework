@@ -5,6 +5,8 @@ This profile captures the shipped HVN default operating style. It is an example 
 ## Work Management
 
 - Use Linear first for non-trivial work.
+- Run issue health checks before implementation.
+- Maintain run memory for multi-step issues and handoffs.
 - Inspect for a matching Linear project before implementation.
 - Create or reuse issues before meaningful work.
 - Keep issue comments, blockers, links, and status current.
@@ -21,6 +23,7 @@ This profile captures the shipped HVN default operating style. It is an example 
 ## Frontend And Design
 
 - Treat high-stakes frontend and design-heavy work as specialized.
+- Use aesthetic profiles to preserve taste across related issues.
 - Run authenticity preflight before high-visibility UI, landing pages, dashboards, redesigns, and brand-sensitive frontend work.
 - Prefer premium, non-generic implementation.
 - Preserve product clarity, accessibility, responsive behavior, and interaction feel.
@@ -47,5 +50,7 @@ This profile captures the shipped HVN default operating style. It is an example 
 
 - Preserve blind QA integrity.
 - Use context briefs for second-pass QA.
+- Use blind-to-briefed delta reports for product clarity decisions.
+- Create regression packs from meaningful QA and review findings.
 - Require evidence before done.
 - Keep release and rollback notes in the system of record.

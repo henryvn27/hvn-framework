@@ -18,6 +18,11 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - `hvn-calibrate`
 - `hvn-calibrate-design`
 - `hvn-calibrate-writing`
+- `hvn-memory`
+- `hvn-delta`
+- `hvn-style`
+- `hvn-linear-health`
+- `hvn-regression`
 - `hvn-linear-check`
 - `hvn-linear-setup`
 - `hvn-linear-intake`

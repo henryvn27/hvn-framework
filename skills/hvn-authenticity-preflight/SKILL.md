@@ -36,11 +36,12 @@ Do not use for trivial edits, mechanical code changes, or private notes where po
 1. Confirm whether design calibration, writing calibration, or both are needed.
 2. Keep research short and targeted.
 3. Identify generic patterns likely for this medium.
-4. Define the specific direction that fits this project.
-5. List concrete details, vocabulary, layout constraints, references, or product facts to use.
-6. Record what the final review should check.
-7. Post or prepare the calibration for Linear or the opt-out record when the work is non-trivial.
-8. Hand the calibration to the routed design, writing, build, or review skill.
+4. Read the active aesthetic profile when available.
+5. Define the specific direction that fits this project.
+6. List concrete details, vocabulary, layout constraints, references, or product facts to use.
+7. Record what the final review should check.
+8. Post or prepare the calibration for Linear or the opt-out record when the work is non-trivial.
+9. Hand the calibration to the routed design, writing, build, or review skill.
 
 ## Design Calibration Checks
 

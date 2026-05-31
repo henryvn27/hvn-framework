@@ -40,6 +40,10 @@ The defaults layer keeps behavior consistent across commands and skills. `hvn-ro
 
 Authenticity preflight produces design or writing calibration artifacts before high-visibility execution and review.
 
+## V1.1 Continuity Features
+
+Run memory keeps issue state compact for future agents. Aesthetic profiles preserve visual and writing direction. Linear issue health checks protect agents from building from weak issues. Blind-to-briefed delta reports turn QA context differences into product insight. Regression packs preserve bugs and confusion points as reusable test scenarios.
+
 ## Why Blind QA Is Separate
 
 Blind QA is intentionally separated from informed QA because hidden knowledge changes the tester's behavior. Once a tester knows the intended flow, confusing UI may look obvious. HVN protects the first-look pass by limiting context to issue ID, platform, launch instructions, and optional one-sentence mission.

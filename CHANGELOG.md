@@ -19,3 +19,11 @@ Initial public release candidate.
 - Added validation, markdown, and link checking scripts.
 - Added GitHub issue templates, PR template, funding metadata, and CI workflows.
 - Added MCP examples for Linear coordination, iOS simulator QA, and browser QA.
+
+## 1.1.0 - Unreleased
+
+- Added run memory for issue and workstream continuity.
+- Added blind-to-briefed delta reporting.
+- Added aesthetic profile system and shipped profiles.
+- Added Linear issue health checks.
+- Added regression packs generated from QA, review, and bug findings.

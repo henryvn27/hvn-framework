@@ -53,3 +53,7 @@ Use `templates/blind-qa-report.md` for full artifacts or `templates/linear-blind
 - Confidence limits
 
 After a blind report is written, it should remain unchanged. Briefed and regression passes get separate reports.
+
+## Delta Reporting
+
+After guided QA, use `hvn-delta` to compare blind and briefed outcomes. The delta report should identify what confusion disappeared with context, what remained, and what the gap says about onboarding, copy, IA, hierarchy, or trust.

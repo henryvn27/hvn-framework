@@ -31,12 +31,13 @@ Do not use to bypass incomplete review, QA, or security gates.
 ## Exact Workflow
 
 1. Read the issue thread or opt-out record.
-2. Confirm acceptance criteria.
-3. Confirm review, QA, and security status.
-4. Run final validation where available.
-5. Prepare release notes, rollback guidance, and follow-ups.
-6. Post or prepare ship readiness evidence.
-7. Mark blockers clearly if release should not proceed.
+2. Confirm issue health and run memory.
+3. Confirm acceptance criteria.
+4. Confirm review, QA, delta, regression, and security status.
+5. Run final validation where available.
+6. Prepare release notes, rollback guidance, and follow-ups.
+7. Post or prepare ship readiness evidence.
+8. Mark blockers clearly if release should not proceed.
 
 ## Expected Outputs
 
