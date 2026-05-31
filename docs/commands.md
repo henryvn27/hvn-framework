@@ -29,6 +29,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-install`
 - `orca-doctor`
 - `orca-check-updates`
+- `orca-corpus`
 - `orca-docs`
 - `orca-background`
 - `orca-keep-going`
@@ -113,6 +114,7 @@ Use `orca-integration` when the user needs stack routing, integration selection,
 Use `orca-recommend-stack` when the user wants a best-fit stack recommendation and the use case is clear enough to justify one.
 Use `orca-setup-integration` when the user chose a stack component and now needs the shortest safe setup path.
 Use `orca-docs` when a user needs a docs entry point, a doc refresh plan, or a docs routing answer after the framework surface changes.
+Use `orca-corpus` when the user wants a reusable global or project corpus, separate reference versus write-back permissions, or a clear answer about corpus precedence and path health.
 Use `orca-background` when unattended progress needs an explicit contract before the run starts.
 Use `orca-keep-going` when the user wants bounded autonomous progress on the current task, milestone, or goal.
 Use `orca-background-status` when the user needs the latest unattended-run state, blockers, or resume recommendation.
