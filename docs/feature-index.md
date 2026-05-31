@@ -49,6 +49,7 @@ Read:
 - integration packs and stack routing
 - restrained recommendation policy
 - optional vault and graph analysis
+- optional persistent corpus and vault reuse
 
 Read:
 
@@ -61,6 +62,7 @@ Read:
 - [integrations-overview.md](integrations-overview.md)
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
 - [graph-and-vault-support.md](graph-and-vault-support.md)
+- [corpus-overview.md](corpus-overview.md)
 
 ## Inspection And Safety
 
