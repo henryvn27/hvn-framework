@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an improvement to HVN.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What workflow should improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the command, skill, template, script, or doc change.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Commands
+        - Skills
+        - Templates
+        - Installation
+        - QA
+        - Documentation
+        - CI
+    validations:
+      required: true

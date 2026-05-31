@@ -1,0 +1,54 @@
+---
+name: hvn-discover
+description: Inspect an existing repo, product surface, or environment and produce discovery notes.
+---
+
+# HVN Discover
+
+## What This Skill Is
+
+A structured inspection workflow for understanding existing systems before changing them.
+
+## Trigger
+
+Use before modifying an existing codebase or when architecture, tests, dependencies, or product behavior are unknown.
+
+## Do Not Trigger
+
+Do not use for an empty repo when the user only needs initial project creation.
+
+## Required Inputs
+
+- Repository path, app URL, executable, or environment description
+
+## Optional Inputs
+
+- Known feature area
+- Test commands
+- Deployment target
+
+## Exact Workflow
+
+1. Inventory files, scripts, dependencies, and docs.
+2. Identify core modules and ownership boundaries.
+3. Inspect relevant implementation patterns.
+4. Find verification commands and risk areas.
+5. Produce discovery notes with recommendations.
+
+## Expected Outputs
+
+- Filled `templates/discovery-notes.md`
+
+## Quality Bar
+
+Discovery should reduce implementation risk and avoid unnecessary rewrites.
+
+## Common Failure Modes
+
+- Editing before reading.
+- Ignoring existing patterns.
+- Treating missing tests as proof the system is simple.
+
+## Relationship To Other HVN Skills And Commands
+
+Feeds `hvn-spec`, `hvn-plan`, and `hvn-review`.

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ios-simulator": {
+      "command": "xcodebuild-mcp",
+      "args": ["--workflow", "simulator"],
+      "env": {}
+    }
+  }
+}
