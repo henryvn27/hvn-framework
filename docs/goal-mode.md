@@ -1,6 +1,6 @@
 # Goal Mode
 
-HVN goal mode is a structured way to turn a bounded spec or milestone into a durable execution contract. It can use a host-native `/goal` feature when that host actually supports it, or fall back to ordinary HVN execution with explicit status artifacts when it does not.
+ORCA-HVN goal mode is a structured way to turn a bounded spec or milestone into a durable execution contract. It can use a host-native `/goal` feature when that host actually supports it, or fall back to ordinary ORCA-HVN execution with explicit status artifacts when it does not.
 
 Goal mode is not background autonomy. It is a contract for long-running, verifiable work. Prefer milestone-sized goals with one clear verification contract over project-sized goals with fuzzy outcomes.
 
@@ -55,9 +55,9 @@ The wrong flow is:
 
 ## Relationship To Harness-Native `/goal`
 
-Some hosts provide a native `/goal` command. HVN should use native goal mode only after translating the work into a goal contract. The host command is the execution mechanism; the HVN contract defines scope, completion, verification, stop conditions, and approvals.
+Some hosts provide a native `/goal` command. ORCA-HVN should use native goal mode only after translating the work into a goal contract. The host command is the execution mechanism; the ORCA-HVN contract defines scope, completion, verification, stop conditions, and approvals.
 
-If native `/goal` is unavailable, use the same contract with normal HVN workflow artifacts:
+If native `/goal` is unavailable, use the same contract with normal ORCA-HVN workflow artifacts:
 
 - shared state
 - run memory
@@ -72,7 +72,7 @@ If native `/goal` is unavailable, use the same contract with normal HVN workflow
 - Completed: verification condition was met
 - Cleared: goal was intentionally removed before completion
 
-Host commands may name these states differently. HVN tracks the conceptual lifecycle in [templates/goal-status.md](../templates/goal-status.md).
+Host commands may name these states differently. ORCA-HVN tracks the conceptual lifecycle in [templates/goal-status.md](../templates/goal-status.md).
 
 ## Required Artifacts
 

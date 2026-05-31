@@ -1,6 +1,6 @@
 # Linear Plan Comment
 
-## HVN Build Plan
+## ORCA-HVN Build Plan
 
 **Issue:** `ISSUE-ID`
 

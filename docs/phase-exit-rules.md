@@ -1,6 +1,6 @@
 # Phase Exit Rules
 
-Phase exit rules define when HVN should emit next-step guidance and when it should pause.
+Phase exit rules define when ORCA-HVN should emit next-step guidance and when it should pause.
 
 ## Phase Rules
 

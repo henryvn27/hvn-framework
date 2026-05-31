@@ -1,6 +1,6 @@
 # Legacy Modernization
 
-HVN legacy modernization is a cautious workflow for inherited, messy, older, or under-documented systems. The goal is staged understanding and safe change, not one-shot rewrites.
+ORCA-HVN legacy modernization is a cautious workflow for inherited, messy, older, or under-documented systems. The goal is staged understanding and safe change, not one-shot rewrites.
 
 ## Purpose
 
@@ -40,15 +40,15 @@ Use the legacy modernization workflow to:
 - [templates/legacy-risk-report.md](../templates/legacy-risk-report.md)
 - [templates/modernization-spec.md](../templates/modernization-spec.md)
 
-## Relationship To HVN
+## Relationship To ORCA-HVN
 
-Legacy modernization extends the normal HVN lifecycle:
+Legacy modernization extends the normal ORCA-HVN lifecycle:
 
-- `hvn-discover` inspects the system
-- `hvn-legacy` performs deeper archaeology and risk analysis
-- `hvn-spec` or `hvn-legacy` creates the modernization spec
-- `hvn-plan` phases the migration
-- `hvn-regression-task` preserves critical behavior
+- `orca-discover` inspects the system
+- `orca-legacy` performs deeper archaeology and risk analysis
+- `orca-spec` or `orca-legacy` creates the modernization spec
+- `orca-plan` phases the migration
+- `orca-regression-task` preserves critical behavior
 - QA and review validate each small slice
 
 ## Modernization Slice Guidance

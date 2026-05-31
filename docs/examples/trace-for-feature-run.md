@@ -11,10 +11,10 @@
 
 ## Work Identity
 
-- Work item: `HVN-118`
-- Project: `HVN Framework`
+- Work item: `ORCA-HVN-118`
+- Project: `ORCA-HVN`
 - Agent role: builder
-- Command or skill: `hvn-build`
+- Command or skill: `orca-build`
 
 ## Context Read
 

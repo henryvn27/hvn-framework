@@ -1,0 +1,58 @@
+---
+name: orca-linear-planner
+description: Create Linear-ready specs, plans, approval requests, and state recommendations.
+---
+
+# ORCA-HVN Linear Planner
+
+## What This Skill Is
+
+A planning workflow that turns issue context into comments suitable for Linear review and approval.
+
+## Trigger
+
+Use for `Ready for Spec`, `Spec Ready`, `needs-plan`, or equivalent gates.
+
+## Do Not Trigger
+
+Do not use for already-approved implementation work unless scope changed.
+
+## Required Inputs
+
+- Issue ID
+- Issue context
+- Spec or planning goal
+
+## Optional Inputs
+
+- Discovery notes
+- Verification commands
+- Related PRs or artifacts
+
+## Exact Workflow
+
+1. Convert issue context into a structured spec or plan.
+2. Use Linear comment templates for readability.
+3. Include non-goals and verification.
+4. State whether human approval is required.
+5. Recommend the next state without bypassing approval.
+
+## Expected Outputs
+
+- Linear spec comment
+- Linear plan comment
+- Approval request
+
+## Quality Bar
+
+The plan should be buildable by an agent that reads only the issue thread and linked artifacts.
+
+## Common Failure Modes
+
+- Posting a plan without acceptance criteria.
+- Hiding scope changes.
+- Failing to request approval before build.
+
+## Relationship To Other ORCA-HVN Skills And Commands
+
+Feeds `orca-plan`, `orca-linear-plan-comment`, and `orca-build`.

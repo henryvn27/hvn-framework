@@ -1,6 +1,6 @@
 # Linear Blind QA Comment
 
-## HVN Blind QA
+## ORCA-HVN Blind QA
 
 **Issue:** `ISSUE-ID`
 

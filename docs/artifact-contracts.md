@@ -1,6 +1,6 @@
 # Artifact Contracts
 
-HVN artifact contracts define the minimum required shape for durable framework artifacts. They are not meant to replace prose. They are meant to prevent vague, incomplete, or non-comparable handoffs.
+ORCA-HVN artifact contracts define the minimum required shape for durable framework artifacts. They are not meant to replace prose. They are meant to prevent vague, incomplete, or non-comparable handoffs.
 
 ## Why Contracts Exist
 

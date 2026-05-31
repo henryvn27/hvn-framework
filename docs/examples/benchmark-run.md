@@ -3,8 +3,8 @@
 ## Benchmark Run
 
 - Date: 2026-05-30
-- Workflow version: HVN reliability layer v2
-- Compared against: HVN reliability layer v1
+- Workflow version: ORCA-HVN reliability layer v2
+- Compared against: ORCA-HVN reliability layer v1
 - Reviewer: framework maintainer
 
 ## Case Results

@@ -1,31 +1,33 @@
-# HVN Framework
+# ORCA-HVN
 
-HVN is Henry Van Ness's installable framework for running software work with agents through a durable system of record. It is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
+![ORCA-HVN logo](assets/orca-hvn-logo.svg)
 
-Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
+ORCA-HVN is Henry Van Ness's installable framework for running software work with agents through a durable system of record. It is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
 
-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, unsafe execution without clear approval or traceability, and workflows that cannot compare their own quality over time.
+Teams can opt out of Linear. In opt-out mode, ORCA-HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/orca-hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
+
+ORCA-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, premature done states, unsafe execution without clear approval or traceability, and workflows that cannot compare their own quality over time.
 
 ## Release Status
 
-This repository is prepared as a public release candidate for a Linear-first HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
+This repository is prepared as a public release candidate for a Linear-first ORCA-HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
 
 ## Who It Is For
 
-Use HVN when you want AI agents to build software with engineering discipline:
+Use ORCA-HVN when you want AI agents to build software with engineering discipline:
 
 - Teams using Linear as the coordination layer for product and engineering work
 - Founders turning vague product ideas into maintained repositories
 - Engineers using agentic coding tools on production code
 - Reviewers who want blind first-look QA before informed retesting
 - Teams that need reproducible handoffs between agents
-- Builders who want the option to map HVN gates to another tracker
+- Builders who want the option to map ORCA-HVN gates to another tracker
 
 ## Core Concepts
 
 - **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
 - **Linear project as initiative:** related issues belong to a project, epic, or alternative initiative artifact.
-- **Linear states as workflow gates:** state transitions represent HVN readiness gates.
+- **Linear states as workflow gates:** state transitions represent ORCA-HVN readiness gates.
 - **Comments as handoff record:** specs, plans, QA reports, review findings, and ship checks are posted back to the work item.
 - **Spec-driven development:** implementation follows a written contract.
 - **Typed artifact contracts:** core artifacts have required fields and a clear good-enough bar.
@@ -40,7 +42,7 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Inspector artifacts:** runs can be reviewed without a custom UI.
 - **Tool governance:** external tools and MCP servers have explicit trust levels, registry entries, and audit expectations.
 - **External tool setup:** GitHub, Linear, connectors, MCP, CLI helpers, and manual fallbacks are handled through harness-aware setup checks.
-- **Runtime adaptation:** HVN chooses the safest reviewed execution path for the active harness instead of assuming feature parity.
+- **Runtime adaptation:** ORCA-HVN chooses the safest reviewed execution path for the active harness instead of assuming feature parity.
 - **Execution receipts:** meaningful runs produce compact, reviewable summaries of actions, verification, approvals, and remaining risk.
 - **Artifact lineage:** upstream and downstream workflow artifacts can be linked explicitly.
 - **Replay and restore:** prior runs can be compared or recovered without pretending workflows are perfectly deterministic.
@@ -59,16 +61,16 @@ Use HVN when you want AI agents to build software with engineering discipline:
 Clone the repo and run validation:
 
 ```sh
-git clone https://github.com/henryvn27/hvn-framework.git
-cd hvn-framework
+git clone https://github.com/henryvn27/orca-hvn.git
+cd orca-hvn
 ./scripts/validate-repo.sh
 ```
 
 Install locally into the current project:
 
 ```sh
-./install/install.sh --mode local --target ./.hvn
-./install/verify-install.sh --target ./.hvn
+./install/install.sh --mode local --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-hvn
 ```
 
 Install globally for your user:
@@ -134,42 +136,42 @@ For Linear-first setup, read:
 You can also generate a local setup packet:
 
 ```sh
-./scripts/linear-setup.sh --mode linear-first --target work/hvn-linear-setup.md
+./scripts/linear-setup.sh --mode linear-first --target work/orca-linear-setup.md
 ```
 
-For opt-out setup, choose a system of record and map HVN issue comments to equivalent durable artifacts.
+For opt-out setup, choose a system of record and map ORCA-HVN issue comments to equivalent durable artifacts.
 
 ## Linear-First Workflow
 
 1. Issue enters inbox or triage.
-2. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
-3. `hvn-check-setup` identifies required GitHub, Linear, MCP, connector, or CLI dependencies when needed.
-4. `hvn-runtime` chooses the safest reviewed harness-specific path.
-5. `hvn-legacy` runs when the target is inherited, under-documented, or fragile.
-6. `hvn-spec` creates a structured spec from issue context or modernization audit.
-7. `hvn-linear-plan-comment` posts the plan to the issue.
-8. `hvn-next` gives a short phase-exit recommendation when useful.
-9. `hvn-approve` records approval when scope or risk requires it.
-10. `hvn-goal` recommends goal mode only for bounded, verifiable milestones.
-11. `hvn-build` executes approved scope or the goal contract.
-12. `hvn-trace` records what happened when the run is meaningful or risky.
-13. `hvn-receipt` summarizes the run compactly.
-14. `hvn-lineage` links the new artifact to the workflow chain.
-15. `hvn-state` keeps shared coordination context current across roles.
-16. `hvn-metrics` records time, retries, and optional usage signals.
-17. `hvn-review` posts findings.
-18. `hvn-test-blind` runs first-look QA with minimal issue context.
-19. `hvn-context-brief` creates a bounded second-pass packet.
-20. `hvn-test-briefed` and `hvn-test-regression` retest.
-21. `hvn-regression-task` promotes high-value findings into reusable regression work.
-22. `hvn-checkpoint` pauses risky or ambiguous work for human inspection and decision.
-23. `hvn-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-24. `hvn-tool-review` or `hvn-mcp-review` governs new or risky external tools.
-25. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-26. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
-27. `hvn-replay` or `hvn-restore` compares or recovers workflow behavior when needed.
-28. `hvn-linear-ship-check` posts ship readiness.
-29. `hvn-status` explains current runtime routing when needed.
+2. `orca-linear-intake` or `orca-onboard` clarifies ambiguity.
+3. `orca-check-setup` identifies required GitHub, Linear, MCP, connector, or CLI dependencies when needed.
+4. `orca-runtime` chooses the safest reviewed harness-specific path.
+5. `orca-legacy` runs when the target is inherited, under-documented, or fragile.
+6. `orca-spec` creates a structured spec from issue context or modernization audit.
+7. `orca-linear-plan-comment` posts the plan to the issue.
+8. `orca-next` gives a short phase-exit recommendation when useful.
+9. `orca-approve` records approval when scope or risk requires it.
+10. `orca-goal` recommends goal mode only for bounded, verifiable milestones.
+11. `orca-build` executes approved scope or the goal contract.
+12. `orca-trace` records what happened when the run is meaningful or risky.
+13. `orca-receipt` summarizes the run compactly.
+14. `orca-lineage` links the new artifact to the workflow chain.
+15. `orca-state` keeps shared coordination context current across roles.
+16. `orca-metrics` records time, retries, and optional usage signals.
+17. `orca-review` posts findings.
+18. `orca-test-blind` runs first-look QA with minimal issue context.
+19. `orca-context-brief` creates a bounded second-pass packet.
+20. `orca-test-briefed` and `orca-test-regression` retest.
+21. `orca-regression-task` promotes high-value findings into reusable regression work.
+22. `orca-checkpoint` pauses risky or ambiguous work for human inspection and decision.
+23. `orca-inspect` produces a resumable view of run identity, state, approvals, and blockers.
+24. `orca-tool-review` or `orca-mcp-review` governs new or risky external tools.
+25. `orca-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+26. `orca-eval` scores trajectory quality when validating ORCA-HVN behavior or release confidence.
+27. `orca-replay` or `orca-restore` compares or recovers workflow behavior when needed.
+28. `orca-linear-ship-check` posts ship readiness.
+29. `orca-status` explains current runtime routing when needed.
 30. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
@@ -178,22 +180,22 @@ Recommended state gates are documented in `docs/linear-states.md`.
 
 Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
 
-- `hvn-linear-setup`
-- `hvn-linear-intake`
-- `hvn-linear-sync`
-- `hvn-linear-plan-comment`
-- `hvn-linear-qa-report`
-- `hvn-linear-ship-check`
+- `orca-linear-setup`
+- `orca-linear-intake`
+- `orca-linear-sync`
+- `orca-linear-plan-comment`
+- `orca-linear-qa-report`
+- `orca-linear-ship-check`
 
 Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
 
-- `hvn-linear-setup`
-- `hvn-linear-core`
-- `hvn-linear-triage`
-- `hvn-linear-planner`
-- `hvn-linear-executor`
-- `hvn-linear-qa`
-- `hvn-linear-release`
+- `orca-linear-setup`
+- `orca-linear-core`
+- `orca-linear-triage`
+- `orca-linear-planner`
+- `orca-linear-executor`
+- `orca-linear-qa`
+- `orca-linear-release`
 
 Templates in `templates/` include both full artifacts and Linear-ready comment formats.
 
@@ -218,7 +220,7 @@ The reliability layer adds:
 
 ## Blind QA In Linear
 
-HVN treats first impression as evidence. In Linear-first mode, a blind QA agent should receive only:
+ORCA-HVN treats first impression as evidence. In Linear-first mode, a blind QA agent should receive only:
 
 - Issue ID
 - Platform
@@ -231,7 +233,7 @@ The second-pass packet should follow the QA brief contract in `templates/contrac
 
 ## iOS Simulator And Web QA Support
 
-HVN includes MCP-ready QA guidance for:
+ORCA-HVN includes MCP-ready QA guidance for:
 
 - iOS simulator testing with launch, interaction, accessibility inspection, screenshots, and reproducible Linear comments
 - Web/browser testing with first-look task attempts, accessibility-visible element checks, screenshots, console/network observations, and regression notes
@@ -240,11 +242,11 @@ Example MCP configuration files live in `mcp/`.
 
 ## Linear Setup Help
 
-HVN includes setup support for Linear:
+ORCA-HVN includes setup support for Linear:
 
 - `docs/linear-setup.md` walks through scope, states, labels, guidance, permissions, smoke tests, and opt-out rules.
-- `commands/hvn-linear-setup.md` defines the agent workflow for configuring or validating Linear.
-- `skills/hvn-linear-setup/SKILL.md` gives agents the exact setup procedure.
+- `commands/orca-linear-setup.md` defines the agent workflow for configuring or validating Linear.
+- `skills/orca-linear-setup/SKILL.md` gives agents the exact setup procedure.
 - `templates/linear-setup-checklist.md` records setup decisions.
 - `scripts/linear-setup.sh` generates a local setup packet without handling credentials.
 
@@ -262,7 +264,7 @@ Do not force Linear when the user opts out.
 
 ## Reliability Layer
 
-HVN now treats reliability as part of the core framework:
+ORCA-HVN now treats reliability as part of the core framework:
 
 - onboarding, discovery, and spec create durable context
 - run memory preserves durable facts and decisions
@@ -295,14 +297,14 @@ install/    Local and global installation scripts
 mcp/        Example MCP configuration snippets
 registry/   Tool and MCP server trust registry
 scripts/    Validation and repository utility scripts
-skills/     Reusable HVN skill definitions
+skills/     Reusable ORCA-HVN skill definitions
 templates/  Copy-ready artifacts and Linear comments
 ```
 
 ## Contributing
 
-Read `CONTRIBUTING.md` before opening a pull request. Changes should preserve HVN's core guarantees: clear artifacts, bounded context, explicit QA mode, verifiable completion, and durable handoffs in Linear or the declared opt-out system of record.
+Read `CONTRIBUTING.md` before opening a pull request. Changes should preserve ORCA-HVN's core guarantees: clear artifacts, bounded context, explicit QA mode, verifiable completion, and durable handoffs in Linear or the declared opt-out system of record.
 
 ## License
 
-HVN Framework is released under the MIT License. See `LICENSE`.
+ORCA-HVN is released under the MIT License. See `LICENSE`.

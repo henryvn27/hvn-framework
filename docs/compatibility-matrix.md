@@ -26,7 +26,7 @@ Status meanings:
 
 - `supported` does not imply native support. A capability may rely on MCP, connectors, or manual setup.
 - GitHub and Linear integration columns reflect viable integration options, not guaranteed built-in connectors.
-- `unclear` means HVN should prefer degraded mode or an explicit research note over a stronger claim.
+- `unclear` means ORCA-HVN should prefer degraded mode or an explicit research note over a stronger claim.
 
 ## Related Artifacts
 

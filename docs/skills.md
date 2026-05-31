@@ -1,28 +1,28 @@
 # Skills
 
-Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They define trigger rules, inputs, workflow, outputs, quality bar, common failure modes, and relationships to other HVN skills.
+Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They define trigger rules, inputs, workflow, outputs, quality bar, common failure modes, and relationships to other ORCA-HVN skills.
 
 ## Linear Skills
 
-- `hvn-linear-setup`
-- `hvn-linear-core`
-- `hvn-linear-triage`
-- `hvn-linear-planner`
-- `hvn-linear-executor`
-- `hvn-linear-qa`
-- `hvn-linear-release`
+- `orca-linear-setup`
+- `orca-linear-core`
+- `orca-linear-triage`
+- `orca-linear-planner`
+- `orca-linear-executor`
+- `orca-linear-qa`
+- `orca-linear-release`
 
 These skills coordinate issue-native work in Linear. If the user opts out of Linear, use the same behaviors against the chosen system of record.
 
 ## Core Skill Groups
 
-- Core governance: `hvn-core`
-- Intake and discovery: `hvn-onboard`, `hvn-discover`, `hvn-legacy`, `hvn-research`
-- Delivery: `hvn-spec`, `hvn-plan`, `hvn-goal-mode`, `hvn-build`
-- Reliability: `hvn-observability`, `hvn-eval`, `hvn-approval-gate`, `hvn-benchmark`, `hvn-accounting`, `hvn-regression-task`, `hvn-shared-state`, `hvn-checkpoint`, `hvn-tool-governance`, `hvn-tool-setup`, `hvn-runtime-adaptation`, `hvn-receipts`, `hvn-next-step`
-- Gates: `hvn-review`, `hvn-design`, `hvn-security`, `hvn-ship`
-- QA: `hvn-blind-qa`, `hvn-context-brief`, `hvn-ios-sim-qa`, `hvn-web-qa`
-- Learning: `hvn-retro`
+- Core governance: `orca-core`
+- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`
+- Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
+- Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`
+- Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
+- QA: `orca-blind-qa`, `orca-context-brief`, `orca-ios-sim-qa`, `orca-web-qa`
+- Learning: `orca-retro`
 
 ## Skill Installation
 
@@ -30,18 +30,18 @@ Skills can be installed into agent clients that support skill directories, or re
 
 Reliability skills should be treated as cross-cutting helpers:
 
-- `hvn-observability` for traces
-- `hvn-eval` for trajectory scoring
-- `hvn-approval-gate` for risky-action control
-- `hvn-benchmark` for onboarding/spec comparisons
-- `hvn-accounting` for workflow timing and retry signals
-- `hvn-regression-task` for preserving high-value findings as regression work
-- `hvn-shared-state` for current multi-role coordination
-- `hvn-checkpoint` for explicit pause, inspect, approve, reject, and resume flows
-- `hvn-tool-governance` for external tool and MCP server trust decisions
-- `hvn-tool-setup` for harness-aware GitHub, Linear, connector, MCP, CLI, and fallback setup
-- `hvn-runtime-adaptation` for capability-based routing, policy switches, and safe degraded behavior by harness
-- `hvn-receipts` for compact execution summaries that support review, replay, and restore decisions
-- `hvn-legacy` for repo archaeology, business logic extraction, and staged modernization planning
-- `hvn-goal-mode` for converting bounded specs or milestones into durable goal contracts
-- `hvn-next-step` for concise, adaptive phase-exit guidance
+- `orca-observability` for traces
+- `orca-eval` for trajectory scoring
+- `orca-approval-gate` for risky-action control
+- `orca-benchmark` for onboarding/spec comparisons
+- `orca-accounting` for workflow timing and retry signals
+- `orca-regression-task` for preserving high-value findings as regression work
+- `orca-shared-state` for current multi-role coordination
+- `orca-checkpoint` for explicit pause, inspect, approve, reject, and resume flows
+- `orca-tool-governance` for external tool and MCP server trust decisions
+- `orca-tool-setup` for harness-aware GitHub, Linear, connector, MCP, CLI, and fallback setup
+- `orca-runtime-adaptation` for capability-based routing, policy switches, and safe degraded behavior by harness
+- `orca-receipts` for compact execution summaries that support review, replay, and restore decisions
+- `orca-legacy` for repo archaeology, business logic extraction, and staged modernization planning
+- `orca-goal-mode` for converting bounded specs or milestones into durable goal contracts
+- `orca-next-step` for concise, adaptive phase-exit guidance

@@ -35,7 +35,7 @@ Generic
 
 ## Preferred Commands And Workflows
 
-- use host-neutral HVN commands and portable artifacts
+- use host-neutral ORCA-HVN commands and portable artifacts
 
 ## Fallback Rules
 
@@ -55,4 +55,4 @@ Generic
 
 ## Evidence Links
 
-- local HVN fallback policy
+- local ORCA-HVN fallback policy

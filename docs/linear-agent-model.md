@@ -1,6 +1,6 @@
 # Linear Agent Model
 
-HVN models agents as role-specific collaborators operating inside Linear by default. In opt-out mode, the same roles operate against the chosen tracker or artifact set.
+ORCA-HVN models agents as role-specific collaborators operating inside Linear by default. In opt-out mode, the same roles operate against the chosen tracker or artifact set.
 
 ## Agent Roles
 
@@ -18,14 +18,14 @@ HVN models agents as role-specific collaborators operating inside Linear by defa
 
 ## Delegation
 
-Delegating an issue to an agent should be treated as a command trigger. The issue state, label, and latest comment determine the HVN mode.
+Delegating an issue to an agent should be treated as a command trigger. The issue state, label, and latest comment determine the ORCA-HVN mode.
 
 Examples:
 
-- Label `needs-spec` triggers `hvn-spec`.
-- State `Ready for Build` triggers `hvn-build` only after plan approval.
-- State `In QA` with label `blind-qa` triggers `hvn-test-blind`.
-- State `Ready to Ship` triggers `hvn-ship`.
+- Label `needs-spec` triggers `orca-spec`.
+- State `Ready for Build` triggers `orca-build` only after plan approval.
+- State `In QA` with label `blind-qa` triggers `orca-test-blind`.
+- State `Ready to Ship` triggers `orca-ship`.
 
 ## Handoff Contract
 
@@ -34,8 +34,8 @@ An agent handoff should include:
 - Current issue ID and title
 - Current state and labels
 - Artifact links or summaries
-- Last completed HVN command
-- Next recommended HVN command
+- Last completed ORCA-HVN command
+- Next recommended ORCA-HVN command
 - Blockers and approval needs
 
 Handoffs belong in Linear comments so the next agent does not depend on private chat history. In opt-out mode, handoffs belong in the declared record: a GitHub issue comment, project doc, PR comment, or local artifact.

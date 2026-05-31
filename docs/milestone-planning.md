@@ -1,6 +1,6 @@
 # Milestone Planning
 
-HVN milestone planning turns a spec into bounded phases that can be reviewed, assigned, and verified.
+ORCA-HVN milestone planning turns a spec into bounded phases that can be reviewed, assigned, and verified.
 
 ## Purpose
 

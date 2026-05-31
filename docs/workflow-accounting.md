@@ -1,6 +1,6 @@
 # Workflow Accounting
 
-Workflow accounting helps HVN understand the operational cost of its own process. A workflow that succeeds only after repeated retries, long delays, or heavy manual cleanup is not as healthy as the final output alone suggests.
+Workflow accounting helps ORCA-HVN understand the operational cost of its own process. A workflow that succeeds only after repeated retries, long delays, or heavy manual cleanup is not as healthy as the final output alone suggests.
 
 ## Purpose
 
@@ -14,7 +14,7 @@ Use workflow metrics to answer:
 
 ## What To Measure Reliably
 
-HVN can usually measure:
+ORCA-HVN can usually measure:
 
 - workflow type
 - run or issue ID
@@ -25,7 +25,7 @@ HVN can usually measure:
 - major stages
 - outcome status
 
-HVN may sometimes measure:
+ORCA-HVN may sometimes measure:
 
 - token usage
 - cost

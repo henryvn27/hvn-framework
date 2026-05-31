@@ -1,6 +1,6 @@
 # Harness Detection
 
-HVN should detect the current harness before recommending host-specific behavior.
+ORCA-HVN should detect the current harness before recommending host-specific behavior.
 
 ## Detection Sources
 
@@ -29,6 +29,6 @@ HVN should detect the current harness before recommending host-specific behavior
 When detection is unknown:
 
 - use generic host-neutral guidance
-- prefer portable HVN artifacts
+- prefer portable ORCA-HVN artifacts
 - avoid surfacing advanced host-specific commands as defaults
 - tighten risky automation rather than loosening it

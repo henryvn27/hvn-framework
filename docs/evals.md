@@ -1,6 +1,6 @@
 # Evals
 
-HVN evals score trajectories, not just final outputs. A result can look good and still fail because the agent ignored scope, skipped the spec, used the wrong artifacts, hid uncertainty, or looped without producing evidence.
+ORCA-HVN evals score trajectories, not just final outputs. A result can look good and still fail because the agent ignored scope, skipped the spec, used the wrong artifacts, hid uncertainty, or looped without producing evidence.
 
 ## Purpose
 
@@ -45,7 +45,7 @@ Recommended dimensions:
 
 ## Scoring
 
-HVN supports both:
+ORCA-HVN supports both:
 
 - Pass/fail checks for hard requirements
 - Rubric scores for judgment-heavy dimensions

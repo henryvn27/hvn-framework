@@ -4,7 +4,7 @@
 
 - Date: 2026-05-30
 - Reviewer: framework maintainer
-- Scope: trajectory review of `hvn-spec` and `hvn-plan` on a medium-complexity issue
+- Scope: trajectory review of `orca-spec` and `orca-plan` on a medium-complexity issue
 
 ## Summary
 
@@ -25,5 +25,5 @@ The workflow passed the hard checks for spec completeness, approval handling, an
 
 ## Recommendations
 
-- tighten artifact reuse guidance in `hvn-plan`
+- tighten artifact reuse guidance in `orca-plan`
 - require trace creation for higher-risk runs

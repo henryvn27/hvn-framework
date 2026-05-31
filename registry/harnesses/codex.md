@@ -28,14 +28,14 @@ Codex
 ## Unclear Capabilities
 
 - memory integration
-- shared state and checkpointing beyond portable HVN artifacts
-- approval and governance patterns beyond HVN policy
+- shared state and checkpointing beyond portable ORCA-HVN artifacts
+- approval and governance patterns beyond ORCA-HVN policy
 - multi-agent coordination support
 
 ## Preferred Commands And Workflows
 
-- use `hvn-goal` when `/goal` is supported and reviewed
-- use `hvn-check-setup` before external integration-heavy steps
+- use `orca-goal` when `/goal` is supported and reviewed
+- use `orca-check-setup` before external integration-heavy steps
 
 ## Fallback Rules
 

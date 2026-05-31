@@ -1,6 +1,6 @@
 # iOS Simulator MCP QA
 
-HVN can use an iOS simulator MCP server when available. The framework does not require a specific server implementation, but the QA workflow assumes the agent can build or launch the app, interact with simulator UI, inspect accessibility-visible elements, and capture screenshots or logs when supported.
+ORCA-HVN can use an iOS simulator MCP server when available. The framework does not require a specific server implementation, but the QA workflow assumes the agent can build or launch the app, interact with simulator UI, inspect accessibility-visible elements, and capture screenshots or logs when supported.
 
 ## Linear Coordination
 
@@ -19,7 +19,7 @@ During a blind pass, the tester may only use what the app exposes. The tester sh
 
 ## Briefed Pass
 
-During a briefed pass, the tester receives a context packet from `hvn-context-brief`. The packet should list included goals, withheld implementation details, target fixes, and known constraints.
+During a briefed pass, the tester receives a context packet from `orca-context-brief`. The packet should list included goals, withheld implementation details, target fixes, and known constraints.
 
 ## Report
 

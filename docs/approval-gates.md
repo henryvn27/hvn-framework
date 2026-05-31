@@ -1,6 +1,6 @@
 # Approval Gates
 
-HVN approval gates are lightweight policy checks that slow down risky actions before they become expensive mistakes.
+ORCA-HVN approval gates are lightweight policy checks that slow down risky actions before they become expensive mistakes.
 
 ## Purpose
 

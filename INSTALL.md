@@ -1,10 +1,10 @@
 # Installation
 
-HVN supports Linear-first usage, opt-out usage, local install, and global install.
+ORCA-HVN supports Linear-first usage, opt-out usage, local install, and global install.
 
 ## Coordination Setup
 
-HVN defaults to Linear as the system of record. For Linear-first work, configure your agent client with Linear access, then use Linear issues as the starting point for HVN commands.
+ORCA-HVN defaults to Linear as the system of record. For Linear-first work, configure your agent client with Linear access, then use Linear issues as the starting point for ORCA-HVN commands.
 
 Expected Linear integration points:
 
@@ -13,13 +13,13 @@ Expected Linear integration points:
 - Link durable artifacts such as PRs, screenshots, build logs, release notes, and docs.
 - Recommend state transitions only when required evidence exists.
 
-If the user opts out of Linear, choose another durable system of record before work starts. Use the same HVN gates and store artifacts in GitHub Issues, PR comments, project docs, local files, or another tracker.
+If the user opts out of Linear, choose another durable system of record before work starts. Use the same ORCA-HVN gates and store artifacts in GitHub Issues, PR comments, project docs, local files, or another tracker.
 
 ## Repo Mode
 
 Use repo mode when you want to inspect or vendor the framework manually. Reference these paths directly:
 
-- `HVN.md`
+- `ORCA-HVN.md`
 - `commands/`
 - `skills/`
 - `templates/`
@@ -30,15 +30,15 @@ Repo mode is useful for contributors and teams that commit agent operating proce
 
 ## Local Install
 
-Local install copies HVN into a target folder inside one project:
+Local install copies ORCA-HVN into a target folder inside one project:
 
 ```sh
-./install/install.sh --mode local --target ./.hvn
+./install/install.sh --mode local --target ./.orca-hvn
 ```
 
 The target will contain:
 
-- `HVN.md`
+- `ORCA-HVN.md`
 - `commands/`
 - `skills/`
 - `templates/`
@@ -48,12 +48,12 @@ The target will contain:
 Verify it:
 
 ```sh
-./install/verify-install.sh --target ./.hvn
+./install/verify-install.sh --target ./.orca-hvn
 ```
 
 ## Global Install
 
-Global install copies HVN into the user config folder:
+Global install copies ORCA-HVN into the user config folder:
 
 ```sh
 ./install/install.sh --mode global
@@ -61,19 +61,19 @@ Global install copies HVN into the user config folder:
 
 Default targets:
 
-- Unix: `$HOME/.hvn`
-- PowerShell: `$HOME/.hvn`
+- Unix: `$HOME/.orca-hvn`
+- PowerShell: `$HOME/.orca-hvn`
 
 Override the target with `--target /path/to/hvn`.
 
 ## Linear Configuration
 
-HVN does not automate Linear OAuth. Configure Linear through your agent client or MCP setup. A placeholder-safe example lives at `mcp/linear.example.json`; store credentials in your agent client's secret store rather than committing them.
+ORCA-HVN does not automate Linear OAuth. Configure Linear through your agent client or MCP setup. A placeholder-safe example lives at `mcp/linear.example.json`; store credentials in your agent client's secret store rather than committing them.
 
 Use the setup guide first:
 
 ```sh
-./scripts/linear-setup.sh --mode linear-first --target work/hvn-linear-setup.md
+./scripts/linear-setup.sh --mode linear-first --target work/orca-linear-setup.md
 ```
 
 Then follow `docs/linear-setup.md`.
@@ -91,7 +91,7 @@ Recommended setup:
 
 ## MCP Setup Overview
 
-HVN includes example MCP snippets:
+ORCA-HVN includes example MCP snippets:
 
 - `mcp/linear.example.json`
 - `mcp/ios-simulator.example.json`
@@ -101,10 +101,10 @@ Adapt command names and paths to your agent client and installed MCP servers.
 
 ## Uninstall
 
-Uninstall removes only a target that looks like an HVN install:
+Uninstall removes only a target that looks like an ORCA-HVN install:
 
 ```sh
-./install/uninstall.sh --target ./.hvn
+./install/uninstall.sh --target ./.orca-hvn
 ```
 
 The script refuses to remove arbitrary folders.

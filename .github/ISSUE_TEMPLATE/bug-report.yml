@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a problem in HVN docs, scripts, commands, or skills.
+description: Report a problem in ORCA-HVN docs, scripts, commands, or skills.
 title: "[Bug]: "
 labels: ["bug"]
 body:

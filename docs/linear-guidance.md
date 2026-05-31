@@ -1,16 +1,16 @@
 # Linear Agent Guidance
 
-This guidance is ready to paste into Linear workspace, team, or project instructions for HVN agents.
+This guidance is ready to paste into Linear workspace, team, or project instructions for ORCA-HVN agents.
 
 Before installing this guidance broadly, run the setup process in `docs/linear-setup.md` and record decisions with `templates/linear-setup-checklist.md`.
 
 ## Workspace Guidance
 
-When delegated a Linear issue, operate in HVN mode. Treat the Linear issue as the source of truth. Read the issue title, description, state, labels, comments, links, and project context before acting. Post meaningful updates back to the issue as comments. Do not rely on private chat history for handoff. Do not move an issue to done unless required evidence is posted. If a user opts out of Linear, ask which record replaces the issue thread and use that record instead.
+When delegated a Linear issue, operate in ORCA-HVN mode. Treat the Linear issue as the source of truth. Read the issue title, description, state, labels, comments, links, and project context before acting. Post meaningful updates back to the issue as comments. Do not rely on private chat history for handoff. Do not move an issue to done unless required evidence is posted. If a user opts out of Linear, ask which record replaces the issue thread and use that record instead.
 
 ## Team Guidance
 
-Use HVN gates for software work:
+Use ORCA-HVN gates for software work:
 
 - Triage unclear issues before spec.
 - Post specs and plans into the issue.
@@ -26,19 +26,19 @@ Use HVN gates for software work:
 For this project, use the following mapping:
 
 - `Triage`: clarify issue and labels.
-- `Ready for Spec`: run `hvn-spec`.
+- `Ready for Spec`: run `orca-spec`.
 - `Spec Ready`: wait for approval or planning instruction.
-- `Ready for Build`: run `hvn-build`.
-- `In Review`: run `hvn-review`.
-- `In QA`: run `hvn-test-blind`, then `hvn-test-briefed` if needed.
-- `Ready to Ship`: run `hvn-ship`.
+- `Ready for Build`: run `orca-build`.
+- `In Review`: run `orca-review`.
+- `In QA`: run `orca-test-blind`, then `orca-test-briefed` if needed.
+- `Ready to Ship`: run `orca-ship`.
 - `Done`: only after evidence is posted.
 
 ## Agent Behavior
 
 Agents should:
 
-- State which HVN command or skill they are using.
+- State which ORCA-HVN command or skill they are using.
 - Quote or summarize the issue context they relied on.
 - Post concise comments with decisions, evidence, blockers, and next state.
 - Link specs, plans, reports, PRs, screenshots, builds, and release notes.

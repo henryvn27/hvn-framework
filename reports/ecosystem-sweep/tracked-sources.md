@@ -1,6 +1,6 @@
-# HVN Ecosystem Sweep Tracked Sources
+# ORCA-HVN Ecosystem Sweep Tracked Sources
 
-This file defines the baseline source set for the recurring HVN ecosystem sweep.
+This file defines the baseline source set for the recurring ORCA-HVN ecosystem sweep.
 Prefer official docs, release notes, changelogs, and upstream repositories.
 
 ## Harnesses
@@ -95,9 +95,9 @@ For each materially changed harness, answer:
 
 - What new feature or behavior appeared?
 - Does it affect execution, memory, inspection, safety, or usability?
-- Can HVN exploit it directly, wrap it through a host adapter, or only learn from the pattern?
+- Can ORCA-HVN exploit it directly, wrap it through a host adapter, or only learn from the pattern?
 - Is the capability cross-harness or host-specific?
-- What repo, docs, command, template, or workflow change would HVN need?
+- What repo, docs, command, template, or workflow change would ORCA-HVN need?
 - Does it improve beginner UX, expert UX, or both?
 - Is it worth building now?
 
@@ -105,11 +105,11 @@ For each materially changed harness, answer:
 
 For each tracked harness, answer:
 
-- Which HVN-relevant capabilities are clearly supported, partial, not supported, or unclear?
+- Which ORCA-HVN-relevant capabilities are clearly supported, partial, not supported, or unclear?
 - What changed since the last audit?
 - What setup or policy caveats affect real usability?
 - Which integrations are native, external, or manual?
-- What should HVN recommend today for this harness?
+- What should ORCA-HVN recommend today for this harness?
 - What should stay marked `unclear` pending more evidence?
 
 ## Integration Setup Questions
@@ -119,11 +119,11 @@ For each GitHub, Linear, MCP, connector, auth, permission, or host-specific setu
 - What changed in the setup path?
 - Which hosts are affected?
 - Which method changed: native connector, MCP, API token, plugin, CLI helper, or manual?
-- Does this create a better default path HVN should recommend?
-- Does this break or deprecate an old HVN recommendation?
+- Does this create a better default path ORCA-HVN should recommend?
+- Does this break or deprecate an old ORCA-HVN recommendation?
 - Does the change affect beginner setup, advanced setup, or both?
 - Is the change host-specific or broadly portable?
-- Should HVN docs, commands, templates, host adapters, or degraded-mode guidance change?
+- Should ORCA-HVN docs, commands, templates, host adapters, or degraded-mode guidance change?
 
 ## Recommendation Categories
 

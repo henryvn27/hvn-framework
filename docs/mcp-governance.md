@@ -1,6 +1,6 @@
 # MCP Governance
 
-MCP servers extend agent capability, but they also expand the trust boundary. HVN does not treat MCP servers as safe by default.
+MCP servers extend agent capability, but they also expand the trust boundary. ORCA-HVN does not treat MCP servers as safe by default.
 
 ## Default Rule
 

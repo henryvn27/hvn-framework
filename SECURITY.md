@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-HVN is currently in the `0.x` release line. Security fixes target the latest published release and the main branch.
+ORCA-HVN is currently in the `0.x` release line. Security fixes target the latest published release and the main branch.
 
 ## Reporting A Vulnerability
 

@@ -2,7 +2,7 @@
 
 Hermes Agent support for `/goal` should be documented conservatively. Do not assume parity with Codex CLI or Claude Code.
 
-## HVN Usage
+## ORCA-HVN Usage
 
 Before using native goal mode:
 
@@ -13,7 +13,7 @@ Before using native goal mode:
 
 ## Default Stance
 
-Use HVN fallback unless the current host clearly supports compatible goal behavior.
+Use ORCA-HVN fallback unless the current host clearly supports compatible goal behavior.
 
 ## Fallback
 
@@ -40,4 +40,4 @@ See [compatibility matrix](../compatibility-matrix.md) and [harness watch](../ha
 
 ## Source Notes
 
-Public discussion may mention goal behavior, but HVN should rely on local host documentation or command help before invoking it.
+Public discussion may mention goal behavior, but ORCA-HVN should rely on local host documentation or command help before invoking it.

@@ -1,6 +1,6 @@
 # Experience Adaptation
 
-HVN adapts next-step guidance to the user and situation without requiring a formal expertise setting.
+ORCA-HVN adapts next-step guidance to the user and situation without requiring a formal expertise setting.
 
 ## Signals
 

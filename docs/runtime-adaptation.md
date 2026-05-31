@@ -1,14 +1,14 @@
 # Runtime Adaptation
 
-Runtime adaptation is how HVN changes its execution path based on the current harness and the maintained compatibility knowledge.
+Runtime adaptation is how ORCA-HVN changes its execution path based on the current harness and the maintained compatibility knowledge.
 
 Principle:
 
-> Same HVN workflow intent, different execution path depending on the harness.
+> Same ORCA-HVN workflow intent, different execution path depending on the harness.
 
 ## What It Is
 
-Runtime adaptation means HVN:
+Runtime adaptation means ORCA-HVN:
 
 - identifies or infers the current harness
 - reads the relevant harness capability profile
@@ -36,10 +36,10 @@ Receipts, lineage, replay, and restore make those runtime choices inspectable an
 
 If support is:
 
-- `supported`: HVN may recommend the capability when the task is a good fit
-- `partial`: HVN may use it with caveats and explicit fallback
-- `not supported`: HVN should not recommend it as the default path
-- `unclear`: HVN should stay conservative and use the generic safer path
+- `supported`: ORCA-HVN may recommend the capability when the task is a good fit
+- `partial`: ORCA-HVN may use it with caveats and explicit fallback
+- `not supported`: ORCA-HVN should not recommend it as the default path
+- `unclear`: ORCA-HVN should stay conservative and use the generic safer path
 
 ## Review Gate
 

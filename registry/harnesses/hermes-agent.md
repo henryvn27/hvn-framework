@@ -35,11 +35,11 @@ Hermes Agent
 
 ## Preferred Commands And Workflows
 
-- use generic HVN workflow until host behavior is verified
+- use generic ORCA-HVN workflow until host behavior is verified
 
 ## Fallback Rules
 
-- prefer portable HVN artifacts and manual integrations
+- prefer portable ORCA-HVN artifacts and manual integrations
 
 ## Setup And Integration Caveats
 

@@ -1,13 +1,13 @@
 # Integrations Overview
 
-HVN starts with setup support for GitHub and Linear. More services can be added by creating an integration guide, checklist, validation expectations, and fallback behavior.
+ORCA-HVN starts with setup support for GitHub and Linear. More services can be added by creating an integration guide, checklist, validation expectations, and fallback behavior.
 
 ## Supported Initial Services
 
-| Service | Common HVN uses | Required when | Fallback |
+| Service | Common ORCA-HVN uses | Required when | Fallback |
 | --- | --- | --- | --- |
-| GitHub | repo browsing, issue links, PRs, reviews, checks, releases, changelogs | HVN must perform GitHub reads or writes directly | local repo plus manual issue, PR, checks, or release steps |
-| Linear | issue intake, planning comments, QA reports, ship checks, state transitions | Linear is the system of record and HVN must read or write it directly | pasted issue context plus local artifacts or another tracker |
+| GitHub | repo browsing, issue links, PRs, reviews, checks, releases, changelogs | ORCA-HVN must perform GitHub reads or writes directly | local repo plus manual issue, PR, checks, or release steps |
+| Linear | issue intake, planning comments, QA reports, ship checks, state transitions | Linear is the system of record and ORCA-HVN must read or write it directly | pasted issue context plus local artifacts or another tracker |
 
 ## Integration Methods
 
@@ -24,7 +24,7 @@ HVN starts with setup support for GitHub and Linear. More services can be added 
 - `missing`: no integration path is configured
 - `misconfigured`: configured but failing validation
 - `unavailable in this harness`: the current host cannot use that integration path
-- `available via fallback method`: direct integration is missing, but HVN can continue safely
+- `available via fallback method`: direct integration is missing, but ORCA-HVN can continue safely
 
 ## Harness Rule
 

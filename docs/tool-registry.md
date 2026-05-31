@@ -1,6 +1,6 @@
 # Tool Registry
 
-The HVN tool registry records which external tools and MCP servers are trusted, constrained, approval-required, or blocked.
+The ORCA-HVN tool registry records which external tools and MCP servers are trusted, constrained, approval-required, or blocked.
 
 ## Location
 

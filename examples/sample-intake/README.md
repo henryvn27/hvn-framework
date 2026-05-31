@@ -18,6 +18,6 @@ Turn notes, account context, and prior action items into a concise meeting brief
 - Must not claim CRM integration until implemented.
 - Must make export or copy behavior obvious.
 
-## Recommended HVN Path
+## Recommended ORCA-HVN Path
 
-`hvn-onboard` → `hvn-spec` → `hvn-plan` → `hvn-build` → `hvn-test-blind` → `hvn-security` → `hvn-ship`
+`orca-onboard` → `orca-spec` → `orca-plan` → `orca-build` → `orca-test-blind` → `orca-security` → `orca-ship`

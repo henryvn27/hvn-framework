@@ -1,6 +1,6 @@
 # Linear Guided QA Comment
 
-## HVN Guided QA
+## ORCA-HVN Guided QA
 
 **Issue:** `ISSUE-ID`
 

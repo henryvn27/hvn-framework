@@ -1,6 +1,6 @@
 # Security Guardrails
 
-HVN security guardrails keep agent work operationally safe when reading external content, running commands, changing repositories, or making release decisions.
+ORCA-HVN security guardrails keep agent work operationally safe when reading external content, running commands, changing repositories, or making release decisions.
 
 ## Core Rules
 
@@ -51,7 +51,7 @@ Record:
 - whether approval was needed
 - what remains unverified
 
-Use [commands/hvn-security-check.md](../commands/hvn-security-check.md) and [skills/hvn-security/SKILL.md](../skills/hvn-security/SKILL.md) for the operational workflow.
+Use [commands/orca-security-check.md](../commands/orca-security-check.md) and [skills/orca-security/SKILL.md](../skills/orca-security/SKILL.md) for the operational workflow.
 
 For tool and MCP trust decisions, use [docs/tool-trust.md](tool-trust.md), [docs/mcp-governance.md](mcp-governance.md), and [docs/tool-registry.md](tool-registry.md).
 

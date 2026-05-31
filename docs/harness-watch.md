@@ -1,6 +1,6 @@
 # Harness Watch
 
-This watchlist tracks harness-level compatibility shifts that affect HVN guidance, workflows, or documentation.
+This watchlist tracks harness-level compatibility shifts that affect ORCA-HVN guidance, workflows, or documentation.
 
 ## What To Track
 
@@ -9,7 +9,7 @@ This watchlist tracks harness-level compatibility shifts that affect HVN guidanc
 - improved setup paths
 - degraded setup paths
 - newly documented caveats
-- changes that should update HVN docs or commands
+- changes that should update ORCA-HVN docs or commands
 
 ## Current Snapshot Inputs
 
@@ -48,7 +48,7 @@ No active shifts yet.
 
 ## Adopt-Now Compatibility Changes
 
-Link draft issues here when a compatibility shift should trigger a HVN update immediately.
+Link draft issues here when a compatibility shift should trigger a ORCA-HVN update immediately.
 
 No adopt-now compatibility changes yet.
 

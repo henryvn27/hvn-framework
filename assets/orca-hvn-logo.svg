@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ORCA-HVN logo</title>
+  <desc id="desc">Document icon with folded corner, image placeholder, and PNG text.</desc>
+  <rect width="512" height="512" fill="#000"/>
+  <g filter="url(#shadow)">
+    <path d="M132 40h161l119 119v289c0 13-11 24-24 24H132c-13 0-24-11-24-24V64c0-13 11-24 24-24Z" fill="#f4f4f4"/>
+    <path d="M293 40v95c0 13 11 24 24 24h95" fill="#f4f4f4"/>
+    <path d="M293 40l119 119h-95c-13 0-24-11-24-24V40Z" fill="#efefef"/>
+  </g>
+  <rect x="172" y="202" width="168" height="122" rx="11" fill="none" stroke="#b9b9b9" stroke-width="12"/>
+  <circle cx="223" cy="241" r="18" fill="#b9b9b9"/>
+  <path d="M184 294l33-26 25 19 50-43 48 50H184Z" fill="#b9b9b9"/>
+  <text x="256" y="412" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="60" fill="#b9b9b9">PNG</text>
+  <defs>
+    <filter id="shadow" x="90" y="24" width="350" height="470" color-interpolation-filters="sRGB">
+      <feDropShadow dx="8" dy="8" stdDeviation="10" flood-color="#bdbdbd" flood-opacity=".35"/>
+    </filter>
+  </defs>
+</svg>

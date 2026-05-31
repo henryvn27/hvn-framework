@@ -28,6 +28,6 @@ List product, technical, security, schedule, and adoption risks.
 
 List questions that remain open and how they affect the first spec.
 
-## Recommended HVN Path
+## Recommended ORCA-HVN Path
 
 List the commands that should run next.

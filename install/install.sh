@@ -17,15 +17,15 @@ while [ "$#" -gt 0 ]; do
 done
 
 case "$mode" in
-  local) target="${target:-./.hvn}" ;;
-  global) target="${target:-$HOME/.hvn}" ;;
+  local) target="${target:-./.orca-hvn}" ;;
+  global) target="${target:-$HOME/.orca-hvn}" ;;
   *) printf 'Mode must be local or global\n' >&2; exit 1 ;;
 esac
 
 root="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 mkdir -p "$target"
 
-for item in HVN.md commands skills templates docs mcp; do
+for item in ORCA-HVN.md commands skills templates docs mcp; do
   [ -e "$root/$item" ] || { printf 'Missing source item: %s\n' "$item" >&2; exit 1; }
   rm -rf "$target/$item"
   cp -R "$root/$item" "$target/$item"
@@ -35,7 +35,7 @@ cat > "$target/VERSION" <<VERSION
 0.1.0
 VERSION
 
-printf 'HVN installed to %s\n' "$target"
+printf 'ORCA-HVN installed to %s\n' "$target"
 printf 'Linear setup guide: %s\n' "$target/docs/linear-setup.md"
 printf 'Linear-first guidance: %s\n' "$target/docs/linear-guidance.md"
-printf 'Opt-out mode: choose a durable system of record and map HVN gates there.\n'
+printf 'Opt-out mode: choose a durable system of record and map ORCA-HVN gates there.\n'

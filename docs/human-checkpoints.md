@@ -1,6 +1,6 @@
 # Human Checkpoints
 
-HVN human checkpoints are explicit pause and decision points for risky, ambiguous, or high-consequence work. They exist so humans can inspect state, approve or reject a move, and let execution resume without losing context.
+ORCA-HVN human checkpoints are explicit pause and decision points for risky, ambiguous, or high-consequence work. They exist so humans can inspect state, approve or reject a move, and let execution resume without losing context.
 
 ## Supported Actions
 

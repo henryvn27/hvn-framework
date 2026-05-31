@@ -14,7 +14,7 @@ Onboarding should produce:
 
 ## Exit Guidance
 
-When onboarding completes, run `hvn-next` unless the next action is already being executed. The default next move is usually `hvn-spec`.
+When onboarding completes, run `orca-next` unless the next action is already being executed. The default next move is usually `orca-spec`.
 
 Next-step guidance should be brief:
 

@@ -1,6 +1,6 @@
 # Linear Workflow
 
-HVN is designed to run software work through Linear by default. Linear is the preferred coordination layer, source of work, and durable record for agent activity. If the user opts out, use the same HVN gates with another declared system of record.
+ORCA-HVN is designed to run software work through Linear by default. Linear is the preferred coordination layer, source of work, and durable record for agent activity. If the user opts out, use the same ORCA-HVN gates with another declared system of record.
 
 ## Core Mapping
 
@@ -12,7 +12,7 @@ HVN is designed to run software work through Linear by default. Linear is the pr
 - **Linear comment:** status update, plan, review finding, QA report, or ship checklist
 - **Linked artifact:** spec, plan, report, screenshot, branch, pull request, build, or release note
 
-HVN works best when agents stay close to the source of work. In Henry's workflow, that source is Linear. Agents should read the issue, update the issue, and keep handoffs visible in the issue thread. In opt-out mode, replace the issue thread with the chosen record and keep the same discipline.
+ORCA-HVN works best when agents stay close to the source of work. In Henry's workflow, that source is Linear. Agents should read the issue, update the issue, and keep handoffs visible in the issue thread. In opt-out mode, replace the issue thread with the chosen record and keep the same discipline.
 
 ## Standard Lifecycle
 
@@ -51,7 +51,7 @@ When multiple roles are cooperating or a pause is likely, also link shared-state
 
 Human approval is required before moving from `Spec Ready` to build when the issue changes product behavior, data handling, security posture, billing, release process, or public user experience.
 
-Use `hvn-approve` to record that decision. Do not rely on vague "looks good" chat approval for risky work.
+Use `orca-approve` to record that decision. Do not rely on vague "looks good" chat approval for risky work.
 
 ## Opt-Out Rule
 

@@ -1,6 +1,6 @@
 # Setup UX
 
-HVN setup guidance supports quick and guided modes.
+ORCA-HVN setup guidance supports quick and guided modes.
 
 ## Quick Setup
 

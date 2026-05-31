@@ -1,6 +1,6 @@
 # Web QA
 
-HVN web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view. In Linear-first mode, QA results are posted to the issue. In opt-out mode, results are written to the chosen record.
+ORCA-HVN web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view. In Linear-first mode, QA results are posted to the issue. In opt-out mode, results are written to the chosen record.
 
 ## First-Look Pass
 

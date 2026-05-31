@@ -1,6 +1,6 @@
 # VS Code Host Adapter
 
-VS Code support depends on the extension and agent surface in use. GitHub Copilot in VS Code supports MCP server configuration, but HVN should still validate the active workspace and available tools before relying on an integration.
+VS Code support depends on the extension and agent surface in use. GitHub Copilot in VS Code supports MCP server configuration, but ORCA-HVN should still validate the active workspace and available tools before relying on an integration.
 
 ## External Tool Setup
 

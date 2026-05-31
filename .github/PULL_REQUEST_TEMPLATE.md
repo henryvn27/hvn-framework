@@ -2,7 +2,7 @@
 
 ## Summary
 
-Describe the change and why it belongs in HVN.
+Describe the change and why it belongs in ORCA-HVN.
 
 ## Validation
 

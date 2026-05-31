@@ -1,5 +1,5 @@
 {
-  "name": "HVN Ecosystem Sweep",
+  "name": "ORCA-HVN Ecosystem Sweep",
   "version": 3,
   "last_run_date": null,
   "last_report_path": null,
@@ -13,7 +13,7 @@
   "compatibility_latest_file": "reports/compatibility/latest.md",
   "draft_issue_template_file": "templates/ecosystem-adopt-issue.md",
   "draft_issue_directory": "reports/ecosystem-sweep/draft-issues",
-  "primary_research_question": "What new host or framework capabilities now exist that HVN can exploit, wrap, adapt, or learn from?",
+  "primary_research_question": "What new host or framework capabilities now exist that ORCA-HVN can exploit, wrap, adapt, or learn from?",
   "recommendation_categories": [
     "commands",
     "memory",
@@ -43,8 +43,8 @@
     "official connector support changes",
     "host-specific install and config steps",
     "auth and permission pattern changes",
-    "easier setup paths HVN could recommend",
-    "broken or deprecated setup patterns HVN should stop recommending"
+    "easier setup paths ORCA-HVN could recommend",
+    "broken or deprecated setup patterns ORCA-HVN should stop recommending"
   ],
   "tracked_harnesses": [
     "Codex",
@@ -59,9 +59,9 @@
     "Reports should compare against the prior sweep and avoid repeating unchanged items as new.",
     "Adopt-now findings should create one draft issue each unless a substantially similar issue is already tracked.",
     "When a finding is promoted from watch or investigate-soon to adopt-now, preserve earlier sightings and backlink them from the draft issue.",
-    "Every material finding should explain whether HVN can use it directly, wrap it through a host adapter, document it as workflow guidance, or only watch it as an experimental pattern.",
+    "Every material finding should explain whether ORCA-HVN can use it directly, wrap it through a host adapter, document it as workflow guidance, or only watch it as an experimental pattern.",
     "Scheduled runs must update the dated report, latest summary, living watch document, opportunities document, and any needed draft adopt issues.",
-    "Setup-path findings must explain how setup changed, who is affected, whether HVN guidance should change, and whether the recommendation is host-specific or portable.",
+    "Setup-path findings must explain how setup changed, who is affected, whether ORCA-HVN guidance should change, and whether the recommendation is host-specific or portable.",
     "Compatibility findings must update the matrix and harness watch, and should prefer unclear over unsupported when evidence is weak."
   ]
 }

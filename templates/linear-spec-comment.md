@@ -1,6 +1,6 @@
 # Linear Spec Comment
 
-## HVN Spec
+## ORCA-HVN Spec
 
 **Issue:** `ISSUE-ID`
 

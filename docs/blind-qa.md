@@ -58,6 +58,6 @@ After a blind report is written, it should remain unchanged. Briefed and regress
 
 Use traces when needed to show what the QA run actually did, but do not turn the blind report itself into a hidden-context artifact.
 
-When a blind finding is strong enough to preserve, use `hvn-regression-task` to turn it into a structured regression candidate or regression task instead of leaving it as a one-off note.
+When a blind finding is strong enough to preserve, use `orca-regression-task` to turn it into a structured regression candidate or regression task instead of leaving it as a one-off note.
 
-After QA completes, `hvn-next` should recommend fixing blockers, running a briefed pass, or creating regression follow-up depending on severity and confidence. It should stay silent if retesting is already underway.
+After QA completes, `orca-next` should recommend fixing blockers, running a briefed pass, or creating regression follow-up depending on severity and confidence. It should stay silent if retesting is already underway.

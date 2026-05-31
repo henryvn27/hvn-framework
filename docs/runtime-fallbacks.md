@@ -1,6 +1,6 @@
 # Runtime Fallbacks
 
-For each major capability, HVN should define:
+For each major capability, ORCA-HVN should define:
 
 - preferred path
 - acceptable fallback
@@ -12,14 +12,14 @@ For each major capability, HVN should define:
 ### Goal Support
 
 - Preferred: host-native goal mode when supported and reviewed
-- Fallback: HVN milestone plus goal-contract artifacts
+- Fallback: ORCA-HVN milestone plus goal-contract artifacts
 - Degraded: standard implementation loop with explicit checkpoints
 - Blocked: no goal recommendation for risky or unclear support
 
 ### Memory And Checkpoints
 
 - Preferred: harness-native support when supported and reviewed
-- Fallback: HVN run memory, shared state, and checkpoint artifacts
+- Fallback: ORCA-HVN run memory, shared state, and checkpoint artifacts
 - Degraded: local artifact-only continuity
 - Blocked: none, as long as durable artifacts remain available
 

@@ -1,6 +1,6 @@
 # Runtime Status
 
-Runtime status is the inspectable summary of why HVN is behaving a certain way in the current harness.
+Runtime status is the inspectable summary of why ORCA-HVN is behaving a certain way in the current harness.
 
 ## It Should Show
 

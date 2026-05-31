@@ -1,15 +1,15 @@
 # Spec-Driven Workflow
 
-HVN is spec-driven because implementation quality depends on having a clear contract before build and QA begin.
+ORCA-HVN is spec-driven because implementation quality depends on having a clear contract before build and QA begin.
 
 ## Standard Flow
 
 1. Intake or onboarding clarifies the work item.
 2. Discovery and research gather evidence.
 3. Legacy archaeology enriches the context when the repo is inherited, under-documented, or fragile.
-4. `hvn-spec` writes the implementation contract.
-5. `hvn-plan` turns the spec into sequenced work with verification gates.
-6. `hvn-next` explains the next move after spec and planning when useful.
+4. `orca-spec` writes the implementation contract.
+5. `orca-plan` turns the spec into sequenced work with verification gates.
+6. `orca-next` explains the next move after spec and planning when useful.
 7. The next bounded milestone may become a goal contract when completion and verification are clear.
 8. Approval gates control risky actions before build or goal execution.
 9. Build, review, QA, and ship all work against the approved spec.

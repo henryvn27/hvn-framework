@@ -26,4 +26,4 @@ List concrete actions with owner, trigger, or next command.
 
 ## Framework Improvements
 
-List changes HVN itself should consider.
+List changes ORCA-HVN itself should consider.

@@ -12,7 +12,7 @@ else
 fi
 
 git add .
-git commit -m "Initial HVN framework release" || {
+git commit -m "Initial ORCA-HVN framework release" || {
   printf 'bootstrap-git: commit skipped because there may be no staged changes or git identity is missing\n' >&2
   exit 1
 }

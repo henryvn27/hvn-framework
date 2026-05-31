@@ -50,7 +50,7 @@ For each active opportunity, keep:
 - affected hosts when relevant
 - currently recommended setup path when relevant
 - unstable or deprecated setup path when relevant
-- required HVN change
+- required ORCA-HVN change
 - UX impact
 - first seen
 - last confirmed
@@ -66,7 +66,7 @@ For each active opportunity, keep:
 
 ## Adoption Shapes
 
-- native HVN feature candidate
+- native ORCA-HVN feature candidate
 - host-adapter opportunity
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
@@ -105,7 +105,7 @@ Track existence and confidence for:
 | `/goal` | unknown | unknown | unknown | unknown | Verify from official docs or local host behavior. |
 | checkpointing | unknown | unknown | unknown | unknown | Track explicit pause or approval checkpoints. |
 | pause/resume | unknown | unknown | unknown | unknown | Include continue and clear semantics when present. |
-| persistent state | unknown | unknown | unknown | unknown | Distinguish host memory from HVN run memory and shared state. |
+| persistent state | unknown | unknown | unknown | unknown | Distinguish host memory from ORCA-HVN run memory and shared state. |
 | approvals | unknown | unknown | unknown | unknown | Track human-in-the-loop and risk approval surfaces. |
 | inspection | unknown | unknown | unknown | unknown | Track run, artifact, trace, and status inspection. |
 | tool governance | unknown | unknown | unknown | unknown | Track MCP review, allowlists, and tool trust behavior. |
@@ -128,7 +128,7 @@ Use this section for unstable, broken, or deprecated setup guidance.
 
 ## Setup Simplification Opportunities
 
-Use this section for easier setup paths HVN may want to adopt.
+Use this section for easier setup paths ORCA-HVN may want to adopt.
 
 - No active setup simplification opportunities yet.
 

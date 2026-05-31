@@ -9,15 +9,15 @@ $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
 
 if ($Target -eq "") {
   if ($Mode -eq "global") {
-    $Target = Join-Path $HOME ".hvn"
+    $Target = Join-Path $HOME ".orca-hvn"
   } else {
-    $Target = Join-Path (Get-Location) ".hvn"
+    $Target = Join-Path (Get-Location) ".orca-hvn"
   }
 }
 
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 
-foreach ($Item in @("HVN.md", "commands", "skills", "templates", "docs", "mcp")) {
+foreach ($Item in @("ORCA-HVN.md", "commands", "skills", "templates", "docs", "mcp")) {
   $Source = Join-Path $Root $Item
   $Destination = Join-Path $Target $Item
   if (!(Test-Path $Source)) {
@@ -30,7 +30,7 @@ foreach ($Item in @("HVN.md", "commands", "skills", "templates", "docs", "mcp"))
 }
 
 Set-Content -Path (Join-Path $Target "VERSION") -Value "0.1.0"
-Write-Host "HVN installed to $Target"
+Write-Host "ORCA-HVN installed to $Target"
 Write-Host "Linear setup guide: $(Join-Path $Target 'docs/linear-setup.md')"
 Write-Host "Linear-first guidance: $(Join-Path $Target 'docs/linear-guidance.md')"
-Write-Host "Opt-out mode: choose a durable system of record and map HVN gates there."
+Write-Host "Opt-out mode: choose a durable system of record and map ORCA-HVN gates there."

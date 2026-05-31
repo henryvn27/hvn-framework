@@ -1,6 +1,6 @@
 # Shared State
 
-HVN shared state is the durable coordination layer for cooperating agents working on the same run or work item. It exists so planner, builder, reviewer, QA, and coordinator roles can read the same current operating picture without re-deriving it or trampling each other.
+ORCA-HVN shared state is the durable coordination layer for cooperating agents working on the same run or work item. It exists so planner, builder, reviewer, QA, and coordinator roles can read the same current operating picture without re-deriving it or trampling each other.
 
 ## Purpose
 

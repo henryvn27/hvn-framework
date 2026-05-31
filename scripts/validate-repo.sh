@@ -18,7 +18,7 @@ CODE_OF_CONDUCT.md
 SECURITY.md
 ROADMAP.md
 INSTALL.md
-HVN.md
+ORCA-HVN.md
 .gitignore
 .editorconfig
 .gitattributes
@@ -187,7 +187,7 @@ for dir in commands skills templates templates/contracts install scripts docs do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
-command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
+command_count="$(find commands -type f -name 'orca-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
@@ -201,7 +201,7 @@ for script in install/install.sh install/uninstall.sh install/doctor.sh install/
   sh -n "$script" || fail "script syntax failed: $script"
 done
 
-if grep -RIn --exclude='validate-repo.sh' 'TODO\|FIXME\|rest of code\|similar to above\|for brevity' README.md HVN.md INSTALL.md docs commands skills templates install scripts mcp examples .github 2>/dev/null; then
+if grep -RIn --exclude='validate-repo.sh' 'TODO\|FIXME\|rest of code\|similar to above\|for brevity' README.md ORCA-HVN.md INSTALL.md docs commands skills templates install scripts mcp examples .github 2>/dev/null; then
   fail "placeholder or banned phrase detected"
 fi
 

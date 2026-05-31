@@ -1,6 +1,6 @@
 # Generic Host Adapter
 
-Use this adapter when the active harness is unknown or does not have a dedicated HVN host guide.
+Use this adapter when the active harness is unknown or does not have a dedicated ORCA-HVN host guide.
 
 ## External Tool Setup
 

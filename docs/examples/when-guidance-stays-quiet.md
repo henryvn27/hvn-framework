@@ -1,6 +1,6 @@
 # When Guidance Stays Quiet
 
-HVN should not emit next-step guidance after every small message.
+ORCA-HVN should not emit next-step guidance after every small message.
 
 ## Example
 

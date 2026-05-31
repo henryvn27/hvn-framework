@@ -6,7 +6,7 @@ Linear MCP server
 
 ## Intended Use
 
-Read and update Linear project and issue context for HVN work.
+Read and update Linear project and issue context for ORCA-HVN work.
 
 ## Trust Decision
 

@@ -23,12 +23,12 @@ for file in \
   templates/workflow-metrics.md \
   templates/regression-task.md \
   templates/regression-candidate.md \
-  commands/hvn-benchmark.md \
-  commands/hvn-metrics.md \
-  commands/hvn-regression-task.md \
-  skills/hvn-benchmark/SKILL.md \
-  skills/hvn-accounting/SKILL.md \
-  skills/hvn-regression-task/SKILL.md \
+  commands/orca-benchmark.md \
+  commands/orca-metrics.md \
+  commands/orca-regression-task.md \
+  skills/orca-benchmark/SKILL.md \
+  skills/orca-accounting/SKILL.md \
+  skills/orca-regression-task/SKILL.md \
   docs/examples/benchmark-run.md \
   docs/examples/onboarding-benchmark-case.md \
   docs/examples/spec-quality-comparison.md \

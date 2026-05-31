@@ -1,6 +1,6 @@
 # Linear Ship Comment
 
-## HVN Ship Readiness
+## ORCA-HVN Ship Readiness
 
 **Issue:** `ISSUE-ID`
 

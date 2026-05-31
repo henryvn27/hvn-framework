@@ -1,6 +1,6 @@
 # Goal Recommendation Rules
 
-HVN may recommend goal mode when all required conditions are met.
+ORCA-HVN may recommend goal mode when all required conditions are met.
 
 ## Required Conditions
 

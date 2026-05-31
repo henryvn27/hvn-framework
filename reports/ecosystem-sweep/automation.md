@@ -1,18 +1,18 @@
-# HVN Ecosystem Sweep Automation
+# ORCA-HVN Ecosystem Sweep Automation
 
-- Automation id: `hvn-ecosystem-sweep`
-- Automation name: `HVN Ecosystem Sweep`
+- Automation id: `orca-ecosystem-sweep`
+- Automation name: `ORCA-HVN Ecosystem Sweep`
 - Schedule: every 48 hours
 - Execution environment: local Codex cron automation
-- Workspace: `/Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/HVN-Framework`
+- Workspace: `/Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/ORCA-HVN`
 
 ## Purpose
 
-Run a research-first strategic sweep for the HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, and a dedicated harness compatibility audit.
+Run a research-first strategic sweep for the ORCA-HVN ecosystem without changing product code by default. The sweep tracks execution-capability changes, setup-path changes for important external integrations, and a dedicated harness compatibility audit.
 
 Primary research question:
 
-> What new host or framework capabilities now exist that HVN can exploit, wrap, adapt, or learn from?
+> What new host or framework capabilities now exist that ORCA-HVN can exploit, wrap, adapt, or learn from?
 
 ## Inputs
 
@@ -41,7 +41,7 @@ Primary research question:
 
 ## Guardrails
 
-- do not edit HVN product code by default
+- do not edit ORCA-HVN product code by default
 - do not update dependencies by default
 - do not create branches, commits, or pushes by default
 - do not rewrite docs outside the sweep and watch artifacts by default
@@ -57,7 +57,7 @@ Primary research question:
 Each dated report must use this structure:
 
 ```markdown
-# HVN Ecosystem Sweep - YYYY-MM-DD
+# ORCA-HVN Ecosystem Sweep - YYYY-MM-DD
 
 ## Executive summary
 - important changes
@@ -71,7 +71,7 @@ Standard per-repo update section.
 Cover Codex CLI, Claude Code, Hermes Agent, OpenCode, and other materially relevant hosts. For each harness include:
 - new feature or behavior
 - affected surface: execution, memory, inspection, safety, or usability
-- whether HVN can exploit it directly
+- whether ORCA-HVN can exploit it directly
 - evidence/source
 - classification
 - adoption shape
@@ -98,7 +98,7 @@ For GitHub, Linear, and any other materially relevant service:
 - what changed
 - affected hosts
 - setup method affected: native connector, MCP, API token, plugin, CLI helper, or manual
-- whether HVN setup docs should change
+- whether ORCA-HVN setup docs should change
 - whether this creates a better default path
 - whether this breaks or deprecates an old recommendation
 - whether the recommendation is host-specific or broadly portable
@@ -109,7 +109,7 @@ For GitHub, Linear, and any other materially relevant service:
 ## Recommendations by category
 Group under commands, memory, install, cross-harness, QA, and workflow.
 
-## Recommended next HVN moves
+## Recommended next ORCA-HVN moves
 - build now
 - research next
 - wait for more evidence
@@ -148,17 +148,17 @@ Every sweep should actively look for workflow-enabling execution features:
 - official connector support changes
 - host-specific install or config steps
 - auth and permission pattern changes
-- easier setup paths HVN could recommend
-- broken or deprecated setup paths HVN should stop recommending
+- easier setup paths ORCA-HVN could recommend
+- broken or deprecated setup paths ORCA-HVN should stop recommending
 - harness-level compatibility shifts across Codex, Claude Code, Hermes Agent, OpenCode, Cursor, GitHub Copilot, and other tracked hosts
-- capability parity gaps that matter to HVN workflows
+- capability parity gaps that matter to ORCA-HVN workflows
 
 ## Harness Compatibility Audit Phase
 
 Each scheduled run should also perform a dedicated compatibility audit:
 
 1. identify tracked harnesses
-2. audit current support for HVN-relevant capabilities and integrations
+2. audit current support for ORCA-HVN-relevant capabilities and integrations
 3. update `docs/compatibility-matrix.md`
 4. write `reports/compatibility/YYYY-MM-DD.md`
 5. update `reports/compatibility/latest.md`
@@ -182,14 +182,14 @@ Every recommendation should be grouped under exactly one primary category:
 
 Classify each finding:
 
-- `Adopt now`: HVN should open a draft issue and plan a concrete framework change.
+- `Adopt now`: ORCA-HVN should open a draft issue and plan a concrete framework change.
 - `Investigate soon`: evidence is promising, but adoption shape, host support, or risk needs more research.
 - `Watch`: relevant movement, but not actionable yet.
-- `Ignore for now`: low leverage, stale, too host-specific, or outside HVN scope.
+- `Ignore for now`: low leverage, stale, too host-specific, or outside ORCA-HVN scope.
 
 Also classify the adoption shape:
 
-- native HVN feature candidate
+- native ORCA-HVN feature candidate
 - host-adapter opportunity
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
@@ -200,9 +200,9 @@ Also classify the adoption shape:
 
 Do not stop at "feature exists." Each material finding must answer:
 
-- Can HVN actually use this?
+- Can ORCA-HVN actually use this?
 - Is it host-specific or portable?
-- What would HVN need to change to benefit?
+- What would ORCA-HVN need to change to benefit?
 - Does it improve beginner UX, expert UX, or both?
 - Is it worth building now?
 - What confidence level does the evidence support?
@@ -211,7 +211,7 @@ For setup-path findings, also answer:
 
 - How did setup change?
 - Who is affected?
-- Does HVN documentation or workflow guidance need to change?
+- Does ORCA-HVN documentation or workflow guidance need to change?
 - Does the change improve the default setup path?
 - Does the change break or deprecate an existing recommendation?
 - Is the setup path host-specific or broadly portable?
@@ -220,11 +220,11 @@ For compatibility findings, also answer:
 
 - What changed in the harness compatibility picture?
 - Which harnesses gained, lost, or degraded support?
-- Which HVN workflows does the shift affect?
+- Which ORCA-HVN workflows does the shift affect?
 - Should the matrix, host adapters, workflow docs, or setup guidance change?
 - Is this a durable compatibility shift or a narrow release caveat?
 
-Avoid hype summaries, copied release notes, trivia, and findings without a recommended HVN action.
+Avoid hype summaries, copied release notes, trivia, and findings without a recommended ORCA-HVN action.
 
 ## Living Documents
 
@@ -240,7 +240,7 @@ Maintain [docs/ecosystem-opportunities.md](../../docs/ecosystem-opportunities.md
 - cross-harness or host-specific status
 - setup method when relevant
 - affected hosts when relevant
-- required HVN change
+- required ORCA-HVN change
 - related issue
 - next recommended action
 
@@ -251,8 +251,8 @@ Maintain [docs/harness-watch.md](../../docs/harness-watch.md) as the harness-lev
 If a finding is classified as `Adopt now`:
 
 - create one draft issue unless a substantially similar open or already-tracked issue exists
-- classify setup-path changes as `Adopt now` when they materially improve or break HVN guidance and should be acted on now
-- classify compatibility shifts as `Adopt now` when they materially improve or break HVN guidance and should be acted on now
+- classify setup-path changes as `Adopt now` when they materially improve or break ORCA-HVN guidance and should be acted on now
+- classify compatibility shifts as `Adopt now` when they materially improve or break ORCA-HVN guidance and should be acted on now
 - if the finding was previously tracked as `Watch` or `Investigate soon`, update the existing watch entry instead of treating it as a totally new discovery
 - include backlinks to the earlier sightings when opening the draft issue
 - use `templates/ecosystem-adopt-issue.md`
@@ -275,7 +275,7 @@ A scheduled run is complete only when:
 - `docs/ecosystem-opportunities.md` is updated
 - findings are grouped by commands, memory, install, cross-harness, QA, and workflow
 - `Adopt now` findings have draft issues without duplication
-- capability-to-HVN mapping is explicit
-- setup-path changes explain who is affected and whether HVN guidance should change
-- harness compatibility shifts explain what changed, which workflows are affected, and whether HVN docs should change
+- capability-to-ORCA-HVN mapping is explicit
+- setup-path changes explain who is affected and whether ORCA-HVN guidance should change
+- harness compatibility shifts explain what changed, which workflows are affected, and whether ORCA-HVN docs should change
 - exact source URLs are listed

@@ -1,6 +1,6 @@
 # Next-Step Guidance
 
-Next-step guidance is the short phase-exit message HVN emits after a major stage completes. It helps the user move forward without turning every phase into a tutorial.
+Next-step guidance is the short phase-exit message ORCA-HVN emits after a major stage completes. It helps the user move forward without turning every phase into a tutorial.
 
 ## When It Appears
 
@@ -73,4 +73,4 @@ If the recommended next step depends on a missing external tool, the guidance sh
 - the shortest setup path
 - the available fallback
 
-Use `hvn-check-setup` or `hvn-setup` instead of leaving the user at a dead end.
+Use `orca-check-setup` or `orca-setup` instead of leaving the user at a dead end.

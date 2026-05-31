@@ -1,6 +1,6 @@
 # Tool Trust
 
-HVN treats external tools as untrusted until they are explicitly reviewed and governed. A tool may be useful without being safe for every context.
+ORCA-HVN treats external tools as untrusted until they are explicitly reviewed and governed. A tool may be useful without being safe for every context.
 
 ## Trust Levels
 

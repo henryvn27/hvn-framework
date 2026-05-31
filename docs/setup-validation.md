@@ -1,6 +1,6 @@
 # Setup Validation
 
-Setup validation checks whether an integration can support the intended HVN action. It should avoid destructive writes unless the user approved them.
+Setup validation checks whether an integration can support the intended ORCA-HVN action. It should avoid destructive writes unless the user approved them.
 
 ## Questions To Answer
 

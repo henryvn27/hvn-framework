@@ -23,6 +23,6 @@ Runtime flags are lightweight policy switches that shape adaptation-sensitive be
 
 ## Example
 
-If `strict-compatibility-mode` is on, HVN should treat `partial` and `unclear` support more conservatively and avoid shortcut recommendations.
+If `strict-compatibility-mode` is on, ORCA-HVN should treat `partial` and `unclear` support more conservatively and avoid shortcut recommendations.
 
 If `require-replay-before-default-rollout` is on, newly reviewed compatibility support should be replayed against prior cases before becoming a default path.

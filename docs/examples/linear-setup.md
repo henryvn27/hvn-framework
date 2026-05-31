@@ -2,11 +2,11 @@
 
 ## Situation
 
-HVN is running Linear-first intake and needs to read the issue and post a plan comment.
+ORCA-HVN is running Linear-first intake and needs to read the issue and post a plan comment.
 
 ## Guidance
 
-Linear is required for direct issue-native updates. Use the host's Linear connector or approved MCP path when available. If direct access is unavailable, paste the issue context and let HVN produce a local plan comment for manual posting.
+Linear is required for direct issue-native updates. Use the host's Linear connector or approved MCP path when available. If direct access is unavailable, paste the issue context and let ORCA-HVN produce a local plan comment for manual posting.
 
 ## Validation
 

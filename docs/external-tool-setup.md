@@ -1,12 +1,12 @@
 # External Tool Setup
 
-External tools are services or local capabilities HVN can use to coordinate, inspect, or publish work outside the immediate repository. Examples include GitHub, Linear, browser automation, CI, release systems, and MCP servers.
+External tools are services or local capabilities ORCA-HVN can use to coordinate, inspect, or publish work outside the immediate repository. Examples include GitHub, Linear, browser automation, CI, release systems, and MCP servers.
 
 This setup layer decides which tools are needed for the current workflow, how the current harness can access them, how to validate access, and what fallback is available when setup is incomplete.
 
 ## Required vs Optional
 
-A tool is required only when the next HVN action cannot be completed without it.
+A tool is required only when the next ORCA-HVN action cannot be completed without it.
 
 Examples:
 
@@ -29,7 +29,7 @@ The same service may have different setup paths in different hosts.
 
 ## Decision Process
 
-1. Identify the next HVN phase.
+1. Identify the next ORCA-HVN phase.
 2. List tools needed for that phase.
 3. Mark each tool as required or optional.
 4. Detect or ask which harness is being used.

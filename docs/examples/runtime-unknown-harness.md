@@ -2,13 +2,13 @@
 
 ## Situation
 
-HVN cannot confidently identify the current host.
+ORCA-HVN cannot confidently identify the current host.
 
 ## Route
 
 - detection confidence: unknown
 - runtime choice: generic host-neutral path
-- fallback: portable HVN artifacts and manual integrations
+- fallback: portable ORCA-HVN artifacts and manual integrations
 - escalation: ask a concise harness question only if the choice would materially change the safe path
 
 ## Why

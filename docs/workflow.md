@@ -1,40 +1,40 @@
 # Workflow
 
-HVN follows a staged workflow centered on a durable work item. In Linear-first mode, that work item is a Linear issue. In opt-out mode, it is the user's chosen issue, document, or tracker item.
+ORCA-HVN follows a staged workflow centered on a durable work item. In Linear-first mode, that work item is a Linear issue. In opt-out mode, it is the user's chosen issue, document, or tracker item.
 
 ## Standard Sequence
 
-1. `hvn-linear-intake` or `hvn-onboard`: clarify issue context.
-2. `hvn-check-setup` or `hvn-setup`: identify required external tools when the next phase depends on GitHub, Linear, MCP, or a host connector.
-3. `hvn-discover`: inspect the repo, platform, dependencies, and constraints.
-4. `hvn-legacy`: run repo archaeology and modernization prep when the system is inherited, under-documented, or fragile.
-5. `hvn-research`: gather external evidence when facts may be stale or unknown.
-6. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
-7. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases, verification gates, and approval expectations.
-8. `hvn-next`: emit concise phase-exit guidance when the next move is not already obvious or underway.
-9. `hvn-goal`: decide whether the next bounded milestone should become a goal contract.
-10. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
-11. `hvn-build`: implement approved scope.
-12. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
-13. `hvn-receipt`: summarize the run outcome in a compact execution receipt.
-14. `hvn-lineage`: link the new artifact to upstream and downstream workflow artifacts.
-15. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
-16. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
-17. `hvn-review`: inspect behavior and maintainability.
-18. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
-19. `hvn-test-blind`: run first-look QA with minimal context.
-20. `hvn-test-briefed`: retest with a bounded packet.
-21. `hvn-test-regression`: verify fixes and adjacent flows.
-22. `hvn-regression-task`: convert strong findings into reusable regression work.
-23. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
-24. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
-25. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
-26. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
-27. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
-28. `hvn-replay` or `hvn-restore`: compare newer behavior or recover from known-good workflow states when needed.
-29. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-30. `hvn-retro`: capture lessons and follow-up work.
-31. `hvn-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and restore visibility when behavior needs inspection.
+1. `orca-linear-intake` or `orca-onboard`: clarify issue context.
+2. `orca-check-setup` or `orca-setup`: identify required external tools when the next phase depends on GitHub, Linear, MCP, or a host connector.
+3. `orca-discover`: inspect the repo, platform, dependencies, and constraints.
+4. `orca-legacy`: run repo archaeology and modernization prep when the system is inherited, under-documented, or fragile.
+5. `orca-research`: gather external evidence when facts may be stale or unknown.
+6. `orca-spec`: define goals, non-goals, user flows, and acceptance criteria.
+7. `orca-linear-plan-comment` or `orca-plan`: create implementation phases, verification gates, and approval expectations.
+8. `orca-next`: emit concise phase-exit guidance when the next move is not already obvious or underway.
+9. `orca-goal`: decide whether the next bounded milestone should become a goal contract.
+10. `orca-approve`: request or confirm approval when risk, scope, or confidence requires it.
+11. `orca-build`: implement approved scope.
+12. `orca-trace`: record meaningful execution steps, decisions, and stop reason.
+13. `orca-receipt`: summarize the run outcome in a compact execution receipt.
+14. `orca-lineage`: link the new artifact to upstream and downstream workflow artifacts.
+15. `orca-state`: maintain shared coordination state for multi-role or resumable runs.
+16. `orca-metrics`: record timing, retries, and optional usage signals for the run.
+17. `orca-review`: inspect behavior and maintainability.
+18. `orca-design`: review UX, accessibility, responsive behavior, and product clarity.
+19. `orca-test-blind`: run first-look QA with minimal context.
+20. `orca-test-briefed`: retest with a bounded packet.
+21. `orca-test-regression`: verify fixes and adjacent flows.
+22. `orca-regression-task`: convert strong findings into reusable regression work.
+23. `orca-checkpoint`: pause risky or ambiguous work for human inspection and decision.
+24. `orca-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
+25. `orca-tool-review` or `orca-mcp-review`: govern new or risky external tools and MCP servers.
+26. `orca-security` or `orca-security-check`: inspect security-relevant surfaces and untrusted inputs.
+27. `orca-benchmark` and `orca-eval`: judge workflow quality when framework behavior is under review.
+28. `orca-replay` or `orca-restore`: compare newer behavior or recover from known-good workflow states when needed.
+29. `orca-linear-ship-check` or `orca-ship`: prepare release and done-state evidence.
+30. `orca-retro`: capture lessons and follow-up work.
+31. `orca-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and restore visibility when behavior needs inspection.
 
 ## Recommended Linear Gates
 
@@ -48,7 +48,7 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 - Ready to Ship
 - Done
 
-Actual state names may vary by team. HVN expects equivalent gates.
+Actual state names may vary by team. ORCA-HVN expects equivalent gates.
 
 ## Reliability Layer
 
@@ -86,7 +86,7 @@ If Linear is not used, define:
 - Where linked artifacts live
 - Who can approve build and ship gates
 
-Then run the same HVN sequence against that record.
+Then run the same ORCA-HVN sequence against that record.
 
 ## Skipping Stages
 

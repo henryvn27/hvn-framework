@@ -1,6 +1,6 @@
 # Linear Issue Lifecycle
 
-An HVN issue is a durable thread of decisions, artifacts, and evidence. Linear is the default issue system; opt-out mode uses an equivalent durable work item.
+An ORCA-HVN issue is a durable thread of decisions, artifacts, and evidence. Linear is the default issue system; opt-out mode uses an equivalent durable work item.
 
 ## 1. Intake
 

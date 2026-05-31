@@ -1,12 +1,12 @@
 # Benchmark Pack
 
-HVN benchmark packs provide a repeatable way to compare onboarding and spec quality over time. The goal is not synthetic leaderboard theater. The goal is to catch whether workflow changes improve or degrade the ability to turn fuzzy requests into usable specs.
+ORCA-HVN benchmark packs provide a repeatable way to compare onboarding and spec quality over time. The goal is not synthetic leaderboard theater. The goal is to catch whether workflow changes improve or degrade the ability to turn fuzzy requests into usable specs.
 
 ## Purpose
 
 Use benchmark packs to compare:
 
-- HVN version to HVN version
+- ORCA-HVN version to ORCA-HVN version
 - prompt set A to prompt set B
 - workflow changes over time
 

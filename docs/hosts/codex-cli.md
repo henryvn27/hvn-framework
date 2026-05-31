@@ -1,13 +1,13 @@
 # Codex CLI Host Adapter
 
-Codex CLI may expose an experimental `/goal` command for long-running tasks. HVN should check the installed CLI version and command help before relying on it.
+Codex CLI may expose an experimental `/goal` command for long-running tasks. ORCA-HVN should check the installed CLI version and command help before relying on it.
 
-## HVN Usage
+## ORCA-HVN Usage
 
 Use native goal mode when:
 
 - the local CLI supports `/goal`
-- the HVN goal contract is complete
+- the ORCA-HVN goal contract is complete
 - verification is observable
 - approval gates are satisfied
 
@@ -17,7 +17,7 @@ Codex goal behavior should be treated as host-specific. When available, use the 
 
 ## Fallback
 
-If `/goal` is unavailable or experimental behavior is not acceptable, use HVN fallback:
+If `/goal` is unavailable or experimental behavior is not acceptable, use ORCA-HVN fallback:
 
 - goal contract
 - shared state
@@ -34,7 +34,7 @@ Codex setup should be verified against the installed CLI and available connector
 | GitHub | connector when available, approved MCP, or `gh` CLI | check auth, repo reachability, and required read/write scope | local repo plus manual issue, PR, check, or release steps |
 | Linear | connector when available, approved MCP, or manual context | read target issue or validate pasted issue context | pasted issue data plus local artifacts for manual posting |
 
-Use `hvn-check-setup` before blocking on GitHub or Linear. If setup is incomplete but the next phase is local, continue in degraded mode.
+Use `orca-check-setup` before blocking on GitHub or Linear. If setup is incomplete but the next phase is local, continue in degraded mode.
 
 ## Compatibility View
 

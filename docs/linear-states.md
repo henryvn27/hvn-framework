@@ -1,10 +1,10 @@
 # Linear States
 
-HVN expects workflow gates, not exact state names. Teams can rename states, use different Linear workflows, or opt out of Linear entirely, but equivalent gates should exist.
+ORCA-HVN expects workflow gates, not exact state names. Teams can rename states, use different Linear workflows, or opt out of Linear entirely, but equivalent gates should exist.
 
 ## Recommended State Mapping
 
-| HVN Gate | Example Linear State | Meaning |
+| ORCA-HVN Gate | Example Linear State | Meaning |
 | --- | --- | --- |
 | Intake | Triage | Issue needs clarification, labels, or routing. |
 | Spec intake | Ready for Spec | The issue is clear enough for a spec agent. |
@@ -16,7 +16,7 @@ HVN expects workflow gates, not exact state names. Teams can rename states, use 
 | Release | Ready to Ship | Required gates passed and ship checklist is needed. |
 | Complete | Done | Evidence is posted and no blocking work remains. |
 
-Use `hvn-linear-setup` to map existing states before changing a live workspace.
+Use `orca-linear-setup` to map existing states before changing a live workspace.
 
 ## Labels
 

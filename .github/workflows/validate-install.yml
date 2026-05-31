@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Local install
         run: |
-          ./install/install.sh --mode local --target /tmp/hvn-local
-          ./install/verify-install.sh --target /tmp/hvn-local
+          ./install/install.sh --mode local --target /tmp/orca-local
+          ./install/verify-install.sh --target /tmp/orca-local

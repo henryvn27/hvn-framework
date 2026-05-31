@@ -2,7 +2,7 @@
 
 ## Context
 
-A team wants HVN to coordinate work for a new web app repository. They use Linear but have not configured agent-specific workflow guidance.
+A team wants ORCA-HVN to coordinate work for a new web app repository. They use Linear but have not configured agent-specific workflow guidance.
 
 ## Setup Decisions
 
@@ -27,7 +27,7 @@ A team wants HVN to coordinate work for a new web app repository. They use Linea
 ## Smoke-Test Issue Comment
 
 ```text
-## HVN Linear Setup Check
+## ORCA-HVN Linear Setup Check
 
 Context read: issue title, description, labels, current state, and project.
 
@@ -38,11 +38,11 @@ Setup status:
 - Agents may recommend state transitions but should not apply them automatically.
 - Opt-out path is documented for GitHub Issues.
 
-Result: ready for a low-risk HVN issue.
+Result: ready for a low-risk ORCA-HVN issue.
 
 Recommended next state: Ready for Spec
 ```
 
 ## Follow-Up
 
-The team creates one real feature issue and runs `hvn-linear-intake` before allowing build agents to pick up work.
+The team creates one real feature issue and runs `orca-linear-intake` before allowing build agents to pick up work.

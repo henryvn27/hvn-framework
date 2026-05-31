@@ -1,6 +1,6 @@
 # Run Memory
 
-Run memory is HVN's durable record of project-specific facts, decisions, and context that should help future runs act consistently.
+Run memory is ORCA-HVN's durable record of project-specific facts, decisions, and context that should help future runs act consistently.
 
 ## Purpose
 

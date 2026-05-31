@@ -1,6 +1,6 @@
 # Observability
 
-HVN observability is a practical, file-based tracing layer for understanding what an agent run actually did. It is meant to support debugging, review, QA, and trajectory evaluation without pretending HVN needs a full telemetry platform.
+ORCA-HVN observability is a practical, file-based tracing layer for understanding what an agent run actually did. It is meant to support debugging, review, QA, and trajectory evaluation without pretending ORCA-HVN needs a full telemetry platform.
 
 ## Purpose
 

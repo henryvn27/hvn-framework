@@ -1,6 +1,6 @@
 # Architecture
 
-HVN is organized around a coordination record and four installable layers.
+ORCA-HVN is organized around a coordination record and four installable layers.
 
 ## Coordination Record
 
@@ -12,11 +12,11 @@ Linear is the default coordination record:
 - Linear comment = status update, spec, plan, QA report, review finding, or ship checklist
 - Linear linked artifact = durable supporting evidence
 
-If a user opts out of Linear, HVN requires a declared alternative record. The architecture remains the same; the storage target changes.
+If a user opts out of Linear, ORCA-HVN requires a declared alternative record. The architecture remains the same; the storage target changes.
 
 ## Installable Layers
 
-- `HVN.md` is the master operating manual.
+- `ORCA-HVN.md` is the master operating manual.
 - `commands/` contains entry-point prompts for workflows and Linear comment operations.
 - `skills/` contains reusable procedures that commands invoke.
 - `templates/` contains durable artifacts and Linear-ready comment formats.
@@ -29,12 +29,12 @@ Commands answer "what workflow should start now?" Skills answer "how should this
 
 Example:
 
-- State `In QA` with label `blind-qa` triggers `hvn-test-blind`.
-- `hvn-test-blind` invokes `hvn-blind-qa`, `hvn-web-qa` or `hvn-ios-sim-qa`, and `hvn-linear-qa`.
+- State `In QA` with label `blind-qa` triggers `orca-test-blind`.
+- `orca-test-blind` invokes `orca-blind-qa`, `orca-web-qa` or `orca-ios-sim-qa`, and `orca-linear-qa`.
 
 ## Why Blind QA Is Separate
 
-Blind QA is intentionally separated from informed QA because hidden knowledge changes the tester's behavior. Once a tester knows the intended flow, confusing UI may look obvious. HVN protects the first-look pass by limiting context to issue ID, platform, launch instructions, and optional one-sentence mission.
+Blind QA is intentionally separated from informed QA because hidden knowledge changes the tester's behavior. Once a tester knows the intended flow, confusing UI may look obvious. ORCA-HVN protects the first-look pass by limiting context to issue ID, platform, launch instructions, and optional one-sentence mission.
 
 ## Context Briefer
 
