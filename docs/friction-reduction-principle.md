@@ -24,6 +24,7 @@ In ORCA-HVN, friction includes:
 - mode confusion
 - agent handoff confusion
 - maintenance burden
+- positioning drift that makes the framework sound generic instead of useful
 
 ## What ORCA-HVN Should Remove
 
@@ -41,6 +42,7 @@ ORCA-HVN should make it easier to:
 - require only the minimum install, plugin, and harness setup needed for the next real task
 - prefer check-only, staged, or prompt-first update behavior over silent disruption when auto-update risk is unclear
 - keep the README and top-level docs short enough that a new user can reach the right path quickly
+- describe the framework in language that matches real recurring work instead of generic AI-framework branding
 
 ## What ORCA-HVN Should Not Introduce Casually
 
@@ -51,6 +53,7 @@ Do not casually add:
 - new integrations that exist only because they are possible
 - repeated clarification questions when strong context already exists
 - maintenance loops that produce more noise than signal
+- top-level copy that ignores stronger vault or repo evidence in favor of category fluff
 
 ## Operating Consequences
 
@@ -60,6 +63,7 @@ Do not casually add:
 - advanced capability should usually be opt-in
 - direct help beats setup theater
 - use what the user already has before asking them to adopt something else
+- use the strongest live evidence before reaching for generic positioning language
 
 ## Enforcement Surface
 

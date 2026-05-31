@@ -4,6 +4,8 @@
 
 ORCA is an orchestration framework for running agent-assisted software work with a clear workflow, durable artifacts, and host-aware execution paths. The formal repository and framework name is ORCA-HVN.
 
+ORCA is grounded in recurring real work, not in a generic AI-framework story: shipping iOS/macOS apps and web projects, turning research into staged decisions, tracking blockers and release follow-up, and coordinating agents without losing state.
+
 ORCA exists for the part that usually breaks first in AI-assisted development: turning vague work into a reliable process that can be reviewed, resumed, and improved over time.
 
 ## What ORCA Helps With
@@ -13,16 +15,28 @@ Use ORCA when you need more than "ask a model to do something":
 - turn a vague request into a clear work item
 - write a usable spec before implementation
 - plan and run multi-step work without losing context
-- keep review, QA, approvals, and follow-up tied to the same effort
+- keep review, QA, approvals, blockers, and follow-up tied to the same effort
+- turn research and notes into staged, promotable work instead of a pile of unprocessed context
 - adapt the workflow to different hosts, tools, and integrations without pretending they are identical
 - onboard new users into a practical agent workflow without requiring a teammate to teach them live
+
+## What It Is Grounded In
+
+The project’s center of gravity is visible in the operating context it was built around:
+
+- release and delivery work for real apps, including TestFlight, App Review, and deployment follow-up
+- research capture that gets staged, promoted, or parked based on actual lane relevance
+- explicit blocker tracking, next actions, and stale-work cleanup instead of vague backlog drift
+- mixed repo, vault, and runtime environments where the source of truth is rarely just one chat thread
+
+That is why ORCA leans so hard on artifacts, receipts, review surfaces, and routing instead of just prompts.
 
 ## Who It Is For
 
 - engineers using agentic coding tools like Codex, Claude Code, Hermes, or similar hosts
 - operators who want inspectable runs instead of opaque prompt sessions
 - teams that want repeatable workflow structure around AI-assisted software delivery
-- contributors working in real product repos, legacy systems, or mixed human-agent environments
+- contributors working in real product repos, legacy systems, release queues, or mixed human-agent environments
 - curious newcomers who want one guided path into orchestration instead of a giant command catalog
 
 ## Core Capabilities

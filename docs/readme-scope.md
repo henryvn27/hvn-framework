@@ -10,6 +10,7 @@ Its job is to:
 - summarize the main capability areas at a high level
 - give a clear first install and first-workflow path
 - route readers to the right deeper docs
+- reflect the strongest recurring work shown by the live operating evidence
 
 ## What The README Should Not Try To Do
 
@@ -21,6 +22,8 @@ It should not become:
 - a wiki replacement
 - a marketing manifesto
 - a page dominated by whichever subsystem was added most recently
+- a founder biography
+- a generic AI-framework page that could describe almost anything
 
 ## Good README Behavior
 
@@ -29,3 +32,4 @@ It should not become:
 - concise without being vague
 - balanced across the project’s real center of gravity
 - linked to deeper docs instead of duplicating them
+- specific enough to feel evidence-backed without becoming too personal
