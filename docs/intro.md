@@ -1,8 +1,8 @@
 # Intro
 
-ORCA-HVN exists because agent-assisted software work breaks down at the workflow level more often than at the text-generation level. It is an orchestration framework for that work, not just a prompt layer around it.
+ORCA exists because agent-assisted software work breaks down at the workflow level more often than at the text-generation level. The formal repository and framework name is ORCA-HVN. It is an orchestration framework for that work, not just a prompt layer around it.
 
-It is intended to replace the older GStack or GSD-centered personal workflow, not run beside it. Those tools informed some early thinking, but ORCA-HVN is the coherent operating system this repo is now built around.
+It is intended to replace the older GStack or GSD-centered personal workflow, not run beside it. Those tools informed some early thinking, but ORCA is the coherent operating system this repo is now built around.
 
 ## The Problem
 
@@ -15,9 +15,9 @@ Teams do not usually fail because the model could not produce code at all. They 
 - runs left no receipt or lineage
 - one agent could not hand off to another cleanly
 
-## The ORCA-HVN Answer
+## The ORCA Answer
 
-ORCA-HVN turns those weak points into explicit workflow surfaces:
+ORCA turns those weak points into explicit workflow surfaces:
 
 - onboarding and spec creation for clarity
 - commands and skills for repeatable operating paths
@@ -29,7 +29,7 @@ ORCA-HVN turns those weak points into explicit workflow surfaces:
 
 ## What Makes It Different
 
-ORCA-HVN is not just a prompt library. It is a workflow framework with:
+ORCA is not just a prompt library. It is a workflow framework with:
 
 - Linear-first coordination
 - blind QA and briefed QA separation

@@ -1,6 +1,6 @@
 # Documentation Home
 
-ORCA-HVN documentation is layered on purpose. Start with the smallest surface that answers your question, then go deeper only when needed.
+ORCA documentation is layered on purpose. Start with the smallest surface that answers your question, then go deeper only when needed.
 
 ## Start Here
 
@@ -8,7 +8,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [intro-guide.md](intro-guide.md): the shortest explanation of the ORCA approach
 - [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
-- [intro.md](intro.md): the core mental model and why ORCA-HVN exists
+- [intro.md](intro.md): the core mental model and why ORCA exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
 - [adaptive-learning.md](adaptive-learning.md): lightweight learning help that adapts to the user
@@ -24,7 +24,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [concept-map.md](concept-map.md): how the main framework pieces connect
 - [truth-hierarchy.md](truth-hierarchy.md): which evidence should outrank generic advice
 - [friction-reduction-principle.md](friction-reduction-principle.md): the framework-wide rule for what should surface
-- [framework-principles.md](framework-principles.md): the small set of rules ORCA-HVN should follow everywhere
+- [framework-principles.md](framework-principles.md): the small set of rules ORCA should follow everywhere
 
 ## Guides
 
