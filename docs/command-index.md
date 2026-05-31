@@ -9,6 +9,7 @@ If you are new, start with [first-workflow.md](first-workflow.md) before using t
 - `orca-install`: guided install path selection and setup
 - `orca-doctor`: install and setup validation
 - `orca-check-updates`: inspect update availability and risk before applying changes
+- `orca-corpus`: configure or inspect persistent corpus support
 - `orca-onboard`: clarify a work item
 - `orca-discover`: inspect the repo and constraints
 - `orca-legacy`: start with archaeology when the codebase is inherited or fragile

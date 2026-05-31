@@ -239,6 +239,12 @@ docs/glossary.md
 docs/concept-map.md
 docs/truth-hierarchy.md
 docs/graph-and-vault-support.md
+docs/corpus-overview.md
+docs/corpus-setup.md
+docs/corpus-settings.md
+docs/corpus-writeback.md
+docs/corpus-privacy.md
+docs/corpus-precedence.md
 docs/optional-tooling-policy.md
 docs/minimum-friction-policy.md
 docs/friction-reduction-principle.md
@@ -406,6 +412,11 @@ docs/examples/no-extra-tooling-needed.md
 docs/examples/vault-cluster-report.md
 docs/examples/graphify-helps.md
 docs/examples/graphify-not-needed.md
+docs/examples/corpus-global-inherit.md
+docs/examples/corpus-project-disabled.md
+docs/examples/corpus-writeback-confirm.md
+docs/examples/corpus-missing-path.md
+docs/examples/corpus-reindex-after-path-change.md
 docs/examples/friction-reduction-good.md
 docs/examples/friction-reduction-bad.md
 docs/examples/user-chosen-tool-support.md
@@ -505,6 +516,7 @@ commands/orca-docs.md
 commands/orca-install.md
 commands/orca-doctor.md
 commands/orca-check-updates.md
+commands/orca-corpus.md
 commands/orca-update.md
 commands/orca-integration.md
 commands/orca-recommend-stack.md
@@ -522,6 +534,7 @@ skills/orca-agent-orchestration/SKILL.md
 skills/orca-self-improvement/SKILL.md
 skills/orca-install-help/SKILL.md
 skills/orca-auto-update/SKILL.md
+skills/orca-corpus-support/SKILL.md
 skills/orca-graph-vault-support/SKILL.md
 templates/doc-refresh-note.md
 templates/wiki-update-note.md
@@ -582,6 +595,10 @@ templates/integration-validation.md
 templates/graph-fit-check.md
 templates/vault-map-report.md
 templates/graph-insight-report.md
+templates/corpus-global-settings.md
+templates/corpus-project-settings.md
+templates/corpus-writeback-policy.md
+templates/corpus-index-status.md
 templates/notebooklm-setup-checklist.md
 templates/notebooklm-usage-pattern.md
 templates/framework-improvement-note.md

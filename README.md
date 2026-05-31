@@ -17,6 +17,7 @@ Use ORCA when you need more than "ask a model to do something":
 - plan and run multi-step work without losing context
 - keep review, QA, approvals, blockers, and follow-up tied to the same effort
 - turn research and notes into staged, promotable work instead of a pile of unprocessed context
+- reuse an approved corpus or vault across sessions without making it ambient or writeable by default
 - try the strongest safe path to resolution before falling back to user escalation
 - adapt the workflow to different hosts, tools, and integrations without pretending they are identical
 - onboard new users into a practical agent workflow without requiring a teammate to teach them live
@@ -47,8 +48,8 @@ ORCA is broad, but its center of gravity is consistent:
 - Intake and planning: onboarding, discovery, spec-driven execution, milestone planning, and guided next steps
 - Execution and coordination: build flow, goal mode, background mode, delegation, and shared state
 - Inspection and safety: approvals, checkpoints, receipts, lineage, replay, restore, and review surfaces
-- Runtime and compatibility: host-aware behavior, install and setup guidance, integration routing, and compatibility docs
-- QA and improvement: blind QA, briefed QA, regression follow-up, adaptive help, and framework improvement loops
+- Runtime and compatibility: host-aware behavior, install and setup guidance, integration routing, corpus and vault reuse, and compatibility docs
+- QA and improvement: blind QA, briefed QA, adaptive help, and framework improvement loops
 
 Most supporting systems in the repo exist to reinforce those five areas, not replace them.
 
@@ -108,6 +109,7 @@ Use the top-level docs as routing, not as one giant manual:
 - I need install help: [docs/install-overview.md](docs/install-overview.md)
 - I want the shortest starter path: [docs/first-workflow.md](docs/first-workflow.md)
 - I want the big-picture model: [docs/intro.md](docs/intro.md)
+- I want to configure a reusable vault or corpus: [docs/corpus-overview.md](docs/corpus-overview.md)
 - I am coming from GStack or GSD: [docs/guides/from-gstack-or-gsd-to-orca-hvn.md](docs/guides/from-gstack-or-gsd-to-orca-hvn.md)
 - I use a controller agent like Hermes: [docs/guides/using-hvn-with-hermes.md](docs/guides/using-hvn-with-hermes.md)
 - I inherited a messy repo: [docs/legacy-modernization.md](docs/legacy-modernization.md)
@@ -121,7 +123,7 @@ These are important, but they are not the README’s center:
 - integrations, plugins, and harness-specific setup
 - self-improvement and session-quality signals
 - update channels, rollback, and release safety
-- vault or graph-assisted knowledge workflows
+- persistent corpus support, vault reuse, or graph-assisted knowledge workflows
 
 Those all have dedicated docs under [docs/README.md](docs/README.md).
 
