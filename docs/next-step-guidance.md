@@ -63,3 +63,14 @@ Phase completion creates a transition point. Next-step guidance should make that
 - blocker or approval need, if any
 
 The guidance should not replace run memory, traces, approval gates, or handoff artifacts. It is the readable bridge between them.
+
+## Missing Integrations
+
+If the recommended next step depends on a missing external tool, the guidance should say:
+
+- what integration is missing
+- why it matters for the next step
+- the shortest setup path
+- the available fallback
+
+Use `hvn-check-setup` or `hvn-setup` instead of leaving the user at a dead end.

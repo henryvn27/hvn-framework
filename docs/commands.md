@@ -30,6 +30,9 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-discover`
 - `hvn-legacy`
 - `hvn-research`
+- `hvn-setup`
+- `hvn-check-setup`
+- `hvn-validate-integration`
 - `hvn-spec`
 - `hvn-plan`
 - `hvn-next`
@@ -73,6 +76,7 @@ Use `hvn-trace` and `hvn-eval` when the workflow itself needs review, not just t
 Use `hvn-metrics` when elapsed time, retries, or optional usage signals matter, and `hvn-benchmark` when onboarding/spec quality should be compared over time.
 Use `hvn-state`, `hvn-checkpoint`, and `hvn-inspect` when multiple roles need a shared current view or when a run must pause and resume safely.
 Use `hvn-tool-review` and `hvn-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.
+Use `hvn-setup`, `hvn-check-setup`, and `hvn-validate-integration` when GitHub, Linear, MCP, connectors, or CLI helpers are needed for the workflow.
 Use `hvn-legacy` when the target system is inherited, under-documented, fragile, or modernization-focused.
 Use `hvn-goal` commands only after spec and milestone planning produce a bounded, verifiable objective.
 Use `hvn-next` after major phase completion when a short default next action would help the user move forward.

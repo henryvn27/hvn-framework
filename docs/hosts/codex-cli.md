@@ -25,6 +25,17 @@ If `/goal` is unavailable or experimental behavior is not acceptable, use HVN fa
 - goal status artifact
 - checkpoints for pause and resume
 
+## External Tool Setup
+
+Codex setup should be verified against the installed CLI and available connectors. Do not assume every Codex environment exposes the same external tools.
+
+| Service | Preferred methods | Verification | Fallback |
+| --- | --- | --- | --- |
+| GitHub | connector when available, approved MCP, or `gh` CLI | check auth, repo reachability, and required read/write scope | local repo plus manual issue, PR, check, or release steps |
+| Linear | connector when available, approved MCP, or manual context | read target issue or validate pasted issue context | pasted issue data plus local artifacts for manual posting |
+
+Use `hvn-check-setup` before blocking on GitHub or Linear. If setup is incomplete but the next phase is local, continue in degraded mode.
+
 ## Source
 
 - https://developers.openai.com/codex/cli/slash-commands

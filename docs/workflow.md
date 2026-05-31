@@ -5,31 +5,32 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 ## Standard Sequence
 
 1. `hvn-linear-intake` or `hvn-onboard`: clarify issue context.
-2. `hvn-discover`: inspect the repo, platform, dependencies, and constraints.
-3. `hvn-legacy`: run repo archaeology and modernization prep when the system is inherited, under-documented, or fragile.
-4. `hvn-research`: gather external evidence when facts may be stale or unknown.
-5. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
-6. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases, verification gates, and approval expectations.
-7. `hvn-next`: emit concise phase-exit guidance when the next move is not already obvious or underway.
-8. `hvn-goal`: decide whether the next bounded milestone should become a goal contract.
-9. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
-10. `hvn-build`: implement approved scope.
-11. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
-12. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
-13. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
-14. `hvn-review`: inspect behavior and maintainability.
-15. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
-16. `hvn-test-blind`: run first-look QA with minimal context.
-17. `hvn-test-briefed`: retest with a bounded packet.
-18. `hvn-test-regression`: verify fixes and adjacent flows.
-19. `hvn-regression-task`: convert strong findings into reusable regression work.
-20. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
-21. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
-22. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
-23. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
-24. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
-25. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-26. `hvn-retro`: capture lessons and follow-up work.
+2. `hvn-check-setup` or `hvn-setup`: identify required external tools when the next phase depends on GitHub, Linear, MCP, or a host connector.
+3. `hvn-discover`: inspect the repo, platform, dependencies, and constraints.
+4. `hvn-legacy`: run repo archaeology and modernization prep when the system is inherited, under-documented, or fragile.
+5. `hvn-research`: gather external evidence when facts may be stale or unknown.
+6. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
+7. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases, verification gates, and approval expectations.
+8. `hvn-next`: emit concise phase-exit guidance when the next move is not already obvious or underway.
+9. `hvn-goal`: decide whether the next bounded milestone should become a goal contract.
+10. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
+11. `hvn-build`: implement approved scope.
+12. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
+13. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
+14. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
+15. `hvn-review`: inspect behavior and maintainability.
+16. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
+17. `hvn-test-blind`: run first-look QA with minimal context.
+18. `hvn-test-briefed`: retest with a bounded packet.
+19. `hvn-test-regression`: verify fixes and adjacent flows.
+20. `hvn-regression-task`: convert strong findings into reusable regression work.
+21. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
+22. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
+23. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
+24. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
+25. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
+26. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+27. `hvn-retro`: capture lessons and follow-up work.
 
 ## Recommended Linear Gates
 
@@ -51,6 +52,7 @@ The workflow now relies on six supporting controls:
 
 - onboarding, discovery, and spec create durable context
 - next-step guidance makes phase exits clear without adding process noise
+- setup checks keep GitHub, Linear, and MCP dependencies explicit and optional when possible
 - legacy archaeology turns under-documented systems into actionable modernization context
 - goal contracts make long-running work bounded and verifiable
 - run memory stores reusable facts and decisions
@@ -83,3 +85,5 @@ Then run the same HVN sequence against that record.
 Small changes may combine stages. A production feature touching auth, payments, data deletion, public UX, install scripts, or CI should not skip spec, review, security consideration, and QA.
 
 When a major stage completes, use [next-step guidance](next-step-guidance.md) unless the next action is already being executed or the user has opted out.
+
+If a missing integration blocks that next action, use [external tool setup](external-tool-setup.md) and [degraded mode](degraded-mode.md) before asking the user to install anything.

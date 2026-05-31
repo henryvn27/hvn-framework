@@ -39,6 +39,7 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Human checkpoints:** pause, inspect, approve, reject, and resume are explicit workflow moves.
 - **Inspector artifacts:** runs can be reviewed without a custom UI.
 - **Tool governance:** external tools and MCP servers have explicit trust levels, registry entries, and audit expectations.
+- **External tool setup:** GitHub, Linear, connectors, MCP, CLI helpers, and manual fallbacks are handled through harness-aware setup checks.
 - **Legacy modernization:** inherited systems are handled through archaeology, enrichment, risk analysis, and staged migration.
 - **Goal mode:** bounded, verifiable milestones can use host-native `/goal` when supported, with a safe fallback when not.
 - **Next-step guidance:** major phase exits produce concise, adaptive guidance for what to do next.
@@ -97,6 +98,11 @@ For Linear-first setup, read:
 - `docs/tool-registry.md`
 - `docs/tool-safety-rules.md`
 - `docs/mcp-review-workflow.md`
+- `docs/external-tool-setup.md`
+- `docs/integrations-overview.md`
+- `docs/setup-validation.md`
+- `docs/degraded-mode.md`
+- `docs/setup-ux.md`
 - `docs/legacy-modernization.md`
 - `docs/repo-archaeology.md`
 - `docs/next-step-guidance.md`
@@ -122,28 +128,29 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 
 1. Issue enters inbox or triage.
 2. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
-3. `hvn-legacy` runs when the target is inherited, under-documented, or fragile.
-4. `hvn-spec` creates a structured spec from issue context or modernization audit.
-5. `hvn-linear-plan-comment` posts the plan to the issue.
-6. `hvn-next` gives a short phase-exit recommendation when useful.
-7. `hvn-approve` records approval when scope or risk requires it.
-8. `hvn-goal` recommends goal mode only for bounded, verifiable milestones.
-9. `hvn-build` executes approved scope or the goal contract.
-10. `hvn-trace` records what happened when the run is meaningful or risky.
-11. `hvn-state` keeps shared coordination context current across roles.
-12. `hvn-metrics` records time, retries, and optional usage signals.
-13. `hvn-review` posts findings.
-14. `hvn-test-blind` runs first-look QA with minimal issue context.
-15. `hvn-context-brief` creates a bounded second-pass packet.
-16. `hvn-test-briefed` and `hvn-test-regression` retest.
-17. `hvn-regression-task` promotes high-value findings into reusable regression work.
-18. `hvn-checkpoint` pauses risky or ambiguous work for human inspection and decision.
-19. `hvn-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-20. `hvn-tool-review` or `hvn-mcp-review` governs new or risky external tools.
-21. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-22. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
-23. `hvn-linear-ship-check` posts ship readiness.
-24. Issue moves to done only with evidence.
+3. `hvn-check-setup` identifies required GitHub, Linear, MCP, connector, or CLI dependencies when needed.
+4. `hvn-legacy` runs when the target is inherited, under-documented, or fragile.
+5. `hvn-spec` creates a structured spec from issue context or modernization audit.
+6. `hvn-linear-plan-comment` posts the plan to the issue.
+7. `hvn-next` gives a short phase-exit recommendation when useful.
+8. `hvn-approve` records approval when scope or risk requires it.
+9. `hvn-goal` recommends goal mode only for bounded, verifiable milestones.
+10. `hvn-build` executes approved scope or the goal contract.
+11. `hvn-trace` records what happened when the run is meaningful or risky.
+12. `hvn-state` keeps shared coordination context current across roles.
+13. `hvn-metrics` records time, retries, and optional usage signals.
+14. `hvn-review` posts findings.
+15. `hvn-test-blind` runs first-look QA with minimal issue context.
+16. `hvn-context-brief` creates a bounded second-pass packet.
+17. `hvn-test-briefed` and `hvn-test-regression` retest.
+18. `hvn-regression-task` promotes high-value findings into reusable regression work.
+19. `hvn-checkpoint` pauses risky or ambiguous work for human inspection and decision.
+20. `hvn-inspect` produces a resumable view of run identity, state, approvals, and blockers.
+21. `hvn-tool-review` or `hvn-mcp-review` governs new or risky external tools.
+22. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+23. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
+24. `hvn-linear-ship-check` posts ship readiness.
+25. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -179,6 +186,7 @@ The reliability layer adds:
 - shared-state and checkpoint artifacts in `templates/shared-state.md`, `templates/checkpoint-*.md`, and `templates/run-inspection.md`
 - approval requests in `templates/approval-request.md`
 - tool and MCP governance templates in `templates/tool-registry-entry.md`, `templates/mcp-server-entry.md`, and `templates/mcp-review.md`
+- setup templates in `templates/tool-requirements.md`, `templates/integration-status.md`, `templates/integration-health-report.md`, and `templates/*setup*guidance*.md`
 - legacy modernization artifacts in `templates/legacy-audit.md`, `templates/legacy-risk-report.md`, and `templates/modernization-spec.md`
 - goal artifacts in `templates/goal-contract.md` and `templates/goal-status.md`
 - next-step artifacts in `templates/next-step-*.md` and `templates/user-guidance-profile.md`

@@ -30,6 +30,13 @@ for file in \
   docs/tool-registry.md \
   docs/tool-safety-rules.md \
   docs/mcp-review-workflow.md \
+  docs/external-tool-setup.md \
+  docs/integrations-overview.md \
+  docs/setup-validation.md \
+  docs/degraded-mode.md \
+  docs/setup-ux.md \
+  docs/integrations/github.md \
+  docs/integrations/linear.md \
   docs/legacy-modernization.md \
   docs/repo-archaeology.md \
   docs/onboarding.md \
@@ -49,6 +56,8 @@ for file in \
   docs/hosts/codex-cli.md \
   docs/hosts/claude-code.md \
   docs/hosts/hermes-agent.md \
+  docs/hosts/vscode.md \
+  docs/hosts/generic.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -65,6 +74,13 @@ for file in \
   templates/tool-registry-entry.md \
   templates/mcp-server-entry.md \
   templates/mcp-review.md \
+  templates/tool-requirements.md \
+  templates/integration-status.md \
+  templates/integration-health-report.md \
+  templates/github-setup-checklist.md \
+  templates/linear-setup-checklist.md \
+  templates/setup-guidance-quick.md \
+  templates/setup-guidance-guided.md \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
@@ -99,6 +115,9 @@ for file in \
   commands/hvn-inspect.md \
   commands/hvn-tool-review.md \
   commands/hvn-mcp-review.md \
+  commands/hvn-setup.md \
+  commands/hvn-check-setup.md \
+  commands/hvn-validate-integration.md \
   commands/hvn-legacy.md \
   commands/hvn-next.md \
   commands/hvn-goal.md \
@@ -114,6 +133,7 @@ for file in \
   skills/hvn-shared-state/SKILL.md \
   skills/hvn-checkpoint/SKILL.md \
   skills/hvn-tool-governance/SKILL.md \
+  skills/hvn-tool-setup/SKILL.md \
   skills/hvn-legacy/SKILL.md \
   skills/hvn-next-step/SKILL.md \
   skills/hvn-goal-mode/SKILL.md \
@@ -132,6 +152,13 @@ for file in \
   docs/examples/tool-review.md \
   docs/examples/mcp-server-review.md \
   docs/examples/high-risk-tool-approval.md \
+  docs/examples/github-setup.md \
+  docs/examples/linear-setup.md \
+  docs/examples/setup-github-codex.md \
+  docs/examples/setup-linear-claude-code.md \
+  docs/examples/setup-fallback-manual.md \
+  docs/examples/integration-health-check.md \
+  docs/examples/optional-tool-not-required.md \
   docs/examples/legacy-repo-audit.md \
   docs/examples/legacy-modernization-plan.md \
   docs/examples/business-logic-extraction.md \

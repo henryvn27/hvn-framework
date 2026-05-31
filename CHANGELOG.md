@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added harness-aware external tool setup for GitHub and Linear, including setup commands, validation artifacts, host guides, and degraded-mode fallbacks.
 - Added adaptive next-step guidance for phase exits, including tone rules, experience adaptation, phase templates, examples, and the `hvn-next` command.
 - Upgraded the recurring ecosystem sweep to track harness-native execution capabilities, maintain ecosystem opportunities, and require explicit capability-to-HVN mapping.
 - Added ecosystem sweep automation artifacts, including tracked sources, living watch document, draft adopt-issue template, and promotion-history rules.
