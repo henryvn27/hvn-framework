@@ -14,6 +14,7 @@ Ask:
 - what should have been easier?
 - what should ORCA-HVN have already known or handled?
 - did ORCA-HVN create unnecessary setup work or too many decisions?
+- would one small user-facing coaching hint have reduced friction next time?
 - what feature, doc, guide, command, or automation was missing?
 - was this a one-off or a reusable framework problem?
 - did the user seem frustrated based on observable evidence?

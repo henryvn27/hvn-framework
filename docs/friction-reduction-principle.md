@@ -35,6 +35,7 @@ ORCA-HVN should make it easier to:
 - keep state, evidence, and review artifacts in one place
 - support user-chosen tools without turning support into debate
 - hide advanced capability until it becomes relevant
+- help users improve over time without making them feel corrected
 
 ## What ORCA-HVN Should Not Introduce Casually
 
@@ -65,6 +66,7 @@ This principle should shape:
 - runtime adaptation and agent behavior
 - automation and maintenance loops
 - feature review for new framework additions
+- adaptive guidance and coaching surfaces
 
 Use:
 

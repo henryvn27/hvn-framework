@@ -24,6 +24,7 @@ These are evidence signals, not automatic truth.
 - unclear guidance signal
 - over-automation or under-explanation signal
 - setup-theater signal
+- missed-coaching-opportunity signal
 
 ## Required Signal Fields
 

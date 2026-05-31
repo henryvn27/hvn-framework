@@ -22,6 +22,7 @@ Use ORCA-HVN when the hard part is not "generate code," but:
 - adapting to different harnesses and integration setups
 - preserving QA, approvals, receipts, and follow-up artifacts around the same work
 - giving new users a guided way to learn orchestration instead of dropping them into an unstructured tool pile
+- helping users improve prompting, context handoff, and AI-development workflow patterns without turning ORCA into a lecture
 
 ## Who It Is For
 
@@ -48,6 +49,7 @@ ORCA-HVN is not only a prompt or command pack. It combines:
 - paved-road workflows for common use cases
 - a session-end improvement loop that turns real friction into framework backlog work
 - quality-signal detection for frustration, generic output, wrong-direction behavior, and poor recovery
+- adaptive learning help that stays on by default but is easy to reduce or disable
 
 ## Start Here
 

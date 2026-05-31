@@ -30,7 +30,9 @@ Avoid:
 - "obviously" or "simply" phrasing
 - generic praise
 - process theater
+- corrective-teacher tone
 
 ## Respectful Adaptation
 
 Beginner guidance can include context without sounding childish. Advanced guidance can be terse without becoming cryptic. The user should feel oriented, not managed.
+Adaptive coaching should feel like optional help, not criticism.

@@ -3,6 +3,7 @@
 Onboarding turns an unclear request, issue, or project idea into enough context for a useful spec.
 
 It should also act as a teaching surface. A good onboarding flow helps a user understand how ORCA-HVN works while it is gathering the information needed for the next step.
+That teaching should feel like lightweight support, not correction.
 
 ## Output
 
@@ -48,3 +49,4 @@ Next-step guidance should be brief:
 - what done means for the spec phase
 
 Do not over-interview. If more questions would not materially improve the first spec, record assumptions and move forward.
+If a small context or prompting hint would help the user next time, keep it to one calm concrete nudge.

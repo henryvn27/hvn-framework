@@ -18,6 +18,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 
 - Core governance: `orca-core`
 - Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`, `orca-business-ideation`, `orca-attribution`, `orca-background-mode`, `orca-docs-system`, `orca-integrations`, `orca-integration-recommendation`, `orca-graph-vault-support`
+- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`, `orca-business-ideation`, `orca-attribution`, `orca-background-mode`, `orca-docs-system`, `orca-integrations`, `orca-integration-recommendation`, `orca-graph-vault-support`, `orca-adaptive-guidance`
 - Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
 - Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`, `orca-delegation`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
@@ -57,3 +58,4 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-integration-recommendation` for restrained, best-fit stack recommendations and respectful setup-only support for user-chosen tools
 - `orca-graph-vault-support` for low-friction vault inspection and optional graph analysis only when it materially improves understanding
 - `orca-friction-policy` for deciding whether a feature, integration, or workflow surface reduces more friction than it creates
+- `orca-adaptive-guidance` for lightweight skill-sensitive coaching, opt-out learning help, and non-condescending prompt or context hints
