@@ -78,6 +78,7 @@ Each eval run should produce a human-reviewable report with:
 - suggested framework improvements
 
 When workflow efficiency matters, pair evals with per-run accounting from [docs/workflow-accounting.md](workflow-accounting.md).
+When shared-state, checkpoint, or inspection artifacts exist, use them as additional trajectory evidence rather than ignoring the coordination layer.
 
 ## Relationship To QA
 

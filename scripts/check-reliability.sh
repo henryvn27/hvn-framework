@@ -22,7 +22,14 @@ for file in \
   docs/benchmark-pack.md \
   docs/workflow-accounting.md \
   docs/qa-to-regression.md \
+  docs/shared-state.md \
+  docs/human-checkpoints.md \
+  docs/inspector.md \
   templates/run-trace.md \
+  templates/shared-state.md \
+  templates/checkpoint-request.md \
+  templates/checkpoint-decision.md \
+  templates/run-inspection.md \
   templates/eval-case.md \
   templates/eval-report.md \
   templates/approval-request.md \
@@ -44,12 +51,17 @@ for file in \
   commands/hvn-benchmark.md \
   commands/hvn-metrics.md \
   commands/hvn-regression-task.md \
+  commands/hvn-state.md \
+  commands/hvn-checkpoint.md \
+  commands/hvn-inspect.md \
   skills/hvn-observability/SKILL.md \
   skills/hvn-eval/SKILL.md \
   skills/hvn-approval-gate/SKILL.md \
   skills/hvn-benchmark/SKILL.md \
   skills/hvn-accounting/SKILL.md \
   skills/hvn-regression-task/SKILL.md \
+  skills/hvn-shared-state/SKILL.md \
+  skills/hvn-checkpoint/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -58,6 +70,10 @@ for file in \
   docs/examples/benchmark-run.md \
   docs/examples/workflow-metrics-report.md \
   docs/examples/qa-to-regression.md \
+  docs/examples/shared-state-handoff.md \
+  docs/examples/checkpoint-before-risky-change.md \
+  docs/examples/run-inspection.md \
+  docs/examples/pause-and-resume.md \
   examples/evals/starter-set.md
 do
   [ -f "$file" ] || fail "missing reliability file: $file"

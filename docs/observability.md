@@ -64,6 +64,7 @@ Run memory answers "what should future runs remember?".
 Traces answer "what did this run actually do?".
 
 See [docs/run-memory.md](run-memory.md) for the durable-memory side of the model.
+See [docs/shared-state.md](shared-state.md) for the active coordination side of the model.
 
 ## How Traces Help
 
@@ -71,6 +72,7 @@ See [docs/run-memory.md](run-memory.md) for the durable-memory side of the model
 - Review: show what evidence supported a change or recommendation.
 - Evals: score the trajectory, not just the final answer.
 - Handoffs: let the next agent understand what already happened.
+- Inspection: give humans enough evidence to approve or resume without rereading the entire history.
 
 ## Storage Model
 

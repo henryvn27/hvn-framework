@@ -16,6 +16,7 @@ HVN is Linear-first by default. Linear is the preferred system of record for iss
 8. **Risk needs explicit control:** risky work should cross an approval gate, not hide inside momentum.
 9. **Workflow quality is observable:** meaningful runs should be traceable and evaluable.
 10. **Improvement needs evidence:** benchmark packs, workflow metrics, and regression tasks should show whether HVN is actually getting better.
+11. **Coordination needs inspectable state:** cooperating roles should share a current operating picture and humans should be able to pause, inspect, and resume safely.
 
 ## Coordination Modes
 
@@ -46,11 +47,14 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Approval mode:** request or confirm approval for risky work before execution continues.
 - **Build mode:** implement the approved plan with focused edits and local verification.
 - **Trace mode:** record the meaningful path of a run.
+- **Shared-state mode:** maintain the active multi-role coordination picture.
 - **Accounting mode:** record workflow timing, retries, and optional usage signals.
 - **Review mode:** inspect for bugs, regressions, maintainability, accessibility, and release risk.
 - **Blind QA mode:** evaluate the product with no hidden context.
 - **Briefed QA mode:** retest with a bounded context packet.
 - **Regression-task mode:** convert high-value findings into reusable regression work.
+- **Checkpoint mode:** pause, inspect, approve, reject, or revise and resume.
+- **Inspection mode:** aggregate run identity, state, approvals, artifacts, and blockers into a resumable view.
 - **Benchmark mode:** compare onboarding and spec quality across versions or workflow changes.
 - **Eval mode:** judge the trajectory and artifact quality of a workflow.
 - **Ship mode:** prepare ship readiness, release notes, and handoff.
@@ -65,7 +69,10 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Implementation plan or Linear plan comment
 - Approval request or approval record when risk requires it
 - Run trace for meaningful or risky runs
+- Shared-state artifact when multiple roles are cooperating or handoff quality matters
 - Workflow metrics record when operational efficiency matters
+- Checkpoint request and decision when humans intervene mid-run
+- Run inspection artifact when a run is paused, blocked, or needs explicit review
 - Review report or Linear review comment
 - QA report or Linear QA comment
 - Regression task when a finding is strong enough to preserve
@@ -94,14 +101,16 @@ Then use the standard lifecycle:
 4. Plan is posted to the issue.
 5. Approval gates determine whether build can proceed automatically or needs explicit human approval.
 6. Build agent executes approved scope.
-7. Trace and workflow metrics record what happened and what it cost in time or retries.
+7. Trace, shared state, and workflow metrics record what happened and what the current run picture looks like.
 8. Review and QA surface product and workflow failures.
 9. Context briefer creates a minimal second-pass brief.
 10. Guided QA reruns with limited context.
 11. Strong findings can generate reusable regression tasks.
-12. Benchmark and eval passes happen as needed when framework quality is under review.
-13. Security and ship readiness checks finish the evidence chain.
-14. Issue moves to done only with evidence.
+12. Checkpoints pause risky or ambiguous work for human inspection and decision.
+13. Inspector artifacts make resume and handoff state easy to review.
+14. Benchmark and eval passes happen as needed when framework quality is under review.
+15. Security and ship readiness checks finish the evidence chain.
+16. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -135,6 +144,10 @@ Use benchmark packs when comparing onboarding or spec quality over time. Use wor
 ## Regression Preservation Policy
 
 When QA, review, or debugging uncovers a repeated or high-value risk, consider promoting it into a regression task so the lesson survives the immediate fix.
+
+## Shared State And Checkpoint Policy
+
+Use shared state for the current multi-role coordination picture, not for durable memory or trace detail. Use checkpoints when humans need to inspect or decide before the run continues. Resume only from recorded checkpoint decisions.
 
 ## Security And Prompt-Injection Policy
 

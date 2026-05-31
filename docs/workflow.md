@@ -12,17 +12,20 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 6. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
 7. `hvn-build`: implement approved scope.
 8. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
-9. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
-10. `hvn-review`: inspect behavior and maintainability.
-11. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
-12. `hvn-test-blind`: run first-look QA with minimal context.
-13. `hvn-test-briefed`: retest with a bounded packet.
-14. `hvn-test-regression`: verify fixes and adjacent flows.
-15. `hvn-regression-task`: convert strong findings into reusable regression work.
-16. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
-17. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
-18. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-19. `hvn-retro`: capture lessons and follow-up work.
+9. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
+10. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
+11. `hvn-review`: inspect behavior and maintainability.
+12. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
+13. `hvn-test-blind`: run first-look QA with minimal context.
+14. `hvn-test-briefed`: retest with a bounded packet.
+15. `hvn-test-regression`: verify fixes and adjacent flows.
+16. `hvn-regression-task`: convert strong findings into reusable regression work.
+17. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
+18. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
+19. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
+20. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
+21. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+22. `hvn-retro`: capture lessons and follow-up work.
 
 ## Recommended Linear Gates
 
@@ -45,11 +48,14 @@ The workflow now relies on six supporting controls:
 - onboarding, discovery, and spec create durable context
 - run memory stores reusable facts and decisions
 - traces record what happened
+- shared state records the current multi-role coordination picture
 - workflow metrics record time and retry burden
 - evals judge how well it happened
 - benchmark packs compare onboarding and spec quality over time
 - regression tasks preserve repeated QA lessons
 - approval gates control risky actions
+- checkpoints create safe human intervention points
+- inspector artifacts make paused and blocked runs resumable
 - contracts keep artifacts structurally consistent
 
 ## Opt-Out Workflow

@@ -17,6 +17,8 @@ Run memory is not a full execution log.
 
 If you need to know what happened during a specific run, use a trace. See [docs/observability.md](observability.md).
 
+If you need the current coordination picture for an active run, use shared state. See [docs/shared-state.md](shared-state.md).
+
 ## Good Run Memory Entries
 
 Good entries are:
@@ -35,7 +37,8 @@ Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memo
 - spec and plan define intended work
 - run memory preserves durable lessons
 - traces record what happened during a run
+- shared state records the current multi-role picture for an active run
 - evals judge how well the workflow performed
 - workflow metrics record time, retries, and optional usage signals
 
-Run memory may reference benchmark results, workflow metrics summaries, or regression-task decisions when those become durable project context, but it should not duplicate the underlying per-run artifacts.
+Run memory may reference benchmark results, workflow metrics summaries, regression-task decisions, or checkpoint outcomes when those become durable project context, but it should not duplicate the underlying per-run artifacts.

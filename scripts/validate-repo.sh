@@ -41,6 +41,9 @@ docs/benchmark-pack.md
 docs/workflow-accounting.md
 docs/qa-to-regression.md
 docs/benchmark-reporting.md
+docs/shared-state.md
+docs/human-checkpoints.md
+docs/inspector.md
 docs/approval-gates.md
 docs/artifact-contracts.md
 docs/security-guardrails.md
@@ -68,6 +71,10 @@ docs/examples/workflow-metrics-report.md
 docs/examples/workflow-cost-report.md
 docs/examples/retry-burden-analysis.md
 docs/examples/qa-to-regression.md
+docs/examples/shared-state-handoff.md
+docs/examples/checkpoint-before-risky-change.md
+docs/examples/run-inspection.md
+docs/examples/pause-and-resume.md
 benchmarks/onboarding-spec/README.md
 mcp/linear.example.json
 "
@@ -84,9 +91,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 28 ] || fail "expected at least 28 command definitions"
-[ "$skill_count" -ge 29 ] || fail "expected at least 29 skill definitions"
-[ "$template_count" -ge 33 ] || fail "expected at least 33 templates"
+[ "$command_count" -ge 31 ] || fail "expected at least 31 command definitions"
+[ "$skill_count" -ge 31 ] || fail "expected at least 31 skill definitions"
+[ "$template_count" -ge 37 ] || fail "expected at least 37 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

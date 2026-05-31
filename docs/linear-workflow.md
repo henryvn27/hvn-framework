@@ -23,14 +23,16 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 4. Plan is posted to the issue.
 5. Approval gates decide whether build can proceed or needs explicit human approval.
 6. Build agent executes approved scope.
-7. Trace and workflow metrics artifacts make the run inspectable.
+7. Shared state, traces, and workflow metrics artifacts keep the current run picture inspectable.
 8. Blind QA agent runs first-look test.
 9. Context briefer creates a minimal second-pass brief.
 10. Guided QA reruns with limited context.
 11. Strong findings can generate reusable regression tasks.
-12. Security, benchmark, eval, and regression passes run as needed.
-13. Ship readiness checklist is posted.
-14. Issue moves to done only with evidence.
+12. Checkpoints pause risky or ambiguous work for explicit human inspection.
+13. Inspector artifacts summarize phase, approvals, artifacts, and blockers when review or resume is needed.
+14. Security, benchmark, eval, and regression passes run as needed.
+15. Ship readiness checklist is posted.
+16. Issue moves to done only with evidence.
 
 ## Agent Update Rule
 
@@ -43,6 +45,7 @@ Every meaningful agent pass should leave a Linear comment with:
 - Which state should come next
 
 When a run is meaningful, risky, or confusing, also link a trace artifact so the next maintainer can reconstruct what happened.
+When multiple roles are cooperating or a pause is likely, also link shared-state or inspection artifacts.
 
 ## Approval Rule
 
