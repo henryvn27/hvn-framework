@@ -10,6 +10,10 @@ It is also the primary workflow, not a companion layer for GStack or GSD. Those 
 
 It should also teach that path. A new user should be able to start learning orchestration inside ORCA-HVN itself instead of waiting for someone else to train them live.
 
+Framework-wide rule:
+
+- ORCA-HVN should reduce friction, not create more setup work
+
 ## What It Solves
 
 Use ORCA-HVN when the hard part is not "make the model write code," but:
@@ -46,10 +50,11 @@ If that path feels clear, then widen into the rest of the framework.
 ## Read In This Order
 
 1. [intro.md](intro.md)
-2. [first-workflow.md](first-workflow.md)
-3. [quickstart.md](quickstart.md)
-4. [choose-your-path.md](choose-your-path.md)
-5. [feature-index.md](feature-index.md) when you want the broader map
+2. [intro-guide.md](intro-guide.md)
+3. [first-workflow.md](first-workflow.md)
+4. [quickstart.md](quickstart.md)
+5. [choose-your-path.md](choose-your-path.md)
+6. [feature-index.md](feature-index.md) when you want the broader map
 
 ## Best Next Page By Situation
 

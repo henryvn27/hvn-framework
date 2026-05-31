@@ -13,6 +13,7 @@ Ask:
 - what repeated manual effort?
 - what should have been easier?
 - what should ORCA-HVN have already known or handled?
+- did ORCA-HVN create unnecessary setup work or too many decisions?
 - what feature, doc, guide, command, or automation was missing?
 - was this a one-off or a reusable framework problem?
 - did the user seem frustrated based on observable evidence?

@@ -17,6 +17,7 @@ The wiki is a summary and routing layer, not a second full copy of the docs tree
 - a knowledge-layer integration such as NotebookLM becomes a practical optional path for research or documentation workflows
 - vault or graph analysis reveals missing hub pages, duplicated topic areas, or weak wiki routing
 - README or `docs/start-here.md` changes enough that the wiki homepage would now mislead readers
+- the docs layer starts surfacing more routes than a new user can reasonably absorb in the first pass
 
 ## Refresh Targets
 

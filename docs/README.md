@@ -5,6 +5,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 ## Start Here
 
 - [start-here.md](start-here.md): the best first page for most readers
+- [intro-guide.md](intro-guide.md): the shortest explanation of the ORCA approach
 - [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
 - [intro.md](intro.md): the core mental model and why ORCA-HVN exists
@@ -20,6 +21,8 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [glossary.md](glossary.md): plain-language definitions for core terms
 - [concept-map.md](concept-map.md): how the main framework pieces connect
 - [truth-hierarchy.md](truth-hierarchy.md): which evidence should outrank generic advice
+- [friction-reduction-principle.md](friction-reduction-principle.md): the framework-wide rule for what should surface
+- [framework-principles.md](framework-principles.md): the small set of rules ORCA-HVN should follow everywhere
 
 ## Guides
 
@@ -59,6 +62,8 @@ These are teaching-oriented pages for common paths:
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
 - [optional-tooling-policy.md](optional-tooling-policy.md)
 - [minimum-friction-policy.md](minimum-friction-policy.md)
+- [feature-visibility-tiers.md](feature-visibility-tiers.md)
+- [feature-gate-friction-check.md](feature-gate-friction-check.md)
 - [graph-fit-rules.md](graph-fit-rules.md)
 - [graph-analysis-output-modes.md](graph-analysis-output-modes.md)
 - [choose-your-stack.md](choose-your-stack.md)

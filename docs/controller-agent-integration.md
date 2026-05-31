@@ -66,6 +66,7 @@ Codex-like executors are a strong fit for:
 The controller should brief the executor with explicit scope, artifacts, constraints, verification requirements, and stop conditions.
 
 For research-heavy work, a controller agent may also choose an optional knowledge surface such as NotebookLM when the user already uses it or explicitly requests it. That should be treated as a document and synthesis helper, not the controller's canonical state store.
+The controller should prefer the lightest route that preserves coherence instead of assembling a larger tool chain by default.
 
 ## Ownership Rule
 

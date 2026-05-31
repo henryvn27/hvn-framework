@@ -23,6 +23,7 @@ Every sweep should explicitly watch:
 - workflow metrics and cost tracking
 - modern startup stack defaults across web, mobile, auth, billing, analytics, and monitoring
 - whether current defaults still look like best-fit recommendations rather than popularity-driven suggestions
+- whether ORCA-HVN is accumulating setup burden or option sprawl in places that should stay simpler
 - approval and human-in-the-loop patterns
 - tool governance and MCP review
 - GitHub integration setup paths
@@ -147,6 +148,7 @@ Use this section for easier setup paths ORCA-HVN may want to adopt.
 - If a setup path changes from local server to remote MCP, verify auth and permission implications before recommending it.
 - Do not blur NotebookLM Enterprise APIs with community automation. Track them as separate setup paths.
 - Do not let graph tooling drift into mandatory setup. Keep it explicitly optional.
+- Do not widen the default surface just because a tool or host capability exists.
 
 ## Recently Adopted
 

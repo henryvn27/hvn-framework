@@ -173,6 +173,7 @@ docs/start-here.md
 docs/first-workflow.md
 docs/quickstart.md
 docs/intro.md
+docs/intro-guide.md
 docs/feature-index.md
 docs/command-index.md
 docs/use-case-map.md
@@ -183,6 +184,10 @@ docs/truth-hierarchy.md
 docs/graph-and-vault-support.md
 docs/optional-tooling-policy.md
 docs/minimum-friction-policy.md
+docs/friction-reduction-principle.md
+docs/framework-principles.md
+docs/feature-gate-friction-check.md
+docs/feature-visibility-tiers.md
 docs/graph-fit-rules.md
 docs/graph-analysis-output-modes.md
 docs/visual-quality.md
@@ -323,6 +328,11 @@ docs/examples/no-extra-tooling-needed.md
 docs/examples/vault-cluster-report.md
 docs/examples/graphify-helps.md
 docs/examples/graphify-not-needed.md
+docs/examples/friction-reduction-good.md
+docs/examples/friction-reduction-bad.md
+docs/examples/user-chosen-tool-support.md
+docs/examples/optional-feature-hidden.md
+docs/examples/progressive-disclosure-onboarding.md
 docs/examples/notebooklm-research-flow.md
 docs/examples/notebooklm-user-chosen-setup.md
 docs/examples/notebooklm-enterprise-path.md
@@ -389,6 +399,7 @@ skills/orca-integrations/SKILL.md
 skills/orca-integration-recommendation/SKILL.md
 skills/orca-docs-system/SKILL.md
 skills/orca-session-improvement/SKILL.md
+skills/orca-friction-policy/SKILL.md
 skills/orca-graph-vault-support/SKILL.md
 templates/doc-refresh-note.md
 templates/wiki-update-note.md
@@ -399,6 +410,7 @@ templates/integration-checklist.md
 templates/use-case-profile.md
 templates/tool-fit-entry.md
 templates/recommendation-confidence.md
+templates/friction-check.md
 templates/integration-validation.md
 templates/graph-fit-check.md
 templates/vault-map-report.md

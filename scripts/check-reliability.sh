@@ -31,6 +31,7 @@ for file in \
   docs/first-workflow.md \
   docs/quickstart.md \
   docs/intro.md \
+  docs/intro-guide.md \
   docs/feature-index.md \
   docs/command-index.md \
   docs/use-case-map.md \
@@ -41,6 +42,10 @@ for file in \
   docs/graph-and-vault-support.md \
   docs/optional-tooling-policy.md \
   docs/minimum-friction-policy.md \
+  docs/friction-reduction-principle.md \
+  docs/framework-principles.md \
+  docs/feature-gate-friction-check.md \
+  docs/feature-visibility-tiers.md \
   docs/graph-fit-rules.md \
   docs/graph-analysis-output-modes.md \
   docs/visual-quality.md \
@@ -204,6 +209,7 @@ for file in \
   templates/use-case-profile.md \
   templates/tool-fit-entry.md \
   templates/recommendation-confidence.md \
+  templates/friction-check.md \
   templates/graph-fit-check.md \
   templates/integration-validation.md \
   templates/integration-status.md \
@@ -279,6 +285,11 @@ for file in \
   docs/examples/vault-cluster-report.md \
   docs/examples/graphify-helps.md \
   docs/examples/graphify-not-needed.md \
+  docs/examples/friction-reduction-good.md \
+  docs/examples/friction-reduction-bad.md \
+  docs/examples/user-chosen-tool-support.md \
+  docs/examples/optional-feature-hidden.md \
+  docs/examples/progressive-disclosure-onboarding.md \
   docs/examples/from-gstack-or-gsd.md \
   docs/examples/notebooklm-research-flow.md \
   docs/examples/notebooklm-user-chosen-setup.md \
@@ -394,6 +405,7 @@ for file in \
   skills/orca-portability/SKILL.md \
   skills/orca-docs-system/SKILL.md \
   skills/orca-integrations/SKILL.md \
+  skills/orca-friction-policy/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \

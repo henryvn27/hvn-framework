@@ -39,6 +39,7 @@ Every guidance message should answer:
 - what done means for the next phase
 
 Prefer one clear default next step, one optional alternate path, and one sentence explaining why.
+If the default next action is obvious, do not pad it with optional complexity.
 
 ## Output Modes
 

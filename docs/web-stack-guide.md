@@ -1,5 +1,7 @@
 # Web Stack Guide
 
+Use this guide when a web path is the clearest low-friction fit, not just because the stack is popular.
+
 The default ORCA-HVN web stack bias is:
 
 - Next.js

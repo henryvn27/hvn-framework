@@ -11,6 +11,8 @@ A paved road should recommend:
 - the validation path
 - the safest fallback
 
+It should not front-load optional integrations, comparison matrices, or long onboarding checklists when one path is enough.
+
 ## Examples
 
 - web SaaS: Next.js + Vercel + Supabase + Stripe + Resend + PostHog + Sentry
