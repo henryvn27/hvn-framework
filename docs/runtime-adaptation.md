@@ -45,6 +45,7 @@ It should prefer direct execution or the shortest setup-help path over capabilit
 The same applies to adaptive coaching: do not surface learning guidance merely because it is possible.
 
 Controller/executor routing is part of runtime adaptation. A controller may choose one harness for orchestration and another for bounded execution when the pairing is clearer or safer than single-harness operation.
+Subagent orchestration should follow the same rule: choose patterns by capability and fallback quality, not by vendor branding.
 
 ## Runtime Rule
 

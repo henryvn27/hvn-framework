@@ -125,6 +125,22 @@ for file in \
   docs/runtime-fallbacks.md \
   docs/runtime-degraded-mode.md \
   docs/runtime-status.md \
+  docs/agent-orchestration.md \
+  docs/harness-agnostic-orchestration.md \
+  docs/parent-agent-vs-subagent.md \
+  docs/when-to-use-subagents.md \
+  docs/orchestration-patterns.md \
+  docs/pattern-selection.md \
+  docs/context-passing.md \
+  docs/context-isolation.md \
+  docs/handoffs-and-escalations.md \
+  docs/orchestration-observability.md \
+  docs/subagent-evaluation.md \
+  docs/harness-mapping.md \
+  docs/harness-capability-matrix.md \
+  docs/subagent-catalog.md \
+  docs/service-agents.md \
+  docs/orchestration-decision-policy.md \
   docs/execution-receipts.md \
   docs/artifact-lineage.md \
   docs/replay-restore.md \
@@ -243,6 +259,18 @@ for file in \
   templates/runtime-route.md \
   templates/runtime-policy.md \
   templates/runtime-status.md \
+  templates/subagent-contract.md \
+  templates/parent-orchestrator-contract.md \
+  templates/delegation-check.md \
+  templates/orchestration-plan.md \
+  templates/subagent-context-packet.md \
+  templates/subagent-result-packet.md \
+  templates/blocker-report.md \
+  templates/clarification-required.md \
+  templates/approval-gate.md \
+  templates/orchestration-trace.md \
+  templates/harness-adapter.md \
+  templates/delegation-rationale.md \
   templates/execution-receipt.md \
   templates/artifact-lineage.md \
   templates/replay-case.md \
@@ -316,6 +344,12 @@ for file in \
   docs/examples/gentle-prompt-coaching.md \
   docs/examples/opt-out-feedback.md \
   docs/examples/session-learning-nudge.md \
+  docs/examples/single-agent-vs-subagent.md \
+  docs/examples/supervisor-worker.md \
+  docs/examples/fanout-research.md \
+  docs/examples/maker-checker-qa.md \
+  docs/examples/harness-without-native-subagents.md \
+  docs/examples/blocked-subagent-escalation.md \
   docs/examples/from-gstack-or-gsd.md \
   docs/examples/notebooklm-research-flow.md \
   docs/examples/notebooklm-user-chosen-setup.md \
@@ -433,6 +467,7 @@ for file in \
   skills/orca-integrations/SKILL.md \
   skills/orca-friction-policy/SKILL.md \
   skills/orca-adaptive-guidance/SKILL.md \
+  skills/orca-agent-orchestration/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \

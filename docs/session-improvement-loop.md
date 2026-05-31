@@ -24,6 +24,7 @@ Use the loop to catch:
 - host-specific friction that should change the framework
 - avoidable setup work or option sprawl
 - a gentle next-time note when it would reduce repeated user friction
+- orchestration splits that added complexity without enough leverage
 - session-quality signals that indicate low trust, generic output, repeated wrong direction, or poor failure handling
 
 ## What It Is Not

@@ -125,6 +125,7 @@ Use integration packs and stack guides when web, mobile, auth, billing, analytic
 Use `orca-runtime` and `orca-status` when harness capabilities or policy switches should change the recommended path or need inspection.
 Use `orca-controller` and `orca-orient` when an external controller agent needs a fast current-state view.
 Use `orca-delegate` when another harness or collaborator should execute bounded work, and `orca-ingest` when structured results return.
+Use the orchestration docs when deciding whether to stay single-agent, use supervisor-worker, fan out, or run maker-checker.
 Use `orca-schema` and `orca-validate-schema` when portable artifact structure, versioning, mapping, or schema validity matters.
 Use `orca-legacy` when the target system is inherited, under-documented, fragile, or modernization-focused.
 Use `orca-goal` commands only after spec and milestone planning produce a bounded, verifiable objective.
