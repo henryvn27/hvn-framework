@@ -47,6 +47,17 @@ for file in \
   docs/feature-gate-friction-check.md \
   docs/feature-visibility-tiers.md \
   docs/adaptive-learning.md \
+  docs/self-improvement.md \
+  docs/instance-vs-framework-learning.md \
+  docs/instance-improvement-loop.md \
+  docs/framework-improvement-loop.md \
+  docs/improvement-promotion-policy.md \
+  docs/feedback-loop-mechanics.md \
+  docs/improvement-signals.md \
+  docs/improvement-evaluation.md \
+  docs/self-improvement-approval-policy.md \
+  docs/local-to-global-promotion.md \
+  docs/improvement-status-model.md \
   docs/user-skill-support.md \
   docs/user-skill-model.md \
   docs/adaptive-expertise-levels.md \
@@ -357,7 +368,14 @@ for file in \
   docs/examples/notebooklm-mcp-path.md \
   docs/examples/notebooklm-for-idea-research.md \
   docs/examples/notebooklm-for-project-knowledge.md \
+  docs/examples/local-instance-learning.md \
+  docs/examples/local-preference-adaptation.md \
+  docs/examples/framework-improvement-promotion.md \
+  docs/examples/weak-signal-no-promotion.md \
+  docs/examples/docs-drift-fix.md \
+  docs/examples/orchestration-improvement.md \
   skills/orca-graph-vault-support/SKILL.md \
+  skills/orca-self-improvement/SKILL.md \
   templates/artifact-mapping.md \
   templates/framework-improvement-note.md \
   templates/session-improvement-review.md \
@@ -375,6 +393,16 @@ for file in \
   templates/wiki-update-note.md \
   templates/doc-metadata.md \
   templates/doc-change-checklist.md \
+  templates/instance-improvement-note.md \
+  templates/instance-learning-signal.md \
+  templates/local-improvement-proposal.md \
+  templates/framework-learning-signal.md \
+  templates/framework-improvement-proposal.md \
+  templates/feedback-loop-record.md \
+  templates/improvement-rubric.md \
+  templates/success-metric.md \
+  templates/promotion-candidate.md \
+  templates/improvement-status-entry.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \

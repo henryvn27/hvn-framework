@@ -29,6 +29,7 @@ Status meanings:
 - Knowledge-layer integrations such as NotebookLM depend heavily on setup mode and host tooling; treat enterprise API paths and community MCP paths separately.
 - Graph or vault tooling should be treated as optional helper support, not as part of the minimum compatible path.
 - Feature visibility should stay tiered. Host capability is not a reason to surface every possible feature by default.
+- Local adaptation to one harness should not silently become a global compatibility claim without stronger evidence.
 - Integration routing should also respect platform category, especially web deployment versus mobile build or billing workflows.
 - Compatibility should inform what is possible, not automatically what is recommended.
 - `unclear` means ORCA-HVN should prefer degraded mode or an explicit research note over a stronger claim.

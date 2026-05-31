@@ -39,6 +39,8 @@ Before prompting the user, ORCA-HVN should be able to explain:
 - what evidence came from the session
 - what likely fix direction exists
 
+If the candidate is mostly instance-specific, it should stay in the local improvement loop instead of becoming a framework issue.
+
 If that cannot be stated clearly, do not push for an issue yet.
 
 ## How Quality Signals Affect Worthiness

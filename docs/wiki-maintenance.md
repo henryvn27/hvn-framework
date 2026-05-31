@@ -18,6 +18,7 @@ The wiki is a summary and routing layer, not a second full copy of the docs tree
 - vault or graph analysis reveals missing hub pages, duplicated topic areas, or weak wiki routing
 - README or `docs/start-here.md` changes enough that the wiki homepage would now mislead readers
 - the docs layer starts surfacing more routes than a new user can reasonably absorb in the first pass
+- repeated wiki confusion appears across sessions strongly enough to justify framework-level cleanup instead of just local routing help
 
 ## Refresh Targets
 

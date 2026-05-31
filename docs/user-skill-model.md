@@ -42,3 +42,4 @@ Do not expose it as:
 - a public profile that feels evaluative
 
 Use it only to decide how much help to surface and when silence is better.
+It should improve the local instance experience first and should not silently rewrite global defaults for everyone else.

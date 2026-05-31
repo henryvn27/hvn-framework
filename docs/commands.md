@@ -102,6 +102,7 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just the product artifact.
 When a user supplies a vault or live note system, treat it as the primary workflow evidence source for recommendation and research questions, and label any extrapolation clearly.
 Use `orca-improve-framework` at the end of meaningful sessions when reusable ORCA-HVN friction or strong session-quality signals may deserve a framework issue or backlog entry.
+Use the self-improvement docs and skill when deciding whether a signal belongs in the local instance loop or the framework loop.
 Use `orca-integration` when the user needs stack routing, integration selection, or platform-aware tool guidance.
 Use `orca-recommend-stack` when the user wants a best-fit stack recommendation and the use case is clear enough to justify one.
 Use `orca-setup-integration` when the user chose a stack component and now needs the shortest safe setup path.

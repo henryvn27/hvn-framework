@@ -51,6 +51,7 @@ Signals should help answer:
 
 - did the session feel bad in a reusable way?
 - is there enough evidence to justify framework work?
+- is this better treated as a local adaptation instead?
 - should this stay internal, become a draft, or become a real issue candidate?
 
 One weak signal is usually not enough.

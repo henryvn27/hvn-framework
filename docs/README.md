@@ -12,6 +12,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
 - [adaptive-learning.md](adaptive-learning.md): lightweight learning help that adapts to the user
+- [self-improvement.md](self-improvement.md): the controlled local-vs-framework learning model
 - [agent-orchestration.md](agent-orchestration.md): harness-agnostic parent and subagent orchestration
 
 ## Core Navigation
@@ -65,6 +66,9 @@ These are teaching-oriented pages for common paths:
 - [optional-tooling-policy.md](optional-tooling-policy.md)
 - [minimum-friction-policy.md](minimum-friction-policy.md)
 - [adaptive-learning.md](adaptive-learning.md)
+- [self-improvement.md](self-improvement.md)
+- [instance-improvement-loop.md](instance-improvement-loop.md)
+- [framework-improvement-loop.md](framework-improvement-loop.md)
 - [user-skill-model.md](user-skill-model.md)
 - [learning-feedback-controls.md](learning-feedback-controls.md)
 - [constructive-feedback-style.md](constructive-feedback-style.md)

@@ -81,6 +81,7 @@ If you are new:
 - glossary: [docs/glossary.md](docs/glossary.md)
 - truth hierarchy: [docs/truth-hierarchy.md](docs/truth-hierarchy.md)
 - friction rule: [docs/friction-reduction-principle.md](docs/friction-reduction-principle.md)
+- self-improvement model: [docs/self-improvement.md](docs/self-improvement.md)
 - wiki home: [wiki/Home.md](wiki/Home.md)
 - what changed: [docs/whats-new.md](docs/whats-new.md)
 
@@ -93,6 +94,7 @@ If you are new:
 - receipts, lineage, replay, and restore
 - blind QA, briefed QA, evals, and regression follow-up
 - controller/executor coordination
+- controlled self-improvement
 - optional vault and graph intelligence
 - business ideation and legacy modernization
 

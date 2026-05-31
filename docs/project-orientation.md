@@ -26,6 +26,7 @@ If the user provides a vault or other live knowledge base for the project, treat
 If the vault is large or fragmented, optional graph-style analysis may help a controller understand project clusters faster. Use it only when the added clarity justifies the extra step.
 Orientation should start with the smallest useful pass. Do not make repository entry depend on optional tooling if direct inspection already answers the question.
 If repo orientation confusion is recurring, ORCA-HVN may later offer one small context-engineering hint rather than a larger lecture.
+If orientation confusion keeps recurring across sessions, it should become either a local adaptation candidate or a framework-level orientation improvement candidate.
 Orientation should also surface whether the task likely wants single-agent execution, delegation, or a stronger orchestration pattern.
 
 ## Good Orientation Shape

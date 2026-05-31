@@ -16,6 +16,7 @@ ORCA-HVN is opinionated about how orchestration systems should feel in practice.
 10. Promote only what has evidence behind it.
 11. Help the user improve without turning the workflow into school.
 12. Use orchestration only when it creates real leverage.
+13. Improve through evidence, not through random drift.
 
 ## First Principle
 
@@ -33,3 +34,4 @@ Read [friction-reduction-principle.md](friction-reduction-principle.md).
 - [feature-visibility-tiers.md](feature-visibility-tiers.md)
 - [adaptive-learning.md](adaptive-learning.md)
 - [agent-orchestration.md](agent-orchestration.md)
+- [self-improvement.md](self-improvement.md)
