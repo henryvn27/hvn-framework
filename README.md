@@ -62,6 +62,7 @@ If you are new:
 
 ## Where To Begin By Use Case
 
+- I need install help first: [docs/install-overview.md](docs/install-overview.md)
 - I want the default beginner path: [docs/first-workflow.md](docs/first-workflow.md)
 - I want the fastest setup: [docs/quickstart.md](docs/quickstart.md)
 - I need the big picture: [docs/intro.md](docs/intro.md)
@@ -117,24 +118,18 @@ Read:
 
 ## Install
 
+Choose a path first:
+
+- overview: [docs/install-overview.md](docs/install-overview.md)
+- beginner path: [docs/install-for-beginners.md](docs/install-for-beginners.md)
+- technical path: [docs/install-for-technical-users.md](docs/install-for-technical-users.md)
+
 ```sh
 git clone https://github.com/henryvn27/orca-hvn.git
 cd orca-hvn
-./scripts/validate-repo.sh
-```
-
-Local install into the current project:
-
-```sh
 ./install/install.sh --mode local --target ./.orca-hvn
 ./install/verify-install.sh --target ./.orca-hvn
-```
-
-Global install:
-
-```sh
-./install/install.sh --mode global
-./install/doctor.sh
+./install/doctor.sh --target ./.orca-hvn
 ```
 
 ## Docs-As-Code Maintenance

@@ -23,6 +23,7 @@ Use the loop to catch:
 - runtime mismatches
 - repeated manual workarounds
 - weak automation
+- repeated install confusion or setup drop-off
 - host-specific friction that should change the framework
 - avoidable setup work or option sprawl
 - a gentle next-time note when it would reduce repeated user friction

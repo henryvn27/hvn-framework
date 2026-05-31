@@ -38,6 +38,7 @@ ORCA-HVN should make it easier to:
 - help users improve over time without making them feel corrected
 - use subagents only when they reduce more confusion, context loss, or coordination cost than they create
 - use self-improvement only when it reduces more friction than it adds
+- require only the minimum install, plugin, and harness setup needed for the next real task
 
 ## What ORCA-HVN Should Not Introduce Casually
 

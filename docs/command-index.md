@@ -6,6 +6,8 @@ If you are new, start with [first-workflow.md](first-workflow.md) before using t
 
 ## Start Or Clarify Work
 
+- `orca-install`: guided install path selection and setup
+- `orca-doctor`: install and setup validation
 - `orca-onboard`: clarify a work item
 - `orca-discover`: inspect the repo and constraints
 - `orca-legacy`: start with archaeology when the codebase is inherited or fragile

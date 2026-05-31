@@ -12,6 +12,7 @@ It should not:
 - force setup before core value appears
 - turn a narrow task into a tooling project
 - recommend a tool only because it is available
+- put optional plugins or harnesses into the minimum install path
 
 ## Decision Rule
 

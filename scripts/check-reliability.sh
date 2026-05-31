@@ -30,6 +30,28 @@ for file in \
   docs/start-here.md \
   docs/first-workflow.md \
   docs/quickstart.md \
+  docs/install.md \
+  docs/install-overview.md \
+  docs/install-for-beginners.md \
+  docs/install-for-technical-users.md \
+  docs/install-paths.md \
+  docs/install-prerequisites.md \
+  docs/install-troubleshooting.md \
+  docs/install-validation.md \
+  docs/install-contextual-help.md \
+  docs/first-run.md \
+  docs/first-success-check.md \
+  docs/plugins.md \
+  docs/plugin-installation.md \
+  docs/plugin-troubleshooting.md \
+  docs/harness-installation.md \
+  docs/harness-setup.md \
+  docs/harness-troubleshooting.md \
+  docs/harness-chooser.md \
+  docs/common-install-errors.md \
+  docs/common-plugin-errors.md \
+  docs/common-harness-errors.md \
+  docs/reset-and-retry.md \
   docs/intro.md \
   docs/intro-guide.md \
   docs/feature-index.md \
@@ -368,6 +390,11 @@ for file in \
   docs/examples/notebooklm-mcp-path.md \
   docs/examples/notebooklm-for-idea-research.md \
   docs/examples/notebooklm-for-project-knowledge.md \
+  docs/examples/beginner-install.md \
+  docs/examples/technical-install.md \
+  docs/examples/plugin-install.md \
+  docs/examples/harness-install.md \
+  docs/examples/install-failure-recovery.md \
   docs/examples/local-instance-learning.md \
   docs/examples/local-preference-adaptation.md \
   docs/examples/framework-improvement-promotion.md \
@@ -376,6 +403,7 @@ for file in \
   docs/examples/orchestration-improvement.md \
   skills/orca-graph-vault-support/SKILL.md \
   skills/orca-self-improvement/SKILL.md \
+  skills/orca-install-help/SKILL.md \
   templates/artifact-mapping.md \
   templates/framework-improvement-note.md \
   templates/session-improvement-review.md \
@@ -403,6 +431,14 @@ for file in \
   templates/success-metric.md \
   templates/promotion-candidate.md \
   templates/improvement-status-entry.md \
+  templates/install-checklist.md \
+  templates/preflight-check.md \
+  templates/plugin-setup-guide.md \
+  templates/plugin-help-entry.md \
+  templates/harness-install-guide.md \
+  templates/install-help-callout.md \
+  templates/first-run-validation.md \
+  templates/install-validation-report.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
@@ -413,6 +449,8 @@ for file in \
   commands/orca-trace.md \
   commands/orca-eval.md \
   commands/orca-approve.md \
+  commands/orca-install.md \
+  commands/orca-doctor.md \
   commands/orca-security-check.md \
   commands/orca-benchmark.md \
   commands/orca-metrics.md \

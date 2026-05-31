@@ -17,7 +17,7 @@ if ($Target -eq "") {
 
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 
-foreach ($Item in @("ORCA-HVN.md", "commands", "skills", "templates", "docs", "mcp")) {
+foreach ($Item in @("ORCA-HVN.md", "README.md", "commands", "skills", "templates", "docs", "mcp", "install", "scripts")) {
   $Source = Join-Path $Root $Item
   $Destination = Join-Path $Target $Item
   if (!(Test-Path $Source)) {
@@ -31,6 +31,14 @@ foreach ($Item in @("ORCA-HVN.md", "commands", "skills", "templates", "docs", "m
 
 Set-Content -Path (Join-Path $Target "VERSION") -Value "0.1.0"
 Write-Host "ORCA-HVN installed to $Target"
-Write-Host "Linear setup guide: $(Join-Path $Target 'docs/linear-setup.md')"
+Write-Host "Install overview: $(Join-Path $Target 'docs/install-overview.md')"
+Write-Host "Beginner path: $(Join-Path $Target 'docs/install-for-beginners.md')"
+Write-Host "Technical path: $(Join-Path $Target 'docs/install-for-technical-users.md')"
 Write-Host "Linear-first guidance: $(Join-Path $Target 'docs/linear-guidance.md')"
 Write-Host "Opt-out mode: choose a durable system of record and map ORCA-HVN gates there."
+Write-Host ""
+Write-Host "Next steps:"
+Write-Host "1. Read the install guide: $(Join-Path $Target 'docs/install.md')"
+Write-Host "2. Pick a path: $(Join-Path $Target 'docs/install-paths.md')"
+Write-Host "3. Run install verification: $(Join-Path $Target 'install/verify-install.sh') --target $Target"
+Write-Host "4. Run doctor when you want a broader check: $(Join-Path $Target 'install/doctor.sh') --target $Target"

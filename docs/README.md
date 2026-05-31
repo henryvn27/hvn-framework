@@ -8,6 +8,8 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [intro-guide.md](intro-guide.md): the shortest explanation of the ORCA approach
 - [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
+- [install-overview.md](install-overview.md): how the install system is organized
+- [install.md](install.md): canonical step-by-step install guide
 - [intro.md](intro.md): the core mental model and why ORCA exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
@@ -46,6 +48,7 @@ These are teaching-oriented pages for common paths:
 - [commands.md](commands.md)
 - [skills.md](skills.md)
 - [workflow.md](workflow.md)
+- [install.md](install.md)
 - [compatibility-matrix.md](compatibility-matrix.md)
 - [linear-workflow.md](linear-workflow.md)
 

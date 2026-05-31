@@ -34,3 +34,5 @@ When automated validation is unavailable, provide a checklist:
 Use [integration health report](../templates/integration-health-report.md). Do not collapse different failures into "setup failed." Name the failing layer: service, auth, scope, harness, or fallback.
 
 Runtime adaptation should use validation results to tighten or loosen recommendations rather than assuming setup succeeded.
+
+For base ORCA install checks, use [install-validation.md](install-validation.md) and `./install/doctor.sh` before debugging a narrower integration.
