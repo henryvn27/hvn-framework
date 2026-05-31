@@ -6,7 +6,7 @@ Pause work at an explicit checkpoint, present inspection context, record a human
 
 ## When To Use
 
-Use for risky actions, ambiguous verification outcomes, architecture pivots, destructive edits, dependency changes, or ship-readiness decisions.
+Use for risky actions, ambiguous verification outcomes, architecture pivots, destructive edits, dependency changes, new or risky tool and MCP use, or ship-readiness decisions.
 
 ## Required Inputs
 
@@ -18,11 +18,12 @@ Use for risky actions, ambiguous verification outcomes, architecture pivots, des
 - Shared state link
 - Trace summary
 - Approval request link
+- Tool or MCP registry entry
 
 ## Linear Context
 
 - Expects: issue ID, current phase, risk reason, linked evidence, active blockers
-- Reads: shared state, traces, metrics, approval context, QA or eval artifacts
+- Reads: shared state, traces, metrics, approval context, tool or MCP registry entries, QA or eval artifacts
 - Posts: checkpoint request and decision artifacts or summaries
 - Trigger: pause requested, approval gate escalated, resume blocked, ship confidence low
 - Human approval: the command exists to gather and record that intervention explicitly

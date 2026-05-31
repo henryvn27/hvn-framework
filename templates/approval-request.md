@@ -12,6 +12,10 @@ Describe the risk, blast radius, or uncertainty.
 
 List the files, systems, or workflow state affected.
 
+## Tool Or MCP Context
+
+State any external tool, MCP server, trust status, and registry entry involved.
+
 ## Alternatives Considered
 
 - 

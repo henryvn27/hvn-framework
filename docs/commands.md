@@ -48,6 +48,8 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-regression-task`
 - `hvn-security`
 - `hvn-security-check`
+- `hvn-tool-review`
+- `hvn-mcp-review`
 - `hvn-ship`
 - `hvn-retro`
 
@@ -64,3 +66,4 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 Use `hvn-trace` and `hvn-eval` when the workflow itself needs review, not just the product artifact.
 Use `hvn-metrics` when elapsed time, retries, or optional usage signals matter, and `hvn-benchmark` when onboarding/spec quality should be compared over time.
 Use `hvn-state`, `hvn-checkpoint`, and `hvn-inspect` when multiple roles need a shared current view or when a run must pause and resume safely.
+Use `hvn-tool-review` and `hvn-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.

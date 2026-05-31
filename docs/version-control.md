@@ -104,5 +104,6 @@ Before considering an iteration complete, inspect:
 - validation output
 - changelog entry
 - any manual push or auth blocker
+- whether new tools or MCP servers need registry entries or approval notes
 
 The goal is not process overhead. The goal is that another maintainer can reconstruct the iteration without reading the full chat transcript.

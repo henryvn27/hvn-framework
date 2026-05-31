@@ -9,6 +9,7 @@ The repository CI should:
 - validate required files and directories
 - verify links across docs, commands, skills, templates, and examples
 - verify the reliability docs and contracts exist
+- verify tool and MCP governance docs, templates, and registry directories exist
 - verify the starter eval set exists and is non-trivial
 - verify install flows still work after framework changes
 

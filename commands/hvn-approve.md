@@ -6,7 +6,7 @@ Request, record, or review approval for risky work before execution continues.
 
 ## When To Use
 
-Use for destructive actions, broad refactors, installer changes, dependency upgrades, production-risk changes, scope expansion, or low-confidence ship decisions.
+Use for destructive actions, broad refactors, installer changes, dependency upgrades, production-risk changes, unreviewed or high-risk tool and MCP use, scope expansion, or low-confidence ship decisions.
 
 ## Required Inputs
 
@@ -18,6 +18,7 @@ Use for destructive actions, broad refactors, installer changes, dependency upgr
 - Spec or plan link
 - Verification and rollback plan
 - Deadline or blocker note
+- Tool or MCP registry entry
 
 ## Linear Context
 
@@ -50,5 +51,5 @@ Write the approval request to the selected record and do not proceed until the r
 
 ## Related Commands And Skills
 
-- Commands: `hvn-plan`, `hvn-build`, `hvn-ship`
-- Skills: `hvn-approval-gate`
+- Commands: `hvn-tool-review`, `hvn-mcp-review`, `hvn-plan`, `hvn-build`, `hvn-ship`
+- Skills: `hvn-approval-gate`, `hvn-tool-governance`

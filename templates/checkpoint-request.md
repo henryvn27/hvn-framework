@@ -24,6 +24,12 @@ Summarize phase, scope, blockers, and evidence.
 
 - 
 
+## Tool Or MCP Context
+
+- Tool or server:
+- Trust status:
+- Registry entry:
+
 ## Decision Needed
 
 State the exact decision the human needs to make.

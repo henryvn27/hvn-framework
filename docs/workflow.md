@@ -22,10 +22,11 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 16. `hvn-regression-task`: convert strong findings into reusable regression work.
 17. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
 18. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
-19. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
-20. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
-21. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-22. `hvn-retro`: capture lessons and follow-up work.
+19. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
+20. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
+21. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
+22. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+23. `hvn-retro`: capture lessons and follow-up work.
 
 ## Recommended Linear Gates
 
@@ -56,6 +57,7 @@ The workflow now relies on six supporting controls:
 - approval gates control risky actions
 - checkpoints create safe human intervention points
 - inspector artifacts make paused and blocked runs resumable
+- tool and MCP registries make external execution trust explicit
 - contracts keep artifacts structurally consistent
 
 ## Opt-Out Workflow

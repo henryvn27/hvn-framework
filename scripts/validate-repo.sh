@@ -44,6 +44,11 @@ docs/benchmark-reporting.md
 docs/shared-state.md
 docs/human-checkpoints.md
 docs/inspector.md
+docs/tool-trust.md
+docs/mcp-governance.md
+docs/tool-registry.md
+docs/tool-safety-rules.md
+docs/mcp-review-workflow.md
 docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
@@ -77,7 +82,12 @@ docs/examples/checkpoint-before-risky-change.md
 docs/examples/run-inspection.md
 docs/examples/pause-and-resume.md
 docs/examples/versioned-iteration.md
+docs/examples/tool-review.md
+docs/examples/mcp-server-review.md
+docs/examples/high-risk-tool-approval.md
 benchmarks/onboarding-spec/README.md
+registry/tools/README.md
+registry/mcp-servers/README.md
 mcp/linear.example.json
 "
 
@@ -85,7 +95,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -93,9 +103,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 31 ] || fail "expected at least 31 command definitions"
-[ "$skill_count" -ge 31 ] || fail "expected at least 31 skill definitions"
-[ "$template_count" -ge 37 ] || fail "expected at least 37 templates"
+[ "$command_count" -ge 33 ] || fail "expected at least 33 command definitions"
+[ "$skill_count" -ge 32 ] || fail "expected at least 32 skill definitions"
+[ "$template_count" -ge 40 ] || fail "expected at least 40 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

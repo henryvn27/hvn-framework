@@ -38,6 +38,7 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Approval gates:** risky actions pause for explicit approval.
 - **Human checkpoints:** pause, inspect, approve, reject, and resume are explicit workflow moves.
 - **Inspector artifacts:** runs can be reviewed without a custom UI.
+- **Tool governance:** external tools and MCP servers have explicit trust levels, registry entries, and audit expectations.
 - **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
 - **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
 - **Layered retesting:** later QA receives bounded context packets tied to the same issue.
@@ -88,6 +89,11 @@ For Linear-first setup, read:
 - `docs/shared-state.md`
 - `docs/human-checkpoints.md`
 - `docs/inspector.md`
+- `docs/tool-trust.md`
+- `docs/mcp-governance.md`
+- `docs/tool-registry.md`
+- `docs/tool-safety-rules.md`
+- `docs/mcp-review-workflow.md`
 - `docs/version-control.md`
 
 You can also generate a local setup packet:
@@ -116,10 +122,11 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 14. `hvn-regression-task` promotes high-value findings into reusable regression work.
 15. `hvn-checkpoint` pauses risky or ambiguous work for human inspection and decision.
 16. `hvn-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-17. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-18. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
-19. `hvn-linear-ship-check` posts ship readiness.
-20. Issue moves to done only with evidence.
+17. `hvn-tool-review` or `hvn-mcp-review` governs new or risky external tools.
+18. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+19. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
+20. `hvn-linear-ship-check` posts ship readiness.
+21. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -154,6 +161,7 @@ The reliability layer adds:
 - workflow metrics artifacts in `templates/workflow-metrics.md`
 - shared-state and checkpoint artifacts in `templates/shared-state.md`, `templates/checkpoint-*.md`, and `templates/run-inspection.md`
 - approval requests in `templates/approval-request.md`
+- tool and MCP governance templates in `templates/tool-registry-entry.md`, `templates/mcp-server-entry.md`, and `templates/mcp-review.md`
 - regression candidates and tasks in `templates/regression-candidate.md` and `templates/regression-task.md`
 - typed contracts in `templates/contracts/`
 
@@ -216,6 +224,7 @@ HVN now treats reliability as part of the core framework:
 - approval gates control risky work
 - checkpoints enable pause, inspect, approve, reject, and resume flows
 - inspector artifacts make paused or blocked runs auditable
+- tool and MCP governance makes external execution trust explicit
 - contracts keep artifacts consistent
 - security and prompt-injection guardrails keep external context from hijacking execution
 
@@ -231,6 +240,7 @@ docs/       Framework documentation and examples
 examples/   Small sample artifact sets
 install/    Local and global installation scripts
 mcp/        Example MCP configuration snippets
+registry/   Tool and MCP server trust registry
 scripts/    Validation and repository utility scripts
 skills/     Reusable HVN skill definitions
 templates/  Copy-ready artifacts and Linear comments

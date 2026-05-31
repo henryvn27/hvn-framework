@@ -9,6 +9,7 @@
 - Added onboarding/spec benchmark pack, workflow accounting, and QA-to-regression task generation.
 - Added shared state, human checkpoints, and run inspection for multi-agent coordination and resumable runs.
 - Added version-control and iteration guidance with an iteration log template.
+- Added tool trust and MCP governance docs, registry templates, review commands, and trust-level guidance.
 
 ### Validation
 

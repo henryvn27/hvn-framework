@@ -21,6 +21,8 @@ Approval is normally required for:
 - installer changes
 - dependency upgrades with behavior or supply-chain risk
 - production config or release-process changes
+- unreviewed tools or MCP servers
+- high-risk tool calls outside allowed registry contexts
 - scope expansion beyond the approved spec
 - issue-closing or ship-readiness decisions when confidence is low
 

@@ -35,6 +35,7 @@ Good shared-state entries include:
 - currently approved scope boundaries
 - active checkpoint requests or decisions
 - current blockers and dependencies
+- active tool or MCP approval status
 - artifact links needed by multiple roles
 
 ## What Does Not Belong In Shared State

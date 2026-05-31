@@ -39,6 +39,7 @@ Good trace entries include:
 - starting a spec or plan pass
 - reading a work item, spec, or QA brief
 - invoking a risky command or external tool
+- calling a governed tool or MCP server
 - deciding to stop, retry, escalate, or request approval
 - writing or updating a durable artifact
 - changing course because evidence contradicted an assumption
@@ -52,6 +53,7 @@ Do not trace:
 - repetitive low-value shell noise
 - private user data that is not needed for debugging or evaluation
 - sensitive security details that should stay in a restricted report
+- raw secrets or credential values passed through tool parameters
 
 ## Traces Versus Run Memory
 

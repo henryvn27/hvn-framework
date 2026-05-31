@@ -7,3 +7,5 @@ HVN includes example MCP snippets for QA workflows. These files are not universa
 - `browser.example.json` shows the intended shape for browser QA.
 
 Use the examples with `hvn-linear-setup`, `hvn-linear-core`, `hvn-ios-sim-qa`, and `hvn-web-qa`. Keep credentials in your agent client's secret store.
+
+MCP servers are not trusted by default. Review [docs/mcp-governance.md](../docs/mcp-governance.md) and [docs/mcp-review-workflow.md](../docs/mcp-review-workflow.md) before adding or expanding a server. Registry entries belong in `registry/mcp-servers/`.

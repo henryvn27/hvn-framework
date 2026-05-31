@@ -25,6 +25,11 @@ for file in \
   docs/shared-state.md \
   docs/human-checkpoints.md \
   docs/inspector.md \
+  docs/tool-trust.md \
+  docs/mcp-governance.md \
+  docs/tool-registry.md \
+  docs/tool-safety-rules.md \
+  docs/mcp-review-workflow.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -38,6 +43,9 @@ for file in \
   templates/regression-task.md \
   templates/benchmark-case.md \
   templates/benchmark-report.md \
+  templates/tool-registry-entry.md \
+  templates/mcp-server-entry.md \
+  templates/mcp-review.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
   templates/contracts/qa-brief-contract.md \
@@ -54,6 +62,8 @@ for file in \
   commands/hvn-state.md \
   commands/hvn-checkpoint.md \
   commands/hvn-inspect.md \
+  commands/hvn-tool-review.md \
+  commands/hvn-mcp-review.md \
   skills/hvn-observability/SKILL.md \
   skills/hvn-eval/SKILL.md \
   skills/hvn-approval-gate/SKILL.md \
@@ -62,6 +72,7 @@ for file in \
   skills/hvn-regression-task/SKILL.md \
   skills/hvn-shared-state/SKILL.md \
   skills/hvn-checkpoint/SKILL.md \
+  skills/hvn-tool-governance/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -74,6 +85,11 @@ for file in \
   docs/examples/checkpoint-before-risky-change.md \
   docs/examples/run-inspection.md \
   docs/examples/pause-and-resume.md \
+  docs/examples/tool-review.md \
+  docs/examples/mcp-server-review.md \
+  docs/examples/high-risk-tool-approval.md \
+  registry/tools/README.md \
+  registry/mcp-servers/README.md \
   examples/evals/starter-set.md
 do
   [ -f "$file" ] || fail "missing reliability file: $file"

@@ -17,6 +17,7 @@ Use checkpoints for:
 - scope expansion
 - destructive edits
 - dependency or install changes
+- new or high-risk tool and MCP server use
 - architecture pivots
 - ambiguous verification outcomes
 - ship readiness

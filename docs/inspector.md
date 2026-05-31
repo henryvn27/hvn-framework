@@ -14,6 +14,7 @@ Use the inspector model to review:
 - trace summary
 - approvals and checkpoints
 - artifacts produced
+- governed tools and MCP calls
 - QA and eval status
 - open blockers
 
