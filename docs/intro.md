@@ -25,6 +25,7 @@ ORCA-HVN turns those weak points into explicit workflow surfaces:
 - checkpoints and approvals for risk control
 - runtime adaptation for host differences
 - examples and guides for repeatability
+- adaptive guidance so users can improve without leaving the workflow
 
 ## What Makes It Different
 

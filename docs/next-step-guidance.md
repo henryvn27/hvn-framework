@@ -17,6 +17,7 @@ Emit next-step guidance after:
 - shipping or handoff
 
 Also emit it when a run pauses at a checkpoint or blocker and the user needs a clear next action.
+An adaptive guidance nudge may appear only when it materially helps and can stay lightweight.
 
 ## When It Should Stay Silent
 
@@ -40,6 +41,7 @@ Every guidance message should answer:
 
 Prefer one clear default next step, one optional alternate path, and one sentence explaining why.
 If the default next action is obvious, do not pad it with optional complexity.
+If coaching would be more distracting than helpful, suppress it.
 
 ## Output Modes
 

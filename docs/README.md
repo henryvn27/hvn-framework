@@ -11,6 +11,8 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [intro.md](intro.md): the core mental model and why ORCA-HVN exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
+- [adaptive-learning.md](adaptive-learning.md): lightweight learning help that adapts to the user
+- [adaptive-learning.md](adaptive-learning.md): default-on lightweight coaching and skill-sensitive support
 
 ## Core Navigation
 
@@ -62,8 +64,17 @@ These are teaching-oriented pages for common paths:
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
 - [optional-tooling-policy.md](optional-tooling-policy.md)
 - [minimum-friction-policy.md](minimum-friction-policy.md)
+- [adaptive-learning.md](adaptive-learning.md)
+- [user-skill-model.md](user-skill-model.md)
+- [learning-feedback-controls.md](learning-feedback-controls.md)
+- [constructive-feedback-style.md](constructive-feedback-style.md)
+- [prompting-coach.md](prompting-coach.md)
 - [feature-visibility-tiers.md](feature-visibility-tiers.md)
 - [feature-gate-friction-check.md](feature-gate-friction-check.md)
+- [user-skill-model.md](user-skill-model.md)
+- [learning-feedback-controls.md](learning-feedback-controls.md)
+- [constructive-feedback-style.md](constructive-feedback-style.md)
+- [feedback-tone-check.md](feedback-tone-check.md)
 - [graph-fit-rules.md](graph-fit-rules.md)
 - [graph-analysis-output-modes.md](graph-analysis-output-modes.md)
 - [choose-your-stack.md](choose-your-stack.md)

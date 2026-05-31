@@ -46,6 +46,8 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-integration`
 - `orca-recommend-stack`
 - `orca-setup-integration`
+- `orca-learning`
+- `orca-feedback`
 - `orca-status`
 - `orca-controller`
 - `orca-orient`
@@ -127,3 +129,5 @@ Use `orca-schema` and `orca-validate-schema` when portable artifact structure, v
 Use `orca-legacy` when the target system is inherited, under-documented, fragile, or modernization-focused.
 Use `orca-goal` commands only after spec and milestone planning produce a bounded, verifiable objective.
 Use `orca-next` after major phase completion when a short default next action would help the user move forward.
+Use `orca-learning` when the user wants more help, less help, or no adaptive coaching.
+Use `orca-feedback` when the user wants a better request phrasing, context-engineering hint, or coaching suppression for the current task.

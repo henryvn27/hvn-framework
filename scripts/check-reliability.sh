@@ -46,6 +46,16 @@ for file in \
   docs/framework-principles.md \
   docs/feature-gate-friction-check.md \
   docs/feature-visibility-tiers.md \
+  docs/adaptive-learning.md \
+  docs/user-skill-support.md \
+  docs/user-skill-model.md \
+  docs/adaptive-expertise-levels.md \
+  docs/learning-feedback-controls.md \
+  docs/constructive-feedback-style.md \
+  docs/prompting-coach.md \
+  docs/context-engineering-coach.md \
+  docs/ai-development-coach.md \
+  docs/feedback-tone-check.md \
   docs/graph-fit-rules.md \
   docs/graph-analysis-output-modes.md \
   docs/visual-quality.md \
@@ -210,6 +220,12 @@ for file in \
   templates/tool-fit-entry.md \
   templates/recommendation-confidence.md \
   templates/friction-check.md \
+  templates/user-skill-profile.md \
+  templates/learning-signal.md \
+  templates/help-level-guidance.md \
+  templates/feedback-nudge.md \
+  templates/try-this-next-time.md \
+  templates/tone-check.md \
   templates/graph-fit-check.md \
   templates/integration-validation.md \
   templates/integration-status.md \
@@ -272,6 +288,8 @@ for file in \
   templates/controller-executor-profile.md \
   templates/schema-migration-note.md \
   commands/orca-recommend-stack.md \
+  commands/orca-learning.md \
+  commands/orca-feedback.md \
   skills/orca-integration-recommendation/SKILL.md \
   docs/examples/recommend-web-saas-stack.md \
   docs/examples/recommend-mobile-stack.md \
@@ -290,6 +308,14 @@ for file in \
   docs/examples/user-chosen-tool-support.md \
   docs/examples/optional-feature-hidden.md \
   docs/examples/progressive-disclosure-onboarding.md \
+  docs/examples/better-prompt-rewrite.md \
+  docs/examples/context-improvement.md \
+  docs/examples/beginner-help.md \
+  docs/examples/intermediate-help.md \
+  docs/examples/advanced-user-minimal-guidance.md \
+  docs/examples/gentle-prompt-coaching.md \
+  docs/examples/opt-out-feedback.md \
+  docs/examples/session-learning-nudge.md \
   docs/examples/from-gstack-or-gsd.md \
   docs/examples/notebooklm-research-flow.md \
   docs/examples/notebooklm-user-chosen-setup.md \
@@ -406,6 +432,7 @@ for file in \
   skills/orca-docs-system/SKILL.md \
   skills/orca-integrations/SKILL.md \
   skills/orca-friction-policy/SKILL.md \
+  skills/orca-adaptive-guidance/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \

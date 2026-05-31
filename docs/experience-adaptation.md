@@ -1,6 +1,7 @@
 # Experience Adaptation
 
 ORCA-HVN adapts next-step guidance to the user and situation without requiring a formal expertise setting.
+The same idea extends to lightweight learning help and coaching.
 
 ## Signals
 
@@ -50,3 +51,4 @@ Users can override guidance with phrases such as:
 - "no next-step guidance"
 
 Persist the preference only when the user explicitly asks for a durable preference.
+If the user opts out of coaching, respect it immediately.

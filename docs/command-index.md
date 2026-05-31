@@ -20,6 +20,8 @@ If you are new, start with [first-workflow.md](first-workflow.md) before using t
 - `orca-integration`: pick the right integration or stack pack
 - `orca-recommend-stack`: recommend a stack only when the fit is strong
 - `orca-setup-integration`: set up a chosen integration path
+- `orca-learning`: tune adaptive learning-help behavior
+- `orca-feedback`: ask for or suppress a specific coaching response
 
 ## Run The Work
 
