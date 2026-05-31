@@ -36,6 +36,7 @@ ORCA-HVN should make it easier to:
 - support user-chosen tools without turning support into debate
 - hide advanced capability until it becomes relevant
 - help users improve over time without making them feel corrected
+- use subagents only when they reduce more confusion, context loss, or coordination cost than they create
 
 ## What ORCA-HVN Should Not Introduce Casually
 

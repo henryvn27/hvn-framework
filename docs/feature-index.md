@@ -25,6 +25,7 @@ Read:
 - shared state
 - controller-agent integration
 - delegation and result ingestion
+- agent orchestration and subagent patterns
 
 Read:
 
@@ -33,6 +34,7 @@ Read:
 - [shared-state.md](shared-state.md)
 - [controller-agent-integration.md](controller-agent-integration.md)
 - [delegation.md](delegation.md)
+- [agent-orchestration.md](agent-orchestration.md)
 
 ## Runtime And Compatibility
 

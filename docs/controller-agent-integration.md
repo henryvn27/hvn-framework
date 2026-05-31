@@ -64,9 +64,11 @@ Codex-like executors are a strong fit for:
 - goal-mode execution when the host and scope support it
 
 The controller should brief the executor with explicit scope, artifacts, constraints, verification requirements, and stop conditions.
+The same rule applies to subagents inside one harness: explicit worker packets beat implicit task splitting.
 
 For research-heavy work, a controller agent may also choose an optional knowledge surface such as NotebookLM when the user already uses it or explicitly requests it. That should be treated as a document and synthesis helper, not the controller's canonical state store.
 The controller should prefer the lightest route that preserves coherence instead of assembling a larger tool chain by default.
+Subagent orchestration should improve coherence, not turn one task into a swarm.
 
 ## Ownership Rule
 

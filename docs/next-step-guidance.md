@@ -74,6 +74,7 @@ In controller workflows, next-step guidance should also help answer:
 - should the controller delegate
 - what should the executor be told
 - what artifact should come back next
+- whether subagent orchestration is worth the overhead at all
 
 In ideation workflows, next-step guidance should also help answer:
 

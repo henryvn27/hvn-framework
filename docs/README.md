@@ -12,7 +12,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
 - [adaptive-learning.md](adaptive-learning.md): lightweight learning help that adapts to the user
-- [adaptive-learning.md](adaptive-learning.md): default-on lightweight coaching and skill-sensitive support
+- [agent-orchestration.md](agent-orchestration.md): harness-agnostic parent and subagent orchestration
 
 ## Core Navigation
 
@@ -69,11 +69,13 @@ These are teaching-oriented pages for common paths:
 - [learning-feedback-controls.md](learning-feedback-controls.md)
 - [constructive-feedback-style.md](constructive-feedback-style.md)
 - [prompting-coach.md](prompting-coach.md)
+- [agent-orchestration.md](agent-orchestration.md)
+- [harness-agnostic-orchestration.md](harness-agnostic-orchestration.md)
+- [orchestration-patterns.md](orchestration-patterns.md)
+- [when-to-use-subagents.md](when-to-use-subagents.md)
+- [context-passing.md](context-passing.md)
 - [feature-visibility-tiers.md](feature-visibility-tiers.md)
 - [feature-gate-friction-check.md](feature-gate-friction-check.md)
-- [user-skill-model.md](user-skill-model.md)
-- [learning-feedback-controls.md](learning-feedback-controls.md)
-- [constructive-feedback-style.md](constructive-feedback-style.md)
 - [feedback-tone-check.md](feedback-tone-check.md)
 - [graph-fit-rules.md](graph-fit-rules.md)
 - [graph-analysis-output-modes.md](graph-analysis-output-modes.md)

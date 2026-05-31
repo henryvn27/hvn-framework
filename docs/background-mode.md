@@ -16,6 +16,7 @@ Good examples:
 - test-writing passes in a narrow area
 - bounded local refactors with clear receipts
 - backlog triage, grouping, or work-item extraction
+- long-running worker tasks with explicit parent checkpoints
 
 ## What Background Mode Is
 
@@ -69,6 +70,7 @@ Treat autonomy as a budget, not a binary.
 
 Background mode should always choose the lowest autonomy level that still makes progress.
 If a foreground move is clearer and lower-friction, prefer it over background ceremony.
+If a background run uses workers, the parent should still own approvals, receipts, and final user communication.
 
 When integrations are involved, background mode should prefer:
 

@@ -15,6 +15,7 @@ ORCA-HVN is opinionated about how orchestration systems should feel in practice.
 9. Treat docs, onboarding, and automation as workflow surfaces, not side material.
 10. Promote only what has evidence behind it.
 11. Help the user improve without turning the workflow into school.
+12. Use orchestration only when it creates real leverage.
 
 ## First Principle
 
@@ -31,3 +32,4 @@ Read [friction-reduction-principle.md](friction-reduction-principle.md).
 - [paved-roads.md](paved-roads.md)
 - [feature-visibility-tiers.md](feature-visibility-tiers.md)
 - [adaptive-learning.md](adaptive-learning.md)
+- [agent-orchestration.md](agent-orchestration.md)
