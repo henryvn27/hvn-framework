@@ -1,18 +1,18 @@
 # Start Here
 
-If you are new to ORCA-HVN, read this page before you dive into feature docs.
+If you are new to ORCA, read this page before you dive into feature docs.
 
-## What ORCA-HVN Is
+## What ORCA Is
 
-ORCA-HVN is an orchestration framework for running agent-assisted software work with a durable system of record. It combines spec-driven execution, workflow gating, QA discipline, host-aware behavior, and artifact tracking so agent runs stay inspectable and resumable.
+ORCA is an orchestration framework for running agent-assisted software work with a durable system of record. The formal repository and framework name is ORCA-HVN. It combines spec-driven execution, workflow gating, QA discipline, host-aware behavior, and artifact tracking so agent runs stay inspectable and resumable.
 
-It is also the primary workflow, not a companion layer for GStack or GSD. Those older tools helped inspire parts of the project, but ORCA-HVN is meant to replace that workflow with one clearer ORCA path.
+It is also the primary workflow, not a companion layer for GStack or GSD. Those older tools helped inspire parts of the project, but ORCA is meant to replace that workflow with one clearer ORCA path.
 
 It should also teach that path. A new user should be able to start learning orchestration inside ORCA-HVN itself instead of waiting for someone else to train them live.
 
 Framework-wide rule:
 
-- ORCA-HVN should reduce friction, not create more setup work
+- ORCA should reduce friction, not create more setup work
 
 ## What It Solves
 
@@ -26,7 +26,7 @@ Use ORCA-HVN when the hard part is not "make the model write code," but:
 
 ## The Core Mental Model
 
-ORCA-HVN is easiest to understand as five layers:
+ORCA is easiest to understand as five layers:
 
 1. a work item and workflow path
 2. feature-specific commands and skills

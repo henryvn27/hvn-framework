@@ -1,6 +1,6 @@
 # Feature Index
 
-ORCA-HVN is broad. This page groups features into practical buckets.
+ORCA is broad. This page groups features into practical buckets.
 
 ## Intake And Planning
 

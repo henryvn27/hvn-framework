@@ -2,13 +2,13 @@
 
 <img src="assets/orca.png" alt="ORCA-HVN logo" width="220" />
 
-ORCA-HVN is an orchestration framework for running agent-assisted software work with durable workflow structure, host-aware execution paths, QA discipline, and inspectable artifacts. It is Linear-first by default, but it can map the same workflow to another system of record when needed.
+ORCA is an orchestration framework for running agent-assisted software work with durable workflow structure, host-aware execution paths, QA discipline, and inspectable artifacts. The formal repository and framework name is ORCA-HVN. It is Linear-first by default, but it can map the same workflow to another system of record when needed.
 
-The name is intentional: ORCA-HVN is meant to be an orchestrator for agentic work, not just a pile of commands.
+The name is intentional: ORCA is meant to be an orchestrator for agentic work, not just a pile of commands.
 
 Framework-wide rule: the goal is to reduce friction, not create more setup work.
 
-ORCA-HVN is the primary workflow here. It replaces the older GStack or GSD-centered way of working rather than sitting beside it. Those earlier tools helped shape some of the ideas behind this project, but the intended operating path is now ORCA-only.
+ORCA is the primary workflow here. It replaces the older GStack or GSD-centered way of working rather than sitting beside it. Those earlier tools helped shape some of the ideas behind this project, but the intended operating path is now ORCA-only.
 
 It is also meant to be a place where people learn how to work with orchestration and agent-management systems without needing a human to teach them first. The goal is not "learn ORCA, then graduate to something else." The goal is that ORCA both teaches the workflow and remains a strong long-term workflow.
 
@@ -35,7 +35,7 @@ Use ORCA-HVN when the hard part is not "generate code," but:
 
 ## What Makes It Different
 
-ORCA-HVN is not only a prompt or command pack. It combines:
+ORCA is not only a prompt or command pack. It combines:
 
 - onboarding and spec-driven execution
 - guided first-use learning instead of only expert-first command surfaces
@@ -137,7 +137,7 @@ Global install:
 
 ## Docs-As-Code Maintenance
 
-ORCA-HVN treats docs as part of the framework surface, not as a separate afterthought.
+ORCA treats docs as part of the framework surface, not as a separate afterthought.
 
 Read:
 
@@ -162,7 +162,7 @@ Then read:
 
 ## Attribution And Upstreams
 
-ORCA-HVN does not pretend it invented every underlying idea.
+ORCA does not pretend it invented every underlying idea.
 
 Read:
 
