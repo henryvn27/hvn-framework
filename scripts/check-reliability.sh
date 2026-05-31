@@ -81,6 +81,12 @@ for file in \
   docs/concept-map.md \
   docs/truth-hierarchy.md \
   docs/graph-and-vault-support.md \
+  docs/corpus-overview.md \
+  docs/corpus-setup.md \
+  docs/corpus-settings.md \
+  docs/corpus-writeback.md \
+  docs/corpus-privacy.md \
+  docs/corpus-precedence.md \
   docs/optional-tooling-policy.md \
   docs/minimum-friction-policy.md \
   docs/friction-reduction-principle.md \
@@ -300,6 +306,10 @@ for file in \
   templates/integration-health-report.md \
   templates/vault-map-report.md \
   templates/graph-insight-report.md \
+  templates/corpus-global-settings.md \
+  templates/corpus-project-settings.md \
+  templates/corpus-writeback-policy.md \
+  templates/corpus-index-status.md \
   templates/notebooklm-setup-checklist.md \
   templates/notebooklm-usage-pattern.md \
   templates/github-setup-checklist.md \
@@ -383,6 +393,11 @@ for file in \
   docs/examples/vault-cluster-report.md \
   docs/examples/graphify-helps.md \
   docs/examples/graphify-not-needed.md \
+  docs/examples/corpus-global-inherit.md \
+  docs/examples/corpus-project-disabled.md \
+  docs/examples/corpus-writeback-confirm.md \
+  docs/examples/corpus-missing-path.md \
+  docs/examples/corpus-reindex-after-path-change.md \
   docs/examples/friction-reduction-good.md \
   docs/examples/friction-reduction-bad.md \
   docs/examples/user-chosen-tool-support.md \
@@ -518,6 +533,7 @@ for file in \
   commands/orca-replay.md \
   commands/orca-restore.md \
   commands/orca-check-updates.md \
+  commands/orca-corpus.md \
   commands/orca-update.md \
   commands/orca-background.md \
   commands/orca-keep-going.md \
@@ -573,6 +589,7 @@ for file in \
   skills/orca-adaptive-guidance/SKILL.md \
   skills/orca-agent-orchestration/SKILL.md \
   skills/orca-auto-update/SKILL.md \
+  skills/orca-corpus-support/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -703,5 +720,20 @@ done
 
 case_count="$(grep -Ec '^[0-9]+\.' examples/evals/starter-set.md | tr -d ' ')"
 [ "$case_count" -ge 10 ] || fail "starter eval set must contain at least 10 cases"
+
+grep -q 'enabled: false' docs/corpus-settings.md || fail "corpus must be documented as disabled by default"
+grep -q 'reference_enabled: false' docs/corpus-settings.md || fail "corpus reference default must stay off"
+grep -q 'writeback_enabled: false' docs/corpus-settings.md || fail "corpus write-back default must stay off"
+grep -q 'reference permission from write-back permission' docs/corpus-setup.md || fail "corpus setup must separate reference and write-back permission"
+grep -q 'write-back is off unless the user explicitly opts in' docs/corpus-setup.md || fail "corpus write-back opt-in rule missing"
+grep -q 'project OFF overrides global ON' docs/corpus-precedence.md || fail "project override rule missing"
+grep -q 'Global OFF Blocks Project Read' docs/corpus-precedence.md || fail "global off read block rule missing"
+grep -q 'Global Write-Back OFF Blocks Project Write-Back' docs/corpus-precedence.md || fail "global write-back block rule missing"
+grep -q 'fail closed' docs/corpus-writeback.md || fail "missing path fail-closed rule missing"
+grep -q 'require re-indexing' docs/corpus-writeback.md || fail "re-index requirement missing"
+grep -q 'project OFF overrides global ON' docs/examples/corpus-project-disabled.md || fail "project-disabled example missing override outcome"
+grep -q 'do not write to the corpus' docs/examples/corpus-missing-path.md || fail "missing-path example must block write"
+grep -q 'allow the action only because write-back is explicitly enabled' docs/examples/corpus-writeback-confirm.md || fail "write-back example must require explicit opt-in"
+grep -q 'treat prior index state as stale' docs/examples/corpus-reindex-after-path-change.md || fail "re-index example missing stale-state rule"
 
 printf 'check-reliability: ok\n'

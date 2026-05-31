@@ -14,6 +14,8 @@ When enabling corpus support, ORCA should ask for exactly the configuration need
 
 ## Required Decisions
 
+The setup must separate reference permission from write-back permission.
+
 ### Folder Path
 
 The user must provide a concrete folder path. ORCA should not guess a corpus path from vague statements.
@@ -24,7 +26,7 @@ Reference permission controls whether ORCA may read and ground itself in the con
 
 ### Write-Back Permission
 
-Write-back permission is separate and stays off unless the user explicitly opts in.
+Write-back permission is separate, and write-back is off unless the user explicitly opts in.
 
 ### Allowed Write-Back Kinds
 

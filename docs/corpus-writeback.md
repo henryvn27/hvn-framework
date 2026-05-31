@@ -52,6 +52,7 @@ Examples of actions that should still require confirmation:
 
 If the path is missing, moved, or no longer mounted:
 
+- fail closed
 - do not write
 - report the path failure clearly
 - keep the corpus disabled for active use until the path is fixed

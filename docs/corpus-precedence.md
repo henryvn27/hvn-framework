@@ -14,6 +14,8 @@ Corpus support uses explicit precedence so global convenience does not override 
 
 ### Project OFF Overrides Global ON
 
+The rule is simple: project OFF overrides global ON.
+
 If a project sets corpus support off, that project should not read from the global corpus even when the global corpus is enabled.
 
 ### Global OFF Blocks Project Read
