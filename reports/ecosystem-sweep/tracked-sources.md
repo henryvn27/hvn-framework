@@ -59,6 +59,21 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - Linear MCP: https://linear.app/docs/mcp
 - Linear docs: https://linear.app/docs
 
+### NotebookLM
+- NotebookLM Enterprise overview: https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview
+- NotebookLM Enterprise setup: https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm
+- NotebookLM notebook API: https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks
+- NotebookLM source API: https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources
+- Gemini Enterprise access path: https://docs.cloud.google.com/gemini/enterprise/docs/access-notebooklm
+- Community MCP example: https://github.com/PleasePrompto/notebooklm-mcp
+- Community MCP and HTTP example: https://github.com/roomi-fields/notebooklm-mcp
+
+### Vault And Graph Tooling
+- Obsidian graph view: https://obsidian.md/help/Plugins/Graph%2Bview
+- Obsidian backlinks: https://obsidian.md/help/plugins/backlinks
+- Obsidian CLI: https://obsidian.md/help/cli
+- Graphify site: https://graphify.net/
+
 ### VS Code
 - VS Code MCP servers: https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
@@ -152,6 +167,8 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - auth, analytics, monitoring, and push defaults that affect ORCA-HVN stack recommendations
 - evidence that a current default is losing best-fit status for a common use case
 - evidence that a supported tool should remain setup-only rather than recommended
+- evidence that NotebookLM should stay optional rather than becoming a default recommendation
+- evidence that graph tooling reduces enough friction to justify mentioning it at all
 
 ## Harness Update Questions
 

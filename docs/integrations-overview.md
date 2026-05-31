@@ -77,4 +77,6 @@ Start with:
 
 If the user already chose a tool, switch to setup-help mode instead of re-recommending the stack.
 
+That rule especially matters for optional knowledge tools such as NotebookLM, where support should often mean setup and caveat handling rather than broad recommendation.
+
 Then open the relevant pack in [../integrations/README.md](../integrations/README.md).

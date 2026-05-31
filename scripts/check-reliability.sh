@@ -28,6 +28,7 @@ for file in \
   docs/README.md \
   docs/information-architecture.md \
   docs/start-here.md \
+  docs/first-workflow.md \
   docs/quickstart.md \
   docs/intro.md \
   docs/feature-index.md \
@@ -36,6 +37,12 @@ for file in \
   docs/choose-your-path.md \
   docs/glossary.md \
   docs/concept-map.md \
+  docs/truth-hierarchy.md \
+  docs/graph-and-vault-support.md \
+  docs/optional-tooling-policy.md \
+  docs/minimum-friction-policy.md \
+  docs/graph-fit-rules.md \
+  docs/graph-analysis-output-modes.md \
   docs/visual-quality.md \
   docs/human-voice.md \
   docs/token-efficiency.md \
@@ -90,6 +97,8 @@ for file in \
   docs/integration-validation.md \
   docs/integration-diagnostics.md \
   docs/integration-priorities.md \
+  docs/notebooklm-integration-modes.md \
+  docs/notebooklm-validation.md \
   docs/setup-validation.md \
   docs/degraded-mode.md \
   docs/setup-ux.md \
@@ -157,11 +166,13 @@ for file in \
   docs/hosts/hermes-agent.md \
   docs/hosts/vscode.md \
   docs/hosts/generic.md \
-  docs/guides/using-hvn-with-gstack.md \
+  docs/guides/from-gstack-or-gsd-to-orca-hvn.md \
   docs/guides/using-hvn-with-hermes.md \
   docs/guides/goal-mode-guide.md \
   docs/guides/background-mode-guide.md \
   docs/guides/business-ideation-guide.md \
+  docs/guides/graphify-guide.md \
+  docs/guides/notebooklm-guide.md \
   docs/guides/paved-roads-guide.md \
   docs/guides/runtime-adaptation-guide.md \
   docs/guides/expo-guide.md \
@@ -169,6 +180,8 @@ for file in \
   docs/guides/visual-quality-guide.md \
   docs/paved-road-ux.md \
   integrations/README.md \
+  integrations/graphify.md \
+  integrations/notebooklm.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -191,9 +204,14 @@ for file in \
   templates/use-case-profile.md \
   templates/tool-fit-entry.md \
   templates/recommendation-confidence.md \
+  templates/graph-fit-check.md \
   templates/integration-validation.md \
   templates/integration-status.md \
   templates/integration-health-report.md \
+  templates/vault-map-report.md \
+  templates/graph-insight-report.md \
+  templates/notebooklm-setup-checklist.md \
+  templates/notebooklm-usage-pattern.md \
   templates/github-setup-checklist.md \
   templates/linear-setup-checklist.md \
   templates/setup-guidance-quick.md \
@@ -254,6 +272,21 @@ for file in \
   docs/examples/setup-user-chosen-tool.md \
   docs/examples/no-recommendation-insufficient-signal.md \
   docs/examples/revenuecat-vs-stripe.md \
+  docs/examples/obsidian-vault-basic-audit.md \
+  docs/examples/graphify-optional-enhancement.md \
+  docs/examples/graphify-user-requested-setup.md \
+  docs/examples/no-extra-tooling-needed.md \
+  docs/examples/vault-cluster-report.md \
+  docs/examples/graphify-helps.md \
+  docs/examples/graphify-not-needed.md \
+  docs/examples/from-gstack-or-gsd.md \
+  docs/examples/notebooklm-research-flow.md \
+  docs/examples/notebooklm-user-chosen-setup.md \
+  docs/examples/notebooklm-enterprise-path.md \
+  docs/examples/notebooklm-mcp-path.md \
+  docs/examples/notebooklm-for-idea-research.md \
+  docs/examples/notebooklm-for-project-knowledge.md \
+  skills/orca-graph-vault-support/SKILL.md \
   templates/artifact-mapping.md \
   templates/framework-improvement-note.md \
   templates/session-improvement-review.md \
@@ -414,7 +447,7 @@ for file in \
   docs/examples/idea-pursue-decision.md \
   docs/examples/new-user-path.md \
   docs/examples/hermes-user-path.md \
-  docs/examples/gstack-user-path.md \
+  docs/examples/from-gstack-or-gsd.md \
   docs/examples/business-ideation-user-path.md \
   docs/examples/background-mode-user-path.md \
   docs/examples/next-step-beginner.md \

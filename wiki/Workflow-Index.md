@@ -2,6 +2,7 @@
 
 Common routes:
 
+- first-time ORCA workflow
 - feature delivery
 - legacy modernization
 - controller and executor delegation
@@ -10,4 +11,3 @@ Common routes:
 - idea validation
 
 See `docs/use-case-map.md` and `docs/workflow.md`.
-

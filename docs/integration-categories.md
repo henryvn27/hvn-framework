@@ -88,6 +88,7 @@ ORCA-HVN groups integrations by job, not by vendor popularity.
 
 - OpenAI
 - Anthropic
+- NotebookLM
 - Pinecone
 - pgvector
 - Langfuse

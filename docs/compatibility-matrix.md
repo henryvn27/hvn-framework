@@ -26,6 +26,8 @@ Status meanings:
 
 - `supported` does not imply native support. A capability may rely on MCP, connectors, or manual setup.
 - GitHub and Linear integration columns reflect viable integration options, not guaranteed built-in connectors.
+- Knowledge-layer integrations such as NotebookLM depend heavily on setup mode and host tooling; treat enterprise API paths and community MCP paths separately.
+- Graph or vault tooling should be treated as optional helper support, not as part of the minimum compatible path.
 - Integration routing should also respect platform category, especially web deployment versus mobile build or billing workflows.
 - Compatibility should inform what is possible, not automatically what is recommended.
 - `unclear` means ORCA-HVN should prefer degraded mode or an explicit research note over a stronger claim.

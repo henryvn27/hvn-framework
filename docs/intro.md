@@ -1,6 +1,8 @@
 # Intro
 
-ORCA-HVN exists because agent-assisted software work breaks down at the workflow level more often than at the text-generation level.
+ORCA-HVN exists because agent-assisted software work breaks down at the workflow level more often than at the text-generation level. It is an orchestration framework for that work, not just a prompt layer around it.
+
+It is intended to replace the older GStack or GSD-centered personal workflow, not run beside it. Those tools informed some early thinking, but ORCA-HVN is the coherent operating system this repo is now built around.
 
 ## The Problem
 
@@ -41,4 +43,3 @@ ORCA-HVN is not just a prompt library. It is a workflow framework with:
 - If you want the routing map: [choose-your-path.md](choose-your-path.md)
 - If you want the capability map: [feature-index.md](feature-index.md)
 - If you want the glossary: [glossary.md](glossary.md)
-

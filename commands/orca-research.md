@@ -8,6 +8,8 @@ Gather evidence for decisions that depend on external facts, current APIs, platf
 
 Use when a claim may be stale, contested, high-stakes, or outside the repo.
 
+If the user has provided a vault or live knowledge base for the question, treat that as the primary workflow evidence source before falling back to generic outside guidance.
+
 ## Required Inputs
 
 - Research question
@@ -35,9 +37,11 @@ Attach or summarize the research brief in the chosen record.
 
 1. Use `orca-research`.
 2. Define the decision the research must support.
-3. Consult primary or authoritative sources when possible.
-4. Summarize findings, confidence, citations, and implications.
-5. Sync the conclusion to the work item.
+3. Check whether the user provided a vault or other live knowledge base that should outrank generic advice.
+4. Consult primary or authoritative external sources when needed.
+5. Mark any extrapolation clearly if the vault or local evidence is weak.
+6. Summarize findings, confidence, citations, and implications.
+7. Sync the conclusion to the work item.
 
 ## Outputs And Artifacts
 
@@ -47,6 +51,7 @@ Attach or summarize the research brief in the chosen record.
 
 - If sources conflict, report the conflict and confidence level.
 - If evidence is unavailable, document the uncertainty.
+- If vault evidence is thin, say so explicitly before falling back to generic guidance.
 
 ## Related Commands And Skills
 

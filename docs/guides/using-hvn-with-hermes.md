@@ -8,6 +8,8 @@ Use this guide when a Hermes-like controller agent is steering work while anothe
 
 Hermes-style use fits ORCA-HVN's controller and delegation layers well. The controller orients itself, delegates bounded work, then ingests results back into the shared artifact trail.
 
+This should still feel like ORCA-HVN teaching and governing the workflow, not like ORCA disappears once a more advanced controller is present.
+
 ## Recommended Flow
 
 1. `orca-controller`
@@ -27,4 +29,3 @@ Hermes-style use fits ORCA-HVN's controller and delegation layers well. The cont
 
 - [runtime-adaptation-guide.md](runtime-adaptation-guide.md)
 - [background-mode-guide.md](background-mode-guide.md)
-

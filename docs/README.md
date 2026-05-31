@@ -5,9 +5,11 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 ## Start Here
 
 - [start-here.md](start-here.md): the best first page for most readers
+- [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
 - [intro.md](intro.md): the core mental model and why ORCA-HVN exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
+- [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
 
 ## Core Navigation
 
@@ -17,16 +19,18 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [use-case-map.md](use-case-map.md): which workflow fits which situation
 - [glossary.md](glossary.md): plain-language definitions for core terms
 - [concept-map.md](concept-map.md): how the main framework pieces connect
+- [truth-hierarchy.md](truth-hierarchy.md): which evidence should outrank generic advice
 
 ## Guides
 
 These are teaching-oriented pages for common paths:
 
-- [guides/using-hvn-with-gstack.md](guides/using-hvn-with-gstack.md)
+- [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
 - [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
 - [guides/goal-mode-guide.md](guides/goal-mode-guide.md)
 - [guides/background-mode-guide.md](guides/background-mode-guide.md)
 - [guides/business-ideation-guide.md](guides/business-ideation-guide.md)
+- [guides/graphify-guide.md](guides/graphify-guide.md)
 - [guides/paved-roads-guide.md](guides/paved-roads-guide.md)
 - [guides/runtime-adaptation-guide.md](guides/runtime-adaptation-guide.md)
 - [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
@@ -53,6 +57,10 @@ These are teaching-oriented pages for common paths:
 - [token-efficiency.md](token-efficiency.md)
 - [integrations-overview.md](integrations-overview.md)
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
+- [optional-tooling-policy.md](optional-tooling-policy.md)
+- [minimum-friction-policy.md](minimum-friction-policy.md)
+- [graph-fit-rules.md](graph-fit-rules.md)
+- [graph-analysis-output-modes.md](graph-analysis-output-modes.md)
 - [choose-your-stack.md](choose-your-stack.md)
 - [session-improvement-loop.md](session-improvement-loop.md)
 - [session-quality-signals.md](session-quality-signals.md)

@@ -15,7 +15,7 @@ Use when information may be current, external, domain-specific, high-risk, or un
 
 ## Do Not Trigger
 
-Do not use for facts already present in the repo or conversation unless accuracy is high-stakes.
+Do not use for facts already present in the repo, vault, or conversation unless accuracy is high-stakes.
 
 ## Required Inputs
 
@@ -33,10 +33,11 @@ Do not use for facts already present in the repo or conversation unless accuracy
 
 1. Define the decision and evidence needed.
 2. Read the issue or opt-out record for constraints and decision context.
-3. Prefer primary sources and official documentation.
-4. Record citations, dates, and confidence.
-5. Explain how findings affect the spec or plan.
-6. Post or prepare the conclusion for the durable record.
+3. If a vault or declared live knowledge base exists, treat it as the primary source of workflow truth.
+4. Prefer primary sources and official documentation for external facts that the vault does not answer.
+5. Record citations, dates, confidence, and whether a conclusion is direct evidence or extrapolation.
+6. Explain how findings affect the spec or plan.
+7. Post or prepare the conclusion for the durable record.
 
 ## Expected Outputs
 
@@ -44,13 +45,14 @@ Do not use for facts already present in the repo or conversation unless accuracy
 
 ## Quality Bar
 
-Findings should be actionable and distinguish fact from inference.
+Findings should be actionable and distinguish fact from inference. If vault evidence is weak, the fallback to generic guidance should be stated plainly.
 
 ## Common Failure Modes
 
 - Summarizing sources without a decision.
 - Using stale or secondary evidence for current technical claims.
 - Omitting uncertainty.
+- Overriding strong vault evidence with generic industry advice.
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 

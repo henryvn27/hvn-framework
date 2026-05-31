@@ -32,6 +32,10 @@ Every sweep should explicitly watch:
 - host-specific install and config steps
 - auth and permission pattern changes
 - deprecated setup patterns
+- NotebookLM Enterprise API and setup changes
+- NotebookLM community MCP or browser-automation shifts
+- Graphify maintenance and setup changes
+- Obsidian graph and backlink workflow changes that affect vault analysis
 - onboarding UX improvements
 - novice and expert workflow adaptation
 - regression generation from QA
@@ -121,6 +125,8 @@ Track currently recommended setup paths and caveats. Update this table during ea
 | --- | --- | --- | --- | --- | --- | --- |
 | GitHub | connector, approved MCP, `gh`, or manual; verify locally | MCP or configured connector when available; manual fallback | verify host docs before recommending connector parity | unknown; verify local docs | Copilot connector, MCP, `gh`, or manual | `gh`, approved MCP, token, or manual |
 | Linear | connector, approved MCP, or manual; verify locally | MCP path when approved; manual fallback | verify host docs before recommending connector parity | unknown; verify local docs | MCP, approved token path, or manual | approved MCP, token, or manual |
+| NotebookLM | community MCP or browser path unless enterprise setup is confirmed | community MCP or browser path unless enterprise setup is confirmed | verify host and browser automation support before recommending | unknown; verify local docs | browser automation or enterprise web path, depending on host setup | enterprise path, Google Cloud APIs, or user-managed MCP/browser tooling |
+| Graphify | optional local install or shell invocation; never required | optional local install or shell invocation; never required | verify host shell and file access support first | unknown; verify local docs | optional local install if the user wants graph analysis | direct vault inspection first, Graphify only as optional enhancement |
 
 ## Setup Path Risks
 
@@ -139,6 +145,8 @@ Use this section for easier setup paths ORCA-HVN may want to adopt.
 - Do not assume MCP setup, connector auth, or write permissions transfer across hosts.
 - Treat official connector changes as host-specific until evidence shows portability.
 - If a setup path changes from local server to remote MCP, verify auth and permission implications before recommending it.
+- Do not blur NotebookLM Enterprise APIs with community automation. Track them as separate setup paths.
+- Do not let graph tooling drift into mandatory setup. Keep it explicitly optional.
 
 ## Recently Adopted
 

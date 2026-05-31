@@ -15,10 +15,15 @@ This page helps returning users rediscover what changed without reading every fi
 - session-quality signals and lightweight quality scoring for frustration, generic output, and wrong-direction detection
 - broad startup-stack integration packs with first-class Expo and React Native guidance
 - context-sensitive integration recommendations that separate support from recommendation
+- a single five-command first workflow for new users
+- clearer ORCA-first positioning that treats ORCA-HVN as the replacement for older GStack or GSD-centered routines
+- optional NotebookLM support for research and knowledge-heavy workflows without making it a default stack recommendation
+- a truth-hierarchy rule that treats user vaults as primary workflow evidence when they are available
 
 ## Best Pages To Revisit
 
 - [start-here.md](start-here.md)
+- [first-workflow.md](first-workflow.md)
 - [feature-index.md](feature-index.md)
 - [command-index.md](command-index.md)
 - [guides/runtime-adaptation-guide.md](guides/runtime-adaptation-guide.md)

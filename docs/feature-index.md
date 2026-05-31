@@ -43,6 +43,7 @@ Read:
 - token efficiency
 - integration packs and stack routing
 - restrained recommendation policy
+- optional vault and graph analysis
 
 Read:
 
@@ -53,6 +54,7 @@ Read:
 - [token-efficiency.md](token-efficiency.md)
 - [integrations-overview.md](integrations-overview.md)
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
+- [graph-and-vault-support.md](graph-and-vault-support.md)
 
 ## Inspection And Safety
 
@@ -97,6 +99,7 @@ Read:
 - business ideation
 - legacy modernization
 - repo archaeology
+- vault mapping and graph-assisted knowledge cleanup when justified
 
 Read:
 

@@ -2,6 +2,10 @@
 
 This is the shortest path to first value.
 
+If you want one default ORCA path instead of a menu of options, read [first-workflow.md](first-workflow.md) first.
+
+The point of this path is not just speed. It is also to let a new user learn the ORCA workflow directly inside ORCA, without needing someone else to walk them through every stage.
+
 ## 1. Clone And Validate
 
 ```sh
@@ -15,12 +19,17 @@ cd orca-hvn
 - Linear-first: use ORCA-HVN's default system of record
 - opt-out: map the workflow to your own tracker or repo docs
 
-## 3. Pick One Common Starting Path
+## 3. Run The Default Intro Path
 
-- new feature: `orca-onboard` -> `orca-spec` -> `orca-plan` -> `orca-build`
-- legacy repo: `orca-legacy` -> `orca-spec` -> `orca-plan`
-- background progress: `orca-background` or `orca-keep-going`
-- idea before product spec: `orca-idea` -> `orca-evaluate-idea` -> `orca-plan-idea`
+Use these five commands in order:
+
+1. `orca-onboard`
+2. `orca-spec`
+3. `orca-plan`
+4. `orca-build`
+5. `orca-review`
+
+Only branch into other workflows after this path is clear.
 
 ## 4. Read Only What You Need Next
 
@@ -42,7 +51,8 @@ Use:
 A good first session is not "learn every feature." It is:
 
 - one work item
-- one spec or plan
-- one command path
-- one receipt or QA artifact
+- one ORCA path
+- one command per stage
+- one reviewable outcome
 
+A good onboarding experience should make the user feel like ORCA is teaching the workflow while they use it, not like they are memorizing a separate system before real work can start.

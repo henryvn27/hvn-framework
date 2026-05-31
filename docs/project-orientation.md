@@ -21,6 +21,10 @@ Use:
 - [templates/project-orientation.md](../templates/project-orientation.md) for a structured orientation artifact
 - `orca-orient` when a current project snapshot should be produced or refreshed
 
+If the user provides a vault or other live knowledge base for the project, treat that as a primary orientation input for workflow reality. Do not replace it with generic assumptions.
+
+If the vault is large or fragmented, optional graph-style analysis may help a controller understand project clusters faster. Use it only when the added clarity justifies the extra step.
+
 ## Good Orientation Shape
 
 A good orientation artifact is:
@@ -50,3 +54,5 @@ Orientation does not replace:
 - approvals
 
 It is the entry summary that points to them.
+
+Optional knowledge surfaces such as NotebookLM can support orientation for research-heavy projects, but they do not replace the ORCA-HVN orientation artifact or the canonical project state.
