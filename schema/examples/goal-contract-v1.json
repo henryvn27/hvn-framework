@@ -1,0 +1,35 @@
+{
+  "schema_family": "goal_contract",
+  "schema_version": "1.0.0",
+  "title": "Portable schema layer for one milestone",
+  "linked_spec": "spec-portability-v1.md",
+  "linked_work_item": "ORCA-HVN-201",
+  "objective": "Define schema-backed portability for core artifacts without replacing Markdown docs.",
+  "in_scope": [
+    "Schema docs",
+    "Versioning guidance",
+    "Mapping guidance"
+  ],
+  "out_of_scope": [
+    "Universal external adoption"
+  ],
+  "completion_condition": "Docs, schemas, examples, and validation guidance exist and validate locally.",
+  "verification_method": "Run repo validators and inspect schema examples.",
+  "allowed_tools_and_actions": [
+    "Repo documentation edits",
+    "Schema file additions"
+  ],
+  "constraints": [
+    "Keep the human-readable artifact layer."
+  ],
+  "stop_conditions": [
+    "Validation breaks unexpectedly",
+    "A breaking schema change needs separate migration handling"
+  ],
+  "approval_triggers": [
+    "Broad restructuring of existing artifact templates"
+  ],
+  "steering_notes": [
+    "Stay incremental."
+  ]
+}

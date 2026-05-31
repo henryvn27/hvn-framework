@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/qa-finding.schema.json",
+  "title": "ORCA-HVN QA Finding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "source", "summary", "severity", "verification_path"],
+  "properties": {
+    "schema_family": { "const": "qa_finding" },
+    "schema_version": { "const": "1.0.0" },
+    "source": { "type": "string" },
+    "summary": { "type": "string" },
+    "severity": { "type": "string" },
+    "reproduction_steps": { "type": "array", "items": { "type": "string" } },
+    "expected_behavior": { "type": "string" },
+    "observed_behavior": { "type": "string" },
+    "verification_path": { "type": "string" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

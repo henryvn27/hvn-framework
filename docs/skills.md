@@ -19,7 +19,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Core governance: `orca-core`
 - Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`
 - Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
-- Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`
+- Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
 - QA: `orca-blind-qa`, `orca-context-brief`, `orca-ios-sim-qa`, `orca-web-qa`
 - Learning: `orca-retro`
@@ -35,6 +35,7 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-approval-gate` for risky-action control
 - `orca-benchmark` for onboarding/spec comparisons
 - `orca-accounting` for workflow timing and retry signals
+- `orca-portability` for schema definition, validation, versioning, and artifact mapping
 - `orca-regression-task` for preserving high-value findings as regression work
 - `orca-shared-state` for current multi-role coordination
 - `orca-checkpoint` for explicit pause, inspect, approve, reject, and resume flows

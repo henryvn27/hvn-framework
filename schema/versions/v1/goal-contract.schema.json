@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/goal-contract.schema.json",
+  "title": "ORCA-HVN Goal Contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "title", "objective", "in_scope", "out_of_scope", "completion_condition", "verification_method", "stop_conditions"],
+  "properties": {
+    "schema_family": { "const": "goal_contract" },
+    "schema_version": { "const": "1.0.0" },
+    "title": { "type": "string" },
+    "linked_spec": { "type": "string" },
+    "linked_work_item": { "type": "string" },
+    "objective": { "type": "string" },
+    "in_scope": { "type": "array", "items": { "type": "string" } },
+    "out_of_scope": { "type": "array", "items": { "type": "string" } },
+    "completion_condition": { "type": "string" },
+    "verification_method": { "type": "string" },
+    "allowed_tools_and_actions": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "stop_conditions": { "type": "array", "items": { "type": "string" } },
+    "approval_triggers": { "type": "array", "items": { "type": "string" } },
+    "steering_notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

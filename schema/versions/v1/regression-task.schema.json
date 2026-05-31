@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/regression-task.schema.json",
+  "title": "ORCA-HVN Regression Task v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "source_finding", "task_type", "priority_outcome", "verification_path"],
+  "properties": {
+    "schema_family": { "const": "regression_task" },
+    "schema_version": { "const": "1.0.0" },
+    "source_finding": { "type": "string" },
+    "task_type": { "type": "string" },
+    "priority_outcome": { "enum": ["test now", "backlog", "watch only"] },
+    "reproduction": { "type": "array", "items": { "type": "string" } },
+    "verification_path": { "type": "string" },
+    "automation_level": { "type": "string" },
+    "fragility_notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

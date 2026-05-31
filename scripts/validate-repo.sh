@@ -83,6 +83,11 @@ docs/harness-compatibility.md
 docs/harness-watch.md
 docs/compatibility-matrix.md
 docs/command-mapping.md
+docs/portable-artifacts.md
+docs/open-agent-spec-direction.md
+docs/schema-versioning.md
+docs/artifact-mapping.md
+docs/schema-validation.md
 docs/ecosystem-watch.md
 docs/ecosystem-opportunities.md
 docs/hosts/codex-cli.md
@@ -158,7 +163,26 @@ docs/examples/goal-for-milestone.md
 docs/examples/goal-review.md
 docs/examples/goal-status-handoff.md
 docs/examples/bad-goal-vs-good-goal.md
+docs/examples/portable-spec-schema.md
+docs/examples/portable-goal-contract.md
+docs/examples/schema-migration.md
+docs/examples/artifact-mapping.md
 benchmarks/onboarding-spec/README.md
+schema/README.md
+schema/versions/v1/onboarding-summary.schema.json
+schema/versions/v1/spec.schema.json
+schema/versions/v1/milestone-plan.schema.json
+schema/versions/v1/goal-contract.schema.json
+schema/versions/v1/run-memory.schema.json
+schema/versions/v1/run-trace.schema.json
+schema/versions/v1/execution-receipt.schema.json
+schema/versions/v1/qa-finding.schema.json
+schema/versions/v1/regression-task.schema.json
+schema/versions/v1/approval-request.schema.json
+schema/versions/v1/runtime-status.schema.json
+schema/examples/spec-v1.json
+schema/examples/goal-contract-v1.json
+schema/examples/runtime-status-v1.json
 registry/tools/README.md
 registry/mcp-servers/README.md
 registry/harnesses/README.md
@@ -183,7 +207,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 

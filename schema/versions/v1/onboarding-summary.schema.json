@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/onboarding-summary.schema.json",
+  "title": "ORCA-HVN Onboarding Summary v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "goal", "constraints", "open_questions", "recommended_path"],
+  "properties": {
+    "schema_family": { "const": "onboarding_summary" },
+    "schema_version": { "const": "1.0.0" },
+    "work_item": { "type": "string" },
+    "goal": { "type": "string" },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "open_questions": { "type": "array", "items": { "type": "string" } },
+    "recommended_path": { "type": "string" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

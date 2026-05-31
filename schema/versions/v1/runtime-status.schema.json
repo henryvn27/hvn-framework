@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/runtime-status.schema.json",
+  "title": "ORCA-HVN Runtime Status v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "detected_harness", "detection_confidence", "recommended_workflow_mode"],
+  "properties": {
+    "schema_family": { "const": "runtime_status" },
+    "schema_version": { "const": "1.0.0" },
+    "detected_harness": { "type": "string" },
+    "detection_confidence": { "type": "string" },
+    "enabled_features": { "type": "array", "items": { "type": "string" } },
+    "disabled_features": { "type": "array", "items": { "type": "string" } },
+    "degraded_capabilities": { "type": "array", "items": { "type": "string" } },
+    "active_policy_switches": { "type": "array", "items": { "type": "string" } },
+    "recommended_workflow_mode": { "type": "string" },
+    "missing_integrations": { "type": "array", "items": { "type": "string" } },
+    "latest_receipt": { "type": "string" },
+    "related_artifacts": { "type": "array", "items": { "type": "string" } },
+    "replay_availability": { "type": "string" },
+    "restore_points": { "type": "array", "items": { "type": "string" } },
+    "important_caveats": { "type": "array", "items": { "type": "string" } }
+  }
+}

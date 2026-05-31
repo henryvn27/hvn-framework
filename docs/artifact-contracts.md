@@ -21,6 +21,7 @@ Use a contract when creating or reviewing a durable artifact. The contract tells
 - what quality bar applies
 
 The contracts live in [templates/contracts/](../templates/contracts/).
+Portable machine-readable companions live in [schema/](../schema/README.md).
 
 ## Core Contracts
 
@@ -47,3 +48,10 @@ Full docs explain the operating model.
 
 Use contracts for repeatable structure.
 Use prose docs for judgment, philosophy, examples, and edge cases.
+Use schemas for versioned validation and cross-system mapping.
+
+See:
+
+- [docs/portable-artifacts.md](portable-artifacts.md)
+- [docs/schema-versioning.md](schema-versioning.md)
+- [docs/artifact-mapping.md](artifact-mapping.md)

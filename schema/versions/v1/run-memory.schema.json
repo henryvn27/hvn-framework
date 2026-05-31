@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/run-memory.schema.json",
+  "title": "ORCA-HVN Run Memory Entry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "memory_type", "scope", "statement", "why_it_matters", "source_or_evidence", "freshness_note"],
+  "properties": {
+    "schema_family": { "const": "run_memory" },
+    "schema_version": { "const": "1.0.0" },
+    "memory_type": { "enum": ["fact", "decision", "blocker", "preference", "assumption"] },
+    "scope": { "enum": ["user", "repo", "project", "issue"] },
+    "statement": { "type": "string" },
+    "why_it_matters": { "type": "string" },
+    "source_or_evidence": { "type": "string" },
+    "freshness_note": { "type": "string" },
+    "expiration_condition": { "type": "string" },
+    "follow_up_action": { "type": "string" }
+  }
+}

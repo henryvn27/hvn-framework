@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/approval-request.schema.json",
+  "title": "ORCA-HVN Approval Request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "request_title", "reason", "requested_action", "risk_summary"],
+  "properties": {
+    "schema_family": { "const": "approval_request" },
+    "schema_version": { "const": "1.0.0" },
+    "request_title": { "type": "string" },
+    "linked_work_item": { "type": "string" },
+    "reason": { "type": "string" },
+    "requested_action": { "type": "string" },
+    "risk_summary": { "type": "array", "items": { "type": "string" } },
+    "fallback_if_rejected": { "type": "string" },
+    "reviewer": { "type": "string" }
+  }
+}

@@ -33,6 +33,8 @@ Good entries are:
 
 Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memory-contract.md) when designing memory artifacts or checking whether a memory entry is complete enough for future reuse.
 
+For portable machine-readable exchange, use the run-memory schema in `schema/versions/v1/run-memory.schema.json`.
+
 ## Relationship To Workflow
 
 - onboarding discovers context
@@ -48,3 +50,5 @@ Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memo
 - workflow metrics record time, retries, and optional usage signals
 
 Run memory may reference benchmark results, workflow metrics summaries, regression-task decisions, legacy audit findings, goal state, or checkpoint outcomes when those become durable project context, but it should not duplicate the underlying per-run artifacts.
+
+Portable schemas extend run memory by making the required shape explicit for validation or mapping. They do not replace concise human-readable entries.

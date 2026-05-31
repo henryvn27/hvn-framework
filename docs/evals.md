@@ -79,6 +79,13 @@ Each eval run should produce a human-reviewable report with:
 
 When workflow efficiency matters, pair evals with per-run accounting from [docs/workflow-accounting.md](workflow-accounting.md).
 When shared-state, checkpoint, or inspection artifacts exist, use them as additional trajectory evidence rather than ignoring the coordination layer.
+When portable schemas exist, use them to validate structural consistency before or alongside the judgment-heavy evaluation pass.
+
+Portable eval-adjacent inputs are especially useful when comparing:
+
+- artifact shape drift across versions
+- schema-backed mappings into external eval tools
+- whether a candidate workflow is emitting structurally comparable artifacts
 
 ## Relationship To QA
 

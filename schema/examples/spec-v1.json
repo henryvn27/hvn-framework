@@ -1,0 +1,31 @@
+{
+  "schema_family": "spec",
+  "schema_version": "1.0.0",
+  "linked_work_item": "ORCA-HVN-144",
+  "goal": "Add portable artifact schema support incrementally.",
+  "background": "The framework already has human-readable contracts and durable artifacts.",
+  "users_and_scenarios": [
+    "Maintainer validates an artifact across runtimes.",
+    "Integrator maps a spec into another tracker."
+  ],
+  "requirements": [
+    "Preserve Markdown artifacts.",
+    "Add versioned portable schemas."
+  ],
+  "non_goals": [
+    "Universal industry standardization."
+  ],
+  "edge_cases": [
+    "Partially valid artifact with missing optional fields."
+  ],
+  "acceptance_criteria": [
+    "Schema family and version are explicit.",
+    "Required structure can be validated."
+  ],
+  "assumptions": [
+    "JSON Schema is acceptable for initial portability."
+  ],
+  "open_questions": [
+    "Which external tool should consume schemas first?"
+  ]
+}

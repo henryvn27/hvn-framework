@@ -64,6 +64,11 @@ for file in \
   docs/harness-watch.md \
   docs/compatibility-matrix.md \
   docs/command-mapping.md \
+  docs/portable-artifacts.md \
+  docs/open-agent-spec-direction.md \
+  docs/schema-versioning.md \
+  docs/artifact-mapping.md \
+  docs/schema-validation.md \
   docs/ecosystem-watch.md \
   docs/ecosystem-opportunities.md \
   docs/hosts/codex-cli.md \
@@ -116,6 +121,8 @@ for file in \
   templates/next-step-ship.md \
   templates/goal-contract.md \
   templates/goal-status.md \
+  templates/schema-migration-note.md \
+  templates/artifact-mapping.md \
   templates/ecosystem-adopt-issue.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
@@ -141,6 +148,7 @@ for file in \
   commands/orca-validate-integration.md \
   commands/orca-runtime.md \
   commands/orca-status.md \
+  commands/orca-schema.md \
   commands/orca-receipt.md \
   commands/orca-lineage.md \
   commands/orca-replay.md \
@@ -151,6 +159,7 @@ for file in \
   commands/orca-goal-create.md \
   commands/orca-goal-status.md \
   commands/orca-goal-review.md \
+  commands/orca-validate-schema.md \
   skills/orca-observability/SKILL.md \
   skills/orca-eval/SKILL.md \
   skills/orca-approval-gate/SKILL.md \
@@ -166,6 +175,7 @@ for file in \
   skills/orca-legacy/SKILL.md \
   skills/orca-next-step/SKILL.md \
   skills/orca-goal-mode/SKILL.md \
+  skills/orca-portability/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -213,6 +223,25 @@ for file in \
   docs/examples/goal-review.md \
   docs/examples/goal-status-handoff.md \
   docs/examples/bad-goal-vs-good-goal.md \
+  docs/examples/portable-spec-schema.md \
+  docs/examples/portable-goal-contract.md \
+  docs/examples/schema-migration.md \
+  docs/examples/artifact-mapping.md \
+  schema/README.md \
+  schema/versions/v1/onboarding-summary.schema.json \
+  schema/versions/v1/spec.schema.json \
+  schema/versions/v1/milestone-plan.schema.json \
+  schema/versions/v1/goal-contract.schema.json \
+  schema/versions/v1/run-memory.schema.json \
+  schema/versions/v1/run-trace.schema.json \
+  schema/versions/v1/execution-receipt.schema.json \
+  schema/versions/v1/qa-finding.schema.json \
+  schema/versions/v1/regression-task.schema.json \
+  schema/versions/v1/approval-request.schema.json \
+  schema/versions/v1/runtime-status.schema.json \
+  schema/examples/spec-v1.json \
+  schema/examples/goal-contract-v1.json \
+  schema/examples/runtime-status-v1.json \
   registry/tools/README.md \
   registry/mcp-servers/README.md \
   registry/harnesses/README.md \

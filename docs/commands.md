@@ -35,6 +35,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-validate-integration`
 - `orca-runtime`
 - `orca-status`
+- `orca-schema`
 - `orca-spec`
 - `orca-plan`
 - `orca-next`
@@ -54,6 +55,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-eval`
 - `orca-replay`
 - `orca-restore`
+- `orca-validate-schema`
 - `orca-approve`
 - `orca-review`
 - `orca-design`
@@ -87,6 +89,7 @@ Use `orca-state`, `orca-checkpoint`, and `orca-inspect` when multiple roles need
 Use `orca-tool-review` and `orca-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.
 Use `orca-setup`, `orca-check-setup`, and `orca-validate-integration` when GitHub, Linear, MCP, connectors, or CLI helpers are needed for the workflow.
 Use `orca-runtime` and `orca-status` when harness capabilities or policy switches should change the recommended path or need inspection.
+Use `orca-schema` and `orca-validate-schema` when portable artifact structure, versioning, mapping, or schema validity matters.
 Use `orca-legacy` when the target system is inherited, under-documented, fragile, or modernization-focused.
 Use `orca-goal` commands only after spec and milestone planning produce a bounded, verifiable objective.
 Use `orca-next` after major phase completion when a short default next action would help the user move forward.

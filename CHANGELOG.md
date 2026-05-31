@@ -17,6 +17,7 @@
 - Added tool trust and MCP governance docs, registry templates, review commands, and trust-level guidance.
 - Added legacy modernization workflow with repo archaeology, legacy audit, risk report, modernization spec, and staged migration guidance.
 - Added goal mode support with goal contracts, status tracking, safety rules, host adapters, and host-neutral ORCA-HVN goal commands.
+- Added a portable artifact schema layer with versioned schemas, mapping guidance, validation guidance, and ORCA-HVN schema commands.
 
 ### Validation
 

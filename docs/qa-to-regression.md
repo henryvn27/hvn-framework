@@ -45,6 +45,11 @@ Use:
 - [templates/regression-candidate.md](../templates/regression-candidate.md) to capture a candidate derived from a finding
 - [templates/regression-task.md](../templates/regression-task.md) to promote the candidate into a reusable regression task
 
+For portable machine-readable exchange, use:
+
+- `schema/versions/v1/qa-finding.schema.json`
+- `schema/versions/v1/regression-task.schema.json`
+
 ## What Makes A Good Regression Task
 
 A good regression task has:
@@ -64,3 +69,5 @@ A good regression task has:
 ## Legacy Modernization Use
 
 For legacy work, regression tasks should capture current behavior before modernization changes begin. Favor characterization checks, manual reproduction paths, and high-value business-rule coverage before broad rewrites.
+
+Portable schemas help preserve those findings when moving them between harnesses, trackers, or regression tooling, but human review still decides whether the task is worth keeping.

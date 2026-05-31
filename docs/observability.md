@@ -34,6 +34,7 @@ Each meaningful run should capture:
 When workflow accounting is enabled, traces should link to the per-run metrics artifact described in [docs/workflow-accounting.md](workflow-accounting.md).
 
 Use [templates/run-trace.md](../templates/run-trace.md) as the default artifact shape and [templates/contracts/trace-contract.md](../templates/contracts/trace-contract.md) for the required fields.
+For portable machine-readable structure, use `schema/versions/v1/run-trace.schema.json`.
 
 ## What To Trace
 
@@ -87,6 +88,7 @@ See [docs/shared-state.md](shared-state.md) for the active coordination side of 
 Start simple:
 
 - keep traces as Markdown artifacts linked from the work item
+- allow schema-backed companions when validation or transformation matters
 - use one trace per meaningful run or phase
 - prefer inspectable files over opaque binary logs
 - keep summaries in the work item comment and detailed traces in linked artifacts when needed

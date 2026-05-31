@@ -1,0 +1,26 @@
+{
+  "schema_family": "runtime_status",
+  "schema_version": "1.0.0",
+  "detected_harness": "Codex",
+  "detection_confidence": "high",
+  "enabled_features": [
+    "portable artifacts",
+    "execution receipts"
+  ],
+  "disabled_features": [],
+  "degraded_capabilities": [],
+  "active_policy_switches": [
+    "schema_portability_v1"
+  ],
+  "recommended_workflow_mode": "spec-driven",
+  "missing_integrations": [],
+  "latest_receipt": "receipt-ORCA-HVN-201.md",
+  "related_artifacts": [
+    "schema/spec-v1.json"
+  ],
+  "replay_availability": "available",
+  "restore_points": [],
+  "important_caveats": [
+    "Portable schemas complement, not replace, Markdown artifacts."
+  ]
+}

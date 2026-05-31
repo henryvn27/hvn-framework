@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/run-trace.schema.json",
+  "title": "ORCA-HVN Run Trace v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "run_id", "harness", "actions_taken", "stop_reason"],
+  "properties": {
+    "schema_family": { "const": "run_trace" },
+    "schema_version": { "const": "1.0.0" },
+    "run_id": { "type": "string" },
+    "session_id": { "type": "string" },
+    "harness": { "type": "string" },
+    "work_item": { "type": "string" },
+    "agent_role": { "type": "string" },
+    "actions_taken": { "type": "array", "items": { "type": "string" } },
+    "decisions_made": { "type": "array", "items": { "type": "string" } },
+    "reliability_signals": { "type": "array", "items": { "type": "string" } },
+    "receipt_link": { "type": "string" },
+    "lineage_link": { "type": "string" },
+    "stop_reason": { "type": "string" }
+  }
+}

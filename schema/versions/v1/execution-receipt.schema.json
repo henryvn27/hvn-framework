@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/execution-receipt.schema.json",
+  "title": "ORCA-HVN Execution Receipt v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "run_id", "harness", "actions_taken", "verification_performed", "result_status"],
+  "properties": {
+    "schema_family": { "const": "execution_receipt" },
+    "schema_version": { "const": "1.0.0" },
+    "run_id": { "type": "string" },
+    "session_id": { "type": "string" },
+    "harness": { "type": "string" },
+    "work_item": { "type": "string" },
+    "spec": { "type": "string" },
+    "milestone": { "type": "string" },
+    "goal_contract": { "type": "string" },
+    "actions_taken": { "type": "array", "items": { "type": "string" } },
+    "artifacts_read": { "type": "array", "items": { "type": "string" } },
+    "artifacts_written": { "type": "array", "items": { "type": "string" } },
+    "verification_performed": { "type": "array", "items": { "type": "string" } },
+    "result_status": { "type": "string" },
+    "unresolved_risks": { "type": "array", "items": { "type": "string" } },
+    "approvals_used": { "type": "array", "items": { "type": "string" } },
+    "summary_metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "time": { "type": "string" },
+        "cost": { "type": "string" },
+        "retries": { "type": "string" }
+      }
+    }
+  }
+}

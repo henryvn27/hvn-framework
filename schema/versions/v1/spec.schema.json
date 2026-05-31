@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-hvn.dev/schema/v1/spec.schema.json",
+  "title": "ORCA-HVN Spec v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_family", "schema_version", "goal", "background", "requirements", "non_goals", "acceptance_criteria", "assumptions", "open_questions"],
+  "properties": {
+    "schema_family": { "const": "spec" },
+    "schema_version": { "const": "1.0.0" },
+    "linked_work_item": { "type": "string" },
+    "goal": { "type": "string" },
+    "background": { "type": "string" },
+    "users_and_scenarios": { "type": "array", "items": { "type": "string" } },
+    "requirements": { "type": "array", "items": { "type": "string" } },
+    "non_goals": { "type": "array", "items": { "type": "string" } },
+    "edge_cases": { "type": "array", "items": { "type": "string" } },
+    "acceptance_criteria": { "type": "array", "items": { "type": "string" } },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "open_questions": { "type": "array", "items": { "type": "string" } }
+  }
+}
