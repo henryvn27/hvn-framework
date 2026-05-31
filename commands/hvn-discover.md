@@ -50,5 +50,5 @@ Write discovery notes to the selected artifact location and link or reference th
 
 ## Related Commands And Skills
 
-- Commands: `hvn-research`, `hvn-spec`, `hvn-plan`
-- Skills: `hvn-discover`, `hvn-linear-core`
+- Commands: `hvn-legacy`, `hvn-research`, `hvn-spec`, `hvn-plan`
+- Skills: `hvn-discover`, `hvn-legacy`, `hvn-linear-core`

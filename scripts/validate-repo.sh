@@ -49,6 +49,8 @@ docs/mcp-governance.md
 docs/tool-registry.md
 docs/tool-safety-rules.md
 docs/mcp-review-workflow.md
+docs/legacy-modernization.md
+docs/repo-archaeology.md
 docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
@@ -85,6 +87,11 @@ docs/examples/versioned-iteration.md
 docs/examples/tool-review.md
 docs/examples/mcp-server-review.md
 docs/examples/high-risk-tool-approval.md
+docs/examples/legacy-repo-audit.md
+docs/examples/legacy-modernization-plan.md
+docs/examples/business-logic-extraction.md
+docs/examples/legacy-to-spec.md
+docs/examples/legacy-risk-assessment.md
 benchmarks/onboarding-spec/README.md
 registry/tools/README.md
 registry/mcp-servers/README.md
@@ -103,9 +110,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 33 ] || fail "expected at least 33 command definitions"
-[ "$skill_count" -ge 32 ] || fail "expected at least 32 skill definitions"
-[ "$template_count" -ge 40 ] || fail "expected at least 40 templates"
+[ "$command_count" -ge 34 ] || fail "expected at least 34 command definitions"
+[ "$skill_count" -ge 33 ] || fail "expected at least 33 skill definitions"
+[ "$template_count" -ge 43 ] || fail "expected at least 43 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

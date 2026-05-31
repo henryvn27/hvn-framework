@@ -19,6 +19,7 @@ Generated regression tasks still need human review. Prefer a deterministic backb
 - design review
 - bug review
 - debugging output
+- legacy behavior extraction
 
 ## Regression Task Types
 
@@ -59,3 +60,7 @@ A good regression task has:
 - vague "test this again sometime" tasks
 - tasks with no clear surface or expected behavior
 - over-automating fragile flows before the scenario is stable
+
+## Legacy Modernization Use
+
+For legacy work, regression tasks should capture current behavior before modernization changes begin. Favor characterization checks, manual reproduction paths, and high-value business-rule coverage before broad rewrites.

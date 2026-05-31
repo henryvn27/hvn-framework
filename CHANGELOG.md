@@ -10,6 +10,7 @@
 - Added shared state, human checkpoints, and run inspection for multi-agent coordination and resumable runs.
 - Added version-control and iteration guidance with an iteration log template.
 - Added tool trust and MCP governance docs, registry templates, review commands, and trust-level guidance.
+- Added legacy modernization workflow with repo archaeology, legacy audit, risk report, modernization spec, and staged migration guidance.
 
 ### Validation
 

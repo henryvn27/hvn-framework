@@ -39,6 +39,7 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Human checkpoints:** pause, inspect, approve, reject, and resume are explicit workflow moves.
 - **Inspector artifacts:** runs can be reviewed without a custom UI.
 - **Tool governance:** external tools and MCP servers have explicit trust levels, registry entries, and audit expectations.
+- **Legacy modernization:** inherited systems are handled through archaeology, enrichment, risk analysis, and staged migration.
 - **Fresh-context subagents:** review and QA can be performed by agents that do not inherit hidden implementation assumptions.
 - **Blind first-look QA:** a tester evaluates the app from exposed behavior only.
 - **Layered retesting:** later QA receives bounded context packets tied to the same issue.
@@ -94,6 +95,8 @@ For Linear-first setup, read:
 - `docs/tool-registry.md`
 - `docs/tool-safety-rules.md`
 - `docs/mcp-review-workflow.md`
+- `docs/legacy-modernization.md`
+- `docs/repo-archaeology.md`
 - `docs/version-control.md`
 
 You can also generate a local setup packet:
@@ -108,25 +111,26 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 
 1. Issue enters inbox or triage.
 2. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
-3. `hvn-spec` creates a structured spec from issue context.
-4. `hvn-linear-plan-comment` posts the plan to the issue.
-5. `hvn-approve` records approval when scope or risk requires it.
-6. `hvn-build` executes approved scope.
-7. `hvn-trace` records what happened when the run is meaningful or risky.
-8. `hvn-state` keeps shared coordination context current across roles.
-9. `hvn-metrics` records time, retries, and optional usage signals.
-10. `hvn-review` posts findings.
-11. `hvn-test-blind` runs first-look QA with minimal issue context.
-12. `hvn-context-brief` creates a bounded second-pass packet.
-13. `hvn-test-briefed` and `hvn-test-regression` retest.
-14. `hvn-regression-task` promotes high-value findings into reusable regression work.
-15. `hvn-checkpoint` pauses risky or ambiguous work for human inspection and decision.
-16. `hvn-inspect` produces a resumable view of run identity, state, approvals, and blockers.
-17. `hvn-tool-review` or `hvn-mcp-review` governs new or risky external tools.
-18. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
-19. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
-20. `hvn-linear-ship-check` posts ship readiness.
-21. Issue moves to done only with evidence.
+3. `hvn-legacy` runs when the target is inherited, under-documented, or fragile.
+4. `hvn-spec` creates a structured spec from issue context or modernization audit.
+5. `hvn-linear-plan-comment` posts the plan to the issue.
+6. `hvn-approve` records approval when scope or risk requires it.
+7. `hvn-build` executes approved scope.
+8. `hvn-trace` records what happened when the run is meaningful or risky.
+9. `hvn-state` keeps shared coordination context current across roles.
+10. `hvn-metrics` records time, retries, and optional usage signals.
+11. `hvn-review` posts findings.
+12. `hvn-test-blind` runs first-look QA with minimal issue context.
+13. `hvn-context-brief` creates a bounded second-pass packet.
+14. `hvn-test-briefed` and `hvn-test-regression` retest.
+15. `hvn-regression-task` promotes high-value findings into reusable regression work.
+16. `hvn-checkpoint` pauses risky or ambiguous work for human inspection and decision.
+17. `hvn-inspect` produces a resumable view of run identity, state, approvals, and blockers.
+18. `hvn-tool-review` or `hvn-mcp-review` governs new or risky external tools.
+19. `hvn-benchmark` compares onboarding and spec quality across versions when workflow quality is under review.
+20. `hvn-eval` scores trajectory quality when validating HVN behavior or release confidence.
+21. `hvn-linear-ship-check` posts ship readiness.
+22. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -162,6 +166,7 @@ The reliability layer adds:
 - shared-state and checkpoint artifacts in `templates/shared-state.md`, `templates/checkpoint-*.md`, and `templates/run-inspection.md`
 - approval requests in `templates/approval-request.md`
 - tool and MCP governance templates in `templates/tool-registry-entry.md`, `templates/mcp-server-entry.md`, and `templates/mcp-review.md`
+- legacy modernization artifacts in `templates/legacy-audit.md`, `templates/legacy-risk-report.md`, and `templates/modernization-spec.md`
 - regression candidates and tasks in `templates/regression-candidate.md` and `templates/regression-task.md`
 - typed contracts in `templates/contracts/`
 
@@ -225,6 +230,7 @@ HVN now treats reliability as part of the core framework:
 - checkpoints enable pause, inspect, approve, reject, and resume flows
 - inspector artifacts make paused or blocked runs auditable
 - tool and MCP governance makes external execution trust explicit
+- legacy modernization emphasizes archaeology, business logic extraction, and staged migration
 - contracts keep artifacts consistent
 - security and prompt-injection guardrails keep external context from hijacking execution
 

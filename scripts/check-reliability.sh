@@ -30,6 +30,8 @@ for file in \
   docs/tool-registry.md \
   docs/tool-safety-rules.md \
   docs/mcp-review-workflow.md \
+  docs/legacy-modernization.md \
+  docs/repo-archaeology.md \
   templates/run-trace.md \
   templates/shared-state.md \
   templates/checkpoint-request.md \
@@ -46,6 +48,9 @@ for file in \
   templates/tool-registry-entry.md \
   templates/mcp-server-entry.md \
   templates/mcp-review.md \
+  templates/legacy-audit.md \
+  templates/legacy-risk-report.md \
+  templates/modernization-spec.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \
   templates/contracts/qa-brief-contract.md \
@@ -64,6 +69,7 @@ for file in \
   commands/hvn-inspect.md \
   commands/hvn-tool-review.md \
   commands/hvn-mcp-review.md \
+  commands/hvn-legacy.md \
   skills/hvn-observability/SKILL.md \
   skills/hvn-eval/SKILL.md \
   skills/hvn-approval-gate/SKILL.md \
@@ -73,6 +79,7 @@ for file in \
   skills/hvn-shared-state/SKILL.md \
   skills/hvn-checkpoint/SKILL.md \
   skills/hvn-tool-governance/SKILL.md \
+  skills/hvn-legacy/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
   docs/examples/approval-request.md \
@@ -88,6 +95,11 @@ for file in \
   docs/examples/tool-review.md \
   docs/examples/mcp-server-review.md \
   docs/examples/high-risk-tool-approval.md \
+  docs/examples/legacy-repo-audit.md \
+  docs/examples/legacy-modernization-plan.md \
+  docs/examples/business-logic-extraction.md \
+  docs/examples/legacy-to-spec.md \
+  docs/examples/legacy-risk-assessment.md \
   registry/tools/README.md \
   registry/mcp-servers/README.md \
   examples/evals/starter-set.md

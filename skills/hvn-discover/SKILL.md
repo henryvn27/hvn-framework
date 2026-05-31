@@ -53,4 +53,4 @@ Discovery should reduce implementation risk and avoid unnecessary rewrites.
 
 ## Relationship To Other HVN Skills And Commands
 
-Feeds `hvn-spec`, `hvn-plan`, and `hvn-review`.
+Feeds `hvn-legacy`, `hvn-spec`, `hvn-plan`, and `hvn-review`.
