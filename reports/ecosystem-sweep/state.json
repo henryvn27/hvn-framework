@@ -1,0 +1,12 @@
+{
+  "name": "HVN Ecosystem Sweep",
+  "version": 1,
+  "last_run_date": null,
+  "last_report_path": null,
+  "tracked_sources_file": "reports/ecosystem-sweep/tracked-sources.md",
+  "latest_summary_file": "reports/ecosystem-sweep/latest.md",
+  "notes": [
+    "Research-first automation. No repo code or docs changes by default.",
+    "Reports should compare against the prior sweep and avoid repeating unchanged items as new."
+  ]
+}
