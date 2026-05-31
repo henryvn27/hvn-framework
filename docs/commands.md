@@ -32,6 +32,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-research`
 - `hvn-spec`
 - `hvn-plan`
+- `hvn-next`
 - `hvn-goal`
 - `hvn-goal-create`
 - `hvn-goal-status`
@@ -74,3 +75,4 @@ Use `hvn-state`, `hvn-checkpoint`, and `hvn-inspect` when multiple roles need a 
 Use `hvn-tool-review` and `hvn-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.
 Use `hvn-legacy` when the target system is inherited, under-documented, fragile, or modernization-focused.
 Use `hvn-goal` commands only after spec and milestone planning produce a bounded, verifiable objective.
+Use `hvn-next` after major phase completion when a short default next action would help the user move forward.

@@ -32,6 +32,12 @@ for file in \
   docs/mcp-review-workflow.md \
   docs/legacy-modernization.md \
   docs/repo-archaeology.md \
+  docs/onboarding.md \
+  docs/next-step-guidance.md \
+  docs/guidance-tone.md \
+  docs/experience-adaptation.md \
+  docs/phase-exit-rules.md \
+  docs/next-step-decision-rules.md \
   docs/goal-mode.md \
   docs/goal-safety.md \
   docs/goal-recommendation-rules.md \
@@ -62,6 +68,15 @@ for file in \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
+  templates/user-guidance-profile.md \
+  templates/next-step-onboarding.md \
+  templates/next-step-spec.md \
+  templates/next-step-milestone.md \
+  templates/next-step-implementation.md \
+  templates/next-step-qa.md \
+  templates/next-step-regression.md \
+  templates/next-step-review.md \
+  templates/next-step-ship.md \
   templates/goal-contract.md \
   templates/goal-status.md \
   templates/ecosystem-adopt-issue.md \
@@ -85,6 +100,7 @@ for file in \
   commands/hvn-tool-review.md \
   commands/hvn-mcp-review.md \
   commands/hvn-legacy.md \
+  commands/hvn-next.md \
   commands/hvn-goal.md \
   commands/hvn-goal-create.md \
   commands/hvn-goal-status.md \
@@ -99,6 +115,7 @@ for file in \
   skills/hvn-checkpoint/SKILL.md \
   skills/hvn-tool-governance/SKILL.md \
   skills/hvn-legacy/SKILL.md \
+  skills/hvn-next-step/SKILL.md \
   skills/hvn-goal-mode/SKILL.md \
   docs/examples/trace-for-feature-run.md \
   docs/examples/eval-report.md \
@@ -120,6 +137,12 @@ for file in \
   docs/examples/business-logic-extraction.md \
   docs/examples/legacy-to-spec.md \
   docs/examples/legacy-risk-assessment.md \
+  docs/examples/next-step-beginner.md \
+  docs/examples/next-step-advanced.md \
+  docs/examples/post-spec-guidance.md \
+  docs/examples/post-qa-guidance.md \
+  docs/examples/post-implementation-guidance.md \
+  docs/examples/when-guidance-stays-quiet.md \
   docs/examples/goal-from-spec.md \
   docs/examples/goal-for-milestone.md \
   docs/examples/goal-review.md \

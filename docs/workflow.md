@@ -10,25 +10,26 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 4. `hvn-research`: gather external evidence when facts may be stale or unknown.
 5. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
 6. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases, verification gates, and approval expectations.
-7. `hvn-goal`: decide whether the next bounded milestone should become a goal contract.
-8. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
-9. `hvn-build`: implement approved scope.
-10. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
-11. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
-12. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
-13. `hvn-review`: inspect behavior and maintainability.
-14. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
-15. `hvn-test-blind`: run first-look QA with minimal context.
-16. `hvn-test-briefed`: retest with a bounded packet.
-17. `hvn-test-regression`: verify fixes and adjacent flows.
-18. `hvn-regression-task`: convert strong findings into reusable regression work.
-19. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
-20. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
-21. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
-22. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
-23. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
-24. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-25. `hvn-retro`: capture lessons and follow-up work.
+7. `hvn-next`: emit concise phase-exit guidance when the next move is not already obvious or underway.
+8. `hvn-goal`: decide whether the next bounded milestone should become a goal contract.
+9. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
+10. `hvn-build`: implement approved scope.
+11. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
+12. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
+13. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
+14. `hvn-review`: inspect behavior and maintainability.
+15. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
+16. `hvn-test-blind`: run first-look QA with minimal context.
+17. `hvn-test-briefed`: retest with a bounded packet.
+18. `hvn-test-regression`: verify fixes and adjacent flows.
+19. `hvn-regression-task`: convert strong findings into reusable regression work.
+20. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
+21. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
+22. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
+23. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
+24. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
+25. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+26. `hvn-retro`: capture lessons and follow-up work.
 
 ## Recommended Linear Gates
 
@@ -49,6 +50,7 @@ Actual state names may vary by team. HVN expects equivalent gates.
 The workflow now relies on six supporting controls:
 
 - onboarding, discovery, and spec create durable context
+- next-step guidance makes phase exits clear without adding process noise
 - legacy archaeology turns under-documented systems into actionable modernization context
 - goal contracts make long-running work bounded and verifiable
 - run memory stores reusable facts and decisions
@@ -79,3 +81,5 @@ Then run the same HVN sequence against that record.
 ## Skipping Stages
 
 Small changes may combine stages. A production feature touching auth, payments, data deletion, public UX, install scripts, or CI should not skip spec, review, security consideration, and QA.
+
+When a major stage completes, use [next-step guidance](next-step-guidance.md) unless the next action is already being executed or the user has opted out.

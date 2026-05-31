@@ -20,6 +20,7 @@ HVN is Linear-first by default. Linear is the preferred system of record for iss
 12. **Tools are not trusted by default:** external tools and MCP servers need explicit governance before broad use.
 13. **Legacy systems deserve archaeology first:** inherited code should be understood, enriched, and protected before modernization changes begin.
 14. **Goals need contracts:** long-running goal mode requires bounded scope, verification, and safe lifecycle tracking.
+15. **Phase exits should guide without noise:** after major stages, users should get a concise next action, not a lecture.
 
 ## Coordination Modes
 
@@ -48,6 +49,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Research mode:** gather evidence when the answer is not already known.
 - **Specification mode:** convert issue context into acceptance criteria and non-goals.
 - **Planning mode:** sequence implementation into verifiable phases and post an approval-ready plan.
+- **Next-step mode:** produce calm, adaptive guidance after a major phase completes.
 - **Goal mode:** convert a bounded spec or milestone into a durable, verifiable execution contract.
 - **Approval mode:** request or confirm approval for risky work before execution continues.
 - **Build mode:** implement the approved plan with focused edits and local verification.
@@ -74,6 +76,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Legacy audit, risk report, or modernization spec when working on inherited systems
 - Spec or Linear spec comment
 - Implementation plan or Linear plan comment
+- Next-step guidance after major phase completion when useful
 - Goal contract and status when using host-native or fallback goal mode
 - Approval request or approval record when risk requires it
 - Run trace for meaningful or risky runs
@@ -109,20 +112,21 @@ Then use the standard lifecycle:
 3. Legacy mode runs when the system is inherited, under-documented, or fragile.
 4. Spec is generated and attached or summarized back to the issue.
 5. Plan is posted to the issue.
-6. Approval gates determine whether build can proceed automatically or needs explicit human approval.
-7. Goal mode may be used only for the next bounded, verifiable milestone.
-8. Build agent executes approved scope or goal contract.
-9. Trace, shared state, and workflow metrics record what happened and what the current run picture looks like.
-10. Review and QA surface product and workflow failures.
-11. Context briefer creates a minimal second-pass brief.
-12. Guided QA reruns with limited context.
-13. Strong findings can generate reusable regression tasks.
-14. Checkpoints pause risky or ambiguous work for human inspection and decision.
-15. Inspector artifacts make resume and handoff state easy to review.
-16. Tool and MCP governance reviews happen before new or risky external execution surfaces are used.
-17. Benchmark and eval passes happen as needed when framework quality is under review.
-18. Security and ship readiness checks finish the evidence chain.
-19. Issue moves to done only with evidence.
+6. Next-step guidance explains the next move when useful.
+7. Approval gates determine whether build can proceed automatically or needs explicit human approval.
+8. Goal mode may be used only for the next bounded, verifiable milestone.
+9. Build agent executes approved scope or goal contract.
+10. Trace, shared state, and workflow metrics record what happened and what the current run picture looks like.
+11. Review and QA surface product and workflow failures.
+12. Context briefer creates a minimal second-pass brief.
+13. Guided QA reruns with limited context.
+14. Strong findings can generate reusable regression tasks.
+15. Checkpoints pause risky or ambiguous work for human inspection and decision.
+16. Inspector artifacts make resume and handoff state easy to review.
+17. Tool and MCP governance reviews happen before new or risky external execution surfaces are used.
+18. Benchmark and eval passes happen as needed when framework quality is under review.
+19. Security and ship readiness checks finish the evidence chain.
+20. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -176,6 +180,10 @@ For legacy systems, extract behavior and risks before rewriting. Use archaeology
 ## Goal Mode Policy
 
 Use goal mode only after spec and milestone planning. Goals must have clear in-scope and out-of-scope boundaries, a measurable completion condition, verification method, stop conditions, and approval triggers. Host-native `/goal` is optional and must fall back to HVN artifacts when unavailable.
+
+## Next-Step Guidance Policy
+
+After onboarding, spec creation, milestone planning, implementation, QA, regression follow-up, review, or shipping, provide short next-step guidance when it helps the user move forward. Prefer one default action, one optional alternate, and one reason. Stay silent when the next action is already underway, the user opted out, or approval/clarification is the only safe move.
 
 ## QA Philosophy
 

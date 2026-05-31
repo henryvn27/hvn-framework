@@ -51,6 +51,12 @@ docs/tool-safety-rules.md
 docs/mcp-review-workflow.md
 docs/legacy-modernization.md
 docs/repo-archaeology.md
+docs/onboarding.md
+docs/next-step-guidance.md
+docs/guidance-tone.md
+docs/experience-adaptation.md
+docs/phase-exit-rules.md
+docs/next-step-decision-rules.md
 docs/goal-mode.md
 docs/goal-safety.md
 docs/goal-recommendation-rules.md
@@ -103,6 +109,12 @@ docs/examples/legacy-modernization-plan.md
 docs/examples/business-logic-extraction.md
 docs/examples/legacy-to-spec.md
 docs/examples/legacy-risk-assessment.md
+docs/examples/next-step-beginner.md
+docs/examples/next-step-advanced.md
+docs/examples/post-spec-guidance.md
+docs/examples/post-qa-guidance.md
+docs/examples/post-implementation-guidance.md
+docs/examples/when-guidance-stays-quiet.md
 docs/examples/goal-from-spec.md
 docs/examples/goal-for-milestone.md
 docs/examples/goal-review.md
@@ -131,9 +143,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 38 ] || fail "expected at least 38 command definitions"
-[ "$skill_count" -ge 34 ] || fail "expected at least 34 skill definitions"
-[ "$template_count" -ge 46 ] || fail "expected at least 46 templates"
+[ "$command_count" -ge 39 ] || fail "expected at least 39 command definitions"
+[ "$skill_count" -ge 35 ] || fail "expected at least 35 skill definitions"
+[ "$template_count" -ge 55 ] || fail "expected at least 55 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
