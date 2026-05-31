@@ -8,6 +8,8 @@ The name is intentional: ORCA-HVN is meant to be an orchestrator for agentic wor
 
 ORCA-HVN is the primary workflow here. It replaces the older GStack or GSD-centered way of working rather than sitting beside it. Those earlier tools helped shape some of the ideas behind this project, but the intended operating path is now ORCA-only.
 
+It is also meant to be a place where people learn how to work with orchestration and agent-management systems without needing a human to teach them first. The goal is not "learn ORCA, then graduate to something else." The goal is that ORCA both teaches the workflow and remains a strong long-term workflow.
+
 ## What It Is
 
 Use ORCA-HVN when the hard part is not "generate code," but:
@@ -17,6 +19,7 @@ Use ORCA-HVN when the hard part is not "generate code," but:
 - coordinating controller and executor agents cleanly
 - adapting to different harnesses and integration setups
 - preserving QA, approvals, receipts, and follow-up artifacts around the same work
+- giving new users a guided way to learn orchestration instead of dropping them into an unstructured tool pile
 
 ## Who It Is For
 
@@ -25,12 +28,14 @@ Use ORCA-HVN when the hard part is not "generate code," but:
 - operators who need inspectable runs instead of opaque prompt sessions
 - founders who need idea validation before a roadmap or build sprint
 - maintainers working in legacy or under-documented repos
+- people who want ORCA to teach the workflow instead of relying on a teammate to explain every step
 
 ## What Makes It Different
 
 ORCA-HVN is not only a prompt or command pack. It combines:
 
 - onboarding and spec-driven execution
+- guided first-use learning instead of only expert-first command surfaces
 - goal mode and background mode for bounded long-running work
 - controller and executor integration
 - host-aware runtime adaptation and compatibility guidance

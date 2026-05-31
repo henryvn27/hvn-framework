@@ -8,6 +8,8 @@ ORCA-HVN is an orchestration framework for running agent-assisted software work 
 
 It is also the primary workflow, not a companion layer for GStack or GSD. Those older tools helped inspire parts of the project, but ORCA-HVN is meant to replace that workflow with one clearer ORCA path.
 
+It should also teach that path. A new user should be able to start learning orchestration inside ORCA-HVN itself instead of waiting for someone else to train them live.
+
 ## What It Solves
 
 Use ORCA-HVN when the hard part is not "make the model write code," but:
@@ -16,6 +18,7 @@ Use ORCA-HVN when the hard part is not "make the model write code," but:
 - coordinating agents or handoffs without losing context
 - keeping QA, review, approvals, and receipts tied to the same work item
 - adapting to different harnesses and tool surfaces without pretending they are identical
+- onboarding users into orchestration and agent-management habits without a human guide
 
 ## The Core Mental Model
 

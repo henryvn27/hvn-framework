@@ -4,6 +4,8 @@ This is the shortest path to first value.
 
 If you want one default ORCA path instead of a menu of options, read [first-workflow.md](first-workflow.md) first.
 
+The point of this path is not just speed. It is also to let a new user learn the ORCA workflow directly inside ORCA, without needing someone else to walk them through every stage.
+
 ## 1. Clone And Validate
 
 ```sh
@@ -52,3 +54,5 @@ A good first session is not "learn every feature." It is:
 - one ORCA path
 - one command per stage
 - one reviewable outcome
+
+A good onboarding experience should make the user feel like ORCA is teaching the workflow while they use it, not like they are memorizing a separate system before real work can start.

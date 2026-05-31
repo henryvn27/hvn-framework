@@ -12,6 +12,8 @@ Start with this one path:
 
 That is the default ORCA-HVN intro workflow.
 
+This path is also the teaching path. It is meant to show a new user how the framework works while still being a real production path they can keep using later.
+
 ## What Each Step Does
 
 ### 1. `orca-onboard`

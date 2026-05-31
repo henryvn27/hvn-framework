@@ -21,6 +21,7 @@ But ORCA-HVN is the clearer replacement:
 - one artifact model
 - one docs system
 - one runtime story
+- one place to learn the workflow and keep using it
 
 ## Replacement Map
 
@@ -43,6 +44,8 @@ Start here:
 ## Common Mistake To Avoid
 
 Do not keep ORCA-HVN as a thin wrapper around an older GStack or GSD routine. If you are adopting ORCA-HVN, let ORCA own the workflow.
+
+Do not assume ORCA is only the beginner layer before switching to something else. The intent is that ORCA is both the teaching surface and the durable operating surface.
 
 ## Read Next
 
