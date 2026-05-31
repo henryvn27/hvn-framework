@@ -132,6 +132,7 @@ Read run memory before:
 - ship checks
 - retrospectives
 - handoffs
+- resumed interactive question flows
 
 Blind QA is the exception. Do not give run memory to a blind first-look tester.
 
@@ -149,6 +150,7 @@ Update run memory when something changes the next agent's behavior:
 - a regression candidate is identified
 - ship readiness changes
 - ownership changes
+- a question flow pauses, resumes, or finishes with answers that change scope
 
 Each update should answer: what changed, why it matters, and what happens next.
 
@@ -210,6 +212,7 @@ Store:
 - links to specs, plans, PRs, screenshots, builds, logs, comments, and reports
 - next steps with clear owner
 - regression candidates and QA implications
+- question-flow state when an intake or clarification is paused
 
 ## What Not To Store
 

@@ -25,6 +25,18 @@ Run memory is the resumption layer. It sits beside the coordination record and p
 
 This separation prevents memory from becoming a transcript while still letting fresh agents resume quickly.
 
+## Question Flow Layer
+
+Interactive question flows sit above commands and below host UI rendering:
+
+- commands define when a guided flow starts
+- `hvn-question-flow` chooses the next question and stop condition
+- templates capture answers and unresolved questions
+- run memory stores resumable state
+- host applications render the visible command, modal, palette, or chat shell
+
+HVN must not hardcode one host's UI behavior. It should provide portable prompt behavior that feels focused wherever the host runs it.
+
 ## Installable Layers
 
 - `HVN.md` is the master operating manual.

@@ -44,6 +44,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Routing mode:** select installed skills, Linear handling, preserve-stack posture, and full-output behavior.
 - **Authenticity preflight mode:** calibrate UI, design, frontend presentation, product copy, and polished writing against generic failure modes.
 - **Run memory mode:** preserve compact continuation context for the issue or workstream.
+- **Question flow mode:** ask focused interactive clarification rounds and capture answers into artifacts.
 - **Issue health mode:** decide whether a Linear issue is ready for the next gate.
 - **Aesthetic profile mode:** select or update visual and writing taste direction.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
@@ -94,20 +95,22 @@ Then use the standard lifecycle:
 4. Run memory is initialized when missing.
 5. Run memory is read before discovery, spec, planning, build, review, briefed QA, ship, and retro.
 6. Onboard or discover agent clarifies ambiguity and updates memory with durable findings.
-7. Aesthetic profile is selected when design or writing matters.
-8. Spec is generated and attached or summarized back to the issue, then linked from memory.
-9. Plan is posted to the issue and approval status is reflected in memory.
-10. Human approves the plan when required.
-11. Build agent executes approved scope with the selected skill and updates memory after meaningful phases.
-12. Review agent comments findings, checks skill fit, emits regression candidates, and updates memory.
-13. Blind QA agent runs first-look test without memory input.
-14. Blind QA results are saved, then summarized into memory.
-15. Context briefer creates a minimal second-pass brief.
-16. Guided QA reruns with limited context.
-17. Delta report compares blind and briefed outcomes and updates memory with product insight.
-18. Security, review, and regression packs run as needed.
-19. Ship readiness checklist is posted and memory is finalized or archived.
-20. Issue moves to done only with evidence.
+7. Question flows ask targeted rounds when missing context blocks onboarding, discovery, spec, Linear intake, or QA briefing.
+8. Aesthetic profile is selected when design or writing matters.
+9. Spec is generated and attached or summarized back to the issue, then linked from memory.
+10. Plan is posted to the issue and approval status is reflected in memory.
+11. Human approves the plan when required.
+12. Build agent executes approved scope with the selected skill and updates memory after meaningful phases.
+13. Review agent comments findings, checks skill fit, emits regression candidates, and updates memory.
+14. QA briefing collects platform, launch target, and allowed context when needed.
+15. Blind QA agent runs first-look test without memory input.
+16. Blind QA results are saved, then summarized into memory.
+17. Context briefer creates a minimal second-pass brief.
+18. Guided QA reruns with limited context.
+19. Delta report compares blind and briefed outcomes and updates memory with product insight.
+20. Security, review, and regression packs run as needed.
+21. Ship readiness checklist is posted and memory is finalized or archived.
+22. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -137,6 +140,10 @@ Run `hvn-authenticity-preflight` before high-visibility UI, frontend presentatio
 ## Run Memory Policy
 
 Use `hvn-run-memory` to preserve essential state between agent sessions. Initialize it with `hvn-memory-init`, resume from it with `hvn-memory-read`, and preserve changes with `hvn-memory-update`. Update it after scope changes, phase completion, failed attempts, review, QA, blockers, handoffs, and ship preparation. Store local memory under `.hvn/memory/runs/` and archive completed runs under `.hvn/memory/runs/archive/`. Do not feed run memory into blind QA.
+
+## Question Flow Policy
+
+Use `hvn-question-flow` when ambiguity blocks the next artifact. Ask one question by default, or a 2-3 question batch only when the questions are short and independent. Stop when enough information exists to produce the next artifact with explicit assumptions. Capture answers in question-round, onboarding, clarification, QA brief, Linear sync, or run memory artifacts. HVN provides this interaction behavior; the host application provides any visible modal, popup, command palette, or chat UI.
 
 ## Issue Health Policy
 

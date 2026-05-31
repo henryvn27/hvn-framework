@@ -31,6 +31,13 @@ HVN.defaults.md
 .github/workflows/markdown-lint.yml
 .github/workflows/validate-install.yml
 .github/FUNDING.yml
+commands/hvn-question-flow.md
+commands/hvn-onboard.md
+commands/hvn-discover.md
+commands/hvn-spec.md
+commands/hvn-linear-intake.md
+commands/hvn-help.md
+commands/hvn-blind-qa-brief.md
 docs/linear-workflow.md
 docs/linear-setup.md
 docs/default-behavior.md
@@ -51,6 +58,8 @@ docs/linear-agent-model.md
 docs/linear-states.md
 docs/linear-issue-lifecycle.md
 docs/linear-guidance.md
+docs/interactive-question-flows.md
+docs/host-ui-guidance.md
 docs/examples/linear-setup-session.md
 docs/examples/linear-feature-flow.md
 docs/examples/linear-blind-qa-flow.md
@@ -72,8 +81,18 @@ docs/examples/blind-to-briefed-delta.md
 docs/examples/aesthetic-profile-usage.md
 docs/examples/linear-health-check.md
 docs/examples/regression-pack-creation.md
+docs/examples/question-flow-resume.md
+docs/examples/onboarding-question-rounds.md
+docs/examples/linear-question-intake.md
+docs/examples/qa-brief-question-flow.md
 mcp/linear.example.json
 examples/sample-run-memory/README.md
+skills/hvn-question-flow/SKILL.md
+templates/question-round.md
+templates/onboarding-intake.md
+templates/clarification-summary.md
+templates/qa-brief-intake.md
+templates/linear-question-sync.md
 profiles/henry-van-ness.md
 profiles/henry-defaults.md
 profiles/editorial.md
@@ -94,9 +113,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 35 ] || fail "expected at least 35 command definitions"
-[ "$skill_count" -ge 31 ] || fail "expected at least 31 skill definitions"
-[ "$template_count" -ge 27 ] || fail "expected at least 27 templates"
+[ "$command_count" -ge 37 ] || fail "expected at least 37 command definitions"
+[ "$skill_count" -ge 32 ] || fail "expected at least 32 skill definitions"
+[ "$template_count" -ge 32 ] || fail "expected at least 32 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

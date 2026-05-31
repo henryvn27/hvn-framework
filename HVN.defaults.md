@@ -14,6 +14,7 @@ Core defaults:
 - High design sensitivity for frontend, product, marketing, branding, and UX work.
 - Authenticity preflight for high-visibility UI, frontend presentation, product copy, and polished writing.
 - Run memory as a first-class lifecycle artifact for non-trivial issues, handoffs, blocked work, and multi-agent runs.
+- Interactive question flows for onboarding, clarification, Linear intake, and QA briefing.
 - Linear issue health checks before implementation.
 - Aesthetic profiles for taste continuity.
 - Blind-to-briefed delta reports and regression packs for QA continuity.
@@ -57,6 +58,18 @@ For every non-trivial workstream:
 5. Keep Linear issue comments concise and link the memory artifact when possible.
 6. Use `templates/linear-memory-sync.md` when Linear is blocked.
 7. Never provide run memory to blind first-look QA.
+
+## Question Flow Defaults
+
+When ambiguity blocks the next useful artifact:
+
+1. Use `hvn-question-flow` or a command that invokes it.
+2. Ask one question by default.
+3. Ask 2-3 questions only when they are short and independent.
+4. Stop once the next artifact can be produced with explicit assumptions.
+5. Capture answers in `templates/question-round.md` or the mode-specific artifact.
+6. Update run memory for paused, resumed, or completed non-trivial flows.
+7. Do not claim host-native popup or modal control; HVN defines behavior and the host renders the UI shell.
 
 ## Preserve Existing Work
 

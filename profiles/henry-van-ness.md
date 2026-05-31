@@ -13,6 +13,7 @@ This profile captures the shipped HVN default operating style. It is an example 
 - Include Linear identifiers in handoffs.
 - If Linear is blocked, continue local work only when appropriate and record exact sync instructions.
 - Use `.hvn/memory/runs/` for local run memory and `.hvn/memory/runs/archive/` for completed or compressed runs.
+- Use interactive question flows when targeted clarification is better than a static form.
 
 ## Skill Routing
 
@@ -50,6 +51,7 @@ This profile captures the shipped HVN default operating style. It is an example 
 ## QA And Shipping
 
 - Preserve blind QA integrity.
+- Use QA brief question flows to collect platform, launch target, and allowed context before testing when needed.
 - Use context briefs for second-pass QA.
 - Use blind-to-briefed delta reports for product clarity decisions.
 - Create regression packs from meaningful QA and review findings.

@@ -69,6 +69,7 @@ Summarize the latest operational state. Include the active phase, whether work i
 | QA report |  |  |
 | Review report |  |  |
 | Build or deploy |  |  |
+| Question flow |  |  |
 
 ## Next Steps
 

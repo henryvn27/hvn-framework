@@ -37,15 +37,26 @@ Use the chosen work item or document as the source prompt and write the intake s
 2. Inspect Linear project and issue context or record blocked sync.
 3. Run `hvn-linear-health` when the request comes from a Linear issue.
 4. Initialize or update run memory with `hvn-memory`.
-5. Use `hvn-onboard`.
-6. Ask high-leverage questions one at a time or in small groups.
-7. Stop when more questions would not materially improve the first spec.
-8. Produce intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
-9. Sync the result to Linear or the opt-out record.
+5. Use `hvn-question-flow` in onboarding mode.
+6. Ask one high-leverage question by default, or a 2-3 question batch when the questions are short and independent.
+7. Reflect back what was learned after each round when it changes the next question.
+8. Stop when more questions would not materially improve the first spec.
+9. Produce intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
+10. Sync the result to Linear or the opt-out record.
+
+## Interactive Question Flow
+
+- Uses interactive flow: yes
+- Default round size: one question
+- Collects: user, problem, target surface, constraints, non-goals, success signal, next workflow
+- Stop condition: enough context exists for a first useful spec or discovery pass
+- Final artifact: `templates/onboarding-intake.md`
 
 ## Outputs And Artifacts
 
 - `templates/intake.md`
+- `templates/onboarding-intake.md`
+- `templates/question-round.md`
 - Draft `templates/spec.md` skeleton
 - Linear intake comment when Linear-first mode is active
 
@@ -56,5 +67,5 @@ Use the chosen work item or document as the source prompt and write the intake s
 
 ## Related Commands And Skills
 
-- Commands: `hvn-linear-intake`, `hvn-spec`, `hvn-discover`
-- Skills: `hvn-onboard`, `hvn-linear-triage`, `hvn-core`
+- Commands: `hvn-question-flow`, `hvn-linear-intake`, `hvn-spec`, `hvn-discover`
+- Skills: `hvn-question-flow`, `hvn-onboard`, `hvn-linear-triage`, `hvn-core`

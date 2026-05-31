@@ -12,6 +12,7 @@ Framework defaults apply unless a profile or direct user instruction overrides t
 - Treat design-heavy work as a specialized workflow.
 - Run authenticity preflight for high-visibility UI and polished writing.
 - Keep run memory for non-trivial workstreams and handoffs.
+- Use interactive question flows when ambiguity blocks the next artifact.
 - Use full-output enforcement when the user asks for exhaustive output.
 - Keep review, QA, and ship evidence in the system of record.
 
@@ -53,3 +54,7 @@ If Linear is unavailable:
 ## Run Memory Default
 
 Run memory is required for non-trivial work that spans phases, agents, blockers, failed attempts, or sessions. Use `.hvn/memory/runs/` for local storage, update it after meaningful state changes, and keep it separate from specs, plans, and long-term preferences. Blind QA must not receive run memory before the blind pass.
+
+## Interactive Question Flow Default
+
+Question flows ask targeted clarification rounds through installable commands. Ask one question by default, use compact 2-3 question batches only for independent facts, stop once enough information exists, and capture answers in structured artifacts. Do not imply HVN controls host-native UI rendering.

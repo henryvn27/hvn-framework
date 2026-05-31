@@ -22,6 +22,8 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - `hvn-memory-init`
 - `hvn-memory-read`
 - `hvn-memory-update`
+- `hvn-question-flow`
+- `hvn-blind-qa-brief`
 - `hvn-delta`
 - `hvn-style`
 - `hvn-linear-health`
@@ -39,10 +41,13 @@ These commands read from and post back to Linear issues when Linear-first mode i
 
 The memory commands are lifecycle commands, not only Linear commands. They create, read, update, compress, and sync `.hvn/memory/runs/` artifacts for any non-trivial workstream.
 
+Question-flow commands are interactive lifecycle commands. They ask focused rounds through the host's command interface and capture answers into reusable artifacts. HVN defines the prompt behavior; the host controls visible UI rendering.
+
 ## Core Commands
 
 - `hvn-help`
 - `hvn-onboard`
+- `hvn-question-flow`
 - `hvn-discover`
 - `hvn-research`
 - `hvn-spec`
@@ -51,6 +56,7 @@ The memory commands are lifecycle commands, not only Linear commands. They creat
 - `hvn-review`
 - `hvn-design`
 - `hvn-test-blind`
+- `hvn-blind-qa-brief`
 - `hvn-test-briefed`
 - `hvn-test-regression`
 - `hvn-security`
@@ -65,4 +71,5 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `Spec Ready` triggers `hvn-linear-plan-comment`.
 - `Ready for Build` triggers `hvn-build` after approval.
 - `In QA` plus `blind-qa` triggers `hvn-test-blind`.
+- `needs-qa-brief` triggers `hvn-blind-qa-brief`.
 - `Ready to Ship` triggers `hvn-linear-ship-check`.

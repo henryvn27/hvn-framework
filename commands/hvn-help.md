@@ -33,12 +33,21 @@ If the user does not want Linear, ask which record should hold HVN artifacts.
 
 ## Workflow
 
-1. Identify whether the user needs memory, intake, discovery, spec, planning, build, review, QA, security, shipping, or retro.
+1. Identify whether the user needs memory, question flow, intake, discovery, spec, planning, build, review, QA, security, shipping, or retro.
 2. Confirm Linear-first or opt-out mode.
 3. If work is non-trivial, recommend `hvn-memory-init`, `hvn-memory-read`, or `hvn-memory-update` at the correct point.
-4. Summarize the next two useful commands.
-5. Explain what artifact or issue comment each command will produce.
-6. Call out whether blind QA can still be preserved.
+4. If ambiguity is blocking the next artifact, recommend `hvn-question-flow` or an interactive command such as `hvn-onboard`, `hvn-spec`, or `hvn-linear-intake`.
+5. Summarize the next two useful commands.
+6. Explain what artifact or issue comment each command will produce.
+7. Call out whether blind QA can still be preserved.
+
+## Interactive Question Flow
+
+- Uses interactive flow: conditional
+- Default round size: one routing question
+- Collects: desired HVN mode, system of record, target artifact, whether blind QA must be preserved
+- Stop condition: the next command is clear
+- Final artifact: command recommendation, or `templates/question-round.md` if the user pauses before routing is resolved
 
 ## Outputs And Artifacts
 
@@ -54,4 +63,4 @@ If the user does not want Linear, ask which record should hold HVN artifacts.
 ## Related Commands And Skills
 
 - Commands: all HVN commands
-- Skills: `hvn-core`, `hvn-linear-core`, `hvn-run-memory`
+- Skills: `hvn-core`, `hvn-question-flow`, `hvn-linear-core`, `hvn-run-memory`

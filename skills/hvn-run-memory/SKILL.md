@@ -22,6 +22,7 @@ Use this skill when:
 - a failed attempt changes the next approach
 - review or QA finds an actionable issue
 - a blocker appears or resolves
+- an interactive question flow pauses, resumes, or finishes
 - ownership changes between planner, builder, reviewer, QA, or release roles
 - ship readiness or rollback guidance changes
 - a retrospective needs durable lessons from a run
@@ -58,6 +59,7 @@ Preferred:
 - current branch, PR, build, screenshots, logs, or deploy links
 - review, QA, regression, or ship artifacts
 - known blockers, failed attempts, and open questions
+- question-round, onboarding, clarification, or QA brief artifacts
 
 ## Outputs
 
@@ -68,6 +70,7 @@ Produce one or more of:
 - read summary for a resuming agent
 - handoff summary for another role
 - Linear sync note using `templates/linear-memory-sync.md`
+- question-flow resume state when an intake or clarification is paused
 - compression or archive note
 
 ## Workflow
@@ -184,6 +187,7 @@ The memory is good when:
 - `hvn-memory-init`
 - `hvn-memory-read`
 - `hvn-memory-update`
+- `hvn-question-flow`
 - `hvn-linear-sync`
 - `hvn-context-brief`
 - `hvn-delta`

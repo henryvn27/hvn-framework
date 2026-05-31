@@ -34,16 +34,18 @@ Write the blind report to the chosen record without exposing hidden context.
 ## Workflow
 
 1. Use `hvn-blind-qa`.
-2. Confirm no hidden spec, implementation context, or run memory is included.
-3. Observe the product surface.
-4. Infer the product and attempt plausible tasks.
-5. Record findings, evidence, and confidence limits.
-6. Post the report to Linear or the opt-out record.
-7. After the blind report is durable, summarize the blind findings into run memory without changing the original blind report.
+2. Use `hvn-blind-qa-brief` first if platform, launch target, mission, or allowed context is unclear.
+3. Confirm no hidden spec, implementation context, or run memory is included.
+4. Observe the product surface.
+5. Infer the product and attempt plausible tasks.
+6. Record findings, evidence, and confidence limits.
+7. Post the report to Linear or the opt-out record.
+8. After the blind report is durable, summarize the blind findings into run memory without changing the original blind report.
 
 ## Outputs And Artifacts
 
 - `templates/blind-qa-report.md`
+- `templates/qa-brief-intake.md` when a brief is needed before testing
 - `templates/linear-blind-qa-comment.md` when Linear-first mode is active
 - Linear issue reference in every QA output when available
 - Potential regression pack candidates

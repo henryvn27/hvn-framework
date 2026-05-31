@@ -31,13 +31,26 @@ Use when an issue enters triage, lacks scope, or needs routing before spec.
 
 1. Read the issue and project context.
 2. Identify missing user, job, scope, platform, risk, and acceptance context.
-3. Ask only questions that change the next useful spec.
-4. Recommend state, labels, and next HVN command.
+3. Use `hvn-question-flow` in Linear intake mode.
+4. Ask only questions that change the next useful spec, plan, or routing decision.
+5. Record waiting-on-answer state when the user or stakeholder has not responded.
+6. Turn answers into issue updates, comments, specs, or planning artifacts.
+7. Recommend state, labels, and next HVN command.
+
+## Interactive Question Flow
+
+- Uses interactive flow: yes
+- Default round size: one question in issue comments; 2-3 questions only for independent issue fields
+- Collects: user, job, scope, platform, risk, acceptance context, owner, next gate
+- Stop condition: issue is healthy enough for spec, discovery, or planning
+- Final artifact: Linear intake comment and optional `templates/linear-question-sync.md`
 
 ## Outputs And Artifacts
 
 - Linear intake comment
 - Optional `templates/intake.md` artifact
+- `templates/linear-question-sync.md` when answers or pending questions must be synced
+- `templates/question-round.md` for resumable intake
 
 ## Failure Cases
 
@@ -46,5 +59,5 @@ Use when an issue enters triage, lacks scope, or needs routing before spec.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-onboard`, `hvn-spec`, `hvn-linear-sync`
-- Skills: `hvn-linear-core`, `hvn-linear-triage`, `hvn-onboard`
+- Commands: `hvn-question-flow`, `hvn-onboard`, `hvn-spec`, `hvn-linear-sync`
+- Skills: `hvn-question-flow`, `hvn-linear-core`, `hvn-linear-triage`, `hvn-onboard`

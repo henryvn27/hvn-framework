@@ -6,6 +6,7 @@ Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They def
 
 - `hvn-router`
 - `hvn-authenticity-preflight`
+- `hvn-question-flow`
 - `hvn-run-memory`
 - `hvn-delta-report`
 - `hvn-aesthetic-profile`
@@ -25,7 +26,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Core Skill Groups
 
 - Core governance: `hvn-core`
-- Intake and discovery: `hvn-onboard`, `hvn-discover`, `hvn-research`
+- Intake and discovery: `hvn-question-flow`, `hvn-onboard`, `hvn-discover`, `hvn-research`
 - Delivery: `hvn-spec`, `hvn-plan`, `hvn-build`
 - Gates: `hvn-review`, `hvn-design`, `hvn-security`, `hvn-ship`
 - QA: `hvn-blind-qa`, `hvn-context-brief`, `hvn-ios-sim-qa`, `hvn-web-qa`
@@ -44,3 +45,7 @@ For high-visibility UI and polished writing, routing triggers `hvn-authenticity-
 ## Run Memory Skill
 
 `hvn-run-memory` is the continuity skill. It initializes, reads, updates, corrects, compresses, and hands off run memory. Use it across onboarding, discovery, spec, planning, build, review, briefed QA, ship, and retro. Do not use it as input to blind first-look QA.
+
+## Question Flow Skill
+
+`hvn-question-flow` is the interactive clarification skill. It asks one focused question or a compact 2-3 question batch, waits for the answer, records what was learned, and stops once enough information exists for the next artifact. Use it for onboarding, feature clarification, bug clarification, research scoping, Linear intake, and QA briefing.
