@@ -1,6 +1,6 @@
 # Intro
 
-ORCA-HVN exists because agent-assisted software work breaks down at the workflow level more often than at the text-generation level.
+ORCA-HVN exists because agent-assisted software work breaks down at the workflow level more often than at the text-generation level. It is an orchestration framework for that work, not just a prompt layer around it.
 
 It is intended to replace the older GStack or GSD-centered personal workflow, not run beside it. Those tools informed some early thinking, but ORCA-HVN is the coherent operating system this repo is now built around.
 

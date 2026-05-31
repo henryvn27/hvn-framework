@@ -4,7 +4,7 @@ If you are new to ORCA-HVN, read this page before you dive into feature docs.
 
 ## What ORCA-HVN Is
 
-ORCA-HVN is a framework for running agent-assisted software work with a durable system of record. It combines spec-driven execution, workflow gating, QA discipline, host-aware behavior, and artifact tracking so agent runs stay inspectable and resumable.
+ORCA-HVN is an orchestration framework for running agent-assisted software work with a durable system of record. It combines spec-driven execution, workflow gating, QA discipline, host-aware behavior, and artifact tracking so agent runs stay inspectable and resumable.
 
 It is also the primary workflow, not a companion layer for GStack or GSD. Those older tools helped inspire parts of the project, but ORCA-HVN is meant to replace that workflow with one clearer ORCA path.
 

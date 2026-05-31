@@ -2,7 +2,9 @@
 
 <img src="assets/orca.png" alt="ORCA-HVN logo" width="220" />
 
-ORCA-HVN is a framework for running agent-assisted software work with durable workflow structure, host-aware execution paths, QA discipline, and inspectable artifacts. It is Linear-first by default, but it can map the same workflow to another system of record when needed.
+ORCA-HVN is an orchestration framework for running agent-assisted software work with durable workflow structure, host-aware execution paths, QA discipline, and inspectable artifacts. It is Linear-first by default, but it can map the same workflow to another system of record when needed.
+
+The name is intentional: ORCA-HVN is meant to be an orchestrator for agentic work, not just a pile of commands.
 
 ORCA-HVN is the primary workflow here. It replaces the older GStack or GSD-centered way of working rather than sitting beside it. Those earlier tools helped shape some of the ideas behind this project, but the intended operating path is now ORCA-only.
 
