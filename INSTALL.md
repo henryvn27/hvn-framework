@@ -1,44 +1,33 @@
 # Installation
 
-HVN supports Linear-first usage, opt-out usage, local install, global install, and host-specific installs for Claude Code, Codex CLI, OpenCode, and Hermes Agent.
+HVN installation is designed to be boring in the best way: explicit, safe, verifiable, and reversible.
 
-## Coordination Setup
+## Shortest Path
 
-HVN defaults to Linear as the system of record. For Linear-first work, configure your agent client with Linear access, then use Linear issues as the starting point for HVN commands.
-
-Expected Linear integration points:
-
-- Read issue title, description, labels, state, comments, links, project, assignee, and delegate.
-- Post specs, plans, QA reports, review findings, ship checks, and handoffs as comments.
-- Link durable artifacts such as PRs, screenshots, build logs, release notes, and docs.
-- Recommend state transitions only when required evidence exists.
-
-If the user opts out of Linear, choose another durable system of record before work starts. Use the same HVN gates and store artifacts in GitHub Issues, PR comments, project docs, local files, or another tracker.
-
-## Repo Mode
-
-Use repo mode when you want to inspect or vendor the framework manually. Reference these paths directly:
-
-- `HVN.md`
-- `commands/`
-- `skills/`
-- `templates/`
-- `docs/`
-- `mcp/`
-- `core/`
-- `adapters/`
-
-Repo mode is useful for contributors and teams that commit agent operating procedures into a product repository.
-
-## Local Install
-
-Local install copies HVN into a target folder inside one project:
+From the repository root:
 
 ```sh
-./install/install.sh --mode local --target ./.hvn
+./install/install.sh --host shared --mode local --yes
 ```
 
-The target will contain:
+Then verify:
+
+```sh
+./install/verify-install.sh --target ./.hvn --host shared
+```
+
+If you already know your host, use an explicit host:
+
+```sh
+./install/install.sh --host claude --mode local --yes
+./install/install.sh --host codex --mode global --yes
+./install/install.sh --host opencode --mode local --yes
+./install/install.sh --host hermes --mode local --yes
+```
+
+## What HVN Installs
+
+The shared package includes:
 
 - `HVN.md`
 - `HVN.defaults.md`
@@ -48,170 +37,191 @@ The target will contain:
 - `docs/`
 - `mcp/`
 - `profiles/`
+- `core/`
+- `adapters/`
 - `memory/runs/archive/`
 
-Verify it:
+Host installs also copy skills and command files into host-specific locations when that mapping is known.
 
-```sh
-./install/verify-install.sh --target ./.hvn
-```
+## Supported Hosts
 
-Use `.hvn/memory/runs/<workstream-id>__<short-slug>.md` for local run memory when the workstream needs a continuation record.
+- Claude Code
+- Codex CLI
+- OpenCode
+- Hermes Agent
+- Shared/manual install
 
-## Global Install
+Read `docs/compatibility-matrix.md` before assuming a host supports native commands, popups, connectors, MCP servers, or browser/simulator tooling.
 
-Global install copies HVN into the user config folder:
+## Prerequisites
 
-```sh
-./install/install.sh --mode global
-```
+Required:
 
-Default targets:
+- POSIX shell for `.sh` installers
+- `mkdir`
+- `cp`
+- `rm`
+- writable target directory
 
-- Unix: `$HOME/.hvn`
-- PowerShell: `$HOME/.hvn`
+Optional:
 
-Override the target with `--target /path/to/hvn`.
+- host CLI or existing config directory for detection
+- Linear connector, MCP, or CLI access for Linear-first automation
+- browser or simulator tools for QA workflows
 
-## Host Detection
-
-Run:
+Run preflight:
 
 ```sh
 ./install/detect-host.sh
+./install/install.sh --host auto --mode local --dry-run
 ```
 
-Detection prints hints only. Use an explicit installer when more than one host is present.
+## Local Versus Global
 
-## Host-Specific Installs
+Use local install when:
 
-Claude Code:
+- a single repo should carry HVN
+- you want project-specific commands and skills
+- multiple projects need different versions
+
+Use global install when:
+
+- you want HVN available across projects
+- the host supports user-level skills or commands
+- you manage one preferred HVN version
+
+## Host Install Paths
+
+| Host | Local target | Global target |
+| --- | --- | --- |
+| Shared | `./.hvn` | `~/.hvn` |
+| Claude Code | `./.claude/hvn` | `~/.claude/hvn` |
+| Codex CLI | `./.codex/hvn` | `~/.codex/hvn` |
+| OpenCode | `./.opencode/hvn` | `~/.config/opencode/hvn` |
+| Hermes Agent | `./.hermes/hvn` | `~/.hermes/hvn` |
+
+## Installer Options
 
 ```sh
-./install/install-claude.sh --mode local
-./install/verify-install.sh --target ./.claude/hvn --host claude
+./install/install.sh --help
 ```
 
-Codex CLI:
+Important options:
 
-```sh
-./install/install-codex.sh --mode global
-./install/verify-install.sh --target ~/.codex/hvn --host codex
-```
+- `--host auto|shared|claude|codex|opencode|hermes`
+- `--mode local|global`
+- `--target path`
+- `--dry-run`
+- `--yes`
+- `--verbose`
+- `--skip-verify`
 
-OpenCode:
+## Manual Install
 
-```sh
-./install/install-opencode.sh --mode local
-./install/verify-install.sh --target ./.opencode/hvn --host opencode
-```
-
-Hermes Agent:
-
-```sh
-./install/install-hermes.sh --mode local
-./install/verify-install.sh --target ./.hermes/hvn --host hermes
-```
-
-Host installers install the shared HVN package under a host-specific `hvn/` directory and copy skills or command files into the host's expected locations when that mapping is known. If a host requires manual configuration, the script prints that limitation.
-
-## Linear Configuration
-
-HVN does not automate Linear OAuth. Configure Linear through your agent client or MCP setup. A placeholder-safe example lives at `mcp/linear.example.json`; store credentials in your agent client's secret store rather than committing them.
-
-Use the setup guide first:
-
-```sh
-./scripts/linear-setup.sh --mode linear-first --target work/hvn-linear-setup.md
-```
-
-Then follow `docs/linear-setup.md`.
-
-Recommended setup:
-
-1. Connect Linear to the agent client.
-2. Confirm the agent can read projects, issues, states, comments, and labels.
-3. Confirm the agent can post comments.
-4. Decide whether agents may change issue states directly or only recommend transitions.
-5. Configure or map states from `docs/linear-states.md`.
-6. Configure labels from `docs/linear-setup.md`.
-7. Paste guidance from `docs/linear-guidance.md` into workspace, team, or project instructions.
-8. Create and run the smoke-test issue described in `docs/linear-setup.md`.
-
-## MCP Setup Overview
-
-HVN includes example MCP snippets:
-
-- `mcp/linear.example.json`
-- `mcp/ios-simulator.example.json`
-- `mcp/browser.example.json`
-
-Adapt command names and paths to your agent client and installed MCP servers.
-
-## Enabling The Henry Profile
-
-The Henry profile is installed at `profiles/henry-van-ness.md`. To use it, include `HVN.md`, `HVN.defaults.md`, and `profiles/henry-van-ness.md` in your agent instructions or project memory. The profile enables Linear-first work management, most-specific skill routing, preserve-stack behavior, premium design sensitivity, and full-output enforcement when requested.
-
-To use a different profile later, create another file in `profiles/` and state which profile the agent should load.
-
-## Cross-Harness Architecture
-
-The shared core lives in root-level `skills/`, `commands/`, `templates/`, `docs/`, `profiles/`, and `mcp/`, with `core/README.md` documenting the boundary. Host-specific placement and limitations live in `adapters/`.
+Use manual install when scripts cannot run or when your host uses custom paths.
 
 Read:
 
-- `docs/cross-harness-architecture.md`
-- `docs/compatibility-matrix.md`
-- `docs/command-mapping.md`
-- `docs/portable-skills.md`
+- `docs/manual-install.md`
 - `docs/hosts/claude-code.md`
 - `docs/hosts/codex-cli.md`
 - `docs/hosts/opencode.md`
 - `docs/hosts/hermes-agent.md`
 
-## Run Memory Artifacts
+## Verify
 
-Installed HVN creates `.hvn/memory/runs/archive/` for local continuation records. Run memory docs live in `docs/run-memory.md`, Linear sync guidance in `docs/run-memory-linear.md`, handoff guidance in `docs/run-memory-handoffs.md`, and maintenance guidance in `docs/run-memory-maintenance.md`.
+Shared:
 
-## Interactive Question Flows
+```sh
+./install/verify-install.sh --target ./.hvn --host shared --smoke
+```
 
-Installed HVN includes guided question-flow commands and templates. Use `commands/hvn-question-flow.md`, `commands/hvn-onboard.md`, `commands/hvn-spec.md`, `commands/hvn-linear-intake.md`, and `commands/hvn-blind-qa-brief.md` for focused command-driven clarification. The framework defines prompt behavior and artifacts; the host app provides the visible slash-command, popup, command-palette, or chat shell.
+Claude:
 
-## Interview And Spec Workflow
+```sh
+./install/verify-install.sh --target ./.claude/hvn --host claude --smoke
+```
 
-Installed HVN includes interview-first onboarding and spec-driven execution artifacts:
+Codex:
 
-- `docs/onboarding.md`
-- `docs/spec-driven-workflow.md`
-- `docs/spec-quality-bar.md`
-- `docs/scope-discipline.md`
-- `docs/milestone-planning.md`
-- `commands/hvn-spec-check.md`
-- `templates/spec.md`
-- `templates/spec-review.md`
-- `templates/requirements-split.md`
-- `templates/milestone-plan.md`
+```sh
+./install/verify-install.sh --target ~/.codex/hvn --host codex --smoke
+```
 
-## Feature Artifacts
+OpenCode:
 
-Installed HVN includes run memory, blind-to-briefed deltas, aesthetic profiles, issue health checks, and regression packs. Their templates live in `templates/`, skills in `skills/`, commands in `commands/`, and docs in `docs/`.
+```sh
+./install/verify-install.sh --target ./.opencode/hvn --host opencode --smoke
+```
+
+Hermes:
+
+```sh
+./install/verify-install.sh --target ./.hermes/hvn --host hermes --smoke
+```
+
+See `docs/verify-install.md`.
+
+## Update
+
+Update refreshes HVN-managed files from the current repository checkout:
+
+```sh
+./install/update.sh --host auto --mode local --yes
+```
+
+Run memory is preserved. Read `docs/update.md`.
 
 ## Uninstall
 
-Uninstall removes only a target that looks like an HVN install:
+Uninstall removes only targets that look like HVN installs:
 
 ```sh
-./install/uninstall.sh --target ./.hvn
+./install/uninstall.sh --target ./.hvn --host shared --yes
 ```
 
-The script refuses to remove arbitrary folders.
+By default, uninstall backs up run memory before removing the install target. Use `--remove-memory` only when you intentionally want to remove local run memory. Read `docs/uninstall.md`.
 
-## Doctor
+## First Run
 
-Run:
+After install:
+
+1. Read `docs/first-run.md`.
+2. Run `hvn-help` in your host or open `commands/hvn-help.md`.
+3. For non-trivial work, start with `hvn-onboard` or `hvn-linear-intake`.
+4. Verify Linear access or prepare sync notes.
+5. Create run memory for multi-step work.
+
+## Troubleshooting
+
+Read `docs/troubleshooting-install.md`.
+
+Common checks:
 
 ```sh
-./install/doctor.sh
+./install/detect-host.sh
+./install/install.sh --host shared --mode local --dry-run --verbose
+./install/verify-install.sh --target ./.hvn --host shared --verbose
 ```
 
-Doctor checks shell dependencies, expected framework folders, script permissions, and common install targets.
+## FAQ
+
+### Does one command work everywhere?
+
+No. `install.sh --host auto` gives a good default, but host behavior differs. Use explicit `--host` when in doubt.
+
+### Does install configure Linear?
+
+No. HVN installs guidance and templates. Linear auth and connectors are configured in the host.
+
+### Does uninstall delete run memory?
+
+Not by default. It backs up memory before removing the install target.
+
+### Can I reinstall safely?
+
+Yes. Reinstall refreshes HVN-managed files and preserves `memory/runs/`.
+
+### What if my command does not appear in the host?
+
+Verify the host-specific command path, restart or reload the host if required, and read `docs/troubleshooting-install.md`.

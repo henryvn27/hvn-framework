@@ -12,6 +12,9 @@ done
 
 ./scripts/validate-repo.sh
 
+./install/install.sh --host shared --mode local --target /tmp/hvn-doctor-install --dry-run --yes >/tmp/hvn-doctor-dry-run.log
+rm -f /tmp/hvn-doctor-dry-run.log
+
 if [ -d "$HOME/.hvn" ]; then
   ./install/verify-install.sh --target "$HOME/.hvn"
 else

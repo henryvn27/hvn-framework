@@ -28,6 +28,7 @@ HVN.defaults.md
 .github/ISSUE_TEMPLATE/config.yml
 .github/PULL_REQUEST_TEMPLATE.md
 .github/workflows/ci.yml
+.github/workflows/install-test.yml
 .github/workflows/markdown-lint.yml
 .github/workflows/validate-install.yml
 .github/FUNDING.yml
@@ -50,6 +51,15 @@ docs/cross-harness-architecture.md
 docs/compatibility-matrix.md
 docs/command-mapping.md
 docs/portable-skills.md
+docs/installation-architecture.md
+docs/install-preflight.md
+docs/verify-install.md
+docs/uninstall.md
+docs/update.md
+docs/manual-install.md
+docs/troubleshooting-install.md
+docs/first-run.md
+docs/install-test-matrix.md
 docs/onboarding.md
 docs/spec-driven-workflow.md
 docs/spec-quality-bar.md
@@ -116,6 +126,11 @@ docs/examples/spec-from-idea.md
 docs/examples/spec-to-plan.md
 docs/examples/verify-against-spec.md
 docs/examples/scope-splitting.md
+docs/examples/install-claude.md
+docs/examples/install-codex.md
+docs/examples/install-opencode.md
+docs/examples/install-hermes.md
+docs/examples/install-local-vs-global.md
 mcp/linear.example.json
 examples/sample-run-memory/README.md
 skills/hvn-question-flow/SKILL.md
@@ -152,7 +167,7 @@ template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 [ "$skill_count" -ge 33 ] || fail "expected at least 33 skill definitions"
 [ "$template_count" -ge 35 ] || fail "expected at least 35 templates"
 
-for script in install/install.sh install/install-claude.sh install/install-codex.sh install/install-opencode.sh install/install-hermes.sh install/detect-host.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
+for script in install/install.sh install/install-claude.sh install/install-codex.sh install/install-opencode.sh install/install-hermes.sh install/detect-host.sh install/uninstall.sh install/update.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
   [ -x "$script" ] || fail "script is not executable: $script"
   sh -n "$script" || fail "script syntax failed: $script"

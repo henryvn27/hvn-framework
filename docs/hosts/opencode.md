@@ -34,9 +34,11 @@ Recommended user layout:
 Run:
 
 ```sh
-./install/install-opencode.sh --mode local
-./install/verify-install.sh --target ./.opencode/hvn --host opencode
+./install/install.sh --host opencode --mode local --yes
+./install/verify-install.sh --target ./.opencode/hvn --host opencode --smoke
 ```
+
+Use `--mode global` for `~/.config/opencode/hvn`.
 
 ## Command Behavior
 
@@ -78,3 +80,15 @@ OpenCode can act as a coding worker or primary host. QA support depends on avail
 - Do not assume OpenCode command behavior matches Claude or Codex slash commands.
 - Do not assume OpenCode has Linear access unless configured.
 - Worker delegation should preserve HVN artifacts and run memory.
+
+## Uninstall
+
+```sh
+./install/uninstall.sh --target ./.opencode/hvn --host opencode --yes
+```
+
+## Troubleshooting
+
+- If commands do not appear, verify `.opencode/command/hvn-help.md`.
+- If skills do not appear, verify `.opencode/skills/hvn-core/SKILL.md`.
+- Reload OpenCode after local command or skill changes when needed.

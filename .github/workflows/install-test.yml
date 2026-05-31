@@ -1,0 +1,39 @@
+name: install-test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  install-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate repository
+        run: ./scripts/validate-repo.sh
+      - name: Shell syntax
+        run: |
+          for script in install/*.sh scripts/*.sh; do
+            sh -n "$script"
+          done
+      - name: Dry run
+        run: |
+          ./install/install.sh --host shared --mode local --target /tmp/hvn-dry-run --dry-run --yes
+          test ! -e /tmp/hvn-dry-run
+      - name: Shared install
+        run: |
+          ./install/install.sh --host shared --mode local --target /tmp/hvn-shared --yes
+          ./install/verify-install.sh --target /tmp/hvn-shared --host shared --smoke
+      - name: Host installs
+        run: |
+          ./install/install.sh --host claude --mode local --target /tmp/hvn-claude/hvn --yes
+          ./install/verify-install.sh --target /tmp/hvn-claude/hvn --host claude --smoke
+          ./install/install.sh --host codex --mode local --target /tmp/hvn-codex/hvn --yes
+          ./install/verify-install.sh --target /tmp/hvn-codex/hvn --host codex --smoke
+          ./install/install.sh --host opencode --mode local --target /tmp/hvn-opencode/hvn --yes
+          ./install/verify-install.sh --target /tmp/hvn-opencode/hvn --host opencode --smoke
+          ./install/install.sh --host hermes --mode local --target /tmp/hvn-hermes/hvn --yes
+          ./install/verify-install.sh --target /tmp/hvn-hermes/hvn --host hermes --smoke
+      - name: Uninstall dry run
+        run: ./install/uninstall.sh --target /tmp/hvn-shared --host shared --dry-run --yes

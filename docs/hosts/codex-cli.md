@@ -36,9 +36,11 @@ Codex project behavior commonly relies on repository `AGENTS.md` files. A local 
 Run:
 
 ```sh
-./install/install-codex.sh --mode global
-./install/verify-install.sh --target ~/.codex/hvn --host codex
+./install/install.sh --host codex --mode global --yes
+./install/verify-install.sh --target ~/.codex/hvn --host codex --smoke
 ```
+
+Use `--mode local` for `./.codex/hvn` when the project should carry its own package.
 
 ## Command Behavior
 
@@ -86,3 +88,15 @@ Codex can run QA when local tools, browser automation, simulator tools, or MCP s
 - `AGENTS.md` discovery and skill discovery are distinct.
 - Local `.codex/` installation may not be auto-loaded unless Codex is configured for it.
 - Host-specific approval, sandbox, and network behavior are controlled by Codex, not HVN.
+
+## Uninstall
+
+```sh
+./install/uninstall.sh --target ~/.codex/hvn --host codex --yes
+```
+
+## Troubleshooting
+
+- If behavior is missing, confirm Codex is loading the intended `AGENTS.md`.
+- If skills are not found, verify `~/.codex/skills/hvn-core/SKILL.md` or your configured skill path.
+- Use explicit prompts when native command discovery is unavailable.

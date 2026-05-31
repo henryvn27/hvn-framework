@@ -34,9 +34,11 @@ Recommended global layout:
 Run:
 
 ```sh
-./install/install-claude.sh --mode local
-./install/verify-install.sh --target ./.claude/hvn --host claude
+./install/install.sh --host claude --mode local --yes
+./install/verify-install.sh --target ./.claude/hvn --host claude --smoke
 ```
+
+Use `--mode global` for `~/.claude/hvn`.
 
 ## Command Behavior
 
@@ -92,3 +94,15 @@ If tools are unavailable, record the limitation and prepare manual QA instructio
 - Command syntax and UI rendering may vary by Claude Code version.
 - MCP servers and connectors must be configured separately.
 - HVN skills should remain host-neutral; Claude-specific details belong in `adapters/claude/`.
+
+## Uninstall
+
+```sh
+./install/uninstall.sh --target ./.claude/hvn --host claude --yes
+```
+
+## Troubleshooting
+
+- If commands do not appear, verify `.claude/commands/hvn-help.md`.
+- If skills do not appear, verify `.claude/skills/hvn-core/SKILL.md`.
+- Reload Claude Code after local command or skill changes when needed.

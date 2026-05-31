@@ -31,9 +31,11 @@ Recommended user layout:
 Run:
 
 ```sh
-./install/install-hermes.sh --mode local
-./install/verify-install.sh --target ./.hermes/hvn --host hermes
+./install/install.sh --host hermes --mode local --yes
+./install/verify-install.sh --target ./.hermes/hvn --host hermes --smoke
 ```
+
+Use `--mode global` for `~/.hermes/hvn`.
 
 ## Command Behavior
 
@@ -79,3 +81,15 @@ Hermes QA support depends on configured tools or delegated workers. Blind QA rul
 - Do not assume every Hermes installation has OpenCode workers.
 - Do not assume native command files unless the local Hermes configuration provides them.
 - Keep HVN artifacts host-agnostic so other agents can resume work.
+
+## Uninstall
+
+```sh
+./install/uninstall.sh --target ./.hermes/hvn --host hermes --yes
+```
+
+## Troubleshooting
+
+- If skills do not appear, verify `.hermes/skills/hvn-core/SKILL.md`.
+- If commands are not native in your Hermes setup, use `.hermes/hvn/commands/` as prompt references.
+- Verify worker orchestration separately from HVN installation.

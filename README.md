@@ -65,6 +65,13 @@ The shared core is portable. Host support varies for commands, native UI, connec
 
 ## Quickstart
 
+Shortest install path:
+
+```sh
+./install/install.sh --host shared --mode local --yes
+./install/verify-install.sh --target ./.hvn --host shared --smoke
+```
+
 Clone the repo and run validation:
 
 ```sh
@@ -132,6 +139,11 @@ For Linear-first setup, read:
 - `docs/run-memory-maintenance.md`
 - `docs/interactive-question-flows.md`
 - `docs/host-ui-guidance.md`
+- `INSTALL.md`
+- `docs/installation-architecture.md`
+- `docs/install-preflight.md`
+- `docs/verify-install.md`
+- `docs/first-run.md`
 
 You can also generate a local setup packet:
 
@@ -216,6 +228,10 @@ Skills in `skills/` define reusable execution behavior. Linear-specific skills i
 - `hvn-debug`
 
 Templates in `templates/` include both full artifacts and Linear-ready comment formats.
+
+## Installation
+
+Installation is a first-class supported workflow. Use `INSTALL.md` for the full guide, `docs/manual-install.md` for fallback paths, `docs/troubleshooting-install.md` for common failures, and `docs/uninstall.md` / `docs/update.md` for lifecycle operations.
 
 ## Run Memory
 
