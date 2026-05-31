@@ -4,15 +4,19 @@ HVN is the master operating policy for rigorous agentic software development. It
 
 HVN is Linear-first by default. Linear is the preferred system of record for issue intake, scope clarification, status transitions, agent handoffs, implementation plans, QA runs, review findings, ship readiness, and retrospectives. If the user opts out of Linear, HVN maps the same gates and artifacts to the user's chosen system of record.
 
+HVN also routes work by installed skill. The default policy is most-specific-skill wins. The shipped profile is `profiles/henry-van-ness.md`; the framework defaults are in `HVN.defaults.md`.
+
 ## Principles
 
 1. **System of record first:** every meaningful action should be recoverable from Linear or the declared opt-out record.
 2. **Spec first:** implementation follows a written contract.
-3. **Evidence over confidence:** agents verify behavior rather than relying on plausible reasoning.
-4. **Context is a tool:** context is disclosed deliberately, especially during QA.
-5. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
-6. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
-7. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
+3. **Route first:** select the narrowest installed skill that matches the task.
+4. **Preserve first:** keep existing stack and conventions unless redesign is requested.
+5. **Evidence over confidence:** agents verify behavior rather than relying on plausible reasoning.
+6. **Context is a tool:** context is disclosed deliberately, especially during QA.
+7. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
+8. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
+9. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
 
 ## Coordination Modes
 
@@ -35,6 +39,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 
 - **Linear intake mode:** normalize issue context, labels, and next gate.
 - **Linear setup mode:** configure or validate Linear states, labels, guidance, permissions, smoke-test issue, and opt-out mapping.
+- **Routing mode:** select installed skills, Linear handling, preserve-stack posture, and full-output behavior.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
 - **Discovery mode:** inspect code, product shape, dependencies, constraints, and risks.
 - **Research mode:** gather evidence when the answer is not already known.
@@ -49,6 +54,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 
 ## Required Artifacts
 
+- Routing decision for non-trivial or skill-sensitive work
 - Intake summary or Linear intake comment
 - Discovery notes when code or constraints are inspected
 - Research brief when outside evidence informs a decision
@@ -73,19 +79,20 @@ Before relying on Linear-first execution, run setup:
 
 Then use the standard lifecycle:
 
-1. Issue enters inbox or triage.
-2. Onboard or discover agent clarifies ambiguity.
-3. Spec is generated and attached or summarized back to the issue.
-4. Plan is posted to the issue.
-5. Human approves the plan when required.
-6. Build agent executes approved scope.
-7. Review agent comments findings.
-8. Blind QA agent runs first-look test.
-9. Context briefer creates a minimal second-pass brief.
-10. Guided QA reruns with limited context.
-11. Security, review, and regression passes happen as needed.
-12. Ship readiness checklist is posted.
-13. Issue moves to done only with evidence.
+1. Route the task and check Linear project or issue context.
+2. Issue enters inbox or triage.
+3. Onboard or discover agent clarifies ambiguity.
+4. Spec is generated and attached or summarized back to the issue.
+5. Plan is posted to the issue.
+6. Human approves the plan when required.
+7. Build agent executes approved scope with the selected skill.
+8. Review agent comments findings and checks skill fit.
+9. Blind QA agent runs first-look test.
+10. Context briefer creates a minimal second-pass brief.
+11. Guided QA reruns with limited context.
+12. Security, review, and regression passes happen as needed.
+13. Ship readiness checklist is posted.
+14. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -103,6 +110,10 @@ Subagents must state what context they received. They must not imply they observ
 ## Verification Policy
 
 Every build phase needs verification proportional to risk. Prefer automated tests, linting, validation scripts, screenshots, simulator runs, browser runs, and direct artifact checks. If verification cannot run, record the reason and remaining risk in Linear or the opt-out record.
+
+## Skill Routing Policy
+
+Use `hvn-router` before non-trivial work. Choose the narrowest installed skill matching the task. For frontend and design-heavy work, route to design/frontend skills. For existing products, prefer improve-in-place behavior. For full-output requests, enable `hvn-full-output`. If the ideal skill is missing, state the fallback and preserve the missing skill's intent as constraints when safe.
 
 ## QA Philosophy
 

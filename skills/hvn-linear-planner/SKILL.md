@@ -31,11 +31,12 @@ Do not use for already-approved implementation work unless scope changed.
 
 ## Exact Workflow
 
-1. Convert issue context into a structured spec or plan.
-2. Use Linear comment templates for readability.
-3. Include non-goals and verification.
-4. State whether human approval is required.
-5. Recommend the next state without bypassing approval.
+1. Confirm the issue belongs to the correct Linear project.
+2. Convert issue context into a structured spec or plan.
+3. Use Linear comment templates for readability.
+4. Include non-goals, preserve-stack assumptions, and verification.
+5. State whether human approval is required.
+6. Recommend the next state without bypassing approval.
 
 ## Expected Outputs
 

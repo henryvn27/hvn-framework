@@ -1,0 +1,49 @@
+# Default Behavior
+
+HVN's shipped default behavior is intentionally opinionated. It is designed to mirror Henry Van Ness's agent workflow while remaining reusable by other teams.
+
+## Framework Defaults
+
+Framework defaults apply unless a profile or direct user instruction overrides them:
+
+- Use Linear as the default work-management system for non-trivial work.
+- Route to the most specific installed skill before generic execution.
+- Preserve existing repo and product conventions.
+- Treat design-heavy work as a specialized workflow.
+- Use full-output enforcement when the user asks for exhaustive output.
+- Keep review, QA, and ship evidence in the system of record.
+
+## Profile Defaults
+
+Profiles tune the framework for a specific person, team, or product. The shipped profile is `profiles/henry-van-ness.md`.
+
+Profile behavior may specify:
+
+- Work-management preference.
+- Design bar.
+- Routing preferences.
+- Output strictness.
+- QA expectations.
+- Handoff format.
+
+## Direct User Instructions
+
+Direct user instructions override profile defaults. If a user opts out of Linear, HVN must map the same gates to the chosen system of record. If a user asks for a rewrite, preserve-stack behavior no longer blocks a rewrite, but the agent should still state the tradeoff.
+
+## Missing Skills
+
+If a named or ideal skill is not installed:
+
+1. State that the skill is unavailable.
+2. Use the closest installed skill.
+3. Preserve the missing skill's intent as constraints when safe.
+4. Do not invent tool results or pretend the missing skill ran.
+
+## Linear Blocked Fallback
+
+If Linear is unavailable:
+
+1. State that Linear access is blocked.
+2. Continue local work only when appropriate.
+3. Record the Linear project, issue, comment, state, labels, and links that should be created or updated later.
+4. Include the pending Linear sync in the final handoff.

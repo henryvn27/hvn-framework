@@ -11,11 +11,14 @@ while [ "$#" -gt 0 ]; do
   esac
 done
 
-for item in HVN.md commands skills templates docs mcp VERSION; do
+for item in HVN.md HVN.defaults.md commands skills templates docs mcp profiles VERSION; do
   [ -e "$target/$item" ] || { printf 'Missing installed item: %s\n' "$target/$item" >&2; exit 1; }
 done
 
 [ -f "$target/commands/hvn-help.md" ] || { printf 'Missing hvn-help command\n' >&2; exit 1; }
+[ -f "$target/commands/hvn-route.md" ] || { printf 'Missing hvn-route command\n' >&2; exit 1; }
 [ -f "$target/skills/hvn-core/SKILL.md" ] || { printf 'Missing hvn-core skill\n' >&2; exit 1; }
+[ -f "$target/skills/hvn-router/SKILL.md" ] || { printf 'Missing hvn-router skill\n' >&2; exit 1; }
+[ -f "$target/profiles/henry-van-ness.md" ] || { printf 'Missing Henry profile\n' >&2; exit 1; }
 
 printf 'HVN install verified at %s\n' "$target"

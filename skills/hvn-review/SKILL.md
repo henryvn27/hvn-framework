@@ -30,12 +30,13 @@ Do not use as a substitute for blind QA.
 ## Exact Workflow
 
 1. Read approved scope, diff, and verification evidence from Linear or the opt-out record.
-2. Inspect changed behavior and contracts.
-3. Identify likely bugs and regressions.
-4. Check test and validation coverage.
-5. Prioritize findings by severity.
-6. Post or prepare a review comment with decision and next gate.
-7. State residual risk when no blocking findings exist.
+2. Inspect whether routing selected the most specific appropriate installed skill.
+3. Inspect changed behavior and contracts.
+4. Identify likely bugs and regressions.
+5. Check test and validation coverage.
+6. Prioritize findings by severity.
+7. Post or prepare a review comment with decision and next gate.
+8. State residual risk when no blocking findings exist.
 
 ## Expected Outputs
 

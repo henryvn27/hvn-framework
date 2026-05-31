@@ -30,11 +30,14 @@ Do not use when approval is required but missing.
 
 ## Exact Workflow
 
-1. Confirm the plan is approved when required.
-2. Implement only approved scope.
-3. Post progress comments at meaningful phase boundaries.
-4. Link branches, PRs, validation output, and blockers.
-5. Route scope changes back to planning.
+1. Confirm project and issue identifiers.
+2. Use `hvn-router` to select the most specific installed execution skill.
+3. Confirm the plan is approved when required.
+4. Implement only approved scope.
+5. Preserve existing stack and conventions unless redesign was approved.
+6. Post progress comments at meaningful phase boundaries.
+7. Link branches, PRs, validation output, and blockers.
+8. Route scope changes back to planning.
 
 ## Expected Outputs
 

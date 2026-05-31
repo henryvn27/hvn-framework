@@ -31,12 +31,13 @@ Do not call a pass blind if the tester has already read hidden spec, plan, code,
 
 ## Exact Workflow
 
-1. Confirm pass type and context boundaries.
-2. For blind QA, provide only issue ID, platform, launch instructions, and optional one-sentence mission.
-3. Run browser, simulator, CLI, or manual QA.
-4. Post findings with evidence and confidence limits.
-5. For second pass, create or consume a minimal context brief.
-6. Surface the difference between blind and briefed outcomes.
+1. Confirm project and issue identifiers.
+2. Confirm pass type and context boundaries.
+3. For blind QA, provide only issue ID, platform, launch instructions, and optional one-sentence mission.
+4. Run browser, simulator, CLI, or manual QA.
+5. Post findings with evidence and confidence limits.
+6. For second pass, create or consume a minimal context brief.
+7. Surface the difference between blind and briefed outcomes.
 
 ## Expected Outputs
 

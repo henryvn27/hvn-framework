@@ -29,13 +29,15 @@ Do not use for an empty repo when the user only needs initial project creation.
 
 ## Exact Workflow
 
-1. Read the Linear issue or opt-out work item for scope and links.
-2. Inventory files, scripts, dependencies, and docs.
-3. Identify core modules and ownership boundaries.
-4. Inspect relevant implementation patterns.
-5. Find verification commands and risk areas.
-6. Produce discovery notes with recommendations.
-7. Post or prepare the summary for the durable record.
+1. Use `hvn-router` when the work is non-trivial or skill-sensitive.
+2. Read the Linear issue or opt-out work item for scope and links.
+3. Inventory files, scripts, dependencies, and docs.
+4. Identify core modules and ownership boundaries.
+5. Inspect relevant implementation patterns.
+6. Record conventions that should be preserved.
+7. Find verification commands and risk areas.
+8. Produce discovery notes with recommendations.
+9. Post or prepare the summary for the durable record.
 
 ## Expected Outputs
 

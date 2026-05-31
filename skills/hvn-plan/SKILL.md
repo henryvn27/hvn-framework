@@ -30,13 +30,14 @@ Do not use when the user explicitly asks only for a review or explanation.
 
 ## Exact Workflow
 
-1. Read the spec from Linear or the opt-out record.
-2. Break the work into small phases.
-3. Name expected files or system areas.
-4. Attach verification to each phase.
-5. Identify dependencies and rollback points.
-6. Produce a plan that can be posted to the issue or durable record.
-7. Include an explicit human approval request when required.
+1. Use `hvn-router` to record selected skill and preserve-stack posture.
+2. Read the spec from Linear or the opt-out record.
+3. Break the work into small phases.
+4. Name expected files or system areas.
+5. Attach verification to each phase.
+6. Identify dependencies and rollback points.
+7. Produce a plan that can be posted to the issue or durable record.
+8. Include an explicit human approval request when required.
 
 ## Expected Outputs
 

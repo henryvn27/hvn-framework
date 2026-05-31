@@ -33,11 +33,13 @@ Use the chosen work item or document as the source prompt and write the intake s
 
 ## Workflow
 
-1. Use `hvn-onboard`.
-2. Ask high-leverage questions one at a time or in small groups.
-3. Stop when more questions would not materially improve the first spec.
-4. Produce intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
-5. Sync the result to Linear or the opt-out record.
+1. Use `hvn-route` for non-trivial work.
+2. Inspect Linear project and issue context or record blocked sync.
+3. Use `hvn-onboard`.
+4. Ask high-leverage questions one at a time or in small groups.
+5. Stop when more questions would not materially improve the first spec.
+6. Produce intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
+7. Sync the result to Linear or the opt-out record.
 
 ## Outputs And Artifacts
 

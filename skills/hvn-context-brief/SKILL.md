@@ -31,12 +31,13 @@ Do not use before the blind pass is complete unless blind QA has been explicitly
 ## Exact Workflow
 
 1. Define the pass type: blind, briefed, or informed.
-2. Read the Linear issue or opt-out record only after the blind pass is saved, unless blind QA was waived.
-3. List included context.
-4. List withheld context.
-5. Include only what the tester needs for the pass.
-6. State contamination risk and allowed tools.
-7. Tie the packet to the same issue or work item as the first pass.
+2. State the Linear issue or opt-out work item tying the passes together.
+3. Read the Linear issue or opt-out record only after the blind pass is saved, unless blind QA was waived.
+4. List included context.
+5. List withheld context.
+6. Include only what the tester needs for the pass.
+7. State contamination risk and allowed tools.
+8. Tie the packet to the same issue or work item as the first pass.
 
 ## Expected Outputs
 

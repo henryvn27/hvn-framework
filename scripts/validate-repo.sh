@@ -19,6 +19,7 @@ SECURITY.md
 ROADMAP.md
 INSTALL.md
 HVN.md
+HVN.defaults.md
 .gitignore
 .editorconfig
 .gitattributes
@@ -32,6 +33,9 @@ HVN.md
 .github/FUNDING.yml
 docs/linear-workflow.md
 docs/linear-setup.md
+docs/default-behavior.md
+docs/skill-routing.md
+docs/linear-defaults.md
 docs/linear-agent-model.md
 docs/linear-states.md
 docs/linear-issue-lifecycle.md
@@ -39,14 +43,19 @@ docs/linear-guidance.md
 docs/examples/linear-setup-session.md
 docs/examples/linear-feature-flow.md
 docs/examples/linear-blind-qa-flow.md
+docs/examples/routing-premium-frontend.md
+docs/examples/routing-existing-project.md
+docs/examples/full-output.md
+docs/examples/linear-blocked.md
 mcp/linear.example.json
+profiles/henry-van-ness.md
 "
 
 for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates install scripts docs mcp examples; do
+for dir in commands skills templates install scripts docs mcp examples profiles; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -54,8 +63,8 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 21 ] || fail "expected at least 21 command definitions"
-[ "$skill_count" -ge 23 ] || fail "expected at least 23 skill definitions"
+[ "$command_count" -ge 24 ] || fail "expected at least 24 command definitions"
+[ "$skill_count" -ge 25 ] || fail "expected at least 25 skill definitions"
 [ "$template_count" -ge 18 ] || fail "expected at least 18 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do

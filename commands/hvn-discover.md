@@ -32,11 +32,13 @@ Write discovery notes to the selected artifact location and link or reference th
 
 ## Workflow
 
-1. Use `hvn-discover`.
-2. Inspect structure, dependencies, scripts, tests, and relevant files.
-3. Identify ownership boundaries and existing patterns.
-4. Record risks, constraints, and recommended next steps.
-5. Sync findings to Linear or the opt-out record.
+1. Use `hvn-route` when the task is non-trivial.
+2. Use `hvn-discover`.
+3. Inspect structure, dependencies, scripts, tests, and relevant files.
+4. Identify ownership boundaries and existing patterns.
+5. Record stack, framework, design-system, and implementation conventions that should be preserved.
+6. Record risks, constraints, and recommended next steps.
+7. Sync findings to Linear or the opt-out record.
 
 ## Outputs And Artifacts
 

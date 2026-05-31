@@ -17,19 +17,20 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 ## Standard Lifecycle
 
 0. Linear setup maps states, labels, guidance, permissions, and opt-out rules.
-1. Issue enters inbox or triage.
-2. Onboard or discover agent clarifies ambiguity.
-3. Spec is generated and attached or summarized back to the issue.
-4. Plan is posted to the issue.
-5. Human approves the plan.
-6. Build agent executes approved scope.
-7. Review agent comments findings.
-8. Blind QA agent runs first-look test.
-9. Context briefer creates a minimal second-pass brief.
-10. Guided QA reruns with limited context.
-11. Security, review, and regression passes run as needed.
-12. Ship readiness checklist is posted.
-13. Issue moves to done only with evidence.
+1. Routing checks the matching Linear project or issue before execution.
+2. Issue enters inbox or triage.
+3. Onboard or discover agent clarifies ambiguity.
+4. Spec is generated and attached or summarized back to the issue.
+5. Plan is posted to the issue.
+6. Human approves the plan.
+7. Build agent executes approved scope.
+8. Review agent comments findings.
+9. Blind QA agent runs first-look test.
+10. Context briefer creates a minimal second-pass brief.
+11. Guided QA reruns with limited context.
+12. Security, review, and regression passes run as needed.
+13. Ship readiness checklist is posted.
+14. Issue moves to done only with evidence.
 
 ## Agent Update Rule
 

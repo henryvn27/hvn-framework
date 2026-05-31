@@ -34,10 +34,11 @@ Post or store the review report in the declared record.
 ## Workflow
 
 1. Use `hvn-review`.
-2. Inspect changed behavior and adjacent contracts.
-3. Prioritize findings by severity.
-4. Recommend fixes or state that no blocking issues were found.
-5. Sync review decision to the work item.
+2. Inspect whether the chosen skill matched the task and whether a more specific installed skill was skipped.
+3. Inspect changed behavior and adjacent contracts.
+4. Prioritize findings by severity.
+5. Recommend fixes or state that no blocking issues were found.
+6. Sync review decision to the work item.
 
 ## Outputs And Artifacts
 

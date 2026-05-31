@@ -29,12 +29,14 @@ Do not use when the user only wants brainstorming, review, or research.
 
 ## Exact Workflow
 
-1. Confirm the approved scope from Linear or the opt-out record.
-2. Read relevant files before editing.
-3. Preserve user changes and existing patterns.
-4. Make the smallest coherent change that satisfies the phase.
-5. Run appropriate verification.
-6. Record what changed and what could not be verified in the durable record.
+1. Use `hvn-router` to confirm the most specific installed skill for the task.
+2. Confirm the approved scope from Linear or the opt-out record.
+3. Read relevant files before editing.
+4. Preserve user changes and existing patterns.
+5. Preserve stack and functionality unless redesign or rewrite was approved.
+6. Make the smallest coherent change that satisfies the phase.
+7. Run appropriate verification.
+8. Record what changed and what could not be verified in the durable record.
 
 ## Expected Outputs
 

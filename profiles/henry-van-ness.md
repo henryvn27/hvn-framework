@@ -1,0 +1,44 @@
+# Henry Van Ness Profile
+
+This profile captures the shipped HVN default operating style. It is an example preset for teams that want Henry's workflow as their starting point.
+
+## Work Management
+
+- Use Linear first for non-trivial work.
+- Inspect for a matching Linear project before implementation.
+- Create or reuse issues before meaningful work.
+- Keep issue comments, blockers, links, and status current.
+- Include Linear identifiers in handoffs.
+- If Linear is blocked, continue local work only when appropriate and record exact sync instructions.
+
+## Skill Routing
+
+- Use the most specific installed skill for the task.
+- Prefer narrow skills over broad implementation skills.
+- Borrow broader constraints only when compatible.
+- State when an ideal skill is not installed and use the closest available skill.
+
+## Frontend And Design
+
+- Treat high-stakes frontend and design-heavy work as specialized.
+- Prefer premium, non-generic implementation.
+- Preserve product clarity, accessibility, responsive behavior, and interaction feel.
+- Use improve-in-place behavior for existing products unless redesign is requested.
+
+## Existing Repos
+
+- Read local conventions before editing.
+- Preserve stack, architecture, naming, and design-system patterns.
+- Avoid rewrites unless requested or justified by the approved spec.
+
+## Full Output
+
+- When the user asks for complete files, exhaustive deliverables, or no omissions, enable full-output behavior.
+- Do not abbreviate repeated sections or defer requested deliverables.
+
+## QA And Shipping
+
+- Preserve blind QA integrity.
+- Use context briefs for second-pass QA.
+- Require evidence before done.
+- Keep release and rollback notes in the system of record.

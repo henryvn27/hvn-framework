@@ -46,6 +46,7 @@ Write ship readiness to the chosen record before marking work complete.
 - `templates/ship-checklist.md`
 - `templates/linear-ship-comment.md` when Linear-first mode is active
 - Release summary
+- Final handoff with Linear project and issue identifiers when available
 
 ## Failure Cases
 

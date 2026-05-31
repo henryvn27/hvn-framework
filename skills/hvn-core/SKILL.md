@@ -7,7 +7,7 @@ description: Apply HVN's core operating principles, artifact discipline, verific
 
 ## What This Skill Is
 
-The core governance skill for HVN work.
+The core governance skill for HVN work. It applies the defaults layer, active profile, routing policy, Linear-first work management, artifact discipline, verification policy, and context rules.
 
 ## Trigger
 
@@ -29,15 +29,18 @@ Do not use as a substitute for a more specific skill when onboarding, QA, review
 
 ## Workflow
 
-1. Identify the current HVN mode.
-2. Preserve context boundaries.
-3. Select the narrowest applicable skill.
-4. Require artifacts for meaningful decisions.
-5. Verify claims before completion.
+1. Identify whether the project is Linear-first or opt-out.
+2. Apply `HVN.defaults.md` and the active profile.
+3. Identify the current HVN mode.
+4. Preserve context boundaries.
+5. Select the narrowest applicable skill through `hvn-router`.
+6. Require artifacts for meaningful decisions.
+7. Verify claims before completion.
 
 ## Expected Outputs
 
 - Mode selection
+- Routing expectations
 - Artifact expectations
 - Verification expectations
 
@@ -50,6 +53,8 @@ The agent should be explicit about assumptions, skipped gates, and verification 
 - Treating a vague request as implementation-ready.
 - Mixing blind QA with implementation knowledge.
 - Claiming tests or visual inspection without evidence.
+- Ignoring Linear-first handling for non-trivial work.
+- Ignoring an explicit full-output request.
 
 ## Related HVN Skills And Commands
 

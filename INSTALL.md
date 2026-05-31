@@ -39,11 +39,13 @@ Local install copies HVN into a target folder inside one project:
 The target will contain:
 
 - `HVN.md`
+- `HVN.defaults.md`
 - `commands/`
 - `skills/`
 - `templates/`
 - `docs/`
 - `mcp/`
+- `profiles/`
 
 Verify it:
 
@@ -98,6 +100,12 @@ HVN includes example MCP snippets:
 - `mcp/browser.example.json`
 
 Adapt command names and paths to your agent client and installed MCP servers.
+
+## Enabling The Henry Profile
+
+The Henry profile is installed at `profiles/henry-van-ness.md`. To use it, include `HVN.md`, `HVN.defaults.md`, and `profiles/henry-van-ness.md` in your agent instructions or project memory. The profile enables Linear-first work management, most-specific skill routing, preserve-stack behavior, premium design sensitivity, and full-output enforcement when requested.
+
+To use a different profile later, create another file in `profiles/` and state which profile the agent should load.
 
 ## Uninstall
 

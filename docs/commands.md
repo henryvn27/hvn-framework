@@ -14,12 +14,15 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 
 ## Linear Commands
 
+- `hvn-route`
+- `hvn-linear-check`
 - `hvn-linear-setup`
 - `hvn-linear-intake`
 - `hvn-linear-sync`
 - `hvn-linear-plan-comment`
 - `hvn-linear-qa-report`
 - `hvn-linear-ship-check`
+- `hvn-full-output`
 
 These commands read from and post back to Linear issues when Linear-first mode is active. In opt-out mode, they can be adapted to the chosen system of record.
 

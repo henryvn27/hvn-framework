@@ -35,11 +35,13 @@ Write the spec to `templates/spec.md` or an equivalent artifact and reference it
 
 ## Workflow
 
-1. Use `hvn-spec`.
-2. Define goal, users, scenarios, requirements, non-goals, acceptance criteria, and risks.
-3. Separate confirmed facts from assumptions.
-4. Ask for approval when the spec changes project direction.
-5. Post or attach the spec to the work item.
+1. Use `hvn-route` when the work is non-trivial or skill-sensitive.
+2. Use `hvn-spec`.
+3. Define goal, users, scenarios, requirements, non-goals, acceptance criteria, and risks.
+4. Preserve existing stack and conventions unless the user requested redesign or rewrite.
+5. Separate confirmed facts from assumptions.
+6. Ask for approval when the spec changes project direction.
+7. Post or attach the spec to the work item.
 
 ## Outputs And Artifacts
 

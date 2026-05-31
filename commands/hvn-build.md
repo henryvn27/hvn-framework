@@ -34,12 +34,14 @@ Record implementation updates and evidence in the chosen work item or build log.
 
 ## Workflow
 
-1. Use `hvn-build`.
-2. Confirm approval if required.
-3. Read relevant files before editing.
-4. Make scoped changes.
-5. Run verification after meaningful phases.
-6. Update the work item with evidence and remaining risks.
+1. Use `hvn-route` and follow the selected installed skill before generic build execution.
+2. Confirm Linear project and issue context or record blocked sync.
+3. Confirm approval if required.
+4. Read relevant files before editing.
+5. Preserve existing stack and conventions unless redesign was approved.
+6. Make scoped changes.
+7. Run verification after meaningful phases.
+8. Update the work item with evidence and remaining risks.
 
 ## Outputs And Artifacts
 

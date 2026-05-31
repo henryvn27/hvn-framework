@@ -17,6 +17,8 @@ If a user opts out of Linear, HVN requires a declared alternative record. The ar
 ## Installable Layers
 
 - `HVN.md` is the master operating manual.
+- `HVN.defaults.md` defines shipped default behavior.
+- `profiles/` contains opinionated presets such as the Henry Van Ness profile.
 - `commands/` contains entry-point prompts for workflows and Linear comment operations.
 - `skills/` contains reusable procedures that commands invoke.
 - `templates/` contains durable artifacts and Linear-ready comment formats.
@@ -31,6 +33,10 @@ Example:
 
 - State `In QA` with label `blind-qa` triggers `hvn-test-blind`.
 - `hvn-test-blind` invokes `hvn-blind-qa`, `hvn-web-qa` or `hvn-ios-sim-qa`, and `hvn-linear-qa`.
+
+## Defaults Layer
+
+The defaults layer keeps behavior consistent across commands and skills. `hvn-router` interprets the defaults for a task: Linear check, skill selection, preserve-stack posture, and full-output mode.
 
 ## Why Blind QA Is Separate
 

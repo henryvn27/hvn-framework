@@ -4,6 +4,8 @@ Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They def
 
 ## Linear Skills
 
+- `hvn-router`
+- `hvn-full-output`
 - `hvn-linear-setup`
 - `hvn-linear-core`
 - `hvn-linear-triage`
@@ -26,3 +28,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Skill Installation
 
 Skills can be installed into agent clients that support skill directories, or read directly by agents using repo mode. Linear guidance can be installed separately into workspace, team, or project instructions.
+
+## Routing Defaults
+
+Use `hvn-router` before non-trivial or skill-sensitive work. It applies `HVN.defaults.md`, the active profile, Linear-first work management, preserve-stack behavior, and full-output mode when requested.

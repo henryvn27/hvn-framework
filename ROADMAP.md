@@ -8,6 +8,7 @@
 - Provide initial MCP examples.
 - Add Linear-first workflow docs, commands, skills, and comment templates.
 - Add Linear setup guide, command, skill, checklist, and local setup packet script.
+- Add default behavior layer and Henry Van Ness profile.
 - Document opt-out mode for teams that do not use Linear.
 
 ## 0.2

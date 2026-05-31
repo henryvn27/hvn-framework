@@ -29,12 +29,14 @@ Do not use for backend-only changes without user-facing behavior.
 
 ## Exact Workflow
 
-1. Read the issue or opt-out record for user goal and design constraints.
-2. Identify the user goal.
-3. Inspect hierarchy, information scent, states, responsiveness, accessibility, and copy.
-4. Separate visual observations from inferred behavior.
-5. Produce prioritized design findings and fixes.
-6. Post or prepare findings for the durable record.
+1. Use `hvn-router` to confirm a design/frontend-specific skill path when available.
+2. Read the issue or opt-out record for user goal and design constraints.
+3. Identify the user goal.
+4. Inspect hierarchy, information scent, states, responsiveness, accessibility, and copy.
+5. Separate visual observations from inferred behavior.
+6. Preserve existing product conventions unless redesign was requested.
+7. Produce prioritized design findings and fixes.
+8. Post or prepare findings for the durable record.
 
 ## Expected Outputs
 

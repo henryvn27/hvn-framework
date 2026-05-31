@@ -14,6 +14,7 @@ done
 [ -f "$target/HVN.md" ] || { printf 'Refusing to remove non-HVN target: %s\n' "$target" >&2; exit 1; }
 [ -d "$target/commands" ] || { printf 'Refusing to remove target without commands: %s\n' "$target" >&2; exit 1; }
 [ -d "$target/skills" ] || { printf 'Refusing to remove target without skills: %s\n' "$target" >&2; exit 1; }
+[ -f "$target/HVN.defaults.md" ] || { printf 'Refusing to remove target without defaults: %s\n' "$target" >&2; exit 1; }
 
 rm -rf "$target"
 printf 'HVN removed from %s\n' "$target"

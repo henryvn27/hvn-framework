@@ -6,6 +6,8 @@ Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artif
 
 HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, and premature done states.
 
+The installed default behavior is documented in `HVN.defaults.md`. The shipped profile is `profiles/henry-van-ness.md`.
+
 ## Release Status
 
 This repository is prepared as a public release candidate for a Linear-first HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
@@ -24,6 +26,8 @@ Use HVN when you want AI agents to build software with engineering discipline:
 ## Core Concepts
 
 - **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
+- **Most-specific skill routing:** HVN chooses the narrowest installed skill that fits the task before generic execution.
+- **Opinionated default profile:** the Henry profile enables Linear-first management, premium design sensitivity, preserve-stack behavior, and full-output enforcement when requested.
 - **Linear project as initiative:** related issues belong to a project, epic, or alternative initiative artifact.
 - **Linear states as workflow gates:** state transitions represent HVN readiness gates.
 - **Comments as handoff record:** specs, plans, QA reports, review findings, and ship checks are posted back to the work item.
@@ -60,6 +64,11 @@ Install globally for your user:
 
 For Linear-first setup, read:
 
+- `HVN.defaults.md`
+- `profiles/henry-van-ness.md`
+- `docs/default-behavior.md`
+- `docs/skill-routing.md`
+- `docs/linear-defaults.md`
 - `docs/linear-setup.md`
 - `docs/linear-workflow.md`
 - `docs/linear-agent-model.md`
@@ -95,15 +104,20 @@ Recommended state gates are documented in `docs/linear-states.md`.
 
 Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
 
+- `hvn-route`
+- `hvn-linear-check`
 - `hvn-linear-setup`
 - `hvn-linear-intake`
 - `hvn-linear-sync`
 - `hvn-linear-plan-comment`
 - `hvn-linear-qa-report`
 - `hvn-linear-ship-check`
+- `hvn-full-output`
 
 Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
 
+- `hvn-router`
+- `hvn-full-output`
 - `hvn-linear-setup`
 - `hvn-linear-core`
 - `hvn-linear-triage`
@@ -155,6 +169,10 @@ If the user does not want Linear, ask what should be the system of record. Then 
 - Linear linked artifact to a local file path or URL
 
 Do not force Linear when the user opts out.
+
+## Configuration
+
+Framework defaults live in `HVN.defaults.md`. Profiles live in `profiles/`. Users can replace the Henry profile with another profile later, but every profile should preserve the HVN guarantees: durable work record, routing decision, written artifacts, bounded context, verification, review, QA evidence, and done-state proof.
 
 ## Repository Structure
 

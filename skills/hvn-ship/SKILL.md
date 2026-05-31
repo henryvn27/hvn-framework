@@ -42,6 +42,7 @@ Do not use to bypass incomplete review, QA, or security gates.
 
 - Filled `templates/ship-checklist.md`
 - `templates/linear-ship-comment.md` when Linear-first mode is active
+- Final handoff with Linear project and issue identifiers when available
 
 ## Quality Bar
 

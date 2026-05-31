@@ -25,7 +25,7 @@ esac
 root="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 mkdir -p "$target"
 
-for item in HVN.md commands skills templates docs mcp; do
+for item in HVN.md HVN.defaults.md commands skills templates docs mcp profiles; do
   [ -e "$root/$item" ] || { printf 'Missing source item: %s\n' "$item" >&2; exit 1; }
   rm -rf "$target/$item"
   cp -R "$root/$item" "$target/$item"
@@ -36,6 +36,8 @@ cat > "$target/VERSION" <<VERSION
 VERSION
 
 printf 'HVN installed to %s\n' "$target"
+printf 'Defaults: %s\n' "$target/HVN.defaults.md"
+printf 'Henry profile: %s\n' "$target/profiles/henry-van-ness.md"
 printf 'Linear setup guide: %s\n' "$target/docs/linear-setup.md"
 printf 'Linear-first guidance: %s\n' "$target/docs/linear-guidance.md"
 printf 'Opt-out mode: choose a durable system of record and map HVN gates there.\n'

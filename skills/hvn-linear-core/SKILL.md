@@ -33,11 +33,13 @@ Do not require this skill when the user explicitly opts out of Linear for the pr
 ## Exact Workflow
 
 1. Confirm whether the project is using Linear-first mode or opt-out mode.
-2. If Linear-first, read issue title, description, labels, state, comments, links, project, assignee, and delegate.
-3. Select the HVN command that matches the current gate.
-4. Post or prepare a concise issue-thread update after every meaningful pass.
-5. Recommend state transitions only when evidence exists.
-6. If Linear is unavailable or opted out, write the same update to the configured artifact location.
+2. For non-trivial work, inspect or prepare the matching Linear project before implementation.
+3. Create or reuse an issue for each meaningful unit of work.
+4. If Linear-first, read issue title, description, labels, state, comments, links, project, assignee, and delegate.
+5. Select the HVN command that matches the current gate.
+6. Post or prepare a concise issue-thread update after every meaningful pass.
+7. Recommend state transitions only when evidence exists.
+8. If Linear is unavailable or opted out, write the same update to the configured artifact location.
 
 ## Expected Outputs
 
