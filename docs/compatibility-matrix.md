@@ -37,6 +37,8 @@ Status meanings:
 
 Reviewed compatibility knowledge informs runtime behavior only after maintainers accept the change. New research should not become an automatic runtime default until reviewed or classified as `Adopt now`.
 
+Use receipts and replay results as evidence before converting a newly supported harness path into a default runtime route.
+
 ## Fallback
 
 When native goal mode is missing or uncertain, use:

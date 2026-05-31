@@ -62,6 +62,9 @@ docs/runtime-flags.md
 docs/runtime-fallbacks.md
 docs/runtime-degraded-mode.md
 docs/runtime-status.md
+docs/execution-receipts.md
+docs/artifact-lineage.md
+docs/replay-restore.md
 docs/integrations/github.md
 docs/integrations/linear.md
 docs/legacy-modernization.md
@@ -135,6 +138,10 @@ docs/examples/runtime-claude-manual-fallback.md
 docs/examples/runtime-no-linear.md
 docs/examples/runtime-unknown-harness.md
 docs/examples/runtime-strict-compatibility.md
+docs/examples/execution-receipt.md
+docs/examples/artifact-lineage.md
+docs/examples/replay-after-harness-update.md
+docs/examples/restore-after-failed-goal.md
 docs/examples/legacy-repo-audit.md
 docs/examples/legacy-modernization-plan.md
 docs/examples/business-logic-extraction.md
@@ -184,9 +191,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 44 ] || fail "expected at least 44 command definitions"
-[ "$skill_count" -ge 37 ] || fail "expected at least 37 skill definitions"
-[ "$template_count" -ge 66 ] || fail "expected at least 66 templates"
+[ "$command_count" -ge 48 ] || fail "expected at least 48 command definitions"
+[ "$skill_count" -ge 38 ] || fail "expected at least 38 skill definitions"
+[ "$template_count" -ge 69 ] || fail "expected at least 69 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

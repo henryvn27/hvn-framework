@@ -24,6 +24,7 @@ Approval is normally required for:
 - unreviewed tools or MCP servers
 - high-risk tool calls outside allowed registry contexts
 - goal mode for risky, destructive, unclear, or approval-dependent work
+- widening a runtime default after only fresh research or limited replay evidence
 - scope expansion beyond the approved spec
 - issue-closing or ship-readiness decisions when confidence is low
 

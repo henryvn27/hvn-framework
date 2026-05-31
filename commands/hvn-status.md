@@ -23,11 +23,13 @@ Use when the user or maintainer needs to understand why HVN is taking a certain 
 2. Read the capability profile.
 3. List enabled, disabled, and degraded features.
 4. List active policy switches and missing integrations.
-5. Report important caveats.
+5. Report latest receipt, related artifacts, replay availability, and restore points when available.
+6. Report important caveats.
 
 ## Outputs And Artifacts
 
 - `templates/runtime-status.md`
+- latest receipt or linked receipt
 
 ## Failure Cases
 

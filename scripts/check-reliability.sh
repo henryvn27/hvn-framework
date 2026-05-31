@@ -43,6 +43,9 @@ for file in \
   docs/runtime-fallbacks.md \
   docs/runtime-degraded-mode.md \
   docs/runtime-status.md \
+  docs/execution-receipts.md \
+  docs/artifact-lineage.md \
+  docs/replay-restore.md \
   docs/integrations/github.md \
   docs/integrations/linear.md \
   docs/legacy-modernization.md \
@@ -96,6 +99,9 @@ for file in \
   templates/runtime-route.md \
   templates/runtime-policy.md \
   templates/runtime-status.md \
+  templates/execution-receipt.md \
+  templates/artifact-lineage.md \
+  templates/replay-case.md \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
@@ -135,6 +141,10 @@ for file in \
   commands/hvn-validate-integration.md \
   commands/hvn-runtime.md \
   commands/hvn-status.md \
+  commands/hvn-receipt.md \
+  commands/hvn-lineage.md \
+  commands/hvn-replay.md \
+  commands/hvn-restore.md \
   commands/hvn-legacy.md \
   commands/hvn-next.md \
   commands/hvn-goal.md \
@@ -152,6 +162,7 @@ for file in \
   skills/hvn-tool-governance/SKILL.md \
   skills/hvn-tool-setup/SKILL.md \
   skills/hvn-runtime-adaptation/SKILL.md \
+  skills/hvn-receipts/SKILL.md \
   skills/hvn-legacy/SKILL.md \
   skills/hvn-next-step/SKILL.md \
   skills/hvn-goal-mode/SKILL.md \
@@ -182,6 +193,10 @@ for file in \
   docs/examples/runtime-no-linear.md \
   docs/examples/runtime-unknown-harness.md \
   docs/examples/runtime-strict-compatibility.md \
+  docs/examples/execution-receipt.md \
+  docs/examples/artifact-lineage.md \
+  docs/examples/replay-after-harness-update.md \
+  docs/examples/restore-after-failed-goal.md \
   docs/examples/legacy-repo-audit.md \
   docs/examples/legacy-modernization-plan.md \
   docs/examples/business-logic-extraction.md \

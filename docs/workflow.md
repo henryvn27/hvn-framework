@@ -16,22 +16,25 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 10. `hvn-approve`: request or confirm approval when risk, scope, or confidence requires it.
 11. `hvn-build`: implement approved scope.
 12. `hvn-trace`: record meaningful execution steps, decisions, and stop reason.
-13. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
-14. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
-15. `hvn-review`: inspect behavior and maintainability.
-16. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
-17. `hvn-test-blind`: run first-look QA with minimal context.
-18. `hvn-test-briefed`: retest with a bounded packet.
-19. `hvn-test-regression`: verify fixes and adjacent flows.
-20. `hvn-regression-task`: convert strong findings into reusable regression work.
-21. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
-22. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
-23. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
-24. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
-25. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
-26. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-27. `hvn-retro`: capture lessons and follow-up work.
-28. `hvn-status`: explain current harness detection, enabled features, degraded capabilities, and policy switches when behavior needs inspection.
+13. `hvn-receipt`: summarize the run outcome in a compact execution receipt.
+14. `hvn-lineage`: link the new artifact to upstream and downstream workflow artifacts.
+15. `hvn-state`: maintain shared coordination state for multi-role or resumable runs.
+16. `hvn-metrics`: record timing, retries, and optional usage signals for the run.
+17. `hvn-review`: inspect behavior and maintainability.
+18. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
+19. `hvn-test-blind`: run first-look QA with minimal context.
+20. `hvn-test-briefed`: retest with a bounded packet.
+21. `hvn-test-regression`: verify fixes and adjacent flows.
+22. `hvn-regression-task`: convert strong findings into reusable regression work.
+23. `hvn-checkpoint`: pause risky or ambiguous work for human inspection and decision.
+24. `hvn-inspect`: summarize current run identity, state, artifacts, and blockers for review or resume.
+25. `hvn-tool-review` or `hvn-mcp-review`: govern new or risky external tools and MCP servers.
+26. `hvn-security` or `hvn-security-check`: inspect security-relevant surfaces and untrusted inputs.
+27. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
+28. `hvn-replay` or `hvn-restore`: compare newer behavior or recover from known-good workflow states when needed.
+29. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+30. `hvn-retro`: capture lessons and follow-up work.
+31. `hvn-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and restore visibility when behavior needs inspection.
 
 ## Recommended Linear Gates
 
@@ -59,6 +62,9 @@ The workflow now relies on six supporting controls:
 - goal contracts make long-running work bounded and verifiable
 - run memory stores reusable facts and decisions
 - traces record what happened
+- receipts summarize what the run accomplished
+- lineage links artifacts across the workflow
+- replay and restore support comparison, recovery, and safer rollout
 - shared state records the current multi-role coordination picture
 - workflow metrics record time and retry burden
 - evals judge how well it happened

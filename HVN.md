@@ -23,6 +23,8 @@ HVN is Linear-first by default. Linear is the preferred system of record for iss
 15. **Phase exits should guide without noise:** after major stages, users should get a concise next action, not a lecture.
 16. **Setup is harness-aware:** external integrations should be validated per host, with degraded mode when direct access is unavailable.
 17. **Runtime behavior follows reviewed compatibility:** the same workflow intent may take different safe paths in different harnesses.
+18. **Receipts beat vague memory:** meaningful runs should leave compact evidence that can be inspected later.
+19. **Recovery needs explicit artifacts:** replay and restore should rely on visible checkpoints, receipts, and lineage rather than hidden state.
 
 ## Coordination Modes
 
@@ -58,6 +60,8 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Approval mode:** request or confirm approval for risky work before execution continues.
 - **Build mode:** implement the approved plan with focused edits and local verification.
 - **Trace mode:** record the meaningful path of a run.
+- **Receipt mode:** summarize the run outcome compactly.
+- **Lineage mode:** link artifacts across the workflow.
 - **Shared-state mode:** maintain the active multi-role coordination picture.
 - **Accounting mode:** record workflow timing, retries, and optional usage signals.
 - **Review mode:** inspect for bugs, regressions, maintainability, accessibility, and release risk.
@@ -69,6 +73,8 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Tool governance mode:** review tools and MCP servers, assign trust levels, and define constraints.
 - **Benchmark mode:** compare onboarding and spec quality across versions or workflow changes.
 - **Eval mode:** judge the trajectory and artifact quality of a workflow.
+- **Replay mode:** compare prior workflow cases against newer runtime conditions.
+- **Restore mode:** recover from checkpoints or known-good workflow states.
 - **Ship mode:** prepare ship readiness, release notes, and handoff.
 - **Retro mode:** record what changed, what failed, and how the system should improve.
 
@@ -86,6 +92,8 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Goal contract and status when using host-native or fallback goal mode
 - Approval request or approval record when risk requires it
 - Run trace for meaningful or risky runs
+- Execution receipt for meaningful runs that should be reviewable later
+- Artifact lineage when provenance, supersession, or downstream dependency clarity matters
 - Shared-state artifact when multiple roles are cooperating or handoff quality matters
 - Workflow metrics record when operational efficiency matters
 - Checkpoint request and decision when humans intervene mid-run
@@ -96,6 +104,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Regression task when a finding is strong enough to preserve
 - Benchmark report when onboarding or spec quality is being compared
 - Eval report when validating framework behavior or release confidence
+- Replay case when comparing old and new workflow behavior
 - Ship checklist or Linear ship comment
 - Retrospective for completed larger efforts
 
@@ -160,6 +169,14 @@ Use approval gates for destructive operations, broad refactors, installer change
 ## Trace And Eval Policy
 
 Meaningful runs should leave enough evidence to reconstruct what happened. Use traces for run history and evals for trajectory judgment. Do not confuse either one with durable run memory.
+
+## Receipt And Lineage Policy
+
+Use receipts to summarize important runs without forcing reviewers to read the full trace. Use lineage to show what produced an artifact, what it depended on, what superseded it, and what depends on it downstream.
+
+## Replay And Restore Policy
+
+Use replay to compare workflow behavior after prompt, policy, runtime, or harness changes. Use restore to recover from a known-good checkpoint or artifact state. Neither should claim perfect determinism.
 
 ## Benchmark And Accounting Policy
 

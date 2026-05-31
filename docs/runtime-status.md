@@ -12,6 +12,10 @@ Runtime status is the inspectable summary of why HVN is behaving a certain way i
 - active policy switches
 - recommended workflow mode
 - missing integrations
+- latest receipt
+- related artifacts
+- replay availability
+- restore points
 - important caveats
 
 ## Purpose

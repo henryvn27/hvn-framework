@@ -44,12 +44,16 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `hvn-goal-review`
 - `hvn-build`
 - `hvn-trace`
+- `hvn-receipt`
+- `hvn-lineage`
 - `hvn-state`
 - `hvn-metrics`
 - `hvn-checkpoint`
 - `hvn-inspect`
 - `hvn-benchmark`
 - `hvn-eval`
+- `hvn-replay`
+- `hvn-restore`
 - `hvn-approve`
 - `hvn-review`
 - `hvn-design`
@@ -75,7 +79,10 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `Ready to Ship` triggers `hvn-linear-ship-check`.
 
 Use `hvn-trace` and `hvn-eval` when the workflow itself needs review, not just the product artifact.
+Use `hvn-receipt` after meaningful runs that should be reviewable without reading the full trace.
+Use `hvn-lineage` when artifacts need provenance, supersession, or downstream dependency clarity.
 Use `hvn-metrics` when elapsed time, retries, or optional usage signals matter, and `hvn-benchmark` when onboarding/spec quality should be compared over time.
+Use `hvn-replay` and `hvn-restore` when runtime changes, harness updates, or failed runs need comparison or recovery.
 Use `hvn-state`, `hvn-checkpoint`, and `hvn-inspect` when multiple roles need a shared current view or when a run must pause and resume safely.
 Use `hvn-tool-review` and `hvn-mcp-review` before introducing new tools, expanding MCP access, or making high-risk external calls.
 Use `hvn-setup`, `hvn-check-setup`, and `hvn-validate-integration` when GitHub, Linear, MCP, connectors, or CLI helpers are needed for the workflow.

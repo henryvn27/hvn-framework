@@ -41,6 +41,8 @@ Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memo
 - goal contracts track durable objective execution when used
 - run memory preserves durable lessons
 - traces record what happened during a run
+- receipts summarize the run outcome for quick reinspection
+- lineage links the artifact to upstream and downstream workflow state
 - shared state records the current multi-role picture for an active run
 - evals judge how well the workflow performed
 - workflow metrics record time, retries, and optional usage signals

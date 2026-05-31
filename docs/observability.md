@@ -12,6 +12,8 @@ Use traces to answer questions such as:
 - Which tools, commands, and artifacts were involved?
 - Where did the run fail, retry, or stop?
 - What evidence exists for later review or evaluation?
+- What receipt summarizes the run?
+- Which replay or restore artifacts exist for debugging?
 
 ## Trace Model
 
@@ -23,6 +25,8 @@ Each meaningful run should capture:
 - Context read: artifacts, issue comments, docs, external sources
 - Actions taken: major steps, tools used, commands executed, files read or written
 - Decisions made: important branches, approvals requested, scope changes, assumptions
+- Receipt link: compact summary of the run outcome
+- Lineage link: upstream and downstream artifact relationships when tracked
 - Goal state: objective, contract link, lifecycle transition, verifier result, and steering note when goal mode is active
 - Reliability signals: retries, failures, blockers, warnings, stop reason
 - Optional metadata: token or cost data when the harness exposes it
@@ -76,6 +80,7 @@ See [docs/shared-state.md](shared-state.md) for the active coordination side of 
 - Evals: score the trajectory, not just the final answer.
 - Handoffs: let the next agent understand what already happened.
 - Inspection: give humans enough evidence to approve or resume without rereading the entire history.
+- Replay and restore: let maintainers compare newer behavior or recover from known-good workflow states.
 
 ## Storage Model
 

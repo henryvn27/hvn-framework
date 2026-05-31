@@ -30,6 +30,8 @@ The compatibility layer is the source of truth:
 
 Scheduled research updates compatibility knowledge. Runtime adaptation consumes reviewed compatibility knowledge.
 
+Receipts, lineage, replay, and restore make those runtime choices inspectable and safer to evolve.
+
 ## Runtime Rule
 
 If support is:
@@ -42,3 +44,5 @@ If support is:
 ## Review Gate
 
 Newly detected support should not become a runtime default until it has been reviewed or classified as `Adopt now`. This keeps research updates from silently changing behavior before maintainers agree.
+
+Receipts should capture the chosen runtime path. Replay should be used before broadening defaults after compatibility or policy changes. Restore should support rollback to known-good workflow states when a new path fails.
