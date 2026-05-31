@@ -43,6 +43,16 @@ Prefer one clear default next step, one optional alternate path, and one sentenc
 If the default next action is obvious, do not pad it with optional complexity.
 If coaching would be more distracting than helpful, suppress it.
 
+## Execution Bias
+
+Guidance should prefer forward motion over escalation.
+
+That means:
+
+- recommend the next action ORCA can take itself when that path is safe
+- ask the user for a decision only when a real blocker or approval need exists
+- avoid turning normal ambiguity into a choice menu unless the tradeoff is material
+
 ## Output Modes
 
 - `concise`: one to three short lines; best when the user is technical, moving fast, or has already seen the workflow.

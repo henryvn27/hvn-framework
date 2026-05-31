@@ -34,6 +34,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [framework-differentiation.md](framework-differentiation.md): how to explain ORCA without slipping into generic category language
 - [friction-reduction-principle.md](friction-reduction-principle.md): the framework-wide rule for what should surface
 - [framework-principles.md](framework-principles.md): the small set of rules ORCA should follow everywhere
+- [escalation-policy.md](escalation-policy.md): when ORCA should keep working vs ask the user to decide
 
 ## Guides
 

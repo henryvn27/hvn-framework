@@ -64,6 +64,19 @@ flowchart LR
 36. `orca-improve-framework`: review session friction and session-quality signals, then propose ORCA-HVN improvement work when the evidence is reusable.
 37. `orca-status` or `orca-background-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and unattended-run state when behavior needs inspection.
 
+## Default Execution Bias
+
+ORCA should try to finish the local work before escalating.
+
+That means:
+
+- inspect first
+- infer from existing artifacts when safe
+- choose a bounded fallback when possible
+- keep moving until a real blocker, approval gate, or irreversible decision appears
+
+It should not use the user as the default loop for normal ambiguity, routine setup choices, or next-step decisions that can be made safely from the evidence already on hand.
+
 ## Recommended Linear Gates
 
 - Triage

@@ -17,6 +17,7 @@ Use ORCA when you need more than "ask a model to do something":
 - plan and run multi-step work without losing context
 - keep review, QA, approvals, blockers, and follow-up tied to the same effort
 - turn research and notes into staged, promotable work instead of a pile of unprocessed context
+- try the strongest safe path to resolution before falling back to user escalation
 - adapt the workflow to different hosts, tools, and integrations without pretending they are identical
 - onboard new users into a practical agent workflow without requiring a teammate to teach them live
 
