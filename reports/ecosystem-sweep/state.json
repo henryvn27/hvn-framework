@@ -12,6 +12,7 @@
   "notes": [
     "Research-first automation. No repo code or docs changes by default.",
     "Reports should compare against the prior sweep and avoid repeating unchanged items as new.",
-    "Adopt-now findings should create one draft issue each unless a substantially similar issue is already tracked."
+    "Adopt-now findings should create one draft issue each unless a substantially similar issue is already tracked.",
+    "When a finding is promoted from watch or investigate-soon to adopt-now, preserve earlier sightings and backlink them from the draft issue."
   ]
 }

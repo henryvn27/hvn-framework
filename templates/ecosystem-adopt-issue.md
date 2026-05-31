@@ -43,6 +43,10 @@ State high, medium, or low confidence and why.
 
 -
 
+## Earlier Sightings
+
+- 
+
 ## Related Report
 
 Link the sweep report that surfaced the finding.

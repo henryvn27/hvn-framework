@@ -62,6 +62,8 @@ Every recommendation should be grouped under exactly one primary category:
 If a finding is classified as `Adopt now`:
 
 - create one draft issue unless a substantially similar open or already-tracked issue exists
+- if the finding was previously tracked as `Watch` or `Investigate soon`, update the existing watch entry instead of treating it as a totally new discovery
+- include backlinks to the earlier sightings when opening the draft issue
 - use `templates/ecosystem-adopt-issue.md`
 - prefer direct issue creation when the environment supports it
 - otherwise write a Markdown draft to `reports/ecosystem-sweep/draft-issues/`

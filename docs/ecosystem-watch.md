@@ -1,5 +1,7 @@
 # Ecosystem Watch
 
+When a finding moves from `Watch` or `Investigate soon` to `Adopt now`, update the existing watch entry in place, preserve its earlier sightings, and link the resulting draft issue back to that history.
+
 ## What We Track
 
 - repos
@@ -7,6 +9,17 @@
 - capability areas
 
 ## Active Opportunities
+
+For each active opportunity, keep:
+
+- title
+- short summary
+- source links
+- status
+- first seen
+- last confirmed
+- prior sightings
+- related issue if created
 
 ### commands
 
