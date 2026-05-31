@@ -1,0 +1,18 @@
+ORCA-HVN
+Copyright (c) 2026 Henry Van Ness
+
+This repository is licensed under the MIT License. See LICENSE.
+
+ORCA-HVN also documents and interoperates with third-party hosts, services,
+MCP servers, manuals, and workflow ecosystems. Those relationships are
+described in:
+
+- UPSTREAM.md
+- THIRD_PARTY_NOTICES.md
+- docs/attribution.md
+- docs/provenance.md
+
+As of this repository audit, no intentionally bundled third-party source
+component has been identified that requires a large embedded license appendix
+beyond the records above. If that changes, THIRD_PARTY_NOTICES.md should be
+updated accordingly.
