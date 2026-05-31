@@ -2,129 +2,50 @@
 
 <img src="assets/orca.png" alt="ORCA-HVN logo" width="220" />
 
-ORCA is an orchestration framework for running agent-assisted software work with durable workflow structure, host-aware execution paths, QA discipline, and inspectable artifacts. The formal repository and framework name is ORCA-HVN. It is Linear-first by default, but it can map the same workflow to another system of record when needed.
+ORCA is an orchestration framework for running agent-assisted software work with a clear workflow, durable artifacts, and host-aware execution paths. The formal repository and framework name is ORCA-HVN.
 
-The name is intentional: ORCA is meant to be an orchestrator for agentic work, not just a pile of commands.
+ORCA exists for the part that usually breaks first in AI-assisted development: turning vague work into a reliable process that can be reviewed, resumed, and improved over time.
 
-Framework-wide rule: the goal is to reduce friction, not create more setup work.
+## What ORCA Helps With
 
-ORCA is the primary workflow here. It replaces the older GStack or GSD-centered way of working rather than sitting beside it. Those earlier tools helped shape some of the ideas behind this project, but the intended operating path is now ORCA-only.
+Use ORCA when you need more than "ask a model to do something":
 
-It is also meant to be a place where people learn how to work with orchestration and agent-management systems without needing a human to teach them first. The goal is not "learn ORCA, then graduate to something else." The goal is that ORCA both teaches the workflow and remains a strong long-term workflow.
-
-## What It Is
-
-Use ORCA-HVN when the hard part is not "generate code," but:
-
-- turning vague work into a usable spec
-- keeping agent runs reviewable and resumable
-- coordinating controller and executor agents cleanly
-- adapting to different harnesses and integration setups
-- preserving QA, approvals, receipts, and follow-up artifacts around the same work
-- giving new users a guided way to learn orchestration instead of dropping them into an unstructured tool pile
-- helping users improve prompting, context handoff, and AI-development workflow patterns without turning ORCA into a lecture
+- turn a vague request into a clear work item
+- write a usable spec before implementation
+- plan and run multi-step work without losing context
+- keep review, QA, approvals, and follow-up tied to the same effort
+- adapt the workflow to different hosts, tools, and integrations without pretending they are identical
+- onboard new users into a practical agent workflow without requiring a teammate to teach them live
 
 ## Who It Is For
 
-- engineers using Codex, Claude Code, Hermes, or similar agentic coding hosts
-- teams that want workflow discipline around AI-assisted software delivery
-- operators who need inspectable runs instead of opaque prompt sessions
-- founders who need idea validation before a roadmap or build sprint
-- maintainers working in legacy or under-documented repos
-- people who want ORCA to teach the workflow instead of relying on a teammate to explain every step
+- engineers using agentic coding tools like Codex, Claude Code, Hermes, or similar hosts
+- operators who want inspectable runs instead of opaque prompt sessions
+- teams that want repeatable workflow structure around AI-assisted software delivery
+- contributors working in real product repos, legacy systems, or mixed human-agent environments
+- curious newcomers who want one guided path into orchestration instead of a giant command catalog
 
-## What Makes It Different
+## Core Capabilities
 
-ORCA is not only a prompt or command pack. It combines:
+ORCA is broad, but its center of gravity is consistent:
 
-- onboarding and spec-driven execution
-- guided first-use learning instead of only expert-first command surfaces
-- goal mode and background mode for bounded long-running work
-- controller and executor integration
-- host-aware runtime adaptation and compatibility guidance
-- integration packs for modern web, mobile, backend, auth, billing, analytics, automation, and business stacks
-- restrained recommendation rules so supported tools are not automatically pushed as defaults
-- checkpoints, approvals, receipts, lineage, replay, and restore
-- blind QA, briefed QA, and regression capture
-- paved-road workflows for common use cases
-- a session-end improvement loop that turns real friction into framework backlog work
-- quality-signal detection for frustration, generic output, wrong-direction behavior, and poor recovery
-- adaptive learning help that stays on by default but is easy to reduce or disable
+- Intake and planning: onboarding, discovery, spec-driven execution, milestone planning, and guided next steps
+- Execution and coordination: build flow, goal mode, background mode, delegation, and shared state
+- Inspection and safety: approvals, checkpoints, receipts, lineage, replay, restore, and review surfaces
+- Runtime and compatibility: host-aware behavior, install and setup guidance, integration routing, and compatibility docs
+- QA and improvement: blind QA, briefed QA, regression follow-up, adaptive help, and framework improvement loops
 
-## Start Here
+Most supporting systems in the repo exist to reinforce those five areas, not replace them.
 
-If you are new:
+## Quickstart
 
-1. [docs/start-here.md](docs/start-here.md)
-2. [docs/first-workflow.md](docs/first-workflow.md)
-3. [docs/quickstart.md](docs/quickstart.md)
-4. [docs/choose-your-path.md](docs/choose-your-path.md)
+If you are new, do not start by reading every feature doc.
 
-## Where To Begin By Use Case
+1. Read [docs/start-here.md](docs/start-here.md).
+2. Read [docs/install-overview.md](docs/install-overview.md) if you need setup help.
+3. Follow [docs/first-workflow.md](docs/first-workflow.md).
 
-- I need install help first: [docs/install-overview.md](docs/install-overview.md)
-- I want the default beginner path: [docs/first-workflow.md](docs/first-workflow.md)
-- I want the fastest setup: [docs/quickstart.md](docs/quickstart.md)
-- I need the big picture: [docs/intro.md](docs/intro.md)
-- I am coming from GStack or GSD: [docs/guides/from-gstack-or-gsd-to-orca-hvn.md](docs/guides/from-gstack-or-gsd-to-orca-hvn.md)
-- I use a controller like Hermes: [docs/guides/using-hvn-with-hermes.md](docs/guides/using-hvn-with-hermes.md)
-- I need unattended progress: [docs/guides/background-mode-guide.md](docs/guides/background-mode-guide.md)
-- I need a milestone contract: [docs/guides/goal-mode-guide.md](docs/guides/goal-mode-guide.md)
-- I need startup ideation first: [docs/guides/business-ideation-guide.md](docs/guides/business-ideation-guide.md)
-- I want optional vault or graph help only if it reduces friction: [docs/graph-and-vault-support.md](docs/graph-and-vault-support.md)
-- I inherited a messy repo: [docs/legacy-modernization.md](docs/legacy-modernization.md)
-
-## Documentation And Wiki
-
-- docs home: [docs/README.md](docs/README.md)
-- feature map: [docs/feature-index.md](docs/feature-index.md)
-- command map: [docs/command-index.md](docs/command-index.md)
-- glossary: [docs/glossary.md](docs/glossary.md)
-- truth hierarchy: [docs/truth-hierarchy.md](docs/truth-hierarchy.md)
-- friction rule: [docs/friction-reduction-principle.md](docs/friction-reduction-principle.md)
-- self-improvement model: [docs/self-improvement.md](docs/self-improvement.md)
-- update model: [docs/auto-updates.md](docs/auto-updates.md)
-- wiki home: [wiki/Home.md](wiki/Home.md)
-- what changed: [docs/whats-new.md](docs/whats-new.md)
-
-## Major Capability Buckets
-
-- planning and onboarding
-- runtime adaptation and host compatibility
-- auto-updates and release safety
-- goal mode and background mode
-- approvals, checkpoints, and tool governance
-- receipts, lineage, replay, and restore
-- blind QA, briefed QA, evals, and regression follow-up
-- controller/executor coordination
-- controlled self-improvement
-- optional vault and graph intelligence
-- business ideation and legacy modernization
-
-## Core Workflow
-
-Typical path:
-
-`onboard -> spec -> plan -> execute -> review -> QA -> receipt -> follow-up`
-
-Beginner default:
-
-`orca-onboard -> orca-spec -> orca-plan -> orca-build -> orca-review`
-
-Read:
-
-- [docs/workflow.md](docs/workflow.md)
-- [docs/first-workflow.md](docs/first-workflow.md)
-- [docs/linear-workflow.md](docs/linear-workflow.md)
-- [docs/use-case-map.md](docs/use-case-map.md)
-
-## Install
-
-Choose a path first:
-
-- overview: [docs/install-overview.md](docs/install-overview.md)
-- beginner path: [docs/install-for-beginners.md](docs/install-for-beginners.md)
-- technical path: [docs/install-for-technical-users.md](docs/install-for-technical-users.md)
+Fast install path:
 
 ```sh
 git clone https://github.com/henryvn27/orca-hvn.git
@@ -134,20 +55,64 @@ cd orca-hvn
 ./install/doctor.sh --target ./.orca-hvn
 ```
 
-## Docs-As-Code Maintenance
+If you want more handholding:
 
-ORCA treats docs as part of the framework surface, not as a separate afterthought.
+- beginner install path: [docs/install-for-beginners.md](docs/install-for-beginners.md)
+- technical install path: [docs/install-for-technical-users.md](docs/install-for-technical-users.md)
+- troubleshooting: [docs/install-troubleshooting.md](docs/install-troubleshooting.md)
+
+## First Workflow
+
+The default ORCA path is:
+
+`orca-onboard -> orca-spec -> orca-plan -> orca-build -> orca-review`
+
+This is the best first real workflow because it teaches the framework while still being a production path, not a toy tutorial.
 
 Read:
 
-- [docs/docs-automation.md](docs/docs-automation.md)
-- [docs/wiki-maintenance.md](docs/wiki-maintenance.md)
-- [docs/staleness-detection.md](docs/staleness-detection.md)
-- [docs/contributing-docs.md](docs/contributing-docs.md)
+- [docs/first-workflow.md](docs/first-workflow.md)
+- [docs/workflow.md](docs/workflow.md)
+- [docs/use-case-map.md](docs/use-case-map.md)
 
-## Contributing
+## Documentation Map
 
-Use:
+Use the top-level docs as routing, not as one giant manual:
+
+- Start here: [docs/start-here.md](docs/start-here.md)
+- Docs home: [docs/README.md](docs/README.md)
+- Install and setup: [docs/install.md](docs/install.md)
+- Feature map: [docs/feature-index.md](docs/feature-index.md)
+- Command map: [docs/command-index.md](docs/command-index.md)
+- Beginner and common paths: [docs/choose-your-path.md](docs/choose-your-path.md)
+- Glossary: [docs/glossary.md](docs/glossary.md)
+- Contribution and maintenance: [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Common Next Paths
+
+- I need install help: [docs/install-overview.md](docs/install-overview.md)
+- I want the shortest starter path: [docs/first-workflow.md](docs/first-workflow.md)
+- I want the big-picture model: [docs/intro.md](docs/intro.md)
+- I am coming from GStack or GSD: [docs/guides/from-gstack-or-gsd-to-orca-hvn.md](docs/guides/from-gstack-or-gsd-to-orca-hvn.md)
+- I use a controller agent like Hermes: [docs/guides/using-hvn-with-hermes.md](docs/guides/using-hvn-with-hermes.md)
+- I inherited a messy repo: [docs/legacy-modernization.md](docs/legacy-modernization.md)
+- I want startup or idea-first work: [docs/guides/business-ideation-guide.md](docs/guides/business-ideation-guide.md)
+
+## Advanced Areas
+
+These are important, but they are not the README’s center:
+
+- orchestration patterns and controller or worker coordination
+- integrations, plugins, and harness-specific setup
+- self-improvement and session-quality signals
+- update channels, rollback, and release safety
+- vault or graph-assisted knowledge workflows
+
+Those all have dedicated docs under [docs/README.md](docs/README.md).
+
+## Contributing And Development
+
+Before opening a PR or changing the framework, run:
 
 ```sh
 ./scripts/validate-repo.sh
@@ -159,14 +124,8 @@ Then read:
 - [docs/contributing-docs.md](docs/contributing-docs.md)
 - [docs/doc-owners.md](docs/doc-owners.md)
 
-## Attribution And Upstreams
+## License And Attribution
 
-ORCA does not pretend it invented every underlying idea.
-
-Read:
-
-- [UPSTREAM.md](UPSTREAM.md)
-- [docs/attribution.md](docs/attribution.md)
-- [docs/provenance.md](docs/provenance.md)
-- [docs/wraps-vs-borrows.md](docs/wraps-vs-borrows.md)
-- [docs/licenses.md](docs/licenses.md)
+- license: [LICENSE](LICENSE)
+- upstreams and inspirations: [UPSTREAM.md](UPSTREAM.md)
+- provenance and attribution: [docs/attribution.md](docs/attribution.md)

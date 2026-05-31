@@ -1,0 +1,31 @@
+# README Scope
+
+The README is the front door of ORCA.
+
+Its job is to:
+
+- explain what ORCA is
+- explain who it is for
+- explain what problems it helps solve
+- summarize the main capability areas at a high level
+- give a clear first install and first-workflow path
+- route readers to the right deeper docs
+
+## What The README Should Not Try To Do
+
+It should not become:
+
+- a dump of every feature
+- a changelog
+- a deep technical spec
+- a wiki replacement
+- a marketing manifesto
+- a page dominated by whichever subsystem was added most recently
+
+## Good README Behavior
+
+- useful to a new visitor in under a minute
+- readable by non-experts
+- concise without being vague
+- balanced across the project’s real center of gravity
+- linked to deeper docs instead of duplicating them

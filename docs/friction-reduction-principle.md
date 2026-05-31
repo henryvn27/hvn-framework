@@ -40,6 +40,7 @@ ORCA-HVN should make it easier to:
 - use self-improvement only when it reduces more friction than it adds
 - require only the minimum install, plugin, and harness setup needed for the next real task
 - prefer check-only, staged, or prompt-first update behavior over silent disruption when auto-update risk is unclear
+- keep the README and top-level docs short enough that a new user can reach the right path quickly
 
 ## What ORCA-HVN Should Not Introduce Casually
 

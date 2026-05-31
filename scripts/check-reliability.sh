@@ -39,6 +39,10 @@ for file in \
   docs/install-troubleshooting.md \
   docs/install-validation.md \
   docs/install-contextual-help.md \
+  docs/readme-scope.md \
+  docs/readme-feature-weighting.md \
+  docs/readme-guardrails.md \
+  docs/readme-review.md \
   docs/first-run.md \
   docs/first-success-check.md \
   docs/plugins.md \
@@ -415,6 +419,9 @@ for file in \
   docs/examples/plugin-compatibility-block.md \
   docs/examples/rollback-after-failed-update.md \
   docs/examples/manual-update-mode.md \
+  docs/examples/good-readme-balance.md \
+  docs/examples/bad-feature-hijacked-readme.md \
+  docs/examples/readme-docs-map.md \
   docs/examples/local-instance-learning.md \
   docs/examples/local-preference-adaptation.md \
   docs/examples/framework-improvement-promotion.md \
@@ -467,6 +474,7 @@ for file in \
   templates/rollout-stage.md \
   templates/update-notice.md \
   templates/update-result.md \
+  templates/readme-update-check.md \
   templates/run-memory.md \
   templates/contracts/spec-contract.md \
   templates/contracts/run-memory-contract.md \

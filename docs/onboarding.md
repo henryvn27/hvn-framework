@@ -36,6 +36,7 @@ It should not:
 - require a human operator to translate the system for them
 - replace strong vault evidence with generic best-practice filler
 - surface a catalog of optional tools before the first useful outcome
+- rely on a README that is overloaded with subsystem detail instead of routing the user to the right next document
 
 ## Exit Guidance
 
