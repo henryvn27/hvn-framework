@@ -2,6 +2,8 @@
 
 HVN follows a staged workflow centered on a durable work item. In Linear-first mode, that work item is a Linear issue. In opt-out mode, it is the user's chosen issue, document, or tracker item.
 
+The workflow is host-neutral. Claude Code, Codex CLI, OpenCode, and Hermes Agent may invoke commands differently, but they should preserve the same artifacts, run memory, Linear sync behavior, and QA context boundaries.
+
 ## Standard Sequence
 
 1. `hvn-route`: select skill, Linear path, preserve-stack posture, authenticity preflight, and full-output mode.

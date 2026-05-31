@@ -6,19 +6,44 @@ HVN is Linear-first by default. Linear is the preferred system of record for iss
 
 HVN also routes work by installed skill. The default policy is most-specific-skill wins. For high-visibility UI and polished writing, routing triggers authenticity preflight before execution. The shipped profile is `profiles/henry-van-ness.md`; the framework defaults are in `HVN.defaults.md`.
 
+HVN is cross-harness. The shared core should work across Claude Code, Codex CLI, OpenCode, and Hermes Agent. Host-specific command discovery, config paths, connector availability, MCP setup, UI rendering, and worker orchestration belong in adapters.
+
 ## Principles
 
 1. **System of record first:** every meaningful action should be recoverable from Linear or the declared opt-out record.
 2. **Spec first:** implementation follows a written contract.
 3. **Route first:** select the narrowest installed skill that matches the task.
-4. **Preserve first:** keep existing stack and conventions unless redesign is requested.
-5. **Evidence over confidence:** agents verify behavior rather than relying on plausible reasoning.
-6. **Calibrate visible work:** UI and writing that shape trust need authenticity preflight.
-7. **Context is a tool:** context is disclosed deliberately, especially during QA.
-8. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
-9. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
-10. **Memory is maintained:** every non-trivial run keeps compact state that a fresh agent can use immediately.
-11. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
+4. **Portable first:** shared behavior lives in the core; host-specific mechanics live in adapters.
+5. **Preserve first:** keep existing stack and conventions unless redesign is requested.
+6. **Evidence over confidence:** agents verify behavior rather than relying on plausible reasoning.
+7. **Calibrate visible work:** UI and writing that shape trust need authenticity preflight.
+8. **Context is a tool:** context is disclosed deliberately, especially during QA.
+9. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
+10. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
+11. **Memory is maintained:** every non-trivial run keeps compact state that a fresh agent can use immediately.
+12. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
+
+## Cross-Harness Policy
+
+Use the same HVN core across supported hosts:
+
+- portable `SKILL.md` skills
+- shared logical commands
+- shared templates
+- file-based run memory
+- Linear-first sync behavior
+- conservative QA evidence rules
+
+Use host adapters for:
+
+- install path
+- command invocation
+- skill discovery
+- connector and MCP setup
+- host-native UI behavior
+- worker orchestration
+
+Do not pretend Claude Code, Codex CLI, OpenCode, and Hermes Agent have identical command, popup, hook, connector, or config semantics.
 
 ## Coordination Modes
 

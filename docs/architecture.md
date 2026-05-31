@@ -1,6 +1,20 @@
 # Architecture
 
-HVN is organized around a coordination record and four installable layers.
+HVN is organized around a coordination record, a shared core, and host-specific adapters.
+
+## Cross-Harness Shape
+
+```text
+core/       Shared architecture contract
+skills/     Portable SKILL.md capabilities
+commands/   Shared logical command prompts
+templates/  Shared artifacts
+docs/       Shared workflow and host guides
+adapters/   Host-specific placement and limitations
+install/    Shared and host-specific installers
+```
+
+The root shared directories remain stable for backward compatibility. `core/README.md` defines them as the portable core.
 
 ## Coordination Record
 
@@ -45,6 +59,8 @@ HVN must not hardcode one host's UI behavior. It should provide portable prompt 
 - `commands/` contains entry-point prompts for workflows and Linear comment operations.
 - `skills/` contains reusable procedures that commands invoke.
 - `templates/` contains durable artifacts and Linear-ready comment formats.
+- `adapters/` contains host-specific mapping for Claude Code, Codex CLI, OpenCode, and Hermes Agent.
+- `core/` documents the shared-core boundary.
 
 Docs explain the system, examples show finished flows, and scripts validate that the repository remains coherent.
 

@@ -14,6 +14,18 @@ HVN is designed to run software work through Linear by default. Linear is the pr
 
 HVN works best when agents stay close to the source of work. In Henry's workflow, that source is Linear. Agents should read the issue, update the issue, and keep handoffs visible in the issue thread. In opt-out mode, replace the issue thread with the chosen record and keep the same discipline.
 
+## Cross-Harness Minimum
+
+Linear-first behavior is shared across Claude Code, Codex CLI, OpenCode, and Hermes Agent. Direct Linear tooling is not guaranteed in every host. The minimum behavior is:
+
+- identify the Linear project or product effort
+- create or reuse the issue when tooling is available
+- include Linear identifiers in specs, plans, memory, QA, review, and final summaries
+- prepare exact sync notes when direct posting is blocked
+- avoid claiming state changes, comments, or issue creation that did not happen
+
+When a host lacks Linear access, use `templates/linear-memory-sync.md`, `templates/linear-question-sync.md`, and local artifacts until an authenticated agent can sync.
+
 ## Standard Lifecycle
 
 0. Linear setup maps states, labels, guidance, permissions, and opt-out rules.

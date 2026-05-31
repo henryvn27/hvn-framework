@@ -1,22 +1,25 @@
 # HVN Framework
 
-HVN is Henry Van Ness's installable framework for running software work with agents through a durable system of record. It is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
+HVN is Henry Van Ness's cross-harness framework for running software work with agents through a durable system of record. It is designed as one shared operating model with host adapters for Claude Code, Codex CLI, OpenCode, and Hermes Agent.
+
+HVN is Linear-first by default: issues, projects, states, comments, handoffs, QA passes, review findings, and ship readiness live in Linear when the team uses Linear.
 
 Teams can opt out of Linear. In opt-out mode, HVN keeps the same gates and artifacts but maps them to another source of truth such as GitHub Issues, project docs, a local `docs/hvn/` folder, or a different tracker. Linear remains the best-supported coordination path, not a hard dependency.
 
-HVN is spec-driven, subagent-aware, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, and premature done states.
+HVN is spec-driven, subagent-aware, cross-harness, and quality-focused. It is strongest where real agent work usually fails: unclear intake, weak specs, hidden handoffs, contaminated QA, missing review evidence, and premature done states.
 
 The installed default behavior is documented in `HVN.defaults.md`. The shipped profile is `profiles/henry-van-ness.md`.
 
 ## Release Status
 
-This repository is prepared as a public release candidate for a Linear-first HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
+This repository is prepared as a public release candidate for a Linear-first, cross-harness HVN workflow. The docs, command definitions, skills, templates, adapters, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
 
 ## Who It Is For
 
 Use HVN when you want AI agents to build software with engineering discipline:
 
 - Teams using Linear as the coordination layer for product and engineering work
+- Teams using Claude Code, Codex CLI, OpenCode, Hermes Agent, or a mix of those hosts
 - Founders turning vague product ideas into maintained repositories
 - Engineers using agentic coding tools on production code
 - Reviewers who want blind first-look QA before informed retesting
@@ -26,6 +29,7 @@ Use HVN when you want AI agents to build software with engineering discipline:
 ## Core Concepts
 
 - **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
+- **Shared core plus adapters:** portable skills, commands, templates, and docs stay shared; host-specific behavior lives in `adapters/`.
 - **Most-specific skill routing:** HVN chooses the narrowest installed skill that fits the task before generic execution.
 - **Authenticity preflight:** high-visibility UI and polished writing are calibrated against generic AI failure modes before execution.
 - **Run memory:** each issue can keep a compact continuation record for fresh agents.
@@ -44,6 +48,17 @@ Use HVN when you want AI agents to build software with engineering discipline:
 - **Layered retesting:** later QA receives bounded context packets tied to the same issue.
 - **Opt-out mode:** the same artifacts can be stored outside Linear when the user chooses another system of record.
 
+## Supported Hosts
+
+HVN targets four first-class runtimes:
+
+- Claude Code
+- Codex CLI
+- OpenCode
+- Hermes Agent
+
+The shared core is portable. Host support varies for commands, native UI, connectors, MCP, and QA tools. See `docs/compatibility-matrix.md`, `docs/cross-harness-architecture.md`, and `docs/hosts/`.
+
 ## Quickstart
 
 Clone the repo and run validation:
@@ -59,6 +74,21 @@ Install locally into the current project:
 ```sh
 ./install/install.sh --mode local --target ./.hvn
 ./install/verify-install.sh --target ./.hvn
+```
+
+Install for a specific host:
+
+```sh
+./install/install-claude.sh --mode local
+./install/install-codex.sh --mode global
+./install/install-opencode.sh --mode local
+./install/install-hermes.sh --mode local
+```
+
+Detect host hints:
+
+```sh
+./install/detect-host.sh
 ```
 
 Install globally for your user:
@@ -83,6 +113,10 @@ For Linear-first setup, read:
 - `docs/linear-agent-model.md`
 - `docs/linear-states.md`
 - `docs/linear-guidance.md`
+- `docs/cross-harness-architecture.md`
+- `docs/compatibility-matrix.md`
+- `docs/portable-skills.md`
+- `docs/command-mapping.md`
 - `docs/run-memory.md`
 - `docs/run-memory-linear.md`
 - `docs/run-memory-handoffs.md`
@@ -233,6 +267,8 @@ Framework defaults live in `HVN.defaults.md`. Profiles live in `profiles/`. User
 
 ```text
 commands/   Installable command definitions
+core/       Shared core manifest and architecture contract
+adapters/   Host-specific adapter guidance
 docs/       Framework documentation and examples
 examples/   Small sample artifact sets
 install/    Local and global installation scripts

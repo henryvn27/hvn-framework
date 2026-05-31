@@ -22,6 +22,18 @@ It does not receive:
 
 The agent runs first-look QA through browser automation, iOS simulator MCP, CLI, or manual inspection and posts findings back to the same issue.
 
+## Cross-Harness QA
+
+Blind QA rules are host-independent. Claude Code, Codex CLI, OpenCode, and Hermes Agent may have different launch, browser, simulator, or worker tools, but the context boundary is the same:
+
+- no spec
+- no implementation plan
+- no run memory
+- no hidden issue history
+- no source inspection
+
+If the host cannot launch or inspect the product, record the blocker and produce a manual QA brief instead of claiming a blind pass.
+
 ## Rules
 
 - Do not read the spec during a blind pass.

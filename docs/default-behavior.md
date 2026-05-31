@@ -7,6 +7,7 @@ HVN's shipped default behavior is intentionally opinionated. It is designed to m
 Framework defaults apply unless a profile or direct user instruction overrides them:
 
 - Use Linear as the default work-management system for non-trivial work.
+- Treat HVN as cross-harness: shared core first, host adapter second.
 - Route to the most specific installed skill before generic execution.
 - Preserve existing repo and product conventions.
 - Treat design-heavy work as a specialized workflow.
@@ -58,3 +59,14 @@ Run memory is required for non-trivial work that spans phases, agents, blockers,
 ## Interactive Question Flow Default
 
 Question flows ask targeted clarification rounds through installable commands. Ask one question by default, use compact 2-3 question batches only for independent facts, stop once enough information exists, and capture answers in structured artifacts. Do not imply HVN controls host-native UI rendering.
+
+## Cross-Harness Default
+
+When host behavior differs, prefer the portable fallback:
+
+1. Read shared `SKILL.md` instructions.
+2. Use shared command files as logical prompts.
+3. Store run memory in `.hvn/memory/runs/`.
+4. Create local artifacts when connectors are unavailable.
+5. Record exact Linear sync notes.
+6. Consult the relevant adapter before claiming host-specific command, UI, MCP, or connector support.

@@ -36,6 +36,8 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 
 Skills can be installed into agent clients that support skill directories, or read directly by agents using repo mode. Linear guidance can be installed separately into workspace, team, or project instructions.
 
+For cross-harness guidance, see `docs/portable-skills.md`.
+
 ## Routing Defaults
 
 Use `hvn-router` before non-trivial or skill-sensitive work. It applies `HVN.defaults.md`, the active profile, Linear-first work management, preserve-stack behavior, authenticity preflight, and full-output mode when requested.

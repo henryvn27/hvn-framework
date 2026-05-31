@@ -41,6 +41,13 @@
 - Create canonical `.hvn/memory/runs/archive/` storage during install.
 - Expand examples for init, update, resume, Linear sync, and multi-agent handoff.
 
+## 1.3
+
+- Add cross-harness architecture for Claude Code, Codex CLI, OpenCode, and Hermes Agent.
+- Add shared core and host adapter directories.
+- Add host-specific install scripts and conservative compatibility docs.
+- Document portable skills, command mapping, Linear fallback, run memory portability, and QA tool boundaries.
+
 ## Later
 
 - Explore signed releases.

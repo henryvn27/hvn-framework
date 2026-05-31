@@ -18,4 +18,6 @@ else
   printf 'No global install found at %s/.hvn\n' "$HOME"
 fi
 
+./install/detect-host.sh
+
 printf 'doctor: ok\n'

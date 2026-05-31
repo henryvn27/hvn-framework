@@ -73,3 +73,14 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `In QA` plus `blind-qa` triggers `hvn-test-blind`.
 - `needs-qa-brief` triggers `hvn-blind-qa-brief`.
 - `Ready to Ship` triggers `hvn-linear-ship-check`.
+
+## Cross-Harness Command Portability
+
+Commands are shared logical workflows. Host adapters define where they are installed and how they are invoked:
+
+- Claude Code: `.claude/commands/`
+- Codex CLI: prompts, skills, or configured command surfaces
+- OpenCode: `.opencode/command/`
+- Hermes Agent: skills or orchestration prompts
+
+See `docs/command-mapping.md`.

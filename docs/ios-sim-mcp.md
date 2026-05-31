@@ -2,6 +2,17 @@
 
 HVN can use an iOS simulator MCP server when available. The framework does not require a specific server implementation, but the QA workflow assumes the agent can build or launch the app, interact with simulator UI, inspect accessibility-visible elements, and capture screenshots or logs when supported.
 
+## Cross-Harness Tooling
+
+iOS simulator support is external-tool-dependent in every host. Claude Code, Codex CLI, OpenCode, and Hermes Agent can only run this workflow when the relevant simulator, build, and automation tools are configured.
+
+If simulator tooling is unavailable, HVN should:
+
+- record the missing tool or access
+- preserve the QA brief
+- avoid claiming simulator evidence
+- route to manual QA or a host with simulator access
+
 ## Linear Coordination
 
 In Linear-first mode, the issue should provide:

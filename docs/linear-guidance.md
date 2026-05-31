@@ -55,6 +55,16 @@ Run memory comments should stay concise. Link the memory artifact or summarize i
 
 Question-flow comments should ask the next highest-leverage question and record waiting-on-answer state. Once enough context exists, synthesize answers into the issue, spec, plan, QA brief, or run memory.
 
+## Cross-Harness Guidance
+
+This guidance applies across Claude Code, Codex CLI, OpenCode, and Hermes Agent. Host tooling may differ:
+
+- If the host has a Linear connector or MCP server, use it.
+- If the host can only read issue text supplied by the user, use that text and prepare sync notes.
+- If the host has no direct Linear access, do not block low-risk local work unless the user requested a Linear-only workflow.
+- Always include pending Linear sync details in handoffs.
+- Keep each repo or product in its own project or equivalent initiative record.
+
 Agents must not:
 
 - Skip Linear for non-trivial work unless the user opted out or Linear is blocked.

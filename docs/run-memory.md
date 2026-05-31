@@ -265,6 +265,18 @@ In Linear-first mode, every non-trivial run memory should map to a Linear issue 
 
 If Linear is blocked, keep local memory under `.hvn/memory/runs/` and record the exact Linear project, issue, comment, and link updates that should be synced later.
 
+## Cross-Harness Portability
+
+Run memory is intentionally file-based so Claude Code, Codex CLI, OpenCode, Hermes Agent, and manual reviewers can inspect the same state.
+
+Host session memory can help within one conversation, but it is not the HVN continuation artifact. Use:
+
+```text
+.hvn/memory/runs/<workstream-id>__<short-slug>.md
+```
+
+for all hosts. Adapters may reference this file from host-specific command, skill, or worker contexts, but the file format should remain host-agnostic.
+
 ## Blind QA Rule
 
 Blind first-look QA must not receive run memory. After blind QA completes, summarize the blind findings into run memory so later agents can compare blind and briefed outcomes without editing the original blind report.

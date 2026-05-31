@@ -1,6 +1,6 @@
 # Installation
 
-HVN supports Linear-first usage, opt-out usage, local install, and global install.
+HVN supports Linear-first usage, opt-out usage, local install, global install, and host-specific installs for Claude Code, Codex CLI, OpenCode, and Hermes Agent.
 
 ## Coordination Setup
 
@@ -25,6 +25,8 @@ Use repo mode when you want to inspect or vendor the framework manually. Referen
 - `templates/`
 - `docs/`
 - `mcp/`
+- `core/`
+- `adapters/`
 
 Repo mode is useful for contributors and teams that commit agent operating procedures into a product repository.
 
@@ -71,6 +73,48 @@ Default targets:
 
 Override the target with `--target /path/to/hvn`.
 
+## Host Detection
+
+Run:
+
+```sh
+./install/detect-host.sh
+```
+
+Detection prints hints only. Use an explicit installer when more than one host is present.
+
+## Host-Specific Installs
+
+Claude Code:
+
+```sh
+./install/install-claude.sh --mode local
+./install/verify-install.sh --target ./.claude/hvn --host claude
+```
+
+Codex CLI:
+
+```sh
+./install/install-codex.sh --mode global
+./install/verify-install.sh --target ~/.codex/hvn --host codex
+```
+
+OpenCode:
+
+```sh
+./install/install-opencode.sh --mode local
+./install/verify-install.sh --target ./.opencode/hvn --host opencode
+```
+
+Hermes Agent:
+
+```sh
+./install/install-hermes.sh --mode local
+./install/verify-install.sh --target ./.hermes/hvn --host hermes
+```
+
+Host installers install the shared HVN package under a host-specific `hvn/` directory and copy skills or command files into the host's expected locations when that mapping is known. If a host requires manual configuration, the script prints that limitation.
+
 ## Linear Configuration
 
 HVN does not automate Linear OAuth. Configure Linear through your agent client or MCP setup. A placeholder-safe example lives at `mcp/linear.example.json`; store credentials in your agent client's secret store rather than committing them.
@@ -109,6 +153,21 @@ Adapt command names and paths to your agent client and installed MCP servers.
 The Henry profile is installed at `profiles/henry-van-ness.md`. To use it, include `HVN.md`, `HVN.defaults.md`, and `profiles/henry-van-ness.md` in your agent instructions or project memory. The profile enables Linear-first work management, most-specific skill routing, preserve-stack behavior, premium design sensitivity, and full-output enforcement when requested.
 
 To use a different profile later, create another file in `profiles/` and state which profile the agent should load.
+
+## Cross-Harness Architecture
+
+The shared core lives in root-level `skills/`, `commands/`, `templates/`, `docs/`, `profiles/`, and `mcp/`, with `core/README.md` documenting the boundary. Host-specific placement and limitations live in `adapters/`.
+
+Read:
+
+- `docs/cross-harness-architecture.md`
+- `docs/compatibility-matrix.md`
+- `docs/command-mapping.md`
+- `docs/portable-skills.md`
+- `docs/hosts/claude-code.md`
+- `docs/hosts/codex-cli.md`
+- `docs/hosts/opencode.md`
+- `docs/hosts/hermes-agent.md`
 
 ## Run Memory Artifacts
 

@@ -2,6 +2,18 @@
 
 HVN web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view. In Linear-first mode, QA results are posted to the issue. In opt-out mode, results are written to the chosen record.
 
+## Cross-Harness Tooling
+
+Web QA is portable as a workflow, not as a guaranteed tool. Each host may provide browser access differently:
+
+- native browser automation
+- MCP browser server
+- Playwright or another local runner
+- delegated worker
+- manual browser inspection
+
+Record which tool was actually used. If no browser access is available, produce a QA brief and state that execution is pending.
+
 ## First-Look Pass
 
 A blind browser tester should receive only the issue ID, URL or launch command, platform constraints, and optional one-sentence mission. The tester should:

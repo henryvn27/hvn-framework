@@ -73,6 +73,17 @@ If Linear access is blocked:
 
 Do not pretend Linear was updated.
 
+## Cross-Harness Linear Access
+
+Different hosts expose Linear differently:
+
+- Claude Code may use a connector or MCP server when configured.
+- Codex CLI may use a connector, MCP server, supplied issue text, or manual sync.
+- OpenCode may use a connector, MCP server, CLI, or worker-provided issue context.
+- Hermes Agent may use configured tools or delegate issue-related work to another agent.
+
+The run memory behavior is the same in every case: keep the Linear ID, current sync status, and pending comment or state change visible.
+
 ## Linear Sync Comment Shape
 
 Keep issue comments short:

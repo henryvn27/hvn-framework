@@ -11,5 +11,9 @@ coverage/
 tmp/
 *.log
 .hvn/
+.claude/
+.codex/
+.opencode/
+.hermes/
 outputs/
 work/

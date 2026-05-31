@@ -31,6 +31,12 @@ HVN.defaults.md
 .github/workflows/markdown-lint.yml
 .github/workflows/validate-install.yml
 .github/FUNDING.yml
+core/README.md
+adapters/claude/README.md
+adapters/codex/README.md
+adapters/codex/AGENTS.md
+adapters/opencode/README.md
+adapters/hermes/README.md
 commands/hvn-question-flow.md
 commands/hvn-onboard.md
 commands/hvn-discover.md
@@ -39,6 +45,10 @@ commands/hvn-linear-intake.md
 commands/hvn-help.md
 commands/hvn-blind-qa-brief.md
 docs/linear-workflow.md
+docs/cross-harness-architecture.md
+docs/compatibility-matrix.md
+docs/command-mapping.md
+docs/portable-skills.md
 docs/linear-setup.md
 docs/default-behavior.md
 docs/skill-routing.md
@@ -60,6 +70,10 @@ docs/linear-issue-lifecycle.md
 docs/linear-guidance.md
 docs/interactive-question-flows.md
 docs/host-ui-guidance.md
+docs/hosts/claude-code.md
+docs/hosts/codex-cli.md
+docs/hosts/opencode.md
+docs/hosts/hermes-agent.md
 docs/examples/linear-setup-session.md
 docs/examples/linear-feature-flow.md
 docs/examples/linear-blind-qa-flow.md
@@ -85,6 +99,11 @@ docs/examples/question-flow-resume.md
 docs/examples/onboarding-question-rounds.md
 docs/examples/linear-question-intake.md
 docs/examples/qa-brief-question-flow.md
+docs/examples/claude-workflow.md
+docs/examples/codex-workflow.md
+docs/examples/opencode-workflow.md
+docs/examples/hermes-workflow.md
+docs/examples/cross-harness-handoff.md
 mcp/linear.example.json
 examples/sample-run-memory/README.md
 skills/hvn-question-flow/SKILL.md
@@ -105,7 +124,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates install scripts docs mcp examples profiles; do
+for dir in commands skills templates install scripts docs mcp examples profiles core adapters; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -117,7 +136,7 @@ template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 [ "$skill_count" -ge 32 ] || fail "expected at least 32 skill definitions"
 [ "$template_count" -ge 32 ] || fail "expected at least 32 templates"
 
-for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
+for script in install/install.sh install/install-claude.sh install/install-codex.sh install/install-opencode.sh install/install-hermes.sh install/detect-host.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
   [ -x "$script" ] || fail "script is not executable: $script"
   sh -n "$script" || fail "script syntax failed: $script"
