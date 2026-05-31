@@ -4,7 +4,7 @@ HVN is the master operating policy for rigorous agentic software development. It
 
 HVN is Linear-first by default. Linear is the preferred system of record for issue intake, scope clarification, status transitions, agent handoffs, implementation plans, QA runs, review findings, ship readiness, and retrospectives. If the user opts out of Linear, HVN maps the same gates and artifacts to the user's chosen system of record.
 
-HVN also routes work by installed skill. The default policy is most-specific-skill wins. The shipped profile is `profiles/henry-van-ness.md`; the framework defaults are in `HVN.defaults.md`.
+HVN also routes work by installed skill. The default policy is most-specific-skill wins. For high-visibility UI and polished writing, routing triggers authenticity preflight before execution. The shipped profile is `profiles/henry-van-ness.md`; the framework defaults are in `HVN.defaults.md`.
 
 ## Principles
 
@@ -13,10 +13,11 @@ HVN also routes work by installed skill. The default policy is most-specific-ski
 3. **Route first:** select the narrowest installed skill that matches the task.
 4. **Preserve first:** keep existing stack and conventions unless redesign is requested.
 5. **Evidence over confidence:** agents verify behavior rather than relying on plausible reasoning.
-6. **Context is a tool:** context is disclosed deliberately, especially during QA.
-7. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
-8. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
-9. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
+6. **Calibrate visible work:** UI and writing that shape trust need authenticity preflight.
+7. **Context is a tool:** context is disclosed deliberately, especially during QA.
+8. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
+9. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
+10. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
 
 ## Coordination Modes
 
@@ -40,6 +41,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Linear intake mode:** normalize issue context, labels, and next gate.
 - **Linear setup mode:** configure or validate Linear states, labels, guidance, permissions, smoke-test issue, and opt-out mapping.
 - **Routing mode:** select installed skills, Linear handling, preserve-stack posture, and full-output behavior.
+- **Authenticity preflight mode:** calibrate UI, design, frontend presentation, product copy, and polished writing against generic failure modes.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
 - **Discovery mode:** inspect code, product shape, dependencies, constraints, and risks.
 - **Research mode:** gather evidence when the answer is not already known.
@@ -55,6 +57,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 ## Required Artifacts
 
 - Routing decision for non-trivial or skill-sensitive work
+- Authenticity calibration for high-visibility UI or polished writing
 - Intake summary or Linear intake comment
 - Discovery notes when code or constraints are inspected
 - Research brief when outside evidence informs a decision
@@ -114,6 +117,10 @@ Every build phase needs verification proportional to risk. Prefer automated test
 ## Skill Routing Policy
 
 Use `hvn-router` before non-trivial work. Choose the narrowest installed skill matching the task. For frontend and design-heavy work, route to design/frontend skills. For existing products, prefer improve-in-place behavior. For full-output requests, enable `hvn-full-output`. If the ideal skill is missing, state the fallback and preserve the missing skill's intent as constraints when safe.
+
+## Authenticity Policy
+
+Run `hvn-authenticity-preflight` before high-visibility UI, frontend presentation, landing pages, dashboards, redesigns, UX copy, product copy, README work, docs, essays, outreach, or brand writing. Keep it short and targeted. The output should name generic patterns to avoid, project-specific direction, concrete details to include, and review criteria. Do not use deceptive framing or fake personal anecdotes.
 
 ## QA Philosophy
 

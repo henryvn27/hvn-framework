@@ -36,7 +36,9 @@ Example:
 
 ## Defaults Layer
 
-The defaults layer keeps behavior consistent across commands and skills. `hvn-router` interprets the defaults for a task: Linear check, skill selection, preserve-stack posture, and full-output mode.
+The defaults layer keeps behavior consistent across commands and skills. `hvn-router` interprets the defaults for a task: Linear check, skill selection, preserve-stack posture, authenticity preflight, and full-output mode.
+
+Authenticity preflight produces design or writing calibration artifacts before high-visibility execution and review.
 
 ## Why Blind QA Is Separate
 

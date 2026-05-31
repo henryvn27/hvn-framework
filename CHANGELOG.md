@@ -8,6 +8,7 @@ Initial public release candidate.
 - Added Linear-first workflow model with explicit opt-out support.
 - Added Linear setup workflow for states, labels, guidance, permissions, smoke tests, and opt-out mapping.
 - Added defaults layer, Henry profile, skill routing docs, router skill, and full-output skill.
+- Added authenticity preflight for anti-generic UI, design, frontend presentation, and polished writing.
 - Added installable command definitions.
 - Added Linear-specific command definitions.
 - Added reusable skill definitions.

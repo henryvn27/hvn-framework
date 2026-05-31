@@ -12,6 +12,7 @@ Core defaults:
 - Most-specific installed skill routing.
 - Preserve existing stack, conventions, and architecture unless redesign is requested.
 - High design sensitivity for frontend, product, marketing, branding, and UX work.
+- Authenticity preflight for high-visibility UI, frontend presentation, product copy, and polished writing.
 - Full-output enforcement when the user explicitly asks for complete output, exhaustive files, or no omissions.
 - Blind QA and context-controlled retesting for user-facing work.
 
@@ -23,9 +24,10 @@ Before non-trivial execution, HVN routes the task:
 2. Choose the narrowest installed skill that matches the primary task.
 3. Use broader skills only for compatible constraints.
 4. Prefer product/design/frontend skills for high-stakes user-facing work.
-5. Prefer improve-in-place skills for existing products.
-6. Use full-output enforcement for exhaustive output requests.
-7. Fall back to `hvn-core` only when no more specific skill is installed.
+5. Trigger authenticity preflight for design-heavy or writing-heavy work.
+6. Prefer improve-in-place skills for existing products.
+7. Use full-output enforcement for exhaustive output requests.
+8. Fall back to `hvn-core` only when no more specific skill is installed.
 
 ## Linear-First Work Management
 
@@ -48,6 +50,10 @@ When working inside an existing repo:
 - Preserve framework, routing, state, naming, and design-system conventions.
 - Improve in place unless the user explicitly requests a redesign or rewrite.
 - Avoid broad refactors that are not required for the current issue.
+
+## Authenticity Preflight
+
+Before high-visibility UI or polished writing, HVN calibrates against generic AI failure modes. The calibration names what to avoid, what direction fits the product, and what review should check. It must not encourage fake personal anecdotes or detector-evasion framing.
 
 ## Configuration Philosophy
 

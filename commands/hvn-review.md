@@ -35,15 +35,17 @@ Post or store the review report in the declared record.
 
 1. Use `hvn-review`.
 2. Inspect whether the chosen skill matched the task and whether a more specific installed skill was skipped.
-3. Inspect changed behavior and adjacent contracts.
-4. Prioritize findings by severity.
-5. Recommend fixes or state that no blocking issues were found.
-6. Sync review decision to the work item.
+3. Check whether authenticity preflight was required and whether the output followed it.
+4. Inspect changed behavior and adjacent contracts.
+5. Prioritize findings by severity.
+6. Recommend fixes or state that no blocking issues were found.
+7. Sync review decision to the work item.
 
 ## Outputs And Artifacts
 
 - `templates/review-report.md`
 - `templates/linear-review-comment.md` when Linear-first mode is active
+- `templates/authenticity-review.md` when UI or writing polish mattered
 
 ## Failure Cases
 

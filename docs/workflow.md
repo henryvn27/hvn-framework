@@ -4,7 +4,7 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 
 ## Standard Sequence
 
-1. `hvn-route`: select skill, Linear path, preserve-stack posture, and full-output mode.
+1. `hvn-route`: select skill, Linear path, preserve-stack posture, authenticity preflight, and full-output mode.
 2. `hvn-linear-check`: inspect or prepare Linear project and issue context.
 3. `hvn-linear-intake` or `hvn-onboard`: clarify issue context.
 4. `hvn-discover`: inspect the repo, platform, dependencies, and constraints.
@@ -12,15 +12,16 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 6. `hvn-spec`: define goals, non-goals, user flows, and acceptance criteria.
 7. `hvn-linear-plan-comment` or `hvn-plan`: create implementation phases and approval request.
 8. Human approval: required before build when scope affects product behavior, data, security, billing, or release.
-9. `hvn-build`: implement approved scope using the selected skill.
-10. `hvn-review`: inspect behavior, maintainability, and skill fit.
-11. `hvn-design`: review UX, accessibility, responsive behavior, and product clarity.
-12. `hvn-test-blind`: run first-look QA with minimal context.
-13. `hvn-test-briefed`: retest with a bounded packet.
-14. `hvn-test-regression`: verify fixes and adjacent flows.
-15. `hvn-security`: inspect security-relevant surfaces.
-16. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
-17. `hvn-retro`: capture lessons and follow-up work.
+9. `hvn-calibrate`: run authenticity preflight when UI, design, frontend presentation, product copy, or polished writing matters.
+10. `hvn-build`: implement approved scope using the selected skill.
+11. `hvn-review`: inspect behavior, maintainability, skill fit, and authenticity fit.
+12. `hvn-design`: review UX, accessibility, responsive behavior, product clarity, and generic design signals.
+13. `hvn-test-blind`: run first-look QA with minimal context.
+14. `hvn-test-briefed`: retest with a bounded packet.
+15. `hvn-test-regression`: verify fixes and adjacent flows.
+16. `hvn-security`: inspect security-relevant surfaces.
+17. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
+18. `hvn-retro`: capture lessons and follow-up work.
 
 ## Recommended Linear Gates
 

@@ -27,6 +27,7 @@ Use HVN when you want AI agents to build software with engineering discipline:
 
 - **Linear issue as unit of work:** each meaningful task should have an issue or opt-out equivalent.
 - **Most-specific skill routing:** HVN chooses the narrowest installed skill that fits the task before generic execution.
+- **Authenticity preflight:** high-visibility UI and polished writing are calibrated against generic AI failure modes before execution.
 - **Opinionated default profile:** the Henry profile enables Linear-first management, premium design sensitivity, preserve-stack behavior, and full-output enforcement when requested.
 - **Linear project as initiative:** related issues belong to a project, epic, or alternative initiative artifact.
 - **Linear states as workflow gates:** state transitions represent HVN readiness gates.
@@ -68,6 +69,9 @@ For Linear-first setup, read:
 - `profiles/henry-van-ness.md`
 - `docs/default-behavior.md`
 - `docs/skill-routing.md`
+- `docs/anti-generic-calibration.md`
+- `docs/anti-ai-design.md`
+- `docs/anti-ai-writing.md`
 - `docs/linear-defaults.md`
 - `docs/linear-setup.md`
 - `docs/linear-workflow.md`
@@ -105,6 +109,9 @@ Recommended state gates are documented in `docs/linear-states.md`.
 Commands in `commands/` are installable prompt definitions. Linear-specific commands include:
 
 - `hvn-route`
+- `hvn-calibrate`
+- `hvn-calibrate-design`
+- `hvn-calibrate-writing`
 - `hvn-linear-check`
 - `hvn-linear-setup`
 - `hvn-linear-intake`
@@ -117,6 +124,7 @@ Commands in `commands/` are installable prompt definitions. Linear-specific comm
 Skills in `skills/` define reusable execution behavior. Linear-specific skills include:
 
 - `hvn-router`
+- `hvn-authenticity-preflight`
 - `hvn-full-output`
 - `hvn-linear-setup`
 - `hvn-linear-core`
@@ -138,6 +146,10 @@ HVN treats first impression as evidence. In Linear-first mode, a blind QA agent 
 - Optional one-sentence user mission
 
 The blind QA agent must not receive the spec, code, implementation plan, design rationale, or hidden issue discussion. It posts findings back to the same issue. A context briefer then creates a minimal packet for a second-pass tester so the issue thread preserves the difference between blind and briefed outcomes.
+
+## Authenticity Preflight
+
+For high-visibility UI and polished writing, HVN runs a short calibration pass before execution. The goal is specificity, originality, credible voice, and stronger first impressions. This is not detector-evasion guidance. It is a practical guardrail against generic interfaces, marketing fog, and templated prose.
 
 ## iOS Simulator And Web QA Support
 

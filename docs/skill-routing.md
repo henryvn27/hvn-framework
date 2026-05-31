@@ -19,6 +19,8 @@ Use the narrowest installed skill that matches the primary task. Borrow constrai
 
 For high-stakes frontend, product, marketing, branding, or UX work, route deliberately. Do not default to generic implementation.
 
+Run `hvn-authenticity-preflight` before visible design or frontend execution when first impression, polish, or product trust matter.
+
 Examples:
 
 - Premium frontend implementation: route to a premium frontend or design-engineering skill.
@@ -35,6 +37,10 @@ When the repo or product already exists, preserve stack, functionality, state mo
 ## Full-Output Routing
 
 If the user asks for complete files, exhaustive output, no omissions, or full deliverables, route to full-output enforcement. Do not abbreviate remaining sections or replace content with summaries.
+
+## Writing Routing
+
+For polished writing, product copy, README work, docs, essays, outreach, or brand writing, run authenticity preflight before drafting. The calibration should define audience, voice, concrete details, generic patterns to avoid, and review criteria.
 
 ## Linear Routing
 

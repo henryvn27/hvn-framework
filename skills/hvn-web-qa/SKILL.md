@@ -35,8 +35,9 @@ Do not use for native-only apps unless they expose a web surface.
 3. Open the app in a browser or browser automation tool.
 4. Observe visible content, accessibility-visible elements, console errors, and network failures when tools support them.
 5. Attempt realistic tasks.
-6. Capture screenshots or DOM evidence when available.
-7. Produce reproducible findings for the issue or opt-out record.
+6. Flag if the app or site feels generic, untrustworthy, indistinct, or inconsistent with calibration.
+7. Capture screenshots or DOM evidence when available.
+8. Produce reproducible findings for the issue or opt-out record.
 
 ## Expected Outputs
 

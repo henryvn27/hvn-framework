@@ -38,10 +38,11 @@ Write the spec to `templates/spec.md` or an equivalent artifact and reference it
 1. Use `hvn-route` when the work is non-trivial or skill-sensitive.
 2. Use `hvn-spec`.
 3. Define goal, users, scenarios, requirements, non-goals, acceptance criteria, and risks.
-4. Preserve existing stack and conventions unless the user requested redesign or rewrite.
-5. Separate confirmed facts from assumptions.
-6. Ask for approval when the spec changes project direction.
-7. Post or attach the spec to the work item.
+4. Identify whether authenticity preflight is required for UI, frontend presentation, product copy, or polished writing.
+5. Preserve existing stack and conventions unless the user requested redesign or rewrite.
+6. Separate confirmed facts from assumptions.
+7. Ask for approval when the spec changes project direction.
+8. Post or attach the spec to the work item.
 
 ## Outputs And Artifacts
 

@@ -38,11 +38,12 @@ Do not use when the user asks a tiny direct question that does not need project 
 3. Identify explicit user-named skills.
 4. Select the narrowest installed skill matching the primary task.
 5. For high-stakes frontend or design work, prefer design/frontend-specific skills.
-6. For existing products, prefer improve-in-place skills and preserve stack unless redesign is requested.
-7. For image-to-code or image generation, route based on whether the deliverable is code or visual direction.
-8. For brand work, route to brand/identity skills.
-9. For exhaustive output requests, enable `hvn-full-output`.
-10. State selected skill, fallback if any, and constraints borrowed from broader skills.
+6. For UI, frontend presentation, product copy, or polished writing, trigger `hvn-authenticity-preflight`.
+7. For existing products, prefer improve-in-place skills and preserve stack unless redesign is requested.
+8. For image-to-code or image generation, route based on whether the deliverable is code or visual direction.
+9. For brand work, route to brand/identity skills.
+10. For exhaustive output requests, enable `hvn-full-output`.
+11. State selected skill, fallback if any, and constraints borrowed from broader skills.
 
 ## Expected Outputs
 
@@ -50,6 +51,7 @@ Do not use when the user asks a tiny direct question that does not need project 
 - Selected skill or fallback
 - Linear status
 - Preserve-stack or redesign posture
+- Authenticity preflight status
 - Full-output status
 
 ## Quality Bar
@@ -62,6 +64,7 @@ The routing decision should prevent generic execution when a more specific insta
 - Rewriting an existing product when improve-in-place was requested.
 - Ignoring an explicit full-output request.
 - Skipping Linear setup for non-trivial work.
+- Skipping authenticity preflight for high-visibility UI or polished writing.
 
 ## Relationship To Other HVN Skills And Commands
 

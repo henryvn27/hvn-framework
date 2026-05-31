@@ -5,6 +5,7 @@ Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They def
 ## Linear Skills
 
 - `hvn-router`
+- `hvn-authenticity-preflight`
 - `hvn-full-output`
 - `hvn-linear-setup`
 - `hvn-linear-core`
@@ -31,4 +32,6 @@ Skills can be installed into agent clients that support skill directories, or re
 
 ## Routing Defaults
 
-Use `hvn-router` before non-trivial or skill-sensitive work. It applies `HVN.defaults.md`, the active profile, Linear-first work management, preserve-stack behavior, and full-output mode when requested.
+Use `hvn-router` before non-trivial or skill-sensitive work. It applies `HVN.defaults.md`, the active profile, Linear-first work management, preserve-stack behavior, authenticity preflight, and full-output mode when requested.
+
+For high-visibility UI and polished writing, routing triggers `hvn-authenticity-preflight`.

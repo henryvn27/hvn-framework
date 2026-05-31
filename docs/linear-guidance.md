@@ -40,6 +40,7 @@ Agents should:
 
 - Route to the most specific installed skill before non-trivial execution.
 - Inspect or prepare the Linear project and issue before implementation.
+- Run authenticity preflight before high-visibility UI, frontend presentation, product copy, or polished writing.
 - State which HVN command or skill they are using.
 - Quote or summarize the issue context they relied on.
 - Post concise comments with decisions, evidence, blockers, and next state.
@@ -50,6 +51,7 @@ Agents must not:
 
 - Skip Linear for non-trivial work unless the user opted out or Linear is blocked.
 - Use generic implementation when a more specific installed skill applies.
+- Ship generic-looking UI or generic-sounding writing without review when calibration was required.
 - Build from an unapproved plan when approval is required.
 - Read hidden specs during blind QA.
 - Move issues across gates without evidence.

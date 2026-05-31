@@ -15,6 +15,9 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 ## Linear Commands
 
 - `hvn-route`
+- `hvn-calibrate`
+- `hvn-calibrate-design`
+- `hvn-calibrate-writing`
 - `hvn-linear-check`
 - `hvn-linear-setup`
 - `hvn-linear-intake`

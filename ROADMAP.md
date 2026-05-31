@@ -9,6 +9,7 @@
 - Add Linear-first workflow docs, commands, skills, and comment templates.
 - Add Linear setup guide, command, skill, checklist, and local setup packet script.
 - Add default behavior layer and Henry Van Ness profile.
+- Add authenticity preflight for high-visibility UI and polished writing.
 - Document opt-out mode for teams that do not use Linear.
 
 ## 0.2

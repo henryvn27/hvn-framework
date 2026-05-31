@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Select the most specific installed skill and work-management path for a task before execution.
+Select the most specific installed skill, work-management path, and authenticity preflight need for a task before execution.
 
 ## When To Use
 
@@ -35,9 +35,10 @@ Use at the start of non-trivial work, frontend/design tasks, redesign work, imag
 2. Check Linear project and issue availability or record blocked sync.
 3. Identify explicit user-named skills.
 4. Select the narrowest installed skill matching the primary task.
-5. Add compatible constraints from broader skills.
-6. State preserve-stack or redesign posture.
-7. State full-output mode when applicable.
+5. Trigger authenticity preflight for UI, design, frontend presentation, product copy, or polished writing.
+6. Add compatible constraints from broader skills.
+7. State preserve-stack or redesign posture.
+8. State full-output mode when applicable.
 
 ## Outputs And Artifacts
 
@@ -45,6 +46,7 @@ Use at the start of non-trivial work, frontend/design tasks, redesign work, imag
 - Selected skill or fallback
 - Linear project and issue expectation
 - Preserve-stack or redesign note
+- Authenticity preflight requirement
 
 ## Failure Cases
 

@@ -30,13 +30,14 @@ Do not use for backend-only changes without user-facing behavior.
 ## Exact Workflow
 
 1. Use `hvn-router` to confirm a design/frontend-specific skill path when available.
-2. Read the issue or opt-out record for user goal and design constraints.
-3. Identify the user goal.
-4. Inspect hierarchy, information scent, states, responsiveness, accessibility, and copy.
-5. Separate visual observations from inferred behavior.
-6. Preserve existing product conventions unless redesign was requested.
-7. Produce prioritized design findings and fixes.
-8. Post or prepare findings for the durable record.
+2. Run or apply `hvn-authenticity-preflight`.
+3. Read the issue or opt-out record for user goal and design constraints.
+4. Identify the user goal.
+5. Inspect hierarchy, information scent, states, responsiveness, accessibility, copy, and generic design signals.
+6. Separate visual observations from inferred behavior.
+7. Preserve existing product conventions unless redesign was requested.
+8. Produce prioritized design findings and fixes.
+9. Post or prepare findings for the durable record.
 
 ## Expected Outputs
 

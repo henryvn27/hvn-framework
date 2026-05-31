@@ -21,6 +21,7 @@ This profile captures the shipped HVN default operating style. It is an example 
 ## Frontend And Design
 
 - Treat high-stakes frontend and design-heavy work as specialized.
+- Run authenticity preflight before high-visibility UI, landing pages, dashboards, redesigns, and brand-sensitive frontend work.
 - Prefer premium, non-generic implementation.
 - Preserve product clarity, accessibility, responsive behavior, and interaction feel.
 - Use improve-in-place behavior for existing products unless redesign is requested.
@@ -35,6 +36,12 @@ This profile captures the shipped HVN default operating style. It is an example 
 
 - When the user asks for complete files, exhaustive deliverables, or no omissions, enable full-output behavior.
 - Do not abbreviate repeated sections or defer requested deliverables.
+
+## Writing And Voice
+
+- Run authenticity preflight before polished writing, product copy, README work, docs, essays, outreach, and brand writing.
+- Prefer concrete details, grounded claims, medium-appropriate rhythm, and a clear point of view.
+- Avoid fake anecdotes, marketing fog, filler transitions, and generic AI cadence.
 
 ## QA And Shipping
 

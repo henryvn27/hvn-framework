@@ -38,10 +38,11 @@ Record implementation updates and evidence in the chosen work item or build log.
 2. Confirm Linear project and issue context or record blocked sync.
 3. Confirm approval if required.
 4. Read relevant files before editing.
-5. Preserve existing stack and conventions unless redesign was approved.
-6. Make scoped changes.
-7. Run verification after meaningful phases.
-8. Update the work item with evidence and remaining risks.
+5. Run or apply authenticity preflight when UI or polished writing matters.
+6. Preserve existing stack and conventions unless redesign was approved.
+7. Make scoped changes.
+8. Run verification after meaningful phases.
+9. Update the work item with evidence and remaining risks.
 
 ## Outputs And Artifacts
 

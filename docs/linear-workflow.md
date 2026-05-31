@@ -22,15 +22,16 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 3. Onboard or discover agent clarifies ambiguity.
 4. Spec is generated and attached or summarized back to the issue.
 5. Plan is posted to the issue.
-6. Human approves the plan.
-7. Build agent executes approved scope.
-8. Review agent comments findings.
-9. Blind QA agent runs first-look test.
-10. Context briefer creates a minimal second-pass brief.
-11. Guided QA reruns with limited context.
-12. Security, review, and regression passes run as needed.
-13. Ship readiness checklist is posted.
-14. Issue moves to done only with evidence.
+6. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
+7. Human approves the plan.
+8. Build agent executes approved scope.
+9. Review agent comments findings and checks calibration fit.
+10. Blind QA agent runs first-look test.
+11. Context briefer creates a minimal second-pass brief.
+12. Guided QA reruns with limited context.
+13. Security, review, and regression passes run as needed.
+14. Ship readiness checklist is posted.
+15. Issue moves to done only with evidence.
 
 ## Agent Update Rule
 

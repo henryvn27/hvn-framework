@@ -10,6 +10,7 @@ Framework defaults apply unless a profile or direct user instruction overrides t
 - Route to the most specific installed skill before generic execution.
 - Preserve existing repo and product conventions.
 - Treat design-heavy work as a specialized workflow.
+- Run authenticity preflight for high-visibility UI and polished writing.
 - Use full-output enforcement when the user asks for exhaustive output.
 - Keep review, QA, and ship evidence in the system of record.
 
