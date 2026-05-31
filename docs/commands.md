@@ -26,6 +26,10 @@ These commands read from and post back to Linear issues when Linear-first mode i
 ## Core Commands
 
 - `orca-help`
+- `orca-idea`
+- `orca-evaluate-idea`
+- `orca-plan-idea`
+- `orca-validate-idea`
 - `orca-onboard`
 - `orca-discover`
 - `orca-legacy`
@@ -85,6 +89,10 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `Ready to Ship` triggers `orca-linear-ship-check`.
 
 Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just the product artifact.
+Use `orca-idea` when the user has a raw business or startup opportunity and needs a one-pager before product planning.
+Use `orca-evaluate-idea` when the user wants candid pressure testing across founder, problem, market, competition, and evidence lenses.
+Use `orca-plan-idea` when a surviving idea needs an opportunity memo, decision, and bridge to later spec work.
+Use `orca-validate-idea` when the next question should become a concrete experiment instead of another brainstorm.
 Use `orca-receipt` after meaningful runs that should be reviewable without reading the full trace.
 Use `orca-lineage` when artifacts need provenance, supersession, or downstream dependency clarity.
 Use `orca-metrics` when elapsed time, retries, or optional usage signals matter, and `orca-benchmark` when onboarding/spec quality should be compared over time.

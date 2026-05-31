@@ -6,6 +6,7 @@ Next-step guidance is the short phase-exit message ORCA-HVN emits after a major 
 
 Emit next-step guidance after:
 
+- ideation or idea evaluation
 - onboarding
 - spec creation
 - milestone planning
@@ -70,6 +71,12 @@ In controller workflows, next-step guidance should also help answer:
 - should the controller delegate
 - what should the executor be told
 - what artifact should come back next
+
+In ideation workflows, next-step guidance should also help answer:
+
+- does this idea deserve more work
+- should the user run research, validation, or stop
+- has the idea earned a product spec yet
 
 ## Missing Integrations
 

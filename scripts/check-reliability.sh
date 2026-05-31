@@ -51,6 +51,16 @@ for file in \
   docs/legacy-modernization.md \
   docs/repo-archaeology.md \
   docs/onboarding.md \
+  docs/business-ideation.md \
+  docs/idea-one-pagers.md \
+  docs/idea-evaluation-lenses.md \
+  docs/idea-research.md \
+  docs/idea-validation.md \
+  docs/opportunity-memos.md \
+  docs/idea-feedback-style.md \
+  docs/business-ideation-ux.md \
+  docs/idea-research-pipeline.md \
+  docs/paved-roads.md \
   docs/next-step-guidance.md \
   docs/guidance-tone.md \
   docs/experience-adaptation.md \
@@ -115,6 +125,21 @@ for file in \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
+  templates/idea-one-pager.md \
+  templates/idea-intake.md \
+  templates/idea-scorecard.md \
+  templates/evidence-vs-assumption.md \
+  templates/market-research-brief.md \
+  templates/competitor-scan.md \
+  templates/customer-problem-research.md \
+  templates/validation-plan.md \
+  templates/assumption-test.md \
+  templates/customer-interview-plan.md \
+  templates/smoke-test-plan.md \
+  templates/opportunity-memo.md \
+  templates/idea-decision.md \
+  templates/idea-guided-mode.md \
+  templates/idea-fast-mode.md \
   templates/user-guidance-profile.md \
   templates/next-step-onboarding.md \
   templates/next-step-spec.md \
@@ -158,6 +183,10 @@ for file in \
   commands/orca-validate-integration.md \
   commands/orca-runtime.md \
   commands/orca-status.md \
+  commands/orca-idea.md \
+  commands/orca-evaluate-idea.md \
+  commands/orca-plan-idea.md \
+  commands/orca-validate-idea.md \
   commands/orca-controller.md \
   commands/orca-orient.md \
   commands/orca-schema.md \
@@ -187,6 +216,7 @@ for file in \
   skills/orca-runtime-adaptation/SKILL.md \
   skills/orca-receipts/SKILL.md \
   skills/orca-legacy/SKILL.md \
+  skills/orca-business-ideation/SKILL.md \
   skills/orca-next-step/SKILL.md \
   skills/orca-goal-mode/SKILL.md \
   skills/orca-controller-mode/SKILL.md \
@@ -228,6 +258,12 @@ for file in \
   docs/examples/business-logic-extraction.md \
   docs/examples/legacy-to-spec.md \
   docs/examples/legacy-risk-assessment.md \
+  docs/examples/idea-one-pager.md \
+  docs/examples/idea-scorecard.md \
+  docs/examples/opportunity-memo.md \
+  docs/examples/validation-plan.md \
+  docs/examples/idea-kill-decision.md \
+  docs/examples/idea-pursue-decision.md \
   docs/examples/next-step-beginner.md \
   docs/examples/next-step-advanced.md \
   docs/examples/post-spec-guidance.md \

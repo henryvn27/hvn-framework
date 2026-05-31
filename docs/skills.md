@@ -17,7 +17,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Core Skill Groups
 
 - Core governance: `orca-core`
-- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`
+- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`, `orca-business-ideation`
 - Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
 - Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`, `orca-delegation`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
@@ -35,6 +35,7 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-approval-gate` for risky-action control
 - `orca-benchmark` for onboarding/spec comparisons
 - `orca-accounting` for workflow timing and retry signals
+- `orca-business-ideation` for idea framing, venture-style evaluation, opportunity memos, and validation planning
 - `orca-portability` for schema definition, validation, versioning, and artifact mapping
 - `orca-controller-mode` for repository-first orientation, routing, and multi-harness coherence
 - `orca-regression-task` for preserving high-value findings as regression work

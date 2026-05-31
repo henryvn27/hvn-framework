@@ -26,6 +26,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 18. **Receipts beat vague memory:** meaningful runs should leave compact evidence that can be inspected later.
 19. **Recovery needs explicit artifacts:** replay and restore should rely on visible checkpoints, receipts, and lineage rather than hidden state.
 20. **Controller and executor roles should stay explicit:** multi-harness work should preserve clear routing, bounded delegation, and structured result ingestion.
+21. **Ideas should earn the spec:** business opportunities should be framed, judged, and validated before they inherit delivery complexity.
 
 ## Coordination Modes
 
@@ -47,6 +48,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 ## Workflow Modes
 
 - **Linear intake mode:** normalize issue context, labels, and next gate.
+- **Business ideation mode:** structure a startup idea, pressure-test it, and decide what to validate next.
 - **Linear setup mode:** configure or validate Linear states, labels, guidance, permissions, smoke-test issue, and opt-out mapping.
 - **Onboarding mode:** collect intent through adaptive questions and produce an intake summary.
 - **Discovery mode:** inspect code, product shape, dependencies, constraints, and risks.
@@ -84,7 +86,9 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 ## Required Artifacts
 
 - Intake summary or Linear intake comment
+- Idea intake or one-pager when the work begins as an opportunity instead of an implementation request
 - Discovery notes when code or constraints are inspected
+- Idea scorecard, evidence map, opportunity memo, validation plan, or decision note when the work is still upstream of product definition
 - Research brief when outside evidence informs a decision
 - Tool requirements, integration status, or health report when external tools are required
 - Runtime detection, route, or status artifact when harness capability materially changes behavior
@@ -130,26 +134,28 @@ Before relying on Linear-first execution, run setup:
 Then use the standard lifecycle:
 
 1. Issue enters inbox or triage.
-2. Onboard or discover agent clarifies ambiguity.
-3. Setup mode checks required GitHub, Linear, MCP, connector, or CLI dependencies when the next phase needs them.
-4. Legacy mode runs when the system is inherited, under-documented, or fragile.
-5. Spec is generated and attached or summarized back to the issue.
-6. Plan is posted to the issue.
-7. Next-step guidance explains the next move when useful.
-8. Approval gates determine whether build can proceed automatically or needs explicit human approval.
-9. Goal mode may be used only for the next bounded, verifiable milestone.
-10. Build agent executes approved scope or goal contract.
-11. Trace, shared state, and workflow metrics record what happened and what the current run picture looks like.
-12. Review and QA surface product and workflow failures.
-13. Context briefer creates a minimal second-pass brief.
-14. Guided QA reruns with limited context.
-15. Strong findings can generate reusable regression tasks.
-16. Checkpoints pause risky or ambiguous work for human inspection and decision.
-17. Inspector artifacts make resume and handoff state easy to review.
-18. Tool and MCP governance reviews happen before new or risky external execution surfaces are used.
-19. Benchmark and eval passes happen as needed when framework quality is under review.
-20. Security and ship readiness checks finish the evidence chain.
-21. Issue moves to done only with evidence.
+2. `orca-idea` or `orca-evaluate-idea` runs first if the work item is still an opportunity rather than a product contract.
+3. `orca-plan-idea` or `orca-validate-idea` converts the surviving idea into a memo, decision, and next experiment.
+4. Onboard or discover agent clarifies ambiguity.
+5. Setup mode checks required GitHub, Linear, MCP, connector, or CLI dependencies when the next phase needs them.
+6. Legacy mode runs when the system is inherited, under-documented, or fragile.
+7. Spec is generated and attached or summarized back to the issue.
+8. Plan is posted to the issue.
+9. Next-step guidance explains the next move when useful.
+10. Approval gates determine whether build can proceed automatically or needs explicit human approval.
+11. Goal mode may be used only for the next bounded, verifiable milestone.
+12. Build agent executes approved scope or goal contract.
+13. Trace, shared state, and workflow metrics record what happened and what the current run picture looks like.
+14. Review and QA surface product and workflow failures.
+15. Context briefer creates a minimal second-pass brief.
+16. Guided QA reruns with limited context.
+17. Strong findings can generate reusable regression tasks.
+18. Checkpoints pause risky or ambiguous work for human inspection and decision.
+19. Inspector artifacts make resume and handoff state easy to review.
+20. Tool and MCP governance reviews happen before new or risky external execution surfaces are used.
+21. Benchmark and eval passes happen as needed when framework quality is under review.
+22. Security and ship readiness checks finish the evidence chain.
+23. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -226,7 +232,7 @@ Use goal mode only after spec and milestone planning. Goals must have clear in-s
 
 ## Next-Step Guidance Policy
 
-After onboarding, spec creation, milestone planning, implementation, QA, regression follow-up, review, or shipping, provide short next-step guidance when it helps the user move forward. Prefer one default action, one optional alternate, and one reason. Stay silent when the next action is already underway, the user opted out, or approval/clarification is the only safe move.
+After ideation, onboarding, spec creation, milestone planning, implementation, QA, regression follow-up, review, or shipping, provide short next-step guidance when it helps the user move forward. Prefer one default action, one optional alternate, and one reason. Stay silent when the next action is already underway, the user opted out, or approval/clarification is the only safe move.
 
 ## QA Philosophy
 

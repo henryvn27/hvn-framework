@@ -1,0 +1,45 @@
+# Idea Research
+
+ORCA-HVN idea research is decision-support research. It is not a ceremony for proving that the idea is great.
+
+## Purpose
+
+Use idea research to:
+
+- size the market directionally
+- identify direct and indirect competitors
+- understand how customers solve the problem today
+- find public signals of pain, urgency, and willingness to pay
+- sharpen the next validation question
+
+## Research Outputs
+
+- [templates/market-research-brief.md](../templates/market-research-brief.md)
+- [templates/competitor-scan.md](../templates/competitor-scan.md)
+- [templates/customer-problem-research.md](../templates/customer-problem-research.md)
+
+## Research Rules
+
+- Start from the decision that needs support.
+- Prefer source quality over source volume.
+- Distinguish between market narrative and actual evidence.
+- Record what would change your mind.
+- Do not let desk research substitute for talking to users or running experiments.
+
+## Suggested Questions
+
+- Who has the problem badly enough to act?
+- How do they solve it now?
+- What budget, workflow, or status quo does the idea need to displace?
+- Which competitors are real alternatives, even if their product category differs?
+- Does the market look crowded, fragmented, ignored, or newly forming?
+- What claims still require direct customer contact?
+
+## Handoff To Validation
+
+The research phase should end by naming:
+
+- what appears true
+- what remains unclear
+- what matters most
+- what experiment should run next
