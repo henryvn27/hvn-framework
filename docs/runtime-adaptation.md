@@ -6,6 +6,23 @@ Principle:
 
 > Same ORCA-HVN workflow intent, different execution path depending on the harness.
 
+## Routing Model
+
+```mermaid
+flowchart TD
+    A["Workflow Intent"] --> B["Detect Harness"]
+    B --> C["Load Capability Profile"]
+    C --> D{"Support level?"}
+    D -- "Supported" --> E["Recommend or execute best-fit path"]
+    D -- "Partial" --> F["Use caveats and explicit fallback"]
+    D -- "Unclear" --> G["Use conservative generic path"]
+    D -- "Not supported" --> H["Do not recommend default path"]
+    E --> I["Receipt / Status / Review"]
+    F --> I
+    G --> I
+    H --> I
+```
+
 ## What It Is
 
 Runtime adaptation means ORCA-HVN:

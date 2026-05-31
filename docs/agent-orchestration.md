@@ -4,6 +4,21 @@ ORCA-HVN treats agent orchestration as a portable operating model.
 
 The model should survive harness changes, feature differences, and vendor syntax differences.
 
+## Role Diagram
+
+```mermaid
+flowchart TD
+    U["User"] --> P["Parent Orchestrator"]
+    P --> W1["Worker: Research"]
+    P --> W2["Worker: Implementation"]
+    P --> W3["Worker: Checker / QA"]
+    W1 --> R["Structured Results / Blockers / Approvals"]
+    W2 --> R
+    W3 --> R
+    R --> P
+    P --> U
+```
+
 ## Core Questions
 
 Orchestration means answering:

@@ -4,6 +4,26 @@ ORCA-HVN follows a staged workflow centered on a durable work item. In Linear-fi
 
 When a workflow introduces a new external upstream influence or wrapper, update the attribution records as part of the same iteration.
 
+## Workflow Map
+
+```mermaid
+flowchart LR
+    A["Intake / Onboard"] --> B["Discover / Research / Legacy"]
+    B --> C["Spec"]
+    C --> D["Plan"]
+    D --> E{"Need approval?"}
+    E -- "Yes" --> F["Approve / Checkpoint"]
+    E -- "No" --> G["Build"]
+    F --> G
+    G --> H{"Need delegation or background work?"}
+    H -- "Yes" --> I["Delegate / Background / Goal"]
+    H -- "No" --> J["Review / QA"]
+    I --> J
+    J --> K["Receipt / Lineage / State / Metrics"]
+    K --> L["Ship / Restore / Replay / Retro"]
+    L --> M["Improve Framework"]
+```
+
 ## Standard Sequence
 
 1. `orca-idea` or `orca-evaluate-idea`: structure or pressure-test an opportunity when the work has not yet earned a product spec.

@@ -10,6 +10,14 @@ Start with this one path:
 4. `orca-build`
 5. `orca-review`
 
+```mermaid
+flowchart LR
+    A["orca-onboard"] --> B["orca-spec"]
+    B --> C["orca-plan"]
+    C --> D["orca-build"]
+    D --> E["orca-review"]
+```
+
 That is the default ORCA-HVN intro workflow.
 
 This path is also the teaching path. It is meant to show a new user how the framework works while still being a real production path they can keep using later.
