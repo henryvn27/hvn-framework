@@ -88,6 +88,7 @@ For Linear-first setup, read:
 - `docs/shared-state.md`
 - `docs/human-checkpoints.md`
 - `docs/inspector.md`
+- `docs/version-control.md`
 
 You can also generate a local setup packet:
 
@@ -217,6 +218,10 @@ HVN now treats reliability as part of the core framework:
 - inspector artifacts make paused or blocked runs auditable
 - contracts keep artifacts consistent
 - security and prompt-injection guardrails keep external context from hijacking execution
+
+## Version Control And Iteration
+
+Framework changes should land as clear iterations with reviewable commits, validation evidence, and changelog updates. See `docs/version-control.md` and `templates/iteration-log.md`.
 
 ## Repository Structure
 

@@ -18,6 +18,7 @@ Thank you for improving HVN. Contributions should make the framework clearer, mo
 - Documentation links resolve.
 - Scripts remain portable POSIX shell unless a file explicitly targets another shell.
 - The changelog is updated for user-visible framework changes.
+- Multi-commit framework iterations use `templates/iteration-log.md` or an equivalent PR summary.
 
 ## Development
 
@@ -33,3 +34,5 @@ For markdown-only changes:
 ./scripts/check-markdown.sh
 ./scripts/check-links.sh
 ```
+
+For version-control and iteration expectations, read `docs/version-control.md`.

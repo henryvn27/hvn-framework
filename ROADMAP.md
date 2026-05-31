@@ -12,6 +12,7 @@
 
 ## 0.2
 
+- Cut the accumulated reliability and coordination work into a reviewed minor release.
 - Add packaged release archives.
 - Add installer smoke tests across macOS, Linux, and Windows PowerShell.
 - Add more end-to-end examples for Linear-first web and iOS projects.

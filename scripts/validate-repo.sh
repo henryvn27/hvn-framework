@@ -44,6 +44,7 @@ docs/benchmark-reporting.md
 docs/shared-state.md
 docs/human-checkpoints.md
 docs/inspector.md
+docs/version-control.md
 docs/approval-gates.md
 docs/artifact-contracts.md
 docs/security-guardrails.md
@@ -75,6 +76,7 @@ docs/examples/shared-state-handoff.md
 docs/examples/checkpoint-before-risky-change.md
 docs/examples/run-inspection.md
 docs/examples/pause-and-resume.md
+docs/examples/versioned-iteration.md
 benchmarks/onboarding-spec/README.md
 mcp/linear.example.json
 "

@@ -1,5 +1,23 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added ecosystem sweep automation artifacts, including tracked sources, living watch document, draft adopt-issue template, and promotion-history rules.
+- Added observability, trajectory evals, approval gates, artifact contracts, security guardrails, and prompt-injection guidance.
+- Added onboarding/spec benchmark pack, workflow accounting, and QA-to-regression task generation.
+- Added shared state, human checkpoints, and run inspection for multi-agent coordination and resumable runs.
+- Added version-control and iteration guidance with an iteration log template.
+
+### Validation
+
+- Added reliability and improvement-system validation scripts and CI workflow definitions.
+
+### Known Blockers
+
+- Branches that modify `.github/workflows/*` require GitHub credentials with workflow-file permission before push.
+
 ## 0.1.0 - 2026-05-30
 
 Initial public release candidate.
