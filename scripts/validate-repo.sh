@@ -12,6 +12,10 @@ fail() {
 required_files="
 README.md
 LICENSE
+NOTICE
+THIRD_PARTY_NOTICES.md
+ACKNOWLEDGEMENTS.md
+UPSTREAM.md
 CHANGELOG.md
 CONTRIBUTING.md
 CODE_OF_CONDUCT.md
@@ -35,6 +39,12 @@ ORCA-HVN.md
 .github/workflows/validate-install.yml
 .github/FUNDING.yml
 docs/linear-workflow.md
+docs/attribution.md
+docs/provenance.md
+docs/wraps-vs-borrows.md
+docs/attribution-maintenance.md
+docs/attribution-audit.md
+docs/licenses.md
 docs/observability.md
 docs/evals.md
 docs/benchmark-pack.md
@@ -167,6 +177,10 @@ docs/examples/legacy-modernization-plan.md
 docs/examples/business-logic-extraction.md
 docs/examples/legacy-to-spec.md
 docs/examples/legacy-risk-assessment.md
+docs/examples/upstream-entry.md
+docs/examples/inspiration-vs-wrapper.md
+docs/examples/third-party-notice.md
+docs/examples/feature-provenance.md
 docs/examples/idea-one-pager.md
 docs/examples/idea-scorecard.md
 docs/examples/opportunity-memo.md

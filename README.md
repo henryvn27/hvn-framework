@@ -12,6 +12,56 @@ It is also designed to work cleanly when one agent controls the project and anot
 
 It also supports a dedicated business-ideation lane for startup opportunities. ORCA-HVN can structure a rough idea, evaluate it through founder, market, problem, competition, and evidence lenses, produce an opportunity memo, and recommend the next validation step before product-spec work begins.
 
+## Origins And Influences
+
+ORCA-HVN is original in how it combines Linear-first coordination, explicit artifact contracts, blind-to-briefed QA, runtime adaptation, checkpoints, receipts, lineage, and cross-harness routing into one framework.
+
+It is not presented as if it invented every underlying idea. Spec-driven workflow thinking, host integrations, startup validation patterns, and MCP-based tool routing all have real upstream ecosystems.
+
+See:
+
+- [UPSTREAM.md](UPSTREAM.md)
+- [docs/attribution.md](docs/attribution.md)
+- [docs/provenance.md](docs/provenance.md)
+- [docs/wraps-vs-borrows.md](docs/wraps-vs-borrows.md)
+
+## Upstream Projects
+
+The most important currently documented upstreams are:
+
+- Linear, as ORCA-HVN's primary direct workflow integration
+- GitHub, as the main repository, issue, PR, release, and checks integration surface
+- OpenAI Codex CLI, Claude Code, and Hermes Agent, as major compatibility targets
+- GitHub Spec Kit, as a public spec-driven workflow influence
+- Bloomberg Beta's public manual and Steve Blank's customer-development writing, as reference influences for the ideation lane
+
+The canonical catalog with relationship types lives in [UPSTREAM.md](UPSTREAM.md).
+
+## What ORCA-HVN Wraps
+
+ORCA-HVN directly wraps or integrates:
+
+- Linear workflow surfaces
+- GitHub workflow surfaces
+- approved MCP-based setup paths such as GitHub MCP server or Linear MCP
+- agent-host compatibility layers for Codex CLI, Claude Code, Hermes Agent, VS Code, and generic hosts
+
+That is different from conceptual borrowing. See [docs/wraps-vs-borrows.md](docs/wraps-vs-borrows.md).
+
+## Attribution And Licenses
+
+ORCA-HVN's own project license is in [LICENSE](LICENSE).
+
+Third-party provenance and notice handling live in:
+
+- [NOTICE](NOTICE)
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+- [docs/licenses.md](docs/licenses.md)
+
+## Acknowledgements
+
+For the human credit layer, see [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
+
 ## Release Status
 
 This repository is prepared as a public release candidate for a Linear-first ORCA-HVN workflow. The docs, command definitions, skills, templates, install scripts, validation scripts, and GitHub metadata are complete and internally cross-referenced. Local validation should be run after every change with `./scripts/validate-repo.sh`.
@@ -96,6 +146,10 @@ For Linear-first setup, read:
 - `docs/linear-agent-model.md`
 - `docs/linear-states.md`
 - `docs/linear-guidance.md`
+- `docs/attribution.md`
+- `docs/provenance.md`
+- `docs/wraps-vs-borrows.md`
+- `docs/licenses.md`
 - `docs/business-ideation.md`
 - `docs/idea-one-pagers.md`
 - `docs/idea-evaluation-lenses.md`
@@ -154,6 +208,9 @@ For Linear-first setup, read:
 - `docs/compatibility-matrix.md`
 - `docs/command-mapping.md`
 - `docs/version-control.md`
+- `UPSTREAM.md`
+- `ACKNOWLEDGEMENTS.md`
+- `THIRD_PARTY_NOTICES.md`
 
 You can also generate a local setup packet:
 
@@ -255,6 +312,14 @@ The reliability layer adds:
 - next-step artifacts in `templates/next-step-*.md` and `templates/user-guidance-profile.md`
 - regression candidates and tasks in `templates/regression-candidate.md` and `templates/regression-task.md`
 - typed contracts in `templates/contracts/`
+
+## Attribution Maintenance
+
+When ORCA-HVN adds a new upstream influence, wrapper, compatibility target, or redistributed component, contributors should update:
+
+- [UPSTREAM.md](UPSTREAM.md)
+- [docs/attribution-maintenance.md](docs/attribution-maintenance.md)
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) when notice handling changes
 
 ## Blind QA In Linear
 

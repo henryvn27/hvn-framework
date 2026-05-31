@@ -19,6 +19,7 @@ Thank you for improving ORCA-HVN. Contributions should make the framework cleare
 - Scripts remain portable POSIX shell unless a file explicitly targets another shell.
 - The changelog is updated for user-visible framework changes.
 - Multi-commit framework iterations use `templates/iteration-log.md` or an equivalent PR summary.
+- New upstream influences, wrappers, integrations, or redistributed third-party components are recorded in `UPSTREAM.md` and related notice files when needed.
 
 ## Development
 
@@ -36,3 +37,9 @@ For markdown-only changes:
 ```
 
 For version-control and iteration expectations, read `docs/version-control.md`.
+
+For upstream credit, provenance, and notice maintenance, read:
+
+- `docs/attribution.md`
+- `docs/provenance.md`
+- `docs/attribution-maintenance.md`

@@ -10,6 +10,12 @@ fail() {
 }
 
 for file in \
+  docs/attribution.md \
+  docs/provenance.md \
+  docs/wraps-vs-borrows.md \
+  docs/attribution-maintenance.md \
+  docs/attribution-audit.md \
+  docs/licenses.md \
   docs/observability.md \
   docs/evals.md \
   docs/approval-gates.md \
@@ -125,6 +131,8 @@ for file in \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
+  templates/upstream-entry.md \
+  templates/attribution-check.md \
   templates/idea-one-pager.md \
   templates/idea-intake.md \
   templates/idea-scorecard.md \
@@ -183,6 +191,7 @@ for file in \
   commands/orca-validate-integration.md \
   commands/orca-runtime.md \
   commands/orca-status.md \
+  commands/orca-attribution.md \
   commands/orca-idea.md \
   commands/orca-evaluate-idea.md \
   commands/orca-plan-idea.md \
@@ -217,6 +226,7 @@ for file in \
   skills/orca-receipts/SKILL.md \
   skills/orca-legacy/SKILL.md \
   skills/orca-business-ideation/SKILL.md \
+  skills/orca-attribution/SKILL.md \
   skills/orca-next-step/SKILL.md \
   skills/orca-goal-mode/SKILL.md \
   skills/orca-controller-mode/SKILL.md \
@@ -258,6 +268,10 @@ for file in \
   docs/examples/business-logic-extraction.md \
   docs/examples/legacy-to-spec.md \
   docs/examples/legacy-risk-assessment.md \
+  docs/examples/upstream-entry.md \
+  docs/examples/inspiration-vs-wrapper.md \
+  docs/examples/third-party-notice.md \
+  docs/examples/feature-provenance.md \
   docs/examples/idea-one-pager.md \
   docs/examples/idea-scorecard.md \
   docs/examples/opportunity-memo.md \
@@ -281,6 +295,10 @@ for file in \
   docs/examples/portable-goal-contract.md \
   docs/examples/schema-migration.md \
   docs/examples/artifact-mapping.md \
+  ACKNOWLEDGEMENTS.md \
+  NOTICE \
+  THIRD_PARTY_NOTICES.md \
+  UPSTREAM.md \
   HVN-STATUS.md \
   schema/README.md \
   schema/versions/v1/onboarding-summary.schema.json \

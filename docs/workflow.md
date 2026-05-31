@@ -2,6 +2,8 @@
 
 ORCA-HVN follows a staged workflow centered on a durable work item. In Linear-first mode, that work item is a Linear issue. In opt-out mode, it is the user's chosen issue, document, or tracker item.
 
+When a workflow introduces a new external upstream influence or wrapper, update the attribution records as part of the same iteration.
+
 ## Standard Sequence
 
 1. `orca-idea` or `orca-evaluate-idea`: structure or pressure-test an opportunity when the work has not yet earned a product spec.
@@ -98,6 +100,8 @@ Small changes may combine stages. A production feature touching auth, payments, 
 When a major stage completes, use [next-step guidance](next-step-guidance.md) unless the next action is already being executed or the user has opted out.
 
 If the work begins as a startup or business idea, stay on the ideation paved road until the opportunity memo and validation step are clear enough to justify `orca-spec`.
+
+If a feature materially adapts an upstream project or adds a new direct integration, update [UPSTREAM.md](../UPSTREAM.md) and the attribution docs before calling the workflow complete.
 
 If a missing integration blocks that next action, use [external tool setup](external-tool-setup.md) and [degraded mode](degraded-mode.md) before asking the user to install anything.
 
