@@ -19,6 +19,9 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - `hvn-calibrate-design`
 - `hvn-calibrate-writing`
 - `hvn-memory`
+- `hvn-memory-init`
+- `hvn-memory-read`
+- `hvn-memory-update`
 - `hvn-delta`
 - `hvn-style`
 - `hvn-linear-health`
@@ -33,6 +36,8 @@ Commands are installable prompt definitions stored in `commands/`. Each command 
 - `hvn-full-output`
 
 These commands read from and post back to Linear issues when Linear-first mode is active. In opt-out mode, they can be adapted to the chosen system of record.
+
+The memory commands are lifecycle commands, not only Linear commands. They create, read, update, compress, and sync `.hvn/memory/runs/` artifacts for any non-trivial workstream.
 
 ## Core Commands
 

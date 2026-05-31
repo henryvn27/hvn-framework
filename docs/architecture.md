@@ -14,6 +14,17 @@ Linear is the default coordination record:
 
 If a user opts out of Linear, HVN requires a declared alternative record. The architecture remains the same; the storage target changes.
 
+## Run Memory Layer
+
+Run memory is the resumption layer. It sits beside the coordination record and points to durable artifacts:
+
+- `.hvn/memory/runs/` stores active local memories.
+- `.hvn/memory/runs/archive/` stores compressed or completed runs.
+- Linear issue comments store sync summaries and links.
+- Specs, plans, PRs, QA reports, and review reports stay in their own artifacts.
+
+This separation prevents memory from becoming a transcript while still letting fresh agents resume quickly.
+
 ## Installable Layers
 
 - `HVN.md` is the master operating manual.
@@ -40,7 +51,7 @@ The defaults layer keeps behavior consistent across commands and skills. `hvn-ro
 
 Authenticity preflight produces design or writing calibration artifacts before high-visibility execution and review.
 
-## V1.1 Continuity Features
+## Continuity Features
 
 Run memory keeps issue state compact for future agents. Aesthetic profiles preserve visual and writing direction. Linear issue health checks protect agents from building from weak issues. Blind-to-briefed delta reports turn QA context differences into product insight. Regression packs preserve bugs and confusion points as reusable test scenarios.
 

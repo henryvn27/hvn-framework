@@ -46,12 +46,15 @@ The target will contain:
 - `docs/`
 - `mcp/`
 - `profiles/`
+- `memory/runs/archive/`
 
 Verify it:
 
 ```sh
 ./install/verify-install.sh --target ./.hvn
 ```
+
+Use `.hvn/memory/runs/<workstream-id>__<short-slug>.md` for local run memory when the workstream needs a continuation record.
 
 ## Global Install
 
@@ -107,7 +110,11 @@ The Henry profile is installed at `profiles/henry-van-ness.md`. To use it, inclu
 
 To use a different profile later, create another file in `profiles/` and state which profile the agent should load.
 
-## V1.1 Feature Artifacts
+## Run Memory Artifacts
+
+Installed HVN creates `.hvn/memory/runs/archive/` for local continuation records. Run memory docs live in `docs/run-memory.md`, Linear sync guidance in `docs/run-memory-linear.md`, handoff guidance in `docs/run-memory-handoffs.md`, and maintenance guidance in `docs/run-memory-maintenance.md`.
+
+## Feature Artifacts
 
 Installed HVN includes run memory, blind-to-briefed deltas, aesthetic profiles, issue health checks, and regression packs. Their templates live in `templates/`, skills in `skills/`, commands in `commands/`, and docs in `docs/`.
 

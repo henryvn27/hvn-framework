@@ -33,11 +33,12 @@ If the user does not want Linear, ask which record should hold HVN artifacts.
 
 ## Workflow
 
-1. Identify whether the user needs intake, discovery, spec, planning, build, review, QA, security, shipping, or retro.
+1. Identify whether the user needs memory, intake, discovery, spec, planning, build, review, QA, security, shipping, or retro.
 2. Confirm Linear-first or opt-out mode.
-3. Summarize the next two useful commands.
-4. Explain what artifact or issue comment each command will produce.
-5. Call out whether blind QA can still be preserved.
+3. If work is non-trivial, recommend `hvn-memory-init`, `hvn-memory-read`, or `hvn-memory-update` at the correct point.
+4. Summarize the next two useful commands.
+5. Explain what artifact or issue comment each command will produce.
+6. Call out whether blind QA can still be preserved.
 
 ## Outputs And Artifacts
 
@@ -53,4 +54,4 @@ If the user does not want Linear, ask which record should hold HVN artifacts.
 ## Related Commands And Skills
 
 - Commands: all HVN commands
-- Skills: `hvn-core`, `hvn-linear-core`
+- Skills: `hvn-core`, `hvn-linear-core`, `hvn-run-memory`

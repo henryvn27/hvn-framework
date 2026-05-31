@@ -13,7 +13,7 @@ Core defaults:
 - Preserve existing stack, conventions, and architecture unless redesign is requested.
 - High design sensitivity for frontend, product, marketing, branding, and UX work.
 - Authenticity preflight for high-visibility UI, frontend presentation, product copy, and polished writing.
-- Run memory for non-trivial Linear issues and handoffs.
+- Run memory as a first-class lifecycle artifact for non-trivial issues, handoffs, blocked work, and multi-agent runs.
 - Linear issue health checks before implementation.
 - Aesthetic profiles for taste continuity.
 - Blind-to-briefed delta reports and regression packs for QA continuity.
@@ -45,6 +45,18 @@ For non-trivial projects, features, bug fixes, research tasks, and multi-step ch
 6. Keep issue status, notes, blockers, links, and handoffs current.
 7. Include Linear project and issue identifiers in summaries.
 8. If Linear is blocked, say so and record the exact sync that should happen later.
+
+## Run Memory Defaults
+
+For every non-trivial workstream:
+
+1. Create memory with `hvn-memory-init` when none exists.
+2. Store local memory under `.hvn/memory/runs/`.
+3. Read memory with `hvn-memory-read` before non-blind work resumes.
+4. Update memory with `hvn-memory-update` after scope changes, decisions, failed attempts, blockers, review, QA, ship checks, and handoffs.
+5. Keep Linear issue comments concise and link the memory artifact when possible.
+6. Use `templates/linear-memory-sync.md` when Linear is blocked.
+7. Never provide run memory to blind first-look QA.
 
 ## Preserve Existing Work
 

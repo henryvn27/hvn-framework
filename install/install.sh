@@ -31,6 +31,8 @@ for item in HVN.md HVN.defaults.md commands skills templates docs mcp profiles; 
   cp -R "$root/$item" "$target/$item"
 done
 
+mkdir -p "$target/memory/runs/archive"
+
 cat > "$target/VERSION" <<VERSION
 0.1.0
 VERSION
@@ -40,4 +42,5 @@ printf 'Defaults: %s\n' "$target/HVN.defaults.md"
 printf 'Henry profile: %s\n' "$target/profiles/henry-van-ness.md"
 printf 'Linear setup guide: %s\n' "$target/docs/linear-setup.md"
 printf 'Linear-first guidance: %s\n' "$target/docs/linear-guidance.md"
+printf 'Run memory directory: %s\n' "$target/memory/runs"
 printf 'Opt-out mode: choose a durable system of record and map HVN gates there.\n'

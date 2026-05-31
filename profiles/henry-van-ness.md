@@ -6,12 +6,13 @@ This profile captures the shipped HVN default operating style. It is an example 
 
 - Use Linear first for non-trivial work.
 - Run issue health checks before implementation.
-- Maintain run memory for multi-step issues and handoffs.
+- Maintain run memory for multi-step issues, handoffs, failed attempts, blockers, QA findings, and ship readiness.
 - Inspect for a matching Linear project before implementation.
 - Create or reuse issues before meaningful work.
 - Keep issue comments, blockers, links, and status current.
 - Include Linear identifiers in handoffs.
 - If Linear is blocked, continue local work only when appropriate and record exact sync instructions.
+- Use `.hvn/memory/runs/` for local run memory and `.hvn/memory/runs/archive/` for completed or compressed runs.
 
 ## Skill Routing
 
@@ -54,3 +55,4 @@ This profile captures the shipped HVN default operating style. It is an example 
 - Create regression packs from meaningful QA and review findings.
 - Require evidence before done.
 - Keep release and rollback notes in the system of record.
+- Finalize or archive run memory when a workstream ships, is canceled, or moves to another owner.

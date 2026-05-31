@@ -40,7 +40,8 @@ Write ship readiness to the chosen record before marking work complete.
 4. Run final validation.
 5. Prepare release notes and rollback guidance.
 6. Identify follow-up issues.
-7. Recommend done only with evidence.
+7. Finalize, compress, or archive run memory.
+8. Recommend done only with evidence.
 
 ## Outputs And Artifacts
 
@@ -48,6 +49,7 @@ Write ship readiness to the chosen record before marking work complete.
 - `templates/linear-ship-comment.md` when Linear-first mode is active
 - Release summary
 - Final handoff with Linear project and issue identifiers when available
+- Final run memory status or archive path
 
 ## Failure Cases
 
@@ -56,5 +58,5 @@ Write ship readiness to the chosen record before marking work complete.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-linear-ship-check`, `hvn-retro`, `hvn-test-regression`
-- Skills: `hvn-ship`, `hvn-linear-release`
+- Commands: `hvn-memory-read`, `hvn-memory-update`, `hvn-linear-ship-check`, `hvn-retro`, `hvn-test-regression`
+- Skills: `hvn-ship`, `hvn-run-memory`, `hvn-linear-release`

@@ -36,14 +36,14 @@ Write the spec to `templates/spec.md` or an equivalent artifact and reference it
 ## Workflow
 
 1. Use `hvn-route` when the work is non-trivial or skill-sensitive.
-2. Check issue health and run memory.
+2. Check issue health and read or initialize run memory.
 3. Use `hvn-spec`.
 4. Define goal, users, scenarios, requirements, non-goals, acceptance criteria, and risks.
 5. Identify whether authenticity preflight and an aesthetic profile are required.
 6. Preserve existing stack and conventions unless the user requested redesign or rewrite.
 7. Separate confirmed facts from assumptions.
 8. Ask for approval when the spec changes project direction.
-9. Post or attach the spec to the work item and update run memory.
+9. Post or attach the spec to the work item and update run memory with approved scope, assumptions, and open questions.
 
 ## Outputs And Artifacts
 
@@ -57,5 +57,5 @@ Write the spec to `templates/spec.md` or an equivalent artifact and reference it
 
 ## Related Commands And Skills
 
-- Commands: `hvn-linear-plan-comment`, `hvn-plan`, `hvn-research`
-- Skills: `hvn-spec`, `hvn-linear-planner`
+- Commands: `hvn-memory-init`, `hvn-memory-read`, `hvn-memory-update`, `hvn-linear-plan-comment`, `hvn-plan`, `hvn-research`
+- Skills: `hvn-spec`, `hvn-run-memory`, `hvn-linear-planner`

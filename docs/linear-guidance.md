@@ -41,7 +41,7 @@ Agents should:
 - Route to the most specific installed skill before non-trivial execution.
 - Inspect or prepare the Linear project and issue before implementation.
 - Check issue health before build.
-- Maintain run memory for multi-step issues and handoffs.
+- Initialize, read, and update run memory for multi-step issues and handoffs.
 - Run authenticity preflight before high-visibility UI, frontend presentation, product copy, or polished writing.
 - Use aesthetic profiles when design or writing consistency matters.
 - State which HVN command or skill they are using.
@@ -49,6 +49,8 @@ Agents should:
 - Post concise comments with decisions, evidence, blockers, and next state.
 - Link specs, plans, reports, PRs, screenshots, builds, and release notes.
 - Ask clarifying questions in the issue when ambiguity changes scope.
+
+Run memory comments should stay concise. Link the memory artifact or summarize its current status instead of pasting a full transcript into Linear. If Linear access is blocked, create a local memory and Linear sync note so the next authenticated agent can post the update.
 
 Agents must not:
 

@@ -34,6 +34,13 @@
 - Add Linear issue health checks.
 - Add regression packs generated from QA and review findings.
 
+## 1.2
+
+- Promote run memory from side utility to primary lifecycle feature.
+- Add dedicated memory commands for initialization, reading, updating, Linear sync, handoff, and maintenance behavior.
+- Create canonical `.hvn/memory/runs/archive/` storage during install.
+- Expand examples for init, update, resume, Linear sync, and multi-agent handoff.
+
 ## Later
 
 - Explore signed releases.

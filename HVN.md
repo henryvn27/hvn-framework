@@ -17,7 +17,8 @@ HVN also routes work by installed skill. The default policy is most-specific-ski
 7. **Context is a tool:** context is disclosed deliberately, especially during QA.
 8. **Fresh eyes matter:** blind first-look testing is protected from hidden project knowledge.
 9. **Small gates beat big surprises:** review, design, security, and QA checks happen before release.
-10. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
+10. **Memory is maintained:** every non-trivial run keeps compact state that a fresh agent can use immediately.
+11. **Artifacts are durable:** every important decision should leave a useful written artifact or issue comment.
 
 ## Coordination Modes
 
@@ -90,21 +91,23 @@ Then use the standard lifecycle:
 1. Route the task and check Linear project or issue context.
 2. Issue enters inbox or triage.
 3. Issue health is checked before agent work.
-4. Run memory is initialized or updated.
-5. Onboard or discover agent clarifies ambiguity.
-6. Aesthetic profile is selected when design or writing matters.
-7. Spec is generated and attached or summarized back to the issue.
-8. Plan is posted to the issue.
-9. Human approves the plan when required.
-10. Build agent executes approved scope with the selected skill.
-11. Review agent comments findings, checks skill fit, and emits regression candidates.
-12. Blind QA agent runs first-look test.
-13. Context briefer creates a minimal second-pass brief.
-14. Guided QA reruns with limited context.
-15. Delta report compares blind and briefed outcomes.
-16. Security, review, and regression packs run as needed.
-17. Ship readiness checklist is posted.
-18. Issue moves to done only with evidence.
+4. Run memory is initialized when missing.
+5. Run memory is read before discovery, spec, planning, build, review, briefed QA, ship, and retro.
+6. Onboard or discover agent clarifies ambiguity and updates memory with durable findings.
+7. Aesthetic profile is selected when design or writing matters.
+8. Spec is generated and attached or summarized back to the issue, then linked from memory.
+9. Plan is posted to the issue and approval status is reflected in memory.
+10. Human approves the plan when required.
+11. Build agent executes approved scope with the selected skill and updates memory after meaningful phases.
+12. Review agent comments findings, checks skill fit, emits regression candidates, and updates memory.
+13. Blind QA agent runs first-look test without memory input.
+14. Blind QA results are saved, then summarized into memory.
+15. Context briefer creates a minimal second-pass brief.
+16. Guided QA reruns with limited context.
+17. Delta report compares blind and briefed outcomes and updates memory with product insight.
+18. Security, review, and regression packs run as needed.
+19. Ship readiness checklist is posted and memory is finalized or archived.
+20. Issue moves to done only with evidence.
 
 ## Subagent Policy
 
@@ -133,7 +136,7 @@ Run `hvn-authenticity-preflight` before high-visibility UI, frontend presentatio
 
 ## Run Memory Policy
 
-Use `hvn-run-memory` to preserve essential state between agent sessions. Update it after scope changes, phase completion, failed attempts, review, QA, blockers, and ship preparation. Do not feed run memory into blind QA.
+Use `hvn-run-memory` to preserve essential state between agent sessions. Initialize it with `hvn-memory-init`, resume from it with `hvn-memory-read`, and preserve changes with `hvn-memory-update`. Update it after scope changes, phase completion, failed attempts, review, QA, blockers, handoffs, and ship preparation. Store local memory under `.hvn/memory/runs/` and archive completed runs under `.hvn/memory/runs/archive/`. Do not feed run memory into blind QA.
 
 ## Issue Health Policy
 

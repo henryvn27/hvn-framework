@@ -40,3 +40,7 @@ Skills can be installed into agent clients that support skill directories, or re
 Use `hvn-router` before non-trivial or skill-sensitive work. It applies `HVN.defaults.md`, the active profile, Linear-first work management, preserve-stack behavior, authenticity preflight, and full-output mode when requested.
 
 For high-visibility UI and polished writing, routing triggers `hvn-authenticity-preflight`.
+
+## Run Memory Skill
+
+`hvn-run-memory` is the continuity skill. It initializes, reads, updates, corrects, compresses, and hands off run memory. Use it across onboarding, discovery, spec, planning, build, review, briefed QA, ship, and retro. Do not use it as input to blind first-look QA.

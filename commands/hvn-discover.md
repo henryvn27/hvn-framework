@@ -34,15 +34,18 @@ Write discovery notes to the selected artifact location and link or reference th
 
 1. Use `hvn-route` when the task is non-trivial.
 2. Use `hvn-discover`.
-3. Inspect structure, dependencies, scripts, tests, and relevant files.
-4. Identify ownership boundaries and existing patterns.
-5. Record stack, framework, design-system, and implementation conventions that should be preserved.
-6. Record risks, constraints, and recommended next steps.
-7. Sync findings to Linear or the opt-out record.
+3. Read run memory when it exists and the work is not blind QA.
+4. Inspect structure, dependencies, scripts, tests, and relevant files.
+5. Identify ownership boundaries and existing patterns.
+6. Record stack, framework, design-system, and implementation conventions that should be preserved.
+7. Record risks, constraints, and recommended next steps.
+8. Update run memory with durable findings that affect future agents.
+9. Sync findings to Linear or the opt-out record.
 
 ## Outputs And Artifacts
 
 - `templates/discovery-notes.md`
+- Run memory update when discovery changes scope, risk, or next steps
 - Linear discovery comment when active
 
 ## Failure Cases
@@ -52,5 +55,5 @@ Write discovery notes to the selected artifact location and link or reference th
 
 ## Related Commands And Skills
 
-- Commands: `hvn-research`, `hvn-spec`, `hvn-plan`
-- Skills: `hvn-discover`, `hvn-linear-core`
+- Commands: `hvn-memory-read`, `hvn-memory-update`, `hvn-research`, `hvn-spec`, `hvn-plan`
+- Skills: `hvn-discover`, `hvn-run-memory`, `hvn-linear-core`

@@ -1,47 +1,87 @@
 # Run Memory
 
+Memory schema: HVN-RUN-MEMORY-v1
+
 ## Identity
 
+- Run ID:
+- Product or repo:
+- Workstream slug:
 - Linear project:
 - Linear issue:
-- Repository or product:
+- Opt-out system of record:
+- Owner or agent role:
+- Created at:
+- Updated at:
 
-## Current Objective
+## Objective
 
-State the active goal in one or two sentences.
+State the current objective in one or two sentences.
 
 ## Approved Scope
 
-List what is approved and what is excluded.
+- In scope:
+- Out of scope:
+- Approval source:
 
-## Key Decisions
+## Current Status
 
-Record decisions future agents should not reopen without reason.
+Summarize the latest operational state. Include the active phase, whether work is blocked, and what changed since the previous update.
+
+## Decisions
+
+| Date | Owner | Decision | Source |
+| --- | --- | --- | --- |
+|  |  |  |  |
 
 ## Assumptions
 
-List assumptions currently being used.
+| Assumption | Confidence | Validation path |
+| --- | --- | --- |
+|  |  |  |
 
-## Known Risks
+## Blockers
 
-List product, technical, QA, release, or security risks.
-
-## Blocked Questions
-
-List questions that block progress or approval.
+| Blocker | Owner | Needed to unblock | Status |
+| --- | --- | --- | --- |
+|  |  |  |  |
 
 ## Failed Attempts
 
-Record approaches already tried and why they failed.
+| Date | Owner | Attempt | Result | Implication |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
-## Open Next Steps
+## Open Questions
 
-List the next concrete actions.
+| Question | Owner | Needed by |
+| --- | --- | --- |
+|  |  |
 
 ## Linked Artifacts
 
-Link specs, plans, PRs, screenshots, QA reports, review reports, profiles, and regression packs.
+| Artifact | Location | Notes |
+| --- | --- | --- |
+| Linear issue |  |  |
+| Spec |  |  |
+| Plan |  |  |
+| PR or diff |  |  |
+| QA report |  |  |
+| Review report |  |  |
+| Build or deploy |  |  |
 
-## Latest QA And Review Status
+## Next Steps
 
-Summarize current review, QA, regression, and ship readiness status.
+1.
+
+## Episodic Log
+
+Use timestamped additive entries when provenance matters.
+
+```text
+YYYY-MM-DDTHH:MM:SS-04:00 - Owner or role - What changed, why it matters, and the next operational implication.
+```
+
+## Compression Notes
+
+Record when old entries are summarized, archived, or superseded.

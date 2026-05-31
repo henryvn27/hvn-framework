@@ -40,6 +40,9 @@ docs/anti-generic-calibration.md
 docs/anti-ai-writing.md
 docs/anti-ai-design.md
 docs/run-memory.md
+docs/run-memory-linear.md
+docs/run-memory-handoffs.md
+docs/run-memory-maintenance.md
 docs/blind-to-briefed-delta.md
 docs/aesthetic-profiles.md
 docs/linear-issue-health.md
@@ -60,11 +63,17 @@ docs/examples/anti-generic-ui.md
 docs/examples/authenticity-ui-copy.md
 docs/examples/authenticity-blind-qa.md
 docs/examples/run-memory-session.md
+docs/examples/run-memory-init.md
+docs/examples/run-memory-update.md
+docs/examples/run-memory-resume.md
+docs/examples/run-memory-linear-sync.md
+docs/examples/run-memory-handoff.md
 docs/examples/blind-to-briefed-delta.md
 docs/examples/aesthetic-profile-usage.md
 docs/examples/linear-health-check.md
 docs/examples/regression-pack-creation.md
 mcp/linear.example.json
+examples/sample-run-memory/README.md
 profiles/henry-van-ness.md
 profiles/henry-defaults.md
 profiles/editorial.md
@@ -85,9 +94,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 32 ] || fail "expected at least 32 command definitions"
+[ "$command_count" -ge 35 ] || fail "expected at least 35 command definitions"
 [ "$skill_count" -ge 31 ] || fail "expected at least 31 skill definitions"
-[ "$template_count" -ge 26 ] || fail "expected at least 26 templates"
+[ "$template_count" -ge 27 ] || fail "expected at least 27 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"

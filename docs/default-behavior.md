@@ -11,6 +11,7 @@ Framework defaults apply unless a profile or direct user instruction overrides t
 - Preserve existing repo and product conventions.
 - Treat design-heavy work as a specialized workflow.
 - Run authenticity preflight for high-visibility UI and polished writing.
+- Keep run memory for non-trivial workstreams and handoffs.
 - Use full-output enforcement when the user asks for exhaustive output.
 - Keep review, QA, and ship evidence in the system of record.
 
@@ -48,3 +49,7 @@ If Linear is unavailable:
 2. Continue local work only when appropriate.
 3. Record the Linear project, issue, comment, state, labels, and links that should be created or updated later.
 4. Include the pending Linear sync in the final handoff.
+
+## Run Memory Default
+
+Run memory is required for non-trivial work that spans phases, agents, blockers, failed attempts, or sessions. Use `.hvn/memory/runs/` for local storage, update it after meaningful state changes, and keep it separate from specs, plans, and long-term preferences. Blind QA must not receive run memory before the blind pass.

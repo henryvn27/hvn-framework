@@ -40,6 +40,7 @@ Write the plan to the selected artifact and record approval status in the chosen
 5. Attach verification and relevant regression packs to each phase.
 6. Identify review and QA gates.
 7. Post a plan comment or artifact suitable for approval.
+8. Update run memory with approval state, first build phase, blockers, and linked plan.
 
 ## Outputs And Artifacts
 
@@ -53,5 +54,5 @@ Write the plan to the selected artifact and record approval status in the chosen
 
 ## Related Commands And Skills
 
-- Commands: `hvn-linear-plan-comment`, `hvn-build`, `hvn-review`
-- Skills: `hvn-plan`, `hvn-linear-planner`
+- Commands: `hvn-memory-read`, `hvn-memory-update`, `hvn-linear-plan-comment`, `hvn-build`, `hvn-review`
+- Skills: `hvn-plan`, `hvn-run-memory`, `hvn-linear-planner`

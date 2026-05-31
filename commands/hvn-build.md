@@ -36,7 +36,7 @@ Record implementation updates and evidence in the chosen work item or build log.
 
 1. Use `hvn-route` and follow the selected installed skill before generic build execution.
 2. Confirm Linear project and issue context or record blocked sync.
-3. Check issue health and run memory.
+3. Check issue health and read run memory with `hvn-memory-read`.
 4. Confirm approval if required.
 5. Read relevant files before editing.
 6. Run or apply authenticity preflight when UI or polished writing matters.
@@ -44,7 +44,7 @@ Record implementation updates and evidence in the chosen work item or build log.
 8. Preserve existing stack and conventions unless redesign was approved.
 9. Make scoped changes.
 10. Run verification after meaningful phases.
-11. Update the work item and run memory with evidence and remaining risks.
+11. Update the work item and run memory with evidence, failed attempts, blockers, and remaining risks.
 
 ## Outputs And Artifacts
 
@@ -61,5 +61,5 @@ Record implementation updates and evidence in the chosen work item or build log.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-linear-sync`, `hvn-review`, `hvn-test-blind`
-- Skills: `hvn-build`, `hvn-linear-executor`
+- Commands: `hvn-memory-read`, `hvn-memory-update`, `hvn-linear-sync`, `hvn-review`, `hvn-test-blind`
+- Skills: `hvn-build`, `hvn-run-memory`, `hvn-linear-executor`

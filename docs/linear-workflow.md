@@ -20,22 +20,24 @@ HVN works best when agents stay close to the source of work. In Henry's workflow
 1. Routing checks the matching Linear project or issue before execution.
 2. Issue enters inbox or triage.
 3. Issue health is checked before agent work.
-4. Run memory is initialized or updated.
-5. Onboard or discover agent clarifies ambiguity.
-6. Aesthetic profile is selected when design or writing matters.
-7. Spec is generated and attached or summarized back to the issue.
-8. Plan is posted to the issue.
-9. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
-10. Human approves the plan.
-11. Build agent executes approved scope.
-12. Review agent comments findings, checks calibration fit, and identifies regression candidates.
-13. Blind QA agent runs first-look test.
-14. Context briefer creates a minimal second-pass brief.
-15. Guided QA reruns with limited context.
-16. Delta report compares blind and briefed outcomes.
-17. Security, review, and regression packs run as needed.
-18. Ship readiness checklist is posted.
-19. Issue moves to done only with evidence.
+4. Run memory is initialized when missing.
+5. Active agents read run memory before non-blind work.
+6. Onboard or discover agent clarifies ambiguity and updates memory.
+7. Aesthetic profile is selected when design or writing matters.
+8. Spec is generated and attached or summarized back to the issue, then linked from memory.
+9. Plan is posted to the issue and approval state is recorded in memory.
+10. Calibration findings are posted for UI, design, frontend presentation, product copy, or polished writing.
+11. Human approves the plan.
+12. Build agent executes approved scope and updates memory after meaningful phases.
+13. Review agent comments findings, checks calibration fit, identifies regression candidates, and updates memory.
+14. Blind QA agent runs first-look test without memory input.
+15. Blind QA report is saved, then summarized into memory.
+16. Context briefer creates a minimal second-pass brief.
+17. Guided QA reruns with limited context.
+18. Delta report compares blind and briefed outcomes and updates memory.
+19. Security, review, and regression packs run as needed.
+20. Ship readiness checklist is posted and memory is finalized or archived.
+21. Issue moves to done only with evidence.
 
 ## Agent Update Rule
 
@@ -46,6 +48,8 @@ Every meaningful agent pass should leave a Linear comment with:
 - What evidence was produced
 - What is blocked
 - Which state should come next
+
+When run memory changes, the Linear comment should include only a concise memory summary and link to the canonical memory artifact. Use `templates/linear-memory-sync.md` when Linear access is unavailable.
 
 ## Approval Rule
 

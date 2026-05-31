@@ -38,11 +38,13 @@ Store the retrospective in the selected record or project documentation.
 2. Summarize outcomes against the spec.
 3. Record failures, surprises, and useful patterns.
 4. Create concrete follow-up actions.
-5. Sync lessons to the durable record.
+5. Finalize, compress, or archive run memory.
+6. Sync lessons to the durable record.
 
 ## Outputs And Artifacts
 
 - `templates/retrospective.md`
+- Final run memory update or archive note
 
 ## Failure Cases
 
@@ -51,5 +53,5 @@ Store the retrospective in the selected record or project documentation.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-onboard`, `hvn-plan`, `hvn-linear-sync`
-- Skills: `hvn-retro`, `hvn-linear-core`
+- Commands: `hvn-memory-update`, `hvn-onboard`, `hvn-plan`, `hvn-linear-sync`
+- Skills: `hvn-retro`, `hvn-run-memory`, `hvn-linear-core`

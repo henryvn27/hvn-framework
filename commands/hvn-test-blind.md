@@ -34,11 +34,12 @@ Write the blind report to the chosen record without exposing hidden context.
 ## Workflow
 
 1. Use `hvn-blind-qa`.
-2. Confirm no hidden spec or implementation context is included.
+2. Confirm no hidden spec, implementation context, or run memory is included.
 3. Observe the product surface.
 4. Infer the product and attempt plausible tasks.
 5. Record findings, evidence, and confidence limits.
 6. Post the report to Linear or the opt-out record.
+7. After the blind report is durable, summarize the blind findings into run memory without changing the original blind report.
 
 ## Outputs And Artifacts
 
@@ -46,6 +47,7 @@ Write the blind report to the chosen record without exposing hidden context.
 - `templates/linear-blind-qa-comment.md` when Linear-first mode is active
 - Linear issue reference in every QA output when available
 - Potential regression pack candidates
+- Post-pass run memory update
 
 ## Failure Cases
 
@@ -54,5 +56,5 @@ Write the blind report to the chosen record without exposing hidden context.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-linear-qa-report`, `hvn-test-briefed`, `hvn-test-regression`
-- Skills: `hvn-blind-qa`, `hvn-linear-qa`, `hvn-ios-sim-qa`, `hvn-web-qa`
+- Commands: `hvn-memory-update`, `hvn-linear-qa-report`, `hvn-test-briefed`, `hvn-test-regression`
+- Skills: `hvn-blind-qa`, `hvn-run-memory`, `hvn-linear-qa`, `hvn-ios-sim-qa`, `hvn-web-qa`

@@ -82,6 +82,10 @@ For Linear-first setup, read:
 - `docs/linear-agent-model.md`
 - `docs/linear-states.md`
 - `docs/linear-guidance.md`
+- `docs/run-memory.md`
+- `docs/run-memory-linear.md`
+- `docs/run-memory-handoffs.md`
+- `docs/run-memory-maintenance.md`
 
 You can also generate a local setup packet:
 
@@ -95,20 +99,22 @@ For opt-out setup, choose a system of record and map HVN issue comments to equiv
 
 1. Issue enters inbox or triage.
 2. `hvn-linear-health` checks whether the issue is ready for work.
-3. `hvn-memory` initializes or updates run memory.
-4. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity.
-5. `hvn-style` selects an aesthetic profile when taste continuity matters.
-6. `hvn-spec` creates a structured spec from issue context.
-7. `hvn-linear-plan-comment` posts the plan to the issue.
-8. Human approves the plan when required.
-9. `hvn-build` executes approved scope.
-10. `hvn-review` posts findings and regression candidates.
-11. `hvn-test-blind` runs first-look QA with minimal issue context.
-12. `hvn-context-brief` creates a bounded second-pass packet.
-13. `hvn-test-briefed` and `hvn-delta` compare blind and briefed outcomes.
-14. `hvn-regression` creates or runs regression packs.
-15. `hvn-linear-ship-check` posts ship readiness.
-16. Issue moves to done only with evidence.
+3. `hvn-memory-init` creates run memory when none exists.
+4. `hvn-memory-read` briefs the active agent from current memory.
+5. `hvn-linear-intake` or `hvn-onboard` clarifies ambiguity and updates memory.
+6. `hvn-discover` inspects constraints and records durable findings.
+7. `hvn-style` selects an aesthetic profile when taste continuity matters.
+8. `hvn-spec` creates a structured spec from issue context and links it from memory.
+9. `hvn-linear-plan-comment` posts the plan to the issue and memory records approval state.
+10. Human approves the plan when required.
+11. `hvn-build` executes approved scope and updates memory after meaningful phases.
+12. `hvn-review` posts findings and regression candidates, then updates memory.
+13. `hvn-test-blind` runs first-look QA with minimal issue context; memory is updated only after the blind report is saved.
+14. `hvn-context-brief` creates a bounded second-pass packet.
+15. `hvn-test-briefed` and `hvn-delta` compare blind and briefed outcomes.
+16. `hvn-regression` creates or runs regression packs.
+17. `hvn-linear-ship-check` posts ship readiness and finalizes memory.
+18. Issue moves to done only with evidence.
 
 Recommended state gates are documented in `docs/linear-states.md`.
 
@@ -121,6 +127,9 @@ Commands in `commands/` are installable prompt definitions. Linear-specific comm
 - `hvn-calibrate-design`
 - `hvn-calibrate-writing`
 - `hvn-memory`
+- `hvn-memory-init`
+- `hvn-memory-read`
+- `hvn-memory-update`
 - `hvn-delta`
 - `hvn-style`
 - `hvn-linear-health`
@@ -153,6 +162,10 @@ Skills in `skills/` define reusable execution behavior. Linear-specific skills i
 - `hvn-linear-release`
 
 Templates in `templates/` include both full artifacts and Linear-ready comment formats.
+
+## Run Memory
+
+Run memory is a first-class HVN lifecycle artifact. Installed projects use `.hvn/memory/runs/<workstream-id>__<short-slug>.md` as the canonical local pattern, with `.hvn/memory/runs/archive/` for completed or compressed runs. In Linear-first mode, every non-trivial memory should map to a Linear issue when possible. If Linear is blocked, use `templates/linear-memory-sync.md` to record the exact issue comment and artifact links to post later.
 
 ## Blind QA In Linear
 

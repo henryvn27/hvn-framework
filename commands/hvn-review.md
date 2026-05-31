@@ -40,7 +40,7 @@ Post or store the review report in the declared record.
 5. Identify findings that should become regression packs.
 6. Prioritize findings by severity.
 7. Recommend fixes or state that no blocking issues were found.
-8. Sync review decision and memory update to the work item.
+8. Sync review decision and memory update to the work item, including regression candidates and required fixes.
 
 ## Outputs And Artifacts
 
@@ -55,5 +55,5 @@ Post or store the review report in the declared record.
 
 ## Related Commands And Skills
 
-- Commands: `hvn-design`, `hvn-security`, `hvn-ship`
-- Skills: `hvn-review`, `hvn-linear-core`
+- Commands: `hvn-memory-read`, `hvn-memory-update`, `hvn-design`, `hvn-security`, `hvn-ship`
+- Skills: `hvn-review`, `hvn-run-memory`, `hvn-linear-core`
