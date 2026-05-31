@@ -4,6 +4,7 @@
 - Category:
 - Framework area:
 - Observed friction:
+- Observed quality signals:
 - Why this is a framework problem:
 - Session evidence:
 - Repeatable or one-off:

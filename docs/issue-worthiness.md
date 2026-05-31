@@ -14,6 +14,7 @@ An issue is usually warranted when the candidate is:
 - non-duplicate
 - clearly about the ORCA-HVN framework
 - supported by session evidence
+- reinforced by repeated or high-confidence quality signals when relevant
 
 ## Weak Candidates
 
@@ -22,6 +23,7 @@ Do not create framework issues for:
 - temporary user preference changes
 - one-off operator mistakes
 - vague dissatisfaction without a fixable target
+- one weak "felt a little AI-ish" moment with no repeatable pattern
 - already solved problems
 - already tracked items with no meaningful new evidence
 
@@ -36,3 +38,10 @@ Before prompting the user, ORCA-HVN should be able to explain:
 - what likely fix direction exists
 
 If that cannot be stated clearly, do not push for an issue yet.
+
+## How Quality Signals Affect Worthiness
+
+- repeated high-confidence frustration tied to the same framework area makes the candidate stronger
+- repeated generic-output signals with a concrete pattern can justify prompt, docs, runtime, or workflow changes
+- wrong-direction signals after correction make routing or adaptation issues more likely
+- low-confidence quality signals should usually stay internal, draft-only, or marked for recurrence watching

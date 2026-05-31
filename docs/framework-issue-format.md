@@ -10,6 +10,7 @@ Do not file vague complaints.
 - category
 - summary
 - observed friction
+- observed quality signals
 - why this is a framework problem
 - session evidence
 - desired behavior
@@ -22,6 +23,7 @@ Do not file vague complaints.
 ## Writing Rules
 
 - describe the user pain concretely
+- describe the quality failure concretely when one was observed
 - keep the target fix scoped
 - point to likely repo areas when known
 - separate evidence from speculation

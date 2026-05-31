@@ -37,7 +37,7 @@ Do not use before the work has an outcome to examine.
 4. Convert lessons into concrete follow-ups.
 5. Note any framework improvements.
 6. Post or prepare the retrospective for the durable record.
-7. If the framework-improvement note is reusable and actionable, route it through the session improvement loop.
+7. If the framework-improvement note or quality-signal evidence is reusable and actionable, route it through the session improvement loop.
 
 ## Expected Outputs
 

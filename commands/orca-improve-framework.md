@@ -19,6 +19,7 @@ Use at the end of a meaningful session, blocked session, surprising session, or 
 - Receipt or trace
 - QA report
 - Existing related issue links
+- Quality-signal notes when frustration, generic output, or wrong-direction behavior appeared
 
 ## Linear Context
 
@@ -35,26 +36,31 @@ Store the improvement artifacts locally and link them from the chosen system of 
 ## Workflow
 
 1. Run a brief session review.
-2. Capture any candidate framework improvements.
-3. Separate project-specific problems from framework problems.
-4. Check issue worthiness.
-5. Check duplicates or overlaps.
-6. If warranted, ask the user whether to skip, draft, submit, merge, or remind later.
-7. Draft the issue or backlog entry.
+2. Triage session-quality signals.
+3. Capture any candidate framework improvements.
+4. Separate project-specific problems from framework problems.
+5. Check issue worthiness.
+6. Check duplicates or overlaps.
+7. If warranted, ask the user whether to skip, draft, submit, merge, or remind later.
+8. Draft the issue or backlog entry.
 
 ## Outputs And Artifacts
 
 - `templates/session-improvement-review.md`
 - `templates/framework-improvement-note.md`
+- `templates/session-quality-signal.md`
+- `templates/session-quality-score.md`
 - `templates/issue-worthiness-check.md`
 - `templates/related-issue-note.md`
 - `templates/issue-approval-prompt.md`
+- `templates/quality-check-prompt.md`
 - `templates/hvn-framework-issue.md`
 - `templates/improvement-backlog-entry.md`
 
 ## Failure Cases
 
 - If the candidate is not reusable, keep it out of the framework issue path.
+- If the evidence is mostly low-confidence quality signals, log or watch for recurrence instead of pushing an issue.
 - If overlap exists, prefer appending evidence instead of creating a duplicate.
 - If GitHub access is unavailable, prepare a local draft instead of pretending submission happened.
 

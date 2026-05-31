@@ -23,6 +23,7 @@ ORCA-HVN may not submit the issue externally without explicit user approval.
 The prompt should be short and specific:
 
 - what the framework issue is
+- what quality signal was observed when relevant
 - why it is reusable
 - what evidence came from this session
 - what action ORCA-HVN is asking to take

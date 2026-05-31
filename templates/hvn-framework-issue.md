@@ -8,6 +8,8 @@
 
 ## Observed Friction
 
+## Observed Quality Signals
+
 ## Why This Is A Framework Problem
 
 ## Session Evidence

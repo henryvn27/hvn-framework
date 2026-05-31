@@ -9,6 +9,7 @@
 - added doc ownership and contributor doc rules
 - added visual-quality and human-voice guidance to reduce generic AI-looking output
 - added a session-end ORCA-HVN improvement loop with worthiness checks, deduping, approval prompts, and GitHub issue drafting
+- extended the improvement loop with session-quality signals, quality scoring, and rough-session prompting UX
 
 ## What To Read If You Have Been Away
 

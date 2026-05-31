@@ -26,6 +26,11 @@ body:
     validations:
       required: true
   - type: textarea
+    id: quality_signals
+    attributes:
+      label: Quality signals
+      description: Frustration, generic-output, wrong-direction, repetition, or recovery signals if relevant.
+  - type: textarea
     id: desired
     attributes:
       label: Desired behavior

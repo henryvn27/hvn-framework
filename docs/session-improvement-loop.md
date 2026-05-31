@@ -20,6 +20,7 @@ Use the loop to catch:
 - repeated manual workarounds
 - weak automation
 - host-specific friction that should change the framework
+- session-quality signals that indicate low trust, generic output, repeated wrong direction, or poor failure handling
 
 ## What It Is Not
 
@@ -50,12 +51,13 @@ Skip or stay quiet when:
 ## Loop Stages
 
 1. Brief session review
-2. Improvement candidate capture
-3. Issue-worthiness check
-4. Duplicate and overlap check
-5. Human approval prompt
-6. Draft issue or submit issue
-7. Record candidate or link in the improvement backlog
+2. Quality-signal triage
+3. Improvement candidate capture
+4. Issue-worthiness check
+5. Duplicate and overlap check
+6. Human approval prompt
+7. Draft issue or submit issue
+8. Record candidate or link in the improvement backlog
 
 ## Human Approval Rule
 
@@ -72,6 +74,8 @@ Allowed actions:
 ## Core Artifacts
 
 - [session-review.md](session-review.md)
+- [session-quality-signals.md](session-quality-signals.md)
+- [session-quality-rubric.md](session-quality-rubric.md)
 - [issue-worthiness.md](issue-worthiness.md)
 - [improvement-deduping.md](improvement-deduping.md)
 - [human-approval-for-issues.md](human-approval-for-issues.md)

@@ -1,11 +1,9 @@
-# Issue Approval Prompt
+# Quality Check Prompt
 
-This session surfaced a reusable ORCA-HVN framework issue.
+This session may have revealed a reusable ORCA-HVN quality issue.
 
-- Title:
-- Category:
-- Quality signal:
-- Why it matters:
+- Observed signal:
+- Why it may be framework-related:
 - Evidence from this session:
 - Recommended action:
 

@@ -160,6 +160,12 @@ docs/visual-quality.md
 docs/human-voice.md
 docs/token-efficiency.md
 docs/session-improvement-loop.md
+docs/session-quality-signals.md
+docs/frustration-signals.md
+docs/generic-output-signals.md
+docs/wrong-direction-signals.md
+docs/session-quality-rubric.md
+docs/quality-feedback-ux.md
 docs/improvement-categories.md
 docs/session-review.md
 docs/issue-worthiness.md
@@ -262,6 +268,11 @@ docs/examples/hermes-user-path.md
 docs/examples/gstack-user-path.md
 docs/examples/business-ideation-user-path.md
 docs/examples/background-mode-user-path.md
+docs/examples/frustration-signal-doc-gap.md
+docs/examples/generic-output-signal.md
+docs/examples/wrong-direction-signal.md
+docs/examples/low-confidence-no-issue.md
+docs/examples/high-confidence-quality-issue-approved.md
 benchmarks/onboarding-spec/README.md
 wiki/Home.md
 wiki/Getting-Started.md
@@ -320,9 +331,12 @@ templates/doc-metadata.md
 templates/doc-change-checklist.md
 templates/framework-improvement-note.md
 templates/session-improvement-review.md
+templates/session-quality-signal.md
+templates/session-quality-score.md
 templates/issue-worthiness-check.md
 templates/related-issue-note.md
 templates/issue-approval-prompt.md
+templates/quality-check-prompt.md
 templates/hvn-framework-issue.md
 templates/agent-ready-implementation.md
 templates/improvement-backlog-entry.md

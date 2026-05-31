@@ -7,6 +7,7 @@ They should create a fixable work packet for another agent or maintainer.
 ## Include
 
 - problem statement
+- quality-signal evidence when relevant
 - repo area or files likely affected
 - expected outcome
 - acceptance criteria

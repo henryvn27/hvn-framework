@@ -7,7 +7,7 @@ description: Review a completed session for reusable ORCA-HVN framework friction
 
 ## What This Skill Is
 
-A lightweight end-of-session improvement workflow that turns real session friction into actionable framework backlog work.
+A lightweight end-of-session improvement workflow that turns real session friction and session-quality signals into actionable framework backlog work.
 
 ## Trigger
 
@@ -28,22 +28,26 @@ Do not use for trivial sessions or for project-specific pain that does not belon
 - Review findings
 - QA notes
 - Existing issue references
+- Quality-signal evidence
 
 ## Exact Workflow
 
 1. Fill a brief session review.
-2. Capture candidate framework improvements only.
-3. Classify the category.
-4. Run an issue-worthiness check.
-5. Check for duplicates or close overlap.
-6. If still warranted, prepare a concise approval prompt for the user.
-7. If approved, draft a structured ORCA-HVN issue or link context to an existing one.
-8. Record the candidate in the improvement backlog when follow-up is still pending.
+2. Capture quality signals only when the evidence is observable.
+3. Capture candidate framework improvements only.
+4. Classify the category.
+5. Run an issue-worthiness check.
+6. Check for duplicates or close overlap.
+7. If still warranted, prepare a concise approval prompt for the user.
+8. If approved, draft a structured ORCA-HVN issue or link context to an existing one.
+9. Record the candidate in the improvement backlog when follow-up is still pending.
 
 ## Expected Outputs
 
 - Filled `templates/session-improvement-review.md`
 - Filled `templates/framework-improvement-note.md`
+- Optional `templates/session-quality-signal.md`
+- Optional `templates/session-quality-score.md`
 - Filled `templates/issue-worthiness-check.md`
 - Optional `templates/related-issue-note.md`
 - Optional `templates/hvn-framework-issue.md`
@@ -56,6 +60,7 @@ The loop should stay lightweight, high-signal, deduplicated, and clearly separat
 ## Common Failure Modes
 
 - treating every inconvenience as a framework issue
+- treating a vague "AI-ish" feeling as sufficient evidence on its own
 - mixing project bugs with framework gaps
 - prompting the user before checking whether the candidate is actionable
 - filing duplicates instead of merging evidence

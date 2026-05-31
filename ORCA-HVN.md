@@ -30,6 +30,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 22. **Attribution should be explicit:** wrappers, integrations, conceptual influences, and redistributed components should be named clearly and documented where users can find them.
 23. **Background autonomy needs budgets and circuit breakers:** unattended progress should be bounded, inspectable, and quick to stop when it stalls.
 24. **Real session friction should feed framework improvement:** reusable ORCA-HVN pain should become filtered, human-approved backlog work instead of being forgotten.
+25. **Quality failures need concrete evidence:** frustration, generic output, and wrong-direction behavior should inform improvement only when grounded in observable session evidence.
 
 ## Coordination Modes
 
@@ -87,6 +88,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Ship mode:** prepare ship readiness, release notes, and handoff.
 - **Retro mode:** record what changed, what failed, and how the system should improve.
 - **Session improvement mode:** review session friction, filter for real framework gaps, and prepare human-approved ORCA-HVN issue drafts or backlog entries.
+- **Session quality signal mode:** classify frustration, trust erosion, generic-output, repetition, wrong-direction, and recovery failures as evidence for the improvement loop.
 
 ## Required Artifacts
 
@@ -125,6 +127,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - Ship checklist or Linear ship comment
 - Retrospective for completed larger efforts
 - Session improvement review, worthiness check, and issue draft when the session exposed reusable framework friction
+- Session quality signal note or score when quality problems materially shaped the session
 
 ## Linear Lifecycle
 
@@ -165,6 +168,7 @@ Then use the standard lifecycle:
 22. Security and ship readiness checks finish the evidence chain.
 23. Issue moves to done only with evidence.
 24. Session improvement mode turns reusable ORCA-HVN friction into backlog-ready framework work when warranted.
+25. Quality signals strengthen the improvement loop only when they are concrete, repeatable, and useful.
 
 ## Subagent Policy
 

@@ -40,6 +40,12 @@ for file in \
   docs/human-voice.md \
   docs/token-efficiency.md \
   docs/session-improvement-loop.md \
+  docs/session-quality-signals.md \
+  docs/frustration-signals.md \
+  docs/generic-output-signals.md \
+  docs/wrong-direction-signals.md \
+  docs/session-quality-rubric.md \
+  docs/quality-feedback-ux.md \
   docs/improvement-categories.md \
   docs/session-review.md \
   docs/issue-worthiness.md \
@@ -219,9 +225,12 @@ for file in \
   templates/artifact-mapping.md \
   templates/framework-improvement-note.md \
   templates/session-improvement-review.md \
+  templates/session-quality-signal.md \
+  templates/session-quality-score.md \
   templates/issue-worthiness-check.md \
   templates/related-issue-note.md \
   templates/issue-approval-prompt.md \
+  templates/quality-check-prompt.md \
   templates/hvn-framework-issue.md \
   templates/agent-ready-implementation.md \
   templates/improvement-backlog-entry.md \
@@ -278,6 +287,11 @@ for file in \
   commands/orca-goal-status.md \
   commands/orca-goal-review.md \
   .github/ISSUE_TEMPLATE/framework-improvement.yml \
+  docs/examples/frustration-signal-doc-gap.md \
+  docs/examples/generic-output-signal.md \
+  docs/examples/wrong-direction-signal.md \
+  docs/examples/low-confidence-no-issue.md \
+  docs/examples/high-confidence-quality-issue-approved.md \
   commands/orca-delegate.md \
   commands/orca-ingest.md \
   commands/orca-validate-schema.md \

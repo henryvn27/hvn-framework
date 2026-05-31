@@ -10,6 +10,8 @@ The session improvement loop should prefer draftable, inspectable issue artifact
 4. If approved, draft the GitHub issue body
 5. Submit only when the user chose submit
 
+Quality-signal-driven candidates should follow the same approval rule. Frustration, generic output, or wrong-direction evidence may strengthen a candidate, but they do not bypass approval.
+
 ## When GitHub Access Is Unavailable
 
 If GitHub integration is unavailable:

@@ -72,6 +72,7 @@ Read:
 - briefed QA
 - design quality and human voice
 - session improvement loop
+- session quality signals
 - regression tasks
 - evals
 - benchmark packs
@@ -82,6 +83,7 @@ Read:
 - [visual-quality.md](visual-quality.md)
 - [human-voice.md](human-voice.md)
 - [session-improvement-loop.md](session-improvement-loop.md)
+- [session-quality-signals.md](session-quality-signals.md)
 - [qa-to-regression.md](qa-to-regression.md)
 - [evals.md](evals.md)
 - [benchmark-pack.md](benchmark-pack.md)

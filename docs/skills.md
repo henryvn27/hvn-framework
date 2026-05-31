@@ -52,4 +52,4 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-goal-mode` for converting bounded specs or milestones into durable goal contracts
 - `orca-next-step` for concise, adaptive phase-exit guidance
 - `orca-delegation` for bounded controller-to-executor briefs and structured returns
-- `orca-session-improvement` for turning real session friction into deduplicated, human-approved framework backlog work
+- `orca-session-improvement` for turning real session friction and quality-signal evidence into deduplicated, human-approved framework backlog work

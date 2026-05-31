@@ -34,6 +34,7 @@ ORCA-HVN is not only a prompt or command pack. It combines:
 - blind QA, briefed QA, and regression capture
 - paved-road workflows for common use cases
 - a session-end improvement loop that turns real friction into framework backlog work
+- quality-signal detection for frustration, generic output, wrong-direction behavior, and poor recovery
 
 ## Start Here
 
