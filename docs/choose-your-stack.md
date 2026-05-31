@@ -1,6 +1,8 @@
 # Choose Your Stack
 
-ORCA-HVN should bias toward one good default path per use case.
+ORCA-HVN should bias toward one good default path per use case, but only when the use case is clear enough.
+
+If the use case is weakly specified, stay neutral or ask one concise clarifying question.
 
 ## I Am Building A Web SaaS
 
@@ -12,6 +14,7 @@ Start with:
 Default:
 
 - Next.js + Vercel + Supabase + Stripe + Resend + PostHog + Sentry
+Confidence: strong default when the user clearly fits a web SaaS profile.
 
 ## I Am Building A Mobile App Fast
 
@@ -23,6 +26,7 @@ Start with:
 Default:
 
 - Expo + React Native + Expo EAS + Supabase or Firebase + RevenueCat + OneSignal + Sentry
+Confidence: strong default when the user clearly fits a mobile-app-fast profile.
 
 ## I Need Auth + Billing + Analytics
 
@@ -43,3 +47,4 @@ Mobile default:
 Default:
 
 - Next.js + Railway + Postgres + Clerk + GitHub + Linear
+Confidence: good fit when the user clearly fits an internal-tool workflow.

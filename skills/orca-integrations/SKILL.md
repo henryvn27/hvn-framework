@@ -30,10 +30,11 @@ Do not use for random logo-list browsing with no workflow value.
 ## Exact Workflow
 
 1. Identify the product context: web, mobile, internal tool, SaaS, or AI product.
-2. Route to the relevant stack guide or integration pack.
-3. Surface platform-specific caveats, especially around auth, notifications, and payments.
-4. Recommend the shortest useful paved-road bundle.
-5. Hand off to setup or validation when appropriate.
+2. Detect whether the user wants stack recommendation or setup help for a chosen tool.
+3. Route to the relevant stack guide or integration pack.
+4. Surface platform-specific caveats, especially around auth, notifications, and payments.
+5. Recommend only strong-fit paved-road bundles.
+6. Hand off to setup or validation when appropriate.
 
 ## Expected Outputs
 
@@ -43,4 +44,4 @@ Do not use for random logo-list browsing with no workflow value.
 
 ## Quality Bar
 
-Guidance should be opinionated, structured, platform-aware, and practical. Do not flatten web and mobile into the same advice.
+Guidance should be opinionated, structured, platform-aware, practical, and restrained. Do not flatten web and mobile into the same advice or recommend tools just because they are supported.

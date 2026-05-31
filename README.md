@@ -31,6 +31,7 @@ ORCA-HVN is not only a prompt or command pack. It combines:
 - controller and executor integration
 - host-aware runtime adaptation and compatibility guidance
 - integration packs for modern web, mobile, backend, auth, billing, analytics, automation, and business stacks
+- restrained recommendation rules so supported tools are not automatically pushed as defaults
 - checkpoints, approvals, receipts, lineage, replay, and restore
 - blind QA, briefed QA, and regression capture
 - paved-road workflows for common use cases

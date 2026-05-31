@@ -11,6 +11,8 @@ This is not a logo wall. An integration only counts when ORCA-HVN can describe:
 - what can go wrong
 - what fallback exists
 
+Support is broader than recommendation. Recommendation should stay narrower and fit-based.
+
 ## What An Integration Is
 
 An ORCA-HVN integration is a reviewed support layer for a platform, service, SDK, or workflow dependency.
@@ -33,6 +35,8 @@ ORCA-HVN may support an integration through:
 - runtime-aware workflow recommendations
 - paved-road bundle recommendations
 - host-specific fallback guidance
+
+That does not mean ORCA-HVN should recommend the tool by default. See [integration-recommendation-policy.md](integration-recommendation-policy.md).
 
 Not every integration gets the same depth on day one.
 
@@ -70,5 +74,7 @@ Start with:
 - [web-stack-guide.md](web-stack-guide.md)
 - [mobile-stack-guide.md](mobile-stack-guide.md)
 - [saas-stack-guide.md](saas-stack-guide.md)
+
+If the user already chose a tool, switch to setup-help mode instead of re-recommending the stack.
 
 Then open the relevant pack in [../integrations/README.md](../integrations/README.md).

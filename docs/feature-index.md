@@ -42,6 +42,7 @@ Read:
 - host guides
 - token efficiency
 - integration packs and stack routing
+- restrained recommendation policy
 
 Read:
 
@@ -51,6 +52,7 @@ Read:
 - [hosts/codex-cli.md](hosts/codex-cli.md)
 - [token-efficiency.md](token-efficiency.md)
 - [integrations-overview.md](integrations-overview.md)
+- [integration-recommendation-policy.md](integration-recommendation-policy.md)
 
 ## Inspection And Safety
 

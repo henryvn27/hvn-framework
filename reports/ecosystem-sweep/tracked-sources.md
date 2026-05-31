@@ -150,6 +150,8 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - EAS build and update workflow changes
 - native mobile subscription guidance versus web billing guidance
 - auth, analytics, monitoring, and push defaults that affect ORCA-HVN stack recommendations
+- evidence that a current default is losing best-fit status for a common use case
+- evidence that a supported tool should remain setup-only rather than recommended
 
 ## Harness Update Questions
 
@@ -223,6 +225,15 @@ For material stack and integration shifts, answer:
 - Is the change tier 1, tier 2, or watchlist relevance?
 - Does it require pack updates, new diagnostics, or paved-road changes?
 - Does it clarify a platform boundary, especially around mobile billing, push, auth, build, or OTA updates?
+
+## Recommendation Policy Questions
+
+For material recommendation shifts, answer:
+
+- Does the evidence support recommendation or only support?
+- Which use case does the fit apply to?
+- Should ORCA-HVN change a strong default to good fit, possible fit, or neutral support?
+- Is the signal about real fit or just market popularity?
 
 ## Source Quality Rules
 

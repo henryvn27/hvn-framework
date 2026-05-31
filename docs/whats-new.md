@@ -14,6 +14,7 @@ This page helps returning users rediscover what changed without reading every fi
 - session-end framework improvement loop with issue drafting and backlog filtering
 - session-quality signals and lightweight quality scoring for frustration, generic output, and wrong-direction detection
 - broad startup-stack integration packs with first-class Expo and React Native guidance
+- context-sensitive integration recommendations that separate support from recommendation
 
 ## Best Pages To Revisit
 

@@ -13,6 +13,7 @@ This is the maintainer-facing short list of actionable ecosystem findings. Keep 
 - `Adopt now` items must link a draft issue or explain why issue creation was blocked.
 - repeated session-improvement candidates can be promoted here when the same low-grade friction becomes a framework maintenance priority
 - integration-stack drift, better default bundles, and broken setup guidance should also be tracked here
+- recommendation-fit changes should only promote a tool when a major use case fit clearly improved
 
 ## Opportunity Fields
 

@@ -17,7 +17,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 ## Core Skill Groups
 
 - Core governance: `orca-core`
-- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`, `orca-business-ideation`, `orca-attribution`, `orca-background-mode`, `orca-docs-system`, `orca-integrations`
+- Intake and discovery: `orca-onboard`, `orca-discover`, `orca-legacy`, `orca-research`, `orca-controller-mode`, `orca-business-ideation`, `orca-attribution`, `orca-background-mode`, `orca-docs-system`, `orca-integrations`, `orca-integration-recommendation`
 - Delivery: `orca-spec`, `orca-plan`, `orca-goal-mode`, `orca-build`
 - Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`, `orca-delegation`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
@@ -54,3 +54,4 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-delegation` for bounded controller-to-executor briefs and structured returns
 - `orca-session-improvement` for turning real session friction and quality-signal evidence into deduplicated, human-approved framework backlog work
 - `orca-integrations` for routing modern startup stacks across web, mobile, auth, payments, analytics, automation, and business systems
+- `orca-integration-recommendation` for restrained, best-fit stack recommendations and respectful setup-only support for user-chosen tools

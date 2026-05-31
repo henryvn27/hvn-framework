@@ -32,6 +32,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 24. **Real session friction should feed framework improvement:** reusable ORCA-HVN pain should become filtered, human-approved backlog work instead of being forgotten.
 25. **Quality failures need concrete evidence:** frustration, generic output, and wrong-direction behavior should inform improvement only when grounded in observable session evidence.
 26. **Modern stacks need explicit integration guidance:** web, mobile, backend, auth, payments, analytics, automation, and business tools should be routed through reviewed integration packs rather than ad hoc guesses.
+27. **Recommendation should be narrower than support:** ORCA-HVN should recommend tools only when the use case strongly fits and otherwise stay neutral or help with the user's chosen path.
 
 ## Coordination Modes
 
@@ -61,6 +62,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Research mode:** gather evidence when the answer is not already known.
 - **Setup mode:** identify, configure, validate, or fall back from required external tools.
 - **Integration mode:** choose the right product stack, integration pack, setup path, and validation flow for the target platform.
+- **Recommendation mode:** recommend a best-fit stack only when the use-case signal is strong enough to justify it.
 - **Runtime adaptation mode:** detect the harness, apply capability profiles, and choose safe routes and fallbacks.
 - **Controller mode:** orient a project-level controller agent and decide direct execution versus delegation.
 - **Specification mode:** convert issue context into acceptance criteria and non-goals.

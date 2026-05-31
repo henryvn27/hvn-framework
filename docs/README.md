@@ -52,6 +52,7 @@ These are teaching-oriented pages for common paths:
 - [human-voice.md](human-voice.md)
 - [token-efficiency.md](token-efficiency.md)
 - [integrations-overview.md](integrations-overview.md)
+- [integration-recommendation-policy.md](integration-recommendation-policy.md)
 - [choose-your-stack.md](choose-your-stack.md)
 - [session-improvement-loop.md](session-improvement-loop.md)
 - [session-quality-signals.md](session-quality-signals.md)

@@ -76,11 +76,17 @@ for file in \
   docs/external-tool-setup.md \
   docs/integrations-overview.md \
   docs/integration-categories.md \
+  docs/integration-recommendation-policy.md \
+  docs/integration-use-case-detection.md \
   docs/mobile-vs-web-integrations.md \
   docs/integration-use-case-map.md \
   docs/mobile-stack-guide.md \
+  docs/recommend-vs-setup.md \
+  docs/recommendation-confidence.md \
   docs/web-stack-guide.md \
   docs/saas-stack-guide.md \
+  docs/tool-choice-overrides.md \
+  docs/tool-fit-rules.md \
   docs/integration-validation.md \
   docs/integration-diagnostics.md \
   docs/integration-priorities.md \
@@ -182,6 +188,9 @@ for file in \
   templates/tool-requirements.md \
   templates/integration-pack.md \
   templates/integration-checklist.md \
+  templates/use-case-profile.md \
+  templates/tool-fit-entry.md \
+  templates/recommendation-confidence.md \
   templates/integration-validation.md \
   templates/integration-status.md \
   templates/integration-health-report.md \
@@ -238,6 +247,13 @@ for file in \
   templates/result-ingestion.md \
   templates/controller-executor-profile.md \
   templates/schema-migration-note.md \
+  commands/orca-recommend-stack.md \
+  skills/orca-integration-recommendation/SKILL.md \
+  docs/examples/recommend-web-saas-stack.md \
+  docs/examples/recommend-mobile-stack.md \
+  docs/examples/setup-user-chosen-tool.md \
+  docs/examples/no-recommendation-insufficient-signal.md \
+  docs/examples/revenuecat-vs-stripe.md \
   templates/artifact-mapping.md \
   templates/framework-improvement-note.md \
   templates/session-improvement-review.md \

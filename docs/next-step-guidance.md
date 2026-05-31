@@ -88,3 +88,4 @@ If the recommended next step depends on a missing external tool, the guidance sh
 - the available fallback
 
 Use `orca-check-setup` or `orca-setup` instead of leaving the user at a dead end.
+When next-step guidance mentions integrations, it should mention only the ones relevant to the current workflow and current confidence. Do not emit vendor-catalog suggestions.

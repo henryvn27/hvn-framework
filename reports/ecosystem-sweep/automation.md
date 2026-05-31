@@ -18,6 +18,10 @@ Secondary research question:
 
 > What new provider or host patterns reduce wasted tokens, retries, or context mass without harming output quality?
 
+Tertiary research question:
+
+> Which tools still deserve default recommendation for a specific ORCA-HVN use case, and which should move to neutral support only?
+
 ## Inputs
 
 - `reports/ecosystem-sweep/tracked-sources.md`
@@ -39,6 +43,12 @@ Secondary research question:
 - `docs/visual-quality.md`
 - `docs/human-voice.md`
 - `docs/token-efficiency.md`
+- `docs/integration-recommendation-policy.md`
+- `docs/integration-use-case-detection.md`
+- `docs/tool-fit-rules.md`
+- `docs/recommend-vs-setup.md`
+- `docs/recommendation-confidence.md`
+- `docs/tool-choice-overrides.md`
 - `docs/integration-priorities.md`
 - `docs/choose-your-stack.md`
 - `docs/web-stack-guide.md`
@@ -62,6 +72,12 @@ Secondary research question:
 - `docs/visual-quality.md`
 - `docs/human-voice.md`
 - `docs/token-efficiency.md`
+- `docs/integration-recommendation-policy.md`
+- `docs/integration-use-case-detection.md`
+- `docs/tool-fit-rules.md`
+- `docs/recommend-vs-setup.md`
+- `docs/recommendation-confidence.md`
+- `docs/tool-choice-overrides.md`
 - `docs/integration-priorities.md`
 - `docs/choose-your-stack.md`
 - `docs/web-stack-guide.md`
@@ -209,6 +225,8 @@ Every sweep should actively look for workflow-enabling execution features:
 - host-level token visibility or usage reporting ORCA-HVN can expose honestly
 - startup-stack shifts around Next.js, Vercel, Supabase, Expo, React Native, EAS, Stripe, RevenueCat, PostHog, Sentry, and related tier 1 integrations
 - breaking or simplifying changes in mobile build, OTA update, native subscription, auth, or push-notification paths
+- evidence that a default recommendation is no longer best-fit for a major use case
+- evidence that a supported tool should stay neutral instead of recommended
 
 ## Harness Compatibility Audit Phase
 
@@ -301,6 +319,12 @@ For startup-stack integration findings, also answer:
 - Is the change web-specific, mobile-specific, or broadly shared?
 - Should ORCA-HVN update an integration pack, stack guide, validation rule, or paved road?
 - Does the change introduce a new failure mode, setup shortcut, or better default?
+
+For recommendation-policy findings, also answer:
+
+- Does this tool still deserve recommendation for the specific use case?
+- Is the evidence about fit, or only about popularity?
+- Should ORCA-HVN recommend it, downgrade it to neutral support, or only help when user-chosen?
 
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended ORCA-HVN action.
 

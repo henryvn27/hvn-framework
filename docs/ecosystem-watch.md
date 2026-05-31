@@ -22,6 +22,7 @@ Every sweep should explicitly watch:
 - run inspection and inspector features
 - workflow metrics and cost tracking
 - modern startup stack defaults across web, mobile, auth, billing, analytics, and monitoring
+- whether current defaults still look like best-fit recommendations rather than popularity-driven suggestions
 - approval and human-in-the-loop patterns
 - tool governance and MCP review
 - GitHub integration setup paths

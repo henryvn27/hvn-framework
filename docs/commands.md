@@ -44,6 +44,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-validate-integration`
 - `orca-runtime`
 - `orca-integration`
+- `orca-recommend-stack`
 - `orca-setup-integration`
 - `orca-status`
 - `orca-controller`
@@ -99,6 +100,7 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just the product artifact.
 Use `orca-improve-framework` at the end of meaningful sessions when reusable ORCA-HVN friction or strong session-quality signals may deserve a framework issue or backlog entry.
 Use `orca-integration` when the user needs stack routing, integration selection, or platform-aware tool guidance.
+Use `orca-recommend-stack` when the user wants a best-fit stack recommendation and the use case is clear enough to justify one.
 Use `orca-setup-integration` when the user chose a stack component and now needs the shortest safe setup path.
 Use `orca-docs` when a user needs a docs entry point, a doc refresh plan, or a docs routing answer after the framework surface changes.
 Use `orca-background` when unattended progress needs an explicit contract before the run starts.

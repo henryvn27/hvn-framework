@@ -2,6 +2,8 @@
 
 Use this page when you know the product shape but not the stack.
 
+Do not treat every listed default as an automatic suggestion. These are best-fit defaults when the use case is actually matched.
+
 ## Web SaaS
 
 Default bias:

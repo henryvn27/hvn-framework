@@ -23,6 +23,8 @@ Paved roads should recommend bundles, not unrelated tools:
 - mobile road favors build, store, subscription, push, and crash workflows that fit native app constraints
 - internal-tool road favors simpler hosting, database, auth, and work-management integration
 
+Do not recommend a paved road unless the user's use case actually matches it strongly.
+
 ## Leaving The Road
 
 Leave the paved road when:
