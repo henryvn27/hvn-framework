@@ -15,6 +15,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [intro.md](intro.md): the core mental model and why ORCA exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
+- [corpus-overview.md](corpus-overview.md): optional persistent corpus and reusable vault support
 - [adaptive-learning.md](adaptive-learning.md): lightweight learning help that adapts to the user
 - [self-improvement.md](self-improvement.md): the controlled local-vs-framework learning model
 - [agent-orchestration.md](agent-orchestration.md): harness-agnostic parent and subagent orchestration
@@ -35,6 +36,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [friction-reduction-principle.md](friction-reduction-principle.md): the framework-wide rule for what should surface
 - [framework-principles.md](framework-principles.md): the small set of rules ORCA should follow everywhere
 - [escalation-policy.md](escalation-policy.md): when ORCA should keep working vs ask the user to decide
+- [corpus-precedence.md](corpus-precedence.md): how global and project corpus settings resolve conflicts
 
 ## Guides
 
@@ -59,6 +61,9 @@ These are teaching-oriented pages for common paths:
 - [auto-updates.md](auto-updates.md)
 - [compatibility-matrix.md](compatibility-matrix.md)
 - [linear-workflow.md](linear-workflow.md)
+- [corpus-settings.md](corpus-settings.md)
+- [corpus-writeback.md](corpus-writeback.md)
+- [corpus-privacy.md](corpus-privacy.md)
 
 ## Contributor And Maintenance Docs
 
