@@ -2,6 +2,8 @@
 
 Use this page when you know what you want to do but not which command matches it.
 
+If you are new, start with [first-workflow.md](first-workflow.md) before using this page as a catalog.
+
 ## Start Or Clarify Work
 
 - `orca-onboard`: clarify a work item

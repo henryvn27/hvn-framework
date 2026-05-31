@@ -77,6 +77,8 @@ docs/tool-fit-rules.md
 docs/integration-validation.md
 docs/integration-diagnostics.md
 docs/integration-priorities.md
+docs/notebooklm-integration-modes.md
+docs/notebooklm-validation.md
 docs/setup-validation.md
 docs/degraded-mode.md
 docs/setup-ux.md
@@ -144,11 +146,12 @@ docs/hosts/claude-code.md
 docs/hosts/hermes-agent.md
 docs/hosts/vscode.md
 docs/hosts/generic.md
-docs/guides/using-hvn-with-gstack.md
+docs/guides/from-gstack-or-gsd-to-orca-hvn.md
 docs/guides/using-hvn-with-hermes.md
 docs/guides/goal-mode-guide.md
 docs/guides/background-mode-guide.md
 docs/guides/business-ideation-guide.md
+docs/guides/notebooklm-guide.md
 docs/guides/paved-roads-guide.md
 docs/guides/runtime-adaptation-guide.md
 docs/guides/expo-guide.md
@@ -166,6 +169,7 @@ docs/spec-driven-workflow.md
 docs/README.md
 docs/information-architecture.md
 docs/start-here.md
+docs/first-workflow.md
 docs/quickstart.md
 docs/intro.md
 docs/feature-index.md
@@ -283,7 +287,7 @@ docs/examples/schema-migration.md
 docs/examples/artifact-mapping.md
 docs/examples/new-user-path.md
 docs/examples/hermes-user-path.md
-docs/examples/gstack-user-path.md
+docs/examples/from-gstack-or-gsd.md
 docs/examples/business-ideation-user-path.md
 docs/examples/background-mode-user-path.md
 docs/examples/frustration-signal-doc-gap.md
@@ -305,6 +309,12 @@ docs/examples/recommend-mobile-stack.md
 docs/examples/setup-user-chosen-tool.md
 docs/examples/no-recommendation-insufficient-signal.md
 docs/examples/revenuecat-vs-stripe.md
+docs/examples/notebooklm-research-flow.md
+docs/examples/notebooklm-user-chosen-setup.md
+docs/examples/notebooklm-enterprise-path.md
+docs/examples/notebooklm-mcp-path.md
+docs/examples/notebooklm-for-idea-research.md
+docs/examples/notebooklm-for-project-knowledge.md
 benchmarks/onboarding-spec/README.md
 wiki/Home.md
 wiki/Getting-Started.md
@@ -354,6 +364,7 @@ reports/compatibility/2026-05-30.md
 mcp/linear.example.json
 HVN-STATUS.md
 integrations/README.md
+integrations/notebooklm.md
 commands/orca-docs.md
 commands/orca-integration.md
 commands/orca-recommend-stack.md
@@ -373,6 +384,8 @@ templates/use-case-profile.md
 templates/tool-fit-entry.md
 templates/recommendation-confidence.md
 templates/integration-validation.md
+templates/notebooklm-setup-checklist.md
+templates/notebooklm-usage-pattern.md
 templates/framework-improvement-note.md
 templates/session-improvement-review.md
 templates/session-quality-signal.md

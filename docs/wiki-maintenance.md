@@ -14,6 +14,7 @@ The wiki is a summary and routing layer, not a second full copy of the docs tree
 - a new major feature bucket is added
 - a new default user path appears
 - a new host or integration meaningfully changes onboarding
+- a knowledge-layer integration such as NotebookLM becomes a practical optional path for research or documentation workflows
 - README or `docs/start-here.md` changes enough that the wiki homepage would now mislead readers
 
 ## Refresh Targets
@@ -27,4 +28,3 @@ The wiki is a summary and routing layer, not a second full copy of the docs tree
 - `wiki/Automation.md`
 - `wiki/Examples.md`
 - `wiki/FAQ.md`
-

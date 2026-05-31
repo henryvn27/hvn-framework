@@ -17,6 +17,7 @@ Use idea research to:
 - [templates/market-research-brief.md](../templates/market-research-brief.md)
 - [templates/competitor-scan.md](../templates/competitor-scan.md)
 - [templates/customer-problem-research.md](../templates/customer-problem-research.md)
+- [templates/notebooklm-usage-pattern.md](../templates/notebooklm-usage-pattern.md) when the user wants a NotebookLM-backed research notebook
 
 ## Research Rules
 
@@ -43,3 +44,5 @@ The research phase should end by naming:
 - what remains unclear
 - what matters most
 - what experiment should run next
+
+NotebookLM can be a strong optional fit when the research corpus is document-heavy and the user wants a notebook-centered synthesis layer. Keep it optional and caveat-aware.

@@ -50,3 +50,5 @@ Orientation does not replace:
 - approvals
 
 It is the entry summary that points to them.
+
+Optional knowledge surfaces such as NotebookLM can support orientation for research-heavy projects, but they do not replace the ORCA-HVN orientation artifact or the canonical project state.

@@ -13,6 +13,8 @@ This wiki is the summary and routing layer for ORCA-HVN.
 
 ORCA-HVN is a framework for running agent-assisted software work with durable workflow structure, artifact tracking, host-aware routing, and QA discipline.
 
+It is the primary workflow now, not a companion to GStack or GSD.
+
 ## Best Entry Points
 
 - new visitor: [Getting-Started.md](Getting-Started.md)

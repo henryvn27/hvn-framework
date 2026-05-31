@@ -49,6 +49,8 @@ Tertiary research question:
 - `docs/recommend-vs-setup.md`
 - `docs/recommendation-confidence.md`
 - `docs/tool-choice-overrides.md`
+- `docs/notebooklm-integration-modes.md`
+- `docs/notebooklm-validation.md`
 - `docs/integration-priorities.md`
 - `docs/choose-your-stack.md`
 - `docs/web-stack-guide.md`
@@ -78,6 +80,8 @@ Tertiary research question:
 - `docs/recommend-vs-setup.md`
 - `docs/recommendation-confidence.md`
 - `docs/tool-choice-overrides.md`
+- `docs/notebooklm-integration-modes.md`
+- `docs/notebooklm-validation.md`
 - `docs/integration-priorities.md`
 - `docs/choose-your-stack.md`
 - `docs/web-stack-guide.md`
@@ -213,6 +217,8 @@ Every sweep should actively look for workflow-enabling execution features:
 - auth and permission pattern changes
 - easier setup paths ORCA-HVN could recommend
 - broken or deprecated setup paths ORCA-HVN should stop recommending
+- official NotebookLM Enterprise API changes
+- community NotebookLM MCP or browser-automation shifts
 - harness-level compatibility shifts across Codex, Claude Code, Hermes Agent, OpenCode, Cursor, GitHub Copilot, and other tracked hosts
 - capability parity gaps that matter to ORCA-HVN workflows
 - documentation drift signals caused by new features, commands, host changes, or setup-path changes
@@ -290,6 +296,7 @@ For setup-path findings, also answer:
 - Does the change improve the default setup path?
 - Does the change break or deprecate an existing recommendation?
 - Is the setup path host-specific or broadly portable?
+- If NotebookLM is involved, is the finding about the official enterprise path or a community path?
 
 For compatibility findings, also answer:
 

@@ -5,6 +5,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 ## Start Here
 
 - [start-here.md](start-here.md): the best first page for most readers
+- [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
 - [intro.md](intro.md): the core mental model and why ORCA-HVN exists
 - [choose-your-path.md](choose-your-path.md): route by use case instead of by file name
@@ -22,7 +23,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 
 These are teaching-oriented pages for common paths:
 
-- [guides/using-hvn-with-gstack.md](guides/using-hvn-with-gstack.md)
+- [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
 - [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
 - [guides/goal-mode-guide.md](guides/goal-mode-guide.md)
 - [guides/background-mode-guide.md](guides/background-mode-guide.md)

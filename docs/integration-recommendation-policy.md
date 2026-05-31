@@ -26,6 +26,17 @@ Switch to setup-help mode when:
 - the user asked to configure or validate a specific integration
 - the tool is not ORCA-HVN's top default, but it is still compatible with the user's goal
 
+## NotebookLM Rule
+
+NotebookLM should generally be:
+
+- recommended only when the workflow is clearly knowledge-heavy, research-heavy, or notebook-oriented
+- supported when the user explicitly asks for it
+- supported when the user already uses it
+- kept out of generic stack guidance when the fit is weak or unclear
+
+Do not treat NotebookLM like a default app-stack integration.
+
 ## Recommendation Priorities
 
 1. detect the use case

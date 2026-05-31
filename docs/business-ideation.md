@@ -68,3 +68,5 @@ Business ideation extends ORCA-HVN upstream:
 - `orca-validate-idea` chooses the next experiment
 - `orca-plan-idea` writes the opportunity memo and execution bridge
 - `orca-spec` begins only after the opportunity and first validation path are clear enough
+
+NotebookLM can be a useful optional support layer here when the user wants a research notebook for competitor, market, or evidence synthesis. It should help compress source material, not replace judgment or direct validation.

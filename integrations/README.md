@@ -42,6 +42,10 @@ Each pack should answer:
 - [playwright.md](playwright.md)
 - [github-actions.md](github-actions.md)
 
+### Knowledge And Research
+
+- [notebooklm.md](notebooklm.md)
+
 ## Related Docs
 
 - [../docs/integrations-overview.md](../docs/integrations-overview.md)

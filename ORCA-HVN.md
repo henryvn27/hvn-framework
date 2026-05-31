@@ -4,6 +4,8 @@ ORCA-HVN is the master operating policy for rigorous agentic software developmen
 
 ORCA-HVN is Linear-first by default. Linear is the preferred system of record for issue intake, scope clarification, status transitions, agent handoffs, implementation plans, QA runs, review findings, ship readiness, and retrospectives. If the user opts out of Linear, ORCA-HVN maps the same gates and artifacts to the user's chosen system of record.
 
+ORCA-HVN should be treated as the primary workflow, not as an add-on beside GStack or GSD. Those earlier systems helped shape some of the ideas behind this project, but the operating model in this repository is now fully ORCA-centered.
+
 ## Principles
 
 1. **System of record first:** every meaningful action should be recoverable from Linear or the declared opt-out record.
