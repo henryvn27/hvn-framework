@@ -35,6 +35,14 @@ for file in \
   docs/setup-validation.md \
   docs/degraded-mode.md \
   docs/setup-ux.md \
+  docs/runtime-adaptation.md \
+  docs/harness-capability-profiles.md \
+  docs/harness-detection.md \
+  docs/feature-routing.md \
+  docs/runtime-flags.md \
+  docs/runtime-fallbacks.md \
+  docs/runtime-degraded-mode.md \
+  docs/runtime-status.md \
   docs/integrations/github.md \
   docs/integrations/linear.md \
   docs/legacy-modernization.md \
@@ -83,6 +91,11 @@ for file in \
   templates/linear-setup-checklist.md \
   templates/setup-guidance-quick.md \
   templates/setup-guidance-guided.md \
+  templates/harness-capability-profile.md \
+  templates/runtime-detection-report.md \
+  templates/runtime-route.md \
+  templates/runtime-policy.md \
+  templates/runtime-status.md \
   templates/legacy-audit.md \
   templates/legacy-risk-report.md \
   templates/modernization-spec.md \
@@ -120,6 +133,8 @@ for file in \
   commands/hvn-setup.md \
   commands/hvn-check-setup.md \
   commands/hvn-validate-integration.md \
+  commands/hvn-runtime.md \
+  commands/hvn-status.md \
   commands/hvn-legacy.md \
   commands/hvn-next.md \
   commands/hvn-goal.md \
@@ -136,6 +151,7 @@ for file in \
   skills/hvn-checkpoint/SKILL.md \
   skills/hvn-tool-governance/SKILL.md \
   skills/hvn-tool-setup/SKILL.md \
+  skills/hvn-runtime-adaptation/SKILL.md \
   skills/hvn-legacy/SKILL.md \
   skills/hvn-next-step/SKILL.md \
   skills/hvn-goal-mode/SKILL.md \
@@ -161,6 +177,11 @@ for file in \
   docs/examples/setup-fallback-manual.md \
   docs/examples/integration-health-check.md \
   docs/examples/optional-tool-not-required.md \
+  docs/examples/runtime-codex-goal.md \
+  docs/examples/runtime-claude-manual-fallback.md \
+  docs/examples/runtime-no-linear.md \
+  docs/examples/runtime-unknown-harness.md \
+  docs/examples/runtime-strict-compatibility.md \
   docs/examples/legacy-repo-audit.md \
   docs/examples/legacy-modernization-plan.md \
   docs/examples/business-logic-extraction.md \
@@ -179,6 +200,14 @@ for file in \
   docs/examples/bad-goal-vs-good-goal.md \
   registry/tools/README.md \
   registry/mcp-servers/README.md \
+  registry/harnesses/README.md \
+  registry/harnesses/codex.md \
+  registry/harnesses/claude-code.md \
+  registry/harnesses/hermes-agent.md \
+  registry/harnesses/opencode.md \
+  registry/harnesses/cursor.md \
+  registry/harnesses/github-copilot.md \
+  registry/harnesses/generic.md \
   reports/ecosystem-sweep/automation.md \
   reports/ecosystem-sweep/tracked-sources.md \
   reports/ecosystem-sweep/latest.md \

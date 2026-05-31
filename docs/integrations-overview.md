@@ -29,3 +29,5 @@ HVN starts with setup support for GitHub and Linear. More services can be added 
 ## Harness Rule
 
 Do not assume a setup path from one host works in another. Document uncertainty, validate locally, and offer a fallback before blocking progress.
+
+Runtime adaptation should consume reviewed compatibility knowledge before promoting a setup path as the default.

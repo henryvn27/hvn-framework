@@ -41,6 +41,8 @@ Prefer non-destructive checks:
 
 If write validation is risky, use a smoke-test issue or ask the user before posting.
 
+Runtime adaptation should avoid recommending direct Linear sync as the default when the harness profile marks Linear integration as partial or unclear.
+
 ## Fallback
 
 If Linear is unavailable, HVN can still:

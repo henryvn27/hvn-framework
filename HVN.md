@@ -22,6 +22,7 @@ HVN is Linear-first by default. Linear is the preferred system of record for iss
 14. **Goals need contracts:** long-running goal mode requires bounded scope, verification, and safe lifecycle tracking.
 15. **Phase exits should guide without noise:** after major stages, users should get a concise next action, not a lecture.
 16. **Setup is harness-aware:** external integrations should be validated per host, with degraded mode when direct access is unavailable.
+17. **Runtime behavior follows reviewed compatibility:** the same workflow intent may take different safe paths in different harnesses.
 
 ## Coordination Modes
 
@@ -49,6 +50,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - **Legacy mode:** reverse-engineer old systems, extract business logic, and create modernization artifacts.
 - **Research mode:** gather evidence when the answer is not already known.
 - **Setup mode:** identify, configure, validate, or fall back from required external tools.
+- **Runtime adaptation mode:** detect the harness, apply capability profiles, and choose safe routes and fallbacks.
 - **Specification mode:** convert issue context into acceptance criteria and non-goals.
 - **Planning mode:** sequence implementation into verifiable phases and post an approval-ready plan.
 - **Next-step mode:** produce calm, adaptive guidance after a major phase completes.
@@ -76,6 +78,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop HVN 
 - Discovery notes when code or constraints are inspected
 - Research brief when outside evidence informs a decision
 - Tool requirements, integration status, or health report when external tools are required
+- Runtime detection, route, or status artifact when harness capability materially changes behavior
 - Legacy audit, risk report, or modernization spec when working on inherited systems
 - Spec or Linear spec comment
 - Implementation plan or Linear plan comment
@@ -181,6 +184,10 @@ Treat external tools and MCP servers as untrusted until reviewed. Missing regist
 ## External Tool Setup Policy
 
 Before requiring GitHub, Linear, MCP, connectors, plugins, API tokens, or CLI helpers, decide whether the tool is required or optional for the current phase. Validate the active harness, auth, scope, and fallback. Continue in degraded mode when direct integration is unavailable but the work can proceed safely.
+
+## Runtime Adaptation Policy
+
+Runtime behavior should follow reviewed harness capability knowledge, not ad hoc assumptions. Unsupported features must not be recommended as defaults. Partial or unclear support should degrade safely. User overrides may change defaults when safe, but risky automation should fail closed.
 
 ## Legacy Modernization Policy
 

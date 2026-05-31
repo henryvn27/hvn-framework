@@ -75,3 +75,5 @@ If approval is delayed:
 ## Confidence Rule
 
 Low confidence is itself a reason to gate. When the cost of being wrong is high, request approval instead of improvising.
+
+This applies to harness compatibility as well. If runtime adaptation cannot confidently establish support for a risky feature, prefer approval or manual confirmation.

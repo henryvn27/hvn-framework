@@ -37,6 +37,8 @@ The same service may have different setup paths in different hosts.
 6. Validate reachability, authentication, scope, and write capability when safe.
 7. Continue in degraded mode if the tool is optional or a manual fallback exists.
 
+Runtime adaptation should choose the shortest valid setup path for the active host rather than the richest path available in some other harness.
+
 ## Fallback Behavior
 
 Fallbacks should be explicit and practical:

@@ -64,4 +64,6 @@ Use approval gates or checkpoints before:
 - destructive actions
 - credential, release, deploy, or account-level operations
 
+If the harness capability profile marks tool support or governance as partial, weak, or unclear, runtime adaptation should tighten approval defaults rather than silently allowing host-specific shortcuts.
+
 See [docs/approval-gates.md](approval-gates.md) and [docs/human-checkpoints.md](human-checkpoints.md).

@@ -47,3 +47,5 @@ Prefer:
 If an MCP server can perform high-risk actions, the server may be registered as `allowed with constraints` while specific tool calls remain `approval required`.
 
 Use [docs/mcp-review-workflow.md](mcp-review-workflow.md) before adding or expanding MCP access.
+
+Runtime adaptation should not recommend MCP-first behavior on hosts where MCP support is partial, unclear, or weakly governed.

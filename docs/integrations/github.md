@@ -40,6 +40,8 @@ Prefer non-destructive checks:
 
 Do not assume write access from read success.
 
+Runtime adaptation should prefer the shortest validated GitHub path for the active host and fall back to local drafts when write scope or host support is missing.
+
 ## Fallback
 
 If GitHub is unavailable, HVN can still:

@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added harness-aware runtime adaptation with capability profiles, detection rules, runtime routing, policy switches, status artifacts, and safe fallbacks.
 - Upgraded the ecosystem sweep to watch GitHub, Linear, MCP, connector, auth, permission, and host-specific setup-path changes.
 - Added harness-aware external tool setup for GitHub and Linear, including setup commands, validation artifacts, host guides, and degraded-mode fallbacks.
 - Added adaptive next-step guidance for phase exits, including tone rules, experience adaptation, phase templates, examples, and the `hvn-next` command.

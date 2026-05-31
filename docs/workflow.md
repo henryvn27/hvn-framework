@@ -31,6 +31,7 @@ HVN follows a staged workflow centered on a durable work item. In Linear-first m
 25. `hvn-benchmark` and `hvn-eval`: judge workflow quality when framework behavior is under review.
 26. `hvn-linear-ship-check` or `hvn-ship`: prepare release and done-state evidence.
 27. `hvn-retro`: capture lessons and follow-up work.
+28. `hvn-status`: explain current harness detection, enabled features, degraded capabilities, and policy switches when behavior needs inspection.
 
 ## Recommended Linear Gates
 

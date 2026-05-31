@@ -15,6 +15,7 @@ This watchlist tracks harness-level compatibility shifts that affect HVN guidanc
 
 Use these artifacts together:
 
+- [runtime adaptation](runtime-adaptation.md)
 - [compatibility matrix](compatibility-matrix.md)
 - [ecosystem watch](ecosystem-watch.md)
 - [ecosystem opportunities](ecosystem-opportunities.md)

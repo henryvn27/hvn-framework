@@ -30,9 +30,12 @@ Status meanings:
 
 ## Related Artifacts
 
+- [runtime adaptation](runtime-adaptation.md)
 - [harness compatibility](harness-compatibility.md)
 - [harness watch](harness-watch.md)
 - `reports/compatibility/latest.md`
+
+Reviewed compatibility knowledge informs runtime behavior only after maintainers accept the change. New research should not become an automatic runtime default until reviewed or classified as `Adopt now`.
 
 ## Fallback
 

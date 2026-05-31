@@ -30,6 +30,7 @@ Use extra care for:
 - avoid destructive commands unless explicitly approved
 - treat missing tool or MCP registry entries as approval-required
 - use allowlisted tools and documented trust constraints where available
+- treat harness-level uncertainty as a risk signal, not as permission to guess
 
 ## Escalation Triggers
 
@@ -53,3 +54,5 @@ Record:
 Use [commands/hvn-security-check.md](../commands/hvn-security-check.md) and [skills/hvn-security/SKILL.md](../skills/hvn-security/SKILL.md) for the operational workflow.
 
 For tool and MCP trust decisions, use [docs/tool-trust.md](tool-trust.md), [docs/mcp-governance.md](mcp-governance.md), and [docs/tool-registry.md](tool-registry.md).
+
+For harness-level routing and fallbacks, use [runtime adaptation](runtime-adaptation.md) and reviewed compatibility artifacts before enabling host-specific behavior.

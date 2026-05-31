@@ -32,3 +32,5 @@ When automated validation is unavailable, provide a checklist:
 ## Reporting
 
 Use [integration health report](../templates/integration-health-report.md). Do not collapse different failures into "setup failed." Name the failing layer: service, auth, scope, harness, or fallback.
+
+Runtime adaptation should use validation results to tighten or loosen recommendations rather than assuming setup succeeded.

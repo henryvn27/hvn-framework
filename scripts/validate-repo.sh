@@ -54,6 +54,14 @@ docs/integrations-overview.md
 docs/setup-validation.md
 docs/degraded-mode.md
 docs/setup-ux.md
+docs/runtime-adaptation.md
+docs/harness-capability-profiles.md
+docs/harness-detection.md
+docs/feature-routing.md
+docs/runtime-flags.md
+docs/runtime-fallbacks.md
+docs/runtime-degraded-mode.md
+docs/runtime-status.md
 docs/integrations/github.md
 docs/integrations/linear.md
 docs/legacy-modernization.md
@@ -122,6 +130,11 @@ docs/examples/setup-linear-claude-code.md
 docs/examples/setup-fallback-manual.md
 docs/examples/integration-health-check.md
 docs/examples/optional-tool-not-required.md
+docs/examples/runtime-codex-goal.md
+docs/examples/runtime-claude-manual-fallback.md
+docs/examples/runtime-no-linear.md
+docs/examples/runtime-unknown-harness.md
+docs/examples/runtime-strict-compatibility.md
 docs/examples/legacy-repo-audit.md
 docs/examples/legacy-modernization-plan.md
 docs/examples/business-logic-extraction.md
@@ -141,6 +154,14 @@ docs/examples/bad-goal-vs-good-goal.md
 benchmarks/onboarding-spec/README.md
 registry/tools/README.md
 registry/mcp-servers/README.md
+registry/harnesses/README.md
+registry/harnesses/codex.md
+registry/harnesses/claude-code.md
+registry/harnesses/hermes-agent.md
+registry/harnesses/opencode.md
+registry/harnesses/cursor.md
+registry/harnesses/github-copilot.md
+registry/harnesses/generic.md
 reports/ecosystem-sweep/automation.md
 reports/ecosystem-sweep/tracked-sources.md
 reports/ecosystem-sweep/latest.md
@@ -155,7 +176,7 @@ for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility; do
+for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/hosts docs/integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -163,9 +184,9 @@ command_count="$(find commands -type f -name 'hvn-*.md' | wc -l | tr -d ' ')"
 skill_count="$(find skills -type f -name 'SKILL.md' | wc -l | tr -d ' ')"
 template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 
-[ "$command_count" -ge 42 ] || fail "expected at least 42 command definitions"
-[ "$skill_count" -ge 36 ] || fail "expected at least 36 skill definitions"
-[ "$template_count" -ge 61 ] || fail "expected at least 61 templates"
+[ "$command_count" -ge 44 ] || fail "expected at least 44 command definitions"
+[ "$skill_count" -ge 37 ] || fail "expected at least 37 skill definitions"
+[ "$template_count" -ge 66 ] || fail "expected at least 66 templates"
 
 for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
