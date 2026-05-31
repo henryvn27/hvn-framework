@@ -38,6 +38,7 @@ Status meanings:
 Reviewed compatibility knowledge informs runtime behavior only after maintainers accept the change. New research should not become an automatic runtime default until reviewed or classified as `Adopt now`.
 
 Use receipts and replay results as evidence before converting a newly supported harness path into a default runtime route.
+Session-improvement candidates that repeatedly cite the same harness mismatch should be linked from [improvement-backlog](improvement-backlog.md) and can justify matrix or host-guide updates even before a larger ecosystem sweep lands.
 
 ## Fallback
 

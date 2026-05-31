@@ -1,0 +1,46 @@
+name: Framework improvement
+description: Report reusable ORCA-HVN framework friction from real sessions.
+title: "[Framework]: "
+labels: ["enhancement", "framework"]
+body:
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Which framework area should improve?
+      placeholder: docs clarity gap, runtime mismatch, missing automation
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What reusable ORCA-HVN problem did the session reveal?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Session evidence
+      description: What happened in real use that shows this is worth fixing?
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired behavior
+      description: What should ORCA-HVN do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What would make this issue done?
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Agent-ready implementation notes
+      description: Repo areas, likely files, and scope boundaries if known.

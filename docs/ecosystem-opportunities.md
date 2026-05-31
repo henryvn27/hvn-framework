@@ -11,6 +11,7 @@ This is the maintainer-facing short list of actionable ecosystem findings. Keep 
 - Avoid duplicates. If an item already exists in [ecosystem-watch](ecosystem-watch.md), update that entry and link it here.
 - Link harness-level compatibility shifts to [harness-watch](harness-watch.md) when they affect the matrix or host guidance.
 - `Adopt now` items must link a draft issue or explain why issue creation was blocked.
+- repeated session-improvement candidates can be promoted here when the same low-grade friction becomes a framework maintenance priority
 
 ## Opportunity Fields
 

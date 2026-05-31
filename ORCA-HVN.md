@@ -29,6 +29,7 @@ ORCA-HVN is Linear-first by default. Linear is the preferred system of record fo
 21. **Ideas should earn the spec:** business opportunities should be framed, judged, and validated before they inherit delivery complexity.
 22. **Attribution should be explicit:** wrappers, integrations, conceptual influences, and redistributed components should be named clearly and documented where users can find them.
 23. **Background autonomy needs budgets and circuit breakers:** unattended progress should be bounded, inspectable, and quick to stop when it stalls.
+24. **Real session friction should feed framework improvement:** reusable ORCA-HVN pain should become filtered, human-approved backlog work instead of being forgotten.
 
 ## Coordination Modes
 
@@ -85,6 +86,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - **Restore mode:** recover from checkpoints or known-good workflow states.
 - **Ship mode:** prepare ship readiness, release notes, and handoff.
 - **Retro mode:** record what changed, what failed, and how the system should improve.
+- **Session improvement mode:** review session friction, filter for real framework gaps, and prepare human-approved ORCA-HVN issue drafts or backlog entries.
 
 ## Required Artifacts
 
@@ -122,6 +124,7 @@ Do not force Linear when the user explicitly opts out. Do not silently drop ORCA
 - Replay case when comparing old and new workflow behavior
 - Ship checklist or Linear ship comment
 - Retrospective for completed larger efforts
+- Session improvement review, worthiness check, and issue draft when the session exposed reusable framework friction
 
 ## Linear Lifecycle
 
@@ -161,6 +164,7 @@ Then use the standard lifecycle:
 21. Benchmark and eval passes happen as needed when framework quality is under review.
 22. Security and ship readiness checks finish the evidence chain.
 23. Issue moves to done only with evidence.
+24. Session improvement mode turns reusable ORCA-HVN friction into backlog-ready framework work when warranted.
 
 ## Subagent Policy
 

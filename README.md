@@ -33,6 +33,7 @@ ORCA-HVN is not only a prompt or command pack. It combines:
 - checkpoints, approvals, receipts, lineage, replay, and restore
 - blind QA, briefed QA, and regression capture
 - paved-road workflows for common use cases
+- a session-end improvement loop that turns real friction into framework backlog work
 
 ## Start Here
 

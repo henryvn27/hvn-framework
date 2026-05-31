@@ -39,6 +39,16 @@ for file in \
   docs/visual-quality.md \
   docs/human-voice.md \
   docs/token-efficiency.md \
+  docs/session-improvement-loop.md \
+  docs/improvement-categories.md \
+  docs/session-review.md \
+  docs/issue-worthiness.md \
+  docs/improvement-deduping.md \
+  docs/human-approval-for-issues.md \
+  docs/framework-issue-format.md \
+  docs/github-issue-integration.md \
+  docs/agent-ready-issues.md \
+  docs/improvement-backlog.md \
   docs/docs-automation.md \
   docs/wiki-maintenance.md \
   docs/staleness-detection.md \
@@ -207,6 +217,14 @@ for file in \
   templates/controller-executor-profile.md \
   templates/schema-migration-note.md \
   templates/artifact-mapping.md \
+  templates/framework-improvement-note.md \
+  templates/session-improvement-review.md \
+  templates/issue-worthiness-check.md \
+  templates/related-issue-note.md \
+  templates/issue-approval-prompt.md \
+  templates/hvn-framework-issue.md \
+  templates/agent-ready-implementation.md \
+  templates/improvement-backlog-entry.md \
   templates/ecosystem-adopt-issue.md \
   templates/doc-refresh-note.md \
   templates/wiki-update-note.md \
@@ -225,6 +243,7 @@ for file in \
   commands/orca-security-check.md \
   commands/orca-benchmark.md \
   commands/orca-metrics.md \
+  commands/orca-improve-framework.md \
   commands/orca-regression-task.md \
   commands/orca-state.md \
   commands/orca-checkpoint.md \
@@ -258,6 +277,7 @@ for file in \
   commands/orca-goal-create.md \
   commands/orca-goal-status.md \
   commands/orca-goal-review.md \
+  .github/ISSUE_TEMPLATE/framework-improvement.yml \
   commands/orca-delegate.md \
   commands/orca-ingest.md \
   commands/orca-validate-schema.md \

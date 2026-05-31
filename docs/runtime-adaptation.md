@@ -31,6 +31,7 @@ The compatibility layer is the source of truth:
 Scheduled research updates compatibility knowledge. Runtime adaptation consumes reviewed compatibility knowledge.
 
 Receipts, lineage, replay, and restore make those runtime choices inspectable and safer to evolve.
+The session improvement loop should capture repeated runtime mismatches so they become explicit framework work instead of staying as recurring operator friction.
 
 Background mode is also part of runtime adaptation. Different harnesses may support:
 

@@ -28,6 +28,7 @@ ORCA-HVN.md
 .gitattributes
 .github/ISSUE_TEMPLATE/bug-report.yml
 .github/ISSUE_TEMPLATE/feature-request.yml
+.github/ISSUE_TEMPLATE/framework-improvement.yml
 .github/ISSUE_TEMPLATE/config.yml
 .github/PULL_REQUEST_TEMPLATE.md
 .github/workflows/ci.yml
@@ -158,6 +159,16 @@ docs/concept-map.md
 docs/visual-quality.md
 docs/human-voice.md
 docs/token-efficiency.md
+docs/session-improvement-loop.md
+docs/improvement-categories.md
+docs/session-review.md
+docs/issue-worthiness.md
+docs/improvement-deduping.md
+docs/human-approval-for-issues.md
+docs/framework-issue-format.md
+docs/github-issue-integration.md
+docs/agent-ready-issues.md
+docs/improvement-backlog.md
 docs/docs-automation.md
 docs/wiki-maintenance.md
 docs/staleness-detection.md
@@ -300,11 +311,21 @@ reports/compatibility/2026-05-30.md
 mcp/linear.example.json
 HVN-STATUS.md
 commands/orca-docs.md
+commands/orca-improve-framework.md
 skills/orca-docs-system/SKILL.md
+skills/orca-session-improvement/SKILL.md
 templates/doc-refresh-note.md
 templates/wiki-update-note.md
 templates/doc-metadata.md
 templates/doc-change-checklist.md
+templates/framework-improvement-note.md
+templates/session-improvement-review.md
+templates/issue-worthiness-check.md
+templates/related-issue-note.md
+templates/issue-approval-prompt.md
+templates/hvn-framework-issue.md
+templates/agent-ready-implementation.md
+templates/improvement-backlog-entry.md
 "
 
 for file in $required_files; do

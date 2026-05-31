@@ -37,6 +37,7 @@ Do not use before the work has an outcome to examine.
 4. Convert lessons into concrete follow-ups.
 5. Note any framework improvements.
 6. Post or prepare the retrospective for the durable record.
+7. If the framework-improvement note is reusable and actionable, route it through the session improvement loop.
 
 ## Expected Outputs
 
@@ -54,4 +55,4 @@ The retro should change future behavior, not merely describe the past.
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 
-Feeds future onboarding, planning, and framework updates.
+Feeds future onboarding, planning, framework updates, and `orca-improve-framework`.

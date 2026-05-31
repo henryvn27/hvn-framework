@@ -39,7 +39,8 @@ When a workflow introduces a new external upstream influence or wrapper, update 
 31. `orca-replay` or `orca-restore`: compare newer behavior or recover from known-good workflow states when needed.
 32. `orca-linear-ship-check` or `orca-ship`: prepare release and done-state evidence.
 33. `orca-retro`: capture lessons and follow-up work.
-34. `orca-status` or `orca-background-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and unattended-run state when behavior needs inspection.
+34. `orca-improve-framework`: review session friction and propose ORCA-HVN improvement work when the pain is reusable.
+35. `orca-status` or `orca-background-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and unattended-run state when behavior needs inspection.
 
 ## Recommended Linear Gates
 
@@ -77,6 +78,7 @@ The workflow now relies on six supporting controls:
 - evals judge how well it happened
 - benchmark packs compare onboarding and spec quality over time
 - regression tasks preserve repeated QA lessons
+- the session improvement loop turns reusable framework friction into backlog-ready improvement work
 - approval gates control risky actions
 - checkpoints create safe human intervention points
 - inspector artifacts make paused and blocked runs resumable

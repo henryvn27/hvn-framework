@@ -51,6 +51,7 @@ Use this page when you know what you want to do but not which command matches it
 - `orca-regression-task`: preserve repeated findings
 - `orca-eval`: evaluate workflow behavior
 - `orca-benchmark`: compare framework quality over time
+- `orca-improve-framework`: turn reusable session friction into a framework backlog or issue draft
 
 ## Docs And Navigation
 

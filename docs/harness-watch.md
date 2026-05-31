@@ -57,3 +57,4 @@ No adopt-now compatibility changes yet.
 - verify uncertain harness capabilities before promoting them from `unclear`
 - prefer official docs and release notes over secondary summaries
 - record broken or deprecated paths before removing them from recommendations
+- watch the improvement backlog for repeated harness pain that should become a compatibility or runtime update

@@ -106,3 +106,5 @@ Every background run must end in one clear state:
 - stalled
 
 Do not leave a background run in an ambiguous "still thinking" state.
+
+If a background run repeatedly exposes the same missing guardrail, missing status surface, or awkward permission flow, capture that in the session improvement loop rather than treating it as an isolated annoyance.

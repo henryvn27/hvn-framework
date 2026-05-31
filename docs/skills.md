@@ -22,7 +22,7 @@ These skills coordinate issue-native work in Linear. If the user opts out of Lin
 - Reliability: `orca-observability`, `orca-eval`, `orca-approval-gate`, `orca-benchmark`, `orca-accounting`, `orca-portability`, `orca-regression-task`, `orca-shared-state`, `orca-checkpoint`, `orca-tool-governance`, `orca-tool-setup`, `orca-runtime-adaptation`, `orca-receipts`, `orca-next-step`, `orca-delegation`
 - Gates: `orca-review`, `orca-design`, `orca-security`, `orca-ship`
 - QA: `orca-blind-qa`, `orca-context-brief`, `orca-ios-sim-qa`, `orca-web-qa`
-- Learning: `orca-retro`
+- Learning: `orca-retro`, `orca-session-improvement`
 
 ## Skill Installation
 
@@ -52,3 +52,4 @@ Reliability skills should be treated as cross-cutting helpers:
 - `orca-goal-mode` for converting bounded specs or milestones into durable goal contracts
 - `orca-next-step` for concise, adaptive phase-exit guidance
 - `orca-delegation` for bounded controller-to-executor briefs and structured returns
+- `orca-session-improvement` for turning real session friction into deduplicated, human-approved framework backlog work

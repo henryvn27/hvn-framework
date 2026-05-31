@@ -66,6 +66,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-inspect`
 - `orca-benchmark`
 - `orca-eval`
+- `orca-improve-framework`
 - `orca-replay`
 - `orca-restore`
 - `orca-validate-schema`
@@ -94,6 +95,7 @@ Linear state, labels, comments, and agent delegation should trigger command sele
 - `Ready to Ship` triggers `orca-linear-ship-check`.
 
 Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just the product artifact.
+Use `orca-improve-framework` at the end of meaningful sessions when reusable ORCA-HVN friction may deserve a framework issue or backlog entry.
 Use `orca-docs` when a user needs a docs entry point, a doc refresh plan, or a docs routing answer after the framework surface changes.
 Use `orca-background` when unattended progress needs an explicit contract before the run starts.
 Use `orca-keep-going` when the user wants bounded autonomous progress on the current task, milestone, or goal.

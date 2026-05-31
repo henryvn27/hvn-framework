@@ -39,6 +39,7 @@ Store the retrospective in the selected record or project documentation.
 3. Record failures, surprises, and useful patterns.
 4. Create concrete follow-up actions.
 5. Sync lessons to the durable record.
+6. If the session exposed reusable ORCA-HVN friction, run `orca-improve-framework`.
 
 ## Outputs And Artifacts
 
@@ -51,5 +52,5 @@ Store the retrospective in the selected record or project documentation.
 
 ## Related Commands And Skills
 
-- Commands: `orca-onboard`, `orca-plan`, `orca-linear-sync`
-- Skills: `orca-retro`, `orca-linear-core`
+- Commands: `orca-onboard`, `orca-plan`, `orca-linear-sync`, `orca-improve-framework`
+- Skills: `orca-retro`, `orca-session-improvement`, `orca-linear-core`
