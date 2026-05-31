@@ -29,6 +29,9 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [glossary.md](glossary.md): plain-language definitions for core terms
 - [concept-map.md](concept-map.md): how the main framework pieces connect
 - [truth-hierarchy.md](truth-hierarchy.md): which evidence should outrank generic advice
+- [source-of-truth-policy.md](source-of-truth-policy.md): how README and workflow positioning should follow live evidence
+- [vault-derived-positioning.md](vault-derived-positioning.md): what the current vault evidence implies about ORCA framing
+- [framework-differentiation.md](framework-differentiation.md): how to explain ORCA without slipping into generic category language
 - [friction-reduction-principle.md](friction-reduction-principle.md): the framework-wide rule for what should surface
 - [framework-principles.md](framework-principles.md): the small set of rules ORCA should follow everywhere
 

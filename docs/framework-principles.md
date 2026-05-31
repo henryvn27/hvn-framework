@@ -20,6 +20,7 @@ ORCA-HVN is opinionated about how orchestration systems should feel in practice.
 14. Installation should be clear enough that a new user can reach first success without insider help.
 15. Updates should lower maintenance burden without creating surprise breakage or forced complexity.
 16. The README should describe the project as a whole, not whichever subsystem was edited most recently.
+17. Top-level positioning should follow live operating evidence before generic category language.
 
 ## First Principle
 
@@ -38,3 +39,4 @@ Read [friction-reduction-principle.md](friction-reduction-principle.md).
 - [adaptive-learning.md](adaptive-learning.md)
 - [agent-orchestration.md](agent-orchestration.md)
 - [self-improvement.md](self-improvement.md)
+- [source-of-truth-policy.md](source-of-truth-policy.md)
