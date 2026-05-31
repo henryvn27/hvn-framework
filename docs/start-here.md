@@ -59,7 +59,8 @@ If that path feels clear, then widen into the rest of the framework.
 ## Best Next Page By Situation
 
 - I just want the clearest starter path: [first-workflow.md](first-workflow.md)
-- I just want to try it: [quickstart.md](quickstart.md)
+- I need to install ORCA clearly: [install-overview.md](install-overview.md)
+- I just want to try it fast: [quickstart.md](quickstart.md)
 - I want to understand the big picture: [intro.md](intro.md)
 - I am moving off GStack or GSD: [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
 - I use a controller agent like Hermes: [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)

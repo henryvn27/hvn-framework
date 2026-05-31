@@ -20,6 +20,10 @@ for file in \
   docs/feedback-loop-mechanics.md \
   docs/improvement-promotion-policy.md \
   docs/improvement-status-model.md \
+  docs/install.md \
+  docs/install-overview.md \
+  docs/install-troubleshooting.md \
+  docs/install-validation.md \
   docs/docs-automation.md \
   docs/wiki-maintenance.md \
   docs/staleness-detection.md \
@@ -37,15 +41,19 @@ for file in \
   templates/feedback-loop-record.md \
   templates/improvement-rubric.md \
   templates/improvement-status-entry.md \
+  templates/install-validation-report.md \
   commands/orca-benchmark.md \
   commands/orca-metrics.md \
   commands/orca-regression-task.md \
   commands/orca-docs.md \
+  commands/orca-install.md \
+  commands/orca-doctor.md \
   skills/orca-benchmark/SKILL.md \
   skills/orca-accounting/SKILL.md \
   skills/orca-regression-task/SKILL.md \
   skills/orca-docs-system/SKILL.md \
   skills/orca-self-improvement/SKILL.md \
+  skills/orca-install-help/SKILL.md \
   docs/examples/benchmark-run.md \
   docs/examples/onboarding-benchmark-case.md \
   docs/examples/spec-quality-comparison.md \
@@ -54,6 +62,8 @@ for file in \
   docs/examples/retry-burden-analysis.md \
   docs/examples/local-instance-learning.md \
   docs/examples/framework-improvement-promotion.md \
+  docs/examples/beginner-install.md \
+  docs/examples/install-failure-recovery.md \
   docs/examples/qa-to-regression.md \
   .github/workflows/benchmark-check.yml \
   .github/workflows/metrics-validation.yml

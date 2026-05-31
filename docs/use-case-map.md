@@ -1,5 +1,11 @@
 # Use-Case Map
 
+## I Need To Install ORCA
+
+Recommended path:
+
+`orca-install` -> `orca-doctor` -> `docs/first-run.md`
+
 ## I Need To Ship A New Feature
 
 Recommended path:
@@ -41,4 +47,3 @@ Recommended path:
 Recommended path:
 
 `orca-runtime` -> `orca-status` -> `docs/compatibility-matrix.md`
-

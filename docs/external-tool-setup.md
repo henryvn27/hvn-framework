@@ -2,6 +2,8 @@
 
 External tools are services or local capabilities ORCA-HVN can use to coordinate, inspect, or publish work outside the immediate repository. Examples include GitHub, Linear, browser automation, CI, release systems, and MCP servers.
 
+Read [install.md](install.md) first if core ORCA install is not finished yet. External tool setup should not outrun the base install.
+
 This setup layer decides which tools are needed for the current workflow, how the current harness can access them, how to validate access, and what fallback is available when setup is incomplete.
 
 ## Required vs Optional

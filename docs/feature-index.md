@@ -4,6 +4,7 @@ ORCA is broad. This page groups features into practical buckets.
 
 ## Intake And Planning
 
+- install and first-run guidance
 - onboarding and discovery
 - spec-driven workflow
 - milestone planning
@@ -12,6 +13,7 @@ ORCA is broad. This page groups features into practical buckets.
 
 Read:
 
+- [install.md](install.md)
 - [onboarding.md](onboarding.md)
 - [spec-driven-workflow.md](spec-driven-workflow.md)
 - [milestone-planning.md](milestone-planning.md)
