@@ -61,3 +61,4 @@ If that path feels clear, then widen into the rest of the framework.
 - I care about design quality and not looking AI-generated: [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
 - I need a feature map: [feature-index.md](feature-index.md)
 - I need the right command: [command-index.md](command-index.md)
+- I need to know what ORCA should trust first: [truth-hierarchy.md](truth-hierarchy.md)

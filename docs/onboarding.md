@@ -25,12 +25,14 @@ It should:
 - explain the current stage briefly
 - make the next action obvious
 - help the user build a correct mental model of the workflow
+- use the user's actual notes, vault, and existing artifacts as the teaching context when available
 
 It should not:
 
 - drown the user in framework jargon
 - turn onboarding into a lecture
 - require a human operator to translate the system for them
+- replace strong vault evidence with generic best-practice filler
 
 ## Exit Guidance
 

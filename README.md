@@ -74,6 +74,7 @@ If you are new:
 - feature map: [docs/feature-index.md](docs/feature-index.md)
 - command map: [docs/command-index.md](docs/command-index.md)
 - glossary: [docs/glossary.md](docs/glossary.md)
+- truth hierarchy: [docs/truth-hierarchy.md](docs/truth-hierarchy.md)
 - wiki home: [wiki/Home.md](wiki/Home.md)
 - what changed: [docs/whats-new.md](docs/whats-new.md)
 

@@ -22,10 +22,12 @@ Use idea research to:
 ## Research Rules
 
 - Start from the decision that needs support.
+- If the user provided a vault or live note system, treat it as the primary source of workflow truth before falling back to generic market advice.
 - Prefer source quality over source volume.
 - Distinguish between market narrative and actual evidence.
 - Record what would change your mind.
 - Do not let desk research substitute for talking to users or running experiments.
+- Mark extrapolation clearly when the vault or local evidence is thin.
 
 ## Suggested Questions
 

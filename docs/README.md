@@ -18,6 +18,7 @@ ORCA-HVN documentation is layered on purpose. Start with the smallest surface th
 - [use-case-map.md](use-case-map.md): which workflow fits which situation
 - [glossary.md](glossary.md): plain-language definitions for core terms
 - [concept-map.md](concept-map.md): how the main framework pieces connect
+- [truth-hierarchy.md](truth-hierarchy.md): which evidence should outrank generic advice
 
 ## Guides
 

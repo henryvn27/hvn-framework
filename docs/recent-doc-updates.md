@@ -7,6 +7,7 @@
 - added a wiki knowledge-base layer with sidebar and footer routing
 - reframed the docs so ORCA-HVN is the primary workflow rather than a companion to GStack or GSD
 - added user-centered guides for migration, Hermes, goal mode, background mode, ideation, paved roads, and runtime adaptation
+- added a truth-hierarchy rule so vault evidence can outrank generic outside advice
 - added docs automation, wiki maintenance, and staleness detection guidance
 - added doc ownership and contributor doc rules
 - added visual-quality and human-voice guidance to reduce generic AI-looking output

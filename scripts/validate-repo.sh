@@ -178,6 +178,7 @@ docs/use-case-map.md
 docs/choose-your-path.md
 docs/glossary.md
 docs/concept-map.md
+docs/truth-hierarchy.md
 docs/visual-quality.md
 docs/human-voice.md
 docs/token-efficiency.md

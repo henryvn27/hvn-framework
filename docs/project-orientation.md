@@ -21,6 +21,8 @@ Use:
 - [templates/project-orientation.md](../templates/project-orientation.md) for a structured orientation artifact
 - `orca-orient` when a current project snapshot should be produced or refreshed
 
+If the user provides a vault or other live knowledge base for the project, treat that as a primary orientation input for workflow reality. Do not replace it with generic assumptions.
+
 ## Good Orientation Shape
 
 A good orientation artifact is:
