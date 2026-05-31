@@ -157,6 +157,7 @@ docs/glossary.md
 docs/concept-map.md
 docs/visual-quality.md
 docs/human-voice.md
+docs/token-efficiency.md
 docs/docs-automation.md
 docs/wiki-maintenance.md
 docs/staleness-detection.md

@@ -40,6 +40,7 @@ Read:
 - setup and degraded mode
 - compatibility matrix
 - host guides
+- token efficiency
 
 Read:
 
@@ -47,6 +48,7 @@ Read:
 - [external-tool-setup.md](external-tool-setup.md)
 - [compatibility-matrix.md](compatibility-matrix.md)
 - [hosts/codex-cli.md](hosts/codex-cli.md)
+- [token-efficiency.md](token-efficiency.md)
 
 ## Inspection And Safety
 

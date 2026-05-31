@@ -73,6 +73,16 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - Unity UI copy writing principles: https://docs-style-guide.unity.com/content-types/ui-copy/writing-principles/
 - Siemens UX writing principles: https://ix.siemens.io/docs/guidelines/language/support-and-resources/UX-writing-principles
 
+## Token Efficiency Sources
+
+### OpenAI
+- Prompt caching: https://developers.openai.com/api/docs/guides/prompt-caching
+- Token usage and counting: https://developers.openai.com/api/docs/guides/advanced-usage
+
+### Anthropic
+- Prompt caching: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+- Token-efficient tool use and task budgets: https://platform.claude.com/docs/en/docs/agents-and-tools/tool-use/token-efficient-tool-use
+
 ## Watch Themes
 
 - persistent goals and `/goal`-style flows
@@ -103,6 +113,10 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - design-system specificity over interchangeable template sameness
 - human-sounding product copy and anti-generic UX writing patterns
 - specialized design-quality tools and where orchestration should complement rather than replace them
+- prompt caching stability requirements
+- token-aware model effort or task-budget controls
+- cache-read and usage telemetry that ORCA-HVN can surface
+- summarization and checkpoint patterns that reduce repeated long-context replay
 
 ## Harness Update Questions
 
@@ -157,6 +171,16 @@ For material design, copy, or interface-quality shifts, answer:
 - What concrete layout, typography, copy, or motion patterns should ORCA-HVN encourage or discourage?
 - Does the finding belong in visual-quality guidance, human-voice guidance, or `orca-design` review standards?
 - Does it suggest using a specialized design or writing tool instead of building another generic abstraction?
+
+## Token Efficiency Questions
+
+For material token-efficiency shifts, answer:
+
+- What changed that could reduce token spend without degrading quality?
+- Does it improve caching, budgeting, tool use, context management, or telemetry?
+- Is the gain host-specific, provider-specific, or broadly portable?
+- Should ORCA-HVN change token-efficiency guidance, stage budgets, accounting, or runtime behavior?
+- Does the change reduce retries and repeated context, or only reduce nominal per-call spend?
 
 ## Source Quality Rules
 

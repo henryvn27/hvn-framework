@@ -10,6 +10,7 @@ This page helps returning users rediscover what changed without reading every fi
 - business ideation workflow
 - docs home, wiki, routing guides, and start-here layer
 - visual quality and human-voice guidance for non-generic product output
+- token-efficiency guidance tied to accounting, stage budgets, and recurring research
 
 ## Best Pages To Revisit
 

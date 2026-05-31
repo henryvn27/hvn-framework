@@ -14,6 +14,10 @@ Primary research question:
 
 > What new host or framework capabilities now exist that ORCA-HVN can exploit, wrap, adapt, or learn from?
 
+Secondary research question:
+
+> What new provider or host patterns reduce wasted tokens, retries, or context mass without harming output quality?
+
 ## Inputs
 
 - `reports/ecosystem-sweep/tracked-sources.md`
@@ -34,6 +38,7 @@ Primary research question:
 - `docs/doc-owners.md`
 - `docs/visual-quality.md`
 - `docs/human-voice.md`
+- `docs/token-efficiency.md`
 - `wiki/Home.md`
 - `wiki/_Sidebar.md`
 - `templates/ecosystem-adopt-issue.md`
@@ -50,6 +55,7 @@ Primary research question:
 - `docs/ecosystem-opportunities.md`
 - `docs/visual-quality.md`
 - `docs/human-voice.md`
+- `docs/token-efficiency.md`
 - `templates/doc-refresh-note.md`
 - `templates/wiki-update-note.md`
 - `reports/ecosystem-sweep/draft-issues/*.md` when direct issue creation is unavailable
@@ -176,6 +182,10 @@ Every sweep should actively look for workflow-enabling execution features:
 - missing routing from the README, start-here docs, guide layer, or wiki homepage
 - patterns that help ORCA-HVN outputs look more intentional, product-specific, and less obviously AI-generated
 - domain-specific design or writing tools ORCA-HVN should coordinate with rather than clone
+- prompt caching, token telemetry, and cache-retention changes
+- task-budget, effort, or model-routing controls that can reduce wasted spend
+- better long-context summarization or checkpoint patterns that reduce transcript replay
+- host-level token visibility or usage reporting ORCA-HVN can expose honestly
 
 ## Harness Compatibility Audit Phase
 
@@ -254,6 +264,13 @@ For design and copy quality findings, also answer:
 - Is the advice specific enough to guide real implementation reviews?
 - Should ORCA-HVN update `orca-design`, `docs/visual-quality.md`, `docs/human-voice.md`, or a user-facing guide?
 - Is this a broad workflow principle or a narrow style trend?
+
+For token-efficiency findings, also answer:
+
+- Does this reduce prompt mass, retry churn, or output bloat?
+- Does it depend on a specific provider or does it generalize across hosts?
+- Should ORCA-HVN update `docs/token-efficiency.md`, stage budgets, runtime guidance, or workflow accounting?
+- Does the change improve quality-preserving efficiency, or does it mainly cut spend by degrading capability?
 
 Avoid hype summaries, copied release notes, trivia, and findings without a recommended ORCA-HVN action.
 

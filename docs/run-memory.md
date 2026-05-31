@@ -29,6 +29,8 @@ Good entries are:
 - short enough to re-read quickly
 - explicit about whether they are facts, decisions, or assumptions
 
+Compactness matters. Verbose run-memory entries increase future prompt mass and weaken the point of having a reusable durable memory layer.
+
 ## Contract
 
 Use [templates/contracts/run-memory-contract.md](../templates/contracts/run-memory-contract.md) when designing memory artifacts or checking whether a memory entry is complete enough for future reuse.
@@ -49,6 +51,7 @@ For portable machine-readable exchange, use the run-memory schema in `schema/ver
 - controller and executor role decisions may be preserved when they become durable operating context
 - evals judge how well the workflow performed
 - workflow metrics record time, retries, and optional usage signals
+- token-efficiency policy should bias memory toward compact summaries rather than transcript replay
 
 Run memory may reference benchmark results, workflow metrics summaries, regression-task decisions, legacy audit findings, goal state, or checkpoint outcomes when those become durable project context, but it should not duplicate the underlying per-run artifacts.
 

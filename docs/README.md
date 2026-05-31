@@ -50,6 +50,7 @@ These are teaching-oriented pages for common paths:
 - [recent-doc-updates.md](recent-doc-updates.md)
 - [visual-quality.md](visual-quality.md)
 - [human-voice.md](human-voice.md)
+- [token-efficiency.md](token-efficiency.md)
 
 ## Wiki
 

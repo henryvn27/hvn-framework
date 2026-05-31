@@ -30,6 +30,7 @@ ORCA-HVN may sometimes measure:
 - token usage
 - cost
 - stage-level time split
+- cached-token or cache-read signals when the host exposes them
 
 For token or cost fields, record one of:
 
@@ -48,6 +49,7 @@ Retries amplify time and spend silently. A workflow that appears successful may 
 - succeeds only after broad rework
 
 Track retry burden by stage whenever practical.
+Treat repeated retries as hidden token spend even when exact token telemetry is unavailable.
 
 ## Key Metrics
 
@@ -57,6 +59,7 @@ Track retry burden by stage whenever practical.
 - blocked run count
 - abandoned run count
 - cost per successful run when cost data exists
+- cached-token ratio or cache-read share when usage data exists
 
 ## Format
 
@@ -68,10 +71,12 @@ Workflow metrics should integrate with:
 - run memory in [docs/run-memory.md](run-memory.md)
 - eval reports in [docs/evals.md](evals.md)
 - QA and review summaries when the workflow includes those phases
+- token-efficiency policy in [docs/token-efficiency.md](token-efficiency.md)
 
 ## Interpretation Guidance
 
 - High time with low retries may indicate complex but stable work.
 - High retries with moderate time often indicate poor instructions or weak handoffs.
 - Cost per success is useful only when compared over multiple runs.
+- Low cache reuse on repeated workflows often means prompts or tool definitions are drifting unnecessarily.
 - One blocked run is a note. A pattern of blocked runs is a framework signal.

@@ -29,7 +29,7 @@ Each meaningful run should capture:
 - Lineage link: upstream and downstream artifact relationships when tracked
 - Goal state: objective, contract link, lifecycle transition, verifier result, and steering note when goal mode is active
 - Reliability signals: retries, failures, blockers, warnings, stop reason
-- Optional metadata: token or cost data when the harness exposes it
+- Optional metadata: token, cost, cached-token, or cache-read data when the harness exposes it
 
 When workflow accounting is enabled, traces should link to the per-run metrics artifact described in [docs/workflow-accounting.md](workflow-accounting.md).
 
@@ -60,6 +60,7 @@ Do not trace:
 - private user data that is not needed for debugging or evaluation
 - sensitive security details that should stay in a restricted report
 - raw secrets or credential values passed through tool parameters
+- large logs or transcript dumps when a targeted excerpt or linked artifact is enough
 
 ## Traces Versus Run Memory
 
@@ -82,6 +83,7 @@ See [docs/shared-state.md](shared-state.md) for the active coordination side of 
 - Handoffs: let the next agent understand what already happened.
 - Inspection: give humans enough evidence to approve or resume without rereading the entire history.
 - Replay and restore: let maintainers compare newer behavior or recover from known-good workflow states.
+- Token efficiency: show where retries, context drift, or oversized artifacts are wasting spend.
 
 ## Storage Model
 
