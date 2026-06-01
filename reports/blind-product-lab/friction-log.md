@@ -72,3 +72,19 @@ Each entry should include: what happened, cause, workaround, and classification:
 - Cause: Shell variables set in the command were not exported into the Node process when using a heredoc.
 - Workaround: Prefix environment variables directly on the `node <<'NODE'` invocation (e.g., `EVID_DIR=... STAMP=... node ...`).
 - Classification: Codex host issue (shell/process environment ergonomics)
+
+## 2026-06-01
+
+### Entry 10 — Cross-repo patching defaulted to the wrong workspace
+
+- What happened: While adding ShipNotes code, an `apply_patch` call wrote a new file into the ORCA-HVN repo (`./src/...`) instead of the ShipNotes workspace.
+- Cause: This automation operates across sibling repos, but patch tools default to the current workspace root unless absolute paths are used.
+- Workaround: Use absolute file paths for any edits outside `/Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/ORCA-HVN` and sanity-check the target path before patching.
+- Classification: Codex host issue (workspace scoping) / ORCA host guidance gap (multi-repo workflows)
+
+### Entry 11 — ShipNotes has no git remote configured
+
+- What happened: The ShipNotes workspace has no `git remote`, so changes can’t be pushed and CI/PR workflows can’t be used.
+- Cause: The project was created as a local blind-lab workspace without a configured remote.
+- Workaround: Add a remote once the repo is ready for collaboration/shipping, and keep weekly progress flowing through PRs/checks.
+- Classification: Product/project-specific issue (version control plumbing)

@@ -63,3 +63,62 @@
 - Next:
   - Restore Linear auth and create the ShipNotes Linear project + issues.
   - Run the DM micro-launch loop in `reports/blind-product-lab/shipnotes/distribution-plan.md` (do not send without Henry approval).
+
+## 2026-05-31 (Run 4)
+
+- What changed:
+  - ShipNotes: added input diagnostics that show kept vs ignored lines and surface ignored merge/noise lines with reasons.
+  - ORCA-HVN: refreshed blind product lab status to reflect the new hardening pass and current blockers.
+- What was verified:
+  - ShipNotes local gates (2026-05-31):
+    - `npm run lint`
+    - `npm run build`
+  - Deployed app smoke evidence captured via headless Playwright:
+    - `reports/blind-product-lab/shipnotes/evidence/shipnotes-home-2026-05-31-run4.png`
+    - `reports/blind-product-lab/shipnotes/evidence/shipnotes-generated-2026-05-31-run4.png`
+    - `reports/blind-product-lab/shipnotes/evidence/shipnotes-published-2026-05-31-run4.png`
+- What was deployed:
+  - `vercel deploy --prod --yes` succeeded and re-aliased to https://shipnotes-six.vercel.app
+- What was blocked:
+  - Linear connector still requires reauthentication (401), so Linear-first project/issue updates remain blocked.
+  - DM/public launch loop still requires Henry approval, so live user-signal collection did not run.
+- Next:
+  - Restore Linear auth and create the ShipNotes Linear project + issues.
+  - Get Henry approval for the micro-launch loop in `reports/blind-product-lab/shipnotes/distribution-plan.md`.
+
+## 2026-05-31 (Run 5)
+
+- What changed:
+  - Approval gate for outreach was cleared.
+  - Sent one controlled first-wave feedback email for ShipNotes to Trent Gegax (`trent.gegax@gramercyfund.com`) using the live production link.
+  - ORCA-HVN blind product lab status was updated from “approval blocked” to “first-wave outreach started”.
+- What was verified:
+  - Gmail connector profile is available for `henryvanness3@gmail.com`.
+  - Outbound send succeeded through Gmail and returned sent message id `19e8098be7b617b4`.
+  - Reachable direct-contact surface in current harness appears thin; no clean 10-person recipient list was discoverable from the immediate accessible context.
+- What was deployed:
+  - No product deploy this run. Production app remains: https://shipnotes-six.vercel.app
+- What was blocked:
+  - Linear connector still requires reauthentication (401), so Linear-first project/issue updates remain blocked.
+  - A full 10-person direct outreach loop cannot be executed blindly from current harness context because only one plausible direct technical contact was clearly available.
+- Next:
+  - Check for reply or usage feedback from Trent.
+  - If more real recipients become available, widen the outreach loop.
+
+## 2026-06-01 (Run 6)
+
+- What changed:
+  - ShipNotes: added markdown export presets (Default / GitHub Release / Customer Update) and a preset selector in the composer.
+  - ShipNotes: made input parsing analysis explicit (kept vs ignored lines + ignore reasons).
+- What was verified:
+  - ShipNotes local gates (2026-06-01):
+    - `npm run lint`
+    - `npm run build`
+- What was deployed:
+  - `vercel deploy --prod --yes` succeeded and re-aliased to https://shipnotes-six.vercel.app
+- What was blocked:
+  - Linear connector still requires reauthentication (401), so Linear-first project/issue updates remain blocked.
+  - ShipNotes repo has no configured git remote, so push-based collaboration/CI is not currently possible.
+- Next:
+  - Restore Linear auth and create the ShipNotes Linear project + issues.
+  - Add a git remote for ShipNotes (when ready) so weekly work can ship via PRs/CI.
