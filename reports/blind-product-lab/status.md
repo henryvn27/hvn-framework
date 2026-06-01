@@ -6,7 +6,7 @@ Last updated: 2026-06-01
 
 - Product: ShipNotes
 - Product workspace path: /Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/ShipNotes
-- Repo/branch: ShipNotes `main` @ `8b35e90`, ORCA-HVN `main` @ `8e22757`
+- Repo/branch: ShipNotes `main` @ `8b35e90`, ORCA-HVN `main`
 - Stack: Vite + React + TypeScript (Tailwind v3) + URL-hash publishing (no backend for MVP)
 - Launch target: Vercel static deploy
 - Current deploy:
