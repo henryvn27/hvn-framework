@@ -107,6 +107,9 @@
 
 ## 2026-06-01 (Run 6)
 
+- Path decision:
+  - Continued ShipNotes (carry-forward new product) because it is already deployed and still has a credible path to first revenue; starting a new project would reset momentum without clearing the current blockers (Linear auth + outreach surface).
+
 - What changed:
   - ShipNotes: added markdown export presets (Default / GitHub Release / Customer Update) and a preset selector in the composer.
   - ShipNotes: made input parsing analysis explicit (kept vs ignored lines + ignore reasons).
