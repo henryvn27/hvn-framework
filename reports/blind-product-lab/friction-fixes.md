@@ -57,3 +57,57 @@ Add a compact Codex-specific paved road for:
 
 - Tailwind v4 scaffold drift: collect 2+ independent product-run sightings before updating any templates or stack packs.
 - Expand `orca-check-setup` guidance with a concrete Codex+Linear+GitHub preflight checklist if this friction repeats beyond the blind product lab.
+
+---
+
+## 2026-06-01 — Vercel Deploy Guardrails (new framework project)
+
+### Friction Observed
+
+- Vercel deploy can fail when the CLI infers a project name from an uppercase directory name (Vercel requires lowercase slugs).
+- Multi-repo blind product runs make it easy to accidentally patch files into the wrong workspace when using relative paths.
+
+### Evidence
+
+From `reports/blind-product-lab/friction-log.md`:
+
+- Entry 5 — Vercel deploy failed on uppercase folder name
+- Entry 10 — Cross-repo patching defaulted to the wrong workspace
+
+### New Project vs Existing-Gap
+
+- Chosen: **new framework project**
+- Why: There was no deploy-focused paved road under `docs/` yet, and this deploy/name friction is cross-product. Adding a small “deploy guardrails” artifact set is higher leverage than patching one-off product notes.
+
+### Fix Chosen
+
+- Add a minimal Vercel deploy guardrails doc:
+  - Separate display name (TitleCase) from deploy slug (lowercase).
+  - Prefer creating workspaces using the slug so Vercel’s inferred project name is valid.
+  - Preferred recovery path: `vercel link` + `vercel deploy --prod --yes` (treat `--name` as emergency-only if the CLI warns it is deprecated).
+  - Provide a small `vercel.json` SPA rewrite template for client-side routed apps.
+- Add a small cross-workspace safety section to the Codex Host Friction Kit.
+
+### Files Changed
+
+- `docs/deploy/vercel-guardrails.md`
+- `templates/vercel-static-spa/vercel.json`
+- `docs/web-stack-guide.md`
+- `docs/integration-diagnostics.md`
+- `docs/hosts/codex-friction-kit.md`
+- `.gitignore`
+
+### Verification Performed
+
+- `scripts/check-markdown.sh`
+- `scripts/check-links.sh`
+
+### Residual Risk
+
+- Vercel CLI behavior can drift; the guardrails doc intentionally uses a conservative, interactive `vercel link` recovery path instead of relying on potentially-deprecated flags.
+
+### Deferred / Next Likely Fix
+
+- Linear connector auth is still blocked (401). Once restored, create:
+  - Linear project: “ORCA-HVN Blind Product Lab (Framework)”
+  - Issue: “Add degraded-mode Linear shadow log + later sync script”

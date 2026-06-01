@@ -18,4 +18,5 @@ When an integration is missing or failing, ORCA-HVN should diagnose the class of
 - mobile subscription path using Stripe where app-store purchases are required
 - React Native push path missing APNs or FCM configuration
 - Vercel app with env assumptions not present in the project
+- Vercel deploy failing because the inferred project slug is not lowercase (see [`docs/deploy/vercel-guardrails.md`](deploy/vercel-guardrails.md))
 - Supabase app with no decisions on auth, storage, or RLS

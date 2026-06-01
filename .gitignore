@@ -10,6 +10,7 @@ coverage/
 .tmp/
 tmp/
 *.log
+.vercel/
 .orca-hvn/
 outputs/
 work/

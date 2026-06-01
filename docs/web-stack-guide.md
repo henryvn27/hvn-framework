@@ -22,6 +22,7 @@ The default ORCA-HVN web stack bias is:
 ## Key Web Decisions
 
 - Vercel versus Cloudflare versus Railway hosting path
+- Vercel deploy guardrails (slug naming, linking, SPA rewrites): see [`docs/deploy/vercel-guardrails.md`](deploy/vercel-guardrails.md)
 - Supabase versus thinner Postgres-only backend
 - Stripe versus Paddle or LemonSqueezy for billing
 - PostHog versus lighter analytics

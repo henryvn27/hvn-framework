@@ -62,3 +62,13 @@ Record exactly what should be posted back to Linear once auth is restored.
 If Tailwind scaffold steps fail (for example `npx tailwindcss init -p`), pin a known-good version for the template or scaffold you are using, and treat the mismatch as ecosystem drift.
 
 Promote repeated Tailwind v4 friction into a framework template update only after it repeats across multiple product runs.
+
+## 6) Cross-workspace edits: avoid patching the wrong repo
+
+Blind product runs often touch multiple sibling workspaces. `apply_patch` and relative-path commands default to the current working directory.
+
+Guardrails:
+
+- Prefer absolute file paths for edits outside the current repo.
+- Before patching, sanity-check the target root (`pwd`) and the file path you are about to modify.
+- When the work spans multiple repos, explicitly write the product workspace path into the run artifacts and re-use it verbatim.
