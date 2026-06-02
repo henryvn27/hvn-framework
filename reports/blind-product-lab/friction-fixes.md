@@ -111,3 +111,54 @@ From `reports/blind-product-lab/friction-log.md`:
 - Linear connector auth is still blocked (401). Once restored, create:
   - Linear project: “ORCA-HVN Blind Product Lab (Framework)”
   - Issue: “Add degraded-mode Linear shadow log + later sync script”
+
+---
+
+## 2026-06-02 — Per-Run Completion Contract (existing-gap fix)
+
+### Friction Observed
+
+- The blind product automation drifted into a weekly carry-forward model, which allowed partial progress to accumulate across runs instead of forcing one finished result per run.
+- Status and run-history artifacts reinforced that drift by treating ShipNotes as the standing active product.
+
+### Evidence
+
+From `reports/blind-product-lab/status.md` and `reports/blind-product-lab/run-history.md` before this fix:
+
+- `status.md` declared ShipNotes as the "Current Product"
+- Run 6 explicitly chose to continue ShipNotes as a carry-forward product
+
+### New Project vs Existing-Gap
+
+- Chosen: **existing-gap fix**
+- Why: The larger gap was the automation's top-level objective itself: it rewarded continuity and rationalized unfinished work.
+
+### Fix Chosen
+
+- Rewrite the recurring automation prompt so every run must:
+  - pick a fresh new product
+  - define a concrete done bar up front
+  - shrink scope until the product can finish in one run
+  - refuse carry-forward product work
+- Add a hard completion contract file that defines what counts as 100 percent complete.
+- Update blind-lab status/history artifacts so future runs inherit the new operating mode.
+
+### Files Changed
+
+- `reports/blind-product-lab/completion-contract.md`
+- `reports/blind-product-lab/status.md`
+- `reports/blind-product-lab/run-history.md`
+- `$CODEX_HOME/automations/orca-hvn-blind-product-friction-fixer/automation.toml`
+
+### Verification Performed
+
+- Local prompt and artifact consistency review
+- Repo markdown/link checks after documentation changes
+
+### Residual Risk
+
+- "100 percent complete" still depends on choosing a small enough idea. The new prompt addresses this by making scope compression mandatory, but poor idea selection can still waste time inside a run.
+
+### Deferred / Next Likely Fix
+
+- Add a compact idea-selection rubric that biases even harder toward one-user, one-loop, low-integration products if future runs still choose ideas that are too large.

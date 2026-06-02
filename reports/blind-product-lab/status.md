@@ -1,40 +1,30 @@
 # Blind Product Lab — Status
 
-Last updated: 2026-06-01
+Last updated: 2026-06-02
 
-## Current Product
+## Current Operating Mode
 
-- Product: ShipNotes
-- Product workspace path: /Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/ShipNotes
-- Repo/branch: ShipNotes `main` @ `8b35e90`, ORCA-HVN `main`
-- Stack: Vite + React + TypeScript (Tailwind v3) + URL-hash publishing (no backend for MVP)
-- Launch target: Vercel static deploy
-- Current deploy:
-  - https://shipnotes-six.vercel.app
-- Phase: deployed (MVP) + hardening + first-wave outreach
+- The blind product lab now starts a new product every run.
+- The previous carry-forward model is retired.
+- Each run must satisfy the hard done bar in `reports/blind-product-lab/completion-contract.md`.
+- Partial product work is not supposed to roll into the next run.
 
-## What’s Done
+## Completion Rule
 
-- Initialized blind-product-lab tracking artifacts (`status.md`, `friction-log.md`, `run-history.md`).
-- Selected product: ShipNotes.
-- Created ShipNotes workspace and MVP scaffold; local build + lint pass.
-- Wrote ShipNotes spec + plan under `reports/blind-product-lab/shipnotes/`.
-- Completed blind QA report + screenshots under `reports/blind-product-lab/shipnotes/`.
-- Deployed ShipNotes to Vercel.
-- Added onboarding improvements (“Use example”) and `.md` download export; deployed to Vercel (2026-05-31).
-- Tightened user-facing copy and status messages; build + lint verified (2026-05-31).
-- Added summary field + downloadable HTML release page export (helps when publish URLs are too long); deployed to Vercel (2026-05-31).
-- Added parse diagnostics so users can see which lines were kept vs ignored before trusting the generated notes; build + lint verified and redeployed (2026-05-31).
-- Added markdown export presets (Default / GitHub Release / Customer Update) with a composer preset selector; build + lint verified and redeployed (2026-06-01).
-- Started controlled launch outreach: sent one direct feedback ask to Trent Gegax at `trent.gegax@gramercyfund.com` with the live ShipNotes link (2026-05-31).
+- The automation should optimize for one small finished thing, not for a larger weekly product lane.
+- If a run cannot finish the first idea end-to-end, it must reduce scope or switch ideas inside the same run.
+- A run is incomplete if it ends with "continue next time" on product implementation, polish, or launch.
 
-## Current Blocker
+## Prior Completed Product Archive
 
-- Linear access blocked in this harness (401 reauthentication required), so Linear-first project/issue creation is not currently possible.
-- Accessible direct-contact surface in this harness is thin, so the planned 10-person outreach loop cannot be executed blindly from current context.
-- Real traction signal now depends on reply/usage feedback from the first outbound contact or a broader recipient list.
+- ShipNotes remains a completed legacy blind-lab artifact from the earlier carry-forward phase.
+- Workspace path: /Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/ShipNotes
+- Deploy: https://shipnotes-six.vercel.app
+- Reason it is archived here:
+  - useful friction lessons came from it, but it should no longer anchor future blind-product runs
 
-## Next Highest-Leverage Step
+## Current Known Harness Constraints
 
-- Restore Linear auth and create the Linear project + issues for ShipNotes (blocked in this harness).
-- Check for reply/usage feedback from Trent, then widen outreach only if more real recipients are available.
+- Linear access is currently blocked in this harness (`401: Reauthentication required`).
+- Public outreach, money movement, account mutations, and external commitments still require approval.
+- Accessible direct-contact surface can be thin, so future runs should prefer completion surfaces that do not depend on broad outbound outreach.

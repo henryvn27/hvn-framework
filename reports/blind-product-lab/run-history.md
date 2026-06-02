@@ -125,3 +125,21 @@
 - Next:
   - Restore Linear auth and create the ShipNotes Linear project + issues.
   - Add a git remote for ShipNotes (when ready) so weekly work can ship via PRs/CI.
+
+## 2026-06-02 (Framework Policy Pivot)
+
+- What changed:
+  - Retired the blind product lab carry-forward model.
+  - Added a hard completion contract under `reports/blind-product-lab/completion-contract.md`.
+  - Rewrote the recurring blind-product automation so each run must choose a fresh new product and finish it to a defined 100 percent bar in the same run.
+  - Updated `reports/blind-product-lab/status.md` so future runs inherit the new completion-first mode instead of ShipNotes as the active product.
+- What was verified:
+  - Prompt and artifact files updated locally.
+  - Repo markdown/link checks will validate the documentation changes.
+- What was blocked:
+  - Linear connector still requires reauthentication (401), so no Linear project/issue updates were possible for this policy change.
+- Why this matters:
+  - The biggest behavioral failure was allowing partial progress to masquerade as momentum across runs.
+  - The new rule forces scope compression or product switching until a small complete result is actually shipped.
+- Next:
+  - On the next blind-product run, choose a new product and satisfy the full completion contract instead of extending ShipNotes.
