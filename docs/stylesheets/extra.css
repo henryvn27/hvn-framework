@@ -1,15 +1,18 @@
 :root {
-  --md-primary-fg-color: #0f6d67;
-  --md-accent-fg-color: #d98324;
-  --orca-ink: #10353a;
+  --md-primary-fg-color: #10213e;
+  --md-accent-fg-color: #2f89ff;
+  --orca-ink: #10213e;
+  --orca-blue: #2f89ff;
+  --orca-sky: #91bfff;
+  --orca-surface: #f4f8ff;
 }
 
 .md-header {
-  background: linear-gradient(90deg, #0f6d67 0%, #155b7a 52%, #1f7a5b 100%);
+  background: linear-gradient(90deg, #0d1b34 0%, #10213e 48%, #184f9d 100%);
 }
 
 .md-tabs {
-  background: rgba(16, 53, 58, 0.96);
+  background: rgba(13, 27, 52, 0.96);
 }
 
 .md-typeset h1 {
@@ -17,23 +20,94 @@
 }
 
 .md-typeset h2 {
-  border-bottom: 1px solid rgba(15, 109, 103, 0.14);
+  border-bottom: 1px solid rgba(47, 137, 255, 0.16);
   padding-bottom: 0.25rem;
 }
 
 .md-typeset blockquote {
   border-left: 4px solid var(--md-accent-fg-color);
-  background: rgba(217, 131, 36, 0.06);
+  background: rgba(47, 137, 255, 0.06);
   padding: 0.8rem 1rem;
 }
 
 .md-typeset table:not([class]) {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(16, 53, 58, 0.08);
+  box-shadow: 0 16px 40px rgba(16, 33, 62, 0.1);
 }
 
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 12px;
+}
+
+.orca-hero {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 0 2rem;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(47, 137, 255, 0.18), transparent 34%),
+    linear-gradient(145deg, #0d1b34 0%, #10213e 55%, #173768 100%);
+  color: white;
+  box-shadow: 0 30px 60px rgba(16, 33, 62, 0.18);
+}
+
+.orca-hero h1,
+.orca-hero p {
+  color: white;
+}
+
+.orca-kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #91bfff;
+}
+
+.orca-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 42rem;
+  opacity: 0.94;
+}
+
+.orca-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.orca-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(145, 191, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 0.92rem;
+}
+
+.orca-hero-art {
+  display: flex;
+  justify-content: center;
+}
+
+.orca-hero-art img {
+  width: min(100%, 350px);
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.24));
+}
+
+@media (max-width: 900px) {
+  .orca-hero {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+  }
 }

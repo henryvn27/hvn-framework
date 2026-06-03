@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: assets/orca-hvn-logo.svg
+  logo: assets/orca.png
   favicon: assets/orca.png
   features:
     - navigation.sections
@@ -20,8 +20,8 @@ theme:
     - toc.follow
   palette:
     - scheme: default
-      primary: teal
-      accent: amber
+      primary: blue
+      accent: light blue
 
 markdown_extensions:
   - admonition
