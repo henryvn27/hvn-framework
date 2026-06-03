@@ -1,17 +1,8 @@
-<div class="orca-hero">
-  <div class="orca-hero-copy">
-    <p class="orca-kicker">ORCA-HVN</p>
-    <h1>Documentation Home</h1>
-    <p class="orca-lead">ORCA-HVN is a structured operating layer for Codex and Claude Code. It helps a new user get from "I installed this" to a real finished output, while still staying useful for someone who wants orchestration, long-running goal work, subagent control, and stronger QA discipline.</p>
-    <div class="orca-chip-row">
-      <span class="orca-chip">Codex</span>
-      <span class="orca-chip">Claude Code</span>
-      <span class="orca-chip">Dark-mode docs</span>
-    </div>
-  </div>
-  <div class="orca-hero-art">
-    <img src="assets/orca.png" alt="ORCA mascot" />
-  </div>
+<div class="orca-doc-intro">
+  <p class="orca-kicker">ORCA-HVN</p>
+  <h1>Documentation Home</h1>
+  <p class="orca-lead">ORCA-HVN is a workflow layer for Codex and Claude Code. It gives you a clearer first run, stronger orchestration, better long-running goal structure, and tighter review discipline without hiding the underlying harness.</p>
+  <p class="orca-meta"><strong>Hosts:</strong> Codex, Claude Code <span>•</span> <strong>Mode:</strong> Dark by default <span>•</span> <strong>Path:</strong> Setup-first docs</p>
 </div>
 
 ## Start Fast
@@ -61,13 +52,13 @@ The default ORCA path is:
 
 This is the main teaching path and the main production path.
 
-## Why ORCA Feels Different
+## What ORCA Adds
 
-- clearer first-run setup instead of a giant docs dump
-- host-aware behavior for Codex and Claude Code
-- stronger orchestration and subagent handoffs
-- explain mode and side-session support without derailing the main run
-- better long-running work structure with bounded autonomy
+- setup and onboarding that ask for the right context up front
+- host-aware routing for Codex and Claude Code features like `/goal` and side sessions
+- stronger subagent orchestration, handoff packets, and merge discipline
+- explain and side-session flows that do not derail the main run
+- better long-running work structure with bounded autonomy and clearer checkpoints
 
 ## Best Next Pages
 

@@ -55,6 +55,10 @@
   padding-bottom: 0.25rem;
 }
 
+.md-typeset h3 {
+  font-weight: 700;
+}
+
 .md-typeset blockquote {
   border-left: 4px solid var(--md-accent-fg-color);
   background: rgba(47, 137, 255, 0.06);
@@ -64,11 +68,10 @@
 .md-typeset table:not([class]) {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(16, 33, 62, 0.1);
+  border: 1px solid rgba(16, 33, 62, 0.08);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) {
-  box-shadow: none;
   border: 1px solid rgba(145, 191, 255, 0.12);
 }
 
@@ -77,22 +80,17 @@
   border-radius: 12px;
 }
 
-.orca-hero {
-  display: grid;
-  grid-template-columns: 1.25fr 0.95fr;
-  gap: 2rem;
-  align-items: center;
-  padding: 1.4rem 1.6rem;
+.orca-doc-intro {
+  padding: 1.15rem 1.25rem;
   margin: 0 0 2rem;
-  border-radius: 14px;
+  border-radius: 10px;
   background: #10213e;
   color: white;
   border: 1px solid rgba(145, 191, 255, 0.14);
-  box-shadow: 0 14px 28px rgba(3, 10, 24, 0.18);
 }
 
-.orca-hero h1,
-.orca-hero p {
+.orca-doc-intro h1,
+.orca-doc-intro p {
   color: white;
 }
 
@@ -106,38 +104,22 @@
 }
 
 .orca-lead {
-  font-size: 0.98rem;
-  line-height: 1.65;
-  max-width: 38rem;
+  font-size: 0.96rem;
+  line-height: 1.62;
+  max-width: 44rem;
   opacity: 0.9;
 }
 
-.orca-chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1rem;
+.orca-meta {
+  margin: 0.9rem 0 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+  color: rgba(234, 243, 255, 0.78);
 }
 
-.orca-chip {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid rgba(145, 191, 255, 0.22);
-  border-radius: 999px;
-  padding: 0.38rem 0.78rem;
-  background: rgba(255, 255, 255, 0.05);
-  color: white;
-  font-size: 0.84rem;
-}
-
-.orca-hero-art {
-  display: flex;
-  justify-content: center;
-}
-
-.orca-hero-art img {
-  width: min(100%, 265px);
-  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.22));
+.orca-meta span {
+  margin: 0 0.4rem;
+  color: rgba(145, 191, 255, 0.7);
 }
 
 .orca-link-grid {
@@ -151,34 +133,33 @@
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  padding: 1rem 1.05rem;
-  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
   text-decoration: none;
   color: inherit;
   border: 1px solid rgba(145, 191, 255, 0.14);
   background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.18s ease, transform 0.18s ease, background 0.18s ease;
+  transition: border-color 0.18s ease, background 0.18s ease;
 }
 
 .orca-link-card strong {
   color: #eaf3ff;
+  font-size: 0.98rem;
 }
 
 .orca-link-card span {
   color: rgba(234, 243, 255, 0.72);
-  font-size: 0.94rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .orca-link-card:hover {
-  transform: translateY(-1px);
   border-color: rgba(47, 137, 255, 0.34);
-  background: rgba(47, 137, 255, 0.06);
+  background: rgba(47, 137, 255, 0.04);
 }
 
 @media (max-width: 900px) {
-  .orca-hero {
-    grid-template-columns: 1fr;
+  .orca-doc-intro {
     padding: 1.4rem;
   }
 
