@@ -2,12 +2,17 @@
 
 ORCA documentation is layered on purpose. Start with the smallest surface that answers your question, then go deeper only when needed.
 
+If you want the polished docs-site version instead of browsing raw markdown, use the GitHub Pages docs site once enabled for this repo:
+
+- `https://henryvn27.github.io/orca-hvn/`
+
 ## Start Here
 
 - [start-here.md](start-here.md): the best first page for most readers
 - [intro-guide.md](intro-guide.md): the shortest explanation of the ORCA approach
 - [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [../commands/orca-demo.md](../commands/orca-demo.md): low-input personalized showcase that becomes a real `/goal`
+- [demo.md](demo.md): docs-site routing page for the ORCA demo path
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
 - [install-overview.md](install-overview.md): how the install system is organized
 - [install.md](install.md): canonical step-by-step install guide
@@ -113,7 +118,7 @@ These are teaching-oriented pages for common paths:
 
 ## Wiki
 
-The `wiki/` folder is a practical knowledge base layer for GitHub wiki publishing and summary routing:
+The `wiki/` folder is a practical GitHub-native summary layer, not the primary public docs experience:
 
 - [../wiki/Home.md](../wiki/Home.md)
 - [../wiki/Getting-Started.md](../wiki/Getting-Started.md)

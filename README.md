@@ -10,6 +10,10 @@ That matches the framework's job: orchestrate work across agents and stages, do 
 
 This README is the front door for getting ORCA set up, running your first real workflow, and understanding why the framework exists without reading the whole repo first.
 
+The polished docs site is intended to live on GitHub Pages:
+
+- `https://henryvn27.github.io/orca-hvn/`
+
 ## What ORCA Is For
 
 ORCA is built for work like:
@@ -58,6 +62,7 @@ Start with:
 - [docs/install-overview.md](docs/install-overview.md)
 - [docs/first-run.md](docs/first-run.md)
 - [docs/first-workflow.md](docs/first-workflow.md)
+- Pages docs home: `https://henryvn27.github.io/orca-hvn/`
 
 ## Try ORCA In One Prompt
 
@@ -242,6 +247,8 @@ If you want the deeper model behind that, read [docs/intro.md](docs/intro.md), [
 
 Use these next:
 
+- Pages docs home: `https://henryvn27.github.io/orca-hvn/`
+- first 10 minutes: [docs/first-10-minutes.md](docs/first-10-minutes.md)
 - setup and first run: [docs/install-overview.md](docs/install-overview.md), [docs/first-run.md](docs/first-run.md), [docs/first-workflow.md](docs/first-workflow.md)
 - one-prompt showcase: [commands/orca-demo.md](commands/orca-demo.md)
 - docs home: [docs/README.md](docs/README.md)
@@ -251,6 +258,7 @@ Use these next:
 - orchestration path: [docs/agent-orchestration.md](docs/agent-orchestration.md)
 - explanation and side-chat behavior: [docs/explanation-mode.md](docs/explanation-mode.md), [docs/side-sessions.md](docs/side-sessions.md)
 - goal and background execution: [docs/guides/goal-mode-guide.md](docs/guides/goal-mode-guide.md), [docs/guides/background-mode-guide.md](docs/guides/background-mode-guide.md)
+- proof and outcomes: [docs/proof.md](docs/proof.md)
 
 ## Inspiration And Upstreams
 

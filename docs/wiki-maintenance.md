@@ -1,6 +1,8 @@
 # Wiki Maintenance
 
-The wiki is a summary and routing layer, not a second full copy of the docs tree.
+The wiki is a summary and routing layer, not a second full copy of the docs tree and not the primary public docs site.
+
+The primary polished docs surface should be GitHub Pages.
 
 ## Wiki Rules
 
@@ -8,6 +10,7 @@ The wiki is a summary and routing layer, not a second full copy of the docs tree
 - keep `_Sidebar.md` aligned with the current docs information architecture
 - use wiki pages to summarize and route, not to mirror every command contract
 - refresh the wiki when the top-level feature map or start-here path changes
+- keep the wiki thinner than the Pages docs site
 
 ## When To Update The Wiki
 

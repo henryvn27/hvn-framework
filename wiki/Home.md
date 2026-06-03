@@ -1,24 +1,26 @@
 # ORCA-HVN Wiki
 
-This wiki is the summary and routing layer for ORCA-HVN.
+This wiki is the thin GitHub-native summary layer for ORCA-HVN.
+
+The primary polished docs surface should be GitHub Pages:
+
+- `https://henryvn27.github.io/orca-hvn/`
 
 ## Start Here
 
 - [Getting-Started.md](Getting-Started.md)
-- [Core-Concepts.md](Core-Concepts.md)
 - [Feature-Index.md](Feature-Index.md)
 - [Workflow-Index.md](Workflow-Index.md)
+- [Commands.md](Commands.md)
 
-## What ORCA-HVN Is
+## What The Wiki Is For
 
-ORCA-HVN is a framework for running agent-assisted software work with durable workflow structure, artifact tracking, host-aware routing, and QA discipline.
+- fast GitHub-native orientation
+- summary routing
+- quick links for contributors and repo visitors
 
-It is the primary workflow now, not a companion to GStack or GSD.
+## What To Use Instead For The Full Experience
 
-## Best Entry Points
-
-- new visitor: [Getting-Started.md](Getting-Started.md)
-- choosing features: [Feature-Index.md](Feature-Index.md)
-- choosing commands: [Commands.md](Commands.md)
-- comparing hosts: [Hosts-and-Harnesses.md](Hosts-and-Harnesses.md)
-- understanding maintenance loops: [Automation.md](Automation.md)
+- Pages docs site for the polished public docs hub
+- `docs/` for canonical long-form markdown
+- `commands/` for the actual command contracts

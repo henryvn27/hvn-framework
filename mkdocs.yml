@@ -1,0 +1,84 @@
+site_name: ORCA-HVN
+site_description: Orchestration framework for Codex and Claude Code
+site_url: https://henryvn27.github.io/orca-hvn/
+repo_name: henryvn27/orca-hvn
+repo_url: https://github.com/henryvn27/orca-hvn
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/orca-hvn-logo.svg
+  favicon: assets/orca.png
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Start Here:
+      - Documentation Home: documentation-home.md
+      - First 10 Minutes: first-10-minutes.md
+      - Start Here: start-here.md
+      - Quickstart: quickstart.md
+      - First Run: first-run.md
+      - First Workflow: first-workflow.md
+      - Beginners Guide: guides/beginners-guide.md
+  - Demo And Proof:
+      - Demo Prompt: demo.md
+      - Proof And Outcomes: proof.md
+      - Feature Index: feature-index.md
+      - Command Index: command-index.md
+  - Core Workflow:
+      - Choose Your Path: choose-your-path.md
+      - Agent Orchestration: agent-orchestration.md
+      - Goal Mode: guides/goal-mode-guide.md
+      - Background Mode: guides/background-mode-guide.md
+      - Explanation Mode: explanation-mode.md
+      - Side Sessions: side-sessions.md
+  - Hosts:
+      - Compatibility Matrix: compatibility-matrix.md
+      - Codex CLI: hosts/codex-cli.md
+      - Claude Code: hosts/claude-code.md
+  - Wrapped Packs:
+      - Overview: wrapped-capability-packs.md
+      - Impeccable: impeccable-pack.md
+      - Superpowers: superpowers-pack.md
+  - Reference:
+      - Commands Catalog: commands.md
+      - Skills Catalog: skills.md
+      - Use Case Map: use-case-map.md
+      - Glossary: glossary.md
+      - Philosophy: philosophy.md
+  - Contributing:
+      - README Scope: readme-scope.md
+      - Wiki Maintenance: wiki-maintenance.md
+      - Contributing Docs: contributing-docs.md
