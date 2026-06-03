@@ -25,12 +25,12 @@
 }
 
 .md-header {
-  background: linear-gradient(90deg, #0d1b34 0%, #10213e 48%, #184f9d 100%);
+  background: #10213e;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .md-tabs {
-  background: rgba(13, 27, 52, 0.96);
+  background: #0d1b34;
 }
 
 .md-sidebar {
@@ -85,9 +85,7 @@
   padding: 1.4rem 1.6rem;
   margin: 0 0 2rem;
   border-radius: 14px;
-  background:
-    radial-gradient(circle at top right, rgba(47, 137, 255, 0.12), transparent 24%),
-    linear-gradient(145deg, rgba(12, 24, 44, 0.98) 0%, rgba(16, 33, 62, 0.98) 64%, rgba(20, 45, 82, 0.98) 100%);
+  background: #10213e;
   color: white;
   border: 1px solid rgba(145, 191, 255, 0.14);
   box-shadow: 0 14px 28px rgba(3, 10, 24, 0.18);
