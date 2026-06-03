@@ -21,6 +21,13 @@ Use when:
 - one parent should delegate bounded work to one or more workers
 - the parent must reconcile results and own the user response
 
+Strong fit:
+
+- focused implementation ownership
+- targeted research
+- CI triage plus parallel local debugging
+- PR feedback remediation
+
 Failure modes:
 
 - vague worker contracts
@@ -44,6 +51,13 @@ Use when:
 - work branches are independent
 - parallel research, code reading, or comparisons help
 
+Parent rules:
+
+- branch scopes must not overlap
+- every branch needs a named owner
+- merge criteria must be stated before fan-out starts
+- the parent should keep one local task instead of only waiting
+
 Failure modes:
 
 - overlapping branch scope
@@ -55,6 +69,12 @@ Use when:
 
 - an independent validation pass is worth the cost
 - implementation and checking should stay separate
+
+Strong fit:
+
+- code change plus review
+- build plus blind QA
+- feature implementation plus security review
 
 Failure modes:
 
@@ -90,3 +110,21 @@ Failure modes:
 
 - weak stop conditions
 - poor receipt or resume artifacts
+
+## Sidecar Vs Critical Path
+
+Before spawning workers, classify work into:
+
+- critical path: the next thing the parent must know before it can proceed
+- sidecar: useful parallel work that can advance without blocking the next local step
+
+Do not offload the immediate critical-path step just because subagents exist.
+
+## Merge Discipline
+
+When workers return:
+
+- ingest structured results first
+- reconcile conflicts before speaking to the user
+- keep proof separate from recommendation
+- state what was verified, what is still assumed, and what should run next

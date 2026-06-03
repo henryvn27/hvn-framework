@@ -27,7 +27,8 @@ Use after spec and planning when the next milestone is safe and verifiable enoug
 2. Define objective, scope, out-of-scope boundaries, and verification.
 3. Add stop conditions and approval triggers.
 4. Check host support and fallback path.
-5. Write the goal contract.
+5. When the active host is Codex or Claude Code and native `/goal` is available, prepare the contract to hand off directly into that host command.
+6. Write the goal contract.
 
 ## Outputs And Artifacts
 

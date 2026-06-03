@@ -14,6 +14,7 @@ Use this adapter when the active harness is unknown or does not have a dedicated
 Ask for the harness only when it changes the next setup step. Otherwise give a generic path and a manual fallback.
 
 Do not assume MCP support. Do not assume write permissions. Validate each layer separately.
+Do not assume side-chat, popout, or `/btw` support. If the host is unknown, keep side sessions separate by framing and artifact instead of claiming a native UI behavior.
 
 ## Compatibility View
 

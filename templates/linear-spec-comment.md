@@ -1,28 +1,29 @@
 # Linear Spec Comment
 
-## ORCA-HVN Spec
+## ORCA-HVN Spec (Concrete)
 
 **Issue:** `ISSUE-ID`
 
-**Goal:** State the user or system outcome.
+**One-line goal (no filler):** What changes for the user/system after this ships?
 
-**Users and scenarios:** Name who this is for and when they need it.
+**User + moment:** Who is this for, and what exact moment triggers the need?
 
-**Requirements:**
+**Scope (what changes):**
 
-- Requirement one
-- Requirement two
+- Bullet list. Each bullet should name a real surface (route/screen/command/file/data) and an observable behavior change.
 
-**Non-goals:**
+**Out of scope (what stays the same):**
 
-- Excluded scope one
-- Excluded scope two
+- Explicit exclusions. If it’s tempting, list it here.
 
-**Acceptance criteria:**
+**Acceptance (how we’ll call it done):**
 
-- Testable criterion one
-- Testable criterion two
+- List observable checks. Prefer “Given/When/Then” or “Command → expected output” style.
 
-**Open questions:** List only questions that block planning or approval.
+**Risks:** Name the real failure modes (data loss, broken link, auth leak, wrong output, etc).
+
+**Open questions (only blockers):** If it doesn’t block plan/build, don’t put it here.
+
+**Anti-generic pass:** If this reads like a reusable SaaS template, rewrite it. Use repo nouns and user language.
 
 **Recommended next state:** `Spec Ready`

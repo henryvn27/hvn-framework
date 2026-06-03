@@ -1,0 +1,233 @@
+#!/usr/bin/env sh
+set -eu
+
+script_path="$0"
+script_dir=$(CDPATH= cd -- "$(dirname -- "$script_path")" && pwd)
+root=$(CDPATH= cd -- "$script_dir/.." && pwd)
+script_name=$(basename -- "$0")
+
+usage() {
+  cat <<'EOF'
+Usage:
+  orca help
+  orca list
+  orca show <command>
+  orca path <command>
+  orca run <command> [--print] [--harness codex|generic] [--target DIR] [--sandbox MODE] [--output FILE] [--] [context...]
+
+Installed shims such as `orca-onboard` and `orca-build` call `orca run <command>`.
+
+Examples:
+  orca list
+  orca show orca-build
+  orca run orca-onboard --print -- "Build a small iOS settings screen"
+  orca-build --harness codex --target /path/to/repo -- "Implement the approved plan"
+EOF
+}
+
+list_commands() {
+  find "$root/commands" -type f -name 'orca-*.md' | sed "s#^$root/commands/##" | sed 's/\.md$//' | sort
+}
+
+normalize_command() {
+  name="$1"
+  case "$name" in
+    "") return 1 ;;
+    *.md) name=${name%.md} ;;
+  esac
+  case "$name" in
+    orca-*) ;;
+    *) name="orca-$name" ;;
+  esac
+  printf '%s\n' "$name"
+}
+
+command_file() {
+  name=$(normalize_command "$1") || return 1
+  file="$root/commands/$name.md"
+  [ -f "$file" ] || {
+    printf 'Unknown ORCA command: %s\n' "$name" >&2
+    exit 1
+  }
+  printf '%s\n' "$file"
+}
+
+emit_prompt() {
+  name="$1"
+  file="$2"
+  context="$3"
+
+  printf 'Follow the ORCA-HVN workflow command `%s`.\n\n' "$name"
+  printf 'Execution rules:\n'
+  printf -- '- Prefer Linear-first execution when Linear is available.\n'
+  printf -- '- If Linear is unavailable, continue in degraded local-only mode and say so explicitly.\n'
+  printf -- '- Use the command definition below as the source of truth.\n'
+  printf -- '- End with a concise completion summary that states outcome, verification, blockers, and next step.\n\n'
+  printf 'Command definition:\n\n'
+  cat "$file"
+  if [ -n "$context" ]; then
+    printf '\n\nAdditional context:\n\n%s\n' "$context"
+  fi
+}
+
+run_codex() {
+  name="$1"
+  file="$2"
+  target="$3"
+  sandbox="$4"
+  output_file="$5"
+  context="$6"
+
+  command -v codex >/dev/null 2>&1 || {
+    printf 'Codex CLI is not installed. Use --print to inspect the ORCA prompt.\n' >&2
+    exit 1
+  }
+
+  prompt_file=$(mktemp "${TMPDIR:-/tmp}/orca-prompt.XXXXXX")
+  trap 'rm -f "$prompt_file"' EXIT INT TERM HUP
+  emit_prompt "$name" "$file" "$context" > "$prompt_file"
+
+  if [ -n "$output_file" ]; then
+    codex exec \
+      --ignore-user-config \
+      --skip-git-repo-check \
+      --sandbox "$sandbox" \
+      -C "$target" \
+      -o "$output_file" \
+      - < "$prompt_file"
+  else
+    codex exec \
+      --ignore-user-config \
+      --skip-git-repo-check \
+      --sandbox "$sandbox" \
+      -C "$target" \
+      - < "$prompt_file"
+  fi
+}
+
+if [ "$script_name" != "orca" ]; then
+  subcommand="run"
+  target_command="$script_name"
+else
+  subcommand="${1:-help}"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+  target_command=""
+fi
+
+case "$subcommand" in
+  help|-h|--help)
+    usage
+    exit 0
+    ;;
+  list)
+    list_commands
+    exit 0
+    ;;
+  show|path|run)
+    if [ "$script_name" = "orca" ]; then
+      [ "$#" -gt 0 ] || {
+        usage >&2
+        exit 1
+      }
+      target_command="$1"
+      shift
+    fi
+    ;;
+  *)
+    if [ "$script_name" = "orca" ]; then
+      target_command="$subcommand"
+      subcommand="run"
+    fi
+    ;;
+esac
+
+file=$(command_file "$target_command")
+name=$(normalize_command "$target_command")
+
+case "$subcommand" in
+  show)
+    cat "$file"
+    exit 0
+    ;;
+  path)
+    printf '%s\n' "$file"
+    exit 0
+    ;;
+  run) ;;
+  *)
+    usage >&2
+    exit 1
+    ;;
+esac
+
+print_only=0
+harness="auto"
+target_dir=$(pwd)
+sandbox="workspace-write"
+output_file=""
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --print)
+      print_only=1
+      shift
+      ;;
+    --harness)
+      harness="$2"
+      shift 2
+      ;;
+    --target)
+      target_dir="$2"
+      shift 2
+      ;;
+    --sandbox)
+      sandbox="$2"
+      shift 2
+      ;;
+    --output)
+      output_file="$2"
+      shift 2
+      ;;
+    --)
+      shift
+      break
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
+context="$*"
+
+if [ "$print_only" -eq 1 ]; then
+  emit_prompt "$name" "$file" "$context"
+  exit 0
+fi
+
+if [ "$harness" = "auto" ]; then
+  if command -v codex >/dev/null 2>&1; then
+    harness="codex"
+  else
+    harness="generic"
+  fi
+fi
+
+case "$harness" in
+  codex)
+    run_codex "$name" "$file" "$target_dir" "$sandbox" "$output_file" "$context"
+    ;;
+  generic)
+    emit_prompt "$name" "$file" "$context"
+    ;;
+  *)
+    printf 'Unsupported harness: %s\n' "$harness" >&2
+    exit 1
+    ;;
+esac

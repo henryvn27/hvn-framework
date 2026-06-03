@@ -11,7 +11,7 @@ That contract should usually come after idea shaping and validation, not instead
 3. Discovery and research gather evidence.
 4. Legacy archaeology enriches the context when the repo is inherited, under-documented, or fragile.
 5. `orca-spec` writes the implementation contract.
-6. `orca-plan` turns the spec into sequenced work with verification gates.
+6. `orca-plan` turns the spec into sequenced milestone-sized work with verification gates and an explicit first execution slice.
 7. `orca-next` explains the next move after spec and planning when useful.
 8. The next bounded milestone may become a goal contract when completion and verification are clear.
 9. Approval gates control risky actions before build or goal execution.

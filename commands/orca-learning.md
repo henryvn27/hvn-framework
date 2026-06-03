@@ -6,11 +6,11 @@ Inspect or adjust ORCA-HVN's adaptive learning-help mode.
 
 ## When To Use
 
-Use when the user wants more help, less help, help only on request, or no coaching.
+Use when the user wants more help, less help, help only on request, no coaching, or a different involvement/check-in style.
 
 ## Required Inputs
 
-- Desired learning-help mode or inspection question
+- Desired learning-help mode, involvement preference, or inspection question
 
 ## Optional Inputs
 
@@ -21,12 +21,14 @@ Use when the user wants more help, less help, help only on request, or no coachi
 
 1. Use `orca-learning`.
 2. Determine whether the user wants full help, light help, on-request help, or off.
-3. Confirm the mode change briefly.
-4. Respect the preference without debate.
+3. Also determine whether the user wants more check-ins, fewer check-ins, or different handling for goal/background execution.
+4. Confirm the mode change briefly.
+5. Respect the preference without debate.
 
 ## Outputs And Artifacts
 
 - Updated learning-help preference
+- Updated involvement or checkpoint preference when requested
 - Optional `templates/user-skill-profile.md` note when a durable preference is clear
 
 ## Failure Cases

@@ -88,3 +88,26 @@ Each entry should include: what happened, cause, workaround, and classification:
 - Cause: The project was created as a local blind-lab workspace without a configured remote.
 - Workaround: Add a remote once the repo is ready for collaboration/shipping, and keep weekly progress flowing through PRs/checks.
 - Classification: Product/project-specific issue (version control plumbing)
+
+## 2026-06-02
+
+### Entry 12 — Cross-workspace copy command broke on quoted destination handling
+
+- What happened: The first attempt to scaffold the new `bugbrief` workspace failed because a multi-file `cp` command with a quoted destination path resolved incorrectly and wrote “Not a directory”.
+- Cause: Multi-repo work plus spaces in iCloud-backed paths makes long copy commands brittle.
+- Workaround: Re-ran the setup using smaller commands with fully quoted absolute paths and one explicit destination per loop.
+- Classification: Codex host issue (shell ergonomics) / ORCA host guidance gap (multi-workspace setup)
+
+### Entry 13 — Node REPL browser QA reused stale bindings
+
+- What happened: A follow-up Playwright QA script in `node_repl` failed with `Identifier 'chromium' has already been declared`.
+- Cause: The persistent Node REPL keeps top-level bindings across calls, which is easy to forget when doing iterative browser QA.
+- Workaround: Used fresh binding names inside a block-scoped script and continued without resetting the whole kernel.
+- Classification: Codex host issue (persistent REPL ergonomics)
+
+### Entry 14 — Browser evidence extraction failed on a brittle textarea index assumption
+
+- What happened: The first evidence-capture script pulled the actual-behavior textarea instead of the share-link textarea, then failed navigation with “Cannot navigate to invalid URL”.
+- Cause: The QA harness relied on a guessed element index instead of first checking the rendered textarea order.
+- Workaround: Ran a small inspection pass to enumerate textareas, then targeted the correct field and completed the screenshots.
+- Classification: Codex host issue (browser automation brittleness) / project-specific QA scripting issue

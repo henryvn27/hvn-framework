@@ -25,7 +25,7 @@ Keep these separate:
 
 - Service integration: the external service, such as GitHub or Linear.
 - Transport or integration method: native connector, MCP server, API token, plugin, CLI helper, or manual copy/paste.
-- Harness or host surface: Codex, Claude Code, Hermes Agent, VS Code, or a generic terminal/editor.
+- Harness or host surface: Codex, Claude Code, VS Code, or a generic terminal/editor.
 
 The same service may have different setup paths in different hosts.
 

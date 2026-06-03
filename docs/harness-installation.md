@@ -10,7 +10,6 @@ Examples:
 
 - Codex
 - Claude Code
-- Hermes Agent
 - VS Code
 
 ## Install Order

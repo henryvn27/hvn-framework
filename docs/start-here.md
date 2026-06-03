@@ -24,6 +24,7 @@ Use ORCA-HVN when the hard part is not "make the model write code," but:
 - keeping QA, review, approvals, and receipts tied to the same work item
 - adapting to different harnesses and tool surfaces without pretending they are identical
 - onboarding users into orchestration and agent-management habits without a human guide
+- owning the real ship, QA, and feedback-repair lanes instead of stopping at "code changed"
 
 ## The Core Mental Model
 
@@ -40,13 +41,31 @@ ORCA is easiest to understand as five layers:
 Do this first:
 
 1. [first-workflow.md](first-workflow.md)
-2. run `orca-onboard`
-3. run `orca-spec`
-4. run `orca-plan`
-5. run `orca-build`
-6. run `orca-review`
+2. use `orca-onboard` as your first workflow step
+3. use `orca-spec`
+4. use `orca-plan`
+5. use `orca-build`
+6. use `orca-review`
+
+Important:
+
+- the install flow provides runnable `orca` and `orca-*` commands in the installed `bin/` directory
+- in a host like Codex CLI, the shipped wrappers can launch Codex directly or print the exact ORCA prompt with `--print`
+- if you prefer a different host-specific prompt layer, reuse `orca show <command>` or `orca run <command> --print`
 
 If that path feels clear, then widen into the rest of the framework.
+
+## Orchestration First Path
+
+If the job is primarily controller or subagent orchestration, start with:
+
+1. `orca-controller`
+2. `orca-orient`
+3. `orca-delegate`
+4. `orca-ingest`
+5. `orca-next`
+
+This is the shortest ORCA path for multi-harness or parent-worker work.
 
 ## Read In This Order
 
@@ -60,12 +79,14 @@ If that path feels clear, then widen into the rest of the framework.
 ## Best Next Page By Situation
 
 - I just want the clearest starter path: [first-workflow.md](first-workflow.md)
+- I feel overwhelmed by Codex or Claude Code: [guides/beginners-guide.md](guides/beginners-guide.md)
 - I need to install ORCA clearly: [install-overview.md](install-overview.md)
 - I just want to try it fast: [quickstart.md](quickstart.md)
 - I want to understand the big picture: [intro.md](intro.md)
 - I am moving off GStack or GSD: [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
-- I use a controller agent like Hermes: [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
+- I want the controller/subagent path: [agent-orchestration.md](agent-orchestration.md)
 - I care about design quality and not looking AI-generated: [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
 - I need a feature map: [feature-index.md](feature-index.md)
 - I need the right command: [command-index.md](command-index.md)
+- I want ORCA to explain what is happening: [explanation-mode.md](explanation-mode.md)
 - I need to know what ORCA should trust first: [truth-hierarchy.md](truth-hierarchy.md)

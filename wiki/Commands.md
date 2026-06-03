@@ -8,10 +8,14 @@ Good starting points:
 - `orca-spec`
 - `orca-plan`
 - `orca-build`
+- `orca-controller`
+- `orca-orient`
+- `orca-delegate`
+- `orca-ingest`
+- `orca-next`
 - `orca-background`
 - `orca-goal`
 - `orca-status`
 - `orca-docs`
 
 See `docs/command-index.md`.
-

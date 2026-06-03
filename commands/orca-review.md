@@ -39,6 +39,10 @@ Post or store the review report in the declared record.
 4. Recommend fixes or state that no blocking issues were found.
 5. Sync review decision to the work item.
 
+## Side-Session Fit
+
+`orca-review` is a strong side-session candidate because critique usually benefits from staying separate from the main executor thread until it is time to hand back findings.
+
 ## Outputs And Artifacts
 
 - `templates/review-report.md`

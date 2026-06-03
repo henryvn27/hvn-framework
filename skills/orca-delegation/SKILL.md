@@ -21,11 +21,13 @@ Use when a controller decides another actor should perform bounded implementatio
 
 ## Exact Workflow
 
-1. State the objective and linked artifacts.
-2. Bound scope and out-of-scope work.
-3. Define required outputs and verification.
-4. Define stop conditions and return format.
-5. Require a structured result on return.
+1. Decide whether delegation is actually warranted.
+2. Choose the orchestration pattern if delegation is warranted.
+3. State the objective, linked artifacts, and ownership boundary.
+4. Bound scope and out-of-scope work.
+5. Define required outputs, verification, and return schema.
+6. Define stop conditions, escalation rules, and approval boundary.
+7. Require a structured result on return.
 
 ## Expected Outputs
 
@@ -35,9 +37,12 @@ Use when a controller decides another actor should perform bounded implementatio
 ## Quality Bar
 
 The executor should not have to infer the real task.
+The parent should not have to guess how to ingest the result.
 
 ## Common Failure Modes
 
 - delegation with fuzzy scope
+- delegation where the parent outsourced the immediate critical-path step unnecessarily
+- overlapping ownership between workers
 - no verification requirement
 - no structured return format

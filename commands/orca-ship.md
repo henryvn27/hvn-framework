@@ -3,6 +3,7 @@
 ## Purpose
 
 Prepare a change for release with final validation, handoff, done-state evidence, and rollback notes.
+This is also the official ORCA ship lane for Apple app release ops and web deploy handoff.
 
 ## When To Use
 
@@ -19,6 +20,7 @@ Use after implementation, review, QA, and required fixes are complete.
 - Release notes
 - Version target
 - Deployment procedure
+- platform target such as TestFlight, App Store Connect, or Vercel
 
 ## Linear Context
 
@@ -36,10 +38,19 @@ Write ship readiness to the chosen record before marking work complete.
 
 1. Use `orca-ship`.
 2. Confirm acceptance criteria and gates.
-3. Run final validation.
-4. Prepare release notes and rollback guidance.
-5. Identify follow-up issues.
-6. Recommend done only with evidence.
+3. Identify the ship target and release lane.
+4. Run final validation.
+5. For Apple releases, keep these states separate:
+   - local build passed
+   - archive created
+   - export created
+   - uploaded
+   - processed or visible
+   - distributed
+6. For web deploys, keep preview and production distinct and default to preview unless production is explicitly intended.
+7. Prepare release notes and rollback guidance.
+8. Identify follow-up issues.
+9. Recommend done only with evidence.
 
 ## Outputs And Artifacts
 
@@ -51,6 +62,7 @@ Write ship readiness to the chosen record before marking work complete.
 
 - If a gate is incomplete, stop and route to the relevant command.
 - If validation cannot run, record the exact blocker.
+- If upload or deploy evidence is missing, do not call the release complete.
 
 ## Related Commands And Skills
 

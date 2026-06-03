@@ -5,6 +5,8 @@
 - Controller:
 - Executor:
 - Task title:
+- Selected pattern:
+- Why delegation is worth it:
 
 ## Linked Artifacts
 
@@ -12,12 +14,17 @@
 - Spec:
 - Milestone:
 - Goal contract:
+- Ingest target:
 
 ## Objective
 
 - 
 
 ## In Scope
+
+- 
+
+## Owned Write Scope
 
 - 
 
@@ -38,6 +45,10 @@
 - 
 
 ## Stop Conditions
+
+- 
+
+## Escalation And Approval Path
 
 - 
 

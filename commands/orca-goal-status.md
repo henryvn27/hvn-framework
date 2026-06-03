@@ -22,8 +22,9 @@ Use when a goal is active, paused, completed, cleared, blocked, or being handed 
 ## Workflow
 
 1. Read goal contract and host status when available.
-2. Summarize lifecycle state, progress, blocker, verification, and approvals.
-3. Update goal status artifact and run memory when needed.
+2. For Codex or Claude Code, prefer native `/goal` status before falling back to artifacts.
+3. Summarize lifecycle state, progress, blocker, verification, and approvals.
+4. Update goal status artifact and run memory when needed.
 
 ## Outputs And Artifacts
 

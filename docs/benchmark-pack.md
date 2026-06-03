@@ -1,6 +1,6 @@
 # Benchmark Pack
 
-ORCA-HVN benchmark packs provide a repeatable way to compare onboarding and spec quality over time. The goal is not synthetic leaderboard theater. The goal is to catch whether workflow changes improve or degrade the ability to turn fuzzy requests into usable specs.
+ORCA-HVN benchmark packs provide a repeatable way to compare install, onboarding, spec, and orchestration quality over time. The goal is not synthetic leaderboard theater. The goal is to catch whether workflow changes improve or degrade the actual user path.
 
 ## Purpose
 
@@ -9,11 +9,14 @@ Use benchmark packs to compare:
 - ORCA-HVN version to ORCA-HVN version
 - prompt set A to prompt set B
 - workflow changes over time
+- ORCA-HVN against adjacent frameworks when the comparison is grounded and repeatable
 
 ## What The Pack Measures
 
-The onboarding and spec benchmark focuses on:
+The benchmark packs focus on:
 
+- install speed and clarity
+- onboarding information yield versus hassle
 - ambiguity detection
 - question quality
 - constraint capture
@@ -26,6 +29,7 @@ The onboarding and spec benchmark focuses on:
 ## Pack Structure
 
 - [benchmarks/onboarding-spec/README.md](../benchmarks/onboarding-spec/README.md)
+- [benchmarks/install-onboarding-race/README.md](../benchmarks/install-onboarding-race/README.md)
 - `benchmarks/onboarding-spec/cases/`
 - [templates/benchmark-case.md](../templates/benchmark-case.md)
 - [templates/benchmark-report.md](../templates/benchmark-report.md)
@@ -39,12 +43,16 @@ Use both:
 
 Examples of hard requirements:
 
+- the install completed without hidden manual recovery
+- the onboarding captured enough information to start real work
 - the workflow identified key ambiguity
 - the workflow separated goals from non-goals
 - the resulting spec contains testable acceptance criteria
 
 Examples of rubric dimensions:
 
+- whether the install path was understandable to a first-time user
+- whether the onboarding asked too little or too much
 - whether the questions were high leverage
 - whether the scope stayed disciplined
 - whether the resulting spec would help build and QA

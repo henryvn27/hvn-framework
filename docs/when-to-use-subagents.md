@@ -29,3 +29,8 @@ Avoid subagents when:
 Do not create a separate agent for every subtask.
 
 Prefer single-agent execution unless delegation clearly improves quality, speed, isolation, or reliability.
+
+Classify the next step before delegating:
+
+- if the parent is blocked on the result immediately, the task is often better handled locally
+- if the task can run in parallel without blocking the next local step, it is a better subagent candidate

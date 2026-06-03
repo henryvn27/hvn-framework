@@ -1,5 +1,8 @@
 # Use-Case Map
 
+The paths below use ORCA workflow command names.
+Unless your host adds explicit ORCA slash commands, use these as prompt structure rather than shell commands.
+
 ## I Need To Install ORCA
 
 Recommended path:

@@ -34,8 +34,10 @@ Codex
 
 ## Preferred Commands And Workflows
 
-- use `orca-goal` when `/goal` is supported and reviewed
+- use `orca-goal` plus native `/goal` as the default Codex goal path
+- use `/goal <objective>` to start goal mode, `/goal` to inspect status, and `/goal pause`, `/goal resume`, or `/goal clear` for lifecycle control
 - use `orca-check-setup` before external integration-heavy steps
+- use `codex doctor` for local environment diagnostics before blaming ORCA-HVN
 
 ## Fallback Rules
 
@@ -45,6 +47,7 @@ Codex
 ## Setup And Integration Caveats
 
 - local capability varies by installed Codex environment
+- Linear remote MCP setup in Codex depends on `~/.codex/config.toml` enabling `[features] experimental_use_rmcp_client = true`
 
 ## Risk Notes
 
@@ -52,8 +55,10 @@ Codex
 
 ## Last Reviewed
 
-2026-05-30
+2026-06-02
 
 ## Evidence Links
 
 - https://developers.openai.com/codex/cli/slash-commands
+- https://github.com/openai/codex/releases
+- https://linear.app/docs/mcp

@@ -8,8 +8,27 @@ print_next_steps() {
   printf '\nNext steps:\n'
   printf '1. Read the install guide: %s\n' "$target/docs/install.md"
   printf '2. Pick a path: %s\n' "$target/docs/install-paths.md"
-  printf '3. Run install verification: %s/verify-install.sh --target %s\n' "$target/install" "$target"
-  printf '4. Run doctor when you want a broader check: %s/doctor.sh --target %s\n' "$target/install" "$target"
+  printf '3. Add ORCA commands to PATH: export PATH="%s/bin:$PATH"\n' "$target"
+  printf '4. Run install verification: %s/verify-install.sh --target %s\n' "$target/install" "$target"
+  printf '5. Run doctor when you want a broader check: %s/doctor.sh --target %s\n' "$target/install" "$target"
+}
+
+generate_bin_shims() {
+  mkdir -p "$target/bin"
+  cp "$root/bin/orca" "$target/bin/orca"
+  chmod +x "$target/bin/orca"
+
+  find "$target/commands" -type f -name 'orca-*.md' | while IFS= read -r command_file; do
+    command_name=$(basename "$command_file" .md)
+    shim_path="$target/bin/$command_name"
+    cat > "$shim_path" <<EOF
+#!/usr/bin/env sh
+set -eu
+script_dir=\$(CDPATH= cd -- "\$(dirname -- "\$0")" && pwd)
+exec "\$script_dir/orca" "$command_name" "\$@"
+EOF
+    chmod +x "$shim_path"
+  done
 }
 
 while [ "$#" -gt 0 ]; do
@@ -33,11 +52,13 @@ esac
 root="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 mkdir -p "$target"
 
-for item in ORCA-HVN.md README.md commands skills templates docs mcp install scripts; do
+for item in ORCA-HVN.md README.md commands skills templates docs mcp install scripts bin; do
   [ -e "$root/$item" ] || { printf 'Missing source item: %s\n' "$item" >&2; exit 1; }
   rm -rf "$target/$item"
   cp -R "$root/$item" "$target/$item"
 done
+
+generate_bin_shims
 
 cat > "$target/VERSION" <<VERSION
 0.1.0

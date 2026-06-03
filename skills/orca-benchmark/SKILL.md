@@ -1,17 +1,17 @@
 ---
 name: orca-benchmark
-description: Compare onboarding and spec quality across benchmark cases using inspectable scoring.
+description: Compare install, onboarding, spec, or orchestration quality across benchmark cases using inspectable scoring.
 ---
 
 # ORCA-HVN Benchmark
 
 ## What This Skill Is
 
-A benchmarking workflow for onboarding and spec quality across realistic cases.
+A benchmarking workflow for install, onboarding, spec, and orchestration quality across realistic cases.
 
 ## Trigger
 
-Use when validating spec or onboarding workflow quality, comparing framework versions, or reviewing whether a workflow change helped or hurt.
+Use when validating install, onboarding, spec, or orchestration workflow quality, comparing framework versions, or reviewing whether a workflow change helped or hurt.
 
 ## Do Not Trigger
 
@@ -20,19 +20,18 @@ Do not use as a substitute for product QA or generic issue triage.
 ## Required Inputs
 
 - Benchmark case or case set
-- Target onboarding or spec workflow
+- Target workflow under test
 
 ## Optional Inputs
 
 - Prior benchmark report
-- Generated onboarding artifact
-- Generated spec artifact
+- Generated workflow artifacts
 
 ## Exact Workflow
 
 1. Read the benchmark case and scoring notes.
-2. Run or review the onboarding and spec workflow under test.
-3. Score pass or fail checks and rubric dimensions.
+2. Run or review the workflow under test.
+3. Score pass or fail checks, friction signals, and rubric dimensions.
 4. Record failure patterns and comparison notes.
 5. Write a benchmark report that a maintainer can inspect.
 
@@ -49,7 +48,8 @@ The report should make clear whether workflow quality improved, regressed, or st
 - confusing prompt style changes with actual workflow improvement
 - over-weighting one case
 - scoring vague specs as good enough
+- rewarding speed when the workflow actually lost critical setup or onboarding information
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 
-Works with `orca-spec`, `orca-eval`, and `orca-observability`.
+Works with `orca-install`, `orca-onboard`, `orca-spec`, `orca-eval`, and `orca-observability`.

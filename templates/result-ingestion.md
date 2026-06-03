@@ -6,6 +6,7 @@
 - Executor:
 - Delegation brief:
 - Delegation result:
+- Pattern used:
 
 ## Accepted Work
 
@@ -16,6 +17,10 @@
 - 
 
 ## Artifacts Added Or Updated
+
+- 
+
+## Rejected Or Deferred Items
 
 - 
 

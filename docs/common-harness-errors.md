@@ -23,3 +23,11 @@ the user validates ORCA itself but not the host they plan to use.
 
 Fix:
 run doctor with `--harness`.
+
+## Local Codex Config Noise
+
+Signal:
+Codex prints unrelated local skill-load or memory-database errors before the real run starts.
+
+Fix:
+prefer the installed `orca` or `orca-*` wrappers for Codex runs, because they use `codex exec --ignore-user-config` to isolate ORCA from broken local Codex config.

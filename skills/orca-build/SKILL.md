@@ -33,8 +33,10 @@ Do not use when the user only wants brainstorming, review, or research.
 2. Read relevant files before editing.
 3. Preserve user changes and existing patterns.
 4. Make the smallest coherent change that satisfies the phase.
-5. Run appropriate verification.
-6. Record what changed and what could not be verified in the durable record.
+5. For user-facing async data, include loading, empty, and error states; prefer skeleton frames when the eventual layout is known and the surface would otherwise look blank.
+6. If the user wants the official wrapped execution pack and Superpowers is the stronger fit, route that segment there instead of reproducing the upstream workflow locally.
+7. Run appropriate verification.
+8. Record what changed and what could not be verified in the durable record.
 
 ## Expected Outputs
 
@@ -45,6 +47,7 @@ Do not use when the user only wants brainstorming, review, or research.
 ## Quality Bar
 
 The work should be maintainable by the repo's existing standards and should not leave hidden scaffolding.
+User-facing async work should not feel visually broken while data is in flight.
 
 ## Common Failure Modes
 
@@ -54,4 +57,4 @@ The work should be maintainable by the repo's existing standards and should not 
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 
-Used by `orca-build`; followed by review and QA skills.
+Used by `orca-build`; may pair with `orca-superpowers`; followed by review and QA skills.

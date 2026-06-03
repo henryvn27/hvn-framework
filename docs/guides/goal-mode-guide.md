@@ -24,4 +24,4 @@ Goal mode creates a bounded objective, explicit success criteria, allowed action
 
 - [../goal-mode.md](../goal-mode.md)
 - [background-mode-guide.md](background-mode-guide.md)
-
+- [../../commands/orca-demo.md](../../commands/orca-demo.md)

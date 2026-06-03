@@ -159,11 +159,9 @@ docs/ecosystem-watch.md
 docs/ecosystem-opportunities.md
 docs/hosts/codex-cli.md
 docs/hosts/claude-code.md
-docs/hosts/hermes-agent.md
 docs/hosts/vscode.md
 docs/hosts/generic.md
 docs/guides/from-gstack-or-gsd-to-orca-hvn.md
-docs/guides/using-hvn-with-hermes.md
 docs/guides/goal-mode-guide.md
 docs/guides/background-mode-guide.md
 docs/guides/business-ideation-guide.md
@@ -375,14 +373,11 @@ docs/examples/goal-for-milestone.md
 docs/examples/goal-review.md
 docs/examples/goal-status-handoff.md
 docs/examples/bad-goal-vs-good-goal.md
-docs/examples/hermes-zip-project-entry.md
-docs/examples/hermes-to-codex-delegation.md
 docs/examples/portable-spec-schema.md
 docs/examples/portable-goal-contract.md
 docs/examples/schema-migration.md
 docs/examples/artifact-mapping.md
 docs/examples/new-user-path.md
-docs/examples/hermes-user-path.md
 docs/examples/from-gstack-or-gsd.md
 docs/examples/business-ideation-user-path.md
 docs/examples/background-mode-user-path.md
@@ -495,7 +490,6 @@ registry/mcp-servers/README.md
 registry/harnesses/README.md
 registry/harnesses/codex.md
 registry/harnesses/claude-code.md
-registry/harnesses/hermes-agent.md
 registry/harnesses/opencode.md
 registry/harnesses/cursor.md
 registry/harnesses/github-copilot.md
@@ -522,6 +516,7 @@ commands/orca-integration.md
 commands/orca-recommend-stack.md
 commands/orca-learning.md
 commands/orca-feedback.md
+commands/orca-explain.md
 commands/orca-setup-integration.md
 commands/orca-improve-framework.md
 skills/orca-integrations/SKILL.md
@@ -552,6 +547,8 @@ templates/help-level-guidance.md
 templates/feedback-nudge.md
 templates/try-this-next-time.md
 templates/tone-check.md
+templates/setup-intake.md
+templates/explanation-session.md
 templates/instance-improvement-note.md
 templates/instance-learning-signal.md
 templates/local-improvement-proposal.md
@@ -612,13 +609,14 @@ templates/quality-check-prompt.md
 templates/hvn-framework-issue.md
 templates/agent-ready-implementation.md
 templates/improvement-backlog-entry.md
+docs/explanation-mode.md
 "
 
 for file in $required_files; do
   [ -f "$file" ] || fail "missing required file: $file"
 done
 
-for dir in commands skills templates templates/contracts install scripts docs docs/examples docs/guides docs/hosts docs/integrations integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples wiki; do
+for dir in bin commands skills templates templates/contracts install scripts docs docs/examples docs/guides docs/hosts docs/integrations integrations mcp examples examples/evals benchmarks benchmarks/onboarding-spec benchmarks/onboarding-spec/cases registry registry/tools registry/mcp-servers registry/harnesses reports reports/ecosystem-sweep reports/ecosystem-sweep/draft-issues reports/compatibility schema schema/versions schema/versions/v1 schema/examples wiki; do
   [ -d "$dir" ] || fail "missing required directory: $dir"
 done
 
@@ -630,7 +628,7 @@ template_count="$(find templates -type f -name '*.md' | wc -l | tr -d ' ')"
 [ "$skill_count" -ge 38 ] || fail "expected at least 38 skill definitions"
 [ "$template_count" -ge 69 ] || fail "expected at least 69 templates"
 
-for script in install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
+for script in bin/orca install/install.sh install/uninstall.sh install/doctor.sh install/verify-install.sh scripts/check-markdown.sh scripts/check-links.sh scripts/check-reliability.sh scripts/check-improvement-systems.sh scripts/bootstrap-git.sh scripts/validate-repo.sh scripts/linear-setup.sh; do
   [ -f "$script" ] || fail "missing script: $script"
   [ -x "$script" ] || fail "script is not executable: $script"
   sh -n "$script" || fail "script syntax failed: $script"

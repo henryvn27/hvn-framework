@@ -6,6 +6,7 @@
 - Setup requirements: workflow files, secrets, runner assumptions
 - Permissions or credentials: GitHub repo access and action secrets
 - Supported workflows: CI, tests, release checks, automation
+- Preferred ORCA inspection surface: `orca-ci` with `skills/orca-ci/scripts/inspect_pr_checks.py` for bounded failure triage
 - Validation steps: workflow syntax valid, secrets present, runs pass
 - Common failure modes: missing secrets, environment drift, workflows assuming unavailable services
 - Related ORCA-HVN commands or docs: `orca-integration`, `orca-ship`, `orca-review`

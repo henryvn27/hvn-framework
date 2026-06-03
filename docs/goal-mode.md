@@ -22,6 +22,8 @@ Use goal mode when all of these are true:
 - autonomous continuation has clear value
 - safety level is acceptable
 
+Goal mode is especially appropriate when the user's involvement preference is closer to "check major checkpoints" than "review every small step."
+
 Good examples:
 
 - migrate a bounded module until tests and call sites pass
@@ -39,6 +41,7 @@ Do not use goal mode for:
 - risky or destructive work without approval
 - tasks with no meaningful verification path
 - work that needs frequent product judgment after each small step
+- work where the user explicitly wants to review each step before progress continues
 
 ## Relationship To Specs And Milestones
 
@@ -62,7 +65,12 @@ The wrong flow is:
 
 ## Relationship To Harness-Native `/goal`
 
-Some hosts provide a native `/goal` command. ORCA-HVN should use native goal mode only after translating the work into a goal contract. The host command is the execution mechanism; the ORCA-HVN contract defines scope, completion, verification, stop conditions, and approvals.
+Some hosts provide a native `/goal` command. Codex and Claude Code are the current strong ORCA-HVN examples. ORCA-HVN should use native goal mode only after translating the work into a goal contract. The host command is the execution mechanism; the ORCA-HVN contract defines scope, completion, verification, stop conditions, and approvals.
+
+Current practical mapping:
+
+- Codex: `/goal <objective>` starts the goal, `/goal` shows status, and `/goal pause`, `/goal resume`, `/goal clear` handle lifecycle state inside the active thread.
+- Claude Code: `/goal <condition>` starts the goal, `/goal` shows status, `/goal clear` stops it, and an active goal can restore when the session is resumed. Claude's `/goal` also depends on workspace trust and hooks policy.
 
 If native `/goal` is unavailable, use the same contract with normal ORCA-HVN workflow artifacts:
 

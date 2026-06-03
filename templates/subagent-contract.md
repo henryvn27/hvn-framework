@@ -2,9 +2,11 @@
 
 - role:
 - task:
-- scope:
-- allowed tools:
+- owned scope:
+- linked artifacts:
+- allowed tools or harness:
 - constraints:
-- expected output:
+- verification expectation:
+- expected output schema:
 - stop conditions:
 - escalation rules:

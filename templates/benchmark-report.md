@@ -6,11 +6,20 @@
 - Workflow version:
 - Compared against:
 - Reviewer:
+- Benchmark type:
 
 ## Case Results
 
 | Case ID | Pass/Fail | Rubric Summary | Notes |
 | --- | --- | --- | --- |
+
+## Hard Metrics
+
+- completion time:
+- tool-call count:
+- human replies required:
+- blocker count:
+- avoidable-friction incidents:
 
 ## Aggregate Signals
 
@@ -22,6 +31,9 @@
 - acceptance criteria quality:
 - verification readiness:
 - overall spec usability:
+- onboarding hassle:
+- install clarity:
+- information sufficiency:
 
 ## Regression Or Improvement Notes
 

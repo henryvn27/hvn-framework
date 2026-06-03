@@ -1,16 +1,19 @@
 # Linear Review Comment
 
-## ORCA-HVN Review
+## ORCA-HVN Review (Decision + Evidence)
 
 **Issue:** `ISSUE-ID`
 
-**Context reviewed:** Diff, branch, PR, artifact, or files.
+**Reviewed:** PR/branch/commit + the user-facing surface (URL/screen/CLI) if applicable.
 
 **Findings:**
 
-- Severity: problem, impact, and recommended fix.
+- **Blockers:** must-fix before ship (each with location + impact + fix)
+- **Non-blockers:** worth fixing soon (same format, shorter)
 
-**Tests and validation:** State what passed, failed, or was not run.
+**Evidence:** exact commands run (or explicitly “not run”) + links/screenshots/logs if relevant.
+
+**Anti-generic pass:** Cut any soft praise or framework filler that does not affect the review decision.
 
 **Decision:** `Blocked`, `Needs fixes`, or `Can proceed`.
 

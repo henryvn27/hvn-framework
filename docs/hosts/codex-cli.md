@@ -13,8 +13,14 @@ Use ORCA command names as workflow guidance in the prompt when they do not.
 Current ORCA-HVN baseline:
 
 - treat native `/goal` support as part of the normal Codex path, not as a maybe-experimental edge
+- treat `orca-goal` as the ORCA contract layer and native `/goal` as the execution layer
+- treat `/side` as the preferred native Codex side-session surface for durable adjacent conversations
+- treat `orca-explain` as a portable explanation-session concept that should prefer `/side` when available
+- treat quick side questions as inline or side-session behavior depending on whether a one-shot native surface exists; do not invent a Codex `/btw` alias
+- prefer Codex's native structured question or input surface for setup interviews, onboarding, and clarification when the active Codex surface exposes one
 - use `codex doctor` when the user needs Codex environment diagnostics
 - treat `/permissions` named profiles and `/status` remote details as real governance and inspection surfaces
+- treat `/agent`, `/review`, `/plan`, `/resume`, and `/fork` as real orchestration surfaces when local help confirms them
 - use `CODEX_NON_INTERACTIVE=1` for non-interactive install or setup automation when the environment requires it
 
 Use native goal mode when:
@@ -24,6 +30,14 @@ Use native goal mode when:
 - verification is observable
 - approval gates are satisfied
 
+Codex lifecycle mapping:
+
+- `/goal <objective>` starts a goal
+- `/goal` shows the current goal
+- `/goal pause` pauses it without clearing the objective
+- `/goal resume` resumes it
+- `/goal clear` removes it
+
 Codex is also a strong executor harness for:
 
 - implementation
@@ -32,9 +46,46 @@ Codex is also a strong executor harness for:
 - issue-focused work
 - goal-mode execution when supported and approved
 
+Codex is also a good host for explanation mode when a user wants a dedicated "what is happening and why?" thread that stays interactive without mutating the repo.
+
 ## Lifecycle
 
-Codex goal behavior should still be treated as host-specific at the lifecycle-command level. When available, use the host's supported lifecycle commands for set, status, pause, resume, and clear. If local command help differs from these docs, follow the local installed version and record the difference in the goal status artifact.
+Codex goal behavior should still be treated as host-specific at the lifecycle-command level. ORCA should prefer the current documented Codex lifecycle surface above. If local command help differs from these docs, follow the local installed version and record the difference in the goal status artifact.
+
+## Explanation Sessions
+
+For `orca-explain`:
+
+- prefer `/side` or another separate explanation thread when the active Codex surface supports it
+- otherwise keep explanation mode separate by framing and artifact instead of pretending a UI primitive exists
+- keep follow-up questions in the explanation session
+- if the user pivots to action, emit a handoff back to the main execution thread instead of doing the work inside explanation mode
+
+For quick side questions:
+
+- if the active Codex surface supports opening another thread or `/side` cleanly, use that for a lightweight adjacent question when durable separation helps
+- if not, keep the question inline and clearly label it as a quick side question
+- if the question turns into a multi-turn discussion, switch to `orca-explain`
+
+Good side-session candidates in Codex:
+
+- `orca-explain`
+- `orca-review`
+- `orca-design`
+- `orca-research`
+- `orca-idea`
+
+## Native Orchestration Surfaces
+
+Codex can be a strong ORCA executor when these native surfaces are available in the installed version:
+
+- `/agent` for switching or managing agent threads
+- `/side` for a durable adjacent conversation
+- `/plan` for explicit pre-execution planning
+- `/review` for a native review pass
+- `/resume` and `/fork` for thread continuation and branching
+
+ORCA should prefer these native surfaces over pretending every orchestration move must be rebuilt from scratch.
 
 ## Non-Interactive Execution
 
@@ -45,6 +96,10 @@ For environment diagnostics or install triage, also check:
 - `codex doctor`
 - `/permissions`
 - `/status`
+
+When a user asks "what is going on?" or needs rationale for the current path, ORCA should prefer `orca-explain` over overloading `orca-status` with a long narrative.
+When a user asks a quick "by the way" question that should not derail the current task, ORCA should prefer the lightest real side-session surface the active Codex UI supports.
+When ORCA needs a short setup or onboarding interview, it should prefer Codex's structured question or input tool when available instead of scattering many plain text prompts across the thread.
 
 At minimum, current Codex CLI help should be treated as authoritative for:
 

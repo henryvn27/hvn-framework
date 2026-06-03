@@ -34,8 +34,10 @@ Do not use as a substitute for blind QA.
 3. Identify likely bugs and regressions.
 4. Check test and validation coverage.
 5. Prioritize findings by severity.
-6. Post or prepare a review comment with decision and next gate.
-7. State residual risk when no blocking findings exist.
+6. Write findings in direct engineering language. Do not pad with generic praise or process filler.
+7. Anchor each non-trivial finding to a concrete location (file path, route, command, or screenshot).
+7. Post or prepare a review comment with decision and next gate.
+8. State residual risk when no blocking findings exist.
 
 ## Expected Outputs
 
@@ -45,12 +47,14 @@ Do not use as a substitute for blind QA.
 ## Quality Bar
 
 Findings must be actionable, grounded in evidence, and ordered by impact.
+The report should read like a real reviewer, not like a model smoothing the conversation.
 
 ## Common Failure Modes
 
 - Summarizing instead of reviewing.
 - Reporting style preferences as defects.
 - Missing tests for behavior changes.
+- Using vague review language that hides the actual bug or risk.
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 

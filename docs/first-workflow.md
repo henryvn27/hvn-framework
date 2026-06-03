@@ -20,6 +20,9 @@ flowchart LR
 
 That is the default ORCA-HVN intro workflow.
 
+These names are ORCA workflow commands and the install now provides matching `orca-*` shims in the installed `bin/` directory.
+If your host does not provide native `orca-*` slash commands, use the shipped shims or `orca run <command> --print` to reuse the exact workflow prompt.
+
 This path is also the teaching path. It is meant to show a new user how the framework works while still being a real production path they can keep using later.
 
 ## What Each Step Does
@@ -62,5 +65,6 @@ Only after this five-command path should you branch into:
 - `orca-test-blind` for first-look QA
 - `orca-goal` for bounded long-running work
 - `orca-background` for unattended progress
+- `orca-demo` for a low-input personalized showcase that turns into a real `/goal`
 - `orca-idea` for upstream ideation instead of implementation
 - `orca-legacy` for inherited or fragile codebases

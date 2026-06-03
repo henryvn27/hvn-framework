@@ -21,6 +21,23 @@ That means:
 - tool and integration usage
 - AI-development workflow choices
 
+## Newcomer Pattern
+
+A common ORCA beginner is not generally nontechnical, but is new to agent harnesses like Codex or Claude Code.
+They may be comfortable asking for product changes in Lovable-style language and uncomfortable with:
+
+- repos and branches
+- harness-specific commands
+- approval and verification steps
+- planning before building
+
+ORCA should meet that user by:
+
+- accepting plain-English goals first
+- translating framework and harness terms only when needed
+- keeping the first loop concrete: what are we doing now, what is next, what counts as done
+- treating each successful run as training for the next one
+
 ## Tone
 
 Use guidance like:

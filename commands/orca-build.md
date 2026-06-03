@@ -37,9 +37,10 @@ Record implementation updates and evidence in the chosen work item or build log.
 1. Use `orca-build`.
 2. Confirm approval if required.
 3. Read relevant files before editing.
-4. Make scoped changes.
-5. Run verification after meaningful phases.
-6. Update the work item with evidence and remaining risks.
+4. Make scoped changes, including realistic loading, empty, and error states for user-facing async surfaces.
+5. If the execution workflow clearly benefits from Superpowers and the pack is available or desired, route that segment through `orca-superpowers` instead of cloning the upstream discipline locally.
+6. Run verification after meaningful phases.
+7. Update the work item with evidence and remaining risks.
 
 ## Outputs And Artifacts
 
@@ -53,8 +54,9 @@ Record implementation updates and evidence in the chosen work item or build log.
 - If unrelated dirty changes exist, preserve them.
 - If tests fail, diagnose before claiming completion.
 - If scope changes, return to planning and approval.
+- If new async UI loads data, do not ship a blank gap when a skeleton frame or equivalent placeholder should exist.
 
 ## Related Commands And Skills
 
-- Commands: `orca-linear-sync`, `orca-review`, `orca-test-blind`
-- Skills: `orca-build`, `orca-linear-executor`
+- Commands: `orca-linear-sync`, `orca-review`, `orca-superpowers`, `orca-test-blind`
+- Skills: `orca-build`, `orca-superpowers`, `orca-linear-executor`

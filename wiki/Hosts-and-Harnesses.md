@@ -6,7 +6,5 @@ Read next:
 
 - `docs/compatibility-matrix.md`
 - `docs/hosts/codex-cli.md`
-- `docs/hosts/hermes-agent.md`
 - `docs/hosts/claude-code.md`
 - `docs/guides/runtime-adaptation-guide.md`
-

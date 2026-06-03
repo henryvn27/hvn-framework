@@ -7,7 +7,7 @@ harness=""
 services=""
 
 usage() {
-  printf 'Usage: doctor.sh [--target path] [--harness codex|claude-code|hermes-agent|vscode|generic] [--services github,linear,...]\n'
+  printf 'Usage: doctor.sh [--target path] [--harness codex|claude-code|vscode|generic] [--services github,linear,...]\n'
 }
 
 while [ "$#" -gt 0 ]; do
@@ -49,13 +49,23 @@ if [ -n "$harness" ]; then
   case "$harness" in
     codex) doc="docs/hosts/codex-cli.md" ;;
     claude-code) doc="docs/hosts/claude-code.md" ;;
-    hermes-agent) doc="docs/hosts/hermes-agent.md" ;;
     vscode) doc="docs/hosts/vscode.md" ;;
     generic) doc="docs/hosts/generic.md" ;;
     *) printf 'Unsupported harness for doctor: %s\n' "$harness" >&2; exit 1 ;;
   esac
   [ -f "$root/$doc" ] || { printf 'Harness guide missing: %s\n' "$doc" >&2; exit 1; }
   printf 'Harness guide: ok (%s)\n' "$doc"
+  if [ "$harness" = "codex" ]; then
+    if command -v codex >/dev/null 2>&1; then
+      if codex exec --ignore-user-config --help >/dev/null 2>&1; then
+        printf 'Harness codex CLI: ok\n'
+      else
+        printf 'Harness codex CLI: installed, but local help failed; try codex exec --ignore-user-config --help directly\n'
+      fi
+    else
+      printf 'Harness codex CLI: missing; use docs/hosts/codex-cli.md\n'
+    fi
+  fi
 fi
 
 if [ -n "$services" ]; then
@@ -85,7 +95,7 @@ if [ -n "$services" ]; then
 fi
 
 printf 'Recommended next docs:\n'
-printf '- docs/install-validation.md\n'
-printf '- docs/install-troubleshooting.md\n'
-printf '- docs/first-run.md\n'
+printf '%s\n' '- docs/install-validation.md'
+printf '%s\n' '- docs/install-troubleshooting.md'
+printf '%s\n' '- docs/first-run.md'
 printf 'doctor: ok\n'

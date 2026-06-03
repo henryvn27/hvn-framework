@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Local install
+      - name: Global install
         run: |
-          ./install/install.sh --mode local --target /tmp/orca-local
-          ./install/verify-install.sh --target /tmp/orca-local
+          ./install/install.sh --mode global --target /tmp/orca-global
+          ./install/verify-install.sh --target /tmp/orca-global
+          ./install/doctor.sh --target /tmp/orca-global --services github

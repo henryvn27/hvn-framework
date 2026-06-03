@@ -33,11 +33,13 @@ Do not use for facts already present in the repo, vault, or conversation unless 
 
 1. Define the decision and evidence needed.
 2. Read the issue or opt-out record for constraints and decision context.
-3. If a vault or declared live knowledge base exists, treat it as the primary source of workflow truth.
-4. Prefer primary sources and official documentation for external facts that the vault does not answer.
-5. Record citations, dates, confidence, and whether a conclusion is direct evidence or extrapolation.
-6. Explain how findings affect the spec or plan.
-7. Post or prepare the conclusion for the durable record.
+3. List the unknowns blocking the next decision and rank them by leverage.
+4. If a vault or declared live knowledge base exists, treat it as the primary source of workflow truth.
+5. Prefer primary sources and official documentation for external facts that the vault does not answer.
+6. Record citations, dates, confidence, and whether a conclusion is direct evidence or extrapolation.
+7. End with a recommendation, narrowed choice, or explicit unresolved blocker.
+8. Explain how findings affect the spec or plan.
+9. Post or prepare the conclusion for the durable record.
 
 ## Expected Outputs
 
@@ -46,10 +48,12 @@ Do not use for facts already present in the repo, vault, or conversation unless 
 ## Quality Bar
 
 Findings should be actionable and distinguish fact from inference. If vault evidence is weak, the fallback to generic guidance should be stated plainly.
+Another engineer should be able to see what decision was unblocked, not just what sources were read.
 
 ## Common Failure Modes
 
 - Summarizing sources without a decision.
+- Researching everything instead of the next highest-leverage unknown.
 - Using stale or secondary evidence for current technical claims.
 - Omitting uncertainty.
 - Overriding strong vault evidence with generic industry advice.

@@ -14,7 +14,6 @@ This page translates ORCA into harness-specific setup help.
 
 - Codex: [hosts/codex-cli.md](hosts/codex-cli.md)
 - Claude Code: [hosts/claude-code.md](hosts/claude-code.md)
-- Hermes Agent: [hosts/hermes-agent.md](hosts/hermes-agent.md)
 - VS Code: [hosts/vscode.md](hosts/vscode.md)
 - Generic: [hosts/generic.md](hosts/generic.md)
 

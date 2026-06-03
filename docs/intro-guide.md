@@ -24,6 +24,8 @@ Start with one path:
 
 Do not branch into optional features until that path is clear.
 
+Treat those names as workflow labels unless your host has explicit ORCA command bindings.
+
 ## Progressive Disclosure Rule
 
 Use only the smallest layer that helps:

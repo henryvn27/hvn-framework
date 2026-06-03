@@ -21,6 +21,17 @@ Use after onboarding, spec creation, milestone planning, implementation, QA, reg
 - Intent style: just tell me what to do, explain briefly, or show options
 - User guidance profile
 
+## Linear Context
+
+- Expects: current issue or project state, latest artifact, and any newly returned worker result when Linear-first mode is active
+- Reads: blockers, approvals, outstanding gates, and latest evidence
+- Posts: optional next-state recommendation when a coordinating comment is useful
+- Human approval: depends on the recommended next action
+
+## Opt-Out Context
+
+Use the chosen local record as the current-state source and write next-step guidance against it when needed.
+
 ## Workflow
 
 1. Use `orca-next-step`.

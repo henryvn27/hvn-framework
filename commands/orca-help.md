@@ -35,9 +35,11 @@ If the user does not want Linear, ask which record should hold ORCA-HVN artifact
 
 1. Identify whether the user needs intake, discovery, spec, planning, build, review, QA, security, shipping, or retro.
 2. Confirm Linear-first or opt-out mode.
-3. Summarize the next two useful commands.
-4. Explain what artifact or issue comment each command will produce.
-5. Call out whether blind QA can still be preserved.
+3. If the user mainly wants to understand what is happening or why ORCA chose a path, route to `orca-explain`.
+4. If the user only wants one quick side question answered without derailing the main thread, route to the host's lightest side-question path or `orca-btw` behavior.
+4. Summarize the next two useful commands.
+5. Explain what artifact or issue comment each command will produce.
+6. Call out whether blind QA can still be preserved.
 
 ## Outputs And Artifacts
 
@@ -52,5 +54,5 @@ If the user does not want Linear, ask which record should hold ORCA-HVN artifact
 
 ## Related Commands And Skills
 
-- Commands: all ORCA-HVN commands
+- Commands: all ORCA-HVN commands, especially `orca-explain` for interactive rationale and `orca-btw` behavior for quick side questions
 - Skills: `orca-core`, `orca-linear-core`

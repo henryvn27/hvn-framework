@@ -36,7 +36,7 @@ Do not use goal mode for ambiguous discovery, vague improvement requests, risky 
 2. Reject vague or unsafe goals before execution.
 3. Convert the spec or milestone into a goal contract.
 4. Check host support for native `/goal`.
-5. Use native goal mode only when the host supports it and the contract is complete.
+5. Prefer native `/goal` on Codex and Claude Code when the host supports it and the contract is complete.
 6. Fall back to ORCA-HVN status artifacts when native support is unavailable.
 7. Record lifecycle state in run memory, traces, and goal status.
 

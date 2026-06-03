@@ -34,7 +34,7 @@ A contract for milestone-sized, verifiable long-running work.
 
 ## Harness
 
-The active host or execution environment, such as Codex CLI, Claude Code, Hermes Agent, or VS Code.
+The active host or execution environment, such as Codex CLI, Claude Code, or VS Code.
 
 ## Idea Validation
 
@@ -59,4 +59,3 @@ A rollout state where a candidate behavior is observed or compared without becom
 ## Stage Budget
 
 Time, step, retry, or optional cost limits set per workflow stage instead of one giant undifferentiated budget.
-

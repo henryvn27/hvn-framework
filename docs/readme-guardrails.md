@@ -4,7 +4,7 @@
 
 - do not rewrite the README around a single feature unless the project identity truly changed
 - preserve project-level balance when adding new capabilities
-- keep install and first-use guidance easy to find
+- keep setup, install, and first-use guidance as the easiest thing to find
 - move deep detail into dedicated docs instead of bloating the README
 - treat the README as a routing surface, not a subsystem spec
 - review major README edits for newcomer usefulness and proportionality

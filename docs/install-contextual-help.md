@@ -15,3 +15,5 @@ Install help should appear at the moment it is needed.
 Do not front-load every concept before the user has taken the first step.
 
 Use short callouts near the step where confusion usually appears.
+
+But do ask a short setup interview early enough to avoid sending the user down the wrong install path.

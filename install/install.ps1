@@ -17,7 +17,7 @@ if ($Target -eq "") {
 
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 
-foreach ($Item in @("ORCA-HVN.md", "README.md", "commands", "skills", "templates", "docs", "mcp", "install", "scripts")) {
+foreach ($Item in @("ORCA-HVN.md", "README.md", "commands", "skills", "templates", "docs", "mcp", "install", "scripts", "bin")) {
   $Source = Join-Path $Root $Item
   $Destination = Join-Path $Target $Item
   if (!(Test-Path $Source)) {
@@ -27,6 +27,19 @@ foreach ($Item in @("ORCA-HVN.md", "README.md", "commands", "skills", "templates
     Remove-Item -Recurse -Force $Destination
   }
   Copy-Item -Recurse $Source $Destination
+}
+
+$BinDir = Join-Path $Target "bin"
+$OrcaScript = Join-Path $BinDir "orca"
+foreach ($CommandFile in Get-ChildItem -Path (Join-Path $Target "commands") -Filter "orca-*.md") {
+  $CommandName = [System.IO.Path]::GetFileNameWithoutExtension($CommandFile.Name)
+  $ShimPath = Join-Path $BinDir $CommandName
+  @"
+#!/usr/bin/env sh
+set -eu
+script_dir=`$(CDPATH= cd -- "`$(dirname -- "`$0")" && pwd)
+exec "`$script_dir/orca" "$CommandName" "`$@"
+"@ | Set-Content -NoNewline -Path $ShimPath
 }
 
 Set-Content -Path (Join-Path $Target "VERSION") -Value "0.1.0"
@@ -40,5 +53,6 @@ Write-Host ""
 Write-Host "Next steps:"
 Write-Host "1. Read the install guide: $(Join-Path $Target 'docs/install.md')"
 Write-Host "2. Pick a path: $(Join-Path $Target 'docs/install-paths.md')"
-Write-Host "3. Run install verification: $(Join-Path $Target 'install/verify-install.sh') --target $Target"
-Write-Host "4. Run doctor when you want a broader check: $(Join-Path $Target 'install/doctor.sh') --target $Target"
+Write-Host "3. Add ORCA commands to PATH: export PATH=""$(Join-Path $Target 'bin'):`$PATH"""
+Write-Host "4. Run install verification: $(Join-Path $Target 'install/verify-install.sh') --target $Target"
+Write-Host "5. Run doctor when you want a broader check: $(Join-Path $Target 'install/doctor.sh') --target $Target"

@@ -22,7 +22,7 @@ If you are already on Claude Code:
 
 If you are running a controller/executor setup:
 
-- read the Hermes and controller docs
+- read the Codex, Claude Code, and controller docs
 
 If you need a generic fallback:
 

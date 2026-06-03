@@ -18,6 +18,13 @@ Possible internal dimensions:
 - repo navigation skill
 - integration setup familiarity
 - ORCA-HVN docs literacy
+- explanation-depth preference
+- jargon tolerance
+- preference for direct answer versus stepwise reasoning
+- preference for more questions up front versus fewer questions plus stronger assumptions
+- preferred involvement level during execution
+- preferred checkpoint cadence
+- appetite for goal mode or unattended background execution
 
 ## How It Learns
 
@@ -29,6 +36,10 @@ Infer from behavior such as:
 - whether repeated clarification is needed
 - whether the user already knows a tool or workflow
 - repeated confusion around the same framework surface
+- repeated `/explain` use
+- repeated "keep it concise" or "don't explain" signals
+- whether the user asks follow-up why/how questions before wanting action
+- whether onboarding answers indicate a durable preference for guided or terse setup
 
 ## Privacy And Tone Rule
 
@@ -43,3 +54,5 @@ Do not expose it as:
 
 Use it only to decide how much help to surface and when silence is better.
 It should improve the local instance experience first and should not silently rewrite global defaults for everyone else.
+
+For explanation mode, ORCA may persist user-global support state at `$HOME/.orca-hvn/state/explain/` when the user explicitly wants durable behavior or when repeated evidence strongly supports a stable local preference.

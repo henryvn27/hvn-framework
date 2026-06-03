@@ -8,6 +8,8 @@ This is not "run forever." It is structured autonomous progress inside a defined
 
 Use background mode when the user wants ORCA-HVN to continue moving a task forward without constant supervision.
 
+This should usually match an explicit involvement preference captured during onboarding or later adjusted by the user.
+
 Good examples:
 
 - research and note-taking
@@ -71,6 +73,18 @@ Treat autonomy as a budget, not a binary.
 Background mode should always choose the lowest autonomy level that still makes progress.
 If a foreground move is clearer and lower-friction, prefer it over background ceremony.
 If a background run uses workers, the parent should still own approvals, receipts, and final user communication.
+
+Good fit signals:
+
+- the user asked for a hands-off path
+- the user is comfortable with checkpoint summaries instead of step-by-step review
+- the work is bounded enough that unattended progress will not invent product scope
+
+Bad fit signals:
+
+- the user wants to inspect each implementation step
+- the work needs frequent product judgment or aesthetic review
+- the user explicitly asked not to switch into unattended execution without asking first
 
 When integrations are involved, background mode should prefer:
 

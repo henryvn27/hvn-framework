@@ -13,3 +13,4 @@ jobs:
         run: |
           ./install/install.sh --mode local --target /tmp/orca-local
           ./install/verify-install.sh --target /tmp/orca-local
+          ./install/doctor.sh --target /tmp/orca-local --harness generic --services github,linear

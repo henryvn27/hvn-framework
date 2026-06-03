@@ -34,7 +34,8 @@ Claude Code
 
 ## Preferred Commands And Workflows
 
-- use goal mode when supported and reviewed
+- use `orca-goal` plus native `/goal` as the default Claude Code goal path when workspace trust and hooks policy allow it
+- use `/goal <condition>` to start goal mode, `/goal` to inspect status, and `/goal clear` to stop it early
 - prefer MCP-based setup when validated
 
 ## Fallback Rules
@@ -44,6 +45,7 @@ Claude Code
 ## Setup And Integration Caveats
 
 - local MCP configuration and auth still determine real usability
+- `/goal` requires Claude Code `v2.1.139` or later and is unavailable when hooks are disabled or workspace trust is missing
 
 ## Risk Notes
 
@@ -51,9 +53,10 @@ Claude Code
 
 ## Last Reviewed
 
-2026-05-30
+2026-06-02
 
 ## Evidence Links
 
 - https://code.claude.com/docs/en/goal
+- https://code.claude.com/docs/en/commands
 - https://code.claude.com/docs/en/mcp

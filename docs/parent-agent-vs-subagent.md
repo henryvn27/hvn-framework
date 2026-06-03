@@ -36,3 +36,5 @@ Every subagent should be told:
 - what it owns
 - what it must not do
 - what output shape it must return
+- how it should verify its slice
+- when it must escalate instead of guessing

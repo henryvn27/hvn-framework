@@ -13,7 +13,7 @@ A controller agent:
 - chooses whether to operate directly or delegate
 - re-ingests results back into the framework
 
-The controller does not need to be Hermes-specific. Hermes-like runtimes are a strong fit because they often provide memory, tools, skills, and orchestration surfaces that help with project-level control.
+The controller does not need to be tied to a separate controller product. Codex and Claude Code can both act as controller-capable runtimes when the workflow uses explicit artifacts and bounded delegation.
 
 ## Controller Versus Executor
 
@@ -44,9 +44,9 @@ ORCA-HVN supports controller-style workflows through:
 - [docs/result-ingestion.md](result-ingestion.md)
 - shared state, receipts, lineage, approvals, and next-step guidance
 
-## Hermes-Like Usage
+## Controller Usage
 
-A Hermes-style controller agent should be able to:
+A controller-oriented runtime should be able to:
 
 1. read the status and orientation artifacts
 2. determine the active phase and missing pieces

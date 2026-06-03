@@ -31,9 +31,18 @@ Some workflows also need:
 
 - a harness such as Codex or Claude Code
 - service connections such as GitHub or Linear
+- official wrapped capability packs such as Impeccable or Superpowers
 - optional plugins or integrations
 
 Those are documented separately so new users do not have to read everything up front.
+
+The setup path should also learn a few user preferences early:
+
+- how much explanation to give
+- how technical ORCA can be
+- whether design-heavy work should route through Impeccable when it fits
+- whether execution-heavy coding work should route through Superpowers when it fits
+- whether to ask more setup questions now or keep the first path minimal
 
 ## Recommended Order
 

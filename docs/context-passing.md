@@ -10,6 +10,7 @@ ORCA-HVN should pass only the context a subagent actually needs.
 - relevant background
 - constraints
 - expected output schema
+- verification expectation
 - stop conditions
 - escalation rules
 - approval requirement

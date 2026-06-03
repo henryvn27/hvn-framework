@@ -34,6 +34,9 @@ At minimum track:
 - MCP and tool support
 - approval and governance patterns
 - multi-agent coordination support
+- side-session support
+- branch or resume support
+- background task support
 - setup validation support
 
 ## Relationship To The Matrix

@@ -18,6 +18,17 @@ Use after delegated work returns from Codex, Claude Code, another harness, or a 
 - linked trace
 - required approval or QA context
 
+## Linear Context
+
+- Expects: prior delegation brief, returned worker result, and linked issue or project state when Linear-first mode is active
+- Reads: what was requested, what came back, and which gate is next
+- Posts: ingestion summary, unresolved risk, and recommended next state
+- Human approval: required only if the ingested result triggers an approval gate
+
+## Opt-Out Context
+
+Attach the ingestion summary to the chosen record and link it to the source delegation.
+
 ## Workflow
 
 1. Read the delegation result and linked evidence.

@@ -7,8 +7,9 @@ Its job is to:
 - explain what ORCA is
 - explain who it is for
 - explain what problems it helps solve
-- summarize the main capability areas at a high level
-- give a clear first install and first-workflow path
+- give a clear setup interview, install path, and first-workflow path
+- make onboarding and setup feel easier than reading the whole docs tree
+- summarize the main capability areas only after the setup path is clear
 - route readers to the right deeper docs
 - reflect the strongest recurring work shown by the live operating evidence
 

@@ -95,7 +95,7 @@ Purpose: explain harness-specific, integration-specific, and compatibility-speci
 
 Primary audience:
 
-- users choosing between Codex, Hermes, Claude Code, or other hosts
+- users choosing between Codex, Claude Code, or other hosts
 - maintainers updating adapter guidance
 
 Primary pages:
@@ -187,4 +187,3 @@ Expected contributor path:
 - Put examples in `docs/examples/`.
 - Keep command contracts in `commands/`, not in the wiki.
 - Keep the wiki summary-first. It should route and explain, not mirror every reference page.
-

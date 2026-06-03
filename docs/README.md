@@ -7,6 +7,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [start-here.md](start-here.md): the best first page for most readers
 - [intro-guide.md](intro-guide.md): the shortest explanation of the ORCA approach
 - [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
+- [../commands/orca-demo.md](../commands/orca-demo.md): low-input personalized showcase that becomes a real `/goal`
 - [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
 - [install-overview.md](install-overview.md): how the install system is organized
 - [install.md](install.md): canonical step-by-step install guide
@@ -17,14 +18,18 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 - [graph-and-vault-support.md](graph-and-vault-support.md): optional vault and graph intelligence support
 - [corpus-overview.md](corpus-overview.md): optional persistent corpus and reusable vault support
 - [adaptive-learning.md](adaptive-learning.md): lightweight learning help that adapts to the user
+- [side-sessions.md](side-sessions.md): portable side-chat, `/btw`, and popout-thread rules across harnesses
+- [explanation-mode.md](explanation-mode.md): dedicated explain sessions, side-thread rules, and explain-state learning
 - [self-improvement.md](self-improvement.md): the controlled local-vs-framework learning model
 - [agent-orchestration.md](agent-orchestration.md): harness-agnostic parent and subagent orchestration
+- [deploy/vercel-guardrails.md](deploy/vercel-guardrails.md): low-ceremony Vercel deploy rules and recurring pitfalls
 
 ## Core Navigation
 
 - [information-architecture.md](information-architecture.md): how the docs are organized and why
 - [feature-index.md](feature-index.md): what capabilities exist
 - [command-index.md](command-index.md): which command to use
+- [wrapped-capability-packs.md](wrapped-capability-packs.md): how ORCA officially wraps maintained upstream packs such as Impeccable and Superpowers
 - [readme-feature-weighting.md](readme-feature-weighting.md): how README space should map to project importance
 - [use-case-map.md](use-case-map.md): which workflow fits which situation
 - [glossary.md](glossary.md): plain-language definitions for core terms
@@ -42,8 +47,8 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 
 These are teaching-oriented pages for common paths:
 
+- [guides/beginners-guide.md](guides/beginners-guide.md)
 - [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
-- [guides/using-hvn-with-hermes.md](guides/using-hvn-with-hermes.md)
 - [guides/goal-mode-guide.md](guides/goal-mode-guide.md)
 - [guides/background-mode-guide.md](guides/background-mode-guide.md)
 - [guides/business-ideation-guide.md](guides/business-ideation-guide.md)

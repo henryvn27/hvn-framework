@@ -23,7 +23,8 @@ Use for non-trivial, bounded, verifiable work that may benefit from durable cont
 1. Use `orca-goal-mode`.
 2. Check whether the work has a spec or bounded milestone.
 3. Verify completion and safety conditions.
-4. Recommend native goal mode, fallback goal workflow, or no goal.
+4. Prefer native `/goal` on Codex and Claude Code when the host supports it and the contract is complete.
+5. Otherwise recommend fallback goal workflow or no goal.
 
 ## Outputs And Artifacts
 

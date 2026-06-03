@@ -52,5 +52,5 @@ Write the blind report to the chosen record without exposing hidden context.
 
 ## Related Commands And Skills
 
-- Commands: `orca-linear-qa-report`, `orca-test-briefed`, `orca-test-regression`
+- Commands: `orca-linear-qa-report`, `orca-test-briefed`, `orca-test-regression`, `orca-screenshot`
 - Skills: `orca-blind-qa`, `orca-linear-qa`, `orca-ios-sim-qa`, `orca-web-qa`

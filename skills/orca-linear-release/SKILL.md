@@ -34,8 +34,10 @@ Do not use when review or QA gates are incomplete unless the goal is to identify
 1. Read the issue thread and linked artifacts.
 2. Confirm spec, plan approval, implementation, review, QA, security, and regression status.
 3. Post a ship checklist.
-4. Recommend done only when evidence is present.
-5. Create or recommend follow-up issues for deferred work.
+4. For Apple releases, separate build, archive, export, upload, processing, and distribution evidence instead of one merged "released" note.
+5. For web deploys, separate preview and production evidence.
+6. Recommend done only when evidence is present.
+7. Create or recommend follow-up issues for deferred work.
 
 ## Expected Outputs
 

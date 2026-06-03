@@ -81,6 +81,30 @@ Each entry records:
 - Related ORCA-HVN areas: `docs/hosts/codex-cli.md`, runtime docs, compatibility matrix
 - Status notes: active executor target
 
+### Impeccable
+
+- Link: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+- Maintainer or org: Paul Bakaus and contributors
+- License: Apache-2.0
+- Relationship type: direct wrapper or integration
+- What ORCA-HVN uses or borrows: a maintained design skill pack, shared frontend design vocabulary, design shaping commands, and deterministic anti-slop checks
+- ORCA-HVN relationship detail: ORCA-HVN wraps Impeccable as an official capability pack through `orca-impeccable`, integration docs, and wrapper skills; ORCA-HVN does not redistribute Impeccable source in this repo
+- Special notices required: preserve attribution and any required notices if future changes vendor commands, skill text, rules, or code
+- Related ORCA-HVN areas: `commands/orca-impeccable.md`, `skills/orca-impeccable/`, `integrations/impeccable.md`
+- Status notes: active maintained upstream wrapper target for design-heavy work
+
+### Superpowers
+
+- Link: [obra/superpowers](https://github.com/obra/superpowers)
+- Maintainer or org: Jesse Vincent, Prime Radiant, and contributors
+- License: MIT
+- Relationship type: direct wrapper or integration
+- What ORCA-HVN uses or borrows: a maintained skills framework, disciplined coding workflow, design-before-build sequencing, planning conventions, and multi-agent execution patterns
+- ORCA-HVN relationship detail: ORCA-HVN wraps Superpowers as an official capability pack through `orca-superpowers`, integration docs, and wrapper skills; ORCA-HVN does not redistribute Superpowers source in this repo
+- Special notices required: preserve attribution and any required notices if future changes vendor prompts, skills, or helper code from the upstream repo
+- Related ORCA-HVN areas: `commands/orca-superpowers.md`, `skills/orca-superpowers/`, `integrations/superpowers.md`
+- Status notes: active maintained upstream wrapper target for execution-heavy coding workflows
+
 ### Claude Code
 
 - Link: [Claude Code docs](https://code.claude.com/docs/en/overview)
@@ -116,6 +140,18 @@ Each entry records:
 - Special notices required: none known from conceptual influence alone
 - Related ORCA-HVN areas: `docs/spec-driven-workflow.md`, workflow docs, ecosystem sweep
 - Status notes: conceptual workflow influence, not a runtime dependency
+
+### LLM Council
+
+- Link: [karpathy/llm-council](https://github.com/karpathy/llm-council)
+- Maintainer or org: Andrej Karpathy and contributors
+- License: see upstream repository
+- Relationship type: concept adapted from
+- What ORCA-HVN uses or borrows: the three-stage council pattern of independent responses, anonymized peer review and ranking, and a final synthesized answer
+- ORCA-HVN relationship detail: ORCA-HVN adapts the council shape into reusable subagent decision workflows for product ideas, feature evaluation, and market-opportunity judgment; ORCA-HVN does not redistribute upstream code in this repo
+- Special notices required: preserve attribution if future work vendors prompts, code, or UI concepts more directly
+- Related ORCA-HVN areas: `skills/orca-model-council/`, `skills/orca-council-product-idea/`, `skills/orca-council-feature-evaluation/`, `skills/orca-council-market-opportunity/`, `docs/model-council.md`
+- Status notes: conceptual decision-workflow influence, not a bundled dependency
 
 ### Bloomberg Beta Manual
 

@@ -13,10 +13,9 @@ Status meanings:
 
 | Harness | Goal mode | Run memory | Shared state / checkpoints | Trace / inspector | Tool / MCP support | GitHub integration | Linear integration | Approval / governance | Multi-agent patterns | Regression / eval / benchmark | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Codex | supported | partial | partial | partial | partial | partial | partial | partial | unclear | unclear | `/goal` is documented; external integrations depend on host configuration and available tools. |
-| Claude Code | supported | unclear | partial | unclear | partial | partial | partial | unclear | unclear | unclear | `/goal` and MCP are documented; service setup still depends on local configuration. |
-| Hermes Agent | unclear | unclear | unclear | unclear | unclear | unclear | unclear | unclear | unclear | unclear | Verify from current host docs before making stronger claims. |
-| OpenCode | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | OpenCode documents MCP support; other workflow compatibility should be verified per release. |
+| Codex | supported | partial | partial | partial | partial | partial | partial | partial | unclear | unclear | `/goal` is a normal current path with documented set, status, pause, resume, and clear commands; external integrations still depend on local configuration, RMCP flags, and available tools. |
+| Claude Code | supported | unclear | partial | unclear | partial | partial | partial | unclear | unclear | unclear | `/goal` is documented and should be preferred when version, workspace trust, and hooks policy allow it; service setup still depends on local configuration. |
+| OpenCode | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | Use active `dev.opencode.ai` docs for current behavior; treat the archived GitHub repo as historical context only. |
 | Cursor | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | Cursor documents MCP support and a curated MCP server catalog, including GitHub and Linear entries. |
 | GitHub Copilot | unclear | unclear | unclear | unclear | supported | supported | partial | partial | unclear | unclear | Copilot documents MCP support, policy controls, and a built-in GitHub MCP path in supported surfaces. |
 | VS Code | unclear | unclear | unclear | unclear | supported | partial | partial | unclear | unclear | unclear | Depends on the active extension and workspace policy. |

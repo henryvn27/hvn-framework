@@ -18,12 +18,16 @@ Good delegation targets include:
 - QA passes
 - review tasks
 - bounded goal-mode execution
+- CI failure triage
+- PR feedback handling
+- browser-debug side branches
 
 ## Good Delegation Brief
 
 A good delegation brief includes:
 
 - task objective
+- named ownership boundary
 - linked issue, spec, milestone, or goal
 - in-scope work
 - out-of-scope work
@@ -31,6 +35,7 @@ A good delegation brief includes:
 - required artifacts
 - verification requirements
 - stop conditions
+- escalation rules
 - required return format
 
 Use [templates/delegation-brief.md](../templates/delegation-brief.md).
@@ -44,6 +49,7 @@ The executor should:
 - report what changed
 - call out unresolved risk
 - stop when approval or ambiguity is reached
+- avoid claiming ownership outside the assigned slice
 
 ## Return Shape
 

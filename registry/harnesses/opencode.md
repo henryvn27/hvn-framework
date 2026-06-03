@@ -41,16 +41,22 @@ OpenCode
 
 ## Setup And Integration Caveats
 
+- treat active docs at `dev.opencode.ai` as the primary current-behavior source
+- treat the archived `opencode-ai/opencode` GitHub repo as historical context, not as the default runtime source of truth
 - other workflow features should be verified per release
 
 ## Risk Notes
 
 - do not infer broad workflow support from MCP support alone
+- do not imply parity from archived-repo history when the active docs/runtime surface is separate
 
 ## Last Reviewed
 
-2026-05-30
+2026-05-31
 
 ## Evidence Links
 
 - https://dev.opencode.ai/docs/mcp-servers/
+- https://dev.opencode.ai/docs/cli/
+- https://dev.opencode.ai/docs/config/
+- https://github.com/opencode-ai/opencode/releases

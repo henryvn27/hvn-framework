@@ -11,7 +11,7 @@ Examples in this repository:
 - Linear issue, project, and workflow coordination
 - GitHub repository, PR, issue, check, and release workflows
 - MCP-based setup and governance around external MCP servers
-- host adapters for Codex CLI, Claude Code, Hermes Agent, VS Code, and generic hosts
+- host adapters for Codex CLI, Claude Code, VS Code, and generic hosts
 
 When ORCA-HVN wraps something:
 

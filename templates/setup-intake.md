@@ -1,0 +1,45 @@
+# Setup Intake
+
+- setup goal:
+- install permanence:
+  - one-time trial
+  - one-repo setup
+  - reusable cross-project setup
+- first harness:
+- services needed on day one:
+- services deferred:
+- guidance level:
+  - beginner
+  - standard
+  - technical
+- explanation preference:
+  - just act
+  - explain briefly
+  - guided step-by-step
+- involvement level:
+  - mostly hands-off
+  - moderate check-ins
+  - very involved
+- checkpoint style:
+  - only blockers or completion
+  - major milestones
+  - each reviewable step
+- unattended work:
+  - recommend goal or background mode when safe
+  - ask before unattended execution
+  - avoid unattended execution
+- jargon tolerance:
+  - plain language
+  - mixed
+  - technical
+- decision style:
+  - default and act
+  - short rationale
+  - show options
+- question style:
+  - ask more up front
+  - keep it minimal
+- durable preferences wanted:
+- first real task after install:
+- known blockers:
+- recommended install path:

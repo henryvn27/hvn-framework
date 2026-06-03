@@ -10,13 +10,24 @@ You do not need to understand every feature before you start.
 
 ## Beginner Path
 
-1. Read [install-prerequisites.md](install-prerequisites.md).
-2. Download the repo with git.
-3. Run local install into `./.orca-hvn`.
-4. Run the verification command.
-5. Skip plugins unless you already know you need one.
-6. Skip harness setup unless you already know which harness you use.
-7. Run [first-run.md](first-run.md).
+1. Answer the short setup interview.
+2. Read [install-prerequisites.md](install-prerequisites.md).
+3. Download the repo with git.
+4. Run local install into `./.orca-hvn`.
+5. Run the verification command.
+6. Skip plugins unless you already know you need one.
+7. Skip harness setup unless you already know which harness you use.
+8. Run [first-run.md](first-run.md).
+
+## Short Setup Interview
+
+Answer these before you start:
+
+1. Are you just trying ORCA, or do you want a setup you will keep using?
+2. Which harness do you plan to use first?
+3. Do you need GitHub or Linear on day one?
+4. Do you want the safest guided path or the fastest path?
+5. What is the first real task you want ORCA to help with?
 
 ## Exact Commands
 

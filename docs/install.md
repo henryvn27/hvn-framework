@@ -19,11 +19,25 @@ If you want the shorter version, switch to [install-for-technical-users.md](inst
 Purpose:
 Choose the smallest install that matches your actual use case.
 
+Start with a short setup interview before giving commands.
+
 Do this:
 
 1. Decide whether you just want to try ORCA, use it in one project, or install it globally.
-2. Decide whether you need GitHub, Linear, a harness, or optional plugins right now.
-3. Keep optional setup out of the critical path unless you already know you need it.
+2. Decide which harness you actually plan to use first.
+3. Decide whether you need GitHub, Linear, a harness, or optional plugins right now.
+4. Decide whether you want beginner, standard, or technical guidance.
+5. Keep optional setup out of the critical path unless you already know you need it.
+
+Suggested questions:
+
+- Are you trying ORCA once, using it in one repo, or setting up your default multi-project environment?
+- Which harness matters first?
+- Do GitHub or Linear matter on day one?
+- Do you want the safest beginner path or the fastest technical path?
+- What is the first real task you want ORCA to help with after install?
+- Do you expect design-heavy frontend work where ORCA should use Impeccable when it is the strongest fit?
+- Do you expect execution-heavy coding workflow where ORCA should use Superpowers when it is the strongest fit?
 
 Expected result:
 You know which install path you are following.
@@ -34,6 +48,9 @@ You can answer these questions:
 - Am I doing a repo install, local project install, or global install?
 - Do I need a harness right now?
 - Do I need GitHub or Linear right now?
+- What guidance level do I want?
+- What first real task will I test after install?
+- Do I want Impeccable or Superpowers available as part of my ORCA workflow from the start?
 
 If this fails:
 Read [install-paths.md](install-paths.md) and [harness-chooser.md](harness-chooser.md).
@@ -121,6 +138,14 @@ Global install:
 Expected result:
 ORCA files are copied into the target location.
 
+The install also creates a runnable command layer under `bin/`.
+
+If you want to use `orca` and `orca-*` directly in the shell, add the installed `bin/` directory to `PATH`:
+
+```sh
+export PATH="$(pwd)/.orca-hvn/bin:$PATH"
+```
+
 Verify:
 
 ```sh
@@ -193,6 +218,35 @@ Use [install-validation.md](install-validation.md) and `./install/doctor.sh --se
 If this fails:
 Use [plugin-troubleshooting.md](plugin-troubleshooting.md) or [install-troubleshooting.md](install-troubleshooting.md).
 
+## 6.5. Add Official Capability Packs If Needed
+
+Purpose:
+Add the official wrapped upstream packs that ORCA supports without pretending they are native ORCA implementations.
+
+Current official packs:
+
+- Impeccable for design-heavy frontend work
+- Superpowers for execution-heavy coding workflow
+
+Do this:
+
+1. Read [wrapped-capability-packs.md](wrapped-capability-packs.md).
+2. Follow [../integrations/impeccable.md](../integrations/impeccable.md) if you want Impeccable inside ORCA.
+3. Follow [../integrations/superpowers.md](../integrations/superpowers.md) if you want Superpowers inside ORCA.
+4. Use the upstream install or update path for the active harness instead of copying the pack into ORCA-HVN.
+
+Expected result:
+ORCA can route to these packs as official ORCA surfaces while keeping provenance clear.
+
+Verify:
+
+- you know which pack is installed for which harness
+- you know the ORCA entry points: `orca-impeccable` and `orca-superpowers`
+- you did not replace the upstream pack with a local ORCA clone
+
+If this fails:
+Use the relevant integration doc and continue with ORCA's local fallback path until the pack is installed correctly.
+
 ## 7. Add a Harness If Needed
 
 Purpose:
@@ -230,6 +284,13 @@ Do this:
 
 Expected result:
 You complete one small ORCA workflow without guessing what to do next.
+
+Important:
+
+- ORCA installs docs, templates, commands, and skills
+- ORCA also installs a runnable `bin/orca` launcher plus generated `bin/orca-*` shims
+- use `orca show <command>` or `orca run <command> --print` when you want the exact prompt without executing it
+- in a host like Codex CLI, the shims can launch `codex exec` with the currently supported flag surface and `--ignore-user-config`
 
 Verify:
 Use [templates/first-run-validation.md](../templates/first-run-validation.md).

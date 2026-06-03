@@ -2,21 +2,21 @@
 
 ## Purpose
 
-Compare onboarding and spec quality across benchmark cases so ORCA-HVN can be evaluated over time.
+Compare install, onboarding, spec, or orchestration quality across benchmark cases so ORCA-HVN can be evaluated over time.
 
 ## When To Use
 
-Use when validating a workflow change, comparing framework versions, or reviewing whether onboarding and spec quality improved.
+Use when validating a workflow change, comparing framework versions, or reviewing whether install, onboarding, or spec quality improved.
 
 ## Required Inputs
 
 - Benchmark case or case set
-- Target onboarding or spec workflow
+- Target install, onboarding, spec, or orchestration workflow
 
 ## Optional Inputs
 
 - Prior benchmark report
-- Generated onboarding or spec artifacts
+- Generated artifacts from the workflow under test
 
 ## Linear Context
 
@@ -35,7 +35,7 @@ Store the benchmark report in the selected durable record and link it from the r
 1. Use `orca-benchmark`.
 2. Load the benchmark case or starter pack.
 3. Review or run the onboarding and spec workflow under test.
-4. Score hard checks and rubric dimensions.
+4. Score hard checks, friction signals, and rubric dimensions.
 5. Write a comparison-ready benchmark report.
 
 ## Outputs And Artifacts
@@ -43,6 +43,7 @@ Store the benchmark report in the selected durable record and link it from the r
 - `templates/benchmark-case.md`
 - `templates/benchmark-report.md`
 - `benchmarks/onboarding-spec/cases/`
+- `benchmarks/install-onboarding-race/`
 
 ## Failure Cases
 
@@ -51,5 +52,5 @@ Store the benchmark report in the selected durable record and link it from the r
 
 ## Related Commands And Skills
 
-- Commands: `orca-spec`, `orca-eval`, `orca-trace`
+- Commands: `orca-install`, `orca-onboard`, `orca-spec`, `orca-eval`, `orca-trace`
 - Skills: `orca-benchmark`, `orca-eval`

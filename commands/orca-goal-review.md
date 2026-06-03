@@ -24,7 +24,8 @@ Use before starting goal mode or when an active goal appears vague, risky, or st
 1. Check objective, scope, out-of-scope boundaries, and completion condition.
 2. Verify that evidence can prove completion.
 3. Check safety, approval, and tool constraints.
-4. Recommend accept, revise, pause, clear, or fallback.
+4. Check whether the active host can use native `/goal` cleanly, especially on Codex and Claude Code.
+5. Recommend accept, revise, pause, clear, or fallback.
 
 ## Outputs And Artifacts
 

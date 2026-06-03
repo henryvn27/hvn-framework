@@ -36,12 +36,30 @@ ORCA-HVN should gently help users get better at:
 The adaptive learning layer can:
 
 - infer how much scaffolding is helpful
+- infer when a dedicated explanation session may help more than inline coaching
 - adjust explanation depth
+- learn onboarding and setup preferences such as question density, jargon tolerance, and directness
+- learn preferred involvement level, checkpoint cadence, and appetite for unattended execution
 - offer lightweight rewrites or framing suggestions
 - suggest a clearer next step when the user is stuck
 - reduce coaching when the user already knows the pattern
 
 This feeds primarily into the local instance-improvement loop, not directly into global framework defaults.
+
+Explanation-mode learning is a specific local-instance case:
+
+- default explain mode is `manual_only`
+- users may opt into `suggest_when_helpful`
+- users may opt into `predictive_auto_explain`
+- predictive explanation should learn from repeated `/explain` use, repeated requests for concision, and explicit overrides
+- predictive explanation should fail closed during high-risk operations
+
+Onboarding preference capture is the front door for that system:
+
+- first-run setup should ask a few explicit preference questions instead of inferring everything later
+- explicit preference beats inference
+- durable preference should be opt-in or strongly evidenced
+- users should be able to raise or lower involvement mid-project without fighting the system
 
 ## Default Behavior
 

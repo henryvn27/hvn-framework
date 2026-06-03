@@ -23,6 +23,9 @@ Onboarding is one of the main places where ORCA-HVN should reduce the need for m
 It should:
 
 - ask only useful questions
+- start with a stronger first-pass interview when user, success, or scope are still unclear
+- capture interaction preferences early enough that the rest of onboarding feels right for this user
+- use structured harness question tools when available instead of turning every intake into a wall of text
 - explain the current stage briefly
 - make the next action obvious
 - help the user build a correct mental model of the workflow
@@ -53,3 +56,25 @@ Next-step guidance should be brief:
 
 Do not over-interview. If more questions would not materially improve the first spec, record assumptions and move forward.
 If a small context or prompting hint would help the user next time, keep it to one calm concrete nudge.
+
+## Default First-Pass Interview
+
+When onboarding begins from a vague request, the first pass should usually cover:
+
+- who the user is
+- what job they are trying to finish
+- what success looks like
+- what platform or repo is in scope
+- what constraints or deadlines matter
+- what data or integrations matter
+- what could go wrong
+- what is out of scope
+- how much explanation the user wants
+- how involved the user wants to be during execution
+- whether ORCA should stop at each step, major checkpoints, or mostly only at blockers and completion
+- whether ORCA should proactively use goal mode or background mode for safe unattended work
+- how technical ORCA can be
+- whether ORCA should ask more questions now or make stronger assumptions and move
+- whether any preference should be remembered beyond this run
+
+This should feel more like a focused operator interview than a generic questionnaire.

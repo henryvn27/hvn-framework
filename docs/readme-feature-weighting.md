@@ -13,10 +13,10 @@ README space should match project importance.
 
 For ORCA, these usually deserve the most top-level space:
 
+- setup and getting-started path
 - onboarding and spec-driven workflow
 - execution and coordination flow
 - review, QA, approvals, and inspectability
-- install and getting-started path
 - host-aware or tool-aware workflow adaptation at a high level
 
 ## Support Features

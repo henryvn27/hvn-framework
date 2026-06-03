@@ -27,6 +27,10 @@ Use when the user has an early idea, rough wedge, market hunch, or company conce
 4. Surface the biggest assumptions and open questions.
 5. Recommend whether evaluation, research, or validation should come next.
 
+## Side-Session Fit
+
+`orca-idea` is a strong side-session candidate because brainstorming, naming, and market framing should stay separate from execution until the idea is strong enough to hand off into spec or research.
+
 ## Outputs And Artifacts
 
 - `templates/idea-intake.md`

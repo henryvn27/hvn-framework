@@ -24,7 +24,7 @@ Current documented paths:
 | --- | --- | --- |
 | GitHub auth | only if your workflow needs GitHub actions | PRs, issues, checks |
 | Linear access | only if you want ORCA's default system of record live | issue-first workflow |
-| harness install | only if you are using ORCA through a specific host | Codex, Claude Code, Hermes, VS Code |
+| harness install | only if you are using ORCA through a specific host | Codex, Claude Code, VS Code |
 | plugins | no | only for specific workflows |
 
 ## Accounts You May Need

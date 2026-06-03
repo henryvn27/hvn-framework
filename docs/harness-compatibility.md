@@ -8,7 +8,6 @@ ORCA-HVN tracks harnesses it targets directly or watches closely:
 
 - Codex
 - Claude Code
-- Hermes Agent
 - OpenCode
 - Cursor
 - GitHub Copilot

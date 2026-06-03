@@ -42,6 +42,11 @@ Each pack should answer:
 - [playwright.md](playwright.md)
 - [github-actions.md](github-actions.md)
 
+### Wrapped Capability Packs
+
+- [impeccable.md](impeccable.md)
+- [superpowers.md](superpowers.md)
+
 ### Knowledge And Research
 
 - [notebooklm.md](notebooklm.md)

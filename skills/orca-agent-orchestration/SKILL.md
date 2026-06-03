@@ -19,6 +19,9 @@ Choose the simplest orchestration pattern that fits, preserve clean role boundar
 - only the parent talks to the user
 - workers return structured results to the parent
 - delegate only when specialization, isolation, reuse, or parallelism clearly helps
+- classify work into critical-path vs sidecar before delegating
+- keep write ownership disjoint when parallel workers can edit
+- require explicit merge criteria before fan-out
 - suppress orchestration theater
 
 ## Output
@@ -28,4 +31,5 @@ Produce:
 - delegation or no-delegation decision
 - selected pattern
 - compact context packet expectation
+- worker ownership boundaries when applicable
 - escalation and approval path

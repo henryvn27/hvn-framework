@@ -33,6 +33,12 @@ Expected result:
 Expected result:
 The script prints the install target and next-step docs.
 
+Add the installed command layer to your shell path:
+
+```sh
+export PATH="$(pwd)/.orca-hvn/bin:$PATH"
+```
+
 ## 4. Verify The Install
 
 ```sh
@@ -58,3 +64,8 @@ Then use the default ORCA path:
 3. `orca-plan`
 4. `orca-build`
 5. `orca-review`
+
+If you want one personalized showcase instead of choosing your own task first, use `orca-demo`.
+
+These commands are available after install if `.orca-hvn/bin` is on your `PATH`.
+Use `orca-onboard --print -- "describe the task"` to inspect the prompt, or run `orca-onboard --harness codex -- "describe the task"` when Codex CLI is installed.

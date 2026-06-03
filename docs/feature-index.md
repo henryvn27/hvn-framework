@@ -28,6 +28,7 @@ Read:
 - controller-agent integration
 - delegation and result ingestion
 - agent orchestration and subagent patterns
+- persistent interactive UI debugging
 
 Read:
 
@@ -67,6 +68,9 @@ Read:
 ## Inspection And Safety
 
 - approvals and checkpoints
+- side sessions and quick side questions
+- context resolution for ambiguous recent work
+- explanation mode
 - execution receipts
 - artifact lineage
 - replay and restore
@@ -76,6 +80,8 @@ Read:
 
 - [approval-gates.md](approval-gates.md)
 - [human-checkpoints.md](human-checkpoints.md)
+- [side-sessions.md](side-sessions.md)
+- [explanation-mode.md](explanation-mode.md)
 - [execution-receipts.md](execution-receipts.md)
 - [artifact-lineage.md](artifact-lineage.md)
 - [tool-trust.md](tool-trust.md)
@@ -84,6 +90,9 @@ Read:
 
 - blind QA
 - briefed QA
+- browser automation and screenshot evidence
+- TestFlight release and tester distribution ops
+- CI failure triage and PR feedback routing
 - design quality and human voice
 - dual-loop self-improvement
 - session improvement loop
@@ -95,6 +104,7 @@ Read:
 Read:
 
 - [blind-qa.md](blind-qa.md)
+- [web-qa.md](web-qa.md)
 - [visual-quality.md](visual-quality.md)
 - [human-voice.md](human-voice.md)
 - [self-improvement.md](self-improvement.md)

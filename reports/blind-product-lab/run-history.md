@@ -143,3 +143,63 @@
   - The new rule forces scope compression or product switching until a small complete result is actually shipped.
 - Next:
   - On the next blind-product run, choose a new product and satisfy the full completion contract instead of extending ShipNotes.
+
+## 2026-06-02 (Run 7)
+
+- Path decision:
+  - Chose a fresh new product instead of an existing-project gap.
+  - Reason: the current lab policy explicitly prefers a new product every run, and no existing gap beat that strongly enough to justify overriding the rule.
+
+- What changed:
+  - Ran a blind ideation subagent with minimal mission-only context and selected BugBrief over ReviewReply and ShipNotes Pro Pack.
+  - Created product workspace: `/Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/bugbrief`.
+  - Added BugBrief product artifacts:
+    - `reports/blind-product-lab/bugbrief/spec.md`
+    - `reports/blind-product-lab/bugbrief/plan.md`
+    - `reports/blind-product-lab/bugbrief/blind-qa-2026-06-02.md`
+    - `reports/blind-product-lab/bugbrief/launch-packet.md`
+  - Implemented BugBrief MVP:
+    - paste raw QA notes
+    - generate structured bug brief
+    - edit summary / steps / expected / actual / notes
+    - copy or download markdown
+    - share a public brief page rendered from the URL hash
+  - Added parser cleanup so observed-environment and regression-context lines land in notes instead of actual behavior.
+  - Added product README and local git repo in the BugBrief workspace.
+
+- What was verified:
+  - BugBrief local gates (2026-06-02):
+    - `npm run lint`
+    - `npm run build`
+  - Local blind QA evidence captured:
+    - `reports/blind-product-lab/bugbrief/evidence/bugbrief-home-2026-06-02.png`
+    - `reports/blind-product-lab/bugbrief/evidence/bugbrief-generated-2026-06-02.png`
+    - `reports/blind-product-lab/bugbrief/evidence/bugbrief-published-2026-06-02.png`
+    - `reports/blind-product-lab/bugbrief/evidence/bugbrief-share-url-2026-06-02.txt`
+  - Production smoke evidence captured:
+    - `reports/blind-product-lab/bugbrief/evidence/bugbrief-prod-2026-06-02.png`
+
+- What was deployed:
+  - `vercel deploy --prod --yes` succeeded.
+  - Production URL: https://bugbrief.vercel.app
+  - Inspect URL: https://vercel.com/csdeveloperagent-1367s-projects/bugbrief/8siYLStwpA6TE7D3w3jh7zYwoBKt
+
+- What revenue assumptions were made:
+  - The initial free wedge is “cleaner bug handoff without a tracker.”
+  - The first paid expansion path is saved history, branded exports, team templates, and tracker handoff.
+  - Agencies and QA contractors are more plausible early buyers than solo hobby developers.
+
+- What was blocked:
+  - Linear connector still requires reauthentication (401), so the BugBrief project and issues could not be created in the system of record.
+  - The workspace has no git remote yet, so push/CI follow-through is not available.
+
+- Why this run counts as complete:
+  - A fresh product was chosen and built inside the run.
+  - A dedicated workspace exists.
+  - Spec, plan, launch packet, and QA artifacts exist.
+  - The core loop works locally and on a live production URL.
+  - Verification and blind QA evidence were captured.
+
+- Next:
+  - Restore Linear auth and create the BugBrief project/issues from the local backlog.
+  - Decide whether future blind-lab runs should deepen BugBrief’s paid wedge or remain strict fresh-product runs.

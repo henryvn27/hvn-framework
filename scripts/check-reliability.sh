@@ -252,11 +252,9 @@ for file in \
   docs/ecosystem-opportunities.md \
   docs/hosts/codex-cli.md \
   docs/hosts/claude-code.md \
-  docs/hosts/hermes-agent.md \
   docs/hosts/vscode.md \
   docs/hosts/generic.md \
   docs/guides/from-gstack-or-gsd-to-orca-hvn.md \
-  docs/guides/using-hvn-with-hermes.md \
   docs/guides/goal-mode-guide.md \
   docs/guides/background-mode-guide.md \
   docs/guides/business-ideation-guide.md \
@@ -300,6 +298,7 @@ for file in \
   templates/feedback-nudge.md \
   templates/try-this-next-time.md \
   templates/tone-check.md \
+  templates/setup-intake.md \
   templates/graph-fit-check.md \
   templates/integration-validation.md \
   templates/integration-status.md \
@@ -371,6 +370,7 @@ for file in \
   templates/next-step-ship.md \
   templates/goal-contract.md \
   templates/goal-status.md \
+  templates/explanation-session.md \
   templates/project-orientation.md \
   templates/delegation-brief.md \
   templates/delegation-result.md \
@@ -380,8 +380,10 @@ for file in \
   commands/orca-recommend-stack.md \
   commands/orca-learning.md \
   commands/orca-feedback.md \
+  commands/orca-explain.md \
   skills/orca-integration-recommendation/SKILL.md \
   docs/examples/recommend-web-saas-stack.md \
+  docs/explanation-mode.md \
   docs/examples/recommend-mobile-stack.md \
   docs/examples/setup-user-chosen-tool.md \
   docs/examples/no-recommendation-insufficient-signal.md \
@@ -642,7 +644,6 @@ for file in \
   docs/examples/idea-kill-decision.md \
   docs/examples/idea-pursue-decision.md \
   docs/examples/new-user-path.md \
-  docs/examples/hermes-user-path.md \
   docs/examples/from-gstack-or-gsd.md \
   docs/examples/business-ideation-user-path.md \
   docs/examples/background-mode-user-path.md \
@@ -657,8 +658,6 @@ for file in \
   docs/examples/goal-review.md \
   docs/examples/goal-status-handoff.md \
   docs/examples/bad-goal-vs-good-goal.md \
-  docs/examples/hermes-zip-project-entry.md \
-  docs/examples/hermes-to-codex-delegation.md \
   docs/examples/portable-spec-schema.md \
   docs/examples/portable-goal-contract.md \
   docs/examples/schema-migration.md \
@@ -701,7 +700,6 @@ for file in \
   registry/harnesses/README.md \
   registry/harnesses/codex.md \
   registry/harnesses/claude-code.md \
-  registry/harnesses/hermes-agent.md \
   registry/harnesses/opencode.md \
   registry/harnesses/cursor.md \
   registry/harnesses/github-copilot.md \

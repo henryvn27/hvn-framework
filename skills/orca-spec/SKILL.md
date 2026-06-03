@@ -35,10 +35,13 @@ Do not use for tiny mechanical edits where acceptance is obvious and low-risk.
 1. Read Linear issue context or the opt-out work item.
 2. Define the problem and target users.
 3. Write goals, non-goals, flows, requirements, edge cases, and acceptance criteria.
-4. Identify assumptions and unresolved questions.
-5. Confirm that each acceptance criterion is testable.
-6. Format the result for a Linear spec comment or durable opt-out artifact.
-7. State whether human approval is required before planning or build.
+4. For user-facing async work, specify what appears during loading, when skeleton frames are expected, and what eventually replaces them.
+5. Identify assumptions and unresolved questions.
+6. Confirm that each acceptance criterion is testable.
+7. Rewrite generic category language into the real product, user, data, and system language from the task.
+8. Run `docs/human-voice.md` rewrite test: cut filler, name constraints, and leave uncertainty explicit instead of smoothing it away.
+9. Format the result for a Linear spec comment or durable opt-out artifact.
+10. State whether human approval is required before planning or build.
 
 ## Expected Outputs
 
@@ -49,12 +52,14 @@ Do not use for tiny mechanical edits where acceptance is obvious and low-risk.
 ## Quality Bar
 
 A builder and reviewer should reach the same interpretation of done.
+The spec should read like it belongs to this product and repo, not like a reusable startup template with names swapped in.
 
 ## Common Failure Modes
 
 - Writing implementation details as goals.
 - Missing non-goals.
 - Creating acceptance criteria that cannot be verified.
+- Hiding weak understanding behind polished but generic prose.
 
 ## Relationship To Other ORCA-HVN Skills And Commands
 

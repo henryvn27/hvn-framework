@@ -6,6 +6,9 @@ ORCA is Linear-first by default. Linear is the preferred system of record for is
 
 ORCA should be treated as the primary workflow, not as an add-on beside GStack or GSD. Those earlier systems helped shape some of the ideas behind this project, but the operating model in this repository is now fully ORCA-centered.
 
+ORCA command names such as `orca-onboard` and `orca-build` are workflow definitions in this repository.
+The install flow now also generates runnable `orca` and `orca-*` command shims under the installed `bin/` directory so users can inspect or launch the workflow directly.
+
 ## Principles
 
 1. **System of record first:** every meaningful action should be recoverable from Linear or the declared opt-out record.
@@ -253,7 +256,7 @@ For legacy systems, extract behavior and risks before rewriting. Use archaeology
 
 ## Goal Mode Policy
 
-Use goal mode only after spec and milestone planning. Goals must have clear in-scope and out-of-scope boundaries, a measurable completion condition, verification method, stop conditions, and approval triggers. Host-native `/goal` is optional and must fall back to ORCA-HVN artifacts when unavailable.
+Use goal mode only after spec and milestone planning. Goals must have clear in-scope and out-of-scope boundaries, a measurable completion condition, verification method, stop conditions, and approval triggers. When the active harness has reviewed native `/goal` support, prefer it as the execution path and fall back to ORCA-HVN artifacts only when the native path is unavailable or unsuitable.
 
 ## Background Mode Policy
 

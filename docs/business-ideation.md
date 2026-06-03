@@ -30,6 +30,14 @@ Use `orca-spec` instead when:
 - `orca-plan-idea`: turn a promising idea into an opportunity memo, validation plan, and execution bridge
 - `orca-validate-idea`: design the smallest credible next experiment
 
+## Optional Council Skills
+
+When a single ideation or evaluation pass feels too shallow, ORCA can use a council-style deliberation lane:
+
+- `orca-council-product-idea`
+- `orca-council-market-opportunity`
+- `orca-model-council` for a more generic five-worker council
+
 ## Core Artifacts
 
 - [templates/idea-intake.md](../templates/idea-intake.md)
@@ -57,6 +65,8 @@ Use `orca-spec` instead when:
 4. Produce an opportunity memo and decision.
 5. Design the next validation experiment.
 6. If the idea survives, bridge into spec-driven product work.
+
+Council-style deliberation is optional. Use it when disagreement and multi-angle judgment are likely to improve the decision, not as default ceremony for every idea.
 
 ## Relationship To ORCA-HVN
 

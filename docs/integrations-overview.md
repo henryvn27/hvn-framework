@@ -2,6 +2,10 @@
 
 ORCA-HVN integrations are structured capability packs for the tools modern product teams actually use to build and operate apps.
 
+That includes upstream skill packs that ORCA wraps officially. If an upstream pack is already the best maintained implementation of a capability area, ORCA should expose it as an ORCA pathway instead of forcing users to think in separate product silos.
+
+The most important current examples are Impeccable and Superpowers.
+
 This is not a logo wall. An integration only counts when ORCA-HVN can describe:
 
 - when to use it
@@ -26,6 +30,7 @@ Support may include:
 - paved-road routing
 - docs and examples
 - platform-specific caveats
+- wrapper commands and wrapper skills that make an upstream pack feel native to the ORCA workflow without hiding provenance
 
 ## Support Types
 

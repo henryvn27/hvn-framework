@@ -36,10 +36,16 @@ Store design findings in the chosen record.
 
 1. Use `orca-design`.
 2. Inspect the experience from user goals outward.
-3. Check clarity, hierarchy, states, accessibility, responsiveness, and interaction feel.
+3. Check clarity, hierarchy, loading states, empty states, accessibility, responsiveness, and interaction feel.
 4. Check whether layout, typography, motion, and copy feel product-specific instead of generic prompt output.
-5. Produce prioritized design findings.
-6. Sync findings to the work item.
+5. Check whether surrounding artifacts such as release notes, empty states, onboarding text, and review summaries also sound product-specific instead of framework boilerplate.
+6. If the work is design-heavy and Impeccable is available or desired, route through `orca-impeccable` instead of pretending ORCA should replace the upstream pack.
+7. Produce prioritized design findings.
+8. Sync findings to the work item.
+
+## Side-Session Fit
+
+`orca-design` is a strong side-session candidate because UX critique, copy discussion, and visual interpretation often work better in a separate thread than in the main build thread.
 
 ## Outputs And Artifacts
 
@@ -54,5 +60,5 @@ Store design findings in the chosen record.
 
 ## Related Commands And Skills
 
-- Commands: `orca-test-blind`, `orca-review`
-- Skills: `orca-design`, `orca-linear-core`
+- Commands: `orca-impeccable`, `orca-test-blind`, `orca-review`
+- Skills: `orca-design`, `orca-impeccable`, `orca-linear-core`

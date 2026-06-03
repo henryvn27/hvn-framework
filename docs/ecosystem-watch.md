@@ -83,65 +83,202 @@ For each active opportunity, keep:
 
 ### commands
 
-No active items yet.
+- Title: Spec Kit extension and integration packaging as a pattern source
+- Short summary: Spec Kit's current extension catalogs, controlled multi-install integrations, and token-budget extension are notable, but they widen surface area faster than ORCA-HVN should by default.
+- Source links:
+  - https://github.com/github/spec-kit/releases
+  - https://github.github.com/spec-kit/reference/integrations.html
+  - https://github.github.com/spec-kit/reference/extensions.html
+- Status: `Watch`
+- Adoption shape: docs/workflow guidance opportunity
+- Primary category: `commands`
+- Cross-harness or host-specific: cross-harness pattern source
+- Required ORCA-HVN change: none yet; keep as a packaging/reference pattern only
+- UX impact: expert UX more than beginner UX
+- First seen: 2026-05-31
+- Last confirmed: 2026-05-31
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+- Related issue if created: none
 
 ### memory
 
-No active items yet.
+- Title: GSD learnings and queryable intelligence as memory-design inputs
+- Short summary: GSD's global learnings store and queryable codebase intelligence are stronger signals for ORCA-HVN memory design than ad hoc prompt tricks.
+- Source links:
+  - https://github.com/gsd-build/get-shit-done/blob/main/docs/FEATURES.md
+- Status: `Investigate soon`
+- Adoption shape: native ORCA-HVN feature candidate
+- Primary category: `memory`
+- Cross-harness or host-specific: cross-harness pattern source
+- Required ORCA-HVN change: evaluate whether ORCA's memory layer needs a narrower durable learnings primitive
+- UX impact: both
+- First seen: 2026-05-31
+- Last confirmed: 2026-05-31
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+- Related issue if created: none
 
 ### install
 
-No active items yet.
+- Title: Official Linear MCP remote path is now concrete enough to recommend
+- Short summary: Linear now documents a first-party MCP endpoint with Streamable HTTP (OAuth 2.1 dynamic client registration), explicit Codex CLI setup (including required Codex experimental RMCP flag), and direct `Authorization: Bearer ...` auth as a non-interactive option.
+- Source links:
+  - https://linear.app/docs/mcp
+- Status: `Adopt now`
+- Adoption shape: setup-path update
+- Primary category: `install`
+- Cross-harness or host-specific: cross-harness with Codex-specific setup details
+- Setup method: remote MCP
+- Affected hosts: Codex, VS Code, Windsurf, Zed, generic MCP-capable hosts
+- Currently recommended setup path: generic "approved MCP or manual" wording
+- Unstable or deprecated setup path: vague/manual-only Linear setup language
+- Required ORCA-HVN change: refresh Linear-first setup docs and examples around the official endpoint and auth options
+- UX impact: both
+- First seen: 2026-05-31
+- Last confirmed: 2026-06-02
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-06-02 docs unchanged; local Linear runtime still blocked by reauthentication
+- Related issue if created: [reports/ecosystem-sweep/draft-issues/2026-05-31-linear-mcp-setup-refresh.md](../reports/ecosystem-sweep/draft-issues/2026-05-31-linear-mcp-setup-refresh.md)
+
+- Title: Impeccable wrapper guidance is starting to drift across official surfaces
+- Short summary: Official Impeccable pages now mix `/impeccable teach` and `/impeccable init`, while recent releases changed Codex subagent delivery, deprecated `--fast`, and added daily self-update behavior. ORCA-HVN should keep wrapper guidance version-aware instead of restating one brittle install or onboarding story.
+- Source links:
+  - https://impeccable.style/changelog/
+  - https://impeccable.style/docs/init
+  - https://impeccable.style/faq
+  - https://github.com/pbakaus/impeccable
+- Status: `Investigate soon`
+- Adoption shape: docs/workflow guidance opportunity
+- Primary category: `install`
+- Cross-harness or host-specific: cross-harness with Codex-specific delivery changes
+- Required ORCA-HVN change: refresh `orca-impeccable` wrapper guidance so it treats `teach` as an alias, prefers harness-detected install paths, and avoids stale Codex sidecar assumptions
+- UX impact: both
+- First seen: 2026-06-02
+- Last confirmed: 2026-06-02
+- Prior sightings:
+  - 2026-06-02 wrapper-pack audit during the ecosystem sweep
+- Related issue if created: none
 
 ### cross-harness
 
-No active items yet.
+- Title: OpenCode tracking currently mixes active docs with an archived legacy repo
+- Short summary: ORCA-HVN tracks OpenCode through active docs plus an archived `opencode-ai/opencode` GitHub repo, which is not a stable single source of truth.
+- Source links:
+  - https://dev.opencode.ai/docs/cli/
+  - https://dev.opencode.ai/docs/config
+  - https://dev.opencode.ai/docs/mcp-servers/
+  - https://github.com/opencode-ai/opencode/releases
+- Status: `Adopt now`
+- Adoption shape: docs/workflow guidance opportunity
+- Primary category: `cross-harness`
+- Cross-harness or host-specific: cross-harness
+- Required ORCA-HVN change: split future OpenCode reporting into active runtime/docs versus archived legacy repo history
+- UX impact: both
+- First seen: 2026-05-31
+- Last confirmed: 2026-05-31
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+- Related issue if created: [reports/ecosystem-sweep/draft-issues/2026-05-31-opencode-source-tracking-split.md](../reports/ecosystem-sweep/draft-issues/2026-05-31-opencode-source-tracking-split.md)
 
 ### QA
 
-No active items yet.
+- Title: GSD optional Playwright-MCP verification is a useful QA pattern
+- Short summary: GSD explicitly treats Playwright-MCP visual verification as optional verify-phase support rather than a universal default.
+- Source links:
+  - https://github.com/gsd-build/get-shit-done/blob/main/docs/FEATURES.md
+- Status: `Investigate soon`
+- Adoption shape: docs/workflow guidance opportunity
+- Primary category: `QA`
+- Cross-harness or host-specific: cross-harness pattern source
+- Required ORCA-HVN change: assess whether ORCA should document the same "opt-in visual verification" posture more explicitly
+- UX impact: both
+- First seen: 2026-05-31
+- Last confirmed: 2026-05-31
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+- Related issue if created: none
 
 ### workflow
 
-No active items yet.
+- Title: Codex goal mode and governance baseline moved past ORCA-HVN's current wording
+- Short summary: Codex moved well past the original `0.133.0` goal-mode shift. `0.136.0` now adds archive/unarchive commands, richer app-server MCP status, `codex app-server --stdio`, remote `CODEX_API_KEY` registration for approved OpenAI hosts, and more command-safety hardening on top of the already-mature goal/governance baseline.
+- Source links:
+  - https://github.com/openai/codex/releases
+- Status: `Adopt now`
+- Adoption shape: host-adapter opportunity
+- Primary category: `workflow`
+- Cross-harness or host-specific: Codex-specific
+- Required ORCA-HVN change: refresh Codex host docs and compatibility notes so they cover the current lifecycle surface rather than only the earlier goal/governance drift
+- UX impact: both
+- First seen: 2026-05-31
+- Last confirmed: 2026-06-02
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 same-day refresh: updated to Codex `0.135.0` release details
+  - 2026-06-02: broadened with Codex `0.136.0` archive, app-server, remote-registration, and safety changes
+- Related issue if created: [reports/ecosystem-sweep/draft-issues/2026-05-31-codex-goal-guidance-refresh.md](../reports/ecosystem-sweep/draft-issues/2026-05-31-codex-goal-guidance-refresh.md)
+
+- Title: Claude Code dynamic workflows are significant but still host-specific
+- Short summary: Claude Code keeps deepening its lifecycle and safety surface. The current `2.1.160` release adds prompts before writing shell-startup and build-tool config files that can grant code execution, and fixes restored `claude agents` sessions dropping history, but the path is still Claude-specific.
+- Source links:
+  - https://code.claude.com/docs/en/changelog
+- Status: `Investigate soon`
+- Adoption shape: host-adapter opportunity
+- Primary category: `workflow`
+- Cross-harness or host-specific: Claude-specific
+- Required ORCA-HVN change: decide whether to add a Claude-only advanced orchestration guide or fold the new signals into a broader lifecycle abstraction later
+- UX impact: expert UX
+- First seen: 2026-05-31
+- Last confirmed: 2026-06-02
+- Prior sightings:
+  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-06-02: updated with `2.1.160` safety prompts and restored-session fix
+- Related issue if created: none
 
 ## Cross-Harness Capability Matrix
 
 Track existence and confidence for:
 
-| Capability | Codex CLI | Claude Code | Hermes Agent | OpenCode | Notes |
-| --- | --- | --- | --- | --- | --- |
-| `/goal` | unknown | unknown | unknown | unknown | Verify from official docs or local host behavior. |
-| checkpointing | unknown | unknown | unknown | unknown | Track explicit pause or approval checkpoints. |
-| pause/resume | unknown | unknown | unknown | unknown | Include continue and clear semantics when present. |
-| persistent state | unknown | unknown | unknown | unknown | Distinguish host memory from ORCA-HVN run memory and shared state. |
-| approvals | unknown | unknown | unknown | unknown | Track human-in-the-loop and risk approval surfaces. |
-| inspection | unknown | unknown | unknown | unknown | Track run, artifact, trace, and status inspection. |
-| tool governance | unknown | unknown | unknown | unknown | Track MCP review, allowlists, and tool trust behavior. |
-| QA support | unknown | unknown | unknown | unknown | Track regression generation, evals, and harness QA support. |
+| Capability | Codex CLI | Claude Code | OpenCode | Notes |
+| --- | --- | --- | --- | --- |
+| `/goal` | supported | supported | unclear | Codex goals are now enabled by default; Claude documents `/goal`; OpenCode remains conservative. |
+| checkpointing | partial | partial | unclear | unclear | Codex archive/unarchive and Claude restore reliability both strengthened, but semantics are still host-specific. |
+| pause/resume | partial | partial | unclear | unclear | Codex archive/unarchive and Claude restored-session fixes improved the surface without creating parity. |
+| persistent state | partial | partial | unclear | partial | OpenCode docs describe compaction, attach, and remote config, but not enough for strong parity claims. |
+| approvals | partial | unclear | unclear | partial | OpenCode explicitly documents permission gating; Codex permission profiles matured. |
+| inspection | partial | partial | unclear | partial | Codex and Claude both improved inspectability; OpenCode exposes server/attach flows. |
+| tool governance | partial | partial | unclear | supported | OpenCode MCP/tool gating is explicit; Codex governance surfaces expanded. |
+| QA support | unclear | unclear | unclear | unclear | GSD is a pattern source here, not direct proof of harness-native support. |
 
 ## Integration Setup Watch
 
 Track currently recommended setup paths and caveats. Update this table during each sweep when official docs, host behavior, or connector support changes.
 
-| Service | Codex CLI | Claude Code | Hermes Agent | OpenCode | VS Code | Generic fallback |
-| --- | --- | --- | --- | --- | --- | --- |
-| GitHub | connector, approved MCP, `gh`, or manual; verify locally | MCP or configured connector when available; manual fallback | verify host docs before recommending connector parity | unknown; verify local docs | Copilot connector, MCP, `gh`, or manual | `gh`, approved MCP, token, or manual |
-| Linear | connector, approved MCP, or manual; verify locally | MCP path when approved; manual fallback | verify host docs before recommending connector parity | unknown; verify local docs | MCP, approved token path, or manual | approved MCP, token, or manual |
+| Service | Codex CLI | Claude Code | OpenCode | VS Code | Generic fallback |
+| --- | --- | --- | --- | --- | --- |
+| GitHub | connector, approved MCP, `gh`, or manual; verify locally | MCP or configured connector when available; manual fallback | verify host docs before recommending connector parity | verify current docs and active implementation lineage | Copilot connector, MCP, `gh`, or manual | `gh`, approved MCP, token, or manual |
+| Linear | official remote MCP path now documented; `codex mcp add linear --url https://mcp.linear.app/mcp` | MCP path when approved; manual fallback | verify host docs before recommending connector parity | verify current docs and auth flow before recommending | `npx -y mcp-remote https://mcp.linear.app/mcp` | approved MCP, token, or manual |
 | NotebookLM | community MCP or browser path unless enterprise setup is confirmed | community MCP or browser path unless enterprise setup is confirmed | verify host and browser automation support before recommending | unknown; verify local docs | browser automation or enterprise web path, depending on host setup | enterprise path, Google Cloud APIs, or user-managed MCP/browser tooling |
 | Graphify | optional local install or shell invocation; never required | optional local install or shell invocation; never required | verify host shell and file access support first | unknown; verify local docs | optional local install if the user wants graph analysis | direct vault inspection first, Graphify only as optional enhancement |
+
+Current local caveat:
+Linear's official remote MCP path is still the right documented baseline, but local verification in this workspace remains blocked by `401: "Server returned 401: 'Reauthentication required'"`. Keep recurring automations on the local draft-issue fallback until runtime auth is healthy again.
 
 ## Setup Path Risks
 
 Use this section for unstable, broken, or deprecated setup guidance.
 
-- No active setup-path risks yet.
+- OpenCode risk: ORCA-HVN currently tracks active docs against an archived legacy repo. Future setup recommendations should cite the active docs/runtime lineage explicitly.
+- Linear risk: this session's Linear connector required reauthentication, so live issue-native maintenance was blocked even though the setup path is now better documented officially.
 
 ## Setup Simplification Opportunities
 
 Use this section for easier setup paths ORCA-HVN may want to adopt.
 
-- No active setup simplification opportunities yet.
+- Linear MCP can now be documented with one official endpoint and explicit host examples instead of generic MCP prose.
+- Codex guidance can move from "maybe experimental" goal wording to a clearer version-aware baseline.
 
 ## Host-Specific Caveats
 
@@ -154,12 +291,17 @@ Use this section for easier setup paths ORCA-HVN may want to adopt.
 
 ## Recently Adopted
 
-No adopted items yet.
+- 2026-05-31: Linear official MCP setup path promoted to `Adopt now` for ORCA-HVN setup guidance refresh.
+- 2026-05-31: Codex goal/governance baseline promoted to `Adopt now` for host-guidance refresh.
+- 2026-05-31: OpenCode source-tracking split promoted to `Adopt now` to prevent future compatibility overclaim.
 
 ## Dormant / Not Worth It
 
-No dormant items yet.
+- No dormant items yet.
 
 ## Monitoring Notes
 
-No monitoring notes yet.
+- First live ecosystem sweep completed on 2026-05-31.
+- No prior dated sweep existed, so all items above are baseline discoveries rather than upgrades from an earlier run.
+- Linear was blocked by reauthentication during this run.
+- Direct issue creation was not verified, so adopt-now follow-ups were written as local Markdown drafts.

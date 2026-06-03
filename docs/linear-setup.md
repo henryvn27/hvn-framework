@@ -87,6 +87,42 @@ Use the agent client's Linear connector, app integration, or MCP setup. Confirm 
 
 Decide separately whether the agent can update state, labels, assignee, or project. ORCA-HVN works well when agents can recommend transitions even if humans perform them.
 
+Preferred setup order:
+
+1. Use the harness's native Linear connector when it exists and is approved.
+2. Otherwise use Linear's official remote MCP endpoint: `https://mcp.linear.app/mcp`.
+3. Use a bearer token path only when non-interactive auth is required and the environment can store the token safely.
+4. Fall back to pasted issue context and local artifacts when auth or transport is blocked.
+
+Codex-specific remote MCP setup:
+
+1. Add the RMCP feature flag to `~/.codex/config.toml`:
+
+```toml
+[features]
+experimental_use_rmcp_client = true
+```
+
+2. Add the server:
+
+```sh
+codex mcp add linear --url https://mcp.linear.app/mcp
+```
+
+3. Then complete auth with:
+
+```sh
+codex mcp login linear
+```
+
+Generic MCP-capable hosts can usually use:
+
+```sh
+npx -y mcp-remote https://mcp.linear.app/mcp
+```
+
+If interactive auth is not viable, use the documented bearer-token path with `Authorization: Bearer <token>` through the host's supported MCP configuration.
+
 ## Step 6: Create A Smoke-Test Issue
 
 Create a low-risk issue:
@@ -124,6 +160,10 @@ Use `templates/linear-setup-checklist.md` to record the setup. Post it to the pr
 
 ## Failure Modes
 
+- Linear returns `401 Reauthentication required`.
+- Agents should record Linear as blocked, continue only with the strongest local-only verification that still makes sense, and note exactly which project or issue update must be posted once auth is restored.
+- Codex remote MCP setup fails because the RMCP feature flag is missing from `~/.codex/config.toml`.
+- OAuth succeeds once, then cached auth state goes stale. Reset `~/.mcp-auth` only when the documented auth flow is stuck and a fresh login is required.
 - Agents can read issues but cannot post comments.
 - States exist but do not represent ORCA-HVN gates.
 - Blind QA agents receive too much issue context.

@@ -23,10 +23,15 @@ A good executor harness usually has:
 
 ## Typical Pairings
 
-### Hermes As Controller, Codex As Executor
+### Codex As Controller, Codex As Executor
 
-- controller owns orientation, routing, and ingestion
-- executor owns bounded implementation or research work
+- one harness owns both controller and executor roles
+- explicit artifacts keep the boundary clean
+
+### Claude Code As Controller, Codex As Executor
+
+- Claude Code owns orientation, routing, and ingestion
+- Codex owns bounded implementation or research work
 
 ### Codex Alone
 

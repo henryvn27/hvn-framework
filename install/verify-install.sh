@@ -11,13 +11,15 @@ while [ "$#" -gt 0 ]; do
   esac
 done
 
-for item in ORCA-HVN.md README.md commands skills templates docs mcp install scripts VERSION; do
+for item in ORCA-HVN.md README.md commands skills templates docs mcp install scripts bin VERSION; do
   [ -e "$target/$item" ] || { printf 'Missing installed item: %s\n' "$target/$item" >&2; exit 1; }
 done
 
 [ -f "$target/commands/orca-help.md" ] || { printf 'Missing orca-help command\n' >&2; exit 1; }
 [ -f "$target/skills/orca-install-help/SKILL.md" ] || { printf 'Missing orca-install-help skill\n' >&2; exit 1; }
 [ -f "$target/docs/install.md" ] || { printf 'Missing install guide\n' >&2; exit 1; }
+[ -x "$target/bin/orca" ] || { printf 'Missing executable orca launcher\n' >&2; exit 1; }
+[ -x "$target/bin/orca-onboard" ] || { printf 'Missing executable orca-onboard shim\n' >&2; exit 1; }
 [ -x "$target/install/doctor.sh" ] || { printf 'Missing executable install doctor\n' >&2; exit 1; }
 [ -x "$target/install/verify-install.sh" ] || { printf 'Missing executable install verifier\n' >&2; exit 1; }
 

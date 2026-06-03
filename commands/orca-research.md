@@ -37,11 +37,22 @@ Attach or summarize the research brief in the chosen record.
 
 1. Use `orca-research`.
 2. Define the decision the research must support.
-3. Check whether the user provided a vault or other live knowledge base that should outrank generic advice.
-4. Consult primary or authoritative external sources when needed.
-5. Mark any extrapolation clearly if the vault or local evidence is weak.
-6. Summarize findings, confidence, citations, and implications.
-7. Sync the conclusion to the work item.
+3. List the specific unknowns blocking the next spec, plan, or implementation decision.
+4. Check whether the user provided a vault or other live knowledge base that should outrank generic advice.
+5. Consult primary or authoritative external sources when needed.
+6. Mark any extrapolation clearly if the vault or local evidence is weak.
+7. Summarize findings, confidence, citations, implications, and a recommended decision.
+8. Sync the conclusion to the work item.
+
+## Side-Session Fit
+
+`orca-research` is a good side-session candidate when the user wants evidence-gathering or interpretation to stay adjacent to a main execution thread instead of derailing it.
+
+## Research Rules
+
+- Research should end with a decision or narrowed choice, not just a source summary.
+- Prefer answering the few unknowns that unblock the next phase over collecting broad background.
+- If the question is large, split it into ranked subquestions and resolve the highest-leverage one first.
 
 ## Outputs And Artifacts
 
@@ -52,6 +63,7 @@ Attach or summarize the research brief in the chosen record.
 - If sources conflict, report the conflict and confidence level.
 - If evidence is unavailable, document the uncertainty.
 - If vault evidence is thin, say so explicitly before falling back to generic guidance.
+- If the research output does not change or narrow a decision, it is incomplete.
 
 ## Related Commands And Skills
 

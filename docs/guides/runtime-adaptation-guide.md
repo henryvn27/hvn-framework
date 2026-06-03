@@ -17,7 +17,7 @@ It chooses the safest reviewed path for the active environment instead of assumi
 
 ## Common Pitfalls
 
-- copying a Codex path into a Hermes or Claude context without checking
+- copying a Codex path into a Claude context without checking
 - recommending background or goal mode as defaults when capability is unclear
 - missing integration setup caveats
 
@@ -25,4 +25,3 @@ It chooses the safest reviewed path for the active environment instead of assumi
 
 - [../runtime-adaptation.md](../runtime-adaptation.md)
 - [../compatibility-matrix.md](../compatibility-matrix.md)
-

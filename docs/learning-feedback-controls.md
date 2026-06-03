@@ -21,4 +21,11 @@ Adaptive guidance is on by default, but it should be easy to reduce or disable.
 - `orca-learning` to inspect or set the learning-help mode
 - `orca-feedback` to request or suppress a specific coaching response
 
+These same surfaces may also be used to tighten or loosen ORCA's involvement style for the current run, such as:
+
+- more check-ins
+- fewer check-ins
+- ask before goal or background mode
+- keep going unless blocked
+
 These controls affect the local instance loop. They do not directly change framework-wide policy.

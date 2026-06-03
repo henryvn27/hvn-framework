@@ -1,6 +1,6 @@
 # Execution Receipt
 
-## Run Identity
+## Run
 
 - Run ID:
 - Session ID:
@@ -19,7 +19,7 @@
 
 ## Actions Taken
 
-- 
+- Concrete actions only. Avoid vague summaries like "improved workflow" or "implemented enhancements."
 
 ## Artifacts Touched
 
@@ -28,22 +28,28 @@
 
 ## Verification Performed
 
-- 
+- List the exact commands/checks you ran.
+- If you did not run something important, say “not run” instead of implying it happened.
 
 ## Result Status
 
-- 
+- State the actual end state: complete, partial-progress, blocked, rolled back, or failed.
 
 ## Unresolved Risks
 
-- 
+- Name specific remaining risks instead of generic caution language.
 
 ## Approvals Used
 
-- 
+- Record actual approval checkpoints used, or state none.
+
+## Anti-Generic Check
+
+- Replace summary language with concrete task language.
+- If a reader could not tell what changed from the receipt alone, it is too generic.
 
 ## Summary Metrics
 
 - Time:
-- Cost:
+- Cost (if known, else n/a):
 - Retries:
