@@ -1,6 +1,6 @@
 # Truth Hierarchy
 
-ORCA-HVN should be explicit about which evidence outranks which other evidence.
+ORCA Framework should be explicit about which evidence outranks which other evidence.
 
 ## Default Rule
 
@@ -36,7 +36,7 @@ If the vault is incomplete, stale, or too sparse to support a strong recommendat
 
 ## Required Labeling
 
-When ORCA-HVN goes beyond direct vault evidence, it should label that clearly with phrasing such as:
+When ORCA Framework goes beyond direct vault evidence, it should label that clearly with phrasing such as:
 
 - `Extrapolation from partial vault evidence`
 - `Low-confidence inference`

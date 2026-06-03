@@ -2,7 +2,7 @@
 
 ## When To Use This Guide
 
-Use this guide when harness capability, setup state, or risk level changes what ORCA-HVN should recommend.
+Use this guide when harness capability, setup state, or risk level changes what ORCA Framework should recommend.
 
 ## What Runtime Adaptation Does
 

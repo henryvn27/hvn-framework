@@ -1,6 +1,6 @@
 # First Workflow
 
-If you are new to ORCA-HVN, do not start by learning every command.
+If you are new to ORCA Framework, do not start by learning every command.
 
 Start with this one path:
 
@@ -18,7 +18,7 @@ flowchart LR
     D --> E["orca-review"]
 ```
 
-That is the default ORCA-HVN intro workflow.
+That is the default ORCA Framework intro workflow.
 
 These names are ORCA workflow commands and the install now provides matching `orca-*` shims in the installed `bin/` directory.
 If your host does not provide native `orca-*` slash commands, use the shipped shims or `orca run <command> --print` to reuse the exact workflow prompt.
@@ -51,7 +51,7 @@ Check for bugs, regressions, and obvious quality risks before going wider.
 
 Most agent frameworks fail new users by showing a giant command catalog before they show a usable path.
 
-ORCA-HVN should do the opposite:
+ORCA Framework should do the opposite:
 
 - one work item
 - one path

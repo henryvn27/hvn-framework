@@ -1,8 +1,8 @@
 # Vault Cluster Report
 
-Use this when ORCA-HVN needs to describe the major project or workflow clusters inside a large vault.
+Use this when ORCA Framework needs to describe the major project or workflow clusters inside a large vault.
 
-Good ORCA-HVN behavior:
+Good ORCA Framework behavior:
 
 - identify the major clusters
 - name likely hub notes

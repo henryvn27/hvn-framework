@@ -1,15 +1,15 @@
 # Benchmark Pack
 
-ORCA-HVN benchmark packs provide a repeatable way to compare install, onboarding, spec, and orchestration quality over time. The goal is not synthetic leaderboard theater. The goal is to catch whether workflow changes improve or degrade the actual user path.
+ORCA Framework benchmark packs provide a repeatable way to compare install, onboarding, spec, and orchestration quality over time. The goal is not synthetic leaderboard theater. The goal is to catch whether workflow changes improve or degrade the actual user path.
 
 ## Purpose
 
 Use benchmark packs to compare:
 
-- ORCA-HVN version to ORCA-HVN version
+- ORCA Framework version to ORCA Framework version
 - prompt set A to prompt set B
 - workflow changes over time
-- ORCA-HVN against adjacent frameworks when the comparison is grounded and repeatable
+- ORCA Framework against adjacent frameworks when the comparison is grounded and repeatable
 
 ## What The Pack Measures
 

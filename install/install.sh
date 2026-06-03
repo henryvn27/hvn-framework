@@ -44,15 +44,15 @@ while [ "$#" -gt 0 ]; do
 done
 
 case "$mode" in
-  local) target="${target:-./.orca-hvn}" ;;
-  global) target="${target:-$HOME/.orca-hvn}" ;;
+  local) target="${target:-./.orca-framework}" ;;
+  global) target="${target:-$HOME/.orca-framework}" ;;
   *) printf 'Mode must be local or global\n' >&2; exit 1 ;;
 esac
 
 root="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 mkdir -p "$target"
 
-for item in ORCA-HVN.md README.md commands skills templates docs mcp install scripts bin; do
+for item in ORCA-Framework.md README.md commands skills templates docs mcp install scripts bin; do
   [ -e "$root/$item" ] || { printf 'Missing source item: %s\n' "$item" >&2; exit 1; }
   rm -rf "$target/$item"
   cp -R "$root/$item" "$target/$item"
@@ -64,10 +64,10 @@ cat > "$target/VERSION" <<VERSION
 0.1.0
 VERSION
 
-printf 'ORCA-HVN installed to %s\n' "$target"
+printf 'ORCA Framework installed to %s\n' "$target"
 printf 'Install overview: %s\n' "$target/docs/install-overview.md"
 printf 'Beginner path: %s\n' "$target/docs/install-for-beginners.md"
 printf 'Technical path: %s\n' "$target/docs/install-for-technical-users.md"
 printf 'Linear-first guidance: %s\n' "$target/docs/linear-guidance.md"
-printf 'Opt-out mode: choose a durable system of record and map ORCA-HVN gates there.\n'
+printf 'Opt-out mode: choose a durable system of record and map ORCA Framework gates there.\n'
 print_next_steps

@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Show the ORCA-HVN workflow, available commands, Linear-first usage, opt-out mode, and recommended next command.
+Show the ORCA Framework workflow, available commands, Linear-first usage, opt-out mode, and recommended next command.
 
 ## When To Use
 
-Use when a user asks what ORCA-HVN can do, how to start, or which command fits the current situation.
+Use when a user asks what ORCA Framework can do, how to start, or which command fits the current situation.
 
 ## Required Inputs
 
@@ -29,7 +29,7 @@ Use when a user asks what ORCA-HVN can do, how to start, or which command fits t
 
 ## Opt-Out Context
 
-If the user does not want Linear, ask which record should hold ORCA-HVN artifacts.
+If the user does not want Linear, ask which record should hold ORCA Framework artifacts.
 
 ## Workflow
 
@@ -54,5 +54,5 @@ If the user does not want Linear, ask which record should hold ORCA-HVN artifact
 
 ## Related Commands And Skills
 
-- Commands: all ORCA-HVN commands, especially `orca-explain` for interactive rationale and `orca-btw` behavior for quick side questions
+- Commands: all ORCA Framework commands, especially `orca-explain` for interactive rationale and `orca-btw` behavior for quick side questions
 - Skills: `orca-core`, `orca-linear-core`

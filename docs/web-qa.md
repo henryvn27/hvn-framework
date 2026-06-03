@@ -1,6 +1,6 @@
 # Web QA
 
-ORCA-HVN web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view. In Linear-first mode, QA results are posted to the issue. In opt-out mode, results are written to the chosen record.
+ORCA Framework web QA uses browser automation or manual browser inspection to evaluate a web product from the user's point of view. In Linear-first mode, QA results are posted to the issue. In opt-out mode, results are written to the chosen record.
 
 When browser automation is available, prefer a real browser-driving path over speculative reading of source code alone.
 The default CLI-first browser-driving path is `skills/orca-web-qa/scripts/playwright_cli.sh`, which wraps Playwright CLI and keeps snapshots, screenshots, and traces in `output/playwright/`.

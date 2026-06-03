@@ -22,7 +22,7 @@ done
 
 cd "$root"
 
-printf 'ORCA-HVN doctor\n'
+printf 'ORCA Framework doctor\n'
 
 for bin in sh find grep sed cp rm mkdir git; do
   command -v "$bin" >/dev/null 2>&1 || { printf 'Missing dependency: %s\n' "$bin" >&2; exit 1; }
@@ -30,7 +30,7 @@ done
 
 printf 'Core shell dependencies: ok\n'
 
-if [ -f "$root/ORCA-HVN.md" ] && [ -d "$root/docs" ] && [ -d "$root/commands" ]; then
+if [ -f "$root/ORCA-Framework.md" ] && [ -d "$root/docs" ] && [ -d "$root/commands" ]; then
   printf 'Repo layout: ok\n'
 else
   printf 'Repo layout: failed\n' >&2
@@ -39,10 +39,10 @@ fi
 
 if [ -n "$target" ]; then
   ./install/verify-install.sh --target "$target"
-elif [ -d "$HOME/.orca-hvn" ]; then
-  ./install/verify-install.sh --target "$HOME/.orca-hvn"
+elif [ -d "$HOME/.orca-framework" ]; then
+  ./install/verify-install.sh --target "$HOME/.orca-framework"
 else
-  printf 'Installed target: not checked (no --target provided and no global install at %s/.orca-hvn)\n' "$HOME"
+  printf 'Installed target: not checked (no --target provided and no global install at %s/.orca-framework)\n' "$HOME"
 fi
 
 if [ -n "$harness" ]; then

@@ -3,7 +3,7 @@ name: orca-runtime-adaptation
 description: Detect the current harness, apply capability-driven routing, and choose safe fallbacks using reviewed compatibility knowledge.
 ---
 
-# ORCA-HVN Runtime Adaptation
+# ORCA Framework Runtime Adaptation
 
 ## What This Skill Is
 

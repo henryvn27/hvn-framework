@@ -3,7 +3,7 @@ name: orca-tool-setup
 description: Identify, guide, validate, and fall back from external tool integrations such as GitHub and Linear across different harnesses.
 ---
 
-# ORCA-HVN Tool Setup
+# ORCA Framework Tool Setup
 
 ## What This Skill Is
 
@@ -15,7 +15,7 @@ Use when a task needs GitHub, Linear, MCP, a host connector, a CLI helper, or an
 
 ## Inputs
 
-- Current ORCA-HVN phase or task
+- Current ORCA Framework phase or task
 - Harness or host, if known
 - Needed services
 - Required actions, such as read issue, post comment, open PR, or inspect checks

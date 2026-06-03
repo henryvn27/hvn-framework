@@ -25,7 +25,7 @@
 - What changed:
   - ShipNotes: added onboarding improvements (“Use example”) and `.md` download export buttons.
   - ShipNotes: added `vercel.json` SPA rewrite guardrail.
-  - ORCA-HVN: added `launch-packet.md` and a second blind QA report with new evidence screenshots.
+  - ORCA Framework: added `launch-packet.md` and a second blind QA report with new evidence screenshots.
 - What was verified:
   - ShipNotes: `npm run build` and `npm run lint` pass locally (2026-05-31).
   - Blind QA evidence captured:
@@ -45,7 +45,7 @@
   - ShipNotes: added an editable summary field (shown on the public release page).
   - ShipNotes: added “Download HTML” export for the release page (fallback when publish URLs are too long).
   - ShipNotes: added “Copy command” helper for `git log --oneline --no-decorate -n 50`.
-  - ORCA-HVN: added a draft micro-distribution plan:
+  - ORCA Framework: added a draft micro-distribution plan:
     - `reports/blind-product-lab/shipnotes/distribution-plan.md`
 - What was verified:
   - ShipNotes local gates (2026-05-31):
@@ -68,7 +68,7 @@
 
 - What changed:
   - ShipNotes: added input diagnostics that show kept vs ignored lines and surface ignored merge/noise lines with reasons.
-  - ORCA-HVN: refreshed blind product lab status to reflect the new hardening pass and current blockers.
+  - ORCA Framework: refreshed blind product lab status to reflect the new hardening pass and current blockers.
 - What was verified:
   - ShipNotes local gates (2026-05-31):
     - `npm run lint`
@@ -91,7 +91,7 @@
 - What changed:
   - Approval gate for outreach was cleared.
   - Sent one controlled first-wave feedback email for ShipNotes to Trent Gegax (`trent.gegax@gramercyfund.com`) using the live production link.
-  - ORCA-HVN blind product lab status was updated from “approval blocked” to “first-wave outreach started”.
+  - ORCA Framework blind product lab status was updated from “approval blocked” to “first-wave outreach started”.
 - What was verified:
   - Gmail connector profile is available for `henryvanness3@gmail.com`.
   - Outbound send succeeded through Gmail and returned sent message id `19e8098be7b617b4`.

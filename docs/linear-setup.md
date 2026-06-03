@@ -1,12 +1,12 @@
 # Linear Setup
 
-ORCA-HVN helps teams set up Linear as the default coordination layer for agentic software work. The framework does not handle OAuth, create credentials, or assume access to a workspace. It gives users a practical setup sequence, state model, labels, guidance, and a smoke test.
+ORCA Framework helps teams set up Linear as the default coordination layer for agentic software work. The framework does not handle OAuth, create credentials, or assume access to a workspace. It gives users a practical setup sequence, state model, labels, guidance, and a smoke test.
 
 ## Setup Outcome
 
 After setup, a team should have:
 
-- A Linear workspace or team selected for ORCA-HVN work.
+- A Linear workspace or team selected for ORCA Framework work.
 - Equivalent workflow gates for triage, spec, build, review, QA, ship, and done.
 - Labels for routing, risk, platform, QA mode, and approval.
 - Agent guidance installed at workspace, team, or project level.
@@ -15,7 +15,7 @@ After setup, a team should have:
 
 ## Step 1: Choose Scope
 
-Decide where ORCA-HVN will run:
+Decide where ORCA Framework will run:
 
 - Workspace-wide for all software work.
 - Team-level for one engineering team.
@@ -25,7 +25,7 @@ Start project-level if the team is unsure. Expanding a good workflow is easier t
 
 ## Step 2: Configure States
 
-ORCA-HVN expects gates, not exact names. Configure or map states equivalent to:
+ORCA Framework expects gates, not exact names. Configure or map states equivalent to:
 
 - `Triage`
 - `Ready for Spec`
@@ -73,7 +73,7 @@ Paste guidance from `docs/linear-guidance.md` into the appropriate Linear guidan
 - Team guidance for engineering workflow.
 - Project-specific guidance for repo or product details.
 
-Keep guidance short enough that agents can follow it. Link to ORCA-HVN docs for deeper policy.
+Keep guidance short enough that agents can follow it. Link to ORCA Framework docs for deeper policy.
 
 ## Step 5: Connect Agent Access
 
@@ -85,7 +85,7 @@ Use the agent client's Linear connector, app integration, or MCP setup. Confirm 
 - Post a comment.
 - Read available states.
 
-Decide separately whether the agent can update state, labels, assignee, or project. ORCA-HVN works well when agents can recommend transitions even if humans perform them.
+Decide separately whether the agent can update state, labels, assignee, or project. ORCA Framework works well when agents can recommend transitions even if humans perform them.
 
 Preferred setup order:
 
@@ -127,23 +127,23 @@ If interactive auth is not viable, use the documented bearer-token path with `Au
 
 Create a low-risk issue:
 
-Title: `ORCA-HVN setup smoke test`
+Title: `ORCA Framework setup smoke test`
 
 Description:
 
 ```text
-Use ORCA-HVN to confirm this Linear project is ready for agent coordination.
+Use ORCA Framework to confirm this Linear project is ready for agent coordination.
 
 Expected result:
 - Agent reads this issue.
 - Agent identifies the current state and labels.
-- Agent posts a short ORCA-HVN setup check comment.
+- Agent posts a short ORCA Framework setup check comment.
 - Agent recommends the next gate without changing state unless allowed.
 ```
 
 Labels: `needs-triage`, `docs`
 
-Run `orca-linear-setup` or ask the agent to perform an ORCA-HVN setup check.
+Run `orca-linear-setup` or ask the agent to perform an ORCA Framework setup check.
 
 ## Step 7: Decide Opt-Out Rules
 
@@ -165,7 +165,7 @@ Use `templates/linear-setup-checklist.md` to record the setup. Post it to the pr
 - Codex remote MCP setup fails because the RMCP feature flag is missing from `~/.codex/config.toml`.
 - OAuth succeeds once, then cached auth state goes stale. Reset `~/.mcp-auth` only when the documented auth flow is stuck and a fresh login is required.
 - Agents can read issues but cannot post comments.
-- States exist but do not represent ORCA-HVN gates.
+- States exist but do not represent ORCA Framework gates.
 - Blind QA agents receive too much issue context.
 - Agents can move issues to done without evidence.
 - Guidance is installed at workspace level but conflicts with project-specific rules.

@@ -3,7 +3,7 @@ name: orca-linear-planner
 description: Create Linear-ready specs, plans, approval requests, and state recommendations.
 ---
 
-# ORCA-HVN Linear Planner
+# ORCA Framework Linear Planner
 
 ## What This Skill Is
 
@@ -53,6 +53,6 @@ The plan should be buildable by an agent that reads only the issue thread and li
 - Hiding scope changes.
 - Failing to request approval before build.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-plan`, `orca-linear-plan-comment`, and `orca-build`.

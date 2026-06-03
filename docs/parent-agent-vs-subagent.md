@@ -1,6 +1,6 @@
 # Parent Agent Vs Subagent
 
-ORCA-HVN enforces a clear boundary between the parent orchestrator and subagents.
+ORCA Framework enforces a clear boundary between the parent orchestrator and subagents.
 
 ## Parent Rules
 

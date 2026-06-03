@@ -1,17 +1,17 @@
 ---
 name: orca-eval
-description: Evaluate ORCA-HVN workflows by scoring trajectories, artifact quality, and final usefulness.
+description: Evaluate ORCA Framework workflows by scoring trajectories, artifact quality, and final usefulness.
 ---
 
-# ORCA-HVN Eval
+# ORCA Framework Eval
 
 ## What This Skill Is
 
-A trajectory-based evaluation workflow for judging how well ORCA-HVN behaved, not just what it produced.
+A trajectory-based evaluation workflow for judging how well ORCA Framework behaved, not just what it produced.
 
 ## Trigger
 
-Use when validating a workflow, comparing changes to ORCA-HVN, or reviewing whether a command or skill is trustworthy.
+Use when validating a workflow, comparing changes to ORCA Framework, or reviewing whether a command or skill is trustworthy.
 
 ## Do Not Trigger
 
@@ -50,6 +50,6 @@ The report should explain why a workflow passed or failed and what to improve ne
 - Ignoring scope control and approval behavior.
 - Treating weak evidence as a pass.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-trace`, `orca-spec`, `orca-plan`, QA skills, and `orca-ship`.

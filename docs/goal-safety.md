@@ -1,6 +1,6 @@
 # Goal Safety
 
-Goal mode can keep work moving across turns, so unclear goals create compound risk. ORCA-HVN uses goal mode only when the scope, completion condition, and verification path are explicit.
+Goal mode can keep work moving across turns, so unclear goals create compound risk. ORCA Framework uses goal mode only when the scope, completion condition, and verification path are explicit.
 
 ## Do Not Use Goal Mode For
 

@@ -4,7 +4,7 @@ User context:
 
 - says only "I need a backend"
 
-ORCA-HVN behavior:
+ORCA Framework behavior:
 
 - do not dump a stack list
 - ask one concise clarifying question or stay neutral

@@ -1,6 +1,6 @@
 # Architecture
 
-ORCA-HVN is organized around a coordination record and four installable layers.
+ORCA Framework is organized around a coordination record and four installable layers.
 
 ## Coordination Record
 
@@ -12,11 +12,11 @@ Linear is the default coordination record:
 - Linear comment = status update, spec, plan, QA report, review finding, or ship checklist
 - Linear linked artifact = durable supporting evidence
 
-If a user opts out of Linear, ORCA-HVN requires a declared alternative record. The architecture remains the same; the storage target changes.
+If a user opts out of Linear, ORCA Framework requires a declared alternative record. The architecture remains the same; the storage target changes.
 
 ## Installable Layers
 
-- `ORCA-HVN.md` is the master operating manual.
+- `ORCA-Framework.md` is the master operating manual.
 - `commands/` contains entry-point prompts for workflows and Linear comment operations.
 - `skills/` contains reusable procedures that commands invoke.
 - `templates/` contains durable artifacts and Linear-ready comment formats.
@@ -34,7 +34,7 @@ Example:
 
 ## Why Blind QA Is Separate
 
-Blind QA is intentionally separated from informed QA because hidden knowledge changes the tester's behavior. Once a tester knows the intended flow, confusing UI may look obvious. ORCA-HVN protects the first-look pass by limiting context to issue ID, platform, launch instructions, and optional one-sentence mission.
+Blind QA is intentionally separated from informed QA because hidden knowledge changes the tester's behavior. Once a tester knows the intended flow, confusing UI may look obvious. ORCA Framework protects the first-look pass by limiting context to issue ID, platform, launch instructions, and optional one-sentence mission.
 
 ## Context Briefer
 

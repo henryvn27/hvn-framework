@@ -1,26 +1,25 @@
-# ORCA-HVN Wiki
+# ORCA Framework Wiki
 
-This wiki is the thin GitHub-native summary layer for ORCA-HVN.
+ORCA is an orchestration framework for agentic software work in Codex and Claude Code. It is not a second IDE, a wrapper that hides the host, or a decorative prompt pack. It gives the agent a durable operating model: onboard, specify, plan, build, review, ship, and leave receipts.
 
-The primary polished docs surface should be GitHub Pages:
+Primary docs site: `https://henryvn27.github.io/orca-framework/`
 
-- `https://henryvn27.github.io/orca-hvn/`
+Repository slug: `henryvn27/orca-framework`
 
-## Start Here
+## Operator Map
 
-- [Getting-Started.md](Getting-Started.md)
-- [Feature-Index.md](Feature-Index.md)
-- [Workflow-Index.md](Workflow-Index.md)
-- [Commands.md](Commands.md)
+| Need | Start Here | Why |
+| --- | --- | --- |
+| Install and run the first workflow | [Getting Started](Getting-Started.md) | Fastest route from clone to useful work. |
+| Understand the system shape | [Core Concepts](Core-Concepts.md) | Defines the durable ORCA objects and handoffs. |
+| Pick the right path | [Workflow Index](Workflow-Index.md) | Routes real work into the right operating mode. |
+| Find a command | [Commands](Commands.md) | Maps intent to command contracts. |
+| Check host support | [Hosts and Harnesses](Hosts-and-Harnesses.md) | Shows what Codex and Claude Code can do natively. |
 
-## What The Wiki Is For
+## Working Rule
 
-- fast GitHub-native orientation
-- summary routing
-- quick links for contributors and repo visitors
+Use the wiki for orientation. Use the Pages docs for the polished public manual. Use `commands/`, `skills/`, and `templates/` as the executable contracts.
 
-## What To Use Instead For The Full Experience
+## Design Bias
 
-- Pages docs site for the polished public docs hub
-- `docs/` for canonical long-form markdown
-- `commands/` for the actual command contracts
+ORCA should feel like a field manual: concrete labels, visible constraints, clear escalation paths, and no mystery state.

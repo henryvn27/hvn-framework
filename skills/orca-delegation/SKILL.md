@@ -1,9 +1,9 @@
 ---
 name: orca-delegation
-description: Create bounded delegation briefs and structured executor returns for ORCA-HVN workflows.
+description: Create bounded delegation briefs and structured executor returns for ORCA Framework workflows.
 ---
 
-# ORCA-HVN Delegation
+# ORCA Framework Delegation
 
 ## What This Skill Is
 

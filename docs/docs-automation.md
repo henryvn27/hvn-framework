@@ -1,6 +1,6 @@
 # Docs Automation
 
-ORCA-HVN documentation should improve continuously instead of depending on one large manual rewrite.
+ORCA Framework documentation should improve continuously instead of depending on one large manual rewrite.
 
 ## Purpose
 

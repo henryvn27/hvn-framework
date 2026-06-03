@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Define or inspect portable ORCA-HVN artifact schemas and their versioned usage.
+Define or inspect portable ORCA Framework artifact schemas and their versioned usage.
 
 ## When To Use
 

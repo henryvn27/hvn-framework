@@ -1,6 +1,6 @@
 # Workflow
 
-ORCA-HVN follows a staged workflow centered on a durable work item. In Linear-first mode, that work item is a Linear issue. In opt-out mode, it is the user's chosen issue, document, or tracker item.
+ORCA Framework follows a staged workflow centered on a durable work item. In Linear-first mode, that work item is a Linear issue. In opt-out mode, it is the user's chosen issue, document, or tracker item.
 
 When a workflow introduces a new external upstream influence or wrapper, update the attribution records as part of the same iteration.
 
@@ -61,7 +61,7 @@ flowchart LR
 33. `orca-replay` or `orca-restore`: compare newer behavior or recover from known-good workflow states when needed.
 34. `orca-linear-ship-check` or `orca-ship`: prepare release and done-state evidence.
 35. `orca-retro`: capture lessons and follow-up work.
-36. `orca-improve-framework`: review session friction and session-quality signals, then propose ORCA-HVN improvement work when the evidence is reusable.
+36. `orca-improve-framework`: review session friction and session-quality signals, then propose ORCA Framework improvement work when the evidence is reusable.
 37. `orca-status` or `orca-background-status`: explain current harness detection, enabled features, degraded capabilities, policy switches, receipts, and unattended-run state when behavior needs inspection.
 
 ## Default Execution Bias
@@ -89,7 +89,7 @@ It should not use the user as the default loop for normal ambiguity, routine set
 - Ready to Ship
 - Done
 
-Actual state names may vary by team. ORCA-HVN expects equivalent gates.
+Actual state names may vary by team. ORCA Framework expects equivalent gates.
 
 ## Reliability Layer
 
@@ -132,7 +132,7 @@ If Linear is not used, define:
 - Where linked artifacts live
 - Who can approve build and ship gates
 
-Then run the same ORCA-HVN sequence against that record.
+Then run the same ORCA Framework sequence against that record.
 
 ## Skipping Stages
 

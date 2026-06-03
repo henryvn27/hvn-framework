@@ -1,12 +1,12 @@
 # Third-Party Notices
 
-This file records third-party notice and redistribution obligations for ORCA-HVN.
+This file records third-party notice and redistribution obligations for ORCA Framework.
 
 ## Current Audit Status
 
 As of this attribution pass:
 
-- ORCA-HVN is licensed under the MIT License in [LICENSE](LICENSE)
+- ORCA Framework is licensed under the MIT License in [LICENSE](LICENSE)
 - the repository documents many third-party integrations and influences
 - the repository audit does not identify intentionally bundled third-party source code that requires a large preserved license appendix
 - most current third-party relationships are integrations, compatibility targets, or documentation influences rather than redistributed code

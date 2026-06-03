@@ -1,6 +1,6 @@
 # Issue Approval Prompt
 
-This session surfaced a reusable ORCA-HVN framework issue.
+This session surfaced a reusable ORCA Framework issue.
 
 - Title:
 - Category:

@@ -3,7 +3,7 @@ name: orca-superpowers
 description: Wrap the upstream Superpowers workflow as a first-class ORCA execution surface.
 ---
 
-# ORCA-HVN Superpowers Wrapper
+# ORCA Framework Superpowers Wrapper
 
 ## What This Skill Is
 

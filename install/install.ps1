@@ -9,15 +9,15 @@ $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
 
 if ($Target -eq "") {
   if ($Mode -eq "global") {
-    $Target = Join-Path $HOME ".orca-hvn"
+    $Target = Join-Path $HOME ".orca-framework"
   } else {
-    $Target = Join-Path (Get-Location) ".orca-hvn"
+    $Target = Join-Path (Get-Location) ".orca-framework"
   }
 }
 
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 
-foreach ($Item in @("ORCA-HVN.md", "README.md", "commands", "skills", "templates", "docs", "mcp", "install", "scripts", "bin")) {
+foreach ($Item in @("ORCA-Framework.md", "README.md", "commands", "skills", "templates", "docs", "mcp", "install", "scripts", "bin")) {
   $Source = Join-Path $Root $Item
   $Destination = Join-Path $Target $Item
   if (!(Test-Path $Source)) {
@@ -43,12 +43,12 @@ exec "`$script_dir/orca" "$CommandName" "`$@"
 }
 
 Set-Content -Path (Join-Path $Target "VERSION") -Value "0.1.0"
-Write-Host "ORCA-HVN installed to $Target"
+Write-Host "ORCA Framework installed to $Target"
 Write-Host "Install overview: $(Join-Path $Target 'docs/install-overview.md')"
 Write-Host "Beginner path: $(Join-Path $Target 'docs/install-for-beginners.md')"
 Write-Host "Technical path: $(Join-Path $Target 'docs/install-for-technical-users.md')"
 Write-Host "Linear-first guidance: $(Join-Path $Target 'docs/linear-guidance.md')"
-Write-Host "Opt-out mode: choose a durable system of record and map ORCA-HVN gates there."
+Write-Host "Opt-out mode: choose a durable system of record and map ORCA Framework gates there."
 Write-Host ""
 Write-Host "Next steps:"
 Write-Host "1. Read the install guide: $(Join-Path $Target 'docs/install.md')"

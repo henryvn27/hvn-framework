@@ -8,7 +8,7 @@
 - Supported workflows: notifications, support or community hooks
 - Validation steps: destination channel works, webhook or bot reachable
 - Common failure modes: wrong permissions, noisy low-value notifications
-- Related ORCA-HVN commands or docs: `orca-integration`
+- Related ORCA Framework commands or docs: `orca-integration`
 - Related integrations: GitHub, Zapier, Make
 - Risk notes: keep automation focused
 - Web, mobile, or platform caveats: business workflow layer

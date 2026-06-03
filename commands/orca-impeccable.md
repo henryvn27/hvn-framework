@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Route design-heavy frontend work into ORCA-HVN's official Impeccable wrapper path so the user can call Impeccable through ORCA instead of treating it as a separate product.
+Route design-heavy frontend work into ORCA Framework's official Impeccable wrapper path so the user can call Impeccable through ORCA instead of treating it as a separate product.
 
 ## When To Use
 

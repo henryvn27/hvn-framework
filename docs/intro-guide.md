@@ -1,10 +1,10 @@
 # Intro Guide
 
-This is the shortest explanation of how to approach ORCA-HVN without getting buried in feature sprawl.
+This is the shortest explanation of how to approach ORCA Framework without getting buried in feature sprawl.
 
 ## One Sentence
 
-ORCA-HVN is an orchestration framework that should make the right path easier, not make the user learn or install more things before useful work can start.
+ORCA Framework is an orchestration framework that should make the right path easier, not make the user learn or install more things before useful work can start.
 
 ## First Principle
 

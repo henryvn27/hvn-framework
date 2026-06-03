@@ -24,4 +24,4 @@ For install or onboarding races, also evaluate:
 
 ## Rule
 
-If a subagent repeatedly adds complexity without improving outcomes, ORCA-HVN should demote that pattern.
+If a subagent repeatedly adds complexity without improving outcomes, ORCA Framework should demote that pattern.

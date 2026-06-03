@@ -3,7 +3,7 @@ name: orca-controller-mode
 description: Orient a controller agent to project state, choose a path, and keep delegation and ingestion coherent across harnesses.
 ---
 
-# ORCA-HVN Controller Mode
+# ORCA Framework Controller Mode
 
 ## What This Skill Is
 

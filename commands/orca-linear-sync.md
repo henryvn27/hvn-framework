@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Synchronize ORCA-HVN artifacts, state recommendations, and handoff notes back to a Linear issue.
+Synchronize ORCA Framework artifacts, state recommendations, and handoff notes back to a Linear issue.
 
 ## When To Use
 
@@ -22,7 +22,7 @@ Use after any agent pass that changes scope, plan, verification, QA status, or s
 
 - Reads: latest issue state, labels, comments, and linked artifacts
 - Posts: concise status comment with evidence and next action
-- Trigger: any ORCA-HVN command completion
+- Trigger: any ORCA Framework command completion
 - Human approval: required before applying state changes when workspace policy requires manual transitions
 
 ## Workflow
@@ -43,5 +43,5 @@ Use after any agent pass that changes scope, plan, verification, QA status, or s
 
 ## Related Commands And Skills
 
-- Commands: all ORCA-HVN commands
+- Commands: all ORCA Framework commands
 - Skills: `orca-linear-core`

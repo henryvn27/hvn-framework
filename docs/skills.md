@@ -1,6 +1,6 @@
 # Skills
 
-Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They define trigger rules, inputs, workflow, outputs, quality bar, common failure modes, and relationships to other ORCA-HVN skills.
+Skills are reusable operating procedures stored in `skills/*/SKILL.md`. They define trigger rules, inputs, workflow, outputs, quality bar, common failure modes, and relationships to other ORCA Framework skills.
 
 ## Linear Skills
 

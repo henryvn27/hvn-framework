@@ -36,8 +36,8 @@ Use when the user asks what is going on, why ORCA made a decision, what artifact
 
 - `templates/explanation-session.md`
 - Optional handoff section inside the explanation session artifact
-- Optional update to the user-global explain profile at `$HOME/.orca-hvn/state/explain/user-technicality-profile.md`
-- Optional append-only learning signal at `$HOME/.orca-hvn/state/explain/learning-signals.jsonl`
+- Optional update to the user-global explain profile at `$HOME/.orca-framework/state/explain/user-technicality-profile.md`
+- Optional append-only learning signal at `$HOME/.orca-framework/state/explain/learning-signals.jsonl`
 
 ## Behavior Rules
 

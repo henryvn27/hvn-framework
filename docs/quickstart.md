@@ -8,8 +8,8 @@ If you want the full canonical version, go to [install.md](install.md).
 ## 1. Clone The Repo
 
 ```sh
-git clone https://github.com/henryvn27/orca-hvn.git
-cd orca-hvn
+git clone https://github.com/henryvn27/orca-framework.git
+cd orca-framework
 ```
 
 Expected result:
@@ -27,7 +27,7 @@ Expected result:
 ## 3. Install ORCA Locally
 
 ```sh
-./install/install.sh --mode local --target ./.orca-hvn
+./install/install.sh --mode local --target ./.orca-framework
 ```
 
 Expected result:
@@ -36,14 +36,14 @@ The script prints the install target and next-step docs.
 Add the installed command layer to your shell path:
 
 ```sh
-export PATH="$(pwd)/.orca-hvn/bin:$PATH"
+export PATH="$(pwd)/.orca-framework/bin:$PATH"
 ```
 
 ## 4. Verify The Install
 
 ```sh
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework
 ```
 
 Expected result:
@@ -67,5 +67,5 @@ Then use the default ORCA path:
 
 If you want one personalized showcase instead of choosing your own task first, use `orca-demo`.
 
-These commands are available after install if `.orca-hvn/bin` is on your `PATH`.
+These commands are available after install if `.orca-framework/bin` is on your `PATH`.
 Use `orca-onboard --print -- "describe the task"` to inspect the prompt, or run `orca-onboard --harness codex -- "describe the task"` when Codex CLI is installed.

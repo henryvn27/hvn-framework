@@ -3,7 +3,7 @@ name: orca-ios-sim-qa
 description: Run iOS simulator QA with MCP support, including blind and guided passes.
 ---
 
-# ORCA-HVN iOS Simulator QA
+# ORCA Framework iOS Simulator QA
 
 ## What This Skill Is
 
@@ -53,6 +53,6 @@ The tester must not use hidden project knowledge unless explicitly included in a
 - Ignoring accessibility tree mismatches.
 - Using source code knowledge in a blind pass.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-blind-qa`, `orca-context-brief`, and `orca-test-regression`.

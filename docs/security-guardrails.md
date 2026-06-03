@@ -1,6 +1,6 @@
 # Security Guardrails
 
-ORCA-HVN security guardrails keep agent work operationally safe when reading external content, running commands, changing repositories, or making release decisions.
+ORCA Framework security guardrails keep agent work operationally safe when reading external content, running commands, changing repositories, or making release decisions.
 
 ## Core Rules
 

@@ -66,6 +66,6 @@ It should not read like a generic startup brainstorm or a vague "build something
 - writing a `/goal` prompt that stops at discovery instead of execution
 - sounding impressive but not giving the user something runnable
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-business-ideation`, `orca-goal-mode`, `orca-onboard`, and `orca-spec`.

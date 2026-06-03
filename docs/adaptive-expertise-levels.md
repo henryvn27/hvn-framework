@@ -1,6 +1,6 @@
 # Adaptive Expertise Levels
 
-ORCA-HVN may infer a working support level, but it should stay dynamic and revisable.
+ORCA Framework may infer a working support level, but it should stay dynamic and revisable.
 
 ## Levels
 

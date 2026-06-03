@@ -1,6 +1,6 @@
 # Business Ideation
 
-ORCA-HVN business ideation is a distinct front-end workflow for startup ideas, venture evaluation, and early opportunity planning. It exists upstream of product specs and implementation work.
+ORCA Framework business ideation is a distinct front-end workflow for startup ideas, venture evaluation, and early opportunity planning. It exists upstream of product specs and implementation work.
 
 ## Purpose
 
@@ -68,9 +68,9 @@ When a single ideation or evaluation pass feels too shallow, ORCA can use a coun
 
 Council-style deliberation is optional. Use it when disagreement and multi-angle judgment are likely to improve the decision, not as default ceremony for every idea.
 
-## Relationship To ORCA-HVN
+## Relationship To ORCA Framework
 
-Business ideation extends ORCA-HVN upstream:
+Business ideation extends ORCA Framework upstream:
 
 - `orca-idea` creates the initial frame
 - `orca-evaluate-idea` produces judgment and open questions

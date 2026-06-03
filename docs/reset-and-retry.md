@@ -12,9 +12,9 @@ Use this only when the current setup state is clearly broken.
 ## Example
 
 ```sh
-rm -rf ./.orca-hvn
-./install/install.sh --mode local --target ./.orca-hvn
-./install/verify-install.sh --target ./.orca-hvn
+rm -rf ./.orca-framework
+./install/install.sh --mode local --target ./.orca-framework
+./install/verify-install.sh --target ./.orca-framework
 ```
 
 ## Do Not Reset Yet If

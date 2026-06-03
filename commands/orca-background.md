@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Create, inspect, or revise a bounded ORCA-HVN background run contract.
+Create, inspect, or revise a bounded ORCA Framework background run contract.
 
 ## When To Use
 
-Use when the user wants ORCA-HVN to continue making progress unattended and the work needs explicit autonomy, scope, and stop conditions.
+Use when the user wants ORCA Framework to continue making progress unattended and the work needs explicit autonomy, scope, and stop conditions.
 
 ## Required Inputs
 

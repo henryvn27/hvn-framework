@@ -3,7 +3,7 @@ name: orca-testflight-ops
 description: Manage Control Studios TestFlight metadata, beta review details, tester groups, invitations, and public-link operations.
 ---
 
-# ORCA-HVN TestFlight Ops
+# ORCA Framework TestFlight Ops
 
 ## What This Skill Is
 
@@ -55,6 +55,6 @@ The skill should leave behind exact tester-distribution state, not just "uploade
 - creating a group without attaching the intended build
 - enabling a public link without recording its real state and URL
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-testflight-release`, `orca-ship`, and `orca-linear-release`.

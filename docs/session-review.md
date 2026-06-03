@@ -12,14 +12,14 @@ Ask:
 - what was confusing?
 - what repeated manual effort?
 - what should have been easier?
-- what should ORCA-HVN have already known or handled?
-- did ORCA-HVN create unnecessary setup work or too many decisions?
+- what should ORCA Framework have already known or handled?
+- did ORCA Framework create unnecessary setup work or too many decisions?
 - would one small user-facing coaching hint have reduced friction next time?
 - what feature, doc, guide, command, or automation was missing?
 - was this a one-off or a reusable framework problem?
 - did the user seem frustrated based on observable evidence?
 - did the output seem repetitive, generic, templated, or shallow?
-- did ORCA-HVN keep doing the wrong thing after correction?
+- did ORCA Framework keep doing the wrong thing after correction?
 - did it recover well from errors?
 - did it create concrete value or mostly polished motion?
 

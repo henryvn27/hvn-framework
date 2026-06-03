@@ -8,7 +8,7 @@
 - Supported workflows: customer context, CRM-linked ops flows
 - Validation steps: account reachable, object path known, scope sufficient
 - Common failure modes: unclear data ownership, duplicated customer system of record
-- Related ORCA-HVN commands or docs: `orca-integration`
+- Related ORCA Framework commands or docs: `orca-integration`
 - Related integrations: Slack, Zapier, Productboard
 - Risk notes: customer data boundaries matter
 - Web, mobile, or platform caveats: business ops surface

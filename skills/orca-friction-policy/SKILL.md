@@ -4,7 +4,7 @@ Use this skill when evaluating whether a feature, tool, integration, workflow br
 
 ## Goal
 
-Keep ORCA-HVN aligned with the framework-wide rule:
+Keep ORCA Framework aligned with the framework-wide rule:
 
 > The goal is to reduce friction, not create more setup work.
 

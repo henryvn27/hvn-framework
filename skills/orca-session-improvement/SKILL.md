@@ -1,9 +1,9 @@
 ---
 name: orca-session-improvement
-description: Review a completed session for reusable ORCA-HVN framework friction, filter weak candidates, and prepare user-approved issue drafts.
+description: Review a completed session for reusable ORCA Framework friction, filter weak candidates, and prepare user-approved issue drafts.
 ---
 
-# ORCA-HVN Session Improvement
+# ORCA Framework Session Improvement
 
 ## What This Skill Is
 
@@ -15,7 +15,7 @@ Use after meaningful sessions, blocked sessions, retros, or repeated framework f
 
 ## Do Not Trigger
 
-Do not use for trivial sessions or for project-specific pain that does not belong to ORCA-HVN itself.
+Do not use for trivial sessions or for project-specific pain that does not belong to ORCA Framework itself.
 
 ## Required Inputs
 
@@ -39,7 +39,7 @@ Do not use for trivial sessions or for project-specific pain that does not belon
 5. Run an issue-worthiness check.
 6. Check for duplicates or close overlap.
 7. If still warranted, prepare a concise approval prompt for the user.
-8. If approved, draft a structured ORCA-HVN issue or link context to an existing one.
+8. If approved, draft a structured ORCA Framework issue or link context to an existing one.
 9. Record the candidate in the improvement backlog when follow-up is still pending.
 
 ## Expected Outputs
@@ -66,6 +66,6 @@ The loop should stay lightweight, high-signal, deduplicated, and clearly separat
 - filing duplicates instead of merging evidence
 - submitting externally without explicit approval
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-retro`, `orca-review`, `orca-inspect`, `orca-status`, receipts, traces, and the docs or automation maintenance layer.

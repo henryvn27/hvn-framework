@@ -1,6 +1,6 @@
 # AI Development Coach
 
-ORCA-HVN may coach the user on higher-level AI-development workflow habits when that helps them move faster.
+ORCA Framework may coach the user on higher-level AI-development workflow habits when that helps them move faster.
 
 ## Coaching Areas
 

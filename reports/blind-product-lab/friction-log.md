@@ -35,7 +35,7 @@ Each entry should include: what happened, cause, workaround, and classification:
 
 - What happened: Automation instructions referenced `$CODEX_HOME/.../memory.md`, but `CODEX_HOME` env var was empty in this session.
 - Cause: Harness/environment variance (Codex app uses `~/.codex/...` but does not guarantee `$CODEX_HOME` is exported).
-- Workaround: Located the automation directory under `/Users/developeraccount/.codex/automations/orca-hvn-blind-product-launch-lab/` and wrote memory there.
+- Workaround: Located the automation directory under `/Users/developeraccount/.codex/automations/orca-framework-blind-product-launch-lab/` and wrote memory there.
 - Classification: Codex host issue (env consistency)
 
 ### Entry 5 — Vercel deploy failed on uppercase folder name
@@ -77,7 +77,7 @@ Each entry should include: what happened, cause, workaround, and classification:
 
 ### Entry 10 — Cross-repo patching defaulted to the wrong workspace
 
-- What happened: While adding ShipNotes code, an `apply_patch` call wrote a new file into the ORCA-HVN repo (`./src/...`) instead of the ShipNotes workspace.
+- What happened: While adding ShipNotes code, an `apply_patch` call wrote a new file into the ORCA Framework repo (`./src/...`) instead of the ShipNotes workspace.
 - Cause: This automation operates across sibling repos, but patch tools default to the current workspace root unless absolute paths are used.
 - Workaround: Use absolute file paths for any edits outside `/Users/developeraccount/Library/Mobile Documents/com~apple~CloudDocs/Control Studios/ORCA-HVN` and sanity-check the target path before patching.
 - Classification: Codex host issue (workspace scoping) / ORCA host guidance gap (multi-repo workflows)

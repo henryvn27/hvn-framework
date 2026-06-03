@@ -1,9 +1,9 @@
 ---
 name: orca-accounting
-description: Record time, retries, and optional token, cache, and cost metrics for ORCA-HVN workflows without fabricating precision.
+description: Record time, retries, and optional token, cache, and cost metrics for ORCA Framework workflows without fabricating precision.
 ---
 
-# ORCA-HVN Accounting
+# ORCA Framework Accounting
 
 ## What This Skill Is
 
@@ -53,6 +53,6 @@ Metrics should be honest, comparable, and useful for spotting inefficient workfl
 - ignoring retry burden
 - recording raw numbers without stage context
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Supports `orca-trace`, `orca-eval`, `orca-review`, QA workflows, and `orca-metrics`.

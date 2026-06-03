@@ -1,6 +1,6 @@
 # NotebookLM Guide
 
-NotebookLM is an optional ORCA-HVN knowledge and research integration.
+NotebookLM is an optional ORCA Framework knowledge and research integration.
 
 ## When To Use It
 
@@ -18,9 +18,9 @@ NotebookLM is a weak fit for:
 - billing setup
 - execution or CI workflows
 
-## ORCA-HVN Recommendation Rule
+## ORCA Framework Recommendation Rule
 
-ORCA-HVN should suggest NotebookLM only when:
+ORCA Framework should suggest NotebookLM only when:
 
 - the user explicitly asks for it
 - the user already uses it
@@ -28,7 +28,7 @@ ORCA-HVN should suggest NotebookLM only when:
 
 Otherwise, treat it as supported but not recommended.
 
-## How To Use It Inside ORCA-HVN
+## How To Use It Inside ORCA Framework
 
 - use it as a research surface during business ideation
 - use it to digest long technical or product reference sets
@@ -44,5 +44,5 @@ See [../notebooklm-integration-modes.md](../notebooklm-integration-modes.md).
 1. Determine whether the user is on the enterprise path or a community path.
 2. Validate access and notebook reachability.
 3. Decide whether NotebookLM is the live knowledge surface or just a supplemental notebook.
-4. Connect it to the relevant ORCA-HVN workflow.
+4. Connect it to the relevant ORCA Framework workflow.
 5. Record caveats instead of pretending all modes are equally stable.

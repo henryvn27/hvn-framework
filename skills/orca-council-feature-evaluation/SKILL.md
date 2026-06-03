@@ -65,6 +65,6 @@ Use:
 - approving a bloated first version
 - using the council after the build decision was already made
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-research`, `orca-spec`, `orca-plan`, `orca-review`, and `orca-business-ideation` when the feature is really a product-direction decision.

@@ -3,7 +3,7 @@ name: orca-web-qa
 description: Run browser or web automation QA with first-look, briefed, and regression modes.
 ---
 
-# ORCA-HVN Web QA
+# ORCA Framework Web QA
 
 ## What This Skill Is
 
@@ -62,7 +62,7 @@ When browser automation is available, the workflow should produce real browser e
 - Using stale element refs instead of re-snapshotting.
 - Falling back to source review when a browser can be driven directly.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-blind-qa`, `orca-context-brief`, and `orca-design`.
 Use `references/cli.md` and `references/workflows.md` for the concrete Playwright CLI command surface.

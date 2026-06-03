@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Guide external tool setup for the current ORCA-HVN workflow.
+Guide external tool setup for the current ORCA Framework workflow.
 
 ## When To Use
 
@@ -10,7 +10,7 @@ Use before a workflow depends on GitHub, Linear, MCP, a host connector, a CLI he
 
 ## Required Inputs
 
-- Current task or ORCA-HVN phase
+- Current task or ORCA Framework phase
 - Desired workflow
 
 ## Optional Inputs

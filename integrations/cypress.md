@@ -8,7 +8,7 @@
 - Supported workflows: web E2E tests and QA automation
 - Validation steps: tests run, target app reachable, fixtures stable
 - Common failure modes: flaky tests, environment assumptions, overlapping test frameworks with no strategy
-- Related ORCA-HVN commands or docs: `orca-integration`, `orca-test-regression`
+- Related ORCA Framework commands or docs: `orca-integration`, `orca-test-regression`
 - Related integrations: GitHub Actions, Next.js
 - Risk notes: avoid duplicate tooling without a good reason
 - Web, mobile, or platform caveats: web-first browser testing

@@ -1,6 +1,6 @@
 # Visual Quality
 
-ORCA-HVN should push user-facing work toward interfaces that feel intentional, product-specific, and human-reviewed.
+ORCA Framework should push user-facing work toward interfaces that feel intentional, product-specific, and human-reviewed.
 
 The target is not empty polish. The target is:
 

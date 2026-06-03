@@ -4,7 +4,7 @@ ORCA documentation is layered on purpose. Start with the smallest surface that a
 
 If you want the polished docs-site version instead of browsing raw markdown, use the GitHub Pages docs site once enabled for this repo:
 
-- `https://henryvn27.github.io/orca-hvn/`
+- `https://henryvn27.github.io/orca-framework/`
 
 ## Start Here
 
@@ -13,7 +13,7 @@ If you want the polished docs-site version instead of browsing raw markdown, use
 - [first-workflow.md](first-workflow.md): one five-command ORCA path for the first real session
 - [../commands/orca-demo.md](../commands/orca-demo.md): low-input personalized showcase that becomes a real `/goal`
 - [demo.md](demo.md): docs-site routing page for the ORCA demo path
-- [quickstart.md](quickstart.md): shortest path to installing and trying ORCA-HVN
+- [quickstart.md](quickstart.md): shortest path to installing and trying ORCA Framework
 - [install-overview.md](install-overview.md): how the install system is organized
 - [install.md](install.md): canonical step-by-step install guide
 - [auto-updates.md](auto-updates.md): how ORCA checks, verifies, applies, and recovers updates
@@ -53,7 +53,7 @@ If you want the polished docs-site version instead of browsing raw markdown, use
 These are teaching-oriented pages for common paths:
 
 - [guides/beginners-guide.md](guides/beginners-guide.md)
-- [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
+- [guides/from-gstack-or-gsd-to-orca-framework.md](guides/from-gstack-or-gsd-to-orca-framework.md)
 - [guides/goal-mode-guide.md](guides/goal-mode-guide.md)
 - [guides/background-mode-guide.md](guides/background-mode-guide.md)
 - [guides/business-ideation-guide.md](guides/business-ideation-guide.md)
@@ -89,6 +89,7 @@ These are teaching-oriented pages for common paths:
 - [visual-quality.md](visual-quality.md)
 - [human-voice.md](human-voice.md)
 - [token-efficiency.md](token-efficiency.md)
+- [orca-monitor-status.md](orca-monitor-status.md)
 - [integrations-overview.md](integrations-overview.md)
 - [integration-recommendation-policy.md](integration-recommendation-policy.md)
 - [optional-tooling-policy.md](optional-tooling-policy.md)

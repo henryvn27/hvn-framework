@@ -1,18 +1,18 @@
 # Install And Onboarding Race
 
-This pack compares ORCA-HVN against adjacent frameworks on two separate stages:
+This pack compares ORCA Framework against adjacent frameworks on two separate stages:
 
 1. install speed and install friction
 2. onboarding depth versus hassle
 
 The point is not to win by gaming the prompt.
-The point is to make ORCA-HVN the strongest real operator path for getting started.
+The point is to make ORCA Framework the strongest real operator path for getting started.
 
 ## Core Experiment
 
 Run four lanes from the same clean starting state:
 
-- ORCA-HVN
+- ORCA Framework
 - GSD
 - GStack
 - Codex-only
@@ -23,10 +23,10 @@ Example:
 - subagent A: install GSD
 - subagent B: install GStack
 - subagent C: install Codex-only path
-- parent or separate benchmark run: install ORCA-HVN
+- parent or separate benchmark run: install ORCA Framework
 
-If the harness can support a fourth independent worker cleanly, ORCA-HVN may also run in parallel as its own lane.
-If not, run the ORCA-HVN lane separately but keep the environment and scoring rules matched.
+If the harness can support a fourth independent worker cleanly, ORCA Framework may also run in parallel as its own lane.
+If not, run the ORCA Framework lane separately but keep the environment and scoring rules matched.
 
 ## Stage 1: Install Race
 
@@ -39,7 +39,7 @@ Optimize for:
 - low blocker count
 - low avoidable friction
 
-ORCA-HVN should aim to become the clear winner here.
+ORCA Framework should aim to become the clear winner here.
 This stage rewards paved roads, clean setup questions, and minimal unnecessary ceremony.
 
 ## Stage 2: Onboarding Race
@@ -52,8 +52,8 @@ Optimize for:
 - good operator preference capture
 - clear next action after onboarding
 
-ORCA-HVN does not need to be the absolute fastest here.
-It is acceptable for ORCA-HVN to take a little longer if it captures meaningfully better context without becoming annoying.
+ORCA Framework does not need to be the absolute fastest here.
+It is acceptable for ORCA Framework to take a little longer if it captures meaningfully better context without becoming annoying.
 
 ## Annoyance Ceiling
 
@@ -79,9 +79,9 @@ For each lane and stage, keep:
 
 ## Improvement Rule
 
-Keep rerunning the same benchmark set after meaningful ORCA-HVN install or onboarding changes.
+Keep rerunning the same benchmark set after meaningful ORCA Framework install or onboarding changes.
 Do not declare improvement from a one-off anecdote.
-ORCA-HVN should only claim progress when the repeated benchmark shows:
+ORCA Framework should only claim progress when the repeated benchmark shows:
 
 - lower friction
 - equal or better information quality

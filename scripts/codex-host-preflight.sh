@@ -14,7 +14,7 @@ hr() {
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 GLOBAL_NPM_ROOT="$(npm root -g 2>/dev/null || true)"
 
-say "Codex host preflight (ORCA-HVN)"
+say "Codex host preflight (ORCA Framework)"
 say "repo: $root"
 hr
 

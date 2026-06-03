@@ -24,7 +24,7 @@ Choose method from:
 
 ## State Mapping
 
-Map local states to ORCA-HVN gates:
+Map local states to ORCA Framework gates:
 
 - Intake:
 - Ready for spec:
@@ -74,7 +74,7 @@ Record smoke-test issue ID, result, and evidence.
 
 ## Opt-Out Mapping
 
-If Linear is not used, map ORCA-HVN concepts to the chosen system:
+If Linear is not used, map ORCA Framework concepts to the chosen system:
 
 - Issue:
 - Project:
@@ -84,7 +84,7 @@ If Linear is not used, map ORCA-HVN concepts to the chosen system:
 
 ## Degraded Mode
 
-If direct Linear access is unavailable, record how ORCA-HVN will continue:
+If direct Linear access is unavailable, record how ORCA Framework will continue:
 
 - Source issue context:
 - Local artifact location:
@@ -97,4 +97,4 @@ List setup blockers and owner.
 
 ## Ready Criteria
 
-State whether the setup is ready for real ORCA-HVN work.
+State whether the setup is ready for real ORCA Framework work.

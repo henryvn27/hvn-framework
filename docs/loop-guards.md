@@ -1,6 +1,6 @@
 # Loop Guards
 
-ORCA-HVN background mode must stop before it turns into a self-repeating system.
+ORCA Framework background mode must stop before it turns into a self-repeating system.
 
 ## Hard Limits
 

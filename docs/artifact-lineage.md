@@ -1,6 +1,6 @@
 # Artifact Lineage
 
-Artifact lineage records how ORCA-HVN artifacts relate to each other across a workflow.
+Artifact lineage records how ORCA Framework artifacts relate to each other across a workflow.
 
 ## Purpose
 

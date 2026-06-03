@@ -11,8 +11,8 @@
 
 ## Work Identity
 
-- Work item: `ORCA-HVN-118`
-- Project: `ORCA-HVN`
+- Work item: `ORCA-118`
+- Project: `ORCA Framework`
 - Agent role: builder
 - Command or skill: `orca-build`
 

@@ -1,16 +1,29 @@
 # Getting Started
 
-## Read In This Order
+Start with setup, then run one bounded workflow. Do not read the whole repository first.
 
-1. `README.md`
-2. `docs/start-here.md`
-3. `docs/first-workflow.md`
-4. `docs/quickstart.md`
-5. one guide that matches your use case
+## First Pass
 
-## Fast Links
+1. Open `README.md`.
+2. Follow `docs/first-10-minutes.md`.
+3. Run the setup path in `docs/quickstart.md`.
+4. Use `docs/first-workflow.md` to complete one real task.
+5. Check `docs/command-index.md` only when you need a specific command.
 
-- docs home: `docs/README.md`
-- first workflow: `docs/first-workflow.md`
-- choose your path: `docs/choose-your-path.md`
-- command index: `docs/command-index.md`
+## First Good Outcome
+
+A successful first run should produce:
+
+- a short project orientation
+- a selected workflow path
+- a written spec or plan artifact
+- a clear next action
+- a receipt or status note if work started
+
+## If You Are New To Codex Or Claude Code
+
+Use `docs/guides/beginners-guide.md`. ORCA should explain what it is doing without turning every step into a tutorial.
+
+## If You Already Know Agentic Coding
+
+Use `docs/choose-your-path.md`, then jump straight to `orca-spec`, `orca-plan`, `orca-goal`, or `orca-background`.

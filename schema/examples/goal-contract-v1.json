@@ -3,7 +3,7 @@
   "schema_version": "1.0.0",
   "title": "Portable schema layer for one milestone",
   "linked_spec": "spec-portability-v1.md",
-  "linked_work_item": "ORCA-HVN-201",
+  "linked_work_item": "ORCA-201",
   "objective": "Define schema-backed portability for core artifacts without replacing Markdown docs.",
   "in_scope": [
     "Schema docs",

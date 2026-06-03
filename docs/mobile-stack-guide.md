@@ -2,7 +2,7 @@
 
 Recommend the mobile road only when it clearly reduces decision and setup friction for a real mobile workflow.
 
-Expo and React Native are first-class in ORCA-HVN.
+Expo and React Native are first-class in ORCA Framework.
 
 The default mobile bias is:
 

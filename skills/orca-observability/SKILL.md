@@ -3,11 +3,11 @@ name: orca-observability
 description: Capture practical run traces for debugging, review, and trajectory evaluation.
 ---
 
-# ORCA-HVN Observability
+# ORCA Framework Observability
 
 ## What This Skill Is
 
-A lightweight tracing workflow for recording what an ORCA-HVN run actually did.
+A lightweight tracing workflow for recording what an ORCA Framework run actually did.
 
 ## Trigger
 
@@ -51,6 +51,6 @@ A reviewer should be able to reconstruct the run's important choices without rea
 - Leaking secrets or raw environment values.
 - Confusing trace data with durable run memory.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Supports `orca-trace`, `orca-eval`, `orca-review`, and `orca-ship`.

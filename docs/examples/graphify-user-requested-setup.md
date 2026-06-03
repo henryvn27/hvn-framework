@@ -4,7 +4,7 @@ User signal:
 
 > I want to use Graphify on this vault.
 
-Good ORCA-HVN behavior:
+Good ORCA Framework behavior:
 
 - switch into setup-help mode
 - do not debate the choice

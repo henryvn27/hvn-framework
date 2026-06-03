@@ -1,11 +1,11 @@
 # Optional Tooling Policy
 
 Optional tooling should stay optional.
-Optional does not mean "mention it anyway." It means ORCA-HVN should surface it only when the benefit is clear enough to justify the extra complexity.
+Optional does not mean "mention it anyway." It means ORCA Framework should surface it only when the benefit is clear enough to justify the extra complexity.
 
 ## Policy
 
-ORCA-HVN may support advanced helpers such as Graphify, Obsidian graph workflows, or NotebookLM when they improve clarity, navigation, or synthesis.
+ORCA Framework may support advanced helpers such as Graphify, Obsidian graph workflows, or NotebookLM when they improve clarity, navigation, or synthesis.
 
 It should not:
 

@@ -1,10 +1,10 @@
 # Wraps Vs Borrows
 
-This document explains a distinction ORCA-HVN should make clearly on GitHub.
+This document explains a distinction ORCA Framework should make clearly on GitHub.
 
 ## Wraps
 
-ORCA-HVN `wraps` something when it provides a structured interface around a real external service, host, or tool.
+ORCA Framework `wraps` something when it provides a structured interface around a real external service, host, or tool.
 
 Examples in this repository:
 
@@ -13,7 +13,7 @@ Examples in this repository:
 - MCP-based setup and governance around external MCP servers
 - host adapters for Codex CLI, Claude Code, VS Code, and generic hosts
 
-When ORCA-HVN wraps something:
+When ORCA Framework wraps something:
 
 - the external project still matters directly
 - setup and auth affect the workflow
@@ -22,7 +22,7 @@ When ORCA-HVN wraps something:
 
 ## Borrows
 
-ORCA-HVN `borrows` when it adopts or adapts an idea, framing, or workflow pattern without directly shipping the upstream tool.
+ORCA Framework `borrows` when it adopts or adapts an idea, framing, or workflow pattern without directly shipping the upstream tool.
 
 Examples in this repository:
 
@@ -30,7 +30,7 @@ Examples in this repository:
 - customer-discovery and smallest-experiment thinking in the ideation lane
 - venture-style written evaluation lenses for opportunities
 
-When ORCA-HVN borrows:
+When ORCA Framework borrows:
 
 - explain the influence plainly
 - do not imply code reuse if there is none
@@ -38,16 +38,16 @@ When ORCA-HVN borrows:
 
 ## Supports Or Integrates
 
-Sometimes ORCA-HVN neither fully wraps nor materially borrows. It may simply support or document compatibility with another system.
+Sometimes ORCA Framework neither fully wraps nor materially borrows. It may simply support or document compatibility with another system.
 
 Examples:
 
-- a host adapter that explains how to use ORCA-HVN in that host
+- a host adapter that explains how to use ORCA Framework in that host
 - an ecosystem watch entry that tracks a repo or host for compatibility reasons
 
 ## Reimagines Or Extends
 
-ORCA-HVN can also extend upstream patterns:
+ORCA Framework can also extend upstream patterns:
 
 - turning spec-driven patterns into a broader artifact-and-gate framework
 - combining shared state, receipts, lineage, replay, compatibility routing, and human checkpoints

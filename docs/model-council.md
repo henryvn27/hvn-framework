@@ -1,6 +1,6 @@
 # Model Council
 
-ORCA-HVN model council is a portable multi-subagent deliberation pattern for judgment-heavy questions.
+ORCA Framework model council is a portable multi-subagent deliberation pattern for judgment-heavy questions.
 
 It is adapted from Andrej Karpathy's `llm-council` idea:
 

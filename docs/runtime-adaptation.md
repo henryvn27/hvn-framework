@@ -1,10 +1,10 @@
 # Runtime Adaptation
 
-Runtime adaptation is how ORCA-HVN changes its execution path based on the current harness and the maintained compatibility knowledge.
+Runtime adaptation is how ORCA Framework changes its execution path based on the current harness and the maintained compatibility knowledge.
 
 Principle:
 
-> Same ORCA-HVN workflow intent, different execution path depending on the harness.
+> Same ORCA Framework workflow intent, different execution path depending on the harness.
 
 ## Routing Model
 
@@ -25,7 +25,7 @@ flowchart TD
 
 ## What It Is
 
-Runtime adaptation means ORCA-HVN:
+Runtime adaptation means ORCA Framework:
 
 - identifies or infers the current harness
 - reads the relevant harness capability profile
@@ -68,10 +68,10 @@ Subagent orchestration should follow the same rule: choose patterns by capabilit
 
 If support is:
 
-- `supported`: ORCA-HVN may recommend the capability when the task is a good fit
-- `partial`: ORCA-HVN may use it with caveats and explicit fallback
-- `not supported`: ORCA-HVN should not recommend it as the default path
-- `unclear`: ORCA-HVN should stay conservative and use the generic safer path
+- `supported`: ORCA Framework may recommend the capability when the task is a good fit
+- `partial`: ORCA Framework may use it with caveats and explicit fallback
+- `not supported`: ORCA Framework should not recommend it as the default path
+- `unclear`: ORCA Framework should stay conservative and use the generic safer path
 
 ## Review Gate
 
@@ -79,4 +79,4 @@ Newly detected support should not become a runtime default until it has been rev
 
 Receipts should capture the chosen runtime path. Replay should be used before broadening defaults after compatibility or policy changes. Restore should support rollback to known-good workflow states when a new path fails.
 
-If unattended behavior is unclear for a harness, ORCA-HVN should prefer foreground milestone execution instead of recommending background mode by default.
+If unattended behavior is unclear for a harness, ORCA Framework should prefer foreground milestone execution instead of recommending background mode by default.

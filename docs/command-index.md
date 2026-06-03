@@ -47,6 +47,7 @@ After install, matching `orca-*` shims are available from the installed `bin/` d
 ## Inspect, Coordinate, And Recover
 
 - `orca-status`: inspect runtime and workflow state
+- `orca-monitor-status`: emit the tiny local Orca Monitor workflow snapshot
 - `orca-explain`: understand what is happening and ask follow-up questions without leaving the workflow
 - `orca-btw`: ask one quick side question without turning it into a new execution thread
 - `orca-context`: resolve an ambiguous artifact, app, or recent-work reference before deeper work starts

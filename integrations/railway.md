@@ -8,7 +8,7 @@
 - Supported workflows: deploy app services, attach databases, internal tool hosting
 - Validation steps: service deploys, envs present, database linkage clear
 - Common failure modes: missing envs, unclear service topology, production data coupling
-- Related ORCA-HVN commands or docs: `orca-setup-integration`, `internal-tool-stack.md`
+- Related ORCA Framework commands or docs: `orca-setup-integration`, `internal-tool-stack.md`
 - Related integrations: Postgres, Clerk, GitHub
 - Risk notes: simple hosting can still hide production configuration debt
 - Web, mobile, or platform caveats: often backend or internal-tool friendly rather than mobile-distribution focused

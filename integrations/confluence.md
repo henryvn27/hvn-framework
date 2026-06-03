@@ -8,7 +8,7 @@
 - Supported workflows: lighter support and ecosystem watch
 - Validation steps: target space reachable, edit path known
 - Common failure modes: duplicated docs with repo docs or Notion
-- Related ORCA-HVN commands or docs: `orca-docs`, `orca-integration`
+- Related ORCA Framework commands or docs: `orca-docs`, `orca-integration`
 - Related integrations: Linear, Notion
 - Risk notes: watchlist-level support rather than a first-class default
 - Web, mobile, or platform caveats: business docs surface

@@ -3,7 +3,7 @@ name: orca-attribution
 description: Document upstream influence, provenance, wrapping relationships, and notice obligations with explicit categories and GitHub-visible records.
 ---
 
-# ORCA-HVN Attribution
+# ORCA Framework Attribution
 
 ## What This Skill Is
 
@@ -14,7 +14,7 @@ A workflow for making upstream influence, integration scope, provenance, and not
 Use when:
 
 - a feature borrows ideas from an upstream project
-- ORCA-HVN wraps or integrates a third-party service or tool
+- ORCA Framework wraps or integrates a third-party service or tool
 - a file or feature is materially adapted from an upstream source
 - legal notices or third-party credits need cleanup
 
@@ -61,6 +61,6 @@ The output should name names, classify relationships clearly, and avoid both vag
 - claiming copied code without evidence
 - claiming originality too broadly
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Supports README, workflow, integration, licensing, and contributor-maintenance quality across the framework.

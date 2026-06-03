@@ -13,7 +13,7 @@
 - Upgraded the ecosystem sweep to watch GitHub, Linear, MCP, connector, auth, permission, and host-specific setup-path changes.
 - Added harness-aware external tool setup for GitHub and Linear, including setup commands, validation artifacts, host guides, and degraded-mode fallbacks.
 - Added adaptive next-step guidance for phase exits, including tone rules, experience adaptation, phase templates, examples, and the `orca-next` command.
-- Upgraded the recurring ecosystem sweep to track harness-native execution capabilities, maintain ecosystem opportunities, and require explicit capability-to-ORCA-HVN mapping.
+- Upgraded the recurring ecosystem sweep to track harness-native execution capabilities, maintain ecosystem opportunities, and require explicit capability-to-ORCA Framework mapping.
 - Added ecosystem sweep automation artifacts, including tracked sources, living watch document, draft adopt-issue template, and promotion-history rules.
 - Added observability, trajectory evals, approval gates, artifact contracts, security guardrails, and prompt-injection guidance.
 - Added onboarding/spec benchmark pack, workflow accounting, and QA-to-regression task generation.
@@ -21,9 +21,9 @@
 - Added version-control and iteration guidance with an iteration log template.
 - Added tool trust and MCP governance docs, registry templates, review commands, and trust-level guidance.
 - Added legacy modernization workflow with repo archaeology, legacy audit, risk report, modernization spec, and staged migration guidance.
-- Added goal mode support with goal contracts, status tracking, safety rules, host adapters, and host-neutral ORCA-HVN goal commands.
-- Added a portable artifact schema layer with versioned schemas, mapping guidance, validation guidance, and ORCA-HVN schema commands.
-- Added controller-agent orientation, delegation, ingestion, and controller/executor compatibility support for multi-harness ORCA-HVN workflows.
+- Added goal mode support with goal contracts, status tracking, safety rules, host adapters, and host-neutral ORCA Framework goal commands.
+- Added a portable artifact schema layer with versioned schemas, mapping guidance, validation guidance, and ORCA Framework schema commands.
+- Added controller-agent orientation, delegation, ingestion, and controller/executor compatibility support for multi-harness ORCA Framework workflows.
 
 ### Validation
 
@@ -37,7 +37,7 @@
 
 Initial public release candidate.
 
-- Added ORCA-HVN operating manual.
+- Added ORCA Framework operating manual.
 - Added Linear-first workflow model with explicit opt-out support.
 - Added Linear setup workflow for states, labels, guidance, permissions, smoke tests, and opt-out mapping.
 - Added installable command definitions.

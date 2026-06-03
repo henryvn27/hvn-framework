@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Produce adaptive next-step guidance after a major ORCA-HVN phase completes.
+Produce adaptive next-step guidance after a major ORCA Framework phase completes.
 
 ## When To Use
 

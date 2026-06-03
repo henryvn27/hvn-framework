@@ -1,6 +1,6 @@
 # Orchestration Decision Policy
 
-Before delegating, ORCA-HVN should ask:
+Before delegating, ORCA Framework should ask:
 
 - is the task complex enough to benefit from delegation
 - is there a specialist agent with a clear boundary

@@ -1,6 +1,6 @@
 # iOS Simulator MCP QA
 
-ORCA-HVN can use an iOS simulator MCP server when available. The framework does not require a specific server implementation, but the QA workflow assumes the agent can build or launch the app, interact with simulator UI, inspect accessibility-visible elements, and capture screenshots or logs when supported.
+ORCA Framework can use an iOS simulator MCP server when available. The framework does not require a specific server implementation, but the QA workflow assumes the agent can build or launch the app, interact with simulator UI, inspect accessibility-visible elements, and capture screenshots or logs when supported.
 
 ## Linear Coordination
 

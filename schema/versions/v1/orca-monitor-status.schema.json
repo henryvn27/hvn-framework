@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orca-framework.dev/schema/v1/orca-monitor-status.schema.json",
+  "title": "ORCA Framework Orca Monitor Status v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["updated_at", "active_run"],
+  "properties": {
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["project", "workflow", "step", "status"],
+      "properties": {
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "workflow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "step": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": ["idle", "running", "blocked", "failed", "completed"]
+        }
+      }
+    },
+    "queue_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "failing_checks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "last_receipt": {
+      "type": ["string", "null"]
+    },
+    "recent_models": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["provider", "model", "tokens"],
+        "properties": {
+          "provider": {
+            "enum": ["openai", "anthropic", "other"]
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tokens": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  }
+}

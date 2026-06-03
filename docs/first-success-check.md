@@ -7,15 +7,15 @@ Use this right after install.
 1. run install verification
 2. run doctor
 3. read [first-workflow.md](first-workflow.md)
-4. add `.orca-hvn/bin` or `$HOME/.orca-hvn/bin` to `PATH`
+4. add `.orca-framework/bin` or `$HOME/.orca-framework/bin` to `PATH`
 5. use `orca-onboard` as the first workflow step
 6. confirm you know the next command instead of guessing
 
 ## Validation Commands
 
 ```sh
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework
 ```
 
 ## Good First Success

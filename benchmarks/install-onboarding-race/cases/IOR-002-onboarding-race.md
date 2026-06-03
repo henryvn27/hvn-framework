@@ -53,7 +53,7 @@ A nontechnical user who has used a vibe-coding tool feels overwhelmed by Codex o
 ## Scoring Notes
 
 This stage should reward information yield per unit of hassle.
-ORCA-HVN may take slightly longer than the fastest lane if it captures meaningfully better execution-ready context without becoming annoying.
+ORCA Framework may take slightly longer than the fastest lane if it captures meaningfully better execution-ready context without becoming annoying.
 
 ## Hard Metrics
 

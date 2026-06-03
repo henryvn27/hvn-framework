@@ -1,6 +1,6 @@
 # Linear Agent Model
 
-ORCA-HVN models agents as role-specific collaborators operating inside Linear by default. In opt-out mode, the same roles operate against the chosen tracker or artifact set.
+ORCA Framework models agents as role-specific collaborators operating inside Linear by default. In opt-out mode, the same roles operate against the chosen tracker or artifact set.
 
 ## Agent Roles
 
@@ -18,7 +18,7 @@ ORCA-HVN models agents as role-specific collaborators operating inside Linear by
 
 ## Delegation
 
-Delegating an issue to an agent should be treated as a command trigger. The issue state, label, and latest comment determine the ORCA-HVN mode.
+Delegating an issue to an agent should be treated as a command trigger. The issue state, label, and latest comment determine the ORCA Framework mode.
 
 Examples:
 
@@ -34,8 +34,8 @@ An agent handoff should include:
 - Current issue ID and title
 - Current state and labels
 - Artifact links or summaries
-- Last completed ORCA-HVN command
-- Next recommended ORCA-HVN command
+- Last completed ORCA Framework command
+- Next recommended ORCA Framework command
 - Blockers and approval needs
 
 Handoffs belong in Linear comments so the next agent does not depend on private chat history. In opt-out mode, handoffs belong in the declared record: a GitHub issue comment, project doc, PR comment, or local artifact.

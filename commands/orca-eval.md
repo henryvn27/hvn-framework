@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Evaluate an ORCA-HVN workflow or run using trajectory-aware checks instead of grading only the final artifact.
+Evaluate an ORCA Framework workflow or run using trajectory-aware checks instead of grading only the final artifact.
 
 ## When To Use
 

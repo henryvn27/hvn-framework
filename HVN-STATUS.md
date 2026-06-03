@@ -1,4 +1,4 @@
-# ORCA-HVN Project Status
+# ORCA Framework Project Status
 
 ## Current Project State
 
@@ -15,7 +15,7 @@
 
 ## Existing Artifacts
 
-- Core workflow and operating policy in `ORCA-HVN.md`, `docs/workflow.md`, and `docs/linear-workflow.md`
+- Core workflow and operating policy in `ORCA-Framework.md`, `docs/workflow.md`, and `docs/linear-workflow.md`
 - Install and validation surface in `install/` and `.github/workflows/`
 - Orientation and controller-entry docs in `docs/project-orientation.md` and `docs/controller-agent-integration.md`
 - Compatibility baseline in `docs/compatibility-matrix.md` with reports under `reports/compatibility/`

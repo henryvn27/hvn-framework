@@ -6,7 +6,7 @@
 - What was confusing:
 - What repeated manual effort:
 - What should have been easier:
-- What ORCA-HVN should have already known or handled:
+- What ORCA Framework should have already known or handled:
 - Missing feature, doc, guide, command, or automation:
 - Quality signals observed:
 - Frustration evidence:

@@ -2,18 +2,18 @@
 
 Claude Code documents `/goal` as a session-scoped command that keeps working across turns until a completion condition is met.
 
-ORCA-HVN should treat `orca-explain` the same way it treats other portable workflow commands: use a native side-thread behavior only when Claude clearly supports it, otherwise keep the explanation session separate by framing and artifact.
+ORCA Framework should treat `orca-explain` the same way it treats other portable workflow commands: use a native side-thread behavior only when Claude clearly supports it, otherwise keep the explanation session separate by framing and artifact.
 Claude Code also exposes `/btw` for quick side questions, so ORCA should use that for one-shot "by the way" prompts instead of opening a full explain session when follow-up is not needed.
 Claude Code also exposes stronger native orchestration surfaces such as `/agents`, `/branch`, `/resume`, and `/batch`, which ORCA should treat as first-class host capabilities when present.
 When Claude exposes a native structured question or selection surface, ORCA should use that for setup and onboarding interviews instead of always asking raw text questions.
 
-## ORCA-HVN Usage
+## ORCA Framework Usage
 
 Use native `/goal` when:
 
 - Claude Code version supports it
 - workspace trust requirements are satisfied
-- the ORCA-HVN goal contract is complete
+- the ORCA Framework goal contract is complete
 - the completion condition can be evaluated from surfaced evidence
 
 Claude goal requirements and lifecycle:
@@ -34,7 +34,7 @@ Claude Code documents:
 - clearing with `/goal clear`
 - resuming a session with an active goal according to host behavior
 
-ORCA-HVN should still track lifecycle in `templates/goal-status.md`.
+ORCA Framework should still track lifecycle in `templates/goal-status.md`.
 
 ## Explanation Sessions
 
@@ -73,7 +73,7 @@ ORCA should route into these host capabilities when they fit instead of hiding t
 
 ## Fallback
 
-If host requirements are not met, run the same goal contract through normal ORCA-HVN workflow with shared state, traces, checkpoints, and status artifacts.
+If host requirements are not met, run the same goal contract through normal ORCA Framework workflow with shared state, traces, checkpoints, and status artifacts.
 
 ## External Tool Setup
 

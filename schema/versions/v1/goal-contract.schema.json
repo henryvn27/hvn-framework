@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://orca-hvn.dev/schema/v1/goal-contract.schema.json",
-  "title": "ORCA-HVN Goal Contract v1",
+  "$id": "https://orca-framework.dev/schema/v1/goal-contract.schema.json",
+  "title": "ORCA Framework Goal Contract v1",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_family", "schema_version", "title", "objective", "in_scope", "out_of_scope", "completion_condition", "verification_method", "stop_conditions"],

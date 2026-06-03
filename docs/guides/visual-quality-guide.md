@@ -30,7 +30,7 @@ Produce interfaces that feel intentional and product-specific rather than generi
 - generic gradients and feature cards standing in for real hierarchy
 - overpacked pages that try to say everything at once
 - copy that sounds like a model smoothing over uncertainty
-- treating every specialized design tool as something ORCA-HVN must replace
+- treating every specialized design tool as something ORCA Framework must replace
 
 ## Read Next
 

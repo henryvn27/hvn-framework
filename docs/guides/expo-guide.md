@@ -1,8 +1,8 @@
 # Expo Guide
 
-Expo is a first-class ORCA-HVN mobile path.
+Expo is a first-class ORCA Framework mobile path.
 
-## Why ORCA-HVN Treats Expo Seriously
+## Why ORCA Framework Treats Expo Seriously
 
 - fast setup and iteration
 - Android, iOS, and web reach from one codebase

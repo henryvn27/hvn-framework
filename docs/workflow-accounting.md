@@ -1,6 +1,6 @@
 # Workflow Accounting
 
-Workflow accounting helps ORCA-HVN understand the operational cost of its own process. A workflow that succeeds only after repeated retries, long delays, or heavy manual cleanup is not as healthy as the final output alone suggests.
+Workflow accounting helps ORCA Framework understand the operational cost of its own process. A workflow that succeeds only after repeated retries, long delays, or heavy manual cleanup is not as healthy as the final output alone suggests.
 
 ## Purpose
 
@@ -14,7 +14,7 @@ Use workflow metrics to answer:
 
 ## What To Measure Reliably
 
-ORCA-HVN can usually measure:
+ORCA Framework can usually measure:
 
 - workflow type
 - run or issue ID
@@ -25,12 +25,13 @@ ORCA-HVN can usually measure:
 - major stages
 - outcome status
 
-ORCA-HVN may sometimes measure:
+ORCA Framework may sometimes measure:
 
 - token usage
 - cost
 - stage-level time split
 - cached-token or cache-read signals when the host exposes them
+- recent model/provider activity for local workflow context
 
 For token or cost fields, record one of:
 
@@ -39,6 +40,8 @@ For token or cost fields, record one of:
 - `unavailable`
 
 Do not fabricate exact numbers when the environment does not expose them.
+
+Orca Monitor export may include recent model/provider/token entries only when ORCA already has those numbers cheaply from workflow accounting or host-provided usage. The Orca Monitor file is workflow context, not billing truth.
 
 ## Why Retries Matter
 
@@ -72,6 +75,7 @@ Workflow metrics should integrate with:
 - eval reports in [docs/evals.md](evals.md)
 - QA and review summaries when the workflow includes those phases
 - token-efficiency policy in [docs/token-efficiency.md](token-efficiency.md)
+- Orca Monitor status export in [docs/orca-monitor-status.md](orca-monitor-status.md)
 
 ## Interpretation Guidance
 

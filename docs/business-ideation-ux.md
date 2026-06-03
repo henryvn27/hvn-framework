@@ -1,6 +1,6 @@
 # Business Ideation UX
 
-The ORCA-HVN ideation lane should work for both exploratory users and serious founders without splitting into patronizing beginner and expert versions.
+The ORCA Framework ideation lane should work for both exploratory users and serious founders without splitting into patronizing beginner and expert versions.
 
 ## Interaction Modes
 

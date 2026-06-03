@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Capture what changed, what was learned, and how future ORCA-HVN work should improve.
+Capture what changed, what was learned, and how future ORCA Framework work should improve.
 
 ## When To Use
 
@@ -39,7 +39,7 @@ Store the retrospective in the selected record or project documentation.
 3. Record failures, surprises, and useful patterns.
 4. Create concrete follow-up actions.
 5. Sync lessons to the durable record.
-6. If the session exposed reusable ORCA-HVN friction or strong quality-signal evidence, run `orca-improve-framework`.
+6. If the session exposed reusable ORCA Framework friction or strong quality-signal evidence, run `orca-improve-framework`.
 
 ## Outputs And Artifacts
 

@@ -3,7 +3,7 @@ name: orca-discover
 description: Inspect an existing repo, product surface, or environment and produce discovery notes.
 ---
 
-# ORCA-HVN Discover
+# ORCA Framework Discover
 
 ## What This Skill Is
 
@@ -51,6 +51,6 @@ Discovery should reduce implementation risk and avoid unnecessary rewrites.
 - Ignoring existing patterns.
 - Treating missing tests as proof the system is simple.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-legacy`, `orca-spec`, `orca-plan`, and `orca-review`.

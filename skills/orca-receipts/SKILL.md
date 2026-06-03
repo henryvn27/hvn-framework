@@ -3,7 +3,7 @@ name: orca-receipts
 description: Produce compact execution receipts that summarize a run, its artifacts, verification, approvals, and unresolved risk.
 ---
 
-# ORCA-HVN Receipts
+# ORCA Framework Receipts
 
 ## What This Skill Is
 

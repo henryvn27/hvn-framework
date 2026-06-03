@@ -2,7 +2,7 @@
 
 The user says they already use NotebookLM.
 
-ORCA-HVN should:
+ORCA Framework should:
 
 - switch to support mode
 - help them get value from NotebookLM in the current workflow

@@ -1,6 +1,6 @@
 # Open Agent Spec Direction
 
-ORCA-HVN should move toward portable artifact shapes in a way that stays incremental, versioned, and easy to inspect.
+ORCA Framework should move toward portable artifact shapes in a way that stays incremental, versioned, and easy to inspect.
 
 ## Direction
 
@@ -15,7 +15,7 @@ The practical direction is:
 
 This is not an attempt to publish a grand universal agent standard.
 
-ORCA-HVN should avoid:
+ORCA Framework should avoid:
 
 - abstract standardization detached from real artifacts
 - breaking current Markdown workflows to satisfy a schema
@@ -33,7 +33,7 @@ Near-term portability should help with:
 
 ## Design Rules
 
-- start from artifacts ORCA-HVN already uses
+- start from artifacts ORCA Framework already uses
 - prefer stable identifiers over inferred meaning
 - allow partial mapping when full fidelity is impossible
 - record what is lost or transformed during mapping
@@ -48,10 +48,10 @@ Contracts and schemas should converge in meaning, but they do not need identical
 
 ## Practical Mapping Model
 
-In practice, ORCA-HVN portability will usually mean:
+In practice, ORCA Framework portability will usually mean:
 
 - Markdown artifact as the canonical human record
 - structured schema payload as the machine-readable companion
 - explicit mapping docs for host-native or tool-native formats
 
-That approach is more realistic than trying to force every environment to adopt ORCA-HVN directly.
+That approach is more realistic than trying to force every environment to adopt ORCA Framework directly.

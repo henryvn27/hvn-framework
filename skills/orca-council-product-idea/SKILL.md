@@ -66,6 +66,6 @@ At minimum, fill or contribute to:
 - skipping distribution reality
 - treating novelty as market strength
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-business-ideation`, `orca-research`, `orca-evaluate-idea`, `orca-plan-idea`, and `orca-validate-idea`.

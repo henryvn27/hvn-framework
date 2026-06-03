@@ -43,7 +43,7 @@
 
 ## Local Linear Backlog Once Auth Returns
 
-- Project: ORCA-HVN Blind Product Lab
+- Project: ORCA Framework Blind Product Lab
 - Issue: Launch BugBrief MVP
 - Issue: Add saved-history paid tier to BugBrief
 - Issue: Add tracker handoff exports to BugBrief

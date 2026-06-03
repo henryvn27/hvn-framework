@@ -3,11 +3,11 @@ name: orca-security
 description: Review security-relevant behavior, install scripts, CI, data handling, and unsafe agent instructions.
 ---
 
-# ORCA-HVN Security
+# ORCA Framework Security
 
 ## What This Skill Is
 
-A security review workflow for ORCA-HVN projects and framework changes.
+A security review workflow for ORCA Framework projects and framework changes.
 
 ## Trigger
 
@@ -52,6 +52,6 @@ Reports must distinguish confirmed issues from theoretical risks.
 - Publishing vulnerability details prematurely.
 - Treating all risks as equal severity.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-tool-review`, `orca-mcp-review`, `orca-ship`, and release readiness.

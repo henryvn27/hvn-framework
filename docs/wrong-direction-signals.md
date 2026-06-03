@@ -29,9 +29,9 @@ Wrong-direction signals often point to framework surfaces such as:
 
 The signal is stronger when:
 
-- the user corrected the framing and ORCA-HVN still repeated it
+- the user corrected the framing and ORCA Framework still repeated it
 - the framework kept recommending a path the harness or repo could not support
-- ORCA-HVN preserved formal structure while still missing the real task
+- ORCA Framework preserved formal structure while still missing the real task
 - the same wrong next step appeared after new evidence was already available
 
 ## Weaker Evidence

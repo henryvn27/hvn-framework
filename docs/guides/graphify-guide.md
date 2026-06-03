@@ -19,7 +19,7 @@ Do not surface Graphify when:
 - direct vault reading already answers the question
 - setup would cost more than the insight it produces
 
-## ORCA-HVN Behavior
+## ORCA Framework Behavior
 
 - if the user asks for Graphify, help with setup and usage
 - if graph analysis would help, suggest Graphify lightly as optional

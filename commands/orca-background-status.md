@@ -20,8 +20,9 @@ Use when the user or controller needs to inspect unattended progress, blockers, 
 
 1. Read the latest background contract, plan, and receipt.
 2. Report final state, progress summary, and blockers.
-3. Report whether resume is sensible.
-4. Recommend the next unattended or human-reviewed step.
+3. When describing current work, say what is being changed or checked in concrete terms, such as `rerunning provider QA on the save flow` or `updating the release checklist`, instead of saying only `using ORCA` or `running ORCA`.
+4. Report whether resume is sensible.
+5. Recommend the next unattended or human-reviewed step.
 
 ## Outputs And Artifacts
 

@@ -3,7 +3,7 @@ name: orca-benchmark
 description: Compare install, onboarding, spec, or orchestration quality across benchmark cases using inspectable scoring.
 ---
 
-# ORCA-HVN Benchmark
+# ORCA Framework Benchmark
 
 ## What This Skill Is
 
@@ -50,6 +50,6 @@ The report should make clear whether workflow quality improved, regressed, or st
 - scoring vague specs as good enough
 - rewarding speed when the workflow actually lost critical setup or onboarding information
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-install`, `orca-onboard`, `orca-spec`, `orca-eval`, and `orca-observability`.

@@ -3,7 +3,7 @@ name: orca-screenshot
 description: Capture OS-level or app-level screenshot evidence with sane fallback and save-path behavior.
 ---
 
-# ORCA-HVN Screenshot
+# ORCA Framework Screenshot
 
 ## What This Skill Is
 
@@ -54,6 +54,6 @@ The capture path should match the evidence need without pretending a browser-onl
 - confusing internal-inspection temp files with user deliverables
 - skipping the macOS permission preflight and then retrying blind
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-web-qa`, `orca-ios-sim-qa`, and `orca-ui-debug`.

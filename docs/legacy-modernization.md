@@ -1,6 +1,6 @@
 # Legacy Modernization
 
-ORCA-HVN legacy modernization is a cautious workflow for inherited, messy, older, or under-documented systems. The goal is staged understanding and safe change, not one-shot rewrites.
+ORCA Framework legacy modernization is a cautious workflow for inherited, messy, older, or under-documented systems. The goal is staged understanding and safe change, not one-shot rewrites.
 
 ## Purpose
 
@@ -40,9 +40,9 @@ Use the legacy modernization workflow to:
 - [templates/legacy-risk-report.md](../templates/legacy-risk-report.md)
 - [templates/modernization-spec.md](../templates/modernization-spec.md)
 
-## Relationship To ORCA-HVN
+## Relationship To ORCA Framework
 
-Legacy modernization extends the normal ORCA-HVN lifecycle:
+Legacy modernization extends the normal ORCA Framework lifecycle:
 
 - `orca-discover` inspects the system
 - `orca-legacy` performs deeper archaeology and risk analysis

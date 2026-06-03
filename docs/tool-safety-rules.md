@@ -1,6 +1,6 @@
 # Tool Safety Rules
 
-ORCA-HVN tool safety favors explicit allowlists, constrained execution, and reviewable calls.
+ORCA Framework tool safety favors explicit allowlists, constrained execution, and reviewable calls.
 
 ## Core Rules
 

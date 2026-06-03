@@ -1,6 +1,6 @@
 # Harness Without Native Subagents
 
-If the harness lacks native subagents, ORCA-HVN can still:
+If the harness lacks native subagents, ORCA Framework can still:
 
 - create a worker packet
 - run the worker step through a sequential or manual delegation path

@@ -2,7 +2,7 @@
 
 Use this example when a team already has Google Cloud and Gemini Enterprise or NotebookLM Enterprise access.
 
-Good ORCA-HVN response shape:
+Good ORCA Framework response shape:
 
 - confirm enterprise access assumptions
 - use the documented Google Cloud setup path

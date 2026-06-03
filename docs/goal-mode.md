@@ -1,6 +1,6 @@
 # Goal Mode
 
-ORCA-HVN goal mode is a structured way to turn a bounded spec or milestone into a durable execution contract. It can use a host-native `/goal` feature when that host actually supports it, or fall back to ordinary ORCA-HVN execution with explicit status artifacts when it does not.
+ORCA Framework goal mode is a structured way to turn a bounded spec or milestone into a durable execution contract. It can use a host-native `/goal` feature when that host actually supports it, or fall back to ordinary ORCA Framework execution with explicit status artifacts when it does not.
 
 Goal mode is not background autonomy. It is a contract for long-running, verifiable work. Prefer milestone-sized goals with one clear verification contract over project-sized goals with fuzzy outcomes.
 
@@ -65,14 +65,14 @@ The wrong flow is:
 
 ## Relationship To Harness-Native `/goal`
 
-Some hosts provide a native `/goal` command. Codex and Claude Code are the current strong ORCA-HVN examples. ORCA-HVN should use native goal mode only after translating the work into a goal contract. The host command is the execution mechanism; the ORCA-HVN contract defines scope, completion, verification, stop conditions, and approvals.
+Some hosts provide a native `/goal` command. Codex and Claude Code are the current strong ORCA Framework examples. ORCA Framework should use native goal mode only after translating the work into a goal contract. The host command is the execution mechanism; the ORCA Framework contract defines scope, completion, verification, stop conditions, and approvals.
 
 Current practical mapping:
 
 - Codex: `/goal <objective>` starts the goal, `/goal` shows status, and `/goal pause`, `/goal resume`, `/goal clear` handle lifecycle state inside the active thread.
 - Claude Code: `/goal <condition>` starts the goal, `/goal` shows status, `/goal clear` stops it, and an active goal can restore when the session is resumed. Claude's `/goal` also depends on workspace trust and hooks policy.
 
-If native `/goal` is unavailable, use the same contract with normal ORCA-HVN workflow artifacts:
+If native `/goal` is unavailable, use the same contract with normal ORCA Framework workflow artifacts:
 
 - shared state
 - run memory
@@ -89,7 +89,7 @@ Background mode is a good fit only when the goal is low enough risk for unattend
 - Completed: verification condition was met
 - Cleared: goal was intentionally removed before completion
 
-Host commands may name these states differently. ORCA-HVN tracks the conceptual lifecycle in [templates/goal-status.md](../templates/goal-status.md).
+Host commands may name these states differently. ORCA Framework tracks the conceptual lifecycle in [templates/goal-status.md](../templates/goal-status.md).
 
 ## Required Artifacts
 

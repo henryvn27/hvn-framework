@@ -1,6 +1,6 @@
 # Harness Mapping
 
-ORCA-HVN maps the same orchestration model onto multiple implementation styles.
+ORCA Framework maps the same orchestration model onto multiple implementation styles.
 
 ## Possible Harness Mappings
 

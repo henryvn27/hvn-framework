@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Turn a raw Linear issue into an ORCA-HVN-ready unit of work.
+Turn a raw Linear issue into an ORCA Framework-ready unit of work.
 
 ## When To Use
 
@@ -32,7 +32,7 @@ Use when an issue enters triage, lacks scope, or needs routing before spec.
 1. Read the issue and project context.
 2. Identify missing user, job, scope, platform, risk, and acceptance context.
 3. Ask only questions that change the next useful spec.
-4. Recommend state, labels, and next ORCA-HVN command.
+4. Recommend state, labels, and next ORCA Framework command.
 
 ## Outputs And Artifacts
 

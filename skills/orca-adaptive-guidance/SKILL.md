@@ -1,6 +1,6 @@
 ---
 name: orca-adaptive-guidance
-description: Provide lightweight, skill-sensitive coaching without slowing down normal ORCA-HVN execution.
+description: Provide lightweight, skill-sensitive coaching without slowing down normal ORCA Framework execution.
 ---
 
 # ORCA Adaptive Guidance

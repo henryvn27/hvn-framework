@@ -1,6 +1,6 @@
 # Adaptive Learning
 
-ORCA-HVN includes a default-on adaptive guidance layer that helps users improve without turning normal work into a lesson.
+ORCA Framework includes a default-on adaptive guidance layer that helps users improve without turning normal work into a lesson.
 
 ## Guidance Flow
 
@@ -22,14 +22,14 @@ flowchart LR
 
 The goal is to help the user grow while reducing friction, not to grade them.
 
-ORCA-HVN should gently help users get better at:
+ORCA Framework should gently help users get better at:
 
 - asking for what they want
 - structuring context
 - prompting agents
 - managing AI-assisted development
 - choosing when to plan versus execute
-- using ORCA-HVN features well
+- using ORCA Framework features well
 
 ## What It Does
 

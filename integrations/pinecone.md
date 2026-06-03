@@ -8,7 +8,7 @@
 - Supported workflows: vector retrieval and RAG architectures
 - Validation steps: index reachable, embedding dimension matches, retrieval path tested
 - Common failure modes: no retrieval evaluation, vague indexing strategy, stale embeddings
-- Related ORCA-HVN commands or docs: `orca-integration`, `evals.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `evals.md`
 - Related integrations: OpenAI, Anthropic, Langfuse
 - Risk notes: do not add vector storage without a retrieval quality reason
 - Web, mobile, or platform caveats: backend concern

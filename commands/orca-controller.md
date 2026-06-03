@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Run ORCA-HVN in controller-agent mode for orientation, routing, delegation, and ingestion.
+Run ORCA Framework in controller-agent mode for orientation, routing, delegation, and ingestion.
 
 ## When To Use
 

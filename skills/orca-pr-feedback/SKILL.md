@@ -3,7 +3,7 @@ name: orca-pr-feedback
 description: Collect and organize PR review comments and threads into a remediation queue.
 ---
 
-# ORCA-HVN PR Feedback
+# ORCA Framework PR Feedback
 
 ## What This Skill Is
 
@@ -52,6 +52,6 @@ A maintainer should be able to decide what to address next without rereading the
 - losing resolved vs open state
 - dropping review submissions while only reading inline comments
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-review`, `orca-delegation`, and `orca-ship`.

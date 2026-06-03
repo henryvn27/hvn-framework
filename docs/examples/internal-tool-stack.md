@@ -1,6 +1,6 @@
 # Example: Internal Tool Stack
 
-Default ORCA-HVN recommendation:
+Default ORCA Framework recommendation:
 
 - Next.js
 - Railway

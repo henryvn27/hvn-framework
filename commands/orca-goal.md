@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Decide whether work should use ORCA-HVN goal mode and route to contract creation, review, status, or fallback execution.
+Decide whether work should use ORCA Framework goal mode and route to contract creation, review, status, or fallback execution.
 
 ## When To Use
 

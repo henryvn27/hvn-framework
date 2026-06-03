@@ -24,8 +24,8 @@ Troubleshooting should be specific, not vague.
 ```sh
 git --version
 ./scripts/validate-repo.sh
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework
 ```
 
 ## Deep Links

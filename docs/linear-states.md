@@ -1,10 +1,10 @@
 # Linear States
 
-ORCA-HVN expects workflow gates, not exact state names. Teams can rename states, use different Linear workflows, or opt out of Linear entirely, but equivalent gates should exist.
+ORCA Framework expects workflow gates, not exact state names. Teams can rename states, use different Linear workflows, or opt out of Linear entirely, but equivalent gates should exist.
 
 ## Recommended State Mapping
 
-| ORCA-HVN Gate | Example Linear State | Meaning |
+| ORCA Framework Gate | Example Linear State | Meaning |
 | --- | --- | --- |
 | Intake | Triage | Issue needs clarification, labels, or routing. |
 | Spec intake | Ready for Spec | The issue is clear enough for a spec agent. |

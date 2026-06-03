@@ -1,6 +1,6 @@
 # Prompting Coach
 
-ORCA-HVN may help the user improve prompt quality when doing so will materially improve the result.
+ORCA Framework may help the user improve prompt quality when doing so will materially improve the result.
 
 ## Coaching Areas
 

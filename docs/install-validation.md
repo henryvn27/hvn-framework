@@ -22,19 +22,19 @@ Repo validation:
 Installed target validation:
 
 ```sh
-./install/verify-install.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
 ```
 
 Broader install doctor:
 
 ```sh
-./install/doctor.sh --target ./.orca-hvn --services github,linear
+./install/doctor.sh --target ./.orca-framework --services github,linear
 ```
 
 Harness-aware doctor:
 
 ```sh
-./install/doctor.sh --target ./.orca-hvn --harness codex
+./install/doctor.sh --target ./.orca-framework --harness codex
 ```
 
 ## Output Shape

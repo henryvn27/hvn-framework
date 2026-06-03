@@ -4,11 +4,11 @@ External issue submission is a durable action. It needs explicit user approval.
 
 ## Approval Rule
 
-ORCA-HVN may identify candidates automatically.
+ORCA Framework may identify candidates automatically.
 
-ORCA-HVN may draft issue content automatically.
+ORCA Framework may draft issue content automatically.
 
-ORCA-HVN may not submit the issue externally without explicit user approval.
+ORCA Framework may not submit the issue externally without explicit user approval.
 
 ## Supported Choices
 
@@ -26,6 +26,6 @@ The prompt should be short and specific:
 - what quality signal was observed when relevant
 - why it is reusable
 - what evidence came from this session
-- what action ORCA-HVN is asking to take
+- what action ORCA Framework is asking to take
 
 Use [templates/issue-approval-prompt.md](../templates/issue-approval-prompt.md).

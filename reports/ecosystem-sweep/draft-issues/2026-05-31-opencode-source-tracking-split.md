@@ -2,7 +2,7 @@
 
 ## Title
 
-Split ORCA-HVN OpenCode tracking between active docs/runtime behavior and the archived legacy repo
+Split ORCA Framework OpenCode tracking between active docs/runtime behavior and the archived legacy repo
 
 ## Category
 
@@ -14,9 +14,9 @@ Split ORCA-HVN OpenCode tracking between active docs/runtime behavior and the ar
 
 ## Finding Summary
 
-ORCA-HVN currently tracks OpenCode through active docs at `dev.opencode.ai` while also relying on an archived `opencode-ai/opencode` repo as a release source.
+ORCA Framework currently tracks OpenCode through active docs at `dev.opencode.ai` while also relying on an archived `opencode-ai/opencode` repo as a release source.
 
-## Why It Matters To ORCA-HVN
+## Why It Matters To ORCA Framework
 
 That mixed source-of-truth makes it too easy to overstate compatibility, freshness, or recommendation confidence.
 
@@ -31,7 +31,7 @@ OpenCode-specific with cross-harness reporting implications.
 - https://dev.opencode.ai/docs/mcp-servers/
 - https://github.com/opencode-ai/opencode/releases
 
-## Proposed ORCA-HVN Impact
+## Proposed ORCA Framework Impact
 
 Split future OpenCode source tracking into active runtime/docs behavior versus archived legacy repo history, and update compatibility language accordingly.
 
@@ -41,7 +41,7 @@ Both. Maintainers get cleaner evidence; users get fewer misleading parity claims
 
 ## Recommended Next Step
 
-Adjust ORCA-HVN's tracked-source and compatibility guidance so OpenCode reporting cites the active docs first and uses the archived repo only as historical context.
+Adjust ORCA Framework's tracked-source and compatibility guidance so OpenCode reporting cites the active docs first and uses the archived repo only as historical context.
 
 ## Confidence Level
 
@@ -53,7 +53,7 @@ High. The archive status is explicit and the active docs surface is clearly sepa
 
 ## Earlier Sightings
 
-- 2026-05-31 initial live ORCA-HVN ecosystem sweep
+- 2026-05-31 initial live ORCA Framework ecosystem sweep
 
 ## Watch And Opportunity Links
 

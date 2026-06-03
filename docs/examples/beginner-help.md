@@ -2,7 +2,7 @@
 
 The user is new and gives a vague request.
 
-ORCA-HVN should:
+ORCA Framework should:
 
 - do useful work
 - ask only the minimum needed question

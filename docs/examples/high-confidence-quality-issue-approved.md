@@ -15,4 +15,4 @@ Why it warranted a framework issue:
 
 Outcome:
 
-ORCA-HVN asked for approval, prepared a structured draft, and linked the likely framework areas to update.
+ORCA Framework asked for approval, prepared a structured draft, and linked the likely framework areas to update.

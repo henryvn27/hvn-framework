@@ -13,4 +13,4 @@ Recommendation:
 Why:
 
 - strong fit for the use case
-- aligns with ORCA-HVN's researched web SaaS paved road
+- aligns with ORCA Framework's researched web SaaS paved road

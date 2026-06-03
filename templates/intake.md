@@ -41,7 +41,7 @@ List product, technical, security, schedule, and adoption risks in direct terms.
 
 List questions that remain open and how they affect the first spec.
 
-## Recommended ORCA-HVN Path
+## Recommended ORCA Framework Path
 
 List the commands that should run next.
 

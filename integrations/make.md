@@ -8,7 +8,7 @@
 - Supported workflows: workflow automation and sync
 - Validation steps: scenario runs, auth valid, failure path visible
 - Common failure modes: silent failures, hidden complexity, unclear ownership
-- Related ORCA-HVN commands or docs: `orca-integration`
+- Related ORCA Framework commands or docs: `orca-integration`
 - Related integrations: Slack, HubSpot, GitHub
 - Risk notes: automation quality depends on visibility and ownership
 - Web, mobile, or platform caveats: business workflow surface

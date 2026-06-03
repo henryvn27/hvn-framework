@@ -8,7 +8,7 @@
 - Supported workflows: sign-in, sign-up, session handling, user management
 - Validation steps: keys present, auth flow works, middleware or client integration documented
 - Common failure modes: middleware mismatch, redirect confusion, auth UI without backend role mapping
-- Related ORCA-HVN commands or docs: `orca-integration`, `saas-stack-guide.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `saas-stack-guide.md`
 - Related integrations: Next.js, Stripe, PostHog
 - Risk notes: auth UX polish does not replace authorization design
 - Web, mobile, or platform caveats: strongest as a web SaaS default

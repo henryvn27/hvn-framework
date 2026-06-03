@@ -1,8 +1,8 @@
 # Optional Feature Hidden
 
-The user is running their first ORCA-HVN session.
+The user is running their first ORCA Framework session.
 
-ORCA-HVN should not start by surfacing:
+ORCA Framework should not start by surfacing:
 
 - graph tooling
 - shadow rollout policy

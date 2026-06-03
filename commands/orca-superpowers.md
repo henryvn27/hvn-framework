@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Route execution-heavy software work into ORCA-HVN's official Superpowers wrapper path so users can call Superpowers inside ORCA instead of maintaining a separate workflow identity.
+Route execution-heavy software work into ORCA Framework's official Superpowers wrapper path so users can call Superpowers inside ORCA instead of maintaining a separate workflow identity.
 
 ## When To Use
 

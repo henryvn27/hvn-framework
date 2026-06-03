@@ -1,8 +1,8 @@
 # React Native Guide
 
-React Native is a first-class ORCA-HVN mobile surface, whether used through Expo-first workflows or with deeper native customization.
+React Native is a first-class ORCA Framework mobile surface, whether used through Expo-first workflows or with deeper native customization.
 
-## Default ORCA-HVN Bias
+## Default ORCA Framework Bias
 
 Prefer Expo plus React Native unless the app clearly needs a more custom native path from the start.
 

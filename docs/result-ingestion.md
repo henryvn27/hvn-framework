@@ -1,6 +1,6 @@
 # Result Ingestion
 
-Result ingestion is how a controller takes executor output and brings it back into ORCA-HVN without losing structure.
+Result ingestion is how a controller takes executor output and brings it back into ORCA Framework without losing structure.
 
 ## Purpose
 

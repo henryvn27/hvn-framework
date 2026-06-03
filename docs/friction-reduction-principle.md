@@ -2,7 +2,7 @@
 
 The goal is to reduce friction, not create more setup work.
 
-This is a framework-wide ORCA-HVN policy, not a local preference for one feature area.
+This is a framework-wide ORCA Framework policy, not a local preference for one feature area.
 
 ## Core Rule
 
@@ -10,7 +10,7 @@ A tool, feature, integration, workflow, prompt, or automation should be surfaced
 
 ## What Friction Means Here
 
-In ORCA-HVN, friction includes:
+In ORCA Framework, friction includes:
 
 - setup burden
 - cognitive overload
@@ -26,9 +26,9 @@ In ORCA-HVN, friction includes:
 - maintenance burden
 - positioning drift that makes the framework sound generic instead of useful
 
-## What ORCA-HVN Should Remove
+## What ORCA Framework Should Remove
 
-ORCA-HVN should make it easier to:
+ORCA Framework should make it easier to:
 
 - start without a teammate translating the system
 - follow one clear path through the first useful workflow
@@ -44,7 +44,7 @@ ORCA-HVN should make it easier to:
 - keep the README and top-level docs short enough that a new user can reach the right path quickly
 - describe the framework in language that matches real recurring work instead of generic AI-framework branding
 
-## What ORCA-HVN Should Not Introduce Casually
+## What ORCA Framework Should Not Introduce Casually
 
 Do not casually add:
 

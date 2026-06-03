@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Create a practical run trace for a meaningful ORCA-HVN session, phase, or handoff.
+Create a practical run trace for a meaningful ORCA Framework session, phase, or handoff.
 
 ## When To Use
 

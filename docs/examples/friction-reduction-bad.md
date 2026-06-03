@@ -2,7 +2,7 @@
 
 The user wants help with one narrow repository task.
 
-Bad ORCA-HVN behavior would be:
+Bad ORCA Framework behavior would be:
 
 - suggesting multiple stack tools before understanding the task
 - requiring vault tooling before basic orientation

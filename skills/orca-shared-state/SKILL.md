@@ -3,7 +3,7 @@ name: orca-shared-state
 description: Maintain a durable shared-state surface for cooperating agents on the same work item or run.
 ---
 
-# ORCA-HVN Shared State
+# ORCA Framework Shared State
 
 ## What This Skill Is
 
@@ -49,6 +49,6 @@ Another agent should be able to resume the work without rediscovering the curren
 - overwriting another role's status without explanation
 - storing durable product facts that belong in run memory
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Supports `orca-state`, `orca-checkpoint`, `orca-inspect`, and multi-role execution.

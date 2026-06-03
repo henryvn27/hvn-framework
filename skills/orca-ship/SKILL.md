@@ -3,7 +3,7 @@ name: orca-ship
 description: Prepare release readiness checks, release notes, rollback guidance, and handoff.
 ---
 
-# ORCA-HVN Ship
+# ORCA Framework Ship
 
 ## What This Skill Is
 
@@ -71,7 +71,7 @@ It should distinguish local success from actual uploaded or deployed state.
 - Treating local archive success as equivalent to uploaded or distributed.
 - Treating preview deploy success as production confirmation.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Uses outputs from review, QA, security, and regression skills.
 For Apple release specifics, pair with `orca-testflight-release` and `orca-testflight-ops`.

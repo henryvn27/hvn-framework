@@ -1,8 +1,8 @@
 # Impeccable
 
-## ORCA-HVN Relationship
+## ORCA Framework Relationship
 
-ORCA-HVN treats Impeccable as an official wrapped capability pack for design-heavy frontend work.
+ORCA Framework treats Impeccable as an official wrapped capability pack for design-heavy frontend work.
 
 That means:
 
@@ -47,7 +47,7 @@ That means:
 ## Harness Notes
 
 - Impeccable publishes harness-aware install paths for major coding agents.
-- Prefer the upstream harness-specific install path instead of copying skill files into ORCA-HVN.
+- Prefer the upstream harness-specific install path instead of copying skill files into ORCA Framework.
 - If the upstream pack is not installed, ORCA should still be able to explain the correct setup path and continue with the best local fallback.
 
 ## Recommended ORCA Pattern

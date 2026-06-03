@@ -22,7 +22,7 @@
 
 - Add richer QA report schemas.
 - Add state-mapping examples for common Linear workspaces.
-- Add migration notes for teams adopting ORCA-HVN into existing issue trackers.
+- Add migration notes for teams adopting ORCA Framework into existing issue trackers.
 - Add adapter guidance for GitHub Issues and document-first opt-out workflows.
 
 ## Later

@@ -1,6 +1,6 @@
 # Example: Moving From GStack Or GSD
 
-1. Read `docs/guides/from-gstack-or-gsd-to-orca-hvn.md`
+1. Read `docs/guides/from-gstack-or-gsd-to-orca-framework.md`
 2. Read `docs/first-workflow.md`
 3. Stop thinking in terms of side-by-side tools
 4. Run `orca-onboard`

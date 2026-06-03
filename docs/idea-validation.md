@@ -1,6 +1,6 @@
 # Idea Validation
 
-ORCA-HVN validation planning turns startup uncertainty into short, explicit experiments.
+ORCA Framework validation planning turns startup uncertainty into short, explicit experiments.
 
 ## Purpose
 

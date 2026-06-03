@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://orca-hvn.dev/schema/v1/run-trace.schema.json",
-  "title": "ORCA-HVN Run Trace v1",
+  "$id": "https://orca-framework.dev/schema/v1/run-trace.schema.json",
+  "title": "ORCA Framework Run Trace v1",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_family", "schema_version", "run_id", "harness", "actions_taken", "stop_reason"],

@@ -8,7 +8,7 @@
 - Supported workflows: repo reads, PRs, issue drafts, checks, releases
 - Validation steps: auth works, repo reachable, needed write scope present
 - Common failure modes: auth scope mismatch, host path mismatch, assuming connector parity across harnesses
-- Related ORCA-HVN commands or docs: `orca-setup`, `orca-validate-integration`, `docs/integrations/github.md`
+- Related ORCA Framework commands or docs: `orca-setup`, `orca-validate-integration`, `docs/integrations/github.md`
 - Related integrations: GitHub Actions, Linear, Vercel
 - Risk notes: external write actions should stay explicit
 - Web, mobile, or platform caveats: service used across all stack types

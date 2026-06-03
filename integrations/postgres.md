@@ -8,7 +8,7 @@
 - Supported workflows: schema design, migrations, app data layer
 - Validation steps: connectivity works, migration tool chosen, backup and env split documented
 - Common failure modes: schema drift, migration uncertainty, app and analytics data mixed carelessly
-- Related ORCA-HVN commands or docs: `orca-integration`, `integration-validation.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `integration-validation.md`
 - Related integrations: Supabase, Neon, Prisma, Drizzle, Railway
 - Risk notes: durable data decisions need explicit ownership
 - Web, mobile, or platform caveats: backend concern across platforms

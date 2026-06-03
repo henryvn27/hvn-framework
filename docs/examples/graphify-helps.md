@@ -2,7 +2,7 @@
 
 Use this when a vault is large, fragmented, and hard to understand through direct reading alone.
 
-Good ORCA-HVN behavior:
+Good ORCA Framework behavior:
 
 - start with a basic vault audit
 - notice that project clusters and duplicates are still unclear

@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-06-03T08:00:00Z",
+  "active_run": {
+    "project": "ORCA Framework",
+    "workflow": "orca-build",
+    "step": "implementation",
+    "status": "running"
+  },
+  "queue_count": 0,
+  "failing_checks": 0,
+  "last_receipt": "receipts/2026-06-03-build.md",
+  "recent_models": [
+    {
+      "provider": "openai",
+      "model": "gpt-5",
+      "tokens": 1200
+    }
+  ]
+}

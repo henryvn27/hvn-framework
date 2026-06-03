@@ -3,11 +3,11 @@ name: orca-retro
 description: Capture outcomes, lessons, failure patterns, and follow-up improvements after completed work.
 ---
 
-# ORCA-HVN Retro
+# ORCA Framework Retro
 
 ## What This Skill Is
 
-A learning workflow for improving future ORCA-HVN work.
+A learning workflow for improving future ORCA Framework work.
 
 ## Trigger
 
@@ -53,6 +53,6 @@ The retro should change future behavior, not merely describe the past.
 - Avoiding uncomfortable causes.
 - Creating follow-ups without triggers or owners.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds future onboarding, planning, framework updates, and `orca-improve-framework`.

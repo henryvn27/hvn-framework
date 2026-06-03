@@ -2,7 +2,7 @@
 
 Use this when the lighter path already answers the user's question.
 
-Good ORCA-HVN behavior:
+Good ORCA Framework behavior:
 
 - answer directly
 - say graph tooling is not needed here

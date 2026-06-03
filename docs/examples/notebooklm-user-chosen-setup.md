@@ -4,7 +4,7 @@ User signal:
 
 > I already have a NotebookLM notebook. Help me connect it to this workflow.
 
-Recommended ORCA-HVN behavior:
+Recommended ORCA Framework behavior:
 
 - switch to setup-help mode
 - do not argue for another knowledge tool unless there is a clear incompatibility

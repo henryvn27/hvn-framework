@@ -2,7 +2,7 @@
 
 The user wants to ship a small internal tool and already uses GitHub and Linear.
 
-ORCA-HVN should:
+ORCA Framework should:
 
 - recommend one clear internal-tool road
 - use the existing GitHub and Linear setup if available

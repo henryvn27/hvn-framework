@@ -1,6 +1,6 @@
 # Wrapped Capability Packs
 
-ORCA-HVN should not duplicate a maintained upstream capability pack just to make the repo feel more self-contained.
+ORCA Framework should not duplicate a maintained upstream capability pack just to make the repo feel more self-contained.
 
 When an upstream pack already provides the best maintained version of a workflow surface, ORCA should:
 

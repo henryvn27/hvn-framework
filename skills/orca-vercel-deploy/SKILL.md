@@ -3,7 +3,7 @@ name: orca-vercel-deploy
 description: Deploy web projects to Vercel with preview-first behavior and a claimable fallback path when normal CLI auth is unavailable.
 ---
 
-# ORCA-HVN Vercel Deploy
+# ORCA Framework Vercel Deploy
 
 ## What This Skill Is
 
@@ -51,6 +51,6 @@ The user should get a real preview link or a precise deploy blocker, not just in
 - dropping the claim URL on fallback deploys
 - claiming success without the actual deployment URL
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-ship`, `orca-web-qa`, and `orca-linear-release`.

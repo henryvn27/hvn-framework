@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recommend a stack only when the user's use case strongly fits ORCA-HVN's researched defaults.
+Recommend a stack only when the user's use case strongly fits ORCA Framework's researched defaults.
 
 ## When To Use
 

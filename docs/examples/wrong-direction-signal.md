@@ -1,6 +1,6 @@
 # Example: Wrong-Direction Signal
 
-The user said to update the active ORCA-HVN checkout, but ORCA-HVN kept reasoning from an older local folder name until corrected.
+The user said to update the active ORCA Framework checkout, but ORCA Framework kept reasoning from an older local folder name until corrected.
 
 Signal:
 

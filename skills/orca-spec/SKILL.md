@@ -3,7 +3,7 @@ name: orca-spec
 description: Convert intent, discovery, and research into a clear implementation specification.
 ---
 
-# ORCA-HVN Spec
+# ORCA Framework Spec
 
 ## What This Skill Is
 
@@ -61,6 +61,6 @@ The spec should read like it belongs to this product and repo, not like a reusab
 - Creating acceptance criteria that cannot be verified.
 - Hiding weak understanding behind polished but generic prose.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-plan`, `orca-goal-mode`, `orca-linear-plan-comment`, `orca-review`, and briefed QA.

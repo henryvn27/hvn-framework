@@ -2,11 +2,13 @@
 
 Recent high-level additions:
 
-- background mode
-- controller and executor integration
-- portable artifact schemas
-- business ideation workflow
-- docs home, start-here path, guide layer, and wiki
+- public rename to ORCA Framework
+- stronger onboarding and beginner guidance
+- goal mode support for Codex and Claude Code
+- side sessions and explanation mode
+- controller/executor orchestration and subagent communication rules
+- model council skills for product, market, and feature evaluation
+- wrapped Impeccable and Superpowers capability packs
+- local Orca Monitor workflow status export
 
-See `docs/whats-new.md` for the fuller version.
-
+Full version: `docs/whats-new.md`.

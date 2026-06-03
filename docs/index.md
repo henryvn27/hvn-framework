@@ -1,7 +1,8 @@
+# Documentation Home
+
 <div class="orca-doc-intro">
-  <p class="orca-kicker">ORCA-HVN</p>
-  <h1>Documentation Home</h1>
-  <p class="orca-lead">ORCA-HVN is a workflow layer for Codex and Claude Code. It gives you a clearer first run, stronger orchestration, better long-running goal structure, and tighter review discipline without hiding the underlying harness.</p>
+  <p class="orca-kicker">ORCA Framework</p>
+  <p class="orca-lead">ORCA Framework is a workflow layer for Codex and Claude Code. It gives you a clearer first run, stronger orchestration, better long-running goal structure, and tighter review discipline without hiding the underlying harness.</p>
   <p class="orca-meta"><strong>Hosts:</strong> Codex, Claude Code <span>•</span> <strong>Mode:</strong> Dark by default <span>•</span> <strong>Path:</strong> Setup-first docs</p>
 </div>
 

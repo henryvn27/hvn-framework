@@ -1,6 +1,6 @@
 # Linear Spec Comment
 
-## ORCA-HVN Spec (Concrete)
+## ORCA Framework Spec (Concrete)
 
 **Issue:** `ISSUE-ID`
 

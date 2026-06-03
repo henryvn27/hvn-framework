@@ -16,4 +16,4 @@ This rule applies across integrations, docs, prompts, paved roads, automations, 
 - basic value should arrive before advanced setup
 - optional tooling should appear through progressive disclosure
 - advanced graph outputs should be hidden when the user does not need them
-- ORCA-HVN should prefer inspection over infrastructure
+- ORCA Framework should prefer inspection over infrastructure

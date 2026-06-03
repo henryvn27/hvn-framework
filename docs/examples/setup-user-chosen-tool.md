@@ -5,7 +5,7 @@ User context:
 - user already chose Supabase
 - asks for help setting it up
 
-ORCA-HVN behavior:
+ORCA Framework behavior:
 
 - do not reopen the stack debate
 - switch to setup-help mode

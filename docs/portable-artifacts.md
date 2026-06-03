@@ -1,6 +1,6 @@
 # Portable Artifacts
 
-Portable artifacts make ORCA-HVN outputs easier to validate, transform, compare, and map into other runtimes or tools.
+Portable artifacts make ORCA Framework outputs easier to validate, transform, compare, and map into other runtimes or tools.
 
 ## Why Portability Matters
 
@@ -9,9 +9,9 @@ Portability helps when:
 - the same workflow runs across multiple harnesses
 - a team wants to move artifacts into another tracker or runtime
 - external tooling needs a stable machine-readable shape
-- maintainers want versioned comparisons across ORCA-HVN releases
+- maintainers want versioned comparisons across ORCA Framework releases
 
-Portability does not require ORCA-HVN to standardize the whole industry. It requires explicit shapes, versioning, and mapping rules for the artifacts ORCA-HVN already depends on.
+Portability does not require ORCA Framework to standardize the whole industry. It requires explicit shapes, versioning, and mapping rules for the artifacts ORCA Framework already depends on.
 
 ## What Becomes Portable First
 
@@ -33,7 +33,7 @@ These artifacts already carry meaningful workflow state. Making them schema-addr
 
 ## Human Docs And Schemas Coexist
 
-ORCA-HVN keeps both:
+ORCA Framework keeps both:
 
 - human-readable Markdown artifacts for review, judgment, and handoff
 - portable schemas for structure, validation, and mapping
@@ -81,7 +81,7 @@ See [docs/schema-versioning.md](schema-versioning.md).
 
 ## Portability Boundary
 
-ORCA-HVN does not claim universal compatibility. The portable layer is meant to make principled mapping easier in practice.
+ORCA Framework does not claim universal compatibility. The portable layer is meant to make principled mapping easier in practice.
 
 Good portability means:
 
@@ -93,5 +93,5 @@ Good portability means:
 Bad portability means:
 
 - vague claims of future interoperability
-- pretending every tool can round-trip every ORCA-HVN concept
+- pretending every tool can round-trip every ORCA Framework concept
 - freezing the framework around speculative consensus

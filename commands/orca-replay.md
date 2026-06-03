@@ -6,7 +6,7 @@ Replay a prior workflow case against newer prompts, policies, harnesses, or comp
 
 ## When To Use
 
-Use to compare outcomes after ORCA-HVN changes, harness updates, runtime policy changes, or compatibility shifts.
+Use to compare outcomes after ORCA Framework changes, harness updates, runtime policy changes, or compatibility shifts.
 
 ## Required Inputs
 

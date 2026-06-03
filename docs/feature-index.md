@@ -42,6 +42,7 @@ Read:
 ## Runtime And Compatibility
 
 - runtime adaptation
+- local Orca Monitor workflow status export
 - auto-updates and release channels
 - setup and degraded mode
 - compatibility matrix
@@ -55,6 +56,7 @@ Read:
 Read:
 
 - [runtime-adaptation.md](runtime-adaptation.md)
+- [orca-monitor-status.md](orca-monitor-status.md)
 - [auto-updates.md](auto-updates.md)
 - [external-tool-setup.md](external-tool-setup.md)
 - [compatibility-matrix.md](compatibility-matrix.md)

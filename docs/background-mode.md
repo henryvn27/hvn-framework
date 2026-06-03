@@ -1,12 +1,12 @@
 # Background Mode
 
-ORCA-HVN background mode is an explicit, opt-in way to keep making bounded progress while the user is away.
+ORCA Framework background mode is an explicit, opt-in way to keep making bounded progress while the user is away.
 
 This is not "run forever." It is structured autonomous progress inside a defined envelope.
 
 ## Purpose
 
-Use background mode when the user wants ORCA-HVN to continue moving a task forward without constant supervision.
+Use background mode when the user wants ORCA Framework to continue moving a task forward without constant supervision.
 
 This should usually match an explicit involvement preference captured during onboarding or later adjusted by the user.
 

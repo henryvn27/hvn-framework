@@ -1,6 +1,6 @@
 # Agent Orchestration
 
-ORCA-HVN treats agent orchestration as a portable operating model.
+ORCA Framework treats agent orchestration as a portable operating model.
 
 The model should survive harness changes, feature differences, and vendor syntax differences.
 
@@ -42,7 +42,7 @@ Orchestration means answering:
 
 ## What Good Looks Like
 
-ORCA-HVN should be strong at orchestration in practice, not just in naming.
+ORCA Framework should be strong at orchestration in practice, not just in naming.
 
 A good ORCA orchestration run should make these things obvious:
 
@@ -114,7 +114,7 @@ Use:
 
 ## Scope
 
-ORCA-HVN orchestration covers:
+ORCA Framework orchestration covers:
 
 - delegation decisions
 - parent and subagent role boundaries

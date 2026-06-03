@@ -8,7 +8,7 @@ Start here if you need the shortest explanation of the setup system before choos
 
 ORCA is the working surface.
 
-The repository name is ORCA-HVN, but the install experience should answer one simple question:
+The repository name is ORCA Framework, but the install experience should answer one simple question:
 
 > How do I get ORCA installed and working without guessing?
 

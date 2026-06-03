@@ -1,6 +1,6 @@
 # Linear Workflow
 
-ORCA-HVN is designed to run software work through Linear by default. Linear is the preferred coordination layer, source of work, and durable record for agent activity. If the user opts out, use the same ORCA-HVN gates with another declared system of record.
+ORCA Framework is designed to run software work through Linear by default. Linear is the preferred coordination layer, source of work, and durable record for agent activity. If the user opts out, use the same ORCA Framework gates with another declared system of record.
 
 ## Core Mapping
 
@@ -12,7 +12,7 @@ ORCA-HVN is designed to run software work through Linear by default. Linear is t
 - **Linear comment:** status update, plan, review finding, QA report, or ship checklist
 - **Linked artifact:** spec, plan, report, screenshot, branch, pull request, build, or release note
 
-ORCA-HVN works best when agents stay close to the source of work. In Henry's workflow, that source is Linear. Agents should read the issue, update the issue, and keep handoffs visible in the issue thread. In opt-out mode, replace the issue thread with the chosen record and keep the same discipline.
+ORCA Framework works best when agents stay close to the source of work. In Henry's workflow, that source is Linear. Agents should read the issue, update the issue, and keep handoffs visible in the issue thread. In opt-out mode, replace the issue thread with the chosen record and keep the same discipline.
 
 ## Standard Lifecycle
 

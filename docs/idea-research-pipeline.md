@@ -1,6 +1,6 @@
 # Idea Research Pipeline
 
-This optional pipeline gives ORCA-HVN a repeatable way to evaluate an idea without collapsing into generic brainstorming.
+This optional pipeline gives ORCA Framework a repeatable way to evaluate an idea without collapsing into generic brainstorming.
 
 ## Sequence
 

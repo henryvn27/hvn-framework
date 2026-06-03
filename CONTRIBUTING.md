@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for improving ORCA-HVN. Contributions should make the framework clearer, more verifiable, or easier to install.
+Thank you for improving ORCA Framework. Contributions should make the framework clearer, more verifiable, or easier to install.
 
 ## Standards
 

@@ -1,10 +1,13 @@
 # Examples
 
-The fastest way to see the framework in action is through examples.
+Use examples when you want to see the operating style before adopting the full workflow.
 
-Start with:
+| Example | Use It For |
+| --- | --- |
+| `docs/demo.md` | Running a small personalized demo with low input. |
+| `docs/examples/runtime-codex-goal.md` | Seeing how ORCA maps long work into Codex goal mode. |
+| `docs/examples/setup-linear-claude-code.md` | Understanding host-aware setup with Claude Code. |
+| `docs/examples/trace-for-feature-run.md` | Seeing receipts, traces, and feature provenance. |
+| `docs/examples/benchmark-run.md` | Comparing installation and onboarding friction. |
 
-- `docs/examples/new-user-path.md`
-- `docs/examples/from-gstack-or-gsd.md`
-- `docs/examples/background-mode-user-path.md`
-- `docs/examples/business-ideation-user-path.md`
+If an example disagrees with `commands/`, trust the command contract.

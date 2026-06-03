@@ -1,6 +1,6 @@
 # Subagent Catalog
 
-ORCA-HVN keeps a reusable catalog of worker roles, not a mandate to use all of them.
+ORCA Framework keeps a reusable catalog of worker roles, not a mandate to use all of them.
 
 ## Reusable Roles
 

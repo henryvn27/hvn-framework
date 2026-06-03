@@ -2,7 +2,7 @@
 
 Codex CLI support should be verified from the installed CLI help, not from stale assumptions about flags or host behavior.
 
-## ORCA-HVN Usage
+## ORCA Framework Usage
 
 In Codex CLI, ORCA workflow commands such as `orca-onboard` and `orca-build` are not built-in Codex subcommands.
 Use the installed ORCA wrapper when possible so the local CLI invocation stays aligned with the actual `codex exec` surface.
@@ -10,7 +10,7 @@ Use the installed ORCA wrapper when possible so the local CLI invocation stays a
 Use native Codex commands when they exist.
 Use ORCA command names as workflow guidance in the prompt when they do not.
 
-Current ORCA-HVN baseline:
+Current ORCA Framework baseline:
 
 - treat native `/goal` support as part of the normal Codex path, not as a maybe-experimental edge
 - treat `orca-goal` as the ORCA contract layer and native `/goal` as the execution layer
@@ -26,7 +26,7 @@ Current ORCA-HVN baseline:
 Use native goal mode when:
 
 - the local CLI supports `/goal`
-- the ORCA-HVN goal contract is complete
+- the ORCA Framework goal contract is complete
 - verification is observable
 - approval gates are satisfied
 
@@ -128,14 +128,14 @@ codex exec \
   -c 'model_reasoning_effort="medium"' \
   --sandbox workspace-write \
   -C /path/to/workspace \
-  "Follow ORCA-HVN as workflow guidance: orca-onboard, orca-spec, orca-plan, orca-build, then orca-review."
+  "Follow ORCA Framework as workflow guidance: orca-onboard, orca-spec, orca-plan, orca-build, then orca-review."
 ```
 
 The ORCA wrapper uses `--ignore-user-config` intentionally so broken local skills or memory jobs do not pollute the ORCA user flow.
 
 ## Fallback
 
-If `/goal` is unavailable or experimental behavior is not acceptable, use ORCA-HVN fallback:
+If `/goal` is unavailable or experimental behavior is not acceptable, use ORCA Framework fallback:
 
 - goal contract
 - shared state

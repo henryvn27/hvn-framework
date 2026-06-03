@@ -1,6 +1,6 @@
 # Contributing Docs
 
-Documentation changes should keep ORCA-HVN easier to navigate, not just larger.
+Documentation changes should keep ORCA Framework easier to navigate, not just larger.
 
 ## Required Mindset
 

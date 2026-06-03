@@ -3,7 +3,7 @@ name: orca-goal-mode
 description: Convert bounded specs or milestones into safe, verifiable goal contracts and use host-native goal mode when available.
 ---
 
-# ORCA-HVN Goal Mode
+# ORCA Framework Goal Mode
 
 ## What This Skill Is
 
@@ -37,7 +37,7 @@ Do not use goal mode for ambiguous discovery, vague improvement requests, risky 
 3. Convert the spec or milestone into a goal contract.
 4. Check host support for native `/goal`.
 5. Prefer native `/goal` on Codex and Claude Code when the host supports it and the contract is complete.
-6. Fall back to ORCA-HVN status artifacts when native support is unavailable.
+6. Fall back to ORCA Framework status artifacts when native support is unavailable.
 7. Record lifecycle state in run memory, traces, and goal status.
 
 ## Expected Outputs
@@ -59,6 +59,6 @@ The goal must be concrete, milestone-sized, verifiable, and safe to resume.
 - making a whole roadmap one goal
 - turning a project-sized outcome with fuzzy verification into one goal
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-spec`, `orca-plan`, `orca-approve`, `orca-trace`, `orca-state`, and `orca-inspect`.

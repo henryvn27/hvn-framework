@@ -3,7 +3,7 @@ name: orca-impeccable
 description: Wrap the upstream Impeccable design pack as a first-class ORCA workflow surface.
 ---
 
-# ORCA-HVN Impeccable Wrapper
+# ORCA Framework Impeccable Wrapper
 
 ## What This Skill Is
 

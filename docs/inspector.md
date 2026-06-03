@@ -1,6 +1,6 @@
 # Inspector
 
-ORCA-HVN inspector support is a file-based model for reviewing the current state of a run without needing a custom UI. The goal is to make runs auditable and resumable with simple inspectable artifacts.
+ORCA Framework inspector support is a file-based model for reviewing the current state of a run without needing a custom UI. The goal is to make runs auditable and resumable with simple inspectable artifacts.
 
 ## Purpose
 

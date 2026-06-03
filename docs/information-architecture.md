@@ -1,12 +1,12 @@
 # Information Architecture
 
-ORCA-HVN has enough surface area that documentation needs routing, not just accumulation.
+ORCA Framework has enough surface area that documentation needs routing, not just accumulation.
 
 ## Layers
 
 ### Intro
 
-Purpose: explain what ORCA-HVN is, who it is for, and why it exists.
+Purpose: explain what ORCA Framework is, who it is for, and why it exists.
 
 Primary audience:
 
@@ -35,7 +35,7 @@ Primary pages:
 
 ### Concepts
 
-Purpose: explain ORCA-HVN language and mental models.
+Purpose: explain ORCA Framework language and mental models.
 
 Primary audience:
 

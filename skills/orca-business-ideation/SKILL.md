@@ -3,11 +3,11 @@ name: orca-business-ideation
 description: Structure, evaluate, research, and validate startup-style ideas without collapsing into hype or generic brainstorming.
 ---
 
-# ORCA-HVN Business Ideation
+# ORCA Framework Business Ideation
 
 ## What This Skill Is
 
-A dedicated ORCA-HVN feature lane for founder ideation, venture-style evaluation, opportunity memos, and validation planning.
+A dedicated ORCA Framework feature lane for founder ideation, venture-style evaluation, opportunity memos, and validation planning.
 
 ## Trigger
 
@@ -65,6 +65,6 @@ The output should be intellectually honest, practically useful, and explicit abo
 - designing validation plans that test everything at once
 - jumping to product build before the opportunity is clear enough
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-research`, `orca-spec`, `orca-plan`, and future execution work. It is the upstream decision layer, not a substitute for product delivery artifacts.

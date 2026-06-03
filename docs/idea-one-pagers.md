@@ -1,8 +1,8 @@
 # Idea One-Pagers
 
-The one-pager is the default artifact for early ORCA-HVN ideation. It forces an idea into a shape that can be challenged without a long pitch deck.
+The one-pager is the default artifact for early ORCA Framework ideation. It forces an idea into a shape that can be challenged without a long pitch deck.
 
-## Why ORCA-HVN Starts Here
+## Why ORCA Framework Starts Here
 
 A one-pager is useful because it makes weak thinking visible quickly:
 

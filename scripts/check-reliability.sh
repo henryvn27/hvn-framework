@@ -183,6 +183,7 @@ for file in \
   docs/runtime-fallbacks.md \
   docs/runtime-degraded-mode.md \
   docs/runtime-status.md \
+  docs/orca-monitor-status.md \
   docs/agent-orchestration.md \
   docs/harness-agnostic-orchestration.md \
   docs/parent-agent-vs-subagent.md \
@@ -254,7 +255,7 @@ for file in \
   docs/hosts/claude-code.md \
   docs/hosts/vscode.md \
   docs/hosts/generic.md \
-  docs/guides/from-gstack-or-gsd-to-orca-hvn.md \
+  docs/guides/from-gstack-or-gsd-to-orca-framework.md \
   docs/guides/goal-mode-guide.md \
   docs/guides/background-mode-guide.md \
   docs/guides/business-ideation-guide.md \
@@ -320,6 +321,7 @@ for file in \
   templates/runtime-route.md \
   templates/runtime-policy.md \
   templates/runtime-status.md \
+  templates/orca-monitor-status.md \
   templates/subagent-contract.md \
   templates/parent-orchestrator-contract.md \
   templates/delegation-check.md \
@@ -521,6 +523,7 @@ for file in \
   commands/orca-validate-integration.md \
   commands/orca-runtime.md \
   commands/orca-status.md \
+  commands/orca-monitor-status.md \
   commands/orca-attribution.md \
   commands/orca-idea.md \
   commands/orca-evaluate-idea.md \
@@ -692,9 +695,11 @@ for file in \
   schema/versions/v1/regression-task.schema.json \
   schema/versions/v1/approval-request.schema.json \
   schema/versions/v1/runtime-status.schema.json \
+  schema/versions/v1/orca-monitor-status.schema.json \
   schema/examples/spec-v1.json \
   schema/examples/goal-contract-v1.json \
   schema/examples/runtime-status-v1.json \
+  schema/examples/orca-monitor-status-v1.json \
   registry/tools/README.md \
   registry/mcp-servers/README.md \
   registry/harnesses/README.md \

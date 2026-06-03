@@ -16,7 +16,7 @@ This page helps returning users rediscover what changed without reading every fi
 - broad startup-stack integration packs with first-class Expo and React Native guidance
 - context-sensitive integration recommendations that separate support from recommendation
 - a single five-command first workflow for new users
-- clearer ORCA-first positioning that treats ORCA-HVN as the replacement for older GStack or GSD-centered routines
+- clearer ORCA-first positioning that treats ORCA Framework as the replacement for older GStack or GSD-centered routines
 - optional NotebookLM support for research and knowledge-heavy workflows without making it a default stack recommendation
 - a truth-hierarchy rule that treats user vaults as primary workflow evidence when they are available
 

@@ -1,6 +1,6 @@
 # Delegation
 
-Delegation lets a controller route bounded work to another harness or collaborator without losing ORCA-HVN structure.
+Delegation lets a controller route bounded work to another harness or collaborator without losing ORCA Framework structure.
 
 ## When To Delegate
 

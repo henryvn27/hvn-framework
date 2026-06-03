@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-ORCA-HVN is currently in the `0.x` release line. Security fixes target the latest published release and the main branch.
+ORCA Framework is currently in the `0.x` release line. Security fixes target the latest published release and the main branch.
 
 ## Reporting A Vulnerability
 

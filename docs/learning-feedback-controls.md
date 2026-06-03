@@ -4,7 +4,7 @@ Adaptive guidance is on by default, but it should be easy to reduce or disable.
 
 ## Modes
 
-- `full adaptive help`: normal ORCA-HVN coaching behavior
+- `full adaptive help`: normal ORCA Framework coaching behavior
 - `light suggestions only`: only brief nudges in high-value moments
 - `only when asked`: no proactive coaching
 - `off`: disable the learning-help layer

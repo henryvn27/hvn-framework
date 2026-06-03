@@ -13,9 +13,9 @@ Business ideation and venture evaluation
 
 - documentation or reference influence
 
-## ORCA-HVN Changes
+## ORCA Framework Changes
 
-ORCA-HVN turns those influences into:
+ORCA Framework turns those influences into:
 
 - idea one-pagers
 - evidence-versus-assumption maps

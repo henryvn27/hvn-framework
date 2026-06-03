@@ -4,7 +4,7 @@ This is the maintainer-facing short list of actionable ecosystem findings. Keep 
 
 ## Operating Rules
 
-- Track opportunities that could change ORCA-HVN commands, memory, install, cross-harness behavior, QA, or workflow.
+- Track opportunities that could change ORCA Framework commands, memory, install, cross-harness behavior, QA, or workflow.
 - Track setup opportunities that could simplify or repair GitHub, Linear, MCP, connector, auth, permission, or host-specific install flows.
 - Prefer cross-harness opportunities over host-specific features unless the host-specific feature unlocks immediate user value.
 - Mark whether each item is `Adopt now`, `Investigate soon`, `Watch`, or `Ignore for now`.
@@ -30,7 +30,7 @@ Each active opportunity should use this shape:
 - Current recommendation:
 - Proposed recommendation:
 - Why it matters:
-- Required ORCA-HVN change:
+- Required ORCA Framework change:
 - UX impact:
 - Status:
 - Related issue:

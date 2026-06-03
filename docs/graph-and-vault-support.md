@@ -1,6 +1,6 @@
 # Graph And Vault Support
 
-ORCA-HVN can use a vault such as an Obsidian vault as an optional knowledge source when it is available.
+ORCA Framework can use a vault such as an Obsidian vault as an optional knowledge source when it is available.
 
 Graph tooling is a possible enhancement on top of that, not a prerequisite.
 

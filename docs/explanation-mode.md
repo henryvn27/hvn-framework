@@ -89,8 +89,8 @@ Explanation preferences are user-global, not repo-local.
 
 Default path:
 
-- `$HOME/.orca-hvn/state/explain/user-technicality-profile.md`
-- `$HOME/.orca-hvn/state/explain/learning-signals.jsonl`
+- `$HOME/.orca-framework/state/explain/user-technicality-profile.md`
+- `$HOME/.orca-framework/state/explain/learning-signals.jsonl`
 
 Use this state to adapt explanation depth across projects while keeping framework defaults unchanged.
 

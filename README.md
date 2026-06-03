@@ -1,6 +1,6 @@
-# ORCA-HVN
+# ORCA Framework
 
-<img src="assets/orca.png" alt="ORCA-HVN logo" width="220" />
+<img src="assets/orca.png" alt="ORCA Framework logo" width="220" />
 
 ORCA is an orchestration framework for agent-assisted software work.
 It exists because the hard part of AI coding is usually not "can the model write code at all?" It is getting from vague work to a clear spec, keeping execution inspectable, coordinating handoffs cleanly, and making sure review and QA actually happen.
@@ -12,7 +12,7 @@ This README is the front door for getting ORCA set up, running your first real w
 
 The polished docs site is intended to live on GitHub Pages:
 
-- `https://henryvn27.github.io/orca-hvn/`
+- `https://henryvn27.github.io/orca-framework/`
 
 ## What ORCA Is For
 
@@ -62,7 +62,7 @@ Start with:
 - [docs/install-overview.md](docs/install-overview.md)
 - [docs/first-run.md](docs/first-run.md)
 - [docs/first-workflow.md](docs/first-workflow.md)
-- Pages docs home: `https://henryvn27.github.io/orca-hvn/`
+- Pages docs home: `https://henryvn27.github.io/orca-framework/`
 
 ## Try ORCA In One Prompt
 
@@ -135,18 +135,18 @@ If you do not know some of these yet, that is fine. ORCA should default to the s
 ### Fastest Safe Setup
 
 ```sh
-git clone https://github.com/henryvn27/orca-hvn.git
-cd orca-hvn
+git clone https://github.com/henryvn27/orca-framework.git
+cd orca-framework
 ./scripts/validate-repo.sh
-./install/install.sh --mode local --target ./.orca-hvn
-export PATH="$(pwd)/.orca-hvn/bin:$PATH"
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn
+./install/install.sh --mode local --target ./.orca-framework
+export PATH="$(pwd)/.orca-framework/bin:$PATH"
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework
 ```
 
 That gives you:
 
-- a local ORCA install in `./.orca-hvn`
+- a local ORCA install in `./.orca-framework`
 - runnable `orca` and `orca-*` commands
 - install verification and a broader doctor pass
 
@@ -247,7 +247,7 @@ If you want the deeper model behind that, read [docs/intro.md](docs/intro.md), [
 
 Use these next:
 
-- Pages docs home: `https://henryvn27.github.io/orca-hvn/`
+- Pages docs home: `https://henryvn27.github.io/orca-framework/`
 - first 10 minutes: [docs/first-10-minutes.md](docs/first-10-minutes.md)
 - setup and first run: [docs/install-overview.md](docs/install-overview.md), [docs/first-run.md](docs/first-run.md), [docs/first-workflow.md](docs/first-workflow.md)
 - one-prompt showcase: [commands/orca-demo.md](commands/orca-demo.md)

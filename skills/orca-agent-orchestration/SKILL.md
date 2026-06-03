@@ -1,6 +1,6 @@
 # ORCA Agent Orchestration
 
-Use this skill when ORCA-HVN needs to decide whether to stay single-agent or orchestrate subagents.
+Use this skill when ORCA Framework needs to decide whether to stay single-agent or orchestrate subagents.
 
 ## Goal
 

@@ -2,7 +2,7 @@
 
 ## Title
 
-State the proposed ORCA-HVN follow-up title.
+State the proposed ORCA Framework follow-up title.
 
 ## Category
 
@@ -19,7 +19,7 @@ Choose one:
 
 Choose one:
 
-- native ORCA-HVN feature candidate
+- native ORCA Framework feature candidate
 - host-adapter opportunity
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
@@ -28,9 +28,9 @@ Choose one:
 
 Summarize the ecosystem change or feature.
 
-## Why It Matters To ORCA-HVN
+## Why It Matters To ORCA Framework
 
-State the concrete ORCA-HVN benefit.
+State the concrete ORCA Framework benefit.
 
 ## Host Specificity
 
@@ -40,9 +40,9 @@ State whether the finding is cross-harness or host-specific.
 
 - 
 
-## Proposed ORCA-HVN Impact
+## Proposed ORCA Framework Impact
 
-Describe what ORCA-HVN would gain or need to change.
+Describe what ORCA Framework would gain or need to change.
 
 ## UX Impact
 

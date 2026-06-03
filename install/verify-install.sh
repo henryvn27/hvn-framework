@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-target="${HOME}/.orca-hvn"
+target="${HOME}/.orca-framework"
 
 while [ "$#" -gt 0 ]; do
   case "$1" in
@@ -11,7 +11,7 @@ while [ "$#" -gt 0 ]; do
   esac
 done
 
-for item in ORCA-HVN.md README.md commands skills templates docs mcp install scripts bin VERSION; do
+for item in ORCA-Framework.md README.md commands skills templates docs mcp install scripts bin VERSION; do
   [ -e "$target/$item" ] || { printf 'Missing installed item: %s\n' "$target/$item" >&2; exit 1; }
 done
 
@@ -23,4 +23,4 @@ done
 [ -x "$target/install/doctor.sh" ] || { printf 'Missing executable install doctor\n' >&2; exit 1; }
 [ -x "$target/install/verify-install.sh" ] || { printf 'Missing executable install verifier\n' >&2; exit 1; }
 
-printf 'ORCA-HVN install verified at %s\n' "$target"
+printf 'ORCA Framework install verified at %s\n' "$target"

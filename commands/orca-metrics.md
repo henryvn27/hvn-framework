@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Record time, retries, and optional token, cache, or cost signals for an ORCA-HVN workflow run.
+Record time, retries, and optional token, cache, or cost signals for an ORCA Framework workflow run.
 
 ## When To Use
 

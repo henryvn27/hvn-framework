@@ -1,6 +1,6 @@
 # Integration Categories
 
-ORCA-HVN groups integrations by job, not by vendor popularity.
+ORCA Framework groups integrations by job, not by vendor popularity.
 
 ## Web And Product
 

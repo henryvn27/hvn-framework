@@ -1,8 +1,8 @@
-site_name: ORCA-HVN
+site_name: ORCA Framework
 site_description: Orchestration framework for Codex and Claude Code
-site_url: https://henryvn27.github.io/orca-hvn/
-repo_name: henryvn27/orca-hvn
-repo_url: https://github.com/henryvn27/orca-hvn
+site_url: https://henryvn27.github.io/orca-framework/
+repo_name: henryvn27/orca-framework
+repo_url: https://github.com/henryvn27/orca-framework
 edit_uri: edit/main/docs/
 
 theme:

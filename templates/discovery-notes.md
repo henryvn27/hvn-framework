@@ -22,4 +22,4 @@ Record risks that should affect the spec or plan.
 
 ## Recommended Next Step
 
-Name the next ORCA-HVN command and why.
+Name the next ORCA Framework command and why.

@@ -1,6 +1,6 @@
 # Code Of Conduct
 
-ORCA-HVN follows the Contributor Covenant Code of Conduct, version 2.1.
+ORCA Framework follows the Contributor Covenant Code of Conduct, version 2.1.
 
 ## Our Pledge
 

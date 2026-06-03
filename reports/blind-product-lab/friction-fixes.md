@@ -109,7 +109,7 @@ From `reports/blind-product-lab/friction-log.md`:
 ### Deferred / Next Likely Fix
 
 - Linear connector auth is still blocked (401). Once restored, create:
-  - Linear project: “ORCA-HVN Blind Product Lab (Framework)”
+  - Linear project: “ORCA Framework Blind Product Lab (Framework)”
   - Issue: “Add degraded-mode Linear shadow log + later sync script”
 
 ---
@@ -148,7 +148,7 @@ From `reports/blind-product-lab/status.md` and `reports/blind-product-lab/run-hi
 - `reports/blind-product-lab/completion-contract.md`
 - `reports/blind-product-lab/status.md`
 - `reports/blind-product-lab/run-history.md`
-- `$CODEX_HOME/automations/orca-hvn-blind-product-friction-fixer/automation.toml`
+- `$CODEX_HOME/automations/orca-framework-blind-product-friction-fixer/automation.toml`
 
 ### Verification Performed
 

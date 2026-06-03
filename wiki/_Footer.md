@@ -1,5 +1,5 @@
 # Footer
 
-Docs home: `docs/README.md`  
-Start here: `docs/start-here.md`  
-Contributing docs: `docs/contributing-docs.md`
+Docs: `https://henryvn27.github.io/orca-framework/`  
+Manual source: `docs/`  
+Command contracts: `commands/`

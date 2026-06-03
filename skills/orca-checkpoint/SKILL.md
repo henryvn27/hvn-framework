@@ -3,7 +3,7 @@ name: orca-checkpoint
 description: Pause work at explicit decision points, gather inspection context, and record approve/reject/resume outcomes.
 ---
 
-# ORCA-HVN Checkpoint
+# ORCA Framework Checkpoint
 
 ## What This Skill Is
 
@@ -51,6 +51,6 @@ The checkpoint should make the decision easy to inspect and easy to resume from.
 - resuming without recording the decision
 - creating process overhead where no real risk exists
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-approve`, `orca-state`, `orca-inspect`, and `orca-ship`.

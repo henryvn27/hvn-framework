@@ -4,13 +4,13 @@ Feature routing is the decision layer that maps workflow intent to the best avai
 
 ## Common Routing Decisions
 
-ORCA-HVN should route dynamically for:
+ORCA Framework should route dynamically for:
 
 - goal mode versus standard milestone flow
 - MCP-based setup versus manual fallback
 - native integration versus generic workflow
 - host-specific shortcuts versus host-neutral guidance
-- native memory or checkpoint features versus portable ORCA-HVN artifacts
+- native memory or checkpoint features versus portable ORCA Framework artifacts
 
 ## Routing Rules
 

@@ -1,6 +1,6 @@
 # Philosophy
 
-ORCA-HVN exists because agentic software work needs more than speed. It needs durable decisions, clean context boundaries, real verification, and a way to preserve the perspective of a first-time user.
+ORCA Framework exists because agentic software work needs more than speed. It needs durable decisions, clean context boundaries, real verification, and a way to preserve the perspective of a first-time user.
 
 ## Working Beliefs
 
@@ -13,4 +13,4 @@ ORCA-HVN exists because agentic software work needs more than speed. It needs du
 
 ## Practical Discipline
 
-ORCA-HVN favors written artifacts that are short enough to use and specific enough to test. It avoids ceremonial process. Every artifact must help an agent decide, build, verify, review, test, or ship.
+ORCA Framework favors written artifacts that are short enough to use and specific enough to test. It avoids ceremonial process. Every artifact must help an agent decide, build, verify, review, test, or ship.

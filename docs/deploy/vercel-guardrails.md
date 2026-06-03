@@ -48,5 +48,5 @@ Template: [`templates/vercel-static-spa/vercel.json`](../../templates/vercel-sta
 
 The Vercel CLI writes local metadata under `.vercel/`. Keep it out of git for most repos:
 
-- add `.vercel/` to `.gitignore` (already defaulted in ORCA-HVN)
+- add `.vercel/` to `.gitignore` (already defaulted in ORCA Framework)
 

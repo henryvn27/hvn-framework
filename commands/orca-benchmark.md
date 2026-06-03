@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Compare install, onboarding, spec, or orchestration quality across benchmark cases so ORCA-HVN can be evaluated over time.
+Compare install, onboarding, spec, or orchestration quality across benchmark cases so ORCA Framework can be evaluated over time.
 
 ## When To Use
 

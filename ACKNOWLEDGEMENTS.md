@@ -1,12 +1,12 @@
 # Acknowledgements
 
-ORCA-HVN is its own framework, but it did not appear in a vacuum.
+ORCA Framework is its own framework, but it did not appear in a vacuum.
 
 Thanks to the teams and communities whose tools, docs, and public thinking made parts of this project clearer:
 
-- Linear, for making issue-native software coordination unusually clean and for giving ORCA-HVN a strong default system of record
-- GitHub, for the repository, issue, PR, checks, and automation surfaces ORCA-HVN leans on heavily
-- the OpenAI Codex ecosystem, for shaping one of the main executor environments ORCA-HVN is designed to work with
+- Linear, for making issue-native software coordination unusually clean and for giving ORCA Framework a strong default system of record
+- GitHub, for the repository, issue, PR, checks, and automation surfaces ORCA Framework leans on heavily
+- the OpenAI Codex ecosystem, for shaping one of the main executor environments ORCA Framework is designed to work with
 - Claude Code and Hermes Agent, for pushing host-level patterns that made cross-harness compatibility worth documenting explicitly
 - the GitHub Spec Kit project, for helping normalize specification-first AI workflows in public
 - Bloomberg Beta, for publishing an unusually transparent manual that made venture-style written judgment easier to reference directly

@@ -8,7 +8,7 @@
 - Supported workflows: auth flows, session handling, provider integration
 - Validation steps: provider config valid, session strategy documented, protected routes work
 - Common failure modes: incomplete provider setup, session persistence confusion
-- Related ORCA-HVN commands or docs: `orca-integration`, `integration-validation.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `integration-validation.md`
 - Related integrations: Next.js, Postgres, Drizzle, Prisma
 - Risk notes: more control means more integration responsibility
 - Web, mobile, or platform caveats: often web-centric unless explicitly adapted

@@ -1,6 +1,6 @@
 # NotebookLM Validation
 
-NotebookLM validation should confirm the user's real integration mode before ORCA-HVN gives setup or workflow advice.
+NotebookLM validation should confirm the user's real integration mode before ORCA Framework gives setup or workflow advice.
 
 ## What To Verify
 

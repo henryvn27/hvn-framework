@@ -1,17 +1,17 @@
 ---
 name: orca-linear-core
-description: Apply ORCA-HVN's Linear-default coordination model while preserving an explicit opt-out path for teams that use another system of record.
+description: Apply ORCA Framework's Linear-default coordination model while preserving an explicit opt-out path for teams that use another system of record.
 ---
 
-# ORCA-HVN Linear Core
+# ORCA Framework Linear Core
 
 ## What This Skill Is
 
-The coordination policy for ORCA-HVN work when Linear is available or preferred.
+The coordination policy for ORCA Framework work when Linear is available or preferred.
 
 ## Trigger
 
-Use whenever an ORCA-HVN workflow originates from Linear or needs issue, state, comment, handoff, QA, or release coordination.
+Use whenever an ORCA Framework workflow originates from Linear or needs issue, state, comment, handoff, QA, or release coordination.
 
 ## Do Not Trigger
 
@@ -34,7 +34,7 @@ Do not require this skill when the user explicitly opts out of Linear for the pr
 
 1. Confirm whether the project is using Linear-first mode or opt-out mode.
 2. If Linear-first, read issue title, description, labels, state, comments, links, project, assignee, and delegate.
-3. Select the ORCA-HVN command that matches the current gate.
+3. Select the ORCA Framework command that matches the current gate.
 4. Post or prepare a concise issue-thread update after every meaningful pass.
 5. Recommend state transitions only when evidence exists.
 6. If Linear is unavailable or opted out, write the same update to the configured artifact location.
@@ -55,6 +55,6 @@ Coordination must be durable. Another agent should be able to continue from the 
 - Moving gates without evidence.
 - Ignoring an explicit user opt-out.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Supports all Linear commands and maps to `orca-core` in opt-out mode.

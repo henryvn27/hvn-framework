@@ -8,7 +8,7 @@
 - Supported workflows: email sending, transactional workflows
 - Validation steps: domain verified, key present, test email succeeds
 - Common failure modes: unverified domain, environment mismatch, templates untested
-- Related ORCA-HVN commands or docs: `orca-integration`, `saas-stack-guide.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `saas-stack-guide.md`
 - Related integrations: React Email, Next.js, Stripe
 - Risk notes: deliverability and domain setup matter
 - Web, mobile, or platform caveats: backend or web service concern, not a native mobile push substitute

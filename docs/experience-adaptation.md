@@ -1,6 +1,6 @@
 # Experience Adaptation
 
-ORCA-HVN adapts next-step guidance to the user and situation without requiring a formal expertise setting.
+ORCA Framework adapts next-step guidance to the user and situation without requiring a formal expertise setting.
 The same idea extends to lightweight learning help and coaching.
 
 ## Signals

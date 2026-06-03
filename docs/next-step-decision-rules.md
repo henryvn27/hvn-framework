@@ -1,6 +1,6 @@
 # Next-Step Decision Rules
 
-ORCA-HVN chooses the next recommendation from the state of the current phase, risk, and verification evidence.
+ORCA Framework chooses the next recommendation from the state of the current phase, risk, and verification evidence.
 
 ## Recommendation Choices
 

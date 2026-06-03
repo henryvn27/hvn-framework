@@ -1,6 +1,6 @@
 # Background Task Types
 
-ORCA-HVN background mode is safe only when task type and autonomy level match.
+ORCA Framework background mode is safe only when task type and autonomy level match.
 
 ## Safe Or Preferred
 

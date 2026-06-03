@@ -1,6 +1,6 @@
 # Context Passing
 
-ORCA-HVN should pass only the context a subagent actually needs.
+ORCA Framework should pass only the context a subagent actually needs.
 
 ## Required Packet Fields
 

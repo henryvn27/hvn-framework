@@ -1,6 +1,6 @@
 # Opt-Out Feedback
 
-If the user says they want no coaching, ORCA-HVN should respond by honoring it directly.
+If the user says they want no coaching, ORCA Framework should respond by honoring it directly.
 
 Example:
 

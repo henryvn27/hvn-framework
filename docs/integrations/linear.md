@@ -1,10 +1,10 @@
 # Linear Integration
 
-Linear integration is useful when Linear is the system of record for ORCA-HVN intake, planning, QA, review, and ship readiness.
+Linear integration is useful when Linear is the system of record for ORCA Framework intake, planning, QA, review, and ship readiness.
 
 ## When Linear Is Required
 
-Require Linear setup when ORCA-HVN must:
+Require Linear setup when ORCA Framework must:
 
 - read the source issue directly
 - post specs, plans, QA reports, review notes, or ship checks
@@ -18,7 +18,7 @@ Linear is optional when:
 
 - the user pastes issue context manually
 - the team uses another system of record
-- ORCA-HVN can write local artifacts for later posting
+- ORCA Framework can write local artifacts for later posting
 - the next phase does not require tracker writes
 
 ## Setup Paths
@@ -44,7 +44,7 @@ Prefer non-destructive checks:
 - confirm the workspace or team is reachable
 - read the target issue
 - confirm comment or update capability only when required
-- verify the issue, project, and state names ORCA-HVN will use
+- verify the issue, project, and state names ORCA Framework will use
 
 If write validation is risky, use a smoke-test issue or ask the user before posting.
 
@@ -52,7 +52,7 @@ Runtime adaptation should avoid recommending direct Linear sync as the default w
 
 ## Fallback
 
-If Linear is unavailable, ORCA-HVN can still:
+If Linear is unavailable, ORCA Framework can still:
 
 - work from pasted issue context
 - produce local spec, plan, QA, review, and ship artifacts

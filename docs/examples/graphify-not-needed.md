@@ -2,7 +2,7 @@
 
 Use this when the vault is small, the task is narrow, or direct vault reading already answers the question.
 
-Good ORCA-HVN behavior:
+Good ORCA Framework behavior:
 
 - answer from the available vault evidence
 - avoid recommending graph tooling

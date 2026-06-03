@@ -1,6 +1,6 @@
 # Staleness Detection
 
-Not every doc becomes stale the same way. ORCA-HVN tracks drift by change triggers, not only by age.
+Not every doc becomes stale the same way. ORCA Framework tracks drift by change triggers, not only by age.
 
 ## High-Risk Drift Signals
 

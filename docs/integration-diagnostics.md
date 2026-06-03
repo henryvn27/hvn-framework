@@ -1,6 +1,6 @@
 # Integration Diagnostics
 
-When an integration is missing or failing, ORCA-HVN should diagnose the class of failure, not just say "setup is broken."
+When an integration is missing or failing, ORCA Framework should diagnose the class of failure, not just say "setup is broken."
 
 ## Common Diagnostic Classes
 

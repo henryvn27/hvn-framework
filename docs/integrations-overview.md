@@ -1,12 +1,12 @@
 # Integrations Overview
 
-ORCA-HVN integrations are structured capability packs for the tools modern product teams actually use to build and operate apps.
+ORCA Framework integrations are structured capability packs for the tools modern product teams actually use to build and operate apps.
 
 That includes upstream skill packs that ORCA wraps officially. If an upstream pack is already the best maintained implementation of a capability area, ORCA should expose it as an ORCA pathway instead of forcing users to think in separate product silos.
 
 The most important current examples are Impeccable and Superpowers.
 
-This is not a logo wall. An integration only counts when ORCA-HVN can describe:
+This is not a logo wall. An integration only counts when ORCA Framework can describe:
 
 - when to use it
 - how to set it up
@@ -16,11 +16,11 @@ This is not a logo wall. An integration only counts when ORCA-HVN can describe:
 - what fallback exists
 
 Support is broader than recommendation. Recommendation should stay narrower and fit-based.
-ORCA-HVN should prefer the path that reduces setup and decision burden, not the path with the biggest tool surface.
+ORCA Framework should prefer the path that reduces setup and decision burden, not the path with the biggest tool surface.
 
 ## What An Integration Is
 
-An ORCA-HVN integration is a reviewed support layer for a platform, service, SDK, or workflow dependency.
+An ORCA Framework integration is a reviewed support layer for a platform, service, SDK, or workflow dependency.
 
 Support may include:
 
@@ -34,7 +34,7 @@ Support may include:
 
 ## Support Types
 
-ORCA-HVN may support an integration through:
+ORCA Framework may support an integration through:
 
 - docs-first guidance
 - setup and validation commands
@@ -42,7 +42,7 @@ ORCA-HVN may support an integration through:
 - paved-road bundle recommendations
 - host-specific fallback guidance
 
-That does not mean ORCA-HVN should recommend the tool by default. See [integration-recommendation-policy.md](integration-recommendation-policy.md).
+That does not mean ORCA Framework should recommend the tool by default. See [integration-recommendation-policy.md](integration-recommendation-policy.md).
 
 Not every integration gets the same depth on day one.
 

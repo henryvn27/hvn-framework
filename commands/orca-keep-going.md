@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Continue a current ORCA-HVN task in a bounded background run.
+Continue a current ORCA Framework task in a bounded background run.
 
 ## When To Use
 
-Use when the user wants ORCA-HVN to keep making progress while they are away and a safe contract can be defined quickly.
+Use when the user wants ORCA Framework to keep making progress while they are away and a safe contract can be defined quickly.
 
 ## Required Inputs
 

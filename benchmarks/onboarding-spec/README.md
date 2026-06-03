@@ -1,6 +1,6 @@
 # Onboarding And Spec Benchmark Pack
 
-This pack helps compare how well ORCA-HVN handles ambiguous intake and spec creation across versions or workflow changes.
+This pack helps compare how well ORCA Framework handles ambiguous intake and spec creation across versions or workflow changes.
 
 ## Contents
 

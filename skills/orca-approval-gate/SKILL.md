@@ -3,7 +3,7 @@ name: orca-approval-gate
 description: Decide when risky work must pause for approval and record the approval request clearly.
 ---
 
-# ORCA-HVN Approval Gate
+# ORCA Framework Approval Gate
 
 ## What This Skill Is
 
@@ -50,6 +50,6 @@ A maintainer should understand the risk, decision, and next step quickly.
 - Requesting approval without stating the blast radius.
 - Expanding scope while waiting for approval.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Supports `orca-plan`, `orca-build`, `orca-approve`, `orca-security-check`, and `orca-ship`.

@@ -2,8 +2,8 @@
 
 Supported is not the same as recommended.
 
-ORCA-HVN may support many tools, but it should recommend only a smaller set when the user's use case strongly fits the evidence-backed default.
-The deciding question is not "can ORCA-HVN support this?" but "does surfacing this reduce more friction than it creates?"
+ORCA Framework may support many tools, but it should recommend only a smaller set when the user's use case strongly fits the evidence-backed default.
+The deciding question is not "can ORCA Framework support this?" but "does surfacing this reduce more friction than it creates?"
 
 ## Core Rule
 
@@ -11,7 +11,7 @@ Recommend a tool only when:
 
 - the use case is clear enough
 - the fit is strong enough
-- the recommendation is backed by ORCA-HVN's researched paved-road guidance
+- the recommendation is backed by ORCA Framework's researched paved-road guidance
 - the tool helps the user's actual goal rather than just being popular
 
 Stay neutral when:
@@ -25,7 +25,7 @@ Switch to setup-help mode when:
 
 - the user already chose the tool
 - the user asked to configure or validate a specific integration
-- the tool is not ORCA-HVN's top default, but it is still compatible with the user's goal
+- the tool is not ORCA Framework's top default, but it is still compatible with the user's goal
 
 ## NotebookLM Rule
 

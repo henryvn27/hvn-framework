@@ -1,6 +1,6 @@
 # Commands
 
-ORCA-HVN commands are workflow command definitions stored as markdown in `commands/`.
+ORCA Framework commands are workflow command definitions stored as markdown in `commands/`.
 
 The install flow also ships a runnable command layer:
 
@@ -72,6 +72,7 @@ These commands read from and post back to Linear issues when Linear-first mode i
 - `orca-explain`
 - `orca-context`
 - `orca-status`
+- `orca-monitor-status`
 - `orca-controller`
 - `orca-orient`
 - `orca-schema`
@@ -132,7 +133,7 @@ Use `orca-trace` and `orca-eval` when the workflow itself needs review, not just
 When a user supplies a vault or live note system, treat it as the primary workflow evidence source for recommendation and research questions, and label any extrapolation clearly.
 Use `orca-install` and `orca-doctor` when the main job is getting ORCA installed, validated, or recovered from a partial setup.
 Use `orca-check-updates` when the user wants visibility before changing versions, and `orca-update` when the update path itself needs verification, deferral, apply, rollback, or recovery logic.
-Use `orca-improve-framework` at the end of meaningful sessions when reusable ORCA-HVN friction or strong session-quality signals may deserve a framework issue or backlog entry.
+Use `orca-improve-framework` at the end of meaningful sessions when reusable ORCA Framework friction or strong session-quality signals may deserve a framework issue or backlog entry.
 Use the self-improvement docs and skill when deciding whether a signal belongs in the local instance loop or the framework loop.
 Use `orca-integration` when the user needs stack routing, integration selection, or platform-aware tool guidance.
 Use `orca-impeccable` when the user wants Impeccable to feel built into ORCA instead of operating as a separate design product, and prefer that path for design-heavy frontend work when Impeccable is the strongest fit.
@@ -159,6 +160,7 @@ Use `orca-tool-review` and `orca-mcp-review` before introducing new tools, expan
 Use `orca-setup`, `orca-check-setup`, and `orca-validate-integration` when GitHub, Linear, MCP, connectors, or CLI helpers are needed for the workflow.
 Use integration packs and stack guides when web, mobile, auth, billing, analytics, monitoring, or automation choices materially affect the recommended path.
 Use `orca-runtime` and `orca-status` when harness capabilities or policy switches should change the recommended path or need inspection.
+Use `orca-monitor-status` when Orca Monitor or another local watcher needs a tiny workflow-context snapshot without parsing ORCA internals.
 Use `orca-context` when the user is pointing at something recent or visible but has not named the actual artifact clearly.
 Use `orca-controller` and `orca-orient` when an external controller agent needs a fast current-state view.
 Use `orca-delegate` when another harness or collaborator should execute bounded work, and `orca-ingest` when structured results return.

@@ -2,7 +2,7 @@
 
 ## Title
 
-Refresh ORCA-HVN Codex guidance for default goal support and newer governance surfaces
+Refresh ORCA Framework Codex guidance for default goal support and newer governance surfaces
 
 ## Category
 
@@ -16,9 +16,9 @@ Refresh ORCA-HVN Codex guidance for default goal support and newer governance su
 
 Codex moved beyond the original `0.133.0` goal-mode shift; current releases (latest `0.135.0`) keep goals enabled by default and add stronger `codex doctor` diagnostics, named permission profiles in `/permissions`, non-interactive install (`CODEX_NON_INTERACTIVE=1`), and more stable remote/resume behavior.
 
-## Why It Matters To ORCA-HVN
+## Why It Matters To ORCA Framework
 
-ORCA-HVN still describes Codex `/goal` as possibly experimental and keeps a weaker baseline than the current host now warrants.
+ORCA Framework still describes Codex `/goal` as possibly experimental and keeps a weaker baseline than the current host now warrants.
 
 ## Host Specificity
 
@@ -28,7 +28,7 @@ Codex-specific.
 
 - https://github.com/openai/codex/releases
 
-## Proposed ORCA-HVN Impact
+## Proposed ORCA Framework Impact
 
 Refresh Codex host docs, compatibility guidance, and examples so goal-mode guidance is version-aware but no longer framed as a maybe-experimental path by default.
 
@@ -50,7 +50,7 @@ High. This is directly documented in the official Codex release notes.
 
 ## Earlier Sightings
 
-- 2026-05-31 initial live ORCA-HVN ecosystem sweep
+- 2026-05-31 initial live ORCA Framework ecosystem sweep
 - 2026-05-31 same-day refresh: updated to `0.135.0` release details
 
 ## Watch And Opportunity Links

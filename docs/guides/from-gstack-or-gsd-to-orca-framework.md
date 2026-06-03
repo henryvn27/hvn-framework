@@ -1,12 +1,12 @@
-# Moving From GStack Or GSD To ORCA-HVN
+# Moving From GStack Or GSD To ORCA Framework
 
 ## What This Guide Is For
 
-Use this guide if you started with GStack or GSD patterns and want to understand how ORCA-HVN replaces that workflow.
+Use this guide if you started with GStack or GSD patterns and want to understand how ORCA Framework replaces that workflow.
 
-Do not treat ORCA-HVN as something you run alongside them. The intended path is to use ORCA-HVN itself as the workflow system.
+Do not treat ORCA Framework as something you run alongside them. The intended path is to use ORCA Framework itself as the workflow system.
 
-## Why ORCA-HVN Exists
+## Why ORCA Framework Exists
 
 GStack and GSD helped shape some early ideas:
 
@@ -14,7 +14,7 @@ GStack and GSD helped shape some early ideas:
 - more explicit workflow structure
 - better task momentum
 
-But ORCA-HVN is the clearer replacement:
+But ORCA Framework is the clearer replacement:
 
 - one named framework
 - one command surface
@@ -43,7 +43,7 @@ Start here:
 
 ## Common Mistake To Avoid
 
-Do not keep ORCA-HVN as a thin wrapper around an older GStack or GSD routine. If you are adopting ORCA-HVN, let ORCA own the workflow.
+Do not keep ORCA Framework as a thin wrapper around an older GStack or GSD routine. If you are adopting ORCA Framework, let ORCA own the workflow.
 
 Do not assume ORCA is only the beginner layer before switching to something else. The intent is that ORCA is both the teaching surface and the durable operating surface.
 

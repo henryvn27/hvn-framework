@@ -1,6 +1,6 @@
 # Idea Research
 
-ORCA-HVN idea research is decision-support research. It is not a ceremony for proving that the idea is great.
+ORCA Framework idea research is decision-support research. It is not a ceremony for proving that the idea is great.
 
 ## Purpose
 

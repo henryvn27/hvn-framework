@@ -1,6 +1,6 @@
 # Recommendation Confidence
 
-ORCA-HVN should avoid false certainty in stack guidance.
+ORCA Framework should avoid false certainty in stack guidance.
 
 ## Confidence Levels
 

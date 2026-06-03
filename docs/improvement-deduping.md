@@ -4,7 +4,7 @@ Framework improvement issues should be high signal. Duplicate creation lowers tr
 
 ## Deduping Rule
 
-Before drafting a new issue, ORCA-HVN should check:
+Before drafting a new issue, ORCA Framework should check:
 
 - existing GitHub issues when access is available
 - local improvement backlog entries

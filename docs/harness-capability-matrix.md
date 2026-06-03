@@ -1,6 +1,6 @@
 # Harness Capability Matrix
 
-This matrix summarizes how ORCA-HVN orchestration concepts map across harnesses.
+This matrix summarizes how ORCA Framework orchestration concepts map across harnesses.
 
 ## Capability Areas
 
@@ -13,7 +13,7 @@ This matrix summarizes how ORCA-HVN orchestration concepts map across harnesses.
 - result ingestion support
 - fallback manual delegation support
 
-## ORCA-HVN Priority
+## ORCA Framework Priority
 
 For orchestration-heavy work, ORCA should care most about:
 

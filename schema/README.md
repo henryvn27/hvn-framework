@@ -1,6 +1,6 @@
 # Schema Layer
 
-This directory contains ORCA-HVN's portable artifact schema layer.
+This directory contains ORCA Framework's portable artifact schema layer.
 
 ## Goals
 
@@ -40,5 +40,6 @@ Each schema includes:
 - regression task
 - approval request
 - runtime status
+- Orca Monitor status
 
 See [docs/portable-artifacts.md](../docs/portable-artifacts.md) and [docs/schema-versioning.md](../docs/schema-versioning.md) for the operating model.

@@ -3,7 +3,7 @@ name: orca-review
 description: Review changes for bugs, regressions, maintainability, tests, and release risk.
 ---
 
-# ORCA-HVN Review
+# ORCA Framework Review
 
 ## What This Skill Is
 
@@ -56,6 +56,6 @@ The report should read like a real reviewer, not like a model smoothing the conv
 - Missing tests for behavior changes.
 - Using vague review language that hides the actual bug or risk.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-design`, `orca-security`, and `orca-ship`.

@@ -1,6 +1,6 @@
 # Human Voice
 
-ORCA-HVN should push UI copy, UX copy, marketing copy, and workflow artifacts away from obvious machine tone.
+ORCA Framework should push UI copy, UX copy, marketing copy, and workflow artifacts away from obvious machine tone.
 
 ## Symptoms Of AI-Sounding Copy
 
@@ -50,6 +50,34 @@ These are not banned because they are always wrong. They are banned because ORCA
 - cut filler before polishing tone
 - prefer one sharp sentence over three soft ones
 - match tone to context instead of using one "friendly AI" voice everywhere
+
+## Status Update Rules
+
+- report the concrete action first, not the framework umbrella
+- name the object being changed when it is known: docs, plan, runtime status, test suite, setup script, receipt, or issue
+- mention ORCA only as the workflow layer or tool being used when that adds clarity
+- only say ORCA itself is being updated when the framework repo, command surface, docs, templates, or behavior are the thing changing
+- if a user cannot tell whether the agent is planning, editing docs, running QA, or changing the framework, the status update is too vague
+
+Prefer this shape for progress updates:
+
+- action
+- object
+- why
+- next check
+
+Good:
+
+- `I am updating the ORCA docs to tighten the registration handoff guidance, then I will rerun preflight.`
+- `I am using ORCA's planning tools to break the blocker into the next implementation slice.`
+- `I am running ORCA's review step on the current auth change to check for regressions.`
+
+Bad:
+
+- `I am using ORCA.`
+- `I am updating ORCA.`
+- `I am running the ORCA workflow.`
+- `I am progressing through ORCA.`
 
 ## Artifact Rewrite Test
 

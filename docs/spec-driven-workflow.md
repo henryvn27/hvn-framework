@@ -1,6 +1,6 @@
 # Spec-Driven Workflow
 
-ORCA-HVN is spec-driven because implementation quality depends on having a clear contract before build and QA begin.
+ORCA Framework is spec-driven because implementation quality depends on having a clear contract before build and QA begin.
 
 That contract should usually come after idea shaping and validation, not instead of them.
 
@@ -47,7 +47,7 @@ Spec-driven work reduces:
 - untestable done states
 - QA confusion about intended behavior
 
-It should not be used to cover for unresolved opportunity questions. If the team still does not know whether the idea deserves to exist, ORCA-HVN should stay in the ideation lane until the next validation step is clear.
+It should not be used to cover for unresolved opportunity questions. If the team still does not know whether the idea deserves to exist, ORCA Framework should stay in the ideation lane until the next validation step is clear.
 
 The spec is the contract. The plan is the route. The trace is the record. The eval is the judgment.
 

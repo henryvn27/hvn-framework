@@ -1,6 +1,6 @@
 # Integration Priorities
 
-ORCA-HVN should not pretend every integration is equally mature.
+ORCA Framework should not pretend every integration is equally mature.
 
 ## Tier 1: First-Class
 

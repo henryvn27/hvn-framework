@@ -3,7 +3,7 @@
 ## Run Identity
 
 - Workflow type: spec-and-plan
-- Issue or run ID: ORCA-HVN-132
+- Issue or run ID: ORCA-132
 - Harness: Codex
 
 ## Timing

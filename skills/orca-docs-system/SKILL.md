@@ -1,9 +1,9 @@
 ---
 name: orca-docs-system
-description: Maintain ORCA-HVN's layered docs system, wiki routing, start-here flow, and doc refresh signals without creating orphaned doc sprawl.
+description: Maintain ORCA Framework's layered docs system, wiki routing, start-here flow, and doc refresh signals without creating orphaned doc sprawl.
 ---
 
-# ORCA-HVN Docs System
+# ORCA Framework Docs System
 
 ## Trigger
 
@@ -33,7 +33,7 @@ Use when a user asks for:
 
 ## Quality Bar
 
-The docs system should make ORCA-HVN easier to enter and easier to navigate after feature growth.
+The docs system should make ORCA Framework easier to enter and easier to navigate after feature growth.
 
 ## Common Failure Modes
 

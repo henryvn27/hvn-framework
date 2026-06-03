@@ -1,6 +1,6 @@
-# ORCA-HVN Ecosystem Sweep Tracked Sources
+# ORCA Framework Ecosystem Sweep Tracked Sources
 
-This file defines the baseline source set for the recurring ORCA-HVN ecosystem sweep.
+This file defines the baseline source set for the recurring ORCA Framework ecosystem sweep.
 Prefer official docs, release notes, changelogs, and upstream repositories.
 
 ## Harnesses
@@ -158,13 +158,13 @@ Prefer official docs, release notes, changelogs, and upstream repositories.
 - specialized design-quality tools and where orchestration should complement rather than replace them
 - prompt caching stability requirements
 - token-aware model effort or task-budget controls
-- cache-read and usage telemetry that ORCA-HVN can surface
+- cache-read and usage telemetry that ORCA Framework can surface
 - summarization and checkpoint patterns that reduce repeated long-context replay
 - modern startup default-stack drift across web and mobile product teams
 - Expo and React Native workflow changes
 - EAS build and update workflow changes
 - native mobile subscription guidance versus web billing guidance
-- auth, analytics, monitoring, and push defaults that affect ORCA-HVN stack recommendations
+- auth, analytics, monitoring, and push defaults that affect ORCA Framework stack recommendations
 - evidence that a current default is losing best-fit status for a common use case
 - evidence that a supported tool should remain setup-only rather than recommended
 - evidence that NotebookLM should stay optional rather than becoming a default recommendation
@@ -176,9 +176,9 @@ For each materially changed harness, answer:
 
 - What new feature or behavior appeared?
 - Does it affect execution, memory, inspection, safety, or usability?
-- Can ORCA-HVN exploit it directly, wrap it through a host adapter, or only learn from the pattern?
+- Can ORCA Framework exploit it directly, wrap it through a host adapter, or only learn from the pattern?
 - Is the capability cross-harness or host-specific?
-- What repo, docs, command, template, or workflow change would ORCA-HVN need?
+- What repo, docs, command, template, or workflow change would ORCA Framework need?
 - Does it improve beginner UX, expert UX, or both?
 - Is it worth building now?
 
@@ -186,11 +186,11 @@ For each materially changed harness, answer:
 
 For each tracked harness, answer:
 
-- Which ORCA-HVN-relevant capabilities are clearly supported, partial, not supported, or unclear?
+- Which ORCA Framework-relevant capabilities are clearly supported, partial, not supported, or unclear?
 - What changed since the last audit?
 - What setup or policy caveats affect real usability?
 - Which integrations are native, external, or manual?
-- What should ORCA-HVN recommend today for this harness?
+- What should ORCA Framework recommend today for this harness?
 - What should stay marked `unclear` pending more evidence?
 
 ## Integration Setup Questions
@@ -200,11 +200,11 @@ For each GitHub, Linear, MCP, connector, auth, permission, or host-specific setu
 - What changed in the setup path?
 - Which hosts are affected?
 - Which method changed: native connector, MCP, API token, plugin, CLI helper, or manual?
-- Does this create a better default path ORCA-HVN should recommend?
-- Does this break or deprecate an old ORCA-HVN recommendation?
+- Does this create a better default path ORCA Framework should recommend?
+- Does this break or deprecate an old ORCA Framework recommendation?
 - Does the change affect beginner setup, advanced setup, or both?
 - Is the change host-specific or broadly portable?
-- Should ORCA-HVN docs, commands, templates, host adapters, or degraded-mode guidance change?
+- Should ORCA Framework docs, commands, templates, host adapters, or degraded-mode guidance change?
 
 ## Recommendation Categories
 
@@ -220,7 +220,7 @@ For each GitHub, Linear, MCP, connector, auth, permission, or host-specific setu
 For material design, copy, or interface-quality shifts, answer:
 
 - What helps user-facing work feel more product-specific and less generic?
-- What concrete layout, typography, copy, or motion patterns should ORCA-HVN encourage or discourage?
+- What concrete layout, typography, copy, or motion patterns should ORCA Framework encourage or discourage?
 - Does the finding belong in visual-quality guidance, human-voice guidance, or `orca-design` review standards?
 - Does it suggest using a specialized design or writing tool instead of building another generic abstraction?
 
@@ -231,14 +231,14 @@ For material token-efficiency shifts, answer:
 - What changed that could reduce token spend without degrading quality?
 - Does it improve caching, budgeting, tool use, context management, or telemetry?
 - Is the gain host-specific, provider-specific, or broadly portable?
-- Should ORCA-HVN change token-efficiency guidance, stage budgets, accounting, or runtime behavior?
+- Should ORCA Framework change token-efficiency guidance, stage budgets, accounting, or runtime behavior?
 - Does the change reduce retries and repeated context, or only reduce nominal per-call spend?
 
 ## Stack Integration Questions
 
 For material stack and integration shifts, answer:
 
-- Does this change ORCA-HVN's default recommendation for web, mobile, SaaS, or internal-tool stacks?
+- Does this change ORCA Framework's default recommendation for web, mobile, SaaS, or internal-tool stacks?
 - Is the change tier 1, tier 2, or watchlist relevance?
 - Does it require pack updates, new diagnostics, or paved-road changes?
 - Does it clarify a platform boundary, especially around mobile billing, push, auth, build, or OTA updates?
@@ -249,7 +249,7 @@ For material recommendation shifts, answer:
 
 - Does the evidence support recommendation or only support?
 - Which use case does the fit apply to?
-- Should ORCA-HVN change a strong default to good fit, possible fit, or neutral support?
+- Should ORCA Framework change a strong default to good fit, possible fit, or neutral support?
 - Is the signal about real fit or just market popularity?
 
 ## Source Quality Rules

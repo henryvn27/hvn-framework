@@ -1,6 +1,6 @@
 # Example: Expo Mobile Stack
 
-Default ORCA-HVN recommendation:
+Default ORCA Framework recommendation:
 
 - Expo
 - React Native

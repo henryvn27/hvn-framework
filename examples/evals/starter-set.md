@@ -1,6 +1,6 @@
 # Starter Eval Set
 
-This starter set gives ORCA-HVN a practical baseline of 12 issue-shaped eval cases.
+This starter set gives ORCA Framework a practical baseline of 12 issue-shaped eval cases.
 
 ## Cases
 

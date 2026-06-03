@@ -1,6 +1,6 @@
 # Handoffs And Escalations
 
-ORCA-HVN needs explicit subagent return semantics.
+ORCA Framework needs explicit subagent return semantics.
 
 ## Valid Return States
 

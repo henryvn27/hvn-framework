@@ -1,7 +1,7 @@
 {
   "schema_family": "spec",
   "schema_version": "1.0.0",
-  "linked_work_item": "ORCA-HVN-144",
+  "linked_work_item": "ORCA-144",
   "goal": "Add portable artifact schema support incrementally.",
   "background": "The framework already has human-readable contracts and durable artifacts.",
   "users_and_scenarios": [

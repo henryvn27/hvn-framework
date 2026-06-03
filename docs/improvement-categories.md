@@ -1,6 +1,6 @@
 # Improvement Categories
 
-ORCA-HVN should only create framework-improvement candidates for reusable framework problems.
+ORCA Framework should only create framework-improvement candidates for reusable framework problems.
 
 ## Typical Categories
 
@@ -27,7 +27,7 @@ ORCA-HVN should only create framework-improvement candidates for reusable framew
 Ask:
 
 - Is the pain caused by this repo or product?
-- Or is the pain caused by ORCA-HVN itself?
+- Or is the pain caused by ORCA Framework itself?
 
 Usually project-specific:
 

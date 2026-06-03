@@ -21,4 +21,4 @@
 ## Known Losses
 
 - long-form rationale may stay only in the Markdown artifact
-- some tracker fields may not preserve ORCA-HVN schema identity directly
+- some tracker fields may not preserve ORCA Framework schema identity directly

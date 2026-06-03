@@ -8,7 +8,7 @@
 - Supported workflows: lighter support and ecosystem watch
 - Validation steps: access works, connected tools reviewed
 - Common failure modes: hidden trust boundaries, unclear action scope
-- Related ORCA-HVN commands or docs: `orca-tool-review`, `orca-mcp-review`
+- Related ORCA Framework commands or docs: `orca-tool-review`, `orca-mcp-review`
 - Related integrations: GitHub, Linear, OpenAI
 - Risk notes: watchlist until stronger reviewed patterns are adopted
 - Web, mobile, or platform caveats: automation and tool-governance surface

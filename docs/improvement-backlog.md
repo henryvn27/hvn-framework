@@ -1,6 +1,6 @@
 # Improvement Backlog
 
-This backlog stores recurring ORCA-HVN improvement candidates that came from real sessions.
+This backlog stores recurring ORCA Framework improvement candidates that came from real sessions.
 
 It is not a dump of every complaint.
 
@@ -11,7 +11,7 @@ Use it to:
 - record candidates before external submission
 - track repeated friction across sessions
 - track repeated quality signals across sessions
-- track where ORCA-HVN added setup burden, tool clutter, or avoidable workflow ceremony
+- track where ORCA Framework added setup burden, tool clutter, or avoidable workflow ceremony
 - separate local adaptation candidates from framework candidates
 - link likely duplicates
 - give automation a durable place to spot patterns

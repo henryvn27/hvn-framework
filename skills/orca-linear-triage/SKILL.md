@@ -1,13 +1,13 @@
 ---
 name: orca-linear-triage
-description: Triage Linear issues into ORCA-HVN-ready work items with labels, missing questions, and next-gate recommendations.
+description: Triage Linear issues into ORCA Framework-ready work items with labels, missing questions, and next-gate recommendations.
 ---
 
-# ORCA-HVN Linear Triage
+# ORCA Framework Linear Triage
 
 ## What This Skill Is
 
-A workflow for turning incoming Linear issues into clear ORCA-HVN units of work.
+A workflow for turning incoming Linear issues into clear ORCA Framework units of work.
 
 ## Trigger
 
@@ -52,6 +52,6 @@ The issue should become specific enough for spec or be clearly blocked.
 - Combining unrelated requests in one issue.
 - Skipping labels that route QA or security.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-linear-intake`, `orca-onboard`, and `orca-spec`.

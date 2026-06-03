@@ -5,12 +5,12 @@ Use this page if you want the compact path.
 ## Fast Path
 
 ```sh
-git clone https://github.com/henryvn27/orca-hvn.git
-cd orca-hvn
+git clone https://github.com/henryvn27/orca-framework.git
+cd orca-framework
 ./scripts/validate-repo.sh
-./install/install.sh --mode local --target ./.orca-hvn
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn --services github,linear
+./install/install.sh --mode local --target ./.orca-framework
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework --services github,linear
 ```
 
 ## Choose Only What You Need

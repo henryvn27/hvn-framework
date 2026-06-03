@@ -3,7 +3,7 @@ name: orca-testflight-release
 description: Build, sign, archive, export, and upload Control Studios Apple apps to App Store Connect or TestFlight with explicit release-state evidence.
 ---
 
-# ORCA-HVN TestFlight Release
+# ORCA Framework TestFlight Release
 
 ## What This Skill Is
 
@@ -65,6 +65,6 @@ A maintainer should be able to tell exactly how far the release got without conf
 - forcing a global code-sign identity that breaks dependency signing
 - changing signing state without regenerating an XcodeGen project
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-ship`, `orca-testflight-ops`, and `orca-linear-release`.

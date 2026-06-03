@@ -14,7 +14,7 @@ Bounded unattended progress with explicit autonomy, stop conditions, and receipt
 
 ## Compatibility Matrix
 
-A harness-by-capability view of what ORCA-HVN can safely recommend.
+A harness-by-capability view of what ORCA Framework can safely recommend.
 
 ## Controller Agent
 
@@ -50,7 +50,7 @@ Short for execution receipt. The quick review surface for what a run did and wha
 
 ## Runtime Adaptation
 
-The process of choosing the safest reviewed ORCA-HVN behavior for the active harness and setup state.
+The process of choosing the safest reviewed ORCA Framework behavior for the active harness and setup state.
 
 ## Shadow Mode
 

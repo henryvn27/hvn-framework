@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Record or inspect artifact lineage across an ORCA-HVN workflow.
+Record or inspect artifact lineage across an ORCA Framework workflow.
 
 ## When To Use
 

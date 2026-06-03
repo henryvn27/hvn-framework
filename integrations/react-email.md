@@ -8,7 +8,7 @@
 - Supported workflows: email template authoring and rendering
 - Validation steps: preview works, send path chosen, rendering tested
 - Common failure modes: no sending provider chosen, email templates not tested in clients
-- Related ORCA-HVN commands or docs: `orca-design`, `orca-integration`
+- Related ORCA Framework commands or docs: `orca-design`, `orca-integration`
 - Related integrations: Resend, Next.js
 - Risk notes: template generation is not the same thing as deliverability
 - Web, mobile, or platform caveats: email-system concern, not a mobile push path

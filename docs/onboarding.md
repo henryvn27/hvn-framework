@@ -2,7 +2,7 @@
 
 Onboarding turns an unclear request, issue, or project idea into enough context for a useful spec.
 
-It should also act as a teaching surface. A good onboarding flow helps a user understand how ORCA-HVN works while it is gathering the information needed for the next step.
+It should also act as a teaching surface. A good onboarding flow helps a user understand how ORCA Framework works while it is gathering the information needed for the next step.
 That teaching should feel like lightweight support, not correction.
 
 ## Output
@@ -14,11 +14,11 @@ Onboarding should produce:
 - unresolved questions
 - recommended workflow
 - draft spec skeleton when useful
-- enough clarity that the user does not need a teammate to explain what ORCA-HVN should do next
+- enough clarity that the user does not need a teammate to explain what ORCA Framework should do next
 
 ## Teaching Role
 
-Onboarding is one of the main places where ORCA-HVN should reduce the need for manual training.
+Onboarding is one of the main places where ORCA Framework should reduce the need for manual training.
 
 It should:
 

@@ -1,10 +1,10 @@
 # Harness Compatibility
 
-Harness compatibility is ORCA-HVN's answer to "what works where." It tracks which host environments support the capabilities and integrations ORCA-HVN depends on, and how confidently those claims are backed by current evidence.
+Harness compatibility is ORCA Framework's answer to "what works where." It tracks which host environments support the capabilities and integrations ORCA Framework depends on, and how confidently those claims are backed by current evidence.
 
-## What ORCA-HVN Tracks
+## What ORCA Framework Tracks
 
-ORCA-HVN tracks harnesses it targets directly or watches closely:
+ORCA Framework tracks harnesses it targets directly or watches closely:
 
 - Codex
 - Claude Code
@@ -15,7 +15,7 @@ ORCA-HVN tracks harnesses it targets directly or watches closely:
 
 ## Capabilities That Matter
 
-ORCA-HVN cares about capabilities that affect real workflow quality:
+ORCA Framework cares about capabilities that affect real workflow quality:
 
 - goal or long-running objective support
 - run memory or long-term memory support
@@ -32,7 +32,7 @@ ORCA-HVN cares about capabilities that affect real workflow quality:
 
 The compatibility matrix uses conservative status labels:
 
-- `supported`: current evidence shows the capability is available in a way ORCA-HVN can likely use
+- `supported`: current evidence shows the capability is available in a way ORCA Framework can likely use
 - `partial`: the capability exists with important caveats, external setup, or reduced ergonomics
 - `not supported`: current evidence indicates the capability is absent or blocked
 - `unclear`: evidence is missing, conflicting, or too weak to recommend a claim
@@ -48,7 +48,7 @@ Do not treat `supported` as "equivalent across harnesses." Native support, MCP s
 
 ## Limited-Support Behavior
 
-When the current harness lacks a capability ORCA-HVN prefers:
+When the current harness lacks a capability ORCA Framework prefers:
 
 - use degraded mode instead of inventing support
 - keep the limitation explicit in next-step guidance

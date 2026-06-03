@@ -1,6 +1,6 @@
 # Idea Feedback Style
 
-ORCA-HVN idea feedback should be candid, structured, and useful.
+ORCA Framework idea feedback should be candid, structured, and useful.
 
 ## Tone Rules
 

@@ -1,6 +1,6 @@
 # Shared State
 
-ORCA-HVN shared state is the durable coordination layer for cooperating agents working on the same run or work item. It exists so planner, builder, reviewer, QA, and coordinator roles can read the same current operating picture without re-deriving it or trampling each other.
+ORCA Framework shared state is the durable coordination layer for cooperating agents working on the same run or work item. It exists so planner, builder, reviewer, QA, and coordinator roles can read the same current operating picture without re-deriving it or trampling each other.
 
 ## Purpose
 
@@ -79,3 +79,9 @@ When shared-state entries conflict:
 ## Format
 
 Use [templates/shared-state.md](../templates/shared-state.md) as the default file-based model.
+
+## Orca Monitor Export
+
+After a material shared-state update, ORCA Framework should refresh the local Orca Monitor status snapshot. The export should include only the small public workflow fields Orca Monitor needs: current project, workflow, step, status, queue count, failing check count, latest receipt, and recent model activity when already known cheaply.
+
+See [orca-monitor-status.md](orca-monitor-status.md) for the local JSON contract.

@@ -1,6 +1,6 @@
 # Opportunity Memos
 
-An opportunity memo is the synthesis artifact for ORCA-HVN ideation. It turns scattered thinking into a decision-ready document.
+An opportunity memo is the synthesis artifact for ORCA Framework ideation. It turns scattered thinking into a decision-ready document.
 
 ## Purpose
 

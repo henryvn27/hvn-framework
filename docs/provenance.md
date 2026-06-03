@@ -1,14 +1,14 @@
 # Provenance
 
-Provenance explains where a feature, workflow, template, or file came from and how ORCA-HVN changed it.
+Provenance explains where a feature, workflow, template, or file came from and how ORCA Framework changed it.
 
 ## Purpose
 
 Use provenance notes to answer:
 
 - what upstream source influenced this feature
-- whether ORCA-HVN copied, adapted, wrapped, or only referenced it
-- what major changes ORCA-HVN made
+- whether ORCA Framework copied, adapted, wrapped, or only referenced it
+- what major changes ORCA Framework made
 - whether any license or notice obligations follow from that relationship
 
 ## What Needs Provenance
@@ -29,8 +29,8 @@ When provenance matters, document:
 - source project or source material
 - source path or feature area when relevant
 - relationship type
-- what ORCA-HVN changed
-- related ORCA-HVN files
+- what ORCA Framework changed
+- related ORCA Framework files
 - license or notice obligations
 
 ## Good Places To Record It
@@ -45,12 +45,12 @@ When provenance matters, document:
 Do not claim:
 
 - copied code when none was copied
-- original invention when ORCA-HVN is mostly reformatting or combining known patterns
+- original invention when ORCA Framework is mostly reformatting or combining known patterns
 - legal conclusions the repo cannot support
 
 ## Current Repository Rule
 
-As of this audit, ORCA-HVN should treat most upstream relationships as one of:
+As of this audit, ORCA Framework should treat most upstream relationships as one of:
 
 - conceptual influence
 - workflow influence

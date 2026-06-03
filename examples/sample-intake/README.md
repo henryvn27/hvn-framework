@@ -18,6 +18,6 @@ Turn notes, account context, and prior action items into a concise meeting brief
 - Must not claim CRM integration until implemented.
 - Must make export or copy behavior obvious.
 
-## Recommended ORCA-HVN Path
+## Recommended ORCA Framework Path
 
 `orca-onboard` → `orca-spec` → `orca-plan` → `orca-build` → `orca-test-blind` → `orca-security` → `orca-ship`

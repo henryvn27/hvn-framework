@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Inspect or adjust ORCA-HVN's adaptive learning-help mode.
+Inspect or adjust ORCA Framework's adaptive learning-help mode.
 
 ## When To Use
 

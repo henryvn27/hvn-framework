@@ -3,7 +3,7 @@ name: orca-context
 description: Resolve ambiguous recent-work references by identifying the actual artifact, app, or screen context first.
 ---
 
-# ORCA-HVN Context
+# ORCA Framework Context
 
 ## What This Skill Is
 
@@ -54,6 +54,6 @@ The workflow should reduce ambiguity without treating OCR or screenshot hints as
 - continuing the whole task from screenshots instead of pivoting to the artifact itself
 - treating stale screen history as if it reflects the current target
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-controller-mode`, `orca-runtime-adaptation`, and `orca-explain`.

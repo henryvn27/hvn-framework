@@ -3,7 +3,7 @@ name: orca-research
 description: Gather evidence from authoritative sources and convert it into a decision-ready research brief.
 ---
 
-# ORCA-HVN Research
+# ORCA Framework Research
 
 ## What This Skill Is
 
@@ -58,6 +58,6 @@ Another engineer should be able to see what decision was unblocked, not just wha
 - Omitting uncertainty.
 - Overriding strong vault evidence with generic industry advice.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-spec`, `orca-plan`, and `orca-security`.

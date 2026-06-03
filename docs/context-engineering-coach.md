@@ -12,4 +12,4 @@ Context engineering help focuses on what information makes agent work smoother a
 
 ## Default Pattern
 
-If a missing context element is causing friction, ORCA-HVN may suggest one small improvement for next time rather than a long lesson.
+If a missing context element is causing friction, ORCA Framework may suggest one small improvement for next time rather than a long lesson.

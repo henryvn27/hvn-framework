@@ -1,9 +1,9 @@
 ---
 name: orca-background-mode
-description: Run bounded unattended ORCA-HVN progress loops with clear autonomy levels, loop guards, permission handling, and resumable receipts.
+description: Run bounded unattended ORCA Framework progress loops with clear autonomy levels, loop guards, permission handling, and resumable receipts.
 ---
 
-# ORCA-HVN Background Mode
+# ORCA Framework Background Mode
 
 ## What This Skill Is
 
@@ -11,7 +11,7 @@ A guarded autonomy workflow for unattended progress.
 
 ## Trigger
 
-Use when the user explicitly asks ORCA-HVN to keep making progress while they are away or asleep.
+Use when the user explicitly asks ORCA Framework to keep making progress while they are away or asleep.
 
 ## Do Not Trigger
 
@@ -59,6 +59,6 @@ The run should make real bounded progress or stop cleanly. It should never rely 
 - taking Tier 3 actions in unattended mode
 - ending without a final state
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with goal mode, runtime adaptation, receipts, lineage, status, checkpoints, and stage budgets.

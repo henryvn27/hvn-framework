@@ -3,7 +3,7 @@ name: orca-integration-recommendation
 description: Recommend only best-fit stack tools for a clear use case, otherwise stay neutral or help with the user's chosen tool.
 ---
 
-# ORCA-HVN Integration Recommendation
+# ORCA Framework Integration Recommendation
 
 ## What This Skill Is
 

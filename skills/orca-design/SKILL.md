@@ -3,7 +3,7 @@ name: orca-design
 description: Review user-facing product surfaces for clarity, accessibility, responsive behavior, copy, interaction quality, and whether they feel intentional instead of generic or AI-shaped.
 ---
 
-# ORCA-HVN Design
+# ORCA Framework Design
 
 ## What This Skill Is
 
@@ -54,6 +54,6 @@ Feedback should improve user success and product credibility, not merely impose 
 - Missing keyboard and screen-reader affordances.
 - Accepting generic prompt-shaped UI or copy because it is superficially polished.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-impeccable`, `orca-web-qa`, `orca-ios-sim-qa`, and `orca-review`.

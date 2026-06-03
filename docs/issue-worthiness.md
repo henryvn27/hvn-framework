@@ -1,10 +1,10 @@
 # Issue Worthiness
 
-Repeated evidence that ORCA-HVN added avoidable setup, surfaced optional complexity too early, or forced unnecessary tool decisions is valid framework-issue material.
+Repeated evidence that ORCA Framework added avoidable setup, surfaced optional complexity too early, or forced unnecessary tool decisions is valid framework-issue material.
 
 Not every irritation deserves a framework issue.
 
-ORCA-HVN should prompt the user only when the candidate is strong enough to justify durable backlog work.
+ORCA Framework should prompt the user only when the candidate is strong enough to justify durable backlog work.
 
 ## Worthy Candidates
 
@@ -14,7 +14,7 @@ An issue is usually warranted when the candidate is:
 - reusable
 - actionable
 - non-duplicate
-- clearly about the ORCA-HVN framework
+- clearly about the ORCA Framework
 - supported by session evidence
 - reinforced by repeated or high-confidence quality signals when relevant
 
@@ -31,7 +31,7 @@ Do not create framework issues for:
 
 ## Decision Rule
 
-Before prompting the user, ORCA-HVN should be able to explain:
+Before prompting the user, ORCA Framework should be able to explain:
 
 - what the framework problem is
 - why it is reusable

@@ -1,6 +1,6 @@
 # Graph Analysis Output Modes
 
-ORCA-HVN should choose the lightest useful graph or vault output first.
+ORCA Framework should choose the lightest useful graph or vault output first.
 
 ## Output Modes
 

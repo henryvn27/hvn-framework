@@ -4,7 +4,7 @@ Stage budgets define different operational limits for different phases of work.
 
 ## Purpose
 
-ORCA-HVN should not treat planning, implementation, QA, and unattended background progress as one undifferentiated pool.
+ORCA Framework should not treat planning, implementation, QA, and unattended background progress as one undifferentiated pool.
 
 ## Suggested Dimensions
 
@@ -28,7 +28,7 @@ ORCA-HVN should not treat planning, implementation, QA, and unattended backgroun
 
 ## Soft Cap Behavior
 
-At soft cap, ORCA-HVN should usually:
+At soft cap, ORCA Framework should usually:
 
 - warn in status or receipt artifacts
 - summarize the current state
@@ -38,7 +38,7 @@ At soft cap, ORCA-HVN should usually:
 
 ## Hard Cap Behavior
 
-At hard cap, ORCA-HVN should usually:
+At hard cap, ORCA Framework should usually:
 
 - stop the current stage
 - emit a receipt or metrics artifact

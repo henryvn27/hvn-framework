@@ -93,8 +93,8 @@ Get a clean copy of the framework before you try to install or validate it.
 Do this:
 
 ```sh
-git clone https://github.com/henryvn27/orca-hvn.git
-cd orca-hvn
+git clone https://github.com/henryvn27/orca-framework.git
+cd orca-framework
 ```
 
 Expected result:
@@ -104,7 +104,7 @@ Verify:
 
 ```sh
 pwd
-test -f ORCA-HVN.md && echo "repo looks right"
+test -f ORCA-Framework.md && echo "repo looks right"
 ```
 
 If this fails:
@@ -126,7 +126,7 @@ Examples:
 Local install:
 
 ```sh
-./install/install.sh --mode local --target ./.orca-hvn
+./install/install.sh --mode local --target ./.orca-framework
 ```
 
 Global install:
@@ -143,16 +143,16 @@ The install also creates a runnable command layer under `bin/`.
 If you want to use `orca` and `orca-*` directly in the shell, add the installed `bin/` directory to `PATH`:
 
 ```sh
-export PATH="$(pwd)/.orca-hvn/bin:$PATH"
+export PATH="$(pwd)/.orca-framework/bin:$PATH"
 ```
 
 Verify:
 
 ```sh
-./install/verify-install.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
 ```
 
-If you used global install, replace `./.orca-hvn` with `$HOME/.orca-hvn`.
+If you used global install, replace `./.orca-framework` with `$HOME/.orca-framework`.
 
 If this fails:
 Use [install-validation.md](install-validation.md) and [reset-and-retry.md](reset-and-retry.md).
@@ -173,16 +173,16 @@ Repo validation:
 Installed target validation:
 
 ```sh
-./install/verify-install.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
 ```
 
 Broader doctor check:
 
 ```sh
-./install/doctor.sh --target ./.orca-hvn
+./install/doctor.sh --target ./.orca-framework
 ```
 
-If you used global install, replace `./.orca-hvn` with `$HOME/.orca-hvn`.
+If you used global install, replace `./.orca-framework` with `$HOME/.orca-framework`.
 
 Expected result:
 All checks report success.
@@ -233,7 +233,7 @@ Do this:
 1. Read [wrapped-capability-packs.md](wrapped-capability-packs.md).
 2. Follow [../integrations/impeccable.md](../integrations/impeccable.md) if you want Impeccable inside ORCA.
 3. Follow [../integrations/superpowers.md](../integrations/superpowers.md) if you want Superpowers inside ORCA.
-4. Use the upstream install or update path for the active harness instead of copying the pack into ORCA-HVN.
+4. Use the upstream install or update path for the active harness instead of copying the pack into ORCA Framework.
 
 Expected result:
 ORCA can route to these packs as official ORCA surfaces while keeping provenance clear.

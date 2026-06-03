@@ -8,7 +8,7 @@
 - Supported workflows: email, phone, and provider auth
 - Validation steps: project configured, provider enabled, client auth flow works
 - Common failure modes: provider setup incomplete, auth data model unclear, mobile deep-link handling weak
-- Related ORCA-HVN commands or docs: `orca-integration`, `mobile-stack-guide.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `mobile-stack-guide.md`
 - Related integrations: Firebase, Crashlytics, Expo, React Native
 - Risk notes: auth success still needs backend authorization planning
 - Web, mobile, or platform caveats: strong mobile fit with web support when needed

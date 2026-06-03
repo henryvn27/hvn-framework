@@ -1,6 +1,6 @@
 # User Skill Model
 
-ORCA-HVN may keep an internal support model of what the user appears to know.
+ORCA Framework may keep an internal support model of what the user appears to know.
 
 This model exists to improve help quality, not to score the user.
 
@@ -17,7 +17,7 @@ Possible internal dimensions:
 - planning and spec-writing skill
 - repo navigation skill
 - integration setup familiarity
-- ORCA-HVN docs literacy
+- ORCA Framework docs literacy
 - explanation-depth preference
 - jargon tolerance
 - preference for direct answer versus stepwise reasoning
@@ -55,4 +55,4 @@ Do not expose it as:
 Use it only to decide how much help to surface and when silence is better.
 It should improve the local instance experience first and should not silently rewrite global defaults for everyone else.
 
-For explanation mode, ORCA may persist user-global support state at `$HOME/.orca-hvn/state/explain/` when the user explicitly wants durable behavior or when repeated evidence strongly supports a stable local preference.
+For explanation mode, ORCA may persist user-global support state at `$HOME/.orca-framework/state/explain/` when the user explicitly wants durable behavior or when repeated evidence strongly supports a stable local preference.

@@ -3,7 +3,7 @@ name: orca-linear-executor
 description: Execute approved Linear issue scope and keep implementation progress synchronized to the issue thread.
 ---
 
-# ORCA-HVN Linear Executor
+# ORCA Framework Linear Executor
 
 ## What This Skill Is
 
@@ -52,6 +52,6 @@ The issue thread should show what changed, why, and how it was verified.
 - Posting vague progress.
 - Failing to surface implementation blockers.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-build`, `orca-review`, and `orca-linear-sync`.

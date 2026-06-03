@@ -13,6 +13,6 @@ The harness is detected as Codex with explicit or high-confidence evidence, and 
 
 ## Why
 
-Codex can use the reviewed goal path, so ORCA-HVN can surface it without pretending every harness can do the same.
+Codex can use the reviewed goal path, so ORCA Framework can surface it without pretending every harness can do the same.
 
 The receipt for this run should capture that goal mode was chosen because the reviewed Codex profile supports it.

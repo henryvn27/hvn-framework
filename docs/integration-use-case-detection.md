@@ -1,6 +1,6 @@
 # Integration Use-Case Detection
 
-ORCA-HVN should infer the smallest useful profile before recommending tools.
+ORCA Framework should infer the smallest useful profile before recommending tools.
 
 ## Typical Use Cases
 

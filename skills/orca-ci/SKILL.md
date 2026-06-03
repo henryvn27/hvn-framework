@@ -3,7 +3,7 @@ name: orca-ci
 description: Triage failing CI checks, extract actionable failure context, and route to the right fix path.
 ---
 
-# ORCA-HVN CI
+# ORCA Framework CI
 
 ## What This Skill Is
 
@@ -57,6 +57,6 @@ The triage should help a maintainer fix the problem without manually spelunking 
 - over-claiming visibility into providers the current tool surface cannot inspect
 - running unbounded `gh` commands that hang on auth or network prompts
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-delegation`, `orca-review`, and `orca-ship`.

@@ -1,5 +1,12 @@
 # Runtime Status
 
+## Current Action
+
+- Action:
+- Object:
+- Why:
+- Next check:
+
 ## Detected Harness
 
 -
@@ -48,6 +55,12 @@
 ## Related Artifacts
 
 - 
+
+## Orca Monitor Status Export
+
+- Primary path:
+- Global fallback path:
+- Last export:
 
 ## Replay Availability
 

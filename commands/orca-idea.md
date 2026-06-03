@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Turn a rough startup or business concept into a structured ORCA-HVN ideation artifact.
+Turn a rough startup or business concept into a structured ORCA Framework ideation artifact.
 
 ## When To Use
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Check whether a portable ORCA-HVN artifact matches its declared schema family and version.
+Check whether a portable ORCA Framework artifact matches its declared schema family and version.
 
 ## When To Use
 

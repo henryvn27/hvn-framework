@@ -1,6 +1,6 @@
 # Version Control And Iteration
 
-ORCA-HVN changes should be easy to inspect, compare, and ship. The repo uses ordinary Git history as the source of truth, with a small amount of framework-specific structure so agents and maintainers can understand what changed and why.
+ORCA Framework changes should be easy to inspect, compare, and ship. The repo uses ordinary Git history as the source of truth, with a small amount of framework-specific structure so agents and maintainers can understand what changed and why.
 
 ## Branch Model
 
@@ -58,7 +58,7 @@ Use categories when useful:
 
 ## Versioning Policy
 
-ORCA-HVN uses simple semantic versioning:
+ORCA Framework uses simple semantic versioning:
 
 - patch: wording fixes, broken links, narrow template fixes
 - minor: new commands, skills, templates, docs, or workflow capabilities

@@ -10,7 +10,7 @@ Describe the issue-shaped scenario and why it matters.
 
 ## Target Workflow
 
-List the command, skill, or multi-step ORCA-HVN workflow being evaluated.
+List the command, skill, or multi-step ORCA Framework workflow being evaluated.
 
 ## Setup
 

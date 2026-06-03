@@ -1,6 +1,6 @@
 # Tool Choice Overrides
 
-ORCA-HVN should be helpful, not evangelical.
+ORCA Framework should be helpful, not evangelical.
 
 ## Default Override Behavior
 

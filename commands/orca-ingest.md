@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Ingest a structured executor result back into ORCA-HVN.
+Ingest a structured executor result back into ORCA Framework.
 
 ## When To Use
 

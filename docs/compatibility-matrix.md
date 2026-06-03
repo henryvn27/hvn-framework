@@ -32,7 +32,7 @@ Status meanings:
 - Local adaptation to one harness should not silently become a global compatibility claim without stronger evidence.
 - Integration routing should also respect platform category, especially web deployment versus mobile build or billing workflows.
 - Compatibility should inform what is possible, not automatically what is recommended.
-- `unclear` means ORCA-HVN should prefer degraded mode or an explicit research note over a stronger claim.
+- `unclear` means ORCA Framework should prefer degraded mode or an explicit research note over a stronger claim.
 
 ## Related Artifacts
 

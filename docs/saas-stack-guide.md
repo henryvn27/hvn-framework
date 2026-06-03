@@ -2,7 +2,7 @@
 
 This guide exists to compress common SaaS decisions into one strong path, not to add a larger tool menu.
 
-For a typical startup SaaS, ORCA-HVN should recommend a bundle instead of a menu:
+For a typical startup SaaS, ORCA Framework should recommend a bundle instead of a menu:
 
 - Next.js
 - Vercel

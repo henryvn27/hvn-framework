@@ -32,7 +32,7 @@ Use when a goal is active, paused, completed, cleared, blocked, or being handed 
 
 ## Failure Cases
 
-- If host status is unavailable, mark it unknown and rely on ORCA-HVN artifacts.
+- If host status is unavailable, mark it unknown and rely on ORCA Framework artifacts.
 
 ## Related Commands And Skills
 

@@ -2,8 +2,8 @@
 
 ## Run Identity
 
-- Run ID: `ORCA-HVN-144-build-2`
-- Work item: `ORCA-HVN-144`
+- Run ID: `ORCA-144-build-2`
+- Work item: `ORCA-144`
 - Harness: Codex
 
 ## Current Phase
@@ -13,7 +13,7 @@
 
 ## Spec And Scope
 
-- Spec link: `spec-ORCA-HVN-144.md`
+- Spec link: `spec-ORCA-144.md`
 - Scope summary: approved feature scope only, no install changes
 
 ## Shared State Summary

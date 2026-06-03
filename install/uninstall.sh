@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-target="${HOME}/.orca-hvn"
+target="${HOME}/.orca-framework"
 
 while [ "$#" -gt 0 ]; do
   case "$1" in
@@ -11,9 +11,9 @@ while [ "$#" -gt 0 ]; do
   esac
 done
 
-[ -f "$target/ORCA-HVN.md" ] || { printf 'Refusing to remove non-ORCA-HVN target: %s\n' "$target" >&2; exit 1; }
+[ -f "$target/ORCA-Framework.md" ] || { printf 'Refusing to remove non-ORCA Framework target: %s\n' "$target" >&2; exit 1; }
 [ -d "$target/commands" ] || { printf 'Refusing to remove target without commands: %s\n' "$target" >&2; exit 1; }
 [ -d "$target/skills" ] || { printf 'Refusing to remove target without skills: %s\n' "$target" >&2; exit 1; }
 
 rm -rf "$target"
-printf 'ORCA-HVN removed from %s\n' "$target"
+printf 'ORCA Framework removed from %s\n' "$target"

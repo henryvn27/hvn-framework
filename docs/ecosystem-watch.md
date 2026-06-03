@@ -23,7 +23,7 @@ Every sweep should explicitly watch:
 - workflow metrics and cost tracking
 - modern startup stack defaults across web, mobile, auth, billing, analytics, and monitoring
 - whether current defaults still look like best-fit recommendations rather than popularity-driven suggestions
-- whether ORCA-HVN is accumulating setup burden or option sprawl in places that should stay simpler
+- whether ORCA Framework is accumulating setup burden or option sprawl in places that should stay simpler
 - whether ecosystem shifts are exposing recurring local needs that should become framework candidates after enough evidence
 - approval and human-in-the-loop patterns
 - tool governance and MCP review
@@ -59,7 +59,7 @@ For each active opportunity, keep:
 - affected hosts when relevant
 - currently recommended setup path when relevant
 - unstable or deprecated setup path when relevant
-- required ORCA-HVN change
+- required ORCA Framework change
 - UX impact
 - first seen
 - last confirmed
@@ -75,7 +75,7 @@ For each active opportunity, keep:
 
 ## Adoption Shapes
 
-- native ORCA-HVN feature candidate
+- native ORCA Framework feature candidate
 - host-adapter opportunity
 - docs/workflow guidance opportunity
 - experimental pattern worth watching
@@ -84,7 +84,7 @@ For each active opportunity, keep:
 ### commands
 
 - Title: Spec Kit extension and integration packaging as a pattern source
-- Short summary: Spec Kit's current extension catalogs, controlled multi-install integrations, and token-budget extension are notable, but they widen surface area faster than ORCA-HVN should by default.
+- Short summary: Spec Kit's current extension catalogs, controlled multi-install integrations, and token-budget extension are notable, but they widen surface area faster than ORCA Framework should by default.
 - Source links:
   - https://github.com/github/spec-kit/releases
   - https://github.github.com/spec-kit/reference/integrations.html
@@ -93,30 +93,30 @@ For each active opportunity, keep:
 - Adoption shape: docs/workflow guidance opportunity
 - Primary category: `commands`
 - Cross-harness or host-specific: cross-harness pattern source
-- Required ORCA-HVN change: none yet; keep as a packaging/reference pattern only
+- Required ORCA Framework change: none yet; keep as a packaging/reference pattern only
 - UX impact: expert UX more than beginner UX
 - First seen: 2026-05-31
 - Last confirmed: 2026-05-31
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
 - Related issue if created: none
 
 ### memory
 
 - Title: GSD learnings and queryable intelligence as memory-design inputs
-- Short summary: GSD's global learnings store and queryable codebase intelligence are stronger signals for ORCA-HVN memory design than ad hoc prompt tricks.
+- Short summary: GSD's global learnings store and queryable codebase intelligence are stronger signals for ORCA Framework memory design than ad hoc prompt tricks.
 - Source links:
   - https://github.com/gsd-build/get-shit-done/blob/main/docs/FEATURES.md
 - Status: `Investigate soon`
-- Adoption shape: native ORCA-HVN feature candidate
+- Adoption shape: native ORCA Framework feature candidate
 - Primary category: `memory`
 - Cross-harness or host-specific: cross-harness pattern source
-- Required ORCA-HVN change: evaluate whether ORCA's memory layer needs a narrower durable learnings primitive
+- Required ORCA Framework change: evaluate whether ORCA's memory layer needs a narrower durable learnings primitive
 - UX impact: both
 - First seen: 2026-05-31
 - Last confirmed: 2026-05-31
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
 - Related issue if created: none
 
 ### install
@@ -133,17 +133,17 @@ For each active opportunity, keep:
 - Affected hosts: Codex, VS Code, Windsurf, Zed, generic MCP-capable hosts
 - Currently recommended setup path: generic "approved MCP or manual" wording
 - Unstable or deprecated setup path: vague/manual-only Linear setup language
-- Required ORCA-HVN change: refresh Linear-first setup docs and examples around the official endpoint and auth options
+- Required ORCA Framework change: refresh Linear-first setup docs and examples around the official endpoint and auth options
 - UX impact: both
 - First seen: 2026-05-31
 - Last confirmed: 2026-06-02
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
   - 2026-06-02 docs unchanged; local Linear runtime still blocked by reauthentication
 - Related issue if created: [reports/ecosystem-sweep/draft-issues/2026-05-31-linear-mcp-setup-refresh.md](../reports/ecosystem-sweep/draft-issues/2026-05-31-linear-mcp-setup-refresh.md)
 
 - Title: Impeccable wrapper guidance is starting to drift across official surfaces
-- Short summary: Official Impeccable pages now mix `/impeccable teach` and `/impeccable init`, while recent releases changed Codex subagent delivery, deprecated `--fast`, and added daily self-update behavior. ORCA-HVN should keep wrapper guidance version-aware instead of restating one brittle install or onboarding story.
+- Short summary: Official Impeccable pages now mix `/impeccable teach` and `/impeccable init`, while recent releases changed Codex subagent delivery, deprecated `--fast`, and added daily self-update behavior. ORCA Framework should keep wrapper guidance version-aware instead of restating one brittle install or onboarding story.
 - Source links:
   - https://impeccable.style/changelog/
   - https://impeccable.style/docs/init
@@ -153,7 +153,7 @@ For each active opportunity, keep:
 - Adoption shape: docs/workflow guidance opportunity
 - Primary category: `install`
 - Cross-harness or host-specific: cross-harness with Codex-specific delivery changes
-- Required ORCA-HVN change: refresh `orca-impeccable` wrapper guidance so it treats `teach` as an alias, prefers harness-detected install paths, and avoids stale Codex sidecar assumptions
+- Required ORCA Framework change: refresh `orca-impeccable` wrapper guidance so it treats `teach` as an alias, prefers harness-detected install paths, and avoids stale Codex sidecar assumptions
 - UX impact: both
 - First seen: 2026-06-02
 - Last confirmed: 2026-06-02
@@ -164,7 +164,7 @@ For each active opportunity, keep:
 ### cross-harness
 
 - Title: OpenCode tracking currently mixes active docs with an archived legacy repo
-- Short summary: ORCA-HVN tracks OpenCode through active docs plus an archived `opencode-ai/opencode` GitHub repo, which is not a stable single source of truth.
+- Short summary: ORCA Framework tracks OpenCode through active docs plus an archived `opencode-ai/opencode` GitHub repo, which is not a stable single source of truth.
 - Source links:
   - https://dev.opencode.ai/docs/cli/
   - https://dev.opencode.ai/docs/config
@@ -174,12 +174,12 @@ For each active opportunity, keep:
 - Adoption shape: docs/workflow guidance opportunity
 - Primary category: `cross-harness`
 - Cross-harness or host-specific: cross-harness
-- Required ORCA-HVN change: split future OpenCode reporting into active runtime/docs versus archived legacy repo history
+- Required ORCA Framework change: split future OpenCode reporting into active runtime/docs versus archived legacy repo history
 - UX impact: both
 - First seen: 2026-05-31
 - Last confirmed: 2026-05-31
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
 - Related issue if created: [reports/ecosystem-sweep/draft-issues/2026-05-31-opencode-source-tracking-split.md](../reports/ecosystem-sweep/draft-issues/2026-05-31-opencode-source-tracking-split.md)
 
 ### QA
@@ -192,17 +192,17 @@ For each active opportunity, keep:
 - Adoption shape: docs/workflow guidance opportunity
 - Primary category: `QA`
 - Cross-harness or host-specific: cross-harness pattern source
-- Required ORCA-HVN change: assess whether ORCA should document the same "opt-in visual verification" posture more explicitly
+- Required ORCA Framework change: assess whether ORCA should document the same "opt-in visual verification" posture more explicitly
 - UX impact: both
 - First seen: 2026-05-31
 - Last confirmed: 2026-05-31
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
 - Related issue if created: none
 
 ### workflow
 
-- Title: Codex goal mode and governance baseline moved past ORCA-HVN's current wording
+- Title: Codex goal mode and governance baseline moved past ORCA Framework's current wording
 - Short summary: Codex moved well past the original `0.133.0` goal-mode shift. `0.136.0` now adds archive/unarchive commands, richer app-server MCP status, `codex app-server --stdio`, remote `CODEX_API_KEY` registration for approved OpenAI hosts, and more command-safety hardening on top of the already-mature goal/governance baseline.
 - Source links:
   - https://github.com/openai/codex/releases
@@ -210,12 +210,12 @@ For each active opportunity, keep:
 - Adoption shape: host-adapter opportunity
 - Primary category: `workflow`
 - Cross-harness or host-specific: Codex-specific
-- Required ORCA-HVN change: refresh Codex host docs and compatibility notes so they cover the current lifecycle surface rather than only the earlier goal/governance drift
+- Required ORCA Framework change: refresh Codex host docs and compatibility notes so they cover the current lifecycle surface rather than only the earlier goal/governance drift
 - UX impact: both
 - First seen: 2026-05-31
 - Last confirmed: 2026-06-02
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
   - 2026-05-31 same-day refresh: updated to Codex `0.135.0` release details
   - 2026-06-02: broadened with Codex `0.136.0` archive, app-server, remote-registration, and safety changes
 - Related issue if created: [reports/ecosystem-sweep/draft-issues/2026-05-31-codex-goal-guidance-refresh.md](../reports/ecosystem-sweep/draft-issues/2026-05-31-codex-goal-guidance-refresh.md)
@@ -228,12 +228,12 @@ For each active opportunity, keep:
 - Adoption shape: host-adapter opportunity
 - Primary category: `workflow`
 - Cross-harness or host-specific: Claude-specific
-- Required ORCA-HVN change: decide whether to add a Claude-only advanced orchestration guide or fold the new signals into a broader lifecycle abstraction later
+- Required ORCA Framework change: decide whether to add a Claude-only advanced orchestration guide or fold the new signals into a broader lifecycle abstraction later
 - UX impact: expert UX
 - First seen: 2026-05-31
 - Last confirmed: 2026-06-02
 - Prior sightings:
-  - 2026-05-31 initial live ORCA-HVN sweep
+  - 2026-05-31 initial live ORCA Framework sweep
   - 2026-06-02: updated with `2.1.160` safety prompts and restored-session fix
 - Related issue if created: none
 
@@ -270,12 +270,12 @@ Linear's official remote MCP path is still the right documented baseline, but lo
 
 Use this section for unstable, broken, or deprecated setup guidance.
 
-- OpenCode risk: ORCA-HVN currently tracks active docs against an archived legacy repo. Future setup recommendations should cite the active docs/runtime lineage explicitly.
+- OpenCode risk: ORCA Framework currently tracks active docs against an archived legacy repo. Future setup recommendations should cite the active docs/runtime lineage explicitly.
 - Linear risk: this session's Linear connector required reauthentication, so live issue-native maintenance was blocked even though the setup path is now better documented officially.
 
 ## Setup Simplification Opportunities
 
-Use this section for easier setup paths ORCA-HVN may want to adopt.
+Use this section for easier setup paths ORCA Framework may want to adopt.
 
 - Linear MCP can now be documented with one official endpoint and explicit host examples instead of generic MCP prose.
 - Codex guidance can move from "maybe experimental" goal wording to a clearer version-aware baseline.
@@ -291,7 +291,7 @@ Use this section for easier setup paths ORCA-HVN may want to adopt.
 
 ## Recently Adopted
 
-- 2026-05-31: Linear official MCP setup path promoted to `Adopt now` for ORCA-HVN setup guidance refresh.
+- 2026-05-31: Linear official MCP setup path promoted to `Adopt now` for ORCA Framework setup guidance refresh.
 - 2026-05-31: Codex goal/governance baseline promoted to `Adopt now` for host-guidance refresh.
 - 2026-05-31: OpenCode source-tracking split promoted to `Adopt now` to prevent future compatibility overclaim.
 

@@ -40,7 +40,7 @@ Claude Code
 
 ## Fallback Rules
 
-- fall back to portable ORCA-HVN artifacts when MCP or service setup is missing
+- fall back to portable ORCA Framework artifacts when MCP or service setup is missing
 
 ## Setup And Integration Caveats
 

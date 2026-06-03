@@ -3,7 +3,7 @@ name: orca-tool-governance
 description: Review and govern external tools and MCP servers with explicit trust levels, constraints, and audit expectations.
 ---
 
-# ORCA-HVN Tool Governance
+# ORCA Framework Tool Governance
 
 ## What This Skill Is
 
@@ -55,6 +55,6 @@ The decision should make the trust boundary and allowed use obvious to another m
 - approving a server without reviewing exposed tools
 - failing to document risky parameters
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-tool-review`, `orca-mcp-review`, `orca-approve`, `orca-checkpoint`, and `orca-security`.

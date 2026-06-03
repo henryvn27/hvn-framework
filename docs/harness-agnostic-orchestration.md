@@ -1,6 +1,6 @@
 # Harness-Agnostic Orchestration
 
-ORCA-HVN separates orchestration logic from harness implementation details.
+ORCA Framework separates orchestration logic from harness implementation details.
 
 ## Conceptual Layer
 
@@ -29,7 +29,7 @@ Harness-specific behavior defines:
 
 ## Rule
 
-If native multi-agent support is weak, ORCA-HVN should still preserve the conceptual model through:
+If native multi-agent support is weak, ORCA Framework should still preserve the conceptual model through:
 
 - structured delegation packets
 - sequential pseudo-subagent execution

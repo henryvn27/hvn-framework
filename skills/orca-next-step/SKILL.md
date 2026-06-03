@@ -1,9 +1,9 @@
 ---
 name: orca-next-step
-description: Produce short adaptive phase-exit guidance after major ORCA-HVN workflow stages.
+description: Produce short adaptive phase-exit guidance after major ORCA Framework workflow stages.
 ---
 
-# ORCA-HVN Next Step
+# ORCA Framework Next Step
 
 ## What This Skill Is
 

@@ -22,7 +22,7 @@ If GitHub integration is unavailable:
 
 ## Repository Target
 
-Framework-improvement issues from this loop target the ORCA-HVN repository, not the user project being worked on.
+Framework-improvement issues from this loop target the ORCA Framework repository, not the user project being worked on.
 
 ## Quality Rule
 

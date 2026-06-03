@@ -3,11 +3,11 @@ name: orca-build
 description: Implement planned changes with scoped edits, verification, and respect for existing project patterns.
 ---
 
-# ORCA-HVN Build
+# ORCA Framework Build
 
 ## What This Skill Is
 
-The implementation workflow for ORCA-HVN.
+The implementation workflow for ORCA Framework.
 
 ## Trigger
 
@@ -55,6 +55,6 @@ User-facing async work should not feel visually broken while data is in flight.
 - Skipping verification.
 - Leaving generated claims unsupported.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Used by `orca-build`; may pair with `orca-superpowers`; followed by review and QA skills.

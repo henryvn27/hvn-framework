@@ -1,6 +1,6 @@
 # Degraded Mode
 
-Degraded mode lets ORCA-HVN continue when an external integration is missing, optional, or partially available.
+Degraded mode lets ORCA Framework continue when an external integration is missing, optional, or partially available.
 
 ## Principles
 
@@ -29,4 +29,4 @@ Read service context, then produce a local write artifact for the user to post m
 
 ## Done Condition
 
-Degraded mode is acceptable when the user can still complete the ORCA-HVN phase with clear manual steps and no hidden loss of evidence.
+Degraded mode is acceptable when the user can still complete the ORCA Framework phase with clear manual steps and no hidden loss of evidence.

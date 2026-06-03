@@ -1,17 +1,17 @@
 # Licenses And Notices
 
-ORCA-HVN separates its own license from third-party notices and provenance records.
+ORCA Framework separates its own license from third-party notices and provenance records.
 
 ## Root Files
 
-- [LICENSE](../LICENSE): ORCA-HVN's own project license
+- [LICENSE](../LICENSE): ORCA Framework's own project license
 - [NOTICE](../NOTICE): short root-level notice summary
 - [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md): third-party notice and redistribution record
 - [UPSTREAM.md](../UPSTREAM.md): upstream catalog, including relationship type and status
 
 ## Repository Rule
 
-Keep ORCA-HVN's own [LICENSE](../LICENSE) focused on ORCA-HVN. Do not turn it into a mixed legal dump for unrelated upstream projects.
+Keep ORCA Framework's own [LICENSE](../LICENSE) focused on ORCA Framework. Do not turn it into a mixed legal dump for unrelated upstream projects.
 
 ## Current State
 

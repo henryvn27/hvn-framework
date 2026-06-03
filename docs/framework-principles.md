@@ -1,6 +1,6 @@
 # Framework Principles
 
-ORCA-HVN is opinionated about how orchestration systems should feel in practice.
+ORCA Framework is opinionated about how orchestration systems should feel in practice.
 
 ## Core Principles
 

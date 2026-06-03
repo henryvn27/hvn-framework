@@ -4,11 +4,11 @@ If you are new to ORCA, read this page before you dive into feature docs.
 
 ## What ORCA Is
 
-ORCA is an orchestration framework for running agent-assisted software work with a durable system of record. The formal repository and framework name is ORCA-HVN. It combines spec-driven execution, workflow gating, QA discipline, host-aware behavior, and artifact tracking so agent runs stay inspectable and resumable.
+ORCA is an orchestration framework for running agent-assisted software work with a durable system of record. The formal repository and framework name is ORCA Framework. It combines spec-driven execution, workflow gating, QA discipline, host-aware behavior, and artifact tracking so agent runs stay inspectable and resumable.
 
 It is also the primary workflow, not a companion layer for GStack or GSD. Those older tools helped inspire parts of the project, but ORCA is meant to replace that workflow with one clearer ORCA path.
 
-It should also teach that path. A new user should be able to start learning orchestration inside ORCA-HVN itself instead of waiting for someone else to train them live.
+It should also teach that path. A new user should be able to start learning orchestration inside ORCA Framework itself instead of waiting for someone else to train them live.
 
 Framework-wide rules:
 
@@ -17,7 +17,7 @@ Framework-wide rules:
 
 ## What It Solves
 
-Use ORCA-HVN when the hard part is not "make the model write code," but:
+Use ORCA Framework when the hard part is not "make the model write code," but:
 
 - turning vague work into a usable spec
 - coordinating agents or handoffs without losing context
@@ -83,7 +83,7 @@ This is the shortest ORCA path for multi-harness or parent-worker work.
 - I need to install ORCA clearly: [install-overview.md](install-overview.md)
 - I just want to try it fast: [quickstart.md](quickstart.md)
 - I want to understand the big picture: [intro.md](intro.md)
-- I am moving off GStack or GSD: [guides/from-gstack-or-gsd-to-orca-hvn.md](guides/from-gstack-or-gsd-to-orca-hvn.md)
+- I am moving off GStack or GSD: [guides/from-gstack-or-gsd-to-orca-framework.md](guides/from-gstack-or-gsd-to-orca-framework.md)
 - I want the controller/subagent path: [agent-orchestration.md](agent-orchestration.md)
 - I care about design quality and not looking AI-generated: [guides/visual-quality-guide.md](guides/visual-quality-guide.md)
 - I need a feature map: [feature-index.md](feature-index.md)

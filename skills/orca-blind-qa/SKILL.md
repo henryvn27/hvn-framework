@@ -3,7 +3,7 @@ name: orca-blind-qa
 description: Run a zero-context first-look QA pass and produce a realistic first-impression report.
 ---
 
-# ORCA-HVN Blind QA
+# ORCA Framework Blind QA
 
 ## What This Skill Is
 
@@ -54,6 +54,6 @@ The report should sound like a real first user, not a builder validating their o
 - Reading source code or specs.
 - Editing the blind report after briefing.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-context-brief`, `orca-test-briefed`, and `orca-test-regression`.

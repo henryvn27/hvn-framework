@@ -5,8 +5,8 @@ This is the shortest path from "I heard about ORCA" to "I saw it do something re
 ## Minute 1: Clone The Repo
 
 ```sh
-git clone https://github.com/henryvn27/orca-hvn.git
-cd orca-hvn
+git clone https://github.com/henryvn27/orca-framework.git
+cd orca-framework
 ```
 
 ## Minute 2: Validate The Repo
@@ -20,15 +20,15 @@ Expected result: `validate-repo: ok`
 ## Minute 3: Install ORCA Locally
 
 ```sh
-./install/install.sh --mode local --target ./.orca-hvn
-export PATH="$(pwd)/.orca-hvn/bin:$PATH"
+./install/install.sh --mode local --target ./.orca-framework
+export PATH="$(pwd)/.orca-framework/bin:$PATH"
 ```
 
 ## Minute 4: Verify And Doctor
 
 ```sh
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework
 ```
 
 Expected result: install verified and doctor passes.

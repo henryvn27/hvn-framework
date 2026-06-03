@@ -1,6 +1,6 @@
 # Linear Plan Comment
 
-## ORCA-HVN Build Plan (Executable)
+## ORCA Framework Build Plan (Executable)
 
 **Issue:** `ISSUE-ID`
 

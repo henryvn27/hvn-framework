@@ -3,7 +3,7 @@ name: orca-linear-qa
 description: Coordinate blind, guided, and regression QA through Linear comments and bounded context packets.
 ---
 
-# ORCA-HVN Linear QA
+# ORCA Framework Linear QA
 
 ## What This Skill Is
 
@@ -54,6 +54,6 @@ The issue thread should preserve the first-look report and keep later context se
 - Posting findings without reproduction steps.
 - Collapsing blind and guided outcomes into one report.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-blind-qa`, `orca-context-brief`, `orca-ios-sim-qa`, and `orca-web-qa`.

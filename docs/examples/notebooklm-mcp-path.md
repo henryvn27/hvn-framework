@@ -2,7 +2,7 @@
 
 Use this example when the user wants an agent-accessible NotebookLM workflow through MCP or browser automation.
 
-Good ORCA-HVN response shape:
+Good ORCA Framework response shape:
 
 - label the path as community or unofficial
 - call out browser-session and auth caveats

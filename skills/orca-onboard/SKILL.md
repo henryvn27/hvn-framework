@@ -3,7 +3,7 @@ name: orca-onboard
 description: Run an adaptive subagent-style interview and produce an intake summary, unresolved questions, recommended workflow, and draft spec skeleton.
 ---
 
-# ORCA-HVN Onboard
+# ORCA Framework Onboard
 
 ## What This Skill Is
 
@@ -48,7 +48,7 @@ Do not use when a complete approved spec already exists.
 9. Stop when the next answer is unlikely to materially change the first spec or the working interaction mode.
 10. Write the intake in the language of the actual product, user, and workflow. Avoid category-sounding filler.
 11. Run a human-voice pass: remove any sentence that could ship unchanged in ten unrelated products. Use `docs/human-voice.md` as the bar.
-12. Produce intake summary, operator preference summary, unresolved questions, recommended ORCA-HVN path, and draft spec skeleton.
+12. Produce intake summary, operator preference summary, unresolved questions, recommended ORCA Framework path, and draft spec skeleton.
 13. If the user clearly wants durable behavior, prepare `templates/user-guidance-profile.md` or point to `orca-learning`.
 14. Post or prepare the summary for the Linear issue or opt-out record.
 
@@ -74,6 +74,6 @@ It should also sound like a real operator captured the work item, not like a gen
 - Treating involvement level as separate from workflow routing when it should influence checkpoints, summaries, and whether unattended execution is even appropriate.
 - Ignoring a better harness-native question tool and dumping a long freeform questionnaire into the thread.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-linear-intake`, `orca-spec`, `orca-discover`, and `orca-research`.

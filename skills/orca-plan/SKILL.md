@@ -3,7 +3,7 @@ name: orca-plan
 description: Turn a spec into sequenced implementation phases with verification gates.
 ---
 
-# ORCA-HVN Plan
+# ORCA Framework Plan
 
 ## What This Skill Is
 
@@ -65,6 +65,6 @@ A full-project plan should read like a sequence of real milestones, not like one
 - Missing migration or data risks.
 - Using abstract project-manager language that hides what will actually change.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-goal-mode`, `orca-build`, `orca-review`, and `orca-ship`.

@@ -9,7 +9,7 @@
 - Preferred ORCA inspection surface: `orca-ci` with `skills/orca-ci/scripts/inspect_pr_checks.py` for bounded failure triage
 - Validation steps: workflow syntax valid, secrets present, runs pass
 - Common failure modes: missing secrets, environment drift, workflows assuming unavailable services
-- Related ORCA-HVN commands or docs: `orca-integration`, `orca-ship`, `orca-review`
+- Related ORCA Framework commands or docs: `orca-integration`, `orca-ship`, `orca-review`
 - Related integrations: GitHub, Playwright, Expo EAS
 - Risk notes: green CI can still hide missing production validation
 - Web, mobile, or platform caveats: generic automation surface, not a mobile distribution service by itself

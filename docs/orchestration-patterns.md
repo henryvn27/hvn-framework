@@ -1,6 +1,6 @@
 # Orchestration Patterns
 
-ORCA-HVN supports a small set of explicit orchestration patterns.
+ORCA Framework supports a small set of explicit orchestration patterns.
 
 ## Single Agent
 

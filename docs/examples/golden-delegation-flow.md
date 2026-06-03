@@ -1,6 +1,6 @@
 # Golden Delegation Flow
 
-Use this as the default example for strong ORCA-HVN parent-worker orchestration.
+Use this as the default example for strong ORCA Framework parent-worker orchestration.
 
 ## Situation
 

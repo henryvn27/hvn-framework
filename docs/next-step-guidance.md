@@ -1,6 +1,6 @@
 # Next-Step Guidance
 
-Next-step guidance is the short phase-exit message ORCA-HVN emits after a major stage completes. It helps the user move forward without turning every phase into a tutorial.
+Next-step guidance is the short phase-exit message ORCA Framework emits after a major stage completes. It helps the user move forward without turning every phase into a tutorial.
 
 ## When It Appears
 

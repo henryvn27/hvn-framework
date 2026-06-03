@@ -20,19 +20,19 @@ See upstream repository.
 
 - workflow influenced by
 
-## What ORCA-HVN Uses Or Borrows
+## What ORCA Framework Uses Or Borrows
 
 The public framing that AI-assisted delivery benefits from explicit spec and plan stages.
 
 ## Relationship Detail
 
-ORCA-HVN adapts the general spec-driven mindset into a broader Linear-first, QA-layered, multi-harness framework. No code is claimed as copied here.
+ORCA Framework adapts the general spec-driven mindset into a broader Linear-first, QA-layered, multi-harness framework. No code is claimed as copied here.
 
 ## Notice Or License Preservation Requirement
 
 None known from conceptual influence alone.
 
-## Related ORCA-HVN Files Or Feature Areas
+## Related ORCA Framework Files Or Feature Areas
 
 - `docs/spec-driven-workflow.md`
 - `docs/workflow.md`

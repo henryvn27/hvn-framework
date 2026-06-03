@@ -2,7 +2,7 @@
 
 ## Context
 
-A team wants ORCA-HVN to coordinate work for a new web app repository. They use Linear but have not configured agent-specific workflow guidance.
+A team wants ORCA Framework to coordinate work for a new web app repository. They use Linear but have not configured agent-specific workflow guidance.
 
 ## Setup Decisions
 
@@ -27,7 +27,7 @@ A team wants ORCA-HVN to coordinate work for a new web app repository. They use 
 ## Smoke-Test Issue Comment
 
 ```text
-## ORCA-HVN Linear Setup Check
+## ORCA Framework Linear Setup Check
 
 Context read: issue title, description, labels, current state, and project.
 
@@ -38,7 +38,7 @@ Setup status:
 - Agents may recommend state transitions but should not apply them automatically.
 - Opt-out path is documented for GitHub Issues.
 
-Result: ready for a low-risk ORCA-HVN issue.
+Result: ready for a low-risk ORCA Framework issue.
 
 Recommended next state: Ready for Spec
 ```

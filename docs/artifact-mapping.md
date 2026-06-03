@@ -1,10 +1,10 @@
 # Artifact Mapping
 
-Artifact mapping explains how ORCA-HVN artifacts can be translated into other systems without pretending every concept maps perfectly.
+Artifact mapping explains how ORCA Framework artifacts can be translated into other systems without pretending every concept maps perfectly.
 
 ## What Mapping Is For
 
-Use mappings when ORCA-HVN artifacts need to move into:
+Use mappings when ORCA Framework artifacts need to move into:
 
 - harness-native formats
 - issue trackers

@@ -1,6 +1,6 @@
 # Quality Check Prompt
 
-This session may have revealed a reusable ORCA-HVN quality issue.
+This session may have revealed a reusable ORCA Framework quality issue.
 
 - Observed signal:
 - Why it may be framework-related:

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Run the ORCA-HVN session-end improvement loop and decide whether this session surfaced a reusable framework issue.
+Run the ORCA Framework session-end improvement loop and decide whether this session surfaced a reusable framework issue.
 
 ## When To Use
 

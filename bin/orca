@@ -57,7 +57,7 @@ emit_prompt() {
   file="$2"
   context="$3"
 
-  printf 'Follow the ORCA-HVN workflow command `%s`.\n\n' "$name"
+  printf 'Follow the ORCA Framework workflow command `%s`.\n\n' "$name"
   printf 'Execution rules:\n'
   printf -- '- Prefer Linear-first execution when Linear is available.\n'
   printf -- '- If Linear is unavailable, continue in degraded local-only mode and say so explicitly.\n'

@@ -1,6 +1,6 @@
 # Feature-Gate Friction Check
 
-Every meaningful ORCA-HVN addition should pass a friction check before it becomes part of the visible framework surface.
+Every meaningful ORCA Framework addition should pass a friction check before it becomes part of the visible framework surface.
 
 ## Required Questions
 
@@ -20,7 +20,7 @@ Every new feature, integration, command, prompt pattern, or automation should an
 - `contextual`: useful only when the current use case matches
 - `optional`: available but not surfaced unless asked for or clearly helpful
 - `advanced`: hidden until the user or workflow has earned the complexity
-- `internal`: maintained by ORCA-HVN but not surfaced directly to most users
+- `internal`: maintained by ORCA Framework but not surfaced directly to most users
 
 See [feature-visibility-tiers.md](feature-visibility-tiers.md).
 

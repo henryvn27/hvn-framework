@@ -1,6 +1,6 @@
 # Side Sessions
 
-ORCA-HVN uses "side session" as a portable concept for work that should stay adjacent to the main execution thread instead of hijacking it.
+ORCA Framework uses "side session" as a portable concept for work that should stay adjacent to the main execution thread instead of hijacking it.
 
 This is a framework behavior first, not a promise that every harness exposes the same UI.
 
@@ -39,9 +39,9 @@ Preferred behavior:
 - keep execution ownership in the main thread
 - emit a structured handoff when the side session should trigger action
 
-## Default ORCA-HVN Mapping
+## Default ORCA Framework Mapping
 
-| Need | ORCA-HVN path | Expected behavior |
+| Need | ORCA Framework path | Expected behavior |
 | --- | --- | --- |
 | Quick question without derailing the main thread | `orca-btw` concept or host-native `/btw` | one-shot side answer, usually ephemeral |
 | Interactive "what is happening and why?" conversation | `orca-explain` | durable explanation session with follow-up questions |
@@ -49,7 +49,7 @@ Preferred behavior:
 
 ## Command Candidates
 
-The strongest ORCA-HVN candidates for side sessions are:
+The strongest ORCA Framework candidates for side sessions are:
 
 - `orca-explain`
 - `orca-review`

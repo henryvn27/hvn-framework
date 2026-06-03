@@ -1,6 +1,6 @@
 # Feedback Tone Check
 
-Before surfacing adaptive guidance, ORCA-HVN should run a quick tone check.
+Before surfacing adaptive guidance, ORCA Framework should run a quick tone check.
 
 ## Questions
 

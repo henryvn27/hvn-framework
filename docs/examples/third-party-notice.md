@@ -2,11 +2,11 @@
 
 ## Scenario
 
-A future ORCA-HVN feature bundles a third-party template or helper script from an upstream repo.
+A future ORCA Framework feature bundles a third-party template or helper script from an upstream repo.
 
 ## Required Handling
 
-1. keep ORCA-HVN's own `LICENSE` focused on ORCA-HVN
+1. keep ORCA Framework's own `LICENSE` focused on ORCA Framework
 2. add the upstream repo to `UPSTREAM.md`
 3. preserve any required copyright and license notice
 4. record the redistribution in `THIRD_PARTY_NOTICES.md`

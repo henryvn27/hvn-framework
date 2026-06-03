@@ -1,6 +1,6 @@
 # Linear Review Comment
 
-## ORCA-HVN Review (Decision + Evidence)
+## ORCA Framework Review (Decision + Evidence)
 
 **Issue:** `ISSUE-ID`
 

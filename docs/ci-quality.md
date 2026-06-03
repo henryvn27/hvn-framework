@@ -1,6 +1,6 @@
 # CI Quality
 
-ORCA-HVN CI should prove that the framework's reliability layer is real, linked, and structurally complete.
+ORCA Framework CI should prove that the framework's reliability layer is real, linked, and structurally complete.
 
 ## Required Checks
 

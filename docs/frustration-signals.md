@@ -18,7 +18,7 @@ Look for concrete signs such as:
 These are stronger when they appear together:
 
 - user had to restate the same instruction multiple times
-- ORCA-HVN kept using the wrong framing after correction
+- ORCA Framework kept using the wrong framing after correction
 - the session lost momentum because the framework path was unclear
 - the user explicitly called the output generic, repetitive, misleading, or unhelpful
 
@@ -28,7 +28,7 @@ These should not trigger much by themselves:
 
 - one short impatient message
 - terse wording from a normally terse user
-- frustration that is clearly about the project, tool outage, or external blocker instead of ORCA-HVN
+- frustration that is clearly about the project, tool outage, or external blocker instead of ORCA Framework
 
 ## Likely Framework Relevance
 

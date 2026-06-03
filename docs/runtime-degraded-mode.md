@@ -1,6 +1,6 @@
 # Runtime Degraded Mode
 
-Runtime degraded mode is the behavior ORCA-HVN uses when the preferred harness path is unavailable.
+Runtime degraded mode is the behavior ORCA Framework uses when the preferred harness path is unavailable.
 
 ## Rules
 
@@ -15,4 +15,4 @@ Runtime degraded mode is the behavior ORCA-HVN uses when the preferred harness p
 - unknown goal support -> standard milestone flow
 - no Linear integration -> local artifact plus manual issue update
 - weak tool governance -> approval before risky tool calls
-- unclear memory support -> portable ORCA-HVN memory and checkpoint artifacts
+- unclear memory support -> portable ORCA Framework memory and checkpoint artifacts

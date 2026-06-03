@@ -8,7 +8,7 @@
 - Supported workflows: notifications, sync, light ops automation
 - Validation steps: zap enabled, auth valid, test run succeeds
 - Common failure modes: brittle chains, unclear ownership, hidden side effects
-- Related ORCA-HVN commands or docs: `orca-integration`, `integration-diagnostics.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `integration-diagnostics.md`
 - Related integrations: Slack, HubSpot, Notion
 - Risk notes: easy to create low-signal automation
 - Web, mobile, or platform caveats: business workflow surface

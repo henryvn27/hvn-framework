@@ -1,8 +1,8 @@
 # Superpowers
 
-## ORCA-HVN Relationship
+## ORCA Framework Relationship
 
-ORCA-HVN treats Superpowers as an official wrapped capability pack for execution-heavy coding workflow.
+ORCA Framework treats Superpowers as an official wrapped capability pack for execution-heavy coding workflow.
 
 That means:
 
@@ -44,7 +44,7 @@ That means:
 - Codex App path: install from the Codex plugin sidebar
 - Claude plugin path: install from the official Claude plugin marketplace or the Superpowers marketplace
 - OpenCode path: follow the upstream `.opencode/INSTALL.md`
-- Other harnesses: use the harness-specific upstream install method rather than vendoring the skills into ORCA-HVN
+- Other harnesses: use the harness-specific upstream install method rather than vendoring the skills into ORCA Framework
 
 ## Harness Notes
 

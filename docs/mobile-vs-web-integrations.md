@@ -1,6 +1,6 @@
 # Mobile Vs Web Integrations
 
-ORCA-HVN should not flatten web and mobile into the same integration story.
+ORCA Framework should not flatten web and mobile into the same integration story.
 
 ## Deployment Versus Distribution
 

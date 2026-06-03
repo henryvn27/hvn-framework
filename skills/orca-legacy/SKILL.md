@@ -3,7 +3,7 @@ name: orca-legacy
 description: Audit, enrich, and plan safe modernization for legacy or under-documented systems.
 ---
 
-# ORCA-HVN Legacy
+# ORCA Framework Legacy
 
 ## What This Skill Is
 
@@ -57,6 +57,6 @@ The output should make the legacy system safer to change without pretending it i
 - deleting suspected dead code without runtime evidence
 - modernizing dependencies without understanding call chains
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-spec`, `orca-plan`, `orca-regression-task`, `orca-review`, and QA workflows.

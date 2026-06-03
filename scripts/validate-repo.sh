@@ -22,7 +22,7 @@ CODE_OF_CONDUCT.md
 SECURITY.md
 ROADMAP.md
 INSTALL.md
-ORCA-HVN.md
+ORCA-Framework.md
 .gitignore
 .editorconfig
 .gitattributes
@@ -90,6 +90,7 @@ docs/runtime-flags.md
 docs/runtime-fallbacks.md
 docs/runtime-degraded-mode.md
 docs/runtime-status.md
+docs/orca-monitor-status.md
 docs/agent-orchestration.md
 docs/harness-agnostic-orchestration.md
 docs/parent-agent-vs-subagent.md
@@ -161,7 +162,7 @@ docs/hosts/codex-cli.md
 docs/hosts/claude-code.md
 docs/hosts/vscode.md
 docs/hosts/generic.md
-docs/guides/from-gstack-or-gsd-to-orca-hvn.md
+docs/guides/from-gstack-or-gsd-to-orca-framework.md
 docs/guides/goal-mode-guide.md
 docs/guides/background-mode-guide.md
 docs/guides/business-ideation-guide.md
@@ -482,9 +483,11 @@ schema/versions/v1/qa-finding.schema.json
 schema/versions/v1/regression-task.schema.json
 schema/versions/v1/approval-request.schema.json
 schema/versions/v1/runtime-status.schema.json
+schema/versions/v1/orca-monitor-status.schema.json
 schema/examples/spec-v1.json
 schema/examples/goal-contract-v1.json
 schema/examples/runtime-status-v1.json
+schema/examples/orca-monitor-status-v1.json
 registry/tools/README.md
 registry/mcp-servers/README.md
 registry/harnesses/README.md
@@ -634,7 +637,7 @@ for script in bin/orca install/install.sh install/uninstall.sh install/doctor.sh
   sh -n "$script" || fail "script syntax failed: $script"
 done
 
-if grep -RIn --exclude='validate-repo.sh' 'TODO\|FIXME\|rest of code\|similar to above\|for brevity' README.md ORCA-HVN.md INSTALL.md docs commands skills templates install scripts mcp examples .github 2>/dev/null; then
+if grep -RIn --exclude='validate-repo.sh' 'TODO\|FIXME\|rest of code\|similar to above\|for brevity' README.md ORCA-Framework.md INSTALL.md docs commands skills templates install scripts mcp examples .github 2>/dev/null; then
   fail "placeholder or banned phrase detected"
 fi
 

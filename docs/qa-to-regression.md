@@ -1,6 +1,6 @@
 # QA To Regression
 
-ORCA-HVN should not let important QA findings disappear after a bug is fixed. The framework needs a structured way to convert the highest-value findings into reusable regression work.
+ORCA Framework should not let important QA findings disappear after a bug is fixed. The framework needs a structured way to convert the highest-value findings into reusable regression work.
 
 ## Purpose
 

@@ -1,10 +1,10 @@
 # GitHub Integration
 
-GitHub integration is useful when ORCA-HVN needs repository metadata, issues, pull requests, reviews, checks, releases, or changelog context.
+GitHub integration is useful when ORCA Framework needs repository metadata, issues, pull requests, reviews, checks, releases, or changelog context.
 
 ## When GitHub Is Required
 
-Require GitHub setup when ORCA-HVN must:
+Require GitHub setup when ORCA Framework must:
 
 - read or update GitHub issues directly
 - open or update a pull request
@@ -18,7 +18,7 @@ GitHub is optional when:
 
 - the local repository contains enough context
 - the user can manually paste issue or PR content
-- the user will perform GitHub writes outside ORCA-HVN
+- the user will perform GitHub writes outside ORCA Framework
 
 ## Setup Paths
 
@@ -44,7 +44,7 @@ Runtime adaptation should prefer the shortest validated GitHub path for the acti
 
 ## Fallback
 
-If GitHub is unavailable, ORCA-HVN can still:
+If GitHub is unavailable, ORCA Framework can still:
 
 - work from the local repo
 - produce branch and commit instructions

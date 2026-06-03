@@ -14,7 +14,7 @@
   ],
   "recommended_workflow_mode": "spec-driven",
   "missing_integrations": [],
-  "latest_receipt": "receipt-ORCA-HVN-201.md",
+  "latest_receipt": "receipt-ORCA-201.md",
   "related_artifacts": [
     "schema/spec-v1.json"
   ],

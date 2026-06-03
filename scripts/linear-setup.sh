@@ -25,7 +25,7 @@ esac
 mkdir -p "$(dirname "$target")"
 
 {
-  printf '# ORCA-HVN Linear Setup Packet\n\n'
+  printf '# ORCA Framework Linear Setup Packet\n\n'
   printf '## Mode\n\n%s\n\n' "$mode"
   printf '## Setup Guide\n\nRead `%s`.\n\n' "$root/docs/linear-setup.md"
   printf '## Agent Guidance\n\nPaste or adapt `%s` into Linear workspace, team, or project guidance.\n\n' "$root/docs/linear-guidance.md"
@@ -35,8 +35,8 @@ mkdir -p "$(dirname "$target")"
   if [ "$mode" = "linear-first" ]; then
     printf 'Configure Linear access through your agent client or MCP. Do not store credentials in this file.\n'
   else
-    printf 'Choose a durable non-Linear record and map ORCA-HVN gates before starting non-trivial work.\n'
+    printf 'Choose a durable non-Linear record and map ORCA Framework gates before starting non-trivial work.\n'
   fi
 } > "$target"
 
-printf 'Wrote ORCA-HVN setup packet to %s\n' "$target"
+printf 'Wrote ORCA Framework setup packet to %s\n' "$target"

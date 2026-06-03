@@ -7,7 +7,7 @@ description: Run a five-subagent council with independent first opinions, anonym
 
 ## What This Skill Is
 
-A reusable ORCA-HVN deliberation pattern adapted from the LLM Council idea: multiple subagents answer independently, review each other anonymously, and a parent chair synthesizes the final judgment.
+A reusable ORCA Framework deliberation pattern adapted from the LLM Council idea: multiple subagents answer independently, review each other anonymously, and a parent chair synthesizes the final judgment.
 
 This is for hard judgment calls, not routine execution.
 
@@ -112,6 +112,6 @@ A good council output makes tradeoffs, uncertainty, and the next action clearer 
 - hiding disagreement in a bland final synthesis
 - treating average opinion as automatically correct
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-agent-orchestration`, `orca-business-ideation`, `orca-research`, `orca-plan-idea`, and `orca-evaluate-idea`.

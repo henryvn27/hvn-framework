@@ -13,7 +13,7 @@ You do not need to understand every feature before you start.
 1. Answer the short setup interview.
 2. Read [install-prerequisites.md](install-prerequisites.md).
 3. Download the repo with git.
-4. Run local install into `./.orca-hvn`.
+4. Run local install into `./.orca-framework`.
 5. Run the verification command.
 6. Skip plugins unless you already know you need one.
 7. Skip harness setup unless you already know which harness you use.
@@ -32,11 +32,11 @@ Answer these before you start:
 ## Exact Commands
 
 ```sh
-git clone https://github.com/henryvn27/orca-hvn.git
-cd orca-hvn
-./install/install.sh --mode local --target ./.orca-hvn
-./install/verify-install.sh --target ./.orca-hvn
-./install/doctor.sh --target ./.orca-hvn
+git clone https://github.com/henryvn27/orca-framework.git
+cd orca-framework
+./install/install.sh --mode local --target ./.orca-framework
+./install/verify-install.sh --target ./.orca-framework
+./install/doctor.sh --target ./.orca-framework
 ```
 
 ## What Success Looks Like

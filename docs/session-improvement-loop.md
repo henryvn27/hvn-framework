@@ -1,14 +1,14 @@
 # Session Improvement Loop
 
-The session improvement loop is ORCA-HVN's built-in way to learn from real usage friction.
+The session improvement loop is ORCA Framework's built-in way to learn from real usage friction.
 It now feeds two distinct loops: local instance improvement and framework improvement.
 
-At the end of a meaningful session, ORCA-HVN should briefly review the work and ask a narrow question:
+At the end of a meaningful session, ORCA Framework should briefly review the work and ask a narrow question:
 
-> Did this session expose a reusable ORCA-HVN framework problem that should become backlog work?
+> Did this session expose a reusable ORCA Framework problem that should become backlog work?
 
-If the answer is yes, ORCA-HVN should turn that friction into a structured improvement note, check whether it is worth an issue, look for overlap, and ask the user before drafting or submitting a GitHub issue to the ORCA-HVN repository.
-One of the main review questions is whether ORCA-HVN reduced drag or added it.
+If the answer is yes, ORCA Framework should turn that friction into a structured improvement note, check whether it is worth an issue, look for overlap, and ask the user before drafting or submitting a GitHub issue to the ORCA Framework repository.
+One of the main review questions is whether ORCA Framework reduced drag or added it.
 Another is whether one lightweight coaching hint could have helped the user without sounding blameful.
 Another is whether the signal should stay local, become a framework candidate, or just be watched.
 

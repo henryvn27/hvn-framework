@@ -1,6 +1,6 @@
 # Controller Executor Compatibility
 
-Different harnesses are better at different responsibilities. ORCA-HVN should make those differences explicit.
+Different harnesses are better at different responsibilities. ORCA Framework should make those differences explicit.
 
 ## What Makes A Good Controller
 

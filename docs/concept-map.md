@@ -1,6 +1,6 @@
 # Concept Map
 
-ORCA-HVN is easier to use when you see how the parts connect.
+ORCA Framework is easier to use when you see how the parts connect.
 
 ## High-Level Flow
 

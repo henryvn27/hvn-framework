@@ -1,11 +1,11 @@
 # Integration Packs
 
-This directory contains ORCA-HVN integration packs for the modern startup stack.
+This directory contains ORCA Framework integration packs for the modern startup stack.
 
 Each pack should answer:
 
 - what this tool is for
-- when ORCA-HVN recommends it
+- when ORCA Framework recommends it
 - what setup or credentials are needed
 - what workflows it supports
 - how to validate it

@@ -8,7 +8,7 @@
 - Supported workflows: mobile CI, build, release automation
 - Validation steps: workflows present, signing valid, app builds successfully
 - Common failure modes: signing drift, workflow sprawl, missing environment separation
-- Related ORCA-HVN commands or docs: `orca-integration`, `mobile-stack-guide.md`
+- Related ORCA Framework commands or docs: `orca-integration`, `mobile-stack-guide.md`
 - Related integrations: Expo EAS, React Native, GitHub
 - Risk notes: mobile CI failures often come from config debt rather than app logic
 - Web, mobile, or platform caveats: mobile CI-specific

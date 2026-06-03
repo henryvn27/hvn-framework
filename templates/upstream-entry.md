@@ -20,7 +20,7 @@ Choose one or more:
 - documentation or reference influence
 - compatibility target
 
-## What ORCA-HVN Uses Or Borrows
+## What ORCA Framework Uses Or Borrows
 
 ## Relationship Detail
 
@@ -28,6 +28,6 @@ State whether code is copied, adapted, wrapped, referenced, or only inspiring.
 
 ## Notice Or License Preservation Requirement
 
-## Related ORCA-HVN Files Or Feature Areas
+## Related ORCA Framework Files Or Feature Areas
 
 ## Status Notes

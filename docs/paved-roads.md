@@ -1,6 +1,6 @@
 # Paved Roads
 
-ORCA-HVN paved roads are the strongly recommended default paths for common work. They are opinionated, optional, and allowed to degrade safely by harness.
+ORCA Framework paved roads are the strongly recommended default paths for common work. They are opinionated, optional, and allowed to degrade safely by harness.
 
 ## Why They Exist
 
@@ -36,4 +36,4 @@ Leave the paved road when:
 - the work type genuinely differs from the default path
 - the next-step guidance recommends a safer alternate branch
 
-Leaving the road should be explicit. ORCA-HVN should say what default path it is leaving and why.
+Leaving the road should be explicit. ORCA Framework should say what default path it is leaving and why.

@@ -1,9 +1,9 @@
 ---
 name: orca-integrations
-description: Route, explain, set up, and validate ORCA-HVN integration packs for modern app and startup stacks.
+description: Route, explain, set up, and validate ORCA Framework integration packs for modern app and startup stacks.
 ---
 
-# ORCA-HVN Integrations
+# ORCA Framework Integrations
 
 ## What This Skill Is
 

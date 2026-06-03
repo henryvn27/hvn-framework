@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Review an external tool and assign an explicit ORCA-HVN trust status.
+Review an external tool and assign an explicit ORCA Framework trust status.
 
 ## When To Use
 

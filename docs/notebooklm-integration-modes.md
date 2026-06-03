@@ -1,6 +1,6 @@
 # NotebookLM Integration Modes
 
-NotebookLM support in ORCA-HVN is conditional. It should help users who chose NotebookLM or clearly need a notebook-oriented research surface, but it should not imply one universal integration path.
+NotebookLM support in ORCA Framework is conditional. It should help users who chose NotebookLM or clearly need a notebook-oriented research surface, but it should not imply one universal integration path.
 
 ## Mode A: Official Enterprise Path
 
@@ -52,7 +52,7 @@ What to be honest about:
 - they may break when the NotebookLM UI or auth flow changes
 - they can create higher operational and account-risk than the official path
 
-## ORCA-HVN Handling Rule
+## ORCA Framework Handling Rule
 
 - If the user explicitly asks for NotebookLM, help them choose the right mode.
 - If they already use NotebookLM, support their chosen path instead of arguing for a different tool.

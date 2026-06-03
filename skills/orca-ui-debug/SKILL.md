@@ -3,7 +3,7 @@ name: orca-ui-debug
 description: Run persistent interactive UI debugging with clear reload vs relaunch rules and separate functional vs visual signoff.
 ---
 
-# ORCA-HVN UI Debug
+# ORCA Framework UI Debug
 
 ## What This Skill Is
 
@@ -57,6 +57,6 @@ The result should make it clear what was actually rechecked, under what runtime 
 - losing evidence across repeated iterations
 - using one-pass QA when the real need is persistent stateful debugging
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-web-qa`, `orca-context-brief`, and `orca-design`.

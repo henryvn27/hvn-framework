@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Route a user to the right ORCA-HVN integration pack, stack guidance, setup path, and validation flow without recommending unrelated tools.
+Route a user to the right ORCA Framework integration pack, stack guidance, setup path, and validation flow without recommending unrelated tools.
 
 ## When To Use
 
-Use when the user knows the tool, service, or stack area they need, but not the ORCA-HVN workflow around it, or when a best-fit recommendation may be needed.
+Use when the user knows the tool, service, or stack area they need, but not the ORCA Framework workflow around it, or when a best-fit recommendation may be needed.
 
 ## Required Inputs
 

@@ -66,6 +66,6 @@ At minimum, contribute to:
 - ignoring distribution difficulty
 - recommending pursuit without a real next validation step
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Pairs with `orca-business-ideation`, `orca-research`, `orca-evaluate-idea`, and `orca-validate-idea`.

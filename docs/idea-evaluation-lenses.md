@@ -1,6 +1,6 @@
 # Idea Evaluation Lenses
 
-ORCA-HVN evaluates ideas through written lenses instead of a single fake universal score.
+ORCA Framework evaluates ideas through written lenses instead of a single fake universal score.
 
 ## Primary Lenses
 

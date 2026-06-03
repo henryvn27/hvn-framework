@@ -3,7 +3,7 @@ name: orca-context-brief
 description: Create bounded context packets for briefed QA and layered retesting.
 ---
 
-# ORCA-HVN Context Brief
+# ORCA Framework Context Brief
 
 ## What This Skill Is
 
@@ -52,6 +52,6 @@ The packet should be small, explicit, and impossible to confuse with full projec
 - Omitting what was withheld.
 - Reusing blind terminology after briefing.
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Feeds `orca-test-briefed`, `orca-web-qa`, and `orca-ios-sim-qa`.

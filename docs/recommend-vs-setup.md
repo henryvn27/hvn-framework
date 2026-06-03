@@ -1,6 +1,6 @@
 # Recommend Vs Setup
 
-ORCA-HVN should separate recommendation mode from setup-assistance mode.
+ORCA Framework should separate recommendation mode from setup-assistance mode.
 
 ## Recommendation Mode
 
@@ -23,7 +23,7 @@ Question:
 If the user explicitly says they are using a tool, help them by default.
 
 Do not turn setup help into a migration argument unless the current choice is clearly incompatible with the stated goal.
-This keeps ORCA-HVN from creating avoidable friction by restarting tool-selection conversations the user did not ask for.
+This keeps ORCA Framework from creating avoidable friction by restarting tool-selection conversations the user did not ask for.
 
 For optional graph tooling, use language like:
 

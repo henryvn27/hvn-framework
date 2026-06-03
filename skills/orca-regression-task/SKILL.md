@@ -3,7 +3,7 @@ name: orca-regression-task
 description: Turn QA, review, or debugging findings into structured regression tasks with deterministic verification where possible.
 ---
 
-# ORCA-HVN Regression Task
+# ORCA Framework Regression Task
 
 ## What This Skill Is
 
@@ -51,6 +51,6 @@ A maintainer should be able to tell what to test, why it matters, and how stable
 - forcing automation before the scenario is deterministic
 - losing the link back to the original finding
 
-## Relationship To Other ORCA-HVN Skills And Commands
+## Relationship To Other ORCA Framework Skills And Commands
 
 Works with `orca-test-blind`, `orca-test-briefed`, `orca-test-regression`, `orca-review`, and `orca-regression-task`.

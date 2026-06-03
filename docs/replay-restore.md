@@ -1,6 +1,6 @@
 # Replay And Restore
 
-Replay and restore help ORCA-HVN compare behavior across versions, harnesses, prompts, policies, and compatibility changes.
+Replay and restore help ORCA Framework compare behavior across versions, harnesses, prompts, policies, and compatibility changes.
 
 ## Replay
 
@@ -8,7 +8,7 @@ Replay means rerunning a prior workflow case against newer prompts, policies, ve
 
 Use replay for:
 
-- debugging regressions after ORCA-HVN changes
+- debugging regressions after ORCA Framework changes
 - validating runtime adaptation changes
 - checking compatibility drift after harness updates
 - comparing old and new workflow outcomes

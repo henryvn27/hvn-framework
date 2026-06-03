@@ -1,12 +1,12 @@
 # Token Efficiency
 
-ORCA-HVN should treat token spend as an operational constraint, not an afterthought.
+ORCA Framework should treat token spend as an operational constraint, not an afterthought.
 
 The goal is not fake precision or obsessive minimization. The goal is to avoid waste, keep long-running work bounded, and preserve quality by spending tokens where they matter.
 
 ## Core Policy
 
-ORCA-HVN should prefer:
+ORCA Framework should prefer:
 
 - stable prompt prefixes that can benefit from provider-side prompt caching
 - short durable artifacts over replaying long histories
@@ -15,7 +15,7 @@ ORCA-HVN should prefer:
 - stage-specific budgets instead of one giant undifferentiated allowance
 - tools, schemas, and artifacts that reduce repeated explanation
 
-ORCA-HVN should avoid:
+ORCA Framework should avoid:
 
 - resending large background context that has not changed
 - duplicating the same instructions across multiple artifacts
@@ -36,7 +36,7 @@ That means:
 - avoid needless timestamp, formatting, or ordering drift in repeated prompt blocks
 - keep tool schemas stable when possible
 
-If a host or provider exposes cache controls or cache metrics, ORCA-HVN should use them conservatively and measure whether they actually help.
+If a host or provider exposes cache controls or cache metrics, ORCA Framework should use them conservatively and measure whether they actually help.
 
 ## 2. Compress Before Expanding
 
@@ -123,7 +123,7 @@ The recurring ecosystem sweep should keep watching:
 - token-aware tool-use patterns
 - task-budget or effort controls
 - better ways to summarize or checkpoint long-running work
-- host-specific token telemetry that ORCA-HVN can surface without overclaiming precision
+- host-specific token telemetry that ORCA Framework can surface without overclaiming precision
 
 ## Sources
 

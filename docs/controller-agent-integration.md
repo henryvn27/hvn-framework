@@ -1,6 +1,6 @@
 # Controller Agent Integration
 
-ORCA-HVN should work cleanly with an external controller agent that orients to a repository, decides what should happen next, and delegates bounded execution when another harness is the better fit.
+ORCA Framework should work cleanly with an external controller agent that orients to a repository, decides what should happen next, and delegates bounded execution when another harness is the better fit.
 
 ## What A Controller Agent Is
 
@@ -34,9 +34,9 @@ The roles are different even when one harness can do both.
 - stays inside the delegated scope
 - returns evidence and structured results
 
-## ORCA-HVN Support Model
+## ORCA Framework Support Model
 
-ORCA-HVN supports controller-style workflows through:
+ORCA Framework supports controller-style workflows through:
 
 - [HVN-STATUS.md](../HVN-STATUS.md) for fast repo orientation
 - [docs/project-orientation.md](project-orientation.md)
@@ -51,7 +51,7 @@ A controller-oriented runtime should be able to:
 1. read the status and orientation artifacts
 2. determine the active phase and missing pieces
 3. decide whether to act directly or delegate to Codex, Claude Code, another harness, or a human
-4. ingest the result back into ORCA-HVN using a predictable structure
+4. ingest the result back into ORCA Framework using a predictable structure
 
 ## Codex-Like Executor Usage
 

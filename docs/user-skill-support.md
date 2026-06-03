@@ -1,6 +1,6 @@
 # User Skill Support
 
-ORCA-HVN should support users at different skill levels without making them declare a rank or sit through a training flow.
+ORCA Framework should support users at different skill levels without making them declare a rank or sit through a training flow.
 
 ## Principle
 
@@ -12,7 +12,7 @@ That means:
 - lighter guidance when the user is already moving well
 - almost no coaching when direct execution is clearly better
 
-## What ORCA-HVN May Support
+## What ORCA Framework May Support
 
 - prompt framing
 - context handoff quality

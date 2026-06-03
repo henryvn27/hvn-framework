@@ -18,7 +18,7 @@ The user says:
 - run while I sleep
 - keep pushing this forward in the background
 
-ORCA-HVN should:
+ORCA Framework should:
 
 1. define or confirm the run contract
 2. choose the lowest sufficient autonomy level
@@ -34,6 +34,18 @@ Use `orca-background-status` to show:
 - what changed
 - blockers
 - suggested next unattended run
+
+If a narrative progress sentence is shown, it should describe the real operation, not the framework umbrella.
+
+Good:
+
+- `Updating the deployment docs and rerunning the preview checks.`
+- `Using ORCA's planning tools to split the migration into a safer next slice.`
+
+Bad:
+
+- `Using ORCA in the background.`
+- `Updating ORCA while you are away.`
 
 ### Stop
 

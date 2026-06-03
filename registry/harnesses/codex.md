@@ -28,8 +28,8 @@ Codex
 ## Unclear Capabilities
 
 - memory integration
-- shared state and checkpointing beyond portable ORCA-HVN artifacts
-- approval and governance patterns beyond ORCA-HVN policy
+- shared state and checkpointing beyond portable ORCA Framework artifacts
+- approval and governance patterns beyond ORCA Framework policy
 - multi-agent coordination support
 
 ## Preferred Commands And Workflows
@@ -37,7 +37,7 @@ Codex
 - use `orca-goal` plus native `/goal` as the default Codex goal path
 - use `/goal <objective>` to start goal mode, `/goal` to inspect status, and `/goal pause`, `/goal resume`, or `/goal clear` for lifecycle control
 - use `orca-check-setup` before external integration-heavy steps
-- use `codex doctor` for local environment diagnostics before blaming ORCA-HVN
+- use `codex doctor` for local environment diagnostics before blaming ORCA Framework
 
 ## Fallback Rules
 

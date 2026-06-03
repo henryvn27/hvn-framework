@@ -1,6 +1,6 @@
 # Harness Capability Profiles
 
-Harness capability profiles are the inspectable runtime records ORCA-HVN uses to route behavior safely.
+Harness capability profiles are the inspectable runtime records ORCA Framework uses to route behavior safely.
 
 ## Purpose
 
